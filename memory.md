@@ -53,6 +53,8 @@
 
 ## 当前真实限制
 
+- 2026-09-26 提示词补充：允许范围调整为 CCF-A 主会 + EMNLP 主会（唯一 B 类例外，不含 Findings/workshop）；保持 11 个主题 OR 匹配，按正式会议论文发表日期从新到旧检索、去重后限量，修订/抓取日期不代替发表日期。本轮只改 `prompts/search.request.txt`、`prompts/search.en.txt` 和本记录，未调用 LLM、未采集、未改网页或数据。现有采集代码尚未严格执行这些约束，arXiv 仍按更新日期抓取；后续实现需要会议身份核验、正式发表日期字段及排序对齐。
+
 - 推送后的 GitHub Actions `Test pipeline` 与 `Publish site` 均已成功；Pages 使用 workflow 模式，线上 `https://liujiachen0x3f.github.io/Awesome-GNN/` 返回 HTTP 200。自动采集 workflow 已按用户要求移除。
 - 没有OpenAlex key，该适配器未做真实认证联调。官方现有文档允许低额度匿名查询，本项目为无人值守规模访问主动要求key；不要说所有OpenAlex查询都必须key。
 - 没有远程仓库地址，GitHub Actions与Pages尚未实际部署验证。

@@ -1,1 +1,21 @@
-Find recent papers from CCF-A conferences and proceedings only, within the configured date window. The primary method or task must involve at least one of these controlled GNN keywords: GNN, SSL, CL, OOD, TAG, GSL, HGT, TGN, KG, KGE, or HGNN. Prefer papers involving multiple controlled keywords, but do not require every paper to contain all of them. Exclude journals, workshops, book chapters, preprints without verified conference acceptance, and non-CCF-A venues. Verify the actual venue from source metadata rather than inferring it from the title, abstract, or arXiv record. In the final webpage, show only the verified conference abbreviation (for example, NeurIPS, ICML, or KDD), never its full name or a journal label. Return no more than 5 final results.
+Find recent graph-learning papers within the configured date window, prioritizing the most recently published eligible papers.
+
+Venue eligibility:
+- Include CCF-A main-conference papers and EMNLP main-conference papers. EMNLP is the user's sole permitted CCF-B exception; this does not admit other B-class conferences.
+- Exclude journals, workshops, standalone book chapters, Findings of EMNLP, preprints without verified eligible conference acceptance, and all other ineligible venues. A main-conference proceedings paper is not excluded merely because a metadata service encodes it as a book chapter.
+- Verify the actual conference and track from authoritative proceedings or publisher metadata. Do not infer acceptance from the title, abstract, author affiliation, or an unverified arXiv record. Do not infer CCF rank from the existing broad venue configuration.
+
+Topic eligibility:
+- The primary method or task must involve at least one of these 11 controlled keywords in a graph-learning context: GNN, SSL, CL, OOD, TAG, GSL, HGT, TGN, KG, KGE, HGNN.
+- Use OR semantics: one matching topic is sufficient; several are allowed. Do not require all 11 or favor an older paper simply because it matches more topics. Mere background mentions are insufficient.
+
+Recency and ordering:
+- Search the newest eligible proceedings first and request descending publication-date order where supported. Merge and deduplicate candidates across sources before applying the final result limit.
+- Use the verified formal publication date of the eligible conference paper, preferring the publisher's first online publication date for that conference version, then the proceedings publication date. Keep an earlier preprint submission date separate.
+- Do not substitute revision, indexing, crawling, metadata-update, or acceptance dates for publication dates. Do not let a new revision make an old paper appear newly published.
+- Filter by the configured publication-date window and order eligible results by publication date, newest first. Use topic relevance only to break date ties.
+- Preserve partial date precision; never invent a month or day. If a missing or partial date cannot establish window eligibility or exact relative order, flag the uncertainty and do not claim the paper is among the newest verified results. Do not silently widen the window or relax venue constraints to fill the result count.
+
+Output:
+- Return no more than 5 final results; fewer verified results are acceptable.
+- In the final webpage, show only the verified conference abbreviation (for example, NeurIPS, ICML, KDD, or EMNLP) in the conference badge, never its full name or a journal label.
