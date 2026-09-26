@@ -48,6 +48,7 @@
 - 动态检索真实验证：LLM 生成 8 个短语，arXiv 28 个候选、Crossref 4 个候选；3篇验证预算下因已有缓存实际重算1篇，其余结果复用有效缓存。
 - 新增本地交互式搜索：编辑 `prompts/search.request.txt` 后运行 `python run.py search --limit 5`，固定文件内容作为用户研究需求，由 LLM 规划并直接返回多篇结果；动态查询现在会同时传入 arXiv/Crossref/OpenAlex 适配器，而不是只用于本地过滤。该模式不依赖 GitHub Actions，API 配置只从本机 `.env` 读取。
 - 交互式搜索真实验证：`search --limit 3` 生成 8 个查询，arXiv/Crossref 分别返回 3/2 个候选，并输出 3 个结果；由于摘要缓存，本轮实际新总结 1 篇。
+- 本轮仅丰富提示词，未运行采集：搜索范围限定为前 11 个热点缩写（GNN、SSL、CL、OOD、TAG、GSL、HGT、TGN、KG、KGE、HGNN），提示词要求 CCF-A 会议和来源元数据验证，并要求网页会议标签使用简称；实际 CCF-A 过滤与简称归一化留待下一轮代码改动。
 - 根据用户最新要求，删除 `.github/workflows/update.yml`：不再计划或远程手动触发自动采集；仅在本机执行 `search`，然后按需手动提交站点数据。既有 GitHub Actions Secret 不再由该项目工作流读取。
 
 ## 当前真实限制
