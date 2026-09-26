@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="自动追踪图神经网络论文，用五个关键词与百字核心方法发现值得读的研究。">
+  <meta name="color-scheme" content="light">
+  <title>Awesome GNN · 图学习研究雷达</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a href="#papers" class="skip">跳至论文列表</a>
+  <header class="topbar"><a class="brand" href="./"><span class="brand-icon" aria-hidden="true">⠿</span> Awesome <strong>GNN</strong><span class="edition">RESEARCH RADAR</span></a><a class="data-link" href="./data/papers.json">开放数据 <span aria-hidden="true">↗</span></a></header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow"><span></span> GRAPH LEARNING, AT A GLANCE</p><h1>发现下一篇<br><span>值得读的图学习论文。</span></h1><p class="intro">五个关键词，百字核心方法。<br>让筛选更轻，让研究更专注。</p><div class="update-line"><span class="pulse"></span><span id="updated">正在加载研究索引…</span></div></div>
+      <div class="graph-art" aria-hidden="true"><svg viewBox="0 0 400 260"><defs><radialGradient id="glow"><stop offset="0" stop-color="#bbe4d4" stop-opacity=".7"/><stop offset="1" stop-color="#f7f8f4" stop-opacity="0"/></radialGradient></defs><circle cx="210" cy="135" r="125" fill="url(#glow)"/><g class="edges"><path d="M65 150 131 68 211 113 299 52 341 145 273 211 189 211 65 150 211 113 273 211M131 68 189 211 341 145 211 113 189 211M299 52 273 211M65 150 106 221 189 211M131 68 173 26 299 52"/></g><g class="nodes"><circle cx="65" cy="150" r="8"/><circle cx="131" cy="68" r="10"/><circle cx="299" cy="52" r="7"/><circle cx="341" cy="145" r="10"/><circle cx="273" cy="211" r="8"/><circle cx="189" cy="211" r="7"/><circle cx="106" cy="221" r="5"/><circle cx="173" cy="26" r="5"/><circle class="central" cx="211" cy="113" r="16"/></g><circle cx="211" cy="113" r="29" fill="none" stroke="#237757" stroke-opacity=".18"/><g class="graph-labels"><text x="237" y="103">message passing</text><text x="27" y="184">representation</text><text x="255" y="241">discovery</text></g></svg><span class="graph-caption">CONNECTED IDEAS. CLEARER INSIGHTS.</span></div>
+    </section>
+    <section class="stats" aria-label="论文统计"><div><span id="total">—</span><p>已收录论文</p></div><div><span id="ready">—</span><p>已生成方法卡片</p></div><div><span id="source-count">—</span><p>数据来源</p></div><div class="stat-note"><span>5 × 100</span><p>五个关键词 · 百字以内</p></div></section>
+    <div class="workspace">
+      <aside class="filters" aria-label="筛选论文"><div class="filter-heading"><h2>筛选研究</h2><button id="reset" class="text-button">重置</button></div><label for="source">论文来源</label><select id="source"><option value="">全部来源</option></select><label for="period">发布时间</label><select id="period"><option value="">全部时间</option><option value="7">最近 7 天</option><option value="30">最近 30 天</option><option value="90">最近 90 天</option></select><label for="status">摘要状态</label><select id="status"><option value="">全部论文</option><option value="ready">已生成方法卡片</option><option value="pending">待处理论文</option></select><div class="keyword-heading"><h3>探索关键词</h3><span>点击筛选</span></div><div id="keyword-cloud" class="keyword-cloud"></div><div class="about-note"><span class="note-icon">↳</span><p>方法卡片由 LLM 基于论文摘要生成，保留来源，供初步筛选。关键结论请查阅原文。</p></div></aside>
+      <section class="results" aria-label="研究列表"><div class="search-wrap"><span aria-hidden="true">⌕</span><label class="sr-only" for="search">搜索论文标题、关键词、作者或方法</label><input id="search" type="search" placeholder="搜索标题、关键词、作者或核心方法…" autocomplete="off"><kbd>/</kbd></div><div class="result-heading"><h2>研究动态 <span id="result-count" aria-live="polite"></span></h2><label class="sort-label">排序 <select id="sort"><option value="newest">最新发布</option><option value="oldest">最早发布</option><option value="title">标题 A–Z</option></select></label></div><div id="notices" role="status"></div><div id="active-tags"></div><div id="papers" aria-live="polite"><div class="empty">正在读取论文索引…</div></div><button id="load-more" class="load-more" hidden>加载更多论文</button></section>
+    </div>
+  </main>
+  <footer><span>Awesome GNN <span class="footer-dot">/</span> A little less searching. A little more discovery.</span><span>自动聚合 · 跨源去重 · LLM 方法摘要</span></footer>
+</body>
+</html>

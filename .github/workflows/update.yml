@@ -1,0 +1,75 @@
+name: Update paper digest
+on:
+  schedule:
+    - cron: '20 1 * * *'
+  workflow_dispatch:
+    inputs:
+      collect_only:
+        description: Collect metadata without LLM
+        type: boolean
+        default: false
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: paper-data-writer
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+      - name: Collect and summarize
+        id: collect
+        continue-on-error: true
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          LLM_REASONING_EFFORT: ${{ vars.LLM_REASONING_EFFORT }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
+          COLLECT_ONLY: ${{ inputs.collect_only }}
+        run: |
+          if [ "$COLLECT_ONLY" = "true" ]; then
+            python run.py run --no-llm
+          else
+            python run.py run
+          fi
+      - name: Export latest archive and status
+        if: always()
+        run: python run.py build
+      - name: Commit durable paper archive
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/ site/data/
+          if ! git diff --cached --quiet; then
+            git commit -m "data: refresh GNN research digest"
+            git push origin HEAD:${{ github.event.repository.default_branch }}
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Surface collection or LLM failure
+        if: steps.collect.outcome == 'failure'
+        run: |
+          echo 'Archive preserved and current status published; inspect collection logs.'
+          exit 1

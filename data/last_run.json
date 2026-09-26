@@ -1,0 +1,35 @@
+{
+  "started_at": "2026-09-26T13:10:42.970251+00:00",
+  "window": {
+    "since": "2026-09-13",
+    "until": "2026-09-26"
+  },
+  "sources": {
+    "arxiv": {
+      "ok": true,
+      "fetched": 77,
+      "candidates": 74,
+      "mode": "api",
+      "truncated": false
+    },
+    "crossref": {
+      "ok": true,
+      "fetched": 148,
+      "candidates": 13,
+      "mode": "api",
+      "truncated": true
+    }
+  },
+  "llm_enabled": true,
+  "collection_started_at": "2026-09-26T11:59:10.870691+00:00",
+  "deduplicated": 0,
+  "finished_at": "2026-09-26T13:13:46.896325+00:00",
+  "llm_processed": 29,
+  "total": 81,
+  "statuses": {
+    "missing_abstract": 4,
+    "ready": 75,
+    "irrelevant": 2
+  },
+  "llm_remaining": 0
+}

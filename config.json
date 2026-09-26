@@ -1,0 +1,23 @@
+{
+  "days": 14,
+  "max_per_source": 150,
+  "max_llm_papers": 50,
+  "max_llm_seconds": 1200,
+  "llm_concurrency": 3,
+  "sources": {
+    "arxiv": true,
+    "crossref": true,
+    "openalex": false
+  },
+  "queries": ["graph neural network", "graph convolutional network", "graph transformer", "graph representation learning"],
+  "arxiv_categories": ["cs.LG", "cs.AI", "cs.SI", "stat.ML"],
+  "llm": {
+    "timeout": 180,
+    "attempts": 3,
+    "json_mode": true,
+    "temperature": null,
+    "reasoning_effort": "medium",
+    "token_limit_parameter": "max_completion_tokens",
+    "max_tokens": 4096
+  }
+}

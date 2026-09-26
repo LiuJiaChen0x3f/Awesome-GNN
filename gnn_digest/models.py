@@ -1,0 +1,112 @@
+import hashlib
+import html
+import re
+import unicodedata
+from datetime import date
+from urllib.parse import unquote
+
+
+def clean(value):
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", str(value or "")))).strip()
+
+
+def norm_title(value):
+    return "".join(c for c in unicodedata.normalize("NFKC", value).casefold() if c.isalnum())
+
+
+def norm_doi(value):
+    value = unquote(str(value or "")).strip().lower()
+    value = re.sub(r"^(?:https?://(?:dx\.)?doi\.org/|doi:\s*)", "", value)
+    return value if value.startswith("10.") and "/" in value else ""
+
+
+def arxiv_id(value):
+    match = re.search(r"(?:arxiv:|arxiv\.org/(?:abs|pdf)/)?((?:\d{4}\.\d{4,5}|[a-z-]+(?:\.[A-Z]{2})?/\d{7}))(?:v\d+)?", str(value or ""), re.I)
+    return match.group(1).lower() if match else ""
+
+
+def paper(*, source, source_id, title, abstract="", authors=None, published="", updated="", url="", doi="", arxiv="", date_basis="publication"):
+    title = clean(title)
+    return {
+        "id": "p-" + hashlib.sha256(f"{source}:{source_id}".encode()).hexdigest()[:20],
+        "title": title, "abstract": clean(abstract), "authors": authors or [],
+        "published": published[:10], "updated": (updated or published)[:10],
+        "doi": norm_doi(doi), "arxiv_id": arxiv_id(arxiv),
+        "sources": [{"name": source, "id": str(source_id), "url": url, "date_basis": date_basis}],
+        "status": "pending", "keywords": [], "method": "",
+    }
+
+
+def identity_keys(p):
+    keys = set(p.get("identity_aliases", []))
+    keys.update(f"source:{s['name']}:{s['id']}" for s in p["sources"])
+    if p.get("doi"):
+        keys.add("doi:" + norm_doi(p["doi"]))
+    if p.get("arxiv_id"):
+        keys.add("arxiv:" + arxiv_id(p["arxiv_id"]))
+    title = norm_title(p["title"])
+    if title:
+        keys.add("title:" + title)
+    return keys
+
+
+def content_hash(p):
+    return hashlib.sha256((p["title"] + "\n" + p["abstract"]).encode()).hexdigest()
+
+
+def merge_records(records):
+    """Transitive union by DOI, versionless arXiv ID, source ID or normalized title."""
+    groups, index = {}, {}
+    for incoming in records:
+        keys = identity_keys(incoming)
+        matched = sorted({index[k] for k in keys if k in index})
+        root = matched[0] if matched else len(records) + len(groups)
+        if not matched:
+            while root in groups:
+                root += 1
+        members = []
+        for group_id in matched:
+            members.extend(groups.pop(group_id))
+        members.append(incoming)
+        groups[root] = members
+        for member in members:
+            for key in identity_keys(member):
+                index[key] = root
+    result = []
+    for members in groups.values():
+        # Keep an already persisted ID and a stable ordering of provenance.
+        merged = dict(members[0])
+        with_abstract = [p for p in members if p.get("abstract")]
+        richest = max(with_abstract or members, key=lambda p: (p.get("updated", ""), len(p.get("abstract", ""))))
+        for field in ("abstract", "title", "authors"):
+            merged[field] = richest[field] or merged.get(field, "")
+        for field in ("doi", "arxiv_id"):
+            merged[field] = next((p[field] for p in members if p.get(field)), "")
+        dates = [p["published"] for p in members if p.get("published")]
+        merged["published"] = min(dates, default="")
+        merged["updated"] = max((p.get("updated", "") for p in members), default="")
+        provenance = {(s["name"], s["id"]): s for p in members for s in p["sources"]}
+        merged["sources"] = list(provenance.values())
+        merged["identity_aliases"] = sorted({key for p in members for key in identity_keys(p)})
+        # Reuse valid summaries even when merging an additional source.
+        valid = next((p for p in members if p.get("summary_input_hash") == content_hash(merged)), None)
+        if valid:
+            for field in ("status", "keywords", "method", "confidence", "evidence", "summary_input_hash", "prompt_hash", "llm_model", "llm_reasoning_effort", "llm_usage", "summarized_at"):
+                if field in valid:
+                    merged[field] = valid[field]
+        elif merged.get("summary_input_hash"):
+            merged.update(status="pending", keywords=[], method="")
+        result.append(merged)
+    return sorted(result, key=lambda p: (p.get("published", ""), p["id"]), reverse=True)
+
+
+def within_window(p, since, until):
+    try:
+        return since <= date.fromisoformat(p["updated"] or p["published"]) <= until
+    except (KeyError, ValueError):
+        return False
+
+
+def candidate(p, queries):
+    text = (p["title"] + " " + p["abstract"]).casefold()
+    return any(q.casefold() in text for q in queries) or bool(re.search(r"\bgnns?\b", text))

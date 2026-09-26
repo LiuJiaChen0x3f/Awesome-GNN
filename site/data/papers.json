@@ -1,0 +1,2489 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-26T13:13:46.896325+00:00",
+  "report": {
+    "started_at": "2026-09-26T13:10:42.970251+00:00",
+    "window": {
+      "since": "2026-09-13",
+      "until": "2026-09-26"
+    },
+    "sources": {
+      "arxiv": {
+        "ok": true,
+        "fetched": 77,
+        "candidates": 74,
+        "mode": "api",
+        "truncated": false
+      },
+      "crossref": {
+        "ok": true,
+        "fetched": 148,
+        "candidates": 13,
+        "mode": "api",
+        "truncated": true
+      }
+    },
+    "llm_enabled": true,
+    "collection_started_at": "2026-09-26T11:59:10.870691+00:00",
+    "deduplicated": 0,
+    "finished_at": "2026-09-26T13:13:46.896325+00:00",
+    "llm_processed": 29,
+    "total": 81,
+    "statuses": {
+      "missing_abstract": 4,
+      "ready": 75,
+      "irrelevant": 2
+    },
+    "llm_remaining": 0
+  },
+  "papers": [
+    {
+      "id": "p-f3e974363f08781142f5",
+      "title": "Dynamic Spatial-Temporal Mapping for EEG-to-fMRI Synthesis via Gaussian-Guided Heterogeneous Graph Neural Network",
+      "authors": [
+        "Jialun Zheng",
+        "Jie Liu",
+        "Jiannong Cao",
+        "Divya Saxena"
+      ],
+      "published": "2026-09-26",
+      "updated": "2026-09-26",
+      "sources": [
+        {
+          "name": "crossref",
+          "id": "10.1007/978-3-032-38239-9_17",
+          "url": "https://doi.org/10.1007/978-3-032-38239-9_17",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "missing_abstract",
+      "keywords": [],
+      "method": ""
+    },
+    {
+      "id": "p-f2fa77c66ff8e4042924",
+      "title": "Graph Structure Purification: A Two-Stage Defense Against Structural Adversarial Attacks on GNN-Based Network Intrusion Detection Systems",
+      "authors": [
+        "Manh-Huy Dang",
+        "Xuan-Trang Phan-Thi",
+        "Thanh-Thao Truong",
+        "Hung-Chen Truong",
+        "Thanh-Nam Tran"
+      ],
+      "published": "2026-09-26",
+      "updated": "2026-09-26",
+      "sources": [
+        {
+          "name": "crossref",
+          "id": "10.1007/978-981-92-5699-0_24",
+          "url": "https://doi.org/10.1007/978-981-92-5699-0_24",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "missing_abstract",
+      "keywords": [],
+      "method": ""
+    },
+    {
+      "id": "p-ce8d6833b8738c15460e",
+      "title": "Uncertainty-Aware Credit Card Fraud Detection Using a Fuzzy Graph Attention Network with Weak-Signal Edge Preservation",
+      "authors": [
+        "Mustapha Ismail",
+        "Saadatu Zakariyyah",
+        "Ahmed Mohammed"
+      ],
+      "published": "2026-09-26",
+      "updated": "2026-09-26",
+      "sources": [
+        {
+          "name": "crossref",
+          "id": "10.33003/fjs-2026-1018-5889",
+          "url": "https://doi.org/10.33003/fjs-2026-1018-5889",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "Fuzzy-GAT",
+        "高斯边隶属权重",
+        "图注意力机制",
+        "特征空间近邻图",
+        "信用卡欺诈检测"
+      ],
+      "method": "将交易按特征空间十近邻构图，用高斯边隶属权重调制图注意力，并用于信用卡欺诈检测。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:01:37.472178+00:00"
+    },
+    {
+      "id": "p-b75ed513b78e276457de",
+      "title": "Dance arrangement and style transfer methods driven by diffusion models and spatiotemporal graph convolutional networks",
+      "authors": [
+        "Jing Chang",
+        "Mohan Zhai"
+      ],
+      "published": "2026-09-26",
+      "updated": "2026-09-26",
+      "sources": [
+        {
+          "name": "crossref",
+          "id": "10.1007/s44163-026-02039-9",
+          "url": "https://doi.org/10.1007/s44163-026-02039-9",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "missing_abstract",
+      "keywords": [],
+      "method": ""
+    },
+    {
+      "id": "p-aa9e1929f9cfbf8555a5",
+      "title": "Bhygnn+: unsupervised representation learning for heterophilic hypergraphs",
+      "authors": [
+        "Tianyi Ma",
+        "Yiyue Qian",
+        "Zehong Wang",
+        "Zheyuan Zhang",
+        "Chuxu Zhang",
+        "Yanfang Ye"
+      ],
+      "published": "2026-09-26",
+      "updated": "2026-09-26",
+      "sources": [
+        {
+          "name": "crossref",
+          "id": "10.1007/s10115-026-02834-x",
+          "url": "https://doi.org/10.1007/s10115-026-02834-x",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "BHyGNN+框架",
+        "超图对偶性",
+        "自监督表示学习",
+        "余弦相似度对比",
+        "异质超图"
+      ],
+      "method": "扩展BHyGNN构建无监督超图表示学习框架，将超图转换为节点与超边互换的对偶图，并用余弦相似度对比增强视图与对偶图。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:11:39.695026+00:00"
+    },
+    {
+      "id": "p-6696c356b1baa98b7478",
+      "title": "SpaCEy links spatial tissue patterns to clinical outcomes using explainable graph neural networks",
+      "authors": [
+        "Ahmet Sureyya Rifaioglu",
+        "Egle Helene Ervin",
+        "Ahmet Sarigun",
+        "Deniz Germen",
+        "Bernd Bodenmiller",
+        "Jovan Tanevski",
+        "Julio Saez-Rodriguez"
+      ],
+      "published": "2026-09-26",
+      "updated": "2026-09-26",
+      "sources": [
+        {
+          "name": "crossref",
+          "id": "10.1038/s41467-026-77924-z",
+          "url": "https://doi.org/10.1038/s41467-026-77924-z",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "空间图神经网络",
+        "空间图构建",
+        "细胞间关系嵌入",
+        "可解释模式发现",
+        "临床结局预测"
+      ],
+      "method": "将空间蛋白组分子标记表达构建为空间图，利用可解释图神经网络学习细胞间关系与分子依赖，用于生存和疾病进展预测。解释器识别影响预测的重复空间模式及协同标记表达。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:02:43.028721+00:00"
+    },
+    {
+      "id": "p-24ea7735954667358287",
+      "title": "HAM-BGT: Harmonic-Aware Multimodal Brain Graph Transformer for Brain Disease Diagnosis",
+      "authors": [
+        "Heming Xu",
+        "Jingxi Feng",
+        "Dong Zhang",
+        "Zhiqiang Tian",
+        "Shaoyi Du"
+      ],
+      "published": "2026-09-26",
+      "updated": "2026-09-26",
+      "sources": [
+        {
+          "name": "crossref",
+          "id": "10.1007/978-3-032-38239-9_25",
+          "url": "https://doi.org/10.1007/978-3-032-38239-9_25",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "missing_abstract",
+      "keywords": [],
+      "method": ""
+    },
+    {
+      "id": "p-eaac7c14721d89913380",
+      "title": "TinyCardioUNet: IMU-to-ECG Translation with Graph-Encoded Inter-Axis Dependencies and Tensor Decomposition-Based Parameter Reduction",
+      "authors": [
+        "Seungwoo Han",
+        "Ingon Chanpornpakdi",
+        "Motoi Noda",
+        "Puwadej Leelasiri",
+        "Ibuki Hiruma",
+        "Toshihisa Tanaka"
+      ],
+      "published": "2026-09-24",
+      "updated": "2026-09-24",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.29322",
+          "url": "https://arxiv.org/abs/2609.29322",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "图神经网络瓶颈细化",
+        "跨轴依赖编码",
+        "张量分解",
+        "变分贝叶斯秩选择",
+        "IMU到ECG重建"
+      ],
+      "method": "使用六轴IMU信号输入轻量UNet，并在瓶颈处以图神经网络编码轴间依赖；结合张量分解和自动变分贝叶斯秩选择压缩参数，用于ECG重建。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:02:30.740944+00:00"
+    },
+    {
+      "id": "p-bc26bda65a3fd4a5cfbd",
+      "title": "Spectral Graph Neural Networks with Hermite Polynomials: A Comprehensive Study",
+      "authors": [
+        "Shuang Wu"
+      ],
+      "published": "2026-09-24",
+      "updated": "2026-09-24",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.28979",
+          "url": "https://arxiv.org/abs/2609.28979",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "HermNet",
+        "归一化Hermite传播",
+        "稀疏递推",
+        "逐节点预测器",
+        "高斯导数正则化"
+      ],
+      "method": "HermNet结合逐节点预测器与归一化Hermite传播，通过稀疏递推实现谱图滤波，无需特征分解或学习基；高斯导数正则化是可选组件。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:02:41.844225+00:00"
+    },
+    {
+      "id": "p-9c42b556c5dab636e613",
+      "title": "Reachability-Based Formal Verification of Graph Neural Networks with Node and Edge Features",
+      "authors": [
+        "Anne M. Tumlin",
+        "Ben Wooding",
+        "Zhenxuan Shao",
+        "Diego Manzanas Lopez",
+        "Tyler Derr",
+        "Taylor T. Johnson"
+      ],
+      "published": "2026-09-24",
+      "updated": "2026-09-24",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.30079",
+          "url": "https://arxiv.org/abs/2609.30079",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "GraphStar集合",
+        "线性消息传递",
+        "ReLU可靠近似",
+        "节点与边联合扰动",
+        "GNN鲁棒性验证"
+      ],
+      "method": "以GraphStar集合表征节点与边特征的联合不确定性，扩展NNV以传播线性消息传递并可靠近似ReLU非线性，用于验证电力系统与图分类GNN的鲁棒性。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:02:55.228384+00:00"
+    },
+    {
+      "id": "p-88d531326bb551c8c982",
+      "title": "Graph-Based Inference and Topology-Aware Multi-Agent Reinforcement Learning for Large-Scale Railway Network Management",
+      "authors": [
+        "Giacomo Arcieri",
+        "Gregory Duthé",
+        "Christophe Muller",
+        "Konstantinos G. Papakonstantinou",
+        "Daniel Straub",
+        "Eleni Chatzi"
+      ],
+      "published": "2026-09-24",
+      "updated": "2026-09-24",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.30150",
+          "url": "https://arxiv.org/abs/2609.30150",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "图神经网络与图Transformer",
+        "拓扑感知多智能体强化学习",
+        "图核高斯过程环境建模",
+        "零样本迁移学习",
+        "铁路网络维护优化"
+      ],
+      "method": "用图核高斯过程构建空间相关的铁路维护环境，并结合图神经网络与图Transformer进行拓扑感知的多智能体强化学习，实现网络级策略优化与零样本迁移。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:03:25.192042+00:00"
+    },
+    {
+      "id": "p-737a291b6a3e1796d376",
+      "title": "NNV3: Expanding Neural Network Verification to New Architectures and Domains",
+      "authors": [
+        "Anne M. Tumlin",
+        "Samuel Sasaki",
+        "Ben Wooding",
+        "Diego Manzanas Lopez",
+        "Muhammad Usama Zubair",
+        "Navid Hashemi",
+        "Hongchao Zhang",
+        "Waseem Abbas",
+        "Ipek Oguz",
+        "Meiyi Ma",
+        "Taylor T. Johnson"
+      ],
+      "published": "2026-09-24",
+      "updated": "2026-09-24",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.30050",
+          "url": "https://arxiv.org/abs/2609.30050",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "GraphStar",
+        "Star集合",
+        "集合可达性分析",
+        "GNN形式化验证",
+        "图电力系统基准"
+      ],
+      "method": "NNV3沿用基于集合的可达性分析，引入Star集合家族的GraphStar用于GNN形式化验证，并新增图电力系统模型基准。",
+      "confidence": "medium",
+      "summarized_at": "2026-09-26T13:03:08.574850+00:00"
+    },
+    {
+      "id": "p-6d1a77425b943819e76f",
+      "title": "GridSFM: A Foundation Model for Solving AC Optimal Power Flow",
+      "authors": [
+        "Luke Bhan",
+        "Weiwei Yang",
+        "Margaret Capetz",
+        "Baosen Zhang"
+      ],
+      "published": "2026-09-24",
+      "updated": "2026-09-24",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.30173",
+          "url": "https://arxiv.org/abs/2609.30173",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "GridSFM图神经网络",
+        "跨电网拓扑预训练",
+        "牛顿法物理微调",
+        "对数惩罚松弛变量",
+        "交流最优潮流"
+      ],
+      "method": "在多种电网拓扑上预训练物理启发的GNN，再基于潮流牛顿法进行物理知情微调；通过问题提升与对数惩罚松弛变量放松约束，求解交流最优潮流。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:03:19.382302+00:00"
+    },
+    {
+      "id": "p-30bf24b44f3312b5272a",
+      "title": "TrafficFab: An Autonomic Edge-Cloud Testbed Fabric forAI-Driven Traffic Management",
+      "authors": [
+        "Mayank Arya",
+        "Pranjal Naman",
+        "Priyanshu Pansari",
+        "Roopkatha Banerjee",
+        "Daksh Mehta",
+        "Manjil Nepal",
+        "Akash Sharma",
+        "Yogesh Simmhan"
+      ],
+      "published": "2026-09-24",
+      "updated": "2026-09-24",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.29223",
+          "url": "https://arxiv.org/abs/2609.29223",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "时空图神经网络",
+        "云端GNN弹性扩缩容",
+        "基础模型辅助联邦学习",
+        "异构边缘DNN推理",
+        "交通即时估计与预测"
+      ],
+      "method": "通过RTSP模拟摄像头流，在异构边缘设备运行DNN推理，并在云端用ST-GNN进行交通即时估计与预测；弹性扩缩云端预测任务，以基础模型辅助联邦学习持续更新边缘模型。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:04:19.765537+00:00"
+    },
+    {
+      "id": "p-f804a4f7678963ee98b5",
+      "title": "GCN-Based Model for Fault Classification in Distribution Networks under Harmonic Distortion",
+      "authors": [
+        "Fathima Razeeya Mohamed Razick",
+        "Syed Muhammad Ahsan",
+        "Petr Musilek"
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-23",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.27169",
+          "url": "https://arxiv.org/abs/2609.27169",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "三层拓扑感知GCN",
+        "差分进化超参数优化",
+        "含谐波电压电流相量",
+        "IEEE 34节点拓扑",
+        "配电网故障分类"
+      ],
+      "method": "将故障前后含谐波分量的电压、电流相量映射到IEEE 34节点系统拓扑，采用三层拓扑感知GCN进行配电网故障分类，并用差分进化算法优化网络超参数。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:03:27.843076+00:00"
+    },
+    {
+      "id": "p-dcd00672b3fdcd4af2d5",
+      "title": "Curriculum Learning with GNN-based Reinforcement Learning for Job Shop Scheduling",
+      "authors": [
+        "Jayakrishnan K. Vasudevan",
+        "Jonathan Hoss",
+        "Noah Klarmann"
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-23",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.28085",
+          "url": "https://arxiv.org/abs/2609.28085",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "图神经网络强化学习",
+        "课程学习",
+        "跨规模渐进适配",
+        "单一规模训练对照",
+        "作业车间调度"
+      ],
+      "method": "采用图神经网络强化学习求解作业车间调度：先在小规模实例上训练策略，再逐步适配更大规模，并与单一规模训练比较。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:04:07.328030+00:00"
+    },
+    {
+      "id": "p-cfe6ba223261431e82bf",
+      "title": "Scalable Subgraph Sampling via Resistance Curvature",
+      "authors": [
+        "Chaoqun Fei",
+        "Tinglve Zhou",
+        "Tianyong Hao",
+        "Yangyang Li"
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-23",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.27209",
+          "url": "https://arxiv.org/abs/2609.27209",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "ERC-LG电阻曲率采样",
+        "Johnson-Lindenstrauss投影",
+        "正则化多GPU批量共轭梯度",
+        "节点与边概率采样",
+        "节点分类"
+      ],
+      "method": "ERC-LG结合JL投影与正则化多GPU批量共轭梯度近似电阻曲率，避免显式计算拉普拉斯伪逆及存储完整嵌入；以曲率指导节点与边的采样概率，构建用于节点分类的GNN训练子图。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:03:35.649751+00:00"
+    },
+    {
+      "id": "p-af02a1cb7de2420d4348",
+      "title": "Integer Quantization of Graph Neural Networks for Real-Time FPGA Track Finding",
+      "authors": [
+        "Andrea Cardini",
+        "Pelayo Leguina",
+        "Elena Aller",
+        "Santiago Folgueras"
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-23",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.28144",
+          "url": "https://arxiv.org/abs/2609.28144",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "训练后整数量化",
+        "二次幂缩放移位替代",
+        "数据驱动位宽收窄",
+        "两层GraphSAGE",
+        "FPGA固定延迟推理"
+      ],
+      "method": "以Cora为固件评估基准，将两层GraphSAGE经训练后整数量化、二次幂缩放移位替代及数据驱动位宽收窄部署至FPGA，实现固定延迟推理，并用整数仿真器逐位验证。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:03:49.005746+00:00"
+    },
+    {
+      "id": "p-7765bd0565af29cff7e3",
+      "title": "SMILESGNN: Interpretable Clinical Toxicity Prediction via SMILES-Graph Cross-Attention Fusion",
+      "authors": [
+        "Quang Minh Nguyen",
+        "Thuy Quynh Nguyen",
+        "Duc Minh Le",
+        "Ho Nhat Minh Nguyen",
+        "Thanh Long Dai Doan",
+        "Trong Nghia Nguyen"
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-23",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.28553",
+          "url": "https://arxiv.org/abs/2609.28553",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "序列与图交叉注意力融合",
+        "GATv2图编码器",
+        "SMILES Transformer",
+        "GNNExplainer子结构解释",
+        "分子毒性预测"
+      ],
+      "method": "通过交叉注意力融合SMILES Transformer序列编码与GATv2分子图编码，预测药物毒性；保留显式图分支，支持用GNNExplainer分析毒性相关子结构。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:04:00.807692+00:00"
+    },
+    {
+      "id": "p-30f69aba14e244d09f54",
+      "title": "The Mechanics of Delta Learning: Target Design for Generalizable Scientific Machine Learning",
+      "authors": [
+        "Kareem M. Gameel",
+        "Ihor Neporozhnii",
+        "Sjoerd Hoogland",
+        "Oleksandr Voznyy"
+      ],
+      "published": "2026-09-23",
+      "updated": "2026-09-23",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.28782",
+          "url": "https://arxiv.org/abs/2609.28782",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "分子图神经网络",
+        "Δ-学习",
+        "图Dirichlet粗糙度",
+        "残差目标设计",
+        "域外预测"
+      ],
+      "method": "以物理基线残差训练分子图神经网络，并用尺度归一化图Dirichlet粗糙度诊断残差可学习性。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:11:01.134594+00:00"
+    },
+    {
+      "id": "p-9652ff52a8f8b025ee71",
+      "title": "DefaultGNN: A Dual-Perspective GNN Framework for Predicting Corporate Default from Buyer-Seller Transaction Networks",
+      "authors": [
+        "Junghoon Kim",
+        "Hyunsung Kim",
+        "Seungyoon Choi",
+        "KyoungYong Park",
+        "Jihun Lee",
+        "YongGu Ji",
+        "Chanyoung Park"
+      ],
+      "published": "2026-09-22",
+      "updated": "2026-09-22",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.25542",
+          "url": "https://arxiv.org/abs/2609.25542",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "DefaultGNN",
+        "双视角图神经网络",
+        "多层买卖交易网络",
+        "交易关系风险传播",
+        "企业违约预测"
+      ],
+      "method": "构建买方视角与卖方视角的多层交易网络，通过DefaultGNN双视角图神经网络融合两类视图，建模交易关系中的风险流动，用于企业违约预测。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:04:17.146707+00:00"
+    },
+    {
+      "id": "p-777d234edd67dfbe9cfb",
+      "title": "MambaVoice: Lightweight Audiovisual Singing Voice Separation Via A Hybrid Mamba-Transformer Model",
+      "authors": [
+        "Adithi Shankar",
+        "Gopika Krishnan",
+        "Gloria Haro",
+        "Xavier Serra",
+        "Martín Rocamora"
+      ],
+      "published": "2026-09-22",
+      "updated": "2026-09-22",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.26635",
+          "url": "https://arxiv.org/abs/2609.26635",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "Mamba-Transformer混合架构",
+        "时空图卷积（ST-GCN）",
+        "视听乘性门控融合",
+        "注意力分频带音频编码",
+        "目标歌声分离"
+      ],
+      "method": "以ST-GCN编码面部运动、注意力分频带编码器提取音频特征，经乘性门控融合后，结合Transformer自注意力与选择性SSM进行时序建模，实现目标歌声分离。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:04:27.650474+00:00"
+    },
+    {
+      "id": "p-75cdc78b9857d7c00102",
+      "title": "Diffusion-Induced Spatial Attention Overlapping Community Detection",
+      "authors": [
+        "Kosti Koistinen",
+        "Vesa Kuikka",
+        "Joni Herttuainen",
+        "Matthew Hendren",
+        "Brian Holt",
+        "Kimmo K. Kaski"
+      ],
+      "published": "2026-09-22",
+      "updated": "2026-09-22",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.26737",
+          "url": "https://arxiv.org/abs/2609.26737",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "DISCO空间注意力",
+        "影响传播结构先验",
+        "稀疏多头注意力",
+        "伯努利-泊松边重构",
+        "非负重叠社区归属"
+      ],
+      "method": "DISCO利用影响传播构建跨邻居候选交互，并按结构邻近性引导稀疏多头注意力；通过伯努利-泊松边重构学习非负社区归属，推断重叠社区。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:05:10.131325+00:00"
+    },
+    {
+      "id": "p-6741c228289d555e0976",
+      "title": "PreGS: A Parameter-Transfer-Based Multi-Expert Graph Neural Network for Node Classification",
+      "authors": [
+        "Zhicong Cai",
+        "Yinglong Zhang",
+        "Xiaoying Hong",
+        "Xuewen Xia",
+        "Xing Xu"
+      ],
+      "published": "2026-09-22",
+      "updated": "2026-09-22",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.26310",
+          "url": "https://arxiv.org/abs/2609.26310",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "GAT到GraphSAGE参数迁移",
+        "多专家图神经网络",
+        "MLP多源特征融合",
+        "源级加权与结构门控",
+        "节点分类"
+      ],
+      "method": "预训练多头GAT，将首层注意力头的线性变换权重迁移给多个GraphSAGE专家；用MLP融合节点特征、GAT与专家表示，并融合GAT预测。PreGSv2增加源级加权和结构门控，用于节点分类。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:12:58.309028+00:00"
+    },
+    {
+      "id": "p-449b57e4a6bf79014478",
+      "title": "QUARTET: Quad-branch cross-Attention and Random-walk Traces for Enhancing Transformers on Relational Graphs",
+      "authors": [
+        "Kyaw Hpone Myint",
+        "Nan Jiang",
+        "Xiang Li",
+        "Zhe Wu",
+        "Alexandre G. R. Day",
+        "Pranab Mohanty",
+        "Giri Iyengar"
+      ],
+      "published": "2026-09-22",
+      "updated": "2026-09-24",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.26855",
+          "url": "https://arxiv.org/abs/2609.26855",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "四分支交叉注意力",
+        "因果随机游走采样",
+        "近期截断PPR",
+        "局部子图全自注意力",
+        "异构时序图"
+      ],
+      "method": "将多表数据库表示为异构时序图，用近期截断PPR因果随机游走采样局部子图并执行全自注意力；以四分支交叉注意力融合种子特征、种子拓扑、时序及协同动态，用于分类。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:05:24.369867+00:00"
+    },
+    {
+      "id": "p-3977d8632d41b82fbc7f",
+      "title": "Signed Graph Pre-Training and Prompt Learning",
+      "authors": [
+        "Zihan Mei",
+        "Rong Pan",
+        "Yuzhou Chen",
+        "Yixuan He"
+      ],
+      "published": "2026-09-22",
+      "updated": "2026-09-22",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.25722",
+          "url": "https://arxiv.org/abs/2609.25722",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "TopoSIGN",
+        "磁有符号拉普拉斯编码",
+        "Dowker复形持久性图像",
+        "双分支嵌入融合",
+        "有符号图提示学习"
+      ],
+      "method": "TopoSIGN以磁有符号拉普拉斯构建结构编码器，并以Dowker复形持久性图像表征有符号拓扑；融合两分支嵌入后用于提示学习，实现有符号图预训练与迁移。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:05:37.130352+00:00"
+    },
+    {
+      "id": "p-36003ec7c0a4df34c5af",
+      "title": "Does Graph Structure Earn Its Place in Microservice Root-Cause Analysis? A Controlled Study on RCAEval, and What the Benchmark Was Really Measuring",
+      "authors": [
+        "Imad Buljić"
+      ],
+      "published": "2026-09-22",
+      "updated": "2026-09-22",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.27069",
+          "url": "https://arxiv.org/abs/2609.27069",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "PSC-GRCA",
+        "中心化图残差",
+        "系统先验",
+        "遥测证据",
+        "微服务根因分析"
+      ],
+      "method": "PSC-GRCA将候选根因得分分解为系统先验、遥测证据和中心化图残差；通过控制特征、优化器及评分头等条件的图与非图模型对照，评估图结构对微服务根因定位的贡献。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:05:46.561307+00:00"
+    },
+    {
+      "id": "p-2ae22c9cc766c6c35e44",
+      "title": "Stress-Testing Structure-Aware Calibration of Malware Graph Neural Networks under Type Shift",
+      "authors": [
+        "Junru Zhu",
+        "Yixin Yang",
+        "Xiaoqing Ding",
+        "Ruoyu Qi"
+      ],
+      "published": "2026-09-22",
+      "updated": "2026-09-22",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.28517",
+          "url": "https://arxiv.org/abs/2609.28517",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "社区支持域守卫",
+        "结构感知后验校准",
+        "标准化社区位移",
+        "图同构网络（GIN）",
+        "恶意软件类型偏移"
+      ],
+      "method": "冻结GIN，仅用已知类型数据拟合后验校准映射并加入八个社区协变量；当标准化社区位移超过校准数据的95分位数时，回退到通用拓扑校准器，应对恶意软件类型偏移。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:05:49.671287+00:00"
+    },
+    {
+      "id": "p-22a0afaffcda5d56955f",
+      "title": "CacheDyG: Decoupling Temporal Propagation for Efficient Dynamic Graph Learning",
+      "authors": [
+        "PinHeng Zong",
+        "Ye Yuan"
+      ],
+      "published": "2026-09-22",
+      "updated": "2026-09-22",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.25814",
+          "url": "https://arxiv.org/abs/2609.25814",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "时序传播与参数更新解耦",
+        "时序依赖缓存",
+        "轻量缓存细化器",
+        "自适应残差门",
+        "选择性缓存刷新"
+      ],
+      "method": "将时序传播与参数更新解耦，用非训练缓冲区缓存图感知的节点—时间表示；常规训练仅更新轻量缓存细化器、自适应残差门和链接预测器，并选择性刷新缓存以对齐监督目标。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:05:56.457772+00:00"
+    },
+    {
+      "id": "p-0636f184784955dac7be",
+      "title": "Testing deep learning techniques for event reconstruction in pair-production gamma-ray telescopes",
+      "authors": [
+        "Mattia Maniscalco",
+        "Valentina Fioretti",
+        "Nicolò Parmiggiani",
+        "Andrea Bulgarelli",
+        "Carolyn A. Kierans",
+        "Adrien Laviron",
+        "Gabriele Panebianco",
+        "Alessio Aboudan",
+        "Luca Castaldini",
+        "Andreas Zoglauer"
+      ],
+      "published": "2026-09-22",
+      "updated": "2026-09-22",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.26350",
+          "url": "https://arxiv.org/abs/2609.26350",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "GraphSAGE",
+        "Interaction Networks",
+        "Geant4仿真",
+        "粒子径迹重建",
+        "电子对产生事件"
+      ],
+      "method": "用仿真与读出处理生成数据，训练和评估GraphSAGE与Interaction Networks，识别和重建电子对产生事件的粒子径迹。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:06:00.004137+00:00"
+    },
+    {
+      "id": "p-def6c866c81f3bc2e528",
+      "title": "Spatiotemporal Kronecker Covariance Neural Networks",
+      "authors": [
+        "Andrea Cavallo",
+        "Athanasios Georgoutsos",
+        "Elvin Isufi"
+      ],
+      "published": "2026-09-21",
+      "updated": "2026-09-21",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.25326",
+          "url": "https://arxiv.org/abs/2609.25326",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "Kronecker协方差神经网络",
+        "Kronecker乘积和表示",
+        "时空依赖解耦",
+        "时空分量滤波",
+        "多变量时间序列预测"
+      ],
+      "method": "KVNN以Kronecker乘积之和表示时空协方差矩阵，解耦空间与时间依赖；通过对空间和时间分量分别执行滤波，构建用于多变量时间序列预测的时序图神经网络。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:06:03.970671+00:00"
+    },
+    {
+      "id": "p-ac93b2f03be6ec69b53b",
+      "title": "The CAMELS-CROCODILE Simulation Suite: A New Cosmology--Astrophysics Playground for Machine Learning",
+      "authors": [
+        "Kentaro Nagamine",
+        "Yuri Oku",
+        "Atsushi J. Nishizawa",
+        "Jun-Young Lee",
+        "Francisco Villaescusa-Navarro",
+        "Shy Genel",
+        "Daniel Anglés-Alcázar"
+      ],
+      "published": "2026-09-21",
+      "updated": "2026-09-21",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.23982",
+          "url": "https://arxiv.org/abs/2609.23982",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "冻结权重迁移",
+        "GNN",
+        "跨模拟泛化检验",
+        "星系目录",
+        "宇宙学参数推断"
+      ],
+      "method": "将基于IllustrisTNG星系目录训练的GNN冻结权重，应用于CAMELS-CROCODILE以推断Ω_m和σ_8，检验跨星系形成模型的泛化。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:06:10.619459+00:00"
+    },
+    {
+      "id": "p-ac0e4b524f0daee7424a",
+      "title": "Multi-Term Fourier Graph Neural Network with Sample Relationship Learning for Enhanced Remaining Useful Life Prediction",
+      "authors": [
+        "Ya Song",
+        "Laurens Bliek",
+        "Yaoxin Wu",
+        "Yingqian Zhang"
+      ],
+      "published": "2026-09-21",
+      "updated": "2026-09-21",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.25179",
+          "url": "https://arxiv.org/abs/2609.25179",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "傅里叶图神经网络",
+        "多回溯窗口学习",
+        "异构GNN样本关系学习",
+        "单样本完全图",
+        "剩余使用寿命预测"
+      ],
+      "method": "将每个样本表示为单个完全图，用FGN在频域提取时空信息；通过多个回溯窗口生成不同跨度的样本，并训练异构GNN学习样本间关系，用于剩余使用寿命预测。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:06:14.465935+00:00"
+    },
+    {
+      "id": "p-aa99c60abded5bde81ca",
+      "title": "GraphSVR: q-Space--Aware Graph-Based Slice-to-Volume Registration for Diffusion MRI",
+      "authors": [
+        "Noga Kertes",
+        "Daphna Link Sourani",
+        "Alex M. Bronstein",
+        "Moti Freiman"
+      ],
+      "published": "2026-09-21",
+      "updated": "2026-09-21",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.24732",
+          "url": "https://arxiv.org/abs/2609.24732",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "q空间感知采集结构图",
+        "GNN堆栈级刚体运动预测",
+        "自监督零样本优化",
+        "解剖参考图像监督",
+        "四维切片到体积配准"
+      ],
+      "method": "将切片组作为节点，以时间邻近、空间几何和扩散编码关系构边；GNN仅借助解剖参考图像进行自监督零样本优化，预测全局一致的堆栈级刚体运动，用于DWI四维切片到体积配准。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:06:21.403155+00:00"
+    },
+    {
+      "id": "p-977e8bac64a68101be7d",
+      "title": "Residual Community Prototypes Under-Reject Held-Out Malware Families in FCG-MFD",
+      "authors": [
+        "Junru Zhu",
+        "Yixin Yang",
+        "Xiaoqing Ding",
+        "Ruoyu Qi"
+      ],
+      "published": "2026-09-21",
+      "updated": "2026-09-21",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.24980",
+          "url": "https://arxiv.org/abs/2609.24980",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "社区特征残差化",
+        "最近原型评分",
+        "Louvain社区摘要",
+        "GIN图嵌入",
+        "开放集恶意软件家族识别"
+      ],
+      "method": "在GIN/FCG-MFD设置下，利用已知家族训练数据将Louvain社区特征对通用拓扑残差化，再进行最近原型评分，检验其在图嵌入之外对未知恶意软件家族拒识的作用。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:06:27.884777+00:00"
+    },
+    {
+      "id": "p-8d87f9c6a6caa9d674d7",
+      "title": "Deep Reinforcement Learning on Item-Compatibility Graphs for One-Dimensional Bin Packing",
+      "authors": [
+        "M. Aslı Aydın"
+      ],
+      "published": "2026-09-21",
+      "updated": "2026-09-21",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.25397",
+          "url": "https://arxiv.org/abs/2609.25397",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "GNN actor-critic策略",
+        "物品兼容图",
+        "部分箱合并动作",
+        "随机束搜索",
+        "一维装箱"
+      ],
+      "method": "将一维装箱建模为物品兼容图上的马尔可夫决策过程，每步合并两个可共同装箱的部分箱；用GNN actor-critic提取关系特征，通过强化学习训练并以随机束搜索解码。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:06:33.705556+00:00"
+    },
+    {
+      "id": "p-70e96ec56c0304f66f51",
+      "title": "Learning to Maximize Energy Efficiency in 6G in-X Subnetworks",
+      "authors": [
+        "Ramoni Adeogun"
+      ],
+      "published": "2026-09-21",
+      "updated": "2026-09-21",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.24263",
+          "url": "https://arxiv.org/abs/2609.24263",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "GNN干扰感知功率控制",
+        "能效与和速率多目标优化",
+        "网络与子网络能效目标",
+        "无线拓扑图表示",
+        "6G in-X子网络"
+      ],
+      "method": "采用GNN捕获子网络间干扰与无线拓扑，学习发射功率分配；分别以网络总能效、子网络平均能效及能效与和速率的多目标权衡进行优化。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:06:43.761778+00:00"
+    },
+    {
+      "id": "p-672f16bc8c71bca1e2ae",
+      "title": "Temporal Generalization and Explanation Stability of Control Flow Graph Neural Networks for Malware Detection",
+      "authors": [
+        "Md. Asif Sajeed",
+        "Md. Nazrul Islam Mondal",
+        "Md Ashraful Hossen Akash"
+      ],
+      "published": "2026-09-21",
+      "updated": "2026-09-21",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.24280",
+          "url": "https://arxiv.org/abs/2609.24280",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "消息传递算子比较",
+        "可学习注意力读出",
+        "严格时间划分",
+        "控制流图",
+        "恶意软件检测"
+      ],
+      "method": "从可执行文件静态提取节点含37维特征的控制流图，以GNN进行恶意软件检测；采用严格时间划分，对比聚合架构与可学习注意力读出架构的跨期泛化。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:06:46.029017+00:00"
+    },
+    {
+      "id": "p-667134fe8c72fd174c74",
+      "title": "GraphToolbox: A Configurable Python Framework for Graph Neural Network Forecasting",
+      "authors": [
+        "Eloi Campagne",
+        "Yvenn Amara-Ouali",
+        "Yannig Goude",
+        "Argyris Kalogeratos"
+      ],
+      "published": "2026-09-21",
+      "updated": "2026-09-21",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.24609",
+          "url": "https://arxiv.org/abs/2609.24609",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "图卷积与循环单元适配",
+        "在线专家聚合",
+        "数据驱动图构建",
+        "配置驱动预测流水线",
+        "电力负荷预测"
+      ],
+      "method": "GraphToolbox以配置驱动流水线进行数据驱动图构建，通过适配器实例化并训练图卷积及时间循环单元，结合在线专家聚合开展电力预测。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:06:51.013115+00:00"
+    },
+    {
+      "id": "p-f0ea1ddc199f8aa08a68",
+      "title": "Edge-centric Brain Transformer: An Edge-centric Functional Connectivity Learning Framework for fMRI-based Brain Disorder Diagnosis",
+      "authors": [
+        "Dengyi Zhao",
+        "Zhiheng Zhou",
+        "Mengyao Zhou",
+        "Yunping Wang",
+        "Xingqin Qi"
+      ],
+      "published": "2026-09-20",
+      "updated": "2026-09-20",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.23782",
+          "url": "https://arxiv.org/abs/2609.23782",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "功能连接线图建模",
+        "结构感知Transformer",
+        "边级正交聚类读出",
+        "边时间序列表征",
+        "脑疾病诊断"
+      ],
+      "method": "以边时间序列捕捉功能连接的动态共波动，将判别性连接组织为线图；通过结构感知Transformer学习局部依赖与全局交互，再以边级正交聚类读出生成个体表征，用于脑疾病诊断。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:06:56.198113+00:00"
+    },
+    {
+      "id": "p-e22370a1908987fd7dd5",
+      "title": "GNN-Based Global CSI Reconstruction for Fronthaul-Limited Distributed MIMO Systems",
+      "authors": [
+        "Haojin Li",
+        "Kaiqian Qu",
+        "Anbang Zhang",
+        "Chen Sun",
+        "Wenqi Zhang",
+        "Haijun Zhang"
+      ],
+      "published": "2026-09-20",
+      "updated": "2026-09-20",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.23365",
+          "url": "https://arxiv.org/abs/2609.23365",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "掩码条件GNN",
+        "随机上传掩码训练",
+        "任务驱动天线选择",
+        "部署掩码微调",
+        "全局CSI重建"
+      ],
+      "method": "以随机上传掩码训练掩码条件GNN，从部分天线CSI重建全局CSI；在前传预算内评估天线子集，并针对选定部署掩码微调。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:06:55.968508+00:00"
+    },
+    {
+      "id": "p-d6b3131c0a6a5188073c",
+      "title": "Preserving Geometric Integrity in Graph Prompting via Measure-Constrained Optimal Transport",
+      "authors": [
+        "Xiangyu Wang",
+        "Shuo Wang",
+        "Ruiyi Fang",
+        "Zhao Kang"
+      ],
+      "published": "2026-09-20",
+      "updated": "2026-09-20",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.23547",
+          "url": "https://arxiv.org/abs/2609.23547",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "MINT",
+        "熵正则最优传输",
+        "提示侧边缘约束",
+        "节点到提示全局耦合分配",
+        "冻结GNN提示学习"
+      ],
+      "method": "将节点到共享提示库的适配建模为熵正则最优传输，以局部几何兼容性设定代价，并用预设提示侧边缘约束控制全图提示用量，实现冻结GNN的下游任务适配。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:07:03.725383+00:00"
+    },
+    {
+      "id": "p-c72dd3cca4f8624e8e49",
+      "title": "Droop-Aware Foundation Model Power Flow",
+      "authors": [
+        "Khezr Sanjani",
+        "Peng Zhang"
+      ],
+      "published": "2026-09-20",
+      "updated": "2026-09-20",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.23723",
+          "url": "https://arxiv.org/abs/2609.23723",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "下垂与死区参数节点编码",
+        "图Transformer",
+        "tanh死区平滑",
+        "掩码重建预训练",
+        "控制感知交流潮流预测"
+      ],
+      "method": "将下垂增益与频率/电压死区参数编码为母线节点特征，以tanh平滑死区不连续性；采用图Transformer进行掩码重建预训练，再在控制感知数据集上微调以预测交流潮流。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:07:04.567096+00:00"
+    },
+    {
+      "id": "p-fde679f33baf14f00b02",
+      "title": "ECENet: An Edge Cluster Expansion Line-Graph Neural Network",
+      "authors": [
+        "R. Allen LaCour",
+        "Teresa Head-Gordon"
+      ],
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.23134",
+          "url": "https://arxiv.org/abs/2609.23134",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "边簇展开（ECE）",
+        "O(2)等变边特征",
+        "线图神经网络",
+        "潜在Ewald求和",
+        "机器学习原子间势"
+      ],
+      "method": "以原子对边为中心展开局部环境，构建线图神经网络ECENet，在边上保留O(2)等变特征；结合潜在Ewald求和建模长程静电，用于学习原子间势及预测偶极矩和红外光谱。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:07:07.076303+00:00"
+    },
+    {
+      "id": "p-b338ed0c5119b66dd1dc",
+      "title": "An Accurate and Interpretable Hyper Graph Neural Network for GBM Survival Prediction",
+      "authors": [
+        "Mushahid Intesum"
+      ],
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.25088",
+          "url": "https://arxiv.org/abs/2609.25088",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "Sheaf超图神经网络",
+        "临床概念瓶颈",
+        "EST解释忠实性正则",
+        "有向非对称消息传递",
+        "GBM生存预测"
+      ],
+      "method": "通过Sheaf超图上的有向非对称消息传递建模组织块高阶关系，以临床概念瓶颈约束表示，并用EST正则惩罚不忠实解释，用于GBM生存预测。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:07:14.225370+00:00"
+    },
+    {
+      "id": "p-afcf6cec3b0dfdba8819",
+      "title": "Enhancing speech representation learning with cross-modal knowledge transfer with HGNN under low resource settings: the case study of Yemba",
+      "authors": [
+        "Yannick Yomie Nzeuhang",
+        "Paulin Melatagia Yonta",
+        "Marie Tahon"
+      ],
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.23194",
+          "url": "https://arxiv.org/abs/2609.23194",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "异构图神经网络（HGNN）",
+        "声学—语言异构节点",
+        "跨模态消息传递",
+        "声学表示学习",
+        "孤立词识别"
+      ],
+      "method": "将声学与语言实体建模为统一异构图中的不同节点类型，通过HGNN消息传递将语言知识显式迁移至声学节点，学习声学表示，并用于低资源条件下的孤立词识别。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:07:13.738895+00:00"
+    },
+    {
+      "id": "p-6bcb5f267964f2fd0771",
+      "title": "CurvFlow-DTA: dual-graph discrete Ricci curvature flow for drug--target affinity prediction",
+      "authors": [
+        "Jicheng Ma",
+        "Yunyan Yang",
+        "Juan Zhao",
+        "Liang Zhao"
+      ],
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.22862",
+          "url": "https://arxiv.org/abs/2609.22862",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "加权Forman曲率流",
+        "配对条件流时域选择",
+        "双分支Flow-GINE",
+        "ESM-2残基接触图",
+        "药物–靶标亲和力预测"
+      ],
+      "method": "在分子图与ESM-2构建的蛋白残基接触图上，预计算不依赖标签的加权Forman曲率流轨迹；由配对条件选择器选取流时域，交给双分支Flow-GINE预测亲和力。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:07:20.720252+00:00"
+    },
+    {
+      "id": "p-62a00b94d282d3603687",
+      "title": "Low resource cross-modal alignment using HGNN to enhance speech representation",
+      "authors": [
+        "Yannick Yomie Nzeuhang",
+        "Marie Tahon",
+        "Paulin Melatagia Yonta"
+      ],
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.23191",
+          "url": "https://arxiv.org/abs/2609.23191",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "异构图神经网络",
+        "跨模态消息传递",
+        "链接预测",
+        "词级语音文本对齐",
+        "词检索"
+      ],
+      "method": "基于异构图神经网络与链接预测进行语音文本空间对齐，通过消息传递将文本模态信息显式转移至语音模态，丰富声学表示，用于词级对齐与词检索。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:07:21.285919+00:00"
+    },
+    {
+      "id": "p-24c2b5d7b535bf048da8",
+      "title": "From IceCube to IT-Sphere: A Hybrid Quantum-Classical GNN for Banking IT Root Cause Analysis",
+      "authors": [
+        "Antonio Greco",
+        "Riccardo Paoletti",
+        "Roberto Cappuccio",
+        "Mario Onorato"
+      ],
+      "published": "2026-09-19",
+      "updated": "2026-09-19",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.22822",
+          "url": "https://arxiv.org/abs/2609.22822",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "DynEdge-VQC混合图网络",
+        "变分量子分类头",
+        "秩1量子读出",
+        "无梯度网格扫描",
+        "银行IT根因分析"
+      ],
+      "method": "以DynEdge为经典图网络骨干，用VQC替换分类头进行银行IT根因分析；采用首量子比特Pauli-Z期望读出，将部署布局下的秩1优化化为一维无梯度网格扫描。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:07:26.213837+00:00"
+    },
+    {
+      "id": "p-7c1e6eb905e039e24bcc",
+      "title": "DEFEAT: Stitching Fragmented File I/O Contexts for Early Ransomware Detection",
+      "authors": [
+        "Muhammad Ejaz Ahmed",
+        "Hyoungshick Kim",
+        "Mohsen Ali Alawami",
+        "Alsharif Abuadbba",
+        "Seyit Camtepe",
+        "Surya Nepal",
+        "Junaid Qadir"
+      ],
+      "published": "2026-09-18",
+      "updated": "2026-09-18",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.21426",
+          "url": "https://arxiv.org/abs/2609.21426",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "因果文件事件分组（FEG）",
+        "属性控制流图（ACFG）",
+        "GNN图嵌入",
+        "无监督行为聚类",
+        "簇级行为标注"
+      ],
+      "method": "将因果相关文件事件聚合为FEG并建模为属性控制流图，通过GNN嵌入和无监督聚类进行簇级标注，用于勒索软件检测。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:07:50.571481+00:00"
+    },
+    {
+      "id": "p-6be0e454a89152de8626",
+      "title": "Learning-to-Optimize as the Missing Architectural Layer of AI-Native Networks",
+      "authors": [
+        "Giambattista Amati",
+        "Federica Mangiatordi",
+        "Pierpaolo Salvo",
+        "Emiliano Pallotti",
+        "Simone Angelini"
+      ],
+      "published": "2026-09-18",
+      "updated": "2026-09-18",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.21519",
+          "url": "https://arxiv.org/abs/2609.21519",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "GNN代理模型",
+        "MILP优化解监督",
+        "Learning-to-Optimize",
+        "离线优化与在线推理",
+        "NR-V2X中继选择"
+      ],
+      "method": "将MILP求解器离线生成的优化解作为监督信号训练GNN代理模型，通过在线推理完成NR-V2X中继选择。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:07:34.881785+00:00"
+    },
+    {
+      "id": "p-3730380b5e3ade77d564",
+      "title": "Particle Competition and Cooperation for Robust Graph Convolutional Network Learning Under Label Noise",
+      "authors": [
+        "Fabricio Breve"
+      ],
+      "published": "2026-09-18",
+      "updated": "2026-09-18",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.22053",
+          "url": "https://arxiv.org/abs/2609.22053",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "PCC+GCN",
+        "粒子竞争与合作",
+        "标签保留、移除与重分配",
+        "特征k近邻图增强",
+        "标签噪声鲁棒学习"
+      ],
+      "method": "先用PCC的粒子支配动态识别可疑标注节点，保留、移除或重分配其标签；PCC图可加入基于特征的k近邻边，再用修正标签、原始图及节点特征训练GCN以应对标签噪声。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:07:38.581492+00:00"
+    },
+    {
+      "id": "p-1fe19ab968fc7b6d31dc",
+      "title": "M2G-LLM: Enhancing Clinical Prediction via Multimodal Graph Reasoning and LLM Context Injection",
+      "authors": [
+        "Inyoung Choi",
+        "Sukwon Yun",
+        "Jiayi Xin",
+        "Jie Peng",
+        "Tianlong Chen",
+        "Qi Long"
+      ],
+      "published": "2026-09-18",
+      "updated": "2026-09-18",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.21164",
+          "url": "https://arxiv.org/abs/2609.21164",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "LLM中间层上下文注入",
+        "多模态GNN",
+        "就诊时序关系建模",
+        "临床相似患者间信息传播",
+        "异构数据对齐"
+      ],
+      "method": "利用GNN建模患者就诊时序关系，在临床相似患者间传播信息并对齐异构数据，形成多模态上下文向量；将其注入LLM中间层，联合推理文本与非文本模态以进行临床预测。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:07:45.324023+00:00"
+    },
+    {
+      "id": "p-f5d2a5f39c31fc7a95be",
+      "title": "EnSol: an environment-aware graph neural network for molecular solubility prediction",
+      "authors": [
+        "Thao Nguyen",
+        "Saman Shafaei",
+        "Zhengyi Zhang",
+        "Huimin Zhao",
+        "Heng Ji"
+      ],
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.21151",
+          "url": "https://arxiv.org/abs/2609.21151",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "溶质–溶剂交叉注意力",
+        "温度逐特征调制",
+        "混合密度网络",
+        "双分子图表示",
+        "溶解度分布预测"
+      ],
+      "method": "EnSol分别学习溶质与溶剂的分子图表示，以交叉注意力建模二者相互作用；通过逐特征调制将温度融入溶剂环境，再用混合密度网络预测溶解度分布，表征温度依赖性与实验不确定性。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:07:53.275645+00:00"
+    },
+    {
+      "id": "p-9eeb607adaf01111c0c6",
+      "title": "Quantum Graph Convolutional Networks: Implementation and Trainability Analysis",
+      "authors": [
+        "Paul San Sebastian Sein",
+        "Theodor Iosif",
+        "Tilen G. Limbäck-Stokin",
+        "Kin Ian Lo",
+        "Yidong Liao"
+      ],
+      "published": "2026-09-17",
+      "updated": "2026-09-17",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.19983",
+          "url": "https://arxiv.org/abs/2609.19983",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "量子SGC与LGC",
+        "QGNN框架",
+        "成本梯度分析",
+        "经典可模拟性分析",
+        "半监督图学习"
+      ],
+      "method": "基于QGNN框架实现量子SGC与LGC，通过量子模拟开展半监督图学习并与经典基线比较；利用成本梯度分析可训练性，结合经典可模拟性研究考察训练稳健区间。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:07:54.912670+00:00"
+    },
+    {
+      "id": "p-c6a0b6720e69952df2ae",
+      "title": "Hyperbolic Graph Representation Learning for Differential Diagnosis on Biomedical Knowledge Graphs",
+      "authors": [
+        "Pietro Miotto",
+        "Lucia Mellini",
+        "Tommaso Marzi",
+        "Cesare Alippi",
+        "Elena Casiraghi",
+        "Alberto Paccanaro",
+        "Giorgio Valentini",
+        "Mauricio Soto-Gomez"
+      ],
+      "published": "2026-09-16",
+      "updated": "2026-09-16",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.18481",
+          "url": "https://arxiv.org/abs/2609.18481",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "双曲图表示学习",
+        "患者整合异构图",
+        "层级与横向关联",
+        "链接预测",
+        "孟德尔病鉴别诊断"
+      ],
+      "method": "使用双曲嵌入表示融合本体层级、横向关联及患者的异构生物医学图，通过链接预测为每位患者排序候选疾病，用于孟德尔病鉴别诊断。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:11:41.738911+00:00"
+    },
+    {
+      "id": "p-9f3534546085a8453768",
+      "title": "ReDIL-GNN: Resynthesis Domain Incremental Learning for Circuit Graph Neural Networks",
+      "authors": [
+        "Rupesh Raj Karn",
+        "Johann Knechtel",
+        "Ozgur Sinanoglu"
+      ],
+      "published": "2026-09-16",
+      "updated": "2026-09-16",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.18595",
+          "url": "https://arxiv.org/abs/2609.18595",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "ReDIL-GNN",
+        "RAI适应性评估",
+        "重综合域增量学习",
+        "保持感知适应",
+        "电路图GNN"
+      ],
+      "method": "针对电路图GNN的重综合域迁移，随新综合风格进行域增量学习；RAI结合适应需求、源等价可恢复性、结构覆盖与更新兼容性，指导模型复用、保持感知适应或延后更新。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:11:55.575570+00:00"
+    },
+    {
+      "id": "p-8d4ec45556e1f3a7be07",
+      "title": "Search for Visible Dark Photon Decays at the Future SHINE Facility with the DarkSHINE Experiment",
+      "authors": [
+        "Zejia Lu",
+        "Huayang Wang",
+        "Xiang Chen",
+        "Jiahui Wu",
+        "Yulei Zhang",
+        "Liang Li"
+      ],
+      "published": "2026-09-16",
+      "updated": "2026-09-16",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.18534",
+          "url": "https://arxiv.org/abs/2609.18534",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "TrackNet",
+        "图神经网络",
+        "位移顶点筛选",
+        "瞬发本底抑制",
+        "暗光子可见衰变搜索"
+      ],
+      "method": "采用基于图神经网络的TrackNet算法，结合近置径迹探测器和位移顶点筛选，抑制电子对产生与光子转换的瞬发本底，用于暗光子可见衰变搜索。",
+      "confidence": "medium",
+      "summarized_at": "2026-09-26T13:11:53.889059+00:00"
+    },
+    {
+      "id": "p-81c438563d37f83cdae6",
+      "title": "ALIGNN 2.0: A Unified Line-Graph Neural Network Framework for Materials Screening, Force Fields, Inverse Design, Spectroscopy, and Microscopy",
+      "authors": [
+        "Jaehyung Lee",
+        "Charles Rhys Campbell",
+        "Akshaya Ajith",
+        "Sergei V. Kalinin",
+        "Christopher Wolverton",
+        "Kamal Choudhary"
+      ],
+      "published": "2026-09-16",
+      "updated": "2026-09-16",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.19487",
+          "url": "https://arxiv.org/abs/2609.19487",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "ALIGNN 2.0",
+        "显式线图消息传递",
+        "半径图与kNN图",
+        "统一多任务图预测",
+        "条件晶体扩散去噪"
+      ],
+      "method": "以半径图或kNN图表示原子邻域并构建线图，通过显式线图消息传递，在统一图表示下预测材料属性、光谱与力场，并作为条件晶体扩散模型的去噪器。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:12:05.870028+00:00"
+    },
+    {
+      "id": "p-6ecd29bdca754f9afcc8",
+      "title": "Stable Filters for Generative Modeling of Graph Signals",
+      "authors": [
+        "Martin Schmidt",
+        "Gonzalo Mateos"
+      ],
+      "published": "2026-09-16",
+      "updated": "2026-09-16",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.18759",
+          "url": "https://arxiv.org/abs/2609.18759",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "稳定图滤波器",
+        "图滤波与GNN联合漂移",
+        "Wasserstein稳定性界",
+        "连续时间生成模型",
+        "图信号生成"
+      ],
+      "method": "将图滤波器与学习到的GNN组合为连续时间图信号生成模型的漂移项，推导相对图扰动的Wasserstein稳定性界，并据此设计保留热扩散平滑性的稳定图滤波器。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:12:07.007991+00:00"
+    },
+    {
+      "id": "p-1e593293d767d0850645",
+      "title": "GNN-Accelerated Mixed-Integer Dual MPC for Interactive Driving",
+      "authors": [
+        "Yidan Zhu",
+        "Shuhao Qi",
+        "Luyao Zhang",
+        "Sofie Haesaert",
+        "Jonas Mårtensson"
+      ],
+      "published": "2026-09-16",
+      "updated": "2026-09-16",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.18679",
+          "url": "https://arxiv.org/abs/2609.18679",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "GNN机动决策预测",
+        "高置信度整数决策固定",
+        "混合整数双重MPC",
+        "交互场景树",
+        "多车交互驾驶"
+      ],
+      "method": "在采样对手交互的场景树上联合优化离散机动与连续运动；用GNN预测最优机动决策，固定高置信度预测后求解缩减的混合整数双重MPC问题。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:12:15.356998+00:00"
+    },
+    {
+      "id": "p-178276a6e0fce2b52cd0",
+      "title": "Not All Nodes Are Created Equal: Homophily-Aware Stratification for Stable GNN Evaluation",
+      "authors": [
+        "Naga Venkata Sai Jitin Jami",
+        "Thomas Altstidl",
+        "Sebastian Hoefler",
+        "Jonas Mueller",
+        "Dario Zanca",
+        "Bjoern Eskofier",
+        "Heike Leutheuser"
+      ],
+      "published": "2026-09-16",
+      "updated": "2026-09-16",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.19210",
+          "url": "https://arxiv.org/abs/2609.19210",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "同配性感知分层",
+        "类别标签次级分层",
+        "拓扑感知交叉验证",
+        "GNN评估稳定性",
+        "传导式节点分类"
+      ],
+      "method": "以节点局部同配性为主分层轴、类别标签为次分层轴构建交叉验证折，使各折兼顾关系一致性与类别分布，用于稳定GNN传导式节点分类评估。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:12:18.552988+00:00"
+    },
+    {
+      "id": "p-cde936c7871781a3a7d0",
+      "title": "Structural Negative Transfer in Federated Graph Neural Networks: Diagnosis, Causal Investigation, and the Limits of Divergence-Aware Mitigation",
+      "authors": [
+        "Chethana Prasad Kabgere",
+        "Shylaja SS"
+      ],
+      "published": "2026-09-15",
+      "updated": "2026-09-15",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.16977",
+          "url": "https://arxiv.org/abs/2609.16977",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "联邦GNN结构负迁移",
+        "拓扑隔离干预",
+        "结构盲匹配对照",
+        "无标签结构统计",
+        "度散度诊断"
+      ],
+      "method": "针对客户端图拓扑差异引发的联邦GNN负迁移，用训练前无标签结构统计诊断，并以拓扑隔离干预及结构盲匹配对照检验因果机制与缓解方案。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:12:37.703047+00:00"
+    },
+    {
+      "id": "p-c5a4a59784c9febcc502",
+      "title": "Graph neural networks for exoplanet atmospheres",
+      "authors": [
+        "Antonia Vojtekova",
+        "Kai Hou Yip",
+        "Ingo P. Waldmann",
+        "Nikolaos Nikolaou",
+        "Olivia Venot",
+        "Ahmed Faris Al-Refaie",
+        "Bruno Merín"
+      ],
+      "published": "2026-09-15",
+      "updated": "2026-09-15",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.17894",
+          "url": "https://arxiv.org/abs/2609.17894",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "化学反应网络GNN",
+        "温度依赖反应速率边",
+        "化学路径信息传播",
+        "化学物种节点",
+        "非平衡丰度预测"
+      ],
+      "method": "以化学物种为节点、温度依赖的反应速率为边构建反应图，使信息沿化学路径传播，训练GNN代理模型预测系外行星大气的非平衡化学丰度。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:12:28.461827+00:00"
+    },
+    {
+      "id": "p-8facaa24c827ac803e17",
+      "title": "Repurposing Unified Topological Signatures for Graph Representation Learning",
+      "authors": [
+        "Sanyam Sanjay Jain",
+        "Anshika Krishnatray",
+        "Aditya Sharma",
+        "Vinti Agarwal"
+      ],
+      "published": "2026-09-15",
+      "updated": "2026-09-15",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.17061",
+          "url": "https://arxiv.org/abs/2609.17061",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "持久同调拓扑签名",
+        "Graph_UTS与Embedding_UTS",
+        "UTS-Aug读出增强",
+        "UTS-Reg拓扑正则",
+        "UTS-Pool拓扑池化"
+      ],
+      "method": "以持久同调提取输入图的静态拓扑签名与演化嵌入的动态拓扑签名，通过读出特征增强、约束表示坍塌的拓扑正则及保留结构关键节点的拓扑引导池化融入GNN训练，用于图分类。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:12:44.682995+00:00"
+    },
+    {
+      "id": "p-815a9db5a302ee3ea8a6",
+      "title": "SEMA-GUARD: Semantic and Graph-Based Vulnerability Detection in Assembly Code",
+      "authors": [
+        "Halil Dursunoglu",
+        "Kaan Sulkalar"
+      ],
+      "published": "2026-09-15",
+      "updated": "2026-09-15",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.17254",
+          "url": "https://arxiv.org/abs/2609.17254",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "语义增强控制流图",
+        "GNN",
+        "栈操作与内存访问语义",
+        "数据流信息",
+        "汇编代码漏洞检测"
+      ],
+      "method": "将栈操作、内存访问及数据流等低层执行语义加入控制流图表示，结合语义分析与GNN识别汇编代码中的漏洞。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:12:46.430446+00:00"
+    },
+    {
+      "id": "p-73df3a80869495657909",
+      "title": "Unified Heterogeneous Graph Neural Network solver for Power Flow, Optimal Power Flow and State Estimation",
+      "authors": [
+        "Ferran Bohigas-Daranas",
+        "Hamid Latif-Martínez",
+        "Eduardo Prieto-Araujo",
+        "Oriol Gomis-Bellmunt",
+        "Pere Barlet-Ros"
+      ],
+      "published": "2026-09-15",
+      "updated": "2026-09-15",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.16738",
+          "url": "https://arxiv.org/abs/2609.16738",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "异构残差门控图卷积网络",
+        "共享骨干网络",
+        "多任务联合训练",
+        "电网可复用表示学习",
+        "潮流、最优潮流与状态估计"
+      ],
+      "method": "采用异构残差门控图卷积网络，以共享骨干学习电网行为的可复用表示；在多种拓扑和负载条件下联合训练，同时估计潮流、最优潮流与电网状态。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:12:52.085533+00:00"
+    },
+    {
+      "id": "p-6d2205db5f04c14c6d1d",
+      "title": "SpecReuse: Spectral Graph Reuse for Efficient Vision GNN Inference on FPGAs",
+      "authors": [
+        "Isabella Bernhardt Eiliya",
+        "Anvitha Ramachandran",
+        "Dhruv Parikh",
+        "Viktor Prasanna"
+      ],
+      "published": "2026-09-15",
+      "updated": "2026-09-15",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.17718",
+          "url": "https://arxiv.org/abs/2609.17718",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "SpecReuse",
+        "谱描述符漂移阈值",
+        "跨层图复用",
+        "轻量级FPGA架构",
+        "视觉GNN推理"
+      ],
+      "method": "SpecReuse提取中间特征的紧凑谱描述符，漂移低于校准阈值时复用已构建图；通过FPGA上的轻量级谱描述符提取与复用控制硬件，加速视觉GNN推理。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:13:02.706623+00:00"
+    },
+    {
+      "id": "p-23ab515f26dfe69c6a47",
+      "title": "Robust and Efficient AI Frameworks for Scalable Material Design and Property Prediction",
+      "authors": [
+        "Kishalay Das"
+      ],
+      "published": "2026-09-15",
+      "updated": "2026-09-15",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.17646",
+          "url": "https://arxiv.org/abs/2609.17646",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "无监督图自编码",
+        "自监督图预训练",
+        "知识蒸馏",
+        "图文本多模态学习",
+        "晶体性质预测"
+      ],
+      "method": "通过无监督图自编码学习晶体表示，自监督图预训练捕获原子连接、化学属性及全局结构，并以知识蒸馏迁移至性质预测器；联合建模晶体图与文本以丰富表示。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:13:01.635073+00:00"
+    },
+    {
+      "id": "p-fb548209f3f48f6c24a9",
+      "title": "Recurrent Graph Neural Networks with Set-Based Aggregation",
+      "authors": [
+        "Blai Bonet"
+      ],
+      "published": "2026-09-14",
+      "updated": "2026-09-14",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.15932",
+          "url": "https://arxiv.org/abs/2609.15932",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "集合式聚合",
+        "循环GNN",
+        "权重可检验条件",
+        "网络与逻辑公式双向编译",
+        "模态μ演算"
+      ],
+      "method": "研究集合式聚合的循环GNN，给出权重可检验的充分条件，将满足条件的网络与逻辑公式双向编译，并刻画其与可达性和安全性性质布尔闭包的有效等价。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:13:11.794461+00:00"
+    },
+    {
+      "id": "p-f35bcf2847dd500974f6",
+      "title": "End-to-End Cell Detection via Instance-aware Graph Modeling",
+      "authors": [
+        "Ruochen Liu",
+        "Yalin Zheng",
+        "Jingxin Liu",
+        "Jianfeng Zhang",
+        "Shoujun Huang",
+        "Dexing Kong",
+        "Haofeng Li",
+        "Wei Lou"
+      ],
+      "published": "2026-09-14",
+      "updated": "2026-09-14",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.15354",
+          "url": "https://arxiv.org/abs/2609.15354",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "实例感知图网络",
+        "选择性状态空间转移",
+        "相似性与空间距离联合构图",
+        "可学习查询实例表示",
+        "自适应实例筛选"
+      ],
+      "method": "以图像块特征生成可学习查询表示细胞，融合特征相似性与空间距离构图；经自适应实例筛选、特征重组及图聚合，以视觉线索驱动选择性状态空间转移，端到端完成细胞检测与分类。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:13:13.731006+00:00"
+    },
+    {
+      "id": "p-e5eac345f9c181321e5a",
+      "title": "A 25-$μ$s/inf Event-driven Graph Neural Network Processor with Spatiotemporal Caching and Spline Convolution for Ultra-low-latency AI at the Edge",
+      "authors": [
+        "Adrian Kneip",
+        "Martin Lefebvre",
+        "Daniel Gehrig",
+        "Victoria Catalán Pastor",
+        "Davide Scaramuzza",
+        "Marian Verhelst",
+        "Charlotte Frenkel"
+      ],
+      "published": "2026-09-14",
+      "updated": "2026-09-14",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.15241",
+          "url": "https://arxiv.org/abs/2609.15241",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "邻居并行样条卷积",
+        "感兴趣区域时空缓存",
+        "2D/3D分离存储层次",
+        "EV-GNN加速器",
+        "DVS事件推理"
+      ],
+      "method": "ETHEREAL面向DVS事件的EV-GNN推理，采用邻居并行样条卷积引擎，并结合2D/3D分离存储层次与感兴趣区域时空缓存执行计算和访存。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:13:12.422553+00:00"
+    },
+    {
+      "id": "p-e53fe6e70c772b52e4f2",
+      "title": "ProIQA: A Process-Based Framework for Fine-Grained Math Item Quality Assessment",
+      "authors": [
+        "Junkai Tong",
+        "Mingjia Li",
+        "Haoran Chen",
+        "Yaoyu Jiang",
+        "Hanjie Ge",
+        "Yixuan Wang",
+        "Hong Qian"
+      ],
+      "published": "2026-09-14",
+      "updated": "2026-09-15",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.15292",
+          "url": "https://arxiv.org/abs/2609.15292",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "题干与求解双视图融合",
+        "层次推理树构建",
+        "GNN拓扑与过程语义编码",
+        "LLM推理结构提取",
+        "数学题细粒度质量评估"
+      ],
+      "method": "利用LLM从解答构建层次推理树，以GNN编码树的拓扑依赖和过程语义，再通过双视图架构融合求解表示与题干语义，评估数学题的知识概念、难度和学科能力。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:13:21.292984+00:00"
+    },
+    {
+      "id": "p-c4df5c5d8ed37417b1da",
+      "title": "ProtoGuide: Prototype-Driven Guidance for Class-Conditional Graph Generation",
+      "authors": [
+        "Salvatore Romano",
+        "Marco Grassia",
+        "Pietro Liò",
+        "Giuseppe Mangioni"
+      ],
+      "published": "2026-09-14",
+      "updated": "2026-09-14",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.15239",
+          "url": "https://arxiv.org/abs/2609.15239",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "ProtoGuide",
+        "原型对比梯度引导",
+        "冻结孪生GNN",
+        "可微软邻接矩阵",
+        "类条件离散图扩散"
+      ],
+      "method": "将反向扩散的逐边输出松弛为可微软邻接矩阵，经冻结孪生GNN嵌入后对照目标类原型及最近竞争者评分；将余弦调度衰减的逐边梯度注回去噪器输出，实现全组件冻结的类条件图生成。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:13:22.242426+00:00"
+    },
+    {
+      "id": "p-a9aece1b88e6841b0472",
+      "title": "Multi-Task Graph Neural Network Predictions of Auger-Electron and X-ray Photoelectron Spectroscopy",
+      "authors": [
+        "Adam E. A. Fouda",
+        "Patrick Phillips",
+        "Phay J. Ho"
+      ],
+      "published": "2026-09-14",
+      "updated": "2026-09-14",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.16339",
+          "url": "https://arxiv.org/abs/2609.16339",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "多任务GNN",
+        "不确定性损失加权",
+        "共享图嵌入",
+        "任务间归纳知识迁移",
+        "俄歇与XPS联合预测"
+      ],
+      "method": "以共享图嵌入联合预测俄歇电子与X射线光电子能谱，利用两任务的物理关联实现归纳知识迁移，并通过不确定性加权学习两项损失的权重。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:13:23.724168+00:00"
+    },
+    {
+      "id": "p-87056777aef67ced6dcf",
+      "title": "Complete Suffix Prediction for Recommendation via Latent Retrieval over Process Graphs",
+      "authors": [
+        "Sarra Madad",
+        "Myriam Maumy",
+        "Fr{é}d{é}ric Bertrand",
+        "Yoann Valero"
+      ],
+      "published": "2026-09-14",
+      "updated": "2026-09-14",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.15692",
+          "url": "https://arxiv.org/abs/2609.15692",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "边条件GNN",
+        "后缀潜空间检索",
+        "重构与对比联合目标",
+        "流程感知难负样本",
+        "谱归一化Lipschitz约束"
+      ],
+      "method": "将前缀与后缀表示为有向属性图，用边条件GNN编码；以重构和对比联合目标及流程感知难负样本训练预测器，将前缀映射至后缀潜空间检索，并用谱归一化约束编码器与预测器。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:13:33.599146+00:00"
+    },
+    {
+      "id": "p-5b5a699c0aea0a762c35",
+      "title": "LiftGCN: Efficient Energy-Preserving Graph Learning via Joukowski Spectral Lifting for Finite Element Stress Prediction",
+      "authors": [
+        "Chen Zeng",
+        "Qiao Wang"
+      ],
+      "published": "2026-09-14",
+      "updated": "2026-09-14",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.14977",
+          "url": "https://arxiv.org/abs/2609.14977",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "Joukowski谱提升",
+        "二阶递推",
+        "稀疏邻域聚合",
+        "局部非线性残差",
+        "有限元应力预测"
+      ],
+      "method": "将归一化图算子的实谱经Joukowski关系映射至单位圆，以二阶递推实现谱变换；每层一次稀疏邻域聚合结合局部非线性残差，用于有限元应力预测。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:13:36.310669+00:00"
+    },
+    {
+      "id": "p-c4cd9e9c61fd584a2ced",
+      "title": "GNN4PPM: Multi-Target Predictive Process Monitoring with Relational Graph Convolutional Networks",
+      "authors": [
+        "Ana Costa",
+        "Johannes Mäkelburg",
+        "Luise Pufahl"
+      ],
+      "published": "2026-09-13",
+      "updated": "2026-09-13",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.14534",
+          "url": "https://arxiv.org/abs/2609.14534",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "R-GCN",
+        "异构知识图谱",
+        "RDF事件日志表示",
+        "多目标联合预测",
+        "完整事件载荷预测"
+      ],
+      "method": "将事件日志按RDF语义表示为异构知识图谱，使用关系图卷积网络（R-GCN）训练嵌入，一次性预测所有后续事件及其完整数据载荷。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:13:34.172661+00:00"
+    },
+    {
+      "id": "p-6a20fe85d228f04165ee",
+      "title": "A Graph Neural Network Surrogate Model for Incident-Based Travel Time Prediction Under Limited Sensor Data",
+      "authors": [
+        "Abhilasha Saroj",
+        "Natalie Myers",
+        "Haoran Niu"
+      ],
+      "published": "2026-09-13",
+      "updated": "2026-09-13",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.14678",
+          "url": "https://arxiv.org/abs/2609.14678",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "时空图卷积网络（STGCN）",
+        "事故场景增广训练",
+        "信号交叉口图",
+        "稀疏方向交通流量",
+        "路径级旅行时间预测"
+      ],
+      "method": "将129个信号交叉口表示为图，以方向交通流量为输入，用STGCN联合学习空间依赖与时间演化；在无事故仿真基础上加入车道阻塞场景训练，预测事故影响下的路径级旅行时间。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T13:13:46.888914+00:00"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "repository": "yang3kc/daily_arxiv_digest",
+  "commit": "9d19de2534fa9d89c3904128891779a2d32056d8",
+  "files": [
+    "skills/arxiv-fetch/scripts/fetch_arxiv.py",
+    "LICENSE"
+  ],
+  "modified": false
+}

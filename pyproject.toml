@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "awesome-gnn-digest"
+version = "0.1.0"
+description = "Automated GNN paper discovery and grounded LLM digests"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+gnn-digest = "gnn_digest.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["gnn_digest*"]
