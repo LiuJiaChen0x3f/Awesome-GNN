@@ -137,6 +137,17 @@ class PipelineTests(unittest.TestCase):
             self.assertNotIn('abstract',public['papers'][0])
             self.assertFalse(public['report']['sources']['crossref']['ok'])
 
+    def test_queries_are_forwarded_to_source_adapters(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=self.setup_root(tmp)
+            captured=[]
+            def fetch(config, *args):
+                captured.append(config['queries'])
+                return [sample()], {'mode':'test'}
+            with patch.dict('gnn_digest.cli.FETCHERS', {'arxiv': fetch, 'crossref': lambda *a: ([], {'mode':'test'})}):
+                self.assertEqual(run(self.args(root)), 0)
+            self.assertEqual(captured, [read_json(root/'config.json', {})['queries']])
+
     def test_all_sources_failed_preserves_archive(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=self.setup_root(tmp)

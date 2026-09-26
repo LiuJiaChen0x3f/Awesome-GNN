@@ -46,6 +46,8 @@
 - 最终检查：18 项 unittest、`node --check site/app.js`、`python run.py build`、`git diff --check` 均通过。
 - 检索逻辑已改为 LLM 动态规划：`SearchPlanner` 使用 `prompts/search.en.txt`，每次根据日期窗口、GNN主题和 CCF venue 生成4至8个检索短语，再传给 arXiv/Crossref；`data/last_run.json` 保存本次 `search_queries`。固定 `config.json` 查询词仅作为无LLM采集时的兼容回退，不参与正常 LLM 检索。
 - 动态检索真实验证：LLM 生成 8 个短语，arXiv 28 个候选、Crossref 4 个候选；3篇验证预算下因已有缓存实际重算1篇，其余结果复用有效缓存。
+- 新增本地交互式搜索：编辑 `prompts/search.request.txt` 后运行 `python run.py search --limit 5`，固定文件内容作为用户研究需求，由 LLM 规划并直接返回多篇结果；动态查询现在会同时传入 arXiv/Crossref/OpenAlex 适配器，而不是只用于本地过滤。该模式不依赖 GitHub Actions，API 配置只从本机 `.env` 读取。
+- 交互式搜索真实验证：`search --limit 3` 生成 8 个查询，arXiv/Crossref 分别返回 3/2 个候选，并输出 3 个结果；由于摘要缓存，本轮实际新总结 1 篇。
 
 ## 当前真实限制
 

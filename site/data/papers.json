@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-26T14:27:57.075019+00:00",
+  "generated_at": "2026-09-26T14:44:05.420796+00:00",
   "report": {
-    "started_at": "2026-09-26T14:26:37.386060+00:00",
+    "started_at": "2026-09-26T14:43:05.844581+00:00",
     "window": {
       "since": "2026-09-13",
       "until": "2026-09-26"
@@ -10,37 +10,37 @@
     "sources": {
       "arxiv": {
         "ok": true,
-        "fetched": 81,
-        "candidates": 28,
+        "fetched": 0,
+        "candidates": 0,
         "mode": "api",
         "truncated": false
       },
       "crossref": {
         "ok": true,
-        "fetched": 150,
-        "candidates": 4,
+        "fetched": 144,
+        "candidates": 1,
         "mode": "api",
         "truncated": true
       }
     },
     "llm_enabled": true,
     "search_queries": [
-      "heterogeneous graph neural network",
-      "temporal graph neural network",
-      "graph structure learning",
-      "graph neural network pretraining",
-      "knowledge graph reasoning",
-      "dynamic graph representation learning",
-      "graph neural network robustness",
-      "multimodal graph learning"
+      "graph transformer long range dependencies",
+      "heterogeneous graph neural network recommendation",
+      "graph contrastive learning node classification",
+      "temporal graph neural network link prediction",
+      "graph structure learning robustness",
+      "equivariant graph neural network molecular modeling",
+      "graph neural network oversquashing mitigation",
+      "graph foundation model transfer learning"
     ],
-    "deduplicated": 32,
-    "finished_at": "2026-09-26T14:27:57.075019+00:00",
-    "llm_processed": 1,
-    "total": 89,
+    "deduplicated": 1,
+    "finished_at": "2026-09-26T14:44:05.420796+00:00",
+    "llm_processed": 0,
+    "total": 90,
     "statuses": {
       "missing_abstract": 5,
-      "ready": 81,
+      "ready": 82,
       "irrelevant": 2,
       "insufficient": 1
     },
@@ -256,6 +256,38 @@
       "status": "missing_abstract",
       "keywords": [],
       "method": ""
+    },
+    {
+      "id": "p-dc77331fae8c0f65b9f5",
+      "title": "Inductive link prediction based on directed subgraphs reasoning",
+      "authors": [
+        "Bin Yang",
+        "Mengqi Shi"
+      ],
+      "published": "2026-09-25",
+      "updated": "2026-09-25",
+      "venue": "International Conference on Computer Vision, Graphics, and Artificial Intelligence (CVGAI 2026)",
+      "publication_type": "conference",
+      "ccf_venue": false,
+      "sources": [
+        {
+          "name": "crossref",
+          "id": "10.1117/12.3127841",
+          "url": "https://doi.org/10.1117/12.3127841",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "有向个性化PageRank",
+        "有向子图推理",
+        "LSTM与Transformer融合",
+        "知识图谱",
+        "归纳式链路预测"
+      ],
+      "method": "利用入出度信息和有向个性化PageRank挖掘有向子图，保留方向并降噪；融合LSTM与Transformer学习节点表示、依赖顺序与上下文，用于知识图谱归纳式链路预测。",
+      "confidence": "high",
+      "summarized_at": "2026-09-26T14:41:27.980076+00:00"
     },
     {
       "id": "p-b2c3e584e3a914ebf2a2",

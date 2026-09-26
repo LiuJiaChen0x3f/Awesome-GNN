@@ -311,6 +311,60 @@
       "ccf_venue": false
     },
     {
+      "id": "p-dc77331fae8c0f65b9f5",
+      "title": "Inductive link prediction based on directed subgraphs reasoning",
+      "abstract": "Inductive link prediction is the problem of inferring about new entities and relations present in dynamic knowledge graphs. Traditional approaches typically depend on Personalized PageRank to select subgraphs but do not consider the directional nature of graphs and cannot take care of asymmetrical links. Also, traditional GNN-based communication of closed subgraphs has limited functionality when dealing with complex relationships between nodes. To solve these issues we suggest the use of directed subgraph reasoning model. The addition of in/out-degrees information is used as a method to mine local directed subgraphs that preserve the structural directionality and minimize noise by employing Directed Personalized PageRank. Moreover, an integration of an LSTM and Transformer architecture is presented to improve the node representations and acquire the order of dependencies and the whole context. The experimental results with public benchmark datasets have shown that DLP is more effective than state-of-the-art baselines on inductive link prediction.",
+      "authors": [
+        "Bin Yang",
+        "Mengqi Shi"
+      ],
+      "published": "2026-09-25",
+      "updated": "2026-09-25",
+      "doi": "10.1117/12.3127841",
+      "arxiv_id": "",
+      "venue": "International Conference on Computer Vision, Graphics, and Artificial Intelligence (CVGAI 2026)",
+      "publication_type": "conference",
+      "sources": [
+        {
+          "name": "crossref",
+          "id": "10.1117/12.3127841",
+          "url": "https://doi.org/10.1117/12.3127841",
+          "date_basis": "publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "有向个性化PageRank",
+        "有向子图推理",
+        "LSTM与Transformer融合",
+        "知识图谱",
+        "归纳式链路预测"
+      ],
+      "method": "利用入出度信息和有向个性化PageRank挖掘有向子图，保留方向并降噪；融合LSTM与Transformer学习节点表示、依赖顺序与上下文，用于知识图谱归纳式链路预测。",
+      "identity_aliases": [
+        "doi:10.1117/12.3127841",
+        "source:crossref:10.1117/12.3127841",
+        "title:inductivelinkpredictionbasedondirectedsubgraphsreasoning"
+      ],
+      "ccf_venue": false,
+      "confidence": "high",
+      "evidence": [
+        "Inductive link prediction is the problem of inferring about new entities and relations present in dynamic knowledge graphs.",
+        "in/out-degrees information is used as a method to mine local directed subgraphs that preserve the structural directionality and minimize noise by employing Directed Personalized PageRank.",
+        "Moreover, an integration of an LSTM and Transformer architecture is presented to improve the node representations and acquire the order of dependencies and the whole context."
+      ],
+      "summary_input_hash": "6684d18a025c8f74d69d4739e6f531d8315ab86aa3bada2b19fb16ac58bec01a",
+      "prompt_hash": "29b1c8ae0bc527290b5a6ab394ce8b9162dd48b6ac1e88e9d6534369c46b8430",
+      "llm_model": "gpt-6-astra",
+      "llm_reasoning_effort": "medium",
+      "summarized_at": "2026-09-26T14:41:27.980076+00:00",
+      "llm_usage": {
+        "prompt_tokens": 894,
+        "completion_tokens": 617,
+        "total_tokens": 1511
+      }
+    },
+    {
       "id": "p-b2c3e584e3a914ebf2a2",
       "title": "Parsing Hierarchical Document Structure with Graph Neural Networks",
       "abstract": "",

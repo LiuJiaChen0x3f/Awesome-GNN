@@ -1,0 +1,1 @@
+Find recent graph neural network papers from the last 14 days. Prioritize CCF conferences and proceedings over journals. Return papers covering distinct current GNN directions, with no more than 5 final results.

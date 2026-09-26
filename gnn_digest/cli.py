@@ -56,6 +56,12 @@ def run(args):
         if not search_prompt_path.exists():
             search_prompt_path = ROOT / "prompts" / "search.en.txt"
         planner = None if args.no_llm else SearchPlanner(config["llm"], search_prompt_path.read_text(encoding="utf-8"))
+        request_path = root / "prompts" / "search.request.txt"
+        if not request_path.exists():
+            request_path = ROOT / "prompts" / "search.request.txt"
+        user_request = request_path.read_text(encoding="utf-8").strip() if args.command == "search" and request_path.exists() else ""
+        if args.command == "search" and not user_request:
+            raise ValueError(f"search request file is empty: {request_path}")
         today = date.fromisoformat(args.until) if args.until else datetime.now(timezone.utc).date()
         days = args.days or config["days"]
         if days < 1:
@@ -64,9 +70,11 @@ def run(args):
         report = {"started_at": datetime.now(timezone.utc).isoformat(), "window": {"since": str(since), "until": str(today)}, "sources": {}, "llm_enabled": engine is not None}
         queries = list(config.get("queries", []))
         if planner and args.command != "summarize":
-            queries = planner.plan({"topic": "graph neural network research", "date_window": {"since": str(since), "until": str(today)}, "ccf_venues": config.get("ccf_venues", []), "fallback_queries": queries})
+            queries = planner.plan({"user_request": user_request or "Find recent graph neural network research.", "date_window": {"since": str(since), "until": str(today)}, "ccf_venues": config.get("ccf_venues", []), "fallback_queries": queries})
             report["search_queries"] = queries
             print(json.dumps({"llm_search_queries": queries}, ensure_ascii=False), flush=True)
+        fetch_config = dict(config)
+        fetch_config["queries"] = queries
         if args.command == "summarize":
             previous = read_json(root / "data" / "last_run.json", {})
             report["sources"] = previous.get("sources", {})
@@ -79,7 +87,7 @@ def run(args):
                     continue
                 print(f"Fetching {name}...", flush=True)
                 try:
-                    found, metadata = FETCHERS[name](config, since, today)
+                    found, metadata = FETCHERS[name](fetch_config, since, today)
                     eligible = [p for p in found if within_window(p, since, today) and candidate(p, queries)]
                     fetched.extend(eligible)
                     report["sources"][name] = {"ok": True, "fetched": len(found), "candidates": len(eligible), **metadata}
@@ -107,13 +115,18 @@ def run(args):
                 p.update(status="pending", keywords=[], method="")
             if engine and not engine.cached(p):
                 eligible.append(p)
+        if args.command == "search":
+            fresh_ids = {p["id"] for p in fetched}
+            eligible = [p for p in eligible if p["id"] in fresh_ids]
+            eligible.sort(key=lambda p: p.get("published", ""), reverse=True)
         if engine:
             # Workers return copies; only the main thread changes and saves the archive.
             def summarize_copy(p):
                 copy = dict(p)
                 engine.summarize(copy)
                 return copy
-            queue = iter(eligible[:config["max_llm_papers"]])
+            budget = args.limit if args.command == "search" else config["max_llm_papers"]
+            queue = iter(eligible[:budget])
             workers = max(1, min(8, config.get("llm_concurrency", 1)))
             with ThreadPoolExecutor(max_workers=workers) as pool:
                 pending = {}
@@ -132,7 +145,7 @@ def run(args):
                         p.update(future.result())
                         processed += 1
                         write_json(state_path, {"schema_version": 1, "papers": papers})
-                        print(f"Summarized {processed}/{min(len(eligible), config['max_llm_papers'])}: {p['id']} {p['status']}", flush=True)
+                        print(f"Summarized {processed}/{min(len(eligible), budget)}: {p['id']} {p['status']}", flush=True)
                         submit_next()
         report.update(finished_at=datetime.now(timezone.utc).isoformat(), llm_processed=processed, total=len(papers), statuses=dict(Counter(p["status"] for p in papers)))
         if engine:
@@ -140,20 +153,29 @@ def run(args):
         write_json(state_path, {"schema_version": 1, "papers": papers})
         write_json(root / "data" / "last_run.json", report)
         export_site(papers, report, root / "site")
+        if args.command == "search":
+            fresh_ids = {p["id"] for p in fetched}
+            results = [p for p in papers if p["id"] in fresh_ids]
+            results.sort(key=lambda p: p.get("published", ""), reverse=True)
+            fields = ("id", "title", "authors", "published", "updated", "venue", "publication_type", "ccf_venue", "sources", "status", "keywords", "method", "confidence", "summarized_at")
+            print(json.dumps({"request_file": str(request_path), "results": [{k: p.get(k) for k in fields} for p in results[:args.limit]]}, ensure_ascii=False, indent=2))
         print(json.dumps(report, ensure_ascii=False, indent=2))
         return 3 if any(p["status"] == "failed" for p in papers) and engine else 0
 
 
 def main():
     parser = argparse.ArgumentParser(description="Discover, deduplicate and summarize GNN papers")
-    parser.add_argument("command", choices=("run", "summarize", "build"), nargs="?", default="run")
+    parser.add_argument("command", choices=("run", "search", "summarize", "build"), nargs="?", default="run")
     parser.add_argument("--root", default=str(ROOT))
     parser.add_argument("--config")
     parser.add_argument("--days", type=int)
     parser.add_argument("--until", help="UTC date YYYY-MM-DD; defaults to actual execution date")
     parser.add_argument("--no-llm", action="store_true", help="Collect metadata without inventing summaries")
+    parser.add_argument("--limit", type=int, default=5, help="Number of interactive search results to return")
     args = parser.parse_args()
     try:
+        if args.limit < 1:
+            raise ValueError("limit must be positive")
         return run(args)
     except (ValueError, RuntimeError, OSError, KeyError) as error:
         print(f"Pipeline error: {error}")
