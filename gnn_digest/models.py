@@ -25,13 +25,14 @@ def arxiv_id(value):
     return match.group(1).lower() if match else ""
 
 
-def paper(*, source, source_id, title, abstract="", authors=None, published="", updated="", url="", doi="", arxiv="", date_basis="publication"):
+def paper(*, source, source_id, title, abstract="", authors=None, published="", updated="", url="", doi="", arxiv="", venue="", publication_type="", date_basis="publication"):
     title = clean(title)
     return {
         "id": "p-" + hashlib.sha256(f"{source}:{source_id}".encode()).hexdigest()[:20],
         "title": title, "abstract": clean(abstract), "authors": authors or [],
         "published": published[:10], "updated": (updated or published)[:10],
         "doi": norm_doi(doi), "arxiv_id": arxiv_id(arxiv),
+        "venue": clean(venue), "publication_type": clean(publication_type),
         "sources": [{"name": source, "id": str(source_id), "url": url, "date_basis": date_basis}],
         "status": "pending", "keywords": [], "method": "",
     }
@@ -82,6 +83,8 @@ def merge_records(records):
             merged[field] = richest[field] or merged.get(field, "")
         for field in ("doi", "arxiv_id"):
             merged[field] = next((p[field] for p in members if p.get(field)), "")
+        merged["venue"] = next((p.get("venue", "") for p in members if p.get("venue")), "")
+        merged["publication_type"] = next((p.get("publication_type", "") for p in members if p.get("publication_type")), "")
         dates = [p["published"] for p in members if p.get("published")]
         merged["published"] = min(dates, default="")
         merged["updated"] = max((p.get("updated", "") for p in members), default="")
@@ -110,3 +113,9 @@ def within_window(p, since, until):
 def candidate(p, queries):
     text = (p["title"] + " " + p["abstract"]).casefold()
     return any(q.casefold() in text for q in queries) or bool(re.search(r"\bgnns?\b", text))
+
+
+def is_ccf_venue(venue, names):
+    if not venue:
+        return False
+    return any(re.search(r"(?<![a-z0-9])" + re.escape(name.casefold()) + r"(?![a-z0-9])", venue.casefold()) for name in names)

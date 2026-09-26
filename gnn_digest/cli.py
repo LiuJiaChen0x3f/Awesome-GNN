@@ -8,7 +8,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from .llm import Summarizer
-from .models import candidate, merge_records, within_window
+from .models import candidate, is_ccf_venue, merge_records, within_window
 from .sources import FETCHERS
 from .storage import export_site, lock, read_json, write_json
 
@@ -83,6 +83,8 @@ def run(args):
                 print(report["error"])
                 return 2
         papers = merge_records(papers + fetched)
+        for p in papers:
+            p["ccf_venue"] = is_ccf_venue(p.get("venue", ""), config.get("ccf_venues", []))
         report["deduplicated"] = len(archive["papers"]) + len(fetched) - len(papers)
         write_json(state_path, {"schema_version": 1, "papers": papers})
         processed = 0

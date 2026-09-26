@@ -11,6 +11,8 @@
   function card(p) {
     const e=node('article',undefined,'card'), meta=node('div',undefined,'card-meta');
     [...new Set(p.sources.map(s=>s.name))].forEach(s=>meta.append(node('span',s,'source-badge')));
+    if(p.venue) meta.append(node('span',p.venue,'venue-badge'));
+    if(p.publication_type) meta.append(node('span',p.publication_type==='conference'?'会议论文':p.publication_type==='journal'?'期刊论文':p.publication_type,'type-badge'));
     const rssOnly=p.sources.every(s=>s.date_basis==='rss_announcement');
     meta.append(node('time',(p.published||'日期未知')+(rssOnly?' · 公告日期':'')));
     meta.append(node('span',labels[p.status]||'待处理',`state-badge ${p.status==='ready'?'':'pending'}`));
@@ -21,15 +23,16 @@
     const bottom=node('div',undefined,'card-bottom'), tags=node('div',undefined,'card-tags');
     p.keywords.forEach(k=>{const b=node('button',k,'chip'+(keyword===k?' active':''));b.setAttribute('aria-pressed',String(keyword===k));b.onclick=()=>selectKeyword(k);tags.append(b);});
     bottom.append(tags);
-    const url=p.sources.map(s=>safeUrl(s.url)).find(Boolean);
-    if(url){const a=node('a','阅读原文 ↗','paper-link');a.href=url;a.target='_blank';a.rel='noopener noreferrer';bottom.append(a);}
+    const pdf=p.sources.map(s=>s.name==='arxiv'&&s.id?`https://arxiv.org/pdf/${encodeURIComponent(s.id)}.pdf`:null).map(s=>safeUrl(s)).find(Boolean);
+    const url=pdf||p.sources.map(s=>safeUrl(s.url)).find(Boolean);
+    if(url){const a=node('a',pdf?'下载 PDF ↗':'打开论文页面 ↗','paper-link');a.href=url;a.target='_blank';a.rel='noopener noreferrer';bottom.append(a);}
     e.append(method,bottom);return e;
   }
   function render() {
     const q=$('search').value.trim().toLocaleLowerCase(), source=$('source').value, days=Number($('period').value), status=$('status').value;
     const cutoff=new Date();cutoff.setUTCDate(cutoff.getUTCDate()-days+1);const since=cutoff.toISOString().slice(0,10);
     let filtered=papers.filter(p=>(!q||[p.title,p.method,...p.keywords,...p.authors].join(' ').toLocaleLowerCase().includes(q))&&(!source||p.sources.some(s=>s.name===source))&&(!days||p.published>=since)&&(!keyword||p.keywords.includes(keyword))&&(!status||(status==='ready'?p.status==='ready':p.status!=='ready')));
-    filtered.sort((a,b)=>$('sort').value==='title'?a.title.localeCompare(b.title):$('sort').value==='oldest'?a.published.localeCompare(b.published):b.published.localeCompare(a.published));
+    filtered.sort((a,b)=>$('sort').value==='ccf'?((b.ccf_venue?1:0)-(a.ccf_venue?1:0))||((b.publication_type==='conference'?1:0)-(a.publication_type==='conference'?1:0))||b.published.localeCompare(a.published):$('sort').value==='title'?a.title.localeCompare(b.title):$('sort').value==='oldest'?a.published.localeCompare(b.published):b.published.localeCompare(a.published));
     $('result-count').textContent=`${filtered.length} 篇`;
     $('papers').replaceChildren(...filtered.slice(0,limit).map(card));
     if(!filtered.length)$('papers').append(node('div','没有符合筛选条件的论文。试试其他关键词或重置筛选。','empty'));
@@ -39,12 +42,13 @@
     document.querySelectorAll('.keyword-cloud button').forEach(b=>{const active=b.dataset.keyword===keyword;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});
   }
   for(const id of ['search','source','period','status','sort'])$(id).addEventListener(id==='search'?'input':'change',()=>{limit=30;render();});
-  $('reset').onclick=()=>{['search','source','period','status'].forEach(id=>$(id).value='');$('sort').value='newest';keyword='';limit=30;render();};
+  $('reset').onclick=()=>{['search','source','period','status'].forEach(id=>$(id).value='');$('sort').value='ccf';keyword='';limit=30;render();};
   $('load-more').onclick=()=>{limit+=30;render();};
   document.addEventListener('keydown',e=>{if(e.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)){e.preventDefault();$('search').focus();}});
   fetch('./data/papers.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error('fetch');return r.json();}).then(data=>{
     if(data.schema_version!==1||!Array.isArray(data.papers))throw new Error('schema');
     papers=data.papers;
+    const ccfOption=node('option','CCF 会议优先');ccfOption.value='ccf';$('sort').prepend(ccfOption);$('sort').value='ccf';
     $('total').textContent=papers.length.toLocaleString();$('ready').textContent=papers.filter(p=>p.status==='ready').length.toLocaleString();
     const sources=[...new Set(papers.flatMap(p=>p.sources.map(s=>s.name)))].sort();$('source-count').textContent=sources.length;
     sources.forEach(s=>{const o=node('option',s);o.value=s;$('source').append(o);});

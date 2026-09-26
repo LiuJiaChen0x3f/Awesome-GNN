@@ -30,7 +30,7 @@ def arxiv(config, since, until):
                 aid = arxiv_id(url)
                 if not aid:
                     raise ValueError("arXiv returned an error entry")
-                papers.append(paper(source="arxiv", source_id=aid, title=entry.findtext("a:title", "", ATOM), abstract=entry.findtext("a:summary", "", ATOM), authors=[a.findtext("a:name", "", ATOM) for a in entry.findall("a:author", ATOM)], published=entry.findtext("a:published", "", ATOM), updated=entry.findtext("a:updated", "", ATOM), doi=entry.findtext("x:doi", "", ATOM), arxiv=aid, url=f"https://arxiv.org/abs/{aid}"))
+                papers.append(paper(source="arxiv", source_id=aid, title=entry.findtext("a:title", "", ATOM), abstract=entry.findtext("a:summary", "", ATOM), authors=[a.findtext("a:name", "", ATOM) for a in entry.findall("a:author", ATOM)], published=entry.findtext("a:published", "", ATOM), updated=entry.findtext("a:updated", "", ATOM), doi=entry.findtext("x:doi", "", ATOM), arxiv=aid, url=f"https://arxiv.org/abs/{aid}", publication_type="preprint"))
             if len(entries) < params["max_results"]:
                 break
         return papers, {"mode": "api", "truncated": len(papers) >= limit}
@@ -49,7 +49,7 @@ def arxiv(config, since, until):
                     continue
                 raw_date = item.findtext("pubDate") or channel_date
                 stamp = parsedate_to_datetime(raw_date).date().isoformat() if raw_date else ""
-                papers.append(paper(source="arxiv", source_id=aid, title=item.findtext("title", ""), abstract=_clean_abstract(item.findtext("description", "")), authors=_parse_authors(item), published=stamp, arxiv=aid, url=f"https://arxiv.org/abs/{aid}", date_basis="rss_announcement"))
+                papers.append(paper(source="arxiv", source_id=aid, title=item.findtext("title", ""), abstract=_clean_abstract(item.findtext("description", "")), authors=_parse_authors(item), published=stamp, arxiv=aid, url=f"https://arxiv.org/abs/{aid}", publication_type="preprint", date_basis="rss_announcement"))
         except Exception:
             failures += 1
         time.sleep(3.1)
@@ -66,15 +66,24 @@ def crossref(config, since, until):
         if remaining <= 0:
             break
         rows = min(per_query, remaining, 1000)
-        params = {"query": query, "filter": f"from-pub-date:{since},until-pub-date:{until}", "sort": "published", "order": "desc", "rows": rows}
-        if os.getenv("CONTACT_EMAIL"):
-            params["mailto"] = os.environ["CONTACT_EMAIL"]
-        data = get_json("https://api.crossref.org/works?" + urlencode(params))["message"]
-        truncated |= data.get("total-results", 0) > rows
-        for item in data["items"]:
-            parts = item.get("published", {}).get("date-parts", [[]])[0]
-            stamp = "-".join(str(x).zfill(4 if i == 0 else 2) for i, x in enumerate((parts+[1, 1])[:3])) if parts else ""
-            papers.append(paper(source="crossref", source_id=item["DOI"], doi=item["DOI"], title=" ".join(item.get("title", [])), abstract=item.get("abstract", ""), authors=[clean(a.get("given", "") + " " + a.get("family", "")) for a in item.get("author", [])], published=stamp, url="https://doi.org/" + item["DOI"]))
+        base_filter = f"from-pub-date:{since},until-pub-date:{until}"
+        batches = [("proceedings-article", max(1, rows * 2 // 3)), (None, rows - max(1, rows * 2 // 3))]
+        for type_filter, batch_rows in batches:
+            if batch_rows <= 0:
+                continue
+            filter_value = base_filter + (f",type:{type_filter}" if type_filter else "")
+            params = {"query": query, "filter": filter_value, "sort": "published", "order": "desc", "rows": batch_rows}
+            if os.getenv("CONTACT_EMAIL"):
+                params["mailto"] = os.environ["CONTACT_EMAIL"]
+            data = get_json("https://api.crossref.org/works?" + urlencode(params))["message"]
+            truncated |= data.get("total-results", 0) > batch_rows
+            for item in data["items"]:
+                parts = item.get("published", {}).get("date-parts", [[]])[0]
+                stamp = "-".join(str(x).zfill(4 if i == 0 else 2) for i, x in enumerate((parts+[1, 1])[:3])) if parts else ""
+                item_type = item.get("type", "")
+                venue = " ".join(item.get("container-title", []))
+                landing = item.get("URL") or ("https://doi.org/" + item["DOI"])
+                papers.append(paper(source="crossref", source_id=item["DOI"], doi=item["DOI"], title=" ".join(item.get("title", [])), abstract=item.get("abstract", ""), authors=[clean(a.get("given", "") + " " + a.get("family", "")) for a in item.get("author", [])], published=stamp, url=landing, venue=venue, publication_type="conference" if item_type == "proceedings-article" else "journal" if item_type == "journal-article" else item_type))
         remaining -= len(data["items"])
         time.sleep(1)
     return papers, {"mode": "api", "truncated": truncated}

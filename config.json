@@ -9,7 +9,9 @@
     "crossref": true,
     "openalex": false
   },
-  "queries": ["graph neural network", "graph convolutional network", "graph transformer", "graph representation learning"],
+  "queries": ["graph neural network", "graph convolutional network", "graph transformer", "graph representation learning", "graph attention network", "graph contrastive learning"],
+  "ccf_venues": ["NeurIPS", "ICML", "ICLR", "KDD", "AAAI", "IJCAI", "WWW", "The Web Conference", "SIGIR", "ACL", "EMNLP", "CVPR", "ICCV", "ECCV", "SIGMOD", "VLDB", "ICDM"],
+  "preferred_publication_types": ["conference", "proceedings-article"],
   "arxiv_categories": ["cs.LG", "cs.AI", "cs.SI", "stat.ML"],
   "llm": {
     "timeout": 180,
