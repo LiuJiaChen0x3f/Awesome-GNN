@@ -53,6 +53,8 @@
 
 ## 当前真实限制
 
+- 2026-09-26 后续提示词调整（覆盖此前排除未录用预印本的规则）：纳入来源为 CCF-A 主会、EMNLP 主会或独立核验的 arXiv 记录；arXiv 不限制会议等级或录用状态，11 个主题 OR 条件保留。arXiv 用 v1 首次提交日期，会议用正式发表日期；两种来源合并后保留日期依据，按窗口内较新的合格事件排序且只返回一条。无已核实合格会议时标签为 arXiv。本轮仅修改两份搜索提示词和 memory.md，未运行检索/LLM，未修改数据、前端或日期过滤代码。
+
 - 2026-09-26 提示词补充：允许范围调整为 CCF-A 主会 + EMNLP 主会（唯一 B 类例外，不含 Findings/workshop）；保持 11 个主题 OR 匹配，按正式会议论文发表日期从新到旧检索、去重后限量，修订/抓取日期不代替发表日期。本轮只改 `prompts/search.request.txt`、`prompts/search.en.txt` 和本记录，未调用 LLM、未采集、未改网页或数据。现有采集代码尚未严格执行这些约束，arXiv 仍按更新日期抓取；后续实现需要会议身份核验、正式发表日期字段及排序对齐。
 
 - 推送后的 GitHub Actions `Test pipeline` 与 `Publish site` 均已成功；Pages 使用 workflow 模式，线上 `https://liujiachen0x3f.github.io/Awesome-GNN/` 返回 HTTP 200。自动采集 workflow 已按用户要求移除。

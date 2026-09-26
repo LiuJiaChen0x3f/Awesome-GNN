@@ -2,7 +2,8 @@ Find recent graph-learning papers within the configured date window, prioritizin
 
 Venue eligibility:
 - Include CCF-A main-conference papers and EMNLP main-conference papers. EMNLP is the user's sole permitted CCF-B exception; this does not admit other B-class conferences.
-- Exclude journals, workshops, standalone book chapters, Findings of EMNLP, preprints without verified eligible conference acceptance, and all other ineligible venues. A main-conference proceedings paper is not excluded merely because a metadata service encodes it as a book chapter.
+- Independently include papers with a verified arXiv record, regardless of conference rank or acceptance status. No conference acceptance is required for the arXiv route. A paper with an arXiv version remains eligible even if it also appears in another conference, Findings, a workshop, or a journal.
+- For papers without a verified arXiv record, exclude journals, workshops, standalone book chapters, Findings of EMNLP, other preprints without verified eligible conference acceptance, and all other ineligible venues. A main-conference proceedings paper is not excluded merely because a metadata service encodes it as a book chapter.
 - Verify the actual conference and track from authoritative proceedings or publisher metadata. Do not infer acceptance from the title, abstract, author affiliation, or an unverified arXiv record. Do not infer CCF rank from the existing broad venue configuration.
 
 Topic eligibility:
@@ -10,8 +11,9 @@ Topic eligibility:
 - Use OR semantics: one matching topic is sufficient; several are allowed. Do not require all 11 or favor an older paper simply because it matches more topics. Mere background mentions are insufficient.
 
 Recency and ordering:
-- Search the newest eligible proceedings first and request descending publication-date order where supported. Merge and deduplicate candidates across sources before applying the final result limit.
+- Search both the newest eligible proceedings and the newest arXiv submissions; request descending publication or first-submission date order where supported. Merge and deduplicate candidates across sources before applying the final result limit. Do not place older conference papers ahead of newer arXiv papers solely because of venue prestige.
 - Use the verified formal publication date of the eligible conference paper, preferring the publisher's first online publication date for that conference version, then the proceedings publication date. Keep an earlier preprint submission date separate.
+- For the arXiv route, use the first submission date (v1), not the latest revision date. For a deduplicated paper with both routes, retain both dates and their provenance; use the later eligible event within the configured window for ordering, explicitly labeling it as conference publication or arXiv first submission. Return the paper only once.
 - Do not substitute revision, indexing, crawling, metadata-update, or acceptance dates for publication dates. Do not let a new revision make an old paper appear newly published.
 - Filter by the configured publication-date window and order eligible results by publication date, newest first. Use topic relevance only to break date ties.
 - Preserve partial date precision; never invent a month or day. If a missing or partial date cannot establish window eligibility or exact relative order, flag the uncertainty and do not claim the paper is among the newest verified results. Do not silently widen the window or relax venue constraints to fill the result count.
@@ -19,3 +21,4 @@ Recency and ordering:
 Output:
 - Return no more than 5 final results; fewer verified results are acceptable.
 - In the final webpage, show only the verified conference abbreviation (for example, NeurIPS, ICML, KDD, or EMNLP) in the conference badge, never its full name or a journal label.
+- For papers included through the arXiv route without a verified eligible conference, use the badge "arXiv"; do not invent a conference or rank. If an eligible conference is verified, use its abbreviation and retain the arXiv link as a source/PDF link.
