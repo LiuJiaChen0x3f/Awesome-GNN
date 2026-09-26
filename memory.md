@@ -19,7 +19,7 @@
 - GitHub Actions：双平台测试、每日09:20北京时间采集与直接Pages发布、main静态文件更新发布。无远程执行记录。
 - 复用skill源文件 `skills/gnn-paper-digest/SKILL.md`；安装器 `scripts/install_skill.py` 已运行，安装到 `C:\Users\19878\.codex\skills\gnn-paper-digest\SKILL.md`。
 - `README.md`（中文运行与部署说明）、`docs/RESEARCH.md`（调研）、`.env.example`、MIT与第三方声明。
-- 已在本目录初始化 Git `main`，远程为 `https://github.com/LiuJiaChen0x3f/Awesome-GNN.git`；本轮待提交并推送。
+- 已在本目录初始化 Git `main`，远程为 `https://github.com/LiuJiaChen0x3f/Awesome-GNN.git`；提交 `049fbeb` 已推送到 `main`。
 
 ## 调研与实际代码复用
 
@@ -43,7 +43,7 @@
 
 ## 当前真实限制
 
-- 线上首次部署和每日 workflow 仍需在本轮推送后观察 GitHub Actions 结果；若仓库权限或 Pages 环境尚未启用，需在 GitHub Settings 中打开对应权限。
+- 推送后的 GitHub Actions `Test pipeline` 与 `Publish site` 均已成功；Pages API 显示 workflow 模式，线上 `https://liujiachen0x3f.github.io/Awesome-GNN/` 返回 HTTP 200。每日 `Update paper digest` workflow 已随代码启用，首次定时运行仍受 GitHub 计划任务延迟影响。
 - 没有OpenAlex key，该适配器未做真实认证联调。官方现有文档允许低额度匿名查询，本项目为无人值守规模访问主动要求key；不要说所有OpenAlex查询都必须key。
 - 没有远程仓库地址，GitHub Actions与Pages尚未实际部署验证。
 - 搜索召回并非全网，Crossref本轮截断；源日期精度可能不同。RSS回退只覆盖公告窗口，使用公告日期并标记date_basis。arXiv按更新日期抓取，旧论文新版本可能收录，但页面显示原发表日期。
