@@ -3,6 +3,7 @@ import hashlib
 import json
 import os
 import re
+import sys
 import time
 from collections import Counter
 from datetime import date, datetime, timedelta, timezone
@@ -127,6 +128,8 @@ def validate_options(options):
 
 
 def search(root, config, args):
+    if hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(encoding='utf-8')
     if args.no_llm:
         raise ValueError('search requires a web-search-capable LLM; use run --no-llm for legacy metadata collection')
     limit = getattr(args, 'limit', 5)

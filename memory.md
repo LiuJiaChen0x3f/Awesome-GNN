@@ -60,6 +60,8 @@
 
 ## 当前真实限制
 
+- 本轮CI修复：Ubuntu测试通过，Windows因直接调用search函数绕过CLI的UTF-8设置而打印中文失败。已在search入口统一UTF-8，并在本机PYTHONIOENCODING=cp1252环境复测；与检索业务规则无关，无须额外付费采集。
+
 - 2026-09-26 快速接口实测（本机当前 gpt-6-astra / medium 配置，共 4 次 HTTP 请求）：Chat Completions 自定义 function tool 强制调用返回正确参数，回传随机 receipt 后模型正确读取，完整往返通过；Responses + `tools: [{"type":"web_search"}]` 返回 completed 的 search/open_page 两次工具记录及 URL 引用，arXiv 标题另行核对一致；Chat Completions + `web_search_options` 虽返回 HTTP 200，但无引用且回答搜索不可用，此路径未通过。测试脚本和脱敏报告位于 gitignored `.local/probe_capabilities.py`、`.local/capability_probe_report.json`。这证明当前接口的最小能力，不代表所有搜索参数或复杂代理流程已验证；尚未接入正式论文流程，未修改论文数据。
 
 - 2026-09-26 后续提示词调整（覆盖此前排除未录用预印本的规则）：纳入来源为 CCF-A 主会、EMNLP 主会或独立核验的 arXiv 记录；arXiv 不限制会议等级或录用状态，11 个主题 OR 条件保留。arXiv 用 v1 首次提交日期，会议用正式发表日期；两种来源合并后保留日期依据，按窗口内较新的合格事件排序且只返回一条。无已核实合格会议时标签为 arXiv。本轮仅修改两份搜索提示词和 memory.md，未运行检索/LLM，未修改数据、前端或日期过滤代码。
