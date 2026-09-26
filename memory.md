@@ -44,6 +44,8 @@
 - 按用户要求进行了两轮每轮 3 篇真实采集/LLM 验证。最终归档 89 篇，其中 79 篇 arXiv 预印本、3 篇会议论文、3 篇期刊、2 篇书章、2 篇未标注类型；本轮样例包含 Hermite 谱图网络、GNN 形式化验证、IMU-ECG 图编码。新增 venue 仅在源元数据提供时显示，CCF 会议名称不能从 arXiv 元数据可靠推断。
 - 新提示词全量重算后状态为：80 篇 `ready`、2 篇 `irrelevant`、1 篇 `insufficient`、1 篇 `failed`、5 篇 `missing_abstract`；失败项不发布模型猜测，后续运行自动重试。
 - 最终检查：18 项 unittest、`node --check site/app.js`、`python run.py build`、`git diff --check` 均通过。
+- 检索逻辑已改为 LLM 动态规划：`SearchPlanner` 使用 `prompts/search.en.txt`，每次根据日期窗口、GNN主题和 CCF venue 生成4至8个检索短语，再传给 arXiv/Crossref；`data/last_run.json` 保存本次 `search_queries`。固定 `config.json` 查询词仅作为无LLM采集时的兼容回退，不参与正常 LLM 检索。
+- 动态检索真实验证：LLM 生成 8 个短语，arXiv 28 个候选、Crossref 4 个候选；3篇验证预算下因已有缓存实际重算1篇，其余结果复用有效缓存。
 
 ## 当前真实限制
 

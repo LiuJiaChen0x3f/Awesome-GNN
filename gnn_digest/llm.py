@@ -33,6 +33,23 @@ def validate_summary(value, abstract):
     return {**value, "keywords": [k.strip() for k in keywords]}
 
 
+def validate_search_plan(value):
+    if not isinstance(value, dict) or not isinstance(value.get("queries"), list):
+        raise ValueError("queries must be a list")
+    queries = []
+    for query in value["queries"]:
+        if not isinstance(query, str):
+            raise ValueError("query must be a string")
+        query = re.sub(r"\s+", " ", query).strip()
+        if not 3 <= len(query) <= 100 or len(query.split()) < 2:
+            raise ValueError("query must be a meaningful phrase")
+        if query.casefold() not in {q.casefold() for q in queries}:
+            queries.append(query)
+    if not 4 <= len(queries) <= 8:
+        raise ValueError("search plan must contain 4-8 unique queries")
+    return queries
+
+
 class Summarizer:
     def __init__(self, config, prompt):
         self.config, self.prompt = config, prompt
@@ -85,3 +102,36 @@ class Summarizer:
                     messages.append({"role": "assistant", "content": raw[:12000]})
                 detail = str(error) if isinstance(error, (ValueError, json.JSONDecodeError)) else type(error).__name__
                 messages.append({"role": "user", "content": "上次输出或请求未通过校验：" + detail + "。请修正后输出完整JSON。证据必须从输入摘要复制连续原文，不改写、不省略，不加省略号。严格检查五个不同关键词、中文百字限制和字段类型。"})
+
+
+class SearchPlanner:
+    """Generate bounded source queries; paper metadata never becomes an instruction."""
+    def __init__(self, config, prompt):
+        self.config = config
+        self.prompt = prompt
+        self.base = os.getenv("LLM_BASE_URL", "").rstrip("/")
+        self.key = os.getenv("LLM_API_KEY", "")
+        self.model = os.getenv("LLM_MODEL", "")
+        self.reasoning_effort = os.getenv("LLM_REASONING_EFFORT") or config.get("reasoning_effort")
+        if not all((self.base, self.key, self.model)):
+            raise ValueError("Set LLM_BASE_URL, LLM_API_KEY and LLM_MODEL, or use --no-llm")
+        parsed = urlparse(self.base)
+        if parsed.scheme != "https" and not (parsed.scheme == "http" and parsed.hostname in ("localhost", "127.0.0.1", "::1")):
+            raise ValueError("LLM endpoint must use HTTPS (HTTP allowed only for localhost)")
+        self.endpoint = self.base if self.base.endswith("/chat/completions") else self.base + "/chat/completions"
+
+    def plan(self, context):
+        messages = [{"role": "system", "content": self.prompt}, {"role": "user", "content": json.dumps(context, ensure_ascii=False)}]
+        last_error = None
+        for attempt in range(self.config["attempts"]):
+            try:
+                payload = {"model": self.model, "messages": messages, self.config.get("token_limit_parameter", "max_tokens"): min(self.config.get("max_tokens", 4096), 1200), "response_format": {"type": "json_object"}}
+                if self.reasoning_effort:
+                    payload["reasoning_effort"] = self.reasoning_effort
+                response = get_json(self.endpoint, payload=payload, headers={"Authorization": "Bearer " + self.key}, timeout=self.config["timeout"], attempts=1)
+                return validate_search_plan(json.loads(response["choices"][0]["message"]["content"]))
+            except Exception as error:
+                last_error = error
+                if attempt + 1 < self.config["attempts"]:
+                    time.sleep(min(2 ** attempt, 8))
+        raise ValueError("LLM search plan failed: " + type(last_error).__name__)

@@ -7,7 +7,7 @@ from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from .llm import Summarizer
+from .llm import SearchPlanner, Summarizer
 from .models import candidate, is_ccf_venue, merge_records, within_window
 from .sources import FETCHERS
 from .storage import export_site, lock, read_json, write_json
@@ -28,8 +28,8 @@ def validate_config(config):
     for name in ("days", "max_per_source", "max_llm_papers"):
         if type(config.get(name)) is not int or config[name] < 1:
             raise ValueError(f"{name} must be a positive integer")
-    if not config.get("queries") or not all(isinstance(q, str) and q.strip() for q in config["queries"]):
-        raise ValueError("queries must contain nonempty strings")
+    if "queries" in config and not all(isinstance(q, str) and q.strip() for q in config["queries"]):
+        raise ValueError("fallback queries must contain nonempty strings")
     if not config.get("sources") or any(k not in FETCHERS or type(v) is not bool for k, v in config["sources"].items()):
         raise ValueError("invalid sources")
     if not 1 <= config["llm"]["attempts"] <= 5:
@@ -52,12 +52,21 @@ def run(args):
             print(f"Exported {len(papers)} archived papers")
             return 0
         engine = None if args.no_llm else Summarizer(config["llm"], (root / "prompts" / "summarize.zh.txt").read_text(encoding="utf-8"))
+        search_prompt_path = root / "prompts" / "search.en.txt"
+        if not search_prompt_path.exists():
+            search_prompt_path = ROOT / "prompts" / "search.en.txt"
+        planner = None if args.no_llm else SearchPlanner(config["llm"], search_prompt_path.read_text(encoding="utf-8"))
         today = date.fromisoformat(args.until) if args.until else datetime.now(timezone.utc).date()
         days = args.days or config["days"]
         if days < 1:
             raise ValueError("days must be positive")
         since = today - timedelta(days=days-1)
         report = {"started_at": datetime.now(timezone.utc).isoformat(), "window": {"since": str(since), "until": str(today)}, "sources": {}, "llm_enabled": engine is not None}
+        queries = list(config.get("queries", []))
+        if planner and args.command != "summarize":
+            queries = planner.plan({"topic": "graph neural network research", "date_window": {"since": str(since), "until": str(today)}, "ccf_venues": config.get("ccf_venues", []), "fallback_queries": queries})
+            report["search_queries"] = queries
+            print(json.dumps({"llm_search_queries": queries}, ensure_ascii=False), flush=True)
         if args.command == "summarize":
             previous = read_json(root / "data" / "last_run.json", {})
             report["sources"] = previous.get("sources", {})
@@ -71,7 +80,7 @@ def run(args):
                 print(f"Fetching {name}...", flush=True)
                 try:
                     found, metadata = FETCHERS[name](config, since, today)
-                    eligible = [p for p in found if within_window(p, since, today) and candidate(p, config["queries"])]
+                    eligible = [p for p in found if within_window(p, since, today) and candidate(p, queries)]
                     fetched.extend(eligible)
                     report["sources"][name] = {"ok": True, "fetched": len(found), "candidates": len(eligible), **metadata}
                 except Exception as error:

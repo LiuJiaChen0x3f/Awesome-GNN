@@ -1,5 +1,5 @@
 {
-  "started_at": "2026-09-26T14:12:22.591562+00:00",
+  "started_at": "2026-09-26T14:26:37.386060+00:00",
   "window": {
     "since": "2026-09-13",
     "until": "2026-09-26"
@@ -8,28 +8,38 @@
     "arxiv": {
       "ok": true,
       "fetched": 81,
-      "candidates": 79,
+      "candidates": 28,
       "mode": "api",
       "truncated": false
     },
     "crossref": {
       "ok": true,
       "fetched": 150,
-      "candidates": 14,
+      "candidates": 4,
       "mode": "api",
       "truncated": true
     }
   },
-  "llm_enabled": false,
-  "deduplicated": 93,
-  "finished_at": "2026-09-26T14:13:09.909288+00:00",
-  "llm_processed": 0,
+  "llm_enabled": true,
+  "search_queries": [
+    "heterogeneous graph neural network",
+    "temporal graph neural network",
+    "graph structure learning",
+    "graph neural network pretraining",
+    "knowledge graph reasoning",
+    "dynamic graph representation learning",
+    "graph neural network robustness",
+    "multimodal graph learning"
+  ],
+  "deduplicated": 32,
+  "finished_at": "2026-09-26T14:27:57.075019+00:00",
+  "llm_processed": 1,
   "total": 89,
   "statuses": {
     "missing_abstract": 5,
-    "ready": 80,
+    "ready": 81,
     "irrelevant": 2,
-    "insufficient": 1,
-    "failed": 1
-  }
+    "insufficient": 1
+  },
+  "llm_remaining": 0
 }
