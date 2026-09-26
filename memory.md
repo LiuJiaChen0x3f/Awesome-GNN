@@ -4,7 +4,7 @@
 
 ## 用户目标与约定
 
-无人值守批量发现最新GNN论文，LLM生成按重要性排序的5个关键词及100字内中文核心方法；跨来源、跨次运行去重；GitHub存储、GitHub Pages静态展示。用户要求可复用skill，开发过程保留memory.md，并在一轮完成后统一提供API/仓库配置。
+本地按固定研究需求发现最新GNN论文，LLM生成按重要性排序的5个关键词及100字内中文核心方法；跨来源、跨次运行去重；GitHub存储、GitHub Pages静态展示。用户要求可复用skill，开发过程保留memory.md。
 
 默认以论文**标题+摘要**为事实来源，不声称已读全文。方法限制按Unicode字符计数，包括标点、英文和数字。关键词与方法必须由LLM生成；无API时只采集元数据，不造摘要。
 
@@ -16,7 +16,7 @@
 - 可编辑提示词 `prompts/summarize.zh.txt`；JSON结构、恰好5个不同关键词、中文100字符限制、逐字证据校验；最多3次重试。
 - 内容/提示词/模型缓存；原子JSON写入、逐篇checkpoint、单机锁、论文数及软时间预算。
 - 静态前端：搜索、关键词筛选、来源/时间/状态筛选、排序、分页、移动布局；用textContent渲染不可信元数据，外链限制HTTP(S)。
-- GitHub Actions：双平台测试、每日09:20北京时间采集与直接Pages发布、main静态文件更新发布。无远程执行记录。
+- GitHub Actions：保留测试与Pages发布；论文采集只在本机交互式执行，不再使用定时任务。
 - 复用skill源文件 `skills/gnn-paper-digest/SKILL.md`；安装器 `scripts/install_skill.py` 已运行，安装到 `C:\Users\19878\.codex\skills\gnn-paper-digest\SKILL.md`。
 - `README.md`（中文运行与部署说明）、`docs/RESEARCH.md`（调研）、`.env.example`、MIT与第三方声明。
 - 已在本目录初始化 Git `main`，远程为 `https://github.com/LiuJiaChen0x3f/Awesome-GNN.git`；提交 `049fbeb` 已推送到 `main`。
@@ -37,9 +37,9 @@
 
 ## 本轮真实运行结果
 
-- 已配置并联调 `https://yundou.ai/v1` 的 Chat Completions 兼容接口，模型为 `gpt-6-astra`，推理强度 `medium`；API key 仅保存在本机 `.env` 和 GitHub Actions 加密 Secret `LLM_API_KEY`，不写入仓库。
+- 已配置并联调 `https://yundou.ai/v1` 的 Chat Completions 兼容接口，模型为 `gpt-6-astra`，推理强度 `medium`；交互式搜索只从本机 `.env` 读取 API key，不写入仓库。
 - 真实模型第二轮处理完成：总计81篇，75篇 `ready`，2篇 `irrelevant`，4篇 `missing_abstract`，无待处理摘要。`site/data/papers.json` 已由 `python run.py build` 导出。
-- GitHub Actions 变量 `LLM_BASE_URL`、`LLM_MODEL`、`LLM_REASONING_EFFORT` 与 Secret `LLM_API_KEY` 已配置；Pages 设置为 GitHub Actions 模式，目标地址为 `https://liujiachen0x3f.github.io/Awesome-GNN/`。
+- Pages 设置为 GitHub Actions 模式，目标地址为 `https://liujiachen0x3f.github.io/Awesome-GNN/`。
 - 本轮界面与检索优化：移除首屏图形宣传区，放大论文工作区；卡片新增 venue 与会议/期刊类型；arXiv 卡片优先打开 PDF，其他来源打开论文页面；Crossref 优先请求 `proceedings-article`；提示词加入 CCF GNN 高频术语词表（消息传递、图卷积、图注意力、图Transformer、异质图、图对比学习、图结构学习、节点分类、链路预测等）。
 - 按用户要求进行了两轮每轮 3 篇真实采集/LLM 验证。最终归档 89 篇，其中 79 篇 arXiv 预印本、3 篇会议论文、3 篇期刊、2 篇书章、2 篇未标注类型；本轮样例包含 Hermite 谱图网络、GNN 形式化验证、IMU-ECG 图编码。新增 venue 仅在源元数据提供时显示，CCF 会议名称不能从 arXiv 元数据可靠推断。
 - 新提示词全量重算后状态为：80 篇 `ready`、2 篇 `irrelevant`、1 篇 `insufficient`、1 篇 `failed`、5 篇 `missing_abstract`；失败项不发布模型猜测，后续运行自动重试。
@@ -48,10 +48,11 @@
 - 动态检索真实验证：LLM 生成 8 个短语，arXiv 28 个候选、Crossref 4 个候选；3篇验证预算下因已有缓存实际重算1篇，其余结果复用有效缓存。
 - 新增本地交互式搜索：编辑 `prompts/search.request.txt` 后运行 `python run.py search --limit 5`，固定文件内容作为用户研究需求，由 LLM 规划并直接返回多篇结果；动态查询现在会同时传入 arXiv/Crossref/OpenAlex 适配器，而不是只用于本地过滤。该模式不依赖 GitHub Actions，API 配置只从本机 `.env` 读取。
 - 交互式搜索真实验证：`search --limit 3` 生成 8 个查询，arXiv/Crossref 分别返回 3/2 个候选，并输出 3 个结果；由于摘要缓存，本轮实际新总结 1 篇。
+- 根据用户最新要求，删除 `.github/workflows/update.yml`：不再计划或远程手动触发自动采集；仅在本机执行 `search`，然后按需手动提交站点数据。既有 GitHub Actions Secret 不再由该项目工作流读取。
 
 ## 当前真实限制
 
-- 推送后的 GitHub Actions `Test pipeline` 与 `Publish site` 均已成功；Pages API 显示 workflow 模式，线上 `https://liujiachen0x3f.github.io/Awesome-GNN/` 返回 HTTP 200。每日 `Update paper digest` workflow 已随代码启用，首次定时运行仍受 GitHub 计划任务延迟影响。
+- 推送后的 GitHub Actions `Test pipeline` 与 `Publish site` 均已成功；Pages 使用 workflow 模式，线上 `https://liujiachen0x3f.github.io/Awesome-GNN/` 返回 HTTP 200。自动采集 workflow 已按用户要求移除。
 - 没有OpenAlex key，该适配器未做真实认证联调。官方现有文档允许低额度匿名查询，本项目为无人值守规模访问主动要求key；不要说所有OpenAlex查询都必须key。
 - 没有远程仓库地址，GitHub Actions与Pages尚未实际部署验证。
 - 搜索召回并非全网，Crossref本轮截断；源日期精度可能不同。RSS回退只覆盖公告窗口，使用公告日期并标记date_basis。arXiv按更新日期抓取，旧论文新版本可能收录，但页面显示原发表日期。
