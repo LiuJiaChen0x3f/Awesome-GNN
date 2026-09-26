@@ -1,6 +1,6 @@
 # Awesome-GNN 开发记忆
 
-最后更新：2026-09-26。工作目录 `D:\Awesome-GNN`。
+最后更新：2026-09-27。工作目录 `D:\Awesome-GNN`。
 
 ## 用户目标与约定
 
@@ -9,6 +9,8 @@
 默认以论文**标题+摘要**为事实来源，不声称已读全文。方法限制按Unicode字符计数，包括标点、英文和数字。关键词与方法必须由LLM生成；无API时只采集元数据，不造摘要。
 
 ## 当前完成
+
+- 2026-09-27 ICML/ICLR官网可达性只读实测：两站2026列表及各一篇poster详情均HTTP200，详情正文有摘要/OpenReview链接；ICLR proceedings样例含发表日和PDF元数据。当前DOMAINS未接入icml.cc/iclr.cc/openreview.net，VENUES未纳入ICLR，现有通用解析器也不适配详情正文。现有模型接口第二次探测45.55秒有8个实际工具动作并返回两站论文引用，首次仅instructions传具体任务时无工具动作，不能称成功。详见docs/CONFERENCE_SOURCE_PROBE.md；本次没有修改搜索逻辑、会议准入、配额或归档，也没有进行三篇正式采集。
 
 - 2026-09-26 来源配额更新：`search --limit N` 强制会议 ceil(N/2)、arXiv floor(N/2)，10为5+5，3为2+1。会议仍为项目允许的CCF-A主会+EMNLP主会；arXiv不限会议等级。`agent.py` 保存各自独立核验路线，结合历史身份别名跨组去重，同一论文最多一个名额；按分配路线的日期排序，缺额定向反馈补搜，不跨组补足、不扩大窗口。归档checkpoint保留已保存论文；selection_bucket仅在本次结果，历史归档不强制1:1。
 - 配额同步到 `prompts/search.request.txt`、`prompts/search.agent.txt`、README和已安装skill；报告新增source_quotas/quota_progress/每轮quota_before与quota_after。网页显示会议与arXiv各自完成数，并把“未补齐目标”与旧采集的抓取上限区分。
