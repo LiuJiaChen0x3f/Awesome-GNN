@@ -51,8 +51,9 @@ def validate_search_plan(value):
 
 
 class Summarizer:
-    def __init__(self, config, prompt):
+    def __init__(self, config, prompt, extra_validator=None):
         self.config, self.prompt = config, prompt
+        self.extra_validator = extra_validator
         self.base = os.getenv("LLM_BASE_URL", "").rstrip("/")
         self.key = os.getenv("LLM_API_KEY", "")
         self.model = os.getenv("LLM_MODEL", "")
@@ -62,7 +63,8 @@ class Summarizer:
         parsed = urlparse(self.base)
         if parsed.scheme != "https" and not (parsed.scheme == "http" and parsed.hostname in ("localhost", "127.0.0.1", "::1")):
             raise ValueError("LLM endpoint must use HTTPS (HTTP allowed only for localhost)")
-        self.endpoint = self.base if self.base.endswith("/chat/completions") else self.base + "/chat/completions"
+        base = self.base[:-len('/responses')] if self.base.endswith('/responses') else self.base
+        self.endpoint = base if base.endswith("/chat/completions") else base + "/chat/completions"
         self.prompt_hash = hashlib.sha256(prompt.encode()).hexdigest()
 
     def cached(self, p):
@@ -85,8 +87,12 @@ class Summarizer:
                 response = get_json(self.endpoint, payload=payload, headers={"Authorization": "Bearer " + self.key}, timeout=self.config["timeout"], attempts=1)
                 raw = response["choices"][0]["message"]["content"]
                 result = validate_summary(json.loads(raw), abstract)
+                if self.extra_validator:
+                    result = self.extra_validator(result, abstract)
                 status = "irrelevant" if not result["relevant"] else "insufficient" if result["confidence"] == "low" else "ready"
                 p.update({k: result[k] for k in ("keywords", "method", "confidence", "evidence")})
+                if self.extra_validator:
+                    p.update(topics=result['topics'], topic_evidence=result['topic_evidence'])
                 p.update(status=status, summary_input_hash=content_hash(p), prompt_hash=self.prompt_hash, llm_model=self.model, llm_reasoning_effort=self.reasoning_effort, summarized_at=datetime.now(timezone.utc).isoformat())
                 if isinstance(response.get("usage"), dict):
                     p["llm_usage"] = {k: v for k, v in response["usage"].items() if k in ("prompt_tokens", "completion_tokens", "total_tokens") and isinstance(v, int)}

@@ -1,6 +1,6 @@
 ---
 name: gnn-paper-digest
-description: 批量更新 Awesome-GNN 的论文索引、跨来源去重、生成五个关键词及百字中文方法摘要，并构建 GitHub Pages 静态站点。用于运行或修改该项目的无人值守论文聚合流程。
+description: 在 Awesome-GNN 中按固定需求调用 Responses 联网搜索，核验论文并生成五个关键词和百字摘要，维护归档及静态页面。用于本机手动检索、调整流程和查看结果。
 ---
 
 # GNN paper digest
@@ -8,6 +8,14 @@ description: 批量更新 Awesome-GNN 的论文索引、跨来源去重、生成
 先定位包含 `run.py`、`config.json`、`memory.md` 的 Awesome-GNN 项目根目录，阅读 `memory.md` 获取当前状态。不要把 skill 所在目录当成项目根目录。
 
 ## 运行
+
+- 推荐入口：`python run.py search --limit 3`。固定需求是 `prompts/search.request.txt`，不再用 SearchPlanner 先生成词。模型通过 Responses web_search 搜索/打开页面，程序独立核验、反馈不足并继续搜索。用户要求先不运行时只修改文件，不实测API。
+- 硬核验来源/会议在 `gnn_digest/verification.py`。改提示词不足以扩展允许来源；arXiv不限等级，非arXiv要求配置内主会。11主题命中一个即可，5个方法关键词不等于5个主题。
+- 默认14天，可用 `--days`/`--until`；arXiv首次提交日，会议精确发表日，日期不足不捏造，窗口不足不静默放宽。旧归档保持，不声称旧记录已按新规则核验。
+- 本次结果：`data/search_results.json`；工具动作、引用、拒绝原因、预算及缺口：`data/last_run.json`。退出码4表示不足，2表示搜索失败，不能把它们描述为成功。
+- 新总结提示词：`prompts/search.summary.zh.txt`。只能依据核验的原始摘要；不能绕过title/url/venue/date验证。搜索代理实现为 `gnn_digest/agent.py`。
+- `search_agent` 控制预算。当前供应商不支持max_tool_calls参数，默认不发送；提示词约束单请求调用次数、程序限制外层轮数/输出/时间，不能称工具次数有硬上限。
+- 只在本机运行，密钥从环境或`.env`读取；不启用远程自动采集。运行后按需导出、提交静态站点。旧run/summarize是兼容路径。
 
 - 完整更新：在项目根目录执行 `python run.py run`。`LLM_BASE_URL`、`LLM_API_KEY`、`LLM_MODEL` 从进程环境或项目 `.env` 读取。缺少配置时明确说明；可以运行 `python run.py run --no-llm` 完成真实采集，不能伪造摘要。
 - 补齐已抓取论文摘要：`python run.py summarize`。只处理无有效缓存、发生变更或此前失败的论文。

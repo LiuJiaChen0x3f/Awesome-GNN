@@ -91,10 +91,26 @@ def merge_records(records):
         provenance = {(s["name"], s["id"]): s for p in members for s in p["sources"]}
         merged["sources"] = list(provenance.values())
         merged["identity_aliases"] = sorted({key for p in members for key in identity_keys(p)})
+        verified = [p for p in members if p.get('verification')]
+        if verified:
+            events = {(e['date'], e['basis'], e['url']):e for p in verified for e in p.get('publication_events', [])}
+            merged['publication_events'] = list(events.values())
+            # Prefer the newly fetched record when the original publication date ties.
+            recent = max(reversed(verified), key=lambda p:p.get('display_date', p['published']))
+            for field in ('display_date','date_basis','verification','pdf_url'):
+                if field in recent:
+                    merged[field] = recent[field]
+            conference = next((p for p in verified if p.get('venue_label') not in (None, '', 'arXiv')), None)
+            merged['venue_label'] = conference['venue_label'] if conference else 'arXiv'
+            merged['venue'] = conference['venue_label'] if conference else ''
+            merged['ccf_venue'] = conference is not None
+            # Prefer newly verified text, not stale richer descriptions from older sources.
+            for field in ('title','abstract','authors'):
+                merged[field] = recent[field]
         # Reuse valid summaries even when merging an additional source.
-        valid = next((p for p in members if p.get("summary_input_hash") == content_hash(merged)), None)
+        valid = next((p for p in reversed(members) if p.get("summary_input_hash") == content_hash(merged)), None)
         if valid:
-            for field in ("status", "keywords", "method", "confidence", "evidence", "summary_input_hash", "prompt_hash", "llm_model", "llm_reasoning_effort", "llm_usage", "summarized_at"):
+            for field in ("status", "keywords", "method", "confidence", "evidence", "summary_input_hash", "prompt_hash", "llm_model", "llm_reasoning_effort", "llm_usage", "summarized_at", "topics", "topic_evidence"):
                 if field in valid:
                     merged[field] = valid[field]
         elif merged.get("summary_input_hash"):

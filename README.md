@@ -1,12 +1,37 @@
 # Awesome GNN · 图学习研究雷达
 
-自动查找近期 GNN 论文，用 **5 个关键词 + 100 字以内的中文核心方法** 帮读者快速筛选。采集、跨来源去重、相关性判断、LLM 总结、校验、增量保存和静态发布可以无人值守运行。
+## 推荐入口：本地联网搜索代理
+
+```powershell
+cd D:\Awesome-GNN
+# 修改固定研究需求，不必填写检索词
+notepad prompts/search.request.txt
+python run.py search --limit 3
+# 默认最近14天；可改窗口
+python run.py search --limit 3 --days 30
+```
+
+本机 `.env` 使用既有 LLM_BASE_URL / LLM_API_KEY / LLM_MODEL / LLM_REASONING_EFFORT。`search` 现通过 **Responses + web_search** 让模型搜索、打开论文网页；不走旧的“先生成检索词再固定抓取”。每轮返回候选后，程序独立读取原站，核验标题、摘要、日期、会议；反馈拒绝原因和缺口，让模型继续搜索。最后通过 Chat Completions 生成5个关键词、百字方法及有原文证据的1至11个主题。没有合格结果不会凑数。
+
+收录：项目列出的CCF-A主会 + EMNLP主会，或独立核验的arXiv论文（不限会议等级）。11主题任意命中一个即可，KG/KGE不强制使用GNN。arXiv用v1首次提交日，会议用正式发表日；不以修订日期冒充新论文。来源缺精确日期/会议元数据时拒绝并反馈，不根据模型声称的事实放行。主站域名和会议别名在 `gnn_digest/verification.py`，它不是完整CCF-A目录。
+
+输出：`data/search_results.json` 保存本次合格论文；`data/last_run.json` 保存每轮工具动作、引用、拒绝原因、用量与停止原因；`data/papers.json` 持久去重归档，`site/data/papers.json` 是网页数据。网页默认最新优先、来源标签使用简称/arXiv、链接PDF优先；历史归档仍在，旧记录不声称已经新规则复核。
+
+`--limit` 是1至20篇的目标数量，覆盖需求文件内的示例数量。退出码0达到目标，4表示有搜索但不足，2表示联网搜索未成功。搜索排序是预算内的最佳努力，不能宣称全网最新排名。源码、测试和归档均不含密钥。
+
+`config.json.search_agent` 默认3轮、单请求超时180秒、总软预算600秒、每轮10候选、10篇摘要预算（目标更大时至少为目标数）。超时不会自动重发付费搜索。当前供应商拒绝可选 `max_tool_calls` 参数，默认 `send_max_tool_calls=false`；12次/轮是提示词目标，不是硬上限。外层限制轮数、输出token和时间；只有供应商确认支持后才开启该参数。
+
+提示词：`search.request.txt` 是用户需求，`search.agent.txt` 是搜索执行与JSON格式，`search.summary.zh.txt` 是核验摘要的总结规则。全文PDF解析尚未实现。API需支持Responses联网搜索和Chat Completions摘要，不能仅凭模型名认定兼容。
+
+只保留测试和静态Pages发布工作流，**没有每日采集任务，无需远程保存模型密钥**。本机运行后按需提交并推送网页数据。以下旧 `run` / `summarize` 命令作为兼容入口保留，不具有新 `search` 的完整核验流程。
+
+自动查找近期 GNN 论文，用 **5 个关键词 + 100 字以内的中文核心方法** 帮读者快速筛选。本地手动发起后自动完成搜索、核验、去重和摘要。
 
 后端 Python 3.11+，**零第三方运行依赖**；前端 HTML/CSS/JavaScript，无需 Node 构建或服务器，部署到 GitHub Pages。
 
 > 已接入真实 LLM 接口并验证方法卡片生成；使用 `gpt-6-astra`、中等推理强度。密钥仅从环境变量或本机 `.env` 读取，不随仓库发布。数据状态与覆盖范围见页面及 `data/last_run.json`。
 
-## 本地开始
+## 兼容入口：旧批处理
 
 在仓库根目录运行：
 
@@ -55,35 +80,11 @@ python scripts/install_skill.py
 
 安装到 `$CODEX_HOME/skills/gnn-paper-digest` 或默认 `~/.codex/skills/gnn-paper-digest`。在本项目目录中调用 `$gnn-paper-digest` 即可。安装器遇到内容不同的既有同名 skill 会停止，防止覆盖用户已有版本。
 
-## GitHub Pages 与每日更新
+## GitHub Pages 发布
 
-1. 将项目推送到 GitHub 仓库的 `main` 分支。本项目仓库为 `LiuJiaChen0x3f/Awesome-GNN`。
-2. 仓库 **Settings → Pages → Source** 选择 **GitHub Actions**。
-3. **Settings → Secrets and variables → Actions** 设置：
+本机完成检索后，按需把数据和静态页面提交到仓库 main 分支。Pages Source 选择 GitHub Actions。保留 pages.yml（静态发布）与 test.yml（Windows/Linux测试）；原 update.yml 自动采集已移除，不需要远程 LLM Secret。
 
-| 类型 | 名称 | 用途 |
-| --- | --- | --- |
-| Secret | `LLM_API_KEY` | 模型密钥 |
-| Variable | `LLM_BASE_URL` | 接口根地址或完整 Chat Completions 地址 |
-| Variable | `LLM_MODEL` | 模型名称 |
-| Variable，可选 | `LLM_REASONING_EFFORT` | 推理强度，默认使用配置中的 medium |
-| Secret，可选 | `OPENALEX_API_KEY` | 启用 OpenAlex 时使用 |
-| Secret，可选 | `CONTACT_EMAIL` | 数据源请求联系信息 |
-
-4. 手动运行 **Update paper digest**。未接 API 时可勾选 `collect_only`。正常无人值守更新要求三个 LLM 配置全部有效。
-5. 定时计划为每日 **01:20 UTC / 北京时间 09:20**。GitHub 托管计划任务可能延迟；长时间不活跃的公共仓库可能停用计划任务，需在 Actions 中恢复。
-
-网站地址通常为 `https://<用户名>.github.io/<仓库名>/`。前端使用相对路径，兼容仓库子路径。
-
-三个 workflow：
-
-- `update.yml`：抓取与总结 → 保存数据提交 → 直接发布 Pages。直接部署避免机器人提交不触发后续 push workflow 导致页面不更新。
-- `pages.yml`：初始 `main` 推送或修改静态页时发布，也支持手动运行。
-- `test.yml`：Windows 与 Linux 上的 Python 测试、前端语法检查。
-
-如果默认分支不是 `main`，修改 `pages.yml` 的分支触发配置。数据 workflow 会使用仓库默认分支。需要允许 workflow 写入仓库；若分支保护禁止机器人直接推送，需改为数据分支或 PR 流程。当前没有替你更改远程权限。
-
-## 配置与处理约束
+## 旧流水线配置与处理约束
 
 `config.json` 可调整查询词、回溯天数、启用来源和处理预算。
 

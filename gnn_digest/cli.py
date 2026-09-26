@@ -43,6 +43,9 @@ def run(args):
     load_env(root / ".env")
     config = read_json(Path(args.config) if args.config else root / "config.json", {})
     validate_config(config)
+    if args.command == 'search':
+        from .agent import search
+        return search(root, config, args)
     state_path = root / "data" / "papers.json"
     with lock(root / "data" / "pipeline.lock"):
         archive = read_json(state_path, {"schema_version": 1, "papers": []})
@@ -56,12 +59,6 @@ def run(args):
         if not search_prompt_path.exists():
             search_prompt_path = ROOT / "prompts" / "search.en.txt"
         planner = None if args.no_llm else SearchPlanner(config["llm"], search_prompt_path.read_text(encoding="utf-8"))
-        request_path = root / "prompts" / "search.request.txt"
-        if not request_path.exists():
-            request_path = ROOT / "prompts" / "search.request.txt"
-        user_request = request_path.read_text(encoding="utf-8").strip() if args.command == "search" and request_path.exists() else ""
-        if args.command == "search" and not user_request:
-            raise ValueError(f"search request file is empty: {request_path}")
         today = date.fromisoformat(args.until) if args.until else datetime.now(timezone.utc).date()
         days = args.days or config["days"]
         if days < 1:
@@ -70,7 +67,7 @@ def run(args):
         report = {"started_at": datetime.now(timezone.utc).isoformat(), "window": {"since": str(since), "until": str(today)}, "sources": {}, "llm_enabled": engine is not None}
         queries = list(config.get("queries", []))
         if planner and args.command != "summarize":
-            queries = planner.plan({"user_request": user_request or "Find recent graph neural network research.", "date_window": {"since": str(since), "until": str(today)}, "ccf_venues": config.get("ccf_venues", []), "fallback_queries": queries})
+            queries = planner.plan({"user_request": "Find recent graph neural network research.", "date_window": {"since": str(since), "until": str(today)}, "ccf_venues": config.get("ccf_venues", []), "fallback_queries": queries})
             report["search_queries"] = queries
             print(json.dumps({"llm_search_queries": queries}, ensure_ascii=False), flush=True)
         fetch_config = dict(config)
@@ -115,17 +112,13 @@ def run(args):
                 p.update(status="pending", keywords=[], method="")
             if engine and not engine.cached(p):
                 eligible.append(p)
-        if args.command == "search":
-            fresh_ids = {p["id"] for p in fetched}
-            eligible = [p for p in eligible if p["id"] in fresh_ids]
-            eligible.sort(key=lambda p: p.get("published", ""), reverse=True)
         if engine:
             # Workers return copies; only the main thread changes and saves the archive.
             def summarize_copy(p):
                 copy = dict(p)
                 engine.summarize(copy)
                 return copy
-            budget = args.limit if args.command == "search" else config["max_llm_papers"]
+            budget = config["max_llm_papers"]
             queue = iter(eligible[:budget])
             workers = max(1, min(8, config.get("llm_concurrency", 1)))
             with ThreadPoolExecutor(max_workers=workers) as pool:
@@ -153,17 +146,14 @@ def run(args):
         write_json(state_path, {"schema_version": 1, "papers": papers})
         write_json(root / "data" / "last_run.json", report)
         export_site(papers, report, root / "site")
-        if args.command == "search":
-            fresh_ids = {p["id"] for p in fetched}
-            results = [p for p in papers if p["id"] in fresh_ids]
-            results.sort(key=lambda p: p.get("published", ""), reverse=True)
-            fields = ("id", "title", "authors", "published", "updated", "venue", "publication_type", "ccf_venue", "sources", "status", "keywords", "method", "confidence", "summarized_at")
-            print(json.dumps({"request_file": str(request_path), "results": [{k: p.get(k) for k in fields} for p in results[:args.limit]]}, ensure_ascii=False, indent=2))
         print(json.dumps(report, ensure_ascii=False, indent=2))
         return 3 if any(p["status"] == "failed" for p in papers) and engine else 0
 
 
 def main():
+    import sys
+    if hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(encoding='utf-8')
     parser = argparse.ArgumentParser(description="Discover, deduplicate and summarize GNN papers")
     parser.add_argument("command", choices=("run", "search", "summarize", "build"), nargs="?", default="run")
     parser.add_argument("--root", default=str(ROOT))
@@ -171,7 +161,7 @@ def main():
     parser.add_argument("--days", type=int)
     parser.add_argument("--until", help="UTC date YYYY-MM-DD; defaults to actual execution date")
     parser.add_argument("--no-llm", action="store_true", help="Collect metadata without inventing summaries")
-    parser.add_argument("--limit", type=int, default=5, help="Number of interactive search results to return")
+    parser.add_argument("--limit", type=int, default=5, help="Target number of verified web-search results (1-20)")
     args = parser.parse_args()
     try:
         if args.limit < 1:

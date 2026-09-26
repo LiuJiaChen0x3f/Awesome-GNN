@@ -4,6 +4,16 @@
   "max_llm_papers": 50,
   "max_llm_seconds": 1200,
   "llm_concurrency": 3,
+  "search_agent": {
+    "send_max_tool_calls": false,
+    "max_rounds": 3,
+    "max_tool_calls_per_round": 12,
+    "max_output_tokens": 6000,
+    "candidate_limit": 10,
+    "timeout": 180,
+    "max_seconds": 600,
+    "max_summary_papers": 10
+  },
   "sources": {
     "arxiv": true,
     "crossref": true,

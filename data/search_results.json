@@ -1,0 +1,390 @@
+{
+  "report": {
+    "mode": "responses_web_search",
+    "started_at": "2026-09-26T15:37:17.439919+00:00",
+    "window": {
+      "since": "2026-09-13",
+      "until": "2026-09-26"
+    },
+    "llm_enabled": true,
+    "requested": 3,
+    "rounds": [
+      {
+        "round": 1,
+        "status": "completed",
+        "actions": [
+          {
+            "status": "completed",
+            "type": "search",
+            "query": "site.arxiv.org/abs/ \"2026\" \"Sep\" \"24\" \"graph\"",
+            "queries": [
+              "site.arxiv.org/abs/ \"2026\" \"Sep\" \"24\" \"graph\"",
+              "site.arxiv.org/abs/ \"2026\" \"Sep\" \"25\" \"graph neural\"",
+              "site.aclanthology.org \"2026\" \"September\"",
+              "site.dl.acm.org \"graph\" \"September 2026\""
+            ]
+          },
+          {
+            "status": "completed",
+            "type": "search",
+            "query": "site.arxiv.org/abs/ \"2026\" \"Sep 25\" \"graph\"",
+            "queries": [
+              "site.arxiv.org/abs/ \"2026\" \"Sep 25\" \"graph\"",
+              "site.arxiv.org/abs/ \"2026\" \"Sep 24\" \"graph\"",
+              "site.proceedings.mlr.press \"2026\" \"graph\"",
+              "site.dl.acm.org \"2026\" \"Published: 2\" \"September\" \"graph learning\""
+            ]
+          },
+          {
+            "status": "completed",
+            "type": "search",
+            "query": "site.arxiv.org \"Reachability-Based Formal Verification of Graph Neural Networks\"",
+            "queries": [
+              "site.arxiv.org \"Reachability-Based Formal Verification of Graph Neural Networks\"",
+              "site.arxiv.org \"graph\" \"Submitted on 25 Sep 2026\"",
+              "site.arxiv.org \"graph\" \"Submitted on 24 Sep 2026\"",
+              "site.dl.acm.org \"KDD '26\" \"Publication Date\""
+            ]
+          },
+          {
+            "status": "completed",
+            "type": "open_page",
+            "url": "https://arxiv.org/search/advanced?abstracts=show&advanced=&classification-include_cross_list=include&date-date_type=submitted_date&date-filter_by=date_range&date-from_date=2026-09-13&date-to_date=2026-09-26&order=-announced_date_first&size=50&terms-0-field=all&terms-0-operator=AND&terms-0-term=graph"
+          },
+          {
+            "status": "completed",
+            "type": "open_page",
+            "url": "https://arxiv.org/search/advanced?abstracts=show&advanced=&classification-include_cross_list=include&date-date_type=submitted_date&date-filter_by=date_range&date-from_date=2026-09-13&date-to_date=2026-09-26&order=-announced_date_first&size=50&terms-0-field=all&terms-0-operator=AND&terms-0-term=graph"
+          },
+          {
+            "status": "completed",
+            "type": "search",
+            "query": "\"GridSFM\" conference",
+            "queries": [
+              "\"GridSFM\" conference",
+              "\"Graph-Based Inference and Topology-Aware\" conference",
+              "\"ARGUS: Role-Aware Event Knowledge Graphs\"",
+              "site.ijcai.org/proceedings/2026 \"graph\""
+            ]
+          },
+          {
+            "status": "completed",
+            "type": "open_page",
+            "url": "https://arxiv.org/abs/2609.30173"
+          }
+        ],
+        "citations": [
+          {
+            "url": "https://arxiv.org/abs/2609.30184",
+            "title": "[2609.30184] ARGUS: Role-Aware Event Knowledge Graphs for U.S. Employment-Discrimination Complaints"
+          },
+          {
+            "url": "https://arxiv.org/abs/2609.30184",
+            "title": "[2609.30184] ARGUS: Role-Aware Event Knowledge Graphs for U.S. Employment-Discrimination Complaints"
+          },
+          {
+            "url": "https://arxiv.org/abs/2609.30173",
+            "title": "[2609.30173] GridSFM: A Foundation Model for Solving AC Optimal Power Flow"
+          },
+          {
+            "url": "https://arxiv.org/abs/2609.30173",
+            "title": "[2609.30173] GridSFM: A Foundation Model for Solving AC Optimal Power Flow"
+          },
+          {
+            "url": "https://arxiv.org/abs/2609.30150",
+            "title": "[2609.30150] Graph-Based Inference and Topology-Aware Multi-Agent Reinforcement Learning for Large-Scale Railway Network Management"
+          },
+          {
+            "url": "https://arxiv.org/abs/2609.30150",
+            "title": "[2609.30150] Graph-Based Inference and Topology-Aware Multi-Agent Reinforcement Learning for Large-Scale Railway Network Management"
+          },
+          {
+            "url": "https://arxiv.org/search/advanced?abstracts=show&advanced=&classification-include_cross_list=include&date-date_type=submitted_date&date-filter_by=date_range&date-from_date=2026-09-13&date-to_date=2026-09-26&order=-announced_date_first&size=50&terms-0-field=all&terms-0-operator=AND&terms-0-term=graph",
+            "title": "Advanced Search | arXiv e-print repository"
+          }
+        ],
+        "usage": {
+          "input_tokens": 1721,
+          "output_tokens": 1671,
+          "total_tokens": 3392
+        },
+        "format_recovery": "url_citations",
+        "candidate_count": 3,
+        "notes": "Recovered candidates from response citations; all require primary-source verification."
+      }
+    ],
+    "sources": {
+      "web_search": {
+        "ok": true,
+        "mode": "responses",
+        "verified": 3,
+        "truncated": false
+      }
+    },
+    "rejections": [],
+    "request_hash": "23e2c10173b70b31a8b9f721ef4bf2d56b0f4c7790ad48f333fa2344eeeb17d5",
+    "llm_processed": 0,
+    "coverage": "Best effort within time/tool budgets; not an exhaustive newest-paper ranking.",
+    "finished_at": "2026-09-26T15:38:07.503121+00:00",
+    "returned": 3,
+    "total": 94,
+    "statuses": {
+      "missing_abstract": 5,
+      "pending": 83,
+      "ready": 4,
+      "irrelevant": 2
+    },
+    "result_ids": [
+      "p-88d531326bb551c8c982",
+      "p-6d1a77425b943819e76f",
+      "p-2831e61c090e2e962da5"
+    ],
+    "deduplicated": 3,
+    "elapsed_seconds": 50.06,
+    "shortfall": 0,
+    "stop_reason": "target_reached"
+  },
+  "papers": [
+    {
+      "id": "p-88d531326bb551c8c982",
+      "title": "Graph-Based Inference and Topology-Aware Multi-Agent Reinforcement Learning for Large-Scale Railway Network Management",
+      "abstract": "Modern infrastructure asset management constitutes a complex sequential decision-making problem, characterized by long planning horizons and system-level interactions, such as spatial deterioration correlations and economies of scale. While deep reinforcement learning has shown promise in optimizing maintenance policies, scaling to real-world networks remains challenging. Centralized approaches become computationally intractable in large-scale systems, whereas decentralized approaches often fail to capture essential coordination mechanisms. To address these challenges, we propose a graph-based framework that integrates accurate environment modeling with scalable decision support. First, we employ a hierarchical Bayesian model leveraging a Gaussian Process on Graph kernel to infer a realistic, spatially correlated networked environment of railway maintenance planning from real-world data provided by the Swiss Federal Railways. Second, we introduce a topology-aware Multi-Agent Reinforcement Learning (MARL) framework by integrating graph neural networks and graph Transformers to optimize network-level policies. A central contribution of this work is the demonstration of scalability through zero-shot transfer learning: graph-based agents, trained only on small network portions, are successfully deployed in a zero-shot manner on large-scale unseen networks without any retraining. Numerical results indicate that the proposed method significantly outperforms optimized heuristics and standard MARL baselines, reducing computational training time while maintaining superior performance on large-scale networks.",
+      "authors": [
+        "Arcieri, Giacomo",
+        "Duthé, Gregory",
+        "Muller, Christophe",
+        "Papakonstantinou, Konstantinos G.",
+        "Straub, Daniel",
+        "Chatzi, Eleni"
+      ],
+      "published": "2026-09-24",
+      "updated": "2026-09-24",
+      "doi": "",
+      "arxiv_id": "2609.30150",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.30150",
+          "url": "https://arxiv.org/abs/2609.30150",
+          "date_basis": "arxiv_first_submission"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "GNN",
+        "拓扑感知多智能体强化学习",
+        "图Transformer",
+        "分层贝叶斯推断",
+        "零样本迁移"
+      ],
+      "method": "以图核高斯过程的分层贝叶斯模型推断铁路网络空间相关环境，结合图神经网络与图Transformer构建拓扑感知多智能体强化学习，优化养护策略；小网络训练后零样本迁移至大规模未见网络。",
+      "identity_aliases": [
+        "arxiv:2609.30150",
+        "source:arxiv:2609.30150",
+        "title:graphbasedinferenceandtopologyawaremultiagentreinforcementlearningforlargescalerailwaynetworkmanagement"
+      ],
+      "confidence": "high",
+      "evidence": [
+        "a hierarchical Bayesian model leveraging a Gaussian Process on Graph kernel to infer a realistic, spatially correlated networked environment",
+        "a topology-aware Multi-Agent Reinforcement Learning (MARL) framework by integrating graph neural networks and graph Transformers to optimize network-level policies.",
+        "graph-based agents, trained only on small network portions, are successfully deployed in a zero-shot manner on large-scale unseen networks without any retraining."
+      ],
+      "summary_input_hash": "d301a98146ef1e065b172d92446719deb65604d48a8b3921002588d3208aad6b",
+      "prompt_hash": "006499229c13378b4151f1e446a97cf6021aefc3e8b6399beb98f3a39ba59eec",
+      "llm_model": "gpt-6-astra",
+      "llm_reasoning_effort": "medium",
+      "summarized_at": "2026-09-26T15:35:42.839405+00:00",
+      "llm_usage": {
+        "prompt_tokens": 1662,
+        "completion_tokens": 560,
+        "total_tokens": 2222
+      },
+      "venue": "",
+      "publication_type": "preprint",
+      "ccf_venue": false,
+      "publication_events": [
+        {
+          "date": "2026-09-24",
+          "basis": "arxiv_first_submission",
+          "url": "https://arxiv.org/abs/2609.30150",
+          "venue": "arXiv"
+        }
+      ],
+      "display_date": "2026-09-24",
+      "date_basis": "arxiv_first_submission",
+      "verification": {
+        "url": "https://arxiv.org/abs/2609.30150",
+        "method": "primary_source_metadata",
+        "date": "2026-09-24"
+      },
+      "pdf_url": "https://arxiv.org/pdf/2609.30150",
+      "venue_label": "arXiv",
+      "topics": [
+        "GNN"
+      ],
+      "topic_evidence": {
+        "GNN": "integrating graph neural networks and graph Transformers to optimize network-level policies"
+      }
+    },
+    {
+      "id": "p-6d1a77425b943819e76f",
+      "title": "GridSFM: A Foundation Model for Solving AC Optimal Power Flow",
+      "abstract": "We introduce GridSFM, a framework that combines a pretrained foundation model across grid topologies with physics-informed fine-tuning for solving AC Optimal Power Flow (AC-OPF) at scale. It is a $15$ million parameter physics-inspired graph neural network pretrained across $54$ topologies of $500$ to $4{,}000$ buses. Our model attains a $2.45\\%$ zero-shot generation-cost error on a $10{,}000$ bus case held-out operating conditions with no degradation as system size grows. Building on this, we pair the pretrained backbone with a physics-informed fine-tuning design based on Newton's method for power flow. With only $100$ solved instances, GridSFM adapts to unseen grids up to $10{,}000$ buses. We show it out performs single topology, dedicated neural network models that are trained more data, both in terms of cost and solver iterations when deployed as warm starting points. In designing this foundation model, we overcome the fact that the feasible set for AC-OPF can be disconnected. This is an obstruction that prevents any continuous neural network from approximating the solution map. To do so, we lift the problem and relax its constraints with logarithmically penalized slacks. We prove that the resulting elastic feasible set is contractible, that the AC-OPF minimizers remain minimizers of the elastic problem above an explicit penalty threshold, and that projecting an approximate solution back onto the AC-OPF feasible set is well posed. We release all models, data, and code so that the community can build on a shared starting point for AC-OPF.",
+      "authors": [
+        "Bhan, Luke",
+        "Yang, Weiwei",
+        "Capetz, Margaret",
+        "Zhang, Baosen"
+      ],
+      "published": "2026-09-24",
+      "updated": "2026-09-24",
+      "doi": "",
+      "arxiv_id": "2609.30173",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.30173",
+          "url": "https://arxiv.org/abs/2609.30173",
+          "date_basis": "arxiv_first_submission"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "GNN",
+        "物理信息微调",
+        "牛顿潮流方法",
+        "对数惩罚松弛变量",
+        "交流最优潮流"
+      ],
+      "method": "跨电网拓扑预训练物理启发图神经网络，结合基于牛顿潮流方法的物理信息微调求解交流最优潮流。通过提升问题并引入对数惩罚松弛变量放宽约束，处理可行集不连通问题。",
+      "identity_aliases": [
+        "arxiv:2609.30173",
+        "source:arxiv:2609.30173",
+        "title:gridsfmafoundationmodelforsolvingacoptimalpowerflow"
+      ],
+      "confidence": "high",
+      "evidence": [
+        "It is a $15$ million parameter physics-inspired graph neural network pretrained across $54$ topologies of $500$ to $4{,}000$ buses.",
+        "Building on this, we pair the pretrained backbone with a physics-informed fine-tuning design based on Newton's method for power flow.",
+        "To do so, we lift the problem and relax its constraints with logarithmically penalized slacks."
+      ],
+      "summary_input_hash": "cbbe41d3507e3578c47b07db5d40f8dea80f5e618e4ff088a7aa1711851984b0",
+      "prompt_hash": "006499229c13378b4151f1e446a97cf6021aefc3e8b6399beb98f3a39ba59eec",
+      "llm_model": "gpt-6-astra",
+      "llm_reasoning_effort": "medium",
+      "summarized_at": "2026-09-26T15:35:53.178970+00:00",
+      "llm_usage": {
+        "prompt_tokens": 1742,
+        "completion_tokens": 431,
+        "total_tokens": 2173
+      },
+      "venue": "",
+      "publication_type": "preprint",
+      "ccf_venue": false,
+      "publication_events": [
+        {
+          "date": "2026-09-24",
+          "basis": "arxiv_first_submission",
+          "url": "https://arxiv.org/abs/2609.30173",
+          "venue": "arXiv"
+        }
+      ],
+      "display_date": "2026-09-24",
+      "date_basis": "arxiv_first_submission",
+      "verification": {
+        "url": "https://arxiv.org/abs/2609.30173",
+        "method": "primary_source_metadata",
+        "date": "2026-09-24"
+      },
+      "pdf_url": "https://arxiv.org/pdf/2609.30173",
+      "venue_label": "arXiv",
+      "topics": [
+        "GNN"
+      ],
+      "topic_evidence": {
+        "GNN": "It is a $15$ million parameter physics-inspired graph neural network pretrained across $54$ topologies of $500$ to $4{,}000$ buses."
+      }
+    },
+    {
+      "id": "p-2831e61c090e2e962da5",
+      "title": "ARGUS: Role-Aware Event Knowledge Graphs for U.S. Employment-Discrimination Complaints",
+      "abstract": "U.S. employment-discrimination complaints describe complex event sequences that are not explicitly captured by lexical or embedding-based representations alone. We present ARGUS, a source-grounded pipeline that combines a 5W1H-inspired schema, legal-domain models, and LLM-based structured generation to construct document-level Event Knowledge Graphs (EKGs) from CourtListener complaints. ARGUS extracts fact-bearing statements, builds chunk-level event graphs with participant, temporal, and causal structure, and merges them into document-level representations. We evaluate graph quality through human and multi-model assessment and test downstream utility on claim classification and legal QA. The graph-structured classifier outperforms raw and linearized baselines on the held-out set, and EKG-only retrieval improves document-scoped QA, while open-retrieval gains remain limited by low first-stage candidate recall. These results suggest that EKGs are most useful for organizing and reasoning over evidence once relevant material has been retrieved.",
+      "authors": [
+        "Kannan, Sriram",
+        "Saseendran, Swetha",
+        "Kandi, Vishnu Vardhan Reddy",
+        "Barrett, Leslie",
+        "Seshadri, Madhavan",
+        "Santus, Enrico"
+      ],
+      "published": "2026-09-24",
+      "updated": "2026-09-24",
+      "doi": "",
+      "arxiv_id": "2609.30184",
+      "venue": "",
+      "publication_type": "preprint",
+      "sources": [
+        {
+          "name": "arxiv",
+          "id": "2609.30184",
+          "url": "https://arxiv.org/abs/2609.30184",
+          "date_basis": "arxiv_first_submission"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "KG",
+        "5W1H模式",
+        "LLM结构化生成",
+        "文档级图合并",
+        "法律问答"
+      ],
+      "method": "结合5W1H模式、法律领域模型与LLM结构化生成，提取事实并构建含参与者、时间和因果结构的分块事件图，合并为文档级知识图谱，用于诉求分类和法律问答。",
+      "venue_label": "arXiv",
+      "date_basis": "arxiv_first_submission",
+      "display_date": "2026-09-24",
+      "pdf_url": "https://arxiv.org/pdf/2609.30184",
+      "verification": {
+        "url": "https://arxiv.org/abs/2609.30184",
+        "method": "primary_source_metadata",
+        "date": "2026-09-24"
+      },
+      "publication_events": [
+        {
+          "date": "2026-09-24",
+          "basis": "arxiv_first_submission",
+          "url": "https://arxiv.org/abs/2609.30184",
+          "venue": "arXiv"
+        }
+      ],
+      "ccf_venue": false,
+      "identity_aliases": [
+        "arxiv:2609.30184",
+        "source:arxiv:2609.30184",
+        "title:argusroleawareeventknowledgegraphsforusemploymentdiscriminationcomplaints"
+      ],
+      "confidence": "high",
+      "evidence": [
+        "combines a 5W1H-inspired schema, legal-domain models, and LLM-based structured generation to construct document-level Event Knowledge Graphs (EKGs) from CourtListener complaints.",
+        "ARGUS extracts fact-bearing statements, builds chunk-level event graphs with participant, temporal, and causal structure, and merges them into document-level representations.",
+        "We evaluate graph quality through human and multi-model assessment and test downstream utility on claim classification and legal QA."
+      ],
+      "topics": [
+        "KG"
+      ],
+      "topic_evidence": {
+        "KG": "construct document-level Event Knowledge Graphs (EKGs) from CourtListener complaints"
+      },
+      "summary_input_hash": "97dcba3735bccc74e08e8434b8064526ce1a3860a5ae51096c3ab550227c78ec",
+      "prompt_hash": "006499229c13378b4151f1e446a97cf6021aefc3e8b6399beb98f3a39ba59eec",
+      "llm_model": "gpt-6-astra",
+      "llm_reasoning_effort": "medium",
+      "summarized_at": "2026-09-26T15:36:03.772203+00:00",
+      "llm_usage": {
+        "prompt_tokens": 1601,
+        "completion_tokens": 454,
+        "total_tokens": 2055
+      }
+    }
+  ]
+}

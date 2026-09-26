@@ -39,6 +39,6 @@ def lock(path):
 
 def export_site(papers, report, directory):
     # Abstracts/evidence stay in the research archive; only compact summaries go public.
-    fields = ("id", "title", "authors", "published", "updated", "venue", "publication_type", "ccf_venue", "sources", "status", "keywords", "method", "confidence", "summarized_at")
+    fields = ("id", "title", "authors", "published", "updated", "venue", "publication_type", "ccf_venue", "sources", "status", "keywords", "method", "confidence", "summarized_at", "venue_label", "display_date", "date_basis", "pdf_url", "topics")
     public = [{key: p[key] for key in fields if key in p} for p in papers if p.get("status") != "irrelevant"]
     write_json(directory / "data" / "papers.json", {"schema_version": 1, "generated_at": report.get("finished_at"), "report": report, "papers": public})

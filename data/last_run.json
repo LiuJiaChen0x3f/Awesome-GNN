@@ -1,45 +1,145 @@
 {
-  "started_at": "2026-09-26T14:43:05.844581+00:00",
+  "mode": "responses_web_search",
+  "started_at": "2026-09-26T15:37:17.439919+00:00",
   "window": {
     "since": "2026-09-13",
     "until": "2026-09-26"
   },
+  "llm_enabled": true,
+  "requested": 3,
+  "rounds": [
+    {
+      "round": 1,
+      "status": "completed",
+      "actions": [
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "site.arxiv.org/abs/ \"2026\" \"Sep\" \"24\" \"graph\"",
+          "queries": [
+            "site.arxiv.org/abs/ \"2026\" \"Sep\" \"24\" \"graph\"",
+            "site.arxiv.org/abs/ \"2026\" \"Sep\" \"25\" \"graph neural\"",
+            "site.aclanthology.org \"2026\" \"September\"",
+            "site.dl.acm.org \"graph\" \"September 2026\""
+          ]
+        },
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "site.arxiv.org/abs/ \"2026\" \"Sep 25\" \"graph\"",
+          "queries": [
+            "site.arxiv.org/abs/ \"2026\" \"Sep 25\" \"graph\"",
+            "site.arxiv.org/abs/ \"2026\" \"Sep 24\" \"graph\"",
+            "site.proceedings.mlr.press \"2026\" \"graph\"",
+            "site.dl.acm.org \"2026\" \"Published: 2\" \"September\" \"graph learning\""
+          ]
+        },
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "site.arxiv.org \"Reachability-Based Formal Verification of Graph Neural Networks\"",
+          "queries": [
+            "site.arxiv.org \"Reachability-Based Formal Verification of Graph Neural Networks\"",
+            "site.arxiv.org \"graph\" \"Submitted on 25 Sep 2026\"",
+            "site.arxiv.org \"graph\" \"Submitted on 24 Sep 2026\"",
+            "site.dl.acm.org \"KDD '26\" \"Publication Date\""
+          ]
+        },
+        {
+          "status": "completed",
+          "type": "open_page",
+          "url": "https://arxiv.org/search/advanced?abstracts=show&advanced=&classification-include_cross_list=include&date-date_type=submitted_date&date-filter_by=date_range&date-from_date=2026-09-13&date-to_date=2026-09-26&order=-announced_date_first&size=50&terms-0-field=all&terms-0-operator=AND&terms-0-term=graph"
+        },
+        {
+          "status": "completed",
+          "type": "open_page",
+          "url": "https://arxiv.org/search/advanced?abstracts=show&advanced=&classification-include_cross_list=include&date-date_type=submitted_date&date-filter_by=date_range&date-from_date=2026-09-13&date-to_date=2026-09-26&order=-announced_date_first&size=50&terms-0-field=all&terms-0-operator=AND&terms-0-term=graph"
+        },
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "\"GridSFM\" conference",
+          "queries": [
+            "\"GridSFM\" conference",
+            "\"Graph-Based Inference and Topology-Aware\" conference",
+            "\"ARGUS: Role-Aware Event Knowledge Graphs\"",
+            "site.ijcai.org/proceedings/2026 \"graph\""
+          ]
+        },
+        {
+          "status": "completed",
+          "type": "open_page",
+          "url": "https://arxiv.org/abs/2609.30173"
+        }
+      ],
+      "citations": [
+        {
+          "url": "https://arxiv.org/abs/2609.30184",
+          "title": "[2609.30184] ARGUS: Role-Aware Event Knowledge Graphs for U.S. Employment-Discrimination Complaints"
+        },
+        {
+          "url": "https://arxiv.org/abs/2609.30184",
+          "title": "[2609.30184] ARGUS: Role-Aware Event Knowledge Graphs for U.S. Employment-Discrimination Complaints"
+        },
+        {
+          "url": "https://arxiv.org/abs/2609.30173",
+          "title": "[2609.30173] GridSFM: A Foundation Model for Solving AC Optimal Power Flow"
+        },
+        {
+          "url": "https://arxiv.org/abs/2609.30173",
+          "title": "[2609.30173] GridSFM: A Foundation Model for Solving AC Optimal Power Flow"
+        },
+        {
+          "url": "https://arxiv.org/abs/2609.30150",
+          "title": "[2609.30150] Graph-Based Inference and Topology-Aware Multi-Agent Reinforcement Learning for Large-Scale Railway Network Management"
+        },
+        {
+          "url": "https://arxiv.org/abs/2609.30150",
+          "title": "[2609.30150] Graph-Based Inference and Topology-Aware Multi-Agent Reinforcement Learning for Large-Scale Railway Network Management"
+        },
+        {
+          "url": "https://arxiv.org/search/advanced?abstracts=show&advanced=&classification-include_cross_list=include&date-date_type=submitted_date&date-filter_by=date_range&date-from_date=2026-09-13&date-to_date=2026-09-26&order=-announced_date_first&size=50&terms-0-field=all&terms-0-operator=AND&terms-0-term=graph",
+          "title": "Advanced Search | arXiv e-print repository"
+        }
+      ],
+      "usage": {
+        "input_tokens": 1721,
+        "output_tokens": 1671,
+        "total_tokens": 3392
+      },
+      "format_recovery": "url_citations",
+      "candidate_count": 3,
+      "notes": "Recovered candidates from response citations; all require primary-source verification."
+    }
+  ],
   "sources": {
-    "arxiv": {
+    "web_search": {
       "ok": true,
-      "fetched": 0,
-      "candidates": 0,
-      "mode": "api",
+      "mode": "responses",
+      "verified": 3,
       "truncated": false
-    },
-    "crossref": {
-      "ok": true,
-      "fetched": 144,
-      "candidates": 1,
-      "mode": "api",
-      "truncated": true
     }
   },
-  "llm_enabled": true,
-  "search_queries": [
-    "graph transformer long range dependencies",
-    "heterogeneous graph neural network recommendation",
-    "graph contrastive learning node classification",
-    "temporal graph neural network link prediction",
-    "graph structure learning robustness",
-    "equivariant graph neural network molecular modeling",
-    "graph neural network oversquashing mitigation",
-    "graph foundation model transfer learning"
-  ],
-  "deduplicated": 1,
-  "finished_at": "2026-09-26T14:44:05.420796+00:00",
+  "rejections": [],
+  "request_hash": "23e2c10173b70b31a8b9f721ef4bf2d56b0f4c7790ad48f333fa2344eeeb17d5",
   "llm_processed": 0,
-  "total": 90,
+  "coverage": "Best effort within time/tool budgets; not an exhaustive newest-paper ranking.",
+  "finished_at": "2026-09-26T15:38:07.503121+00:00",
+  "returned": 3,
+  "total": 94,
   "statuses": {
     "missing_abstract": 5,
-    "ready": 82,
-    "irrelevant": 2,
-    "insufficient": 1
+    "pending": 83,
+    "ready": 4,
+    "irrelevant": 2
   },
-  "llm_remaining": 0
+  "result_ids": [
+    "p-88d531326bb551c8c982",
+    "p-6d1a77425b943819e76f",
+    "p-2831e61c090e2e962da5"
+  ],
+  "deduplicated": 3,
+  "elapsed_seconds": 50.06,
+  "shortfall": 0,
+  "stop_reason": "target_reached"
 }

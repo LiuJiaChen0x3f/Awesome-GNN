@@ -10,6 +10,13 @@
 
 ## 当前完成
 
+- 推荐入口已升级为 `python run.py search --limit 3`：`agent.py` 使用 Responses web_search 搜索/打开网页，按原站核验反馈继续检索；旧 `run` 仍为兼容批处理，不能混同。`verification.py` 校验受限主站URL、精确标题、原始摘要、日期及会议主会信息。新字段含 topics、topic_evidence、publication_events、display_date、venue_label、pdf_url。归档不删除，旧记录不强制重算。
+- 当前用户需求仍读 `prompts/search.request.txt`；代理规则为 `search.agent.txt`，单篇总结为 `search.summary.zh.txt`。`search.en.txt` / `summarize.zh.txt` 仅用于旧入口。结果不足退出4，网络失败退出2；结果和详细工具轨迹在 `data/search_results.json` / `data/last_run.json`。
+- 供应商兼容性：实测添加 max_tool_calls 返回HTTP400，故默认不发送（send_max_tool_calls=false）。轮数/输出token有程序限制，单轮工具次数仅提示词目标，时间为软预算。store=false/instructions在完整实测成功，接口失败不自动重复付费搜索。
+- 2026-09-26 完整联调：第一次有效运行3轮约220秒，3篇均经原站验证且新生成摘要；修复中间消息解析并增加引用候选恢复后，第二次1轮50.06秒返回同3篇、0次摘要重算、无重复入库。论文为 arXiv:2609.30150、2609.30173、2609.30184，均核验v1日期2026-09-24。共31项测试通过，node语法检查及skill校验通过；网页实测GridSFM搜索、KG筛选、arXiv简称、首次提交日期及PDF链接正确。
+- 本轮开始时用户工作区已有93篇归档及数据改动（包括85篇pending）；已备份到 `.local/pre-agent-backup`，保留已有改动后归档94篇，4 ready、83 pending、5 missing_abstract、2 irrelevant。pending不是本轮全量失效造成的；本轮只处理搜索选中的论文。不要把旧历史数据描述为已按新准入规则核验。
+- 限制：会议网页缺精确日期/结构化会议名、站点拒绝访问时会保守拒绝，当前真实样例只验证了arXiv路线，会议路线有模拟测试但尚无本轮真实合格样例。网页默认最新排序但保留历史归档；搜索是预算内最佳努力，不保证全网最新前三。依旧只读摘要，未实现PDF全文理解。
+
 - Python 3.11标准库流水线：`python run.py run|summarize|build`。
 - arXiv API（分页、更新时间窗口）与RSS回退；Crossref官方API；OpenAlex可选适配器（Bearer key），默认关闭。
 - DOI、去版本arXiv ID、来源ID、规范化完整标题的传递合并；持久身份别名，保留各来源链接。
@@ -52,6 +59,8 @@
 - 根据用户最新要求，删除 `.github/workflows/update.yml`：不再计划或远程手动触发自动采集；仅在本机执行 `search`，然后按需手动提交站点数据。既有 GitHub Actions Secret 不再由该项目工作流读取。
 
 ## 当前真实限制
+
+- 2026-09-26 快速接口实测（本机当前 gpt-6-astra / medium 配置，共 4 次 HTTP 请求）：Chat Completions 自定义 function tool 强制调用返回正确参数，回传随机 receipt 后模型正确读取，完整往返通过；Responses + `tools: [{"type":"web_search"}]` 返回 completed 的 search/open_page 两次工具记录及 URL 引用，arXiv 标题另行核对一致；Chat Completions + `web_search_options` 虽返回 HTTP 200，但无引用且回答搜索不可用，此路径未通过。测试脚本和脱敏报告位于 gitignored `.local/probe_capabilities.py`、`.local/capability_probe_report.json`。这证明当前接口的最小能力，不代表所有搜索参数或复杂代理流程已验证；尚未接入正式论文流程，未修改论文数据。
 
 - 2026-09-26 后续提示词调整（覆盖此前排除未录用预印本的规则）：纳入来源为 CCF-A 主会、EMNLP 主会或独立核验的 arXiv 记录；arXiv 不限制会议等级或录用状态，11 个主题 OR 条件保留。arXiv 用 v1 首次提交日期，会议用正式发表日期；两种来源合并后保留日期依据，按窗口内较新的合格事件排序且只返回一条。无已核实合格会议时标签为 arXiv。本轮仅修改两份搜索提示词和 memory.md，未运行检索/LLM，未修改数据、前端或日期过滤代码。
 
