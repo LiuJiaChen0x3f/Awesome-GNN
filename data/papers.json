@@ -838,12 +838,12 @@
       "status": "ready",
       "keywords": [
         "GNN",
-        "物理信息微调",
-        "牛顿潮流方法",
+        "跨拓扑预训练",
+        "牛顿法物理信息微调",
         "对数惩罚松弛变量",
-        "交流最优潮流"
+        "AC最优潮流"
       ],
-      "method": "跨电网拓扑预训练物理启发图神经网络，结合基于牛顿潮流方法的物理信息微调求解交流最优潮流。通过提升问题并引入对数惩罚松弛变量放宽约束，处理可行集不连通问题。",
+      "method": "以跨电网拓扑预训练的GNN为骨干，结合基于牛顿法的物理信息微调求解AC最优潮流；通过提升问题并引入对数惩罚松弛变量处理可行集不连通性。",
       "identity_aliases": [
         "arxiv:2609.30173",
         "source:arxiv:2609.30173",
@@ -856,14 +856,14 @@
         "To do so, we lift the problem and relax its constraints with logarithmically penalized slacks."
       ],
       "summary_input_hash": "cbbe41d3507e3578c47b07db5d40f8dea80f5e618e4ff088a7aa1711851984b0",
-      "prompt_hash": "006499229c13378b4151f1e446a97cf6021aefc3e8b6399beb98f3a39ba59eec",
+      "prompt_hash": "7f2b1b81715f22ea6e6aacaceddc055de88a835b5cd50cc25bfc88669d8a01fa",
       "llm_model": "gpt-6-astra",
       "llm_reasoning_effort": "medium",
-      "summarized_at": "2026-09-26T15:35:53.178970+00:00",
+      "summarized_at": "2026-09-26T15:52:48.183265+00:00",
       "llm_usage": {
-        "prompt_tokens": 1742,
-        "completion_tokens": 431,
-        "total_tokens": 2173
+        "prompt_tokens": 1991,
+        "completion_tokens": 421,
+        "total_tokens": 2412
       },
       "venue": "",
       "publication_type": "preprint",
@@ -1022,12 +1022,12 @@
       "status": "ready",
       "keywords": [
         "KG",
-        "5W1H模式",
+        "5W1H启发模式",
         "LLM结构化生成",
-        "文档级图合并",
+        "分块事件图合并",
         "法律问答"
       ],
-      "method": "结合5W1H模式、法律领域模型与LLM结构化生成，提取事实并构建含参与者、时间和因果结构的分块事件图，合并为文档级知识图谱，用于诉求分类和法律问答。",
+      "method": "结合5W1H启发模式、法律领域模型和LLM结构化生成提取事实，构建含参与者、时序及因果结构的分块事件知识图谱，再合并为文档级图谱，用于诉求分类和法律问答。",
       "venue_label": "arXiv",
       "date_basis": "arxiv_first_submission",
       "display_date": "2026-09-24",
@@ -1053,7 +1053,7 @@
       ],
       "confidence": "high",
       "evidence": [
-        "combines a 5W1H-inspired schema, legal-domain models, and LLM-based structured generation to construct document-level Event Knowledge Graphs (EKGs) from CourtListener complaints.",
+        "a source-grounded pipeline that combines a 5W1H-inspired schema, legal-domain models, and LLM-based structured generation",
         "ARGUS extracts fact-bearing statements, builds chunk-level event graphs with participant, temporal, and causal structure, and merges them into document-level representations.",
         "We evaluate graph quality through human and multi-model assessment and test downstream utility on claim classification and legal QA."
       ],
@@ -1061,17 +1061,17 @@
         "KG"
       ],
       "topic_evidence": {
-        "KG": "construct document-level Event Knowledge Graphs (EKGs) from CourtListener complaints"
+        "KG": "to construct document-level Event Knowledge Graphs (EKGs) from CourtListener complaints."
       },
       "summary_input_hash": "97dcba3735bccc74e08e8434b8064526ce1a3860a5ae51096c3ab550227c78ec",
-      "prompt_hash": "006499229c13378b4151f1e446a97cf6021aefc3e8b6399beb98f3a39ba59eec",
+      "prompt_hash": "7f2b1b81715f22ea6e6aacaceddc055de88a835b5cd50cc25bfc88669d8a01fa",
       "llm_model": "gpt-6-astra",
       "llm_reasoning_effort": "medium",
-      "summarized_at": "2026-09-26T15:36:03.772203+00:00",
+      "summarized_at": "2026-09-26T15:56:06.997283+00:00",
       "llm_usage": {
-        "prompt_tokens": 1601,
-        "completion_tokens": 454,
-        "total_tokens": 2055
+        "prompt_tokens": 1850,
+        "completion_tokens": 464,
+        "total_tokens": 2314
       }
     },
     {

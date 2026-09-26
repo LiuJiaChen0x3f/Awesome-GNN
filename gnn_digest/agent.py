@@ -63,6 +63,14 @@ def cited_candidates(citations, limit):
         except (TypeError, ValueError):
             continue
         title = re.sub(r'^\[\d{4}\.\d{4,5}(?:v\d+)?\]\s*', '', citation.get('title') or '').strip()
+        # Citation titles can include the publisher's page suffix; strip only
+        # known suffixes on that publisher, then still require exact metadata match.
+        host = urlparse(url).hostname
+        suffixes = {'aclanthology.org': r'\s+-\s+ACL Anthology$',
+                    'ijcai.org': r'\s+\|\s+IJCAI$'}
+        pattern = suffixes.get(host.removeprefix('www.'))
+        if pattern:
+            title = re.sub(pattern, '', title, flags=re.I).strip()
         if title and url not in seen:
             seen.add(url)
             result.append({'title':title, 'url':url})
@@ -127,6 +135,70 @@ def validate_options(options):
             raise ValueError(f'search_agent.{key} must be an integer in {lo}..{hi}')
 
 
+def source_quotas(limit):
+    """Odd result counts reserve the extra slot for a conference paper."""
+    return {'conference': (limit + 1) // 2, 'arxiv': limit // 2}
+
+
+def verified_route(p):
+    """Classify from independently verified metadata, never an LLM's label."""
+    url = p.get('verification', {}).get('url', '')
+    host = urlparse(url).hostname
+    if host == 'arxiv.org' and p.get('date_basis') == 'arxiv_first_submission':
+        return 'arxiv'
+    if host and host != 'arxiv.org' and p.get('date_basis') == 'conference_publication' and p.get('venue_label') in VENUES:
+        return 'conference'
+    return None
+
+
+def select_balanced(pool, quotas, ready_only=False, archive=()):
+    """Assign distinct identities to two quotas, preserving each route's own date.
+
+    Reserve enough dual-route identities for arXiv when possible, then prefer
+    newer conferences. Archived aliases help deduplicate but never establish
+    an eligible route for this run. Each paper occupies at most one slot.
+    """
+    usable = [p for p in pool if verified_route(p) and
+              p.get('status') in (('ready',) if ready_only else ('pending', 'ready'))]
+    groups = []
+    for merged in merge_records(list(archive) + pool):
+        keys = identity_keys(merged)
+        routes = {}
+        for p in usable:
+            if identity_keys(p) & keys:
+                route = verified_route(p)
+                if route not in routes or p.get('display_date', p['published']) > routes[route].get('display_date', routes[route]['published']):
+                    routes[route] = p
+        if routes:
+            groups.append(routes)
+    conferences = sorted((g for g in groups if 'conference' in g),
+                         key=lambda g:g['conference'].get('display_date',g['conference']['published']), reverse=True)
+    # Reserve enough dual-route papers to fill arXiv; otherwise favor newer conferences.
+    arxiv_only = sum('arxiv' in g and 'conference' not in g for g in groups)
+    dual_count = sum('arxiv' in g for g in conferences)
+    dual_allowance = max(0, dual_count - max(0, quotas['arxiv'] - arxiv_only))
+    conference_only = sum('arxiv' not in g for g in conferences)
+    dual_allowance = max(dual_allowance, min(dual_count, max(0, quotas['conference']-conference_only)))
+    selected, used, used_dual = [], set(), 0
+    for g in conferences:
+        if len(selected) >= quotas['conference']:
+            break
+        if 'arxiv' in g and used_dual >= dual_allowance:
+            continue
+        selected.append({**g['conference'], 'selection_bucket':'conference'})
+        used.add(id(g))
+        used_dual += 'arxiv' in g
+    arxiv = sorted((g for g in groups if 'arxiv' in g and id(g) not in used),
+                   key=lambda g:g['arxiv'].get('display_date',g['arxiv']['published']), reverse=True)
+    selected.extend({**g['arxiv'], 'selection_bucket':'arxiv'} for g in arxiv[:quotas['arxiv']])
+    return sorted(selected, key=lambda p:p.get('display_date',p['published']), reverse=True)
+
+
+def quota_progress(papers, quotas):
+    counts = Counter(p['selection_bucket'] for p in papers)
+    return {k:{'requested':v, 'returned':counts[k], 'shortfall':max(0,v-counts[k])} for k,v in quotas.items()}
+
+
 def search(root, config, args):
     if hasattr(sys.stdout, 'reconfigure'):
         sys.stdout.reconfigure(encoding='utf-8')
@@ -135,6 +207,7 @@ def search(root, config, args):
     limit = getattr(args, 'limit', 5)
     if not 1 <= limit <= 20:
         raise ValueError('search --limit must be 1..20')
+    quotas = source_quotas(limit)
     options = dict(max_rounds=3, max_tool_calls_per_round=12, max_output_tokens=6000,
                    candidate_limit=10, timeout=180, max_seconds=600, max_summary_papers=10)
     options.update(config.get('search_agent', {}))
@@ -155,23 +228,29 @@ def search(root, config, args):
     deadline = start + options['max_seconds']
     report = {'mode':'responses_web_search', 'started_at':datetime.now(timezone.utc).isoformat(),
               'window':{'since':str(since), 'until':str(today)}, 'llm_enabled':True,
-              'requested':limit, 'rounds':[], 'sources':{}, 'rejections':[],
+              'requested':limit, 'source_quotas':quotas, 'quota_progress':quota_progress([],quotas),
+              'rounds':[], 'sources':{}, 'rejections':[],
               'request_hash':hashlib.sha256(request.encode()).hexdigest(), 'llm_processed':0,
               'coverage':'Best effort within time/tool budgets; not an exhaustive newest-paper ranking.'}
     with lock(root/'data/pipeline.lock'):
         archive = read_json(root/'data/papers.json', {'schema_version':1, 'papers':[]})['papers']
-        accepted, seen, feedback = [], set(), []
+        initial_archive_keys = {k for p in archive for k in identity_keys(p)}
+        accepted, pool, seen, feedback = [], [], set(), []
         summary_budget = max(limit, options['max_summary_papers'])
         for round_number in range(1, options['max_rounds']+1):
             if time.monotonic() >= deadline:
                 break
-            print(f'Web research round {round_number}/{options["max_rounds"]}: {len(accepted)}/{limit} verified results', flush=True)
+            progress = quota_progress(accepted, quotas)
+            print(f'Web research round {round_number}/{options["max_rounds"]}: ' +
+                  ' | '.join(f'{k} {v["returned"]}/{v["requested"]}' for k,v in progress.items()), flush=True)
             context = {'research_request':request, 'utc_today':str(today),
                        'date_window':report['window'], 'requested_count':limit,
                        'candidate_limit':options['candidate_limit'], 'primary_source_domains':DOMAINS,
-                       'conference_aliases':VENUES, 'accepted':[{'title':p['title'], 'url':p['verification']['url']} for p in accepted],
-                       'feedback':feedback[-30:], 'instruction':'Search for additional eligible papers; prioritize newest dates. Do not return accepted or rejected URLs again.'}
-            record = {'round':round_number}
+                       'conference_aliases':VENUES, 'source_quotas':quotas, 'quota_progress':progress,
+                       'search_focus':[k for k,v in progress.items() if v['shortfall']],
+                       'accepted':[{'title':p['title'], 'url':p['verification']['url'], 'selection_bucket':p['selection_bucket']} for p in accepted],
+                       'feedback':feedback[-30:], 'instruction':'Fill each source quota independently. Prioritize deficient buckets, newest within each bucket. Never substitute arXiv for conference slots. Do not repeat known URLs; a NEW conference link for a known arXiv paper can establish a second eligible route, but the paper still counts only once.'}
+            record = {'round':round_number, 'quota_before':progress}
             try:
                 response = agent.search(context, min(options['timeout'], max(1, deadline-time.monotonic())))
                 text, actions, citations = trace_response(response)
@@ -218,14 +297,18 @@ def search(root, config, args):
                     item = {'url':c['url'], 'title':c['title'][:300], 'reason':reason}
                     feedback.append(item)
                     report['rejections'].append(item)
-            verified = merge_records(verified)
-            verified.sort(key=lambda p:p.get('display_date',p['published']), reverse=True)
-            for p in verified:
-                if len(accepted) >= limit or time.monotonic() >= deadline:
+            # Keep independently verified routes until assignment; a merged venue label
+            # must never turn an arXiv-only verification into a conference slot.
+            pool.extend(verified)
+            attempted = set()
+            while time.monotonic() < deadline:
+                selected = select_balanced(pool, quotas, archive=archive)
+                p = next((p for p in selected if p['status'] != 'ready' and
+                          p['verification']['url'] not in attempted), None)
+                if p is None:
                     break
-                if any(identity_keys(p) & identity_keys(a) for a in accepted):
-                    continue
-                cached = next((a for a in archive if identity_keys(p) & identity_keys(a)
+                attempted.add(p['verification']['url'])
+                cached = next((a for a in archive + pool if identity_keys(p) & identity_keys(a)
                                and content_hash(a) == content_hash(p) and summarizer.cached(a)
                                and a.get('topics') and a.get('topic_evidence')), None)
                 if cached:
@@ -238,18 +321,33 @@ def search(root, config, args):
                     report['llm_processed'] += 1
                 else:
                     break
+                # Transfer summary status back to this verified route, without copying
+                # the per-run bucket assignment into the persistent archive.
+                for original in pool:
+                    if original['verification']['url'] == p['verification']['url']:
+                        original.update({k:v for k,v in p.items() if k != 'selection_bucket'})
                 if p['status'] == 'ready' and p.get('topics'):
-                    accepted.append(p)
-                    print(f'Accepted {len(accepted)}/{limit}: {p["published"]} | {p["venue_label"]} | {p["title"]}', flush=True)
-                    write_json(root/'data/papers.json', {'schema_version':1, 'papers':merge_records(archive+accepted)})
+                    print(f'Verified {p["selection_bucket"]}: {p["published"]} | {p["venue_label"]} | {p["title"]}', flush=True)
                 else:
                     item = {'url':p['verification']['url'], 'title':p['title'], 'reason':'Summary/topic validation: ' + p['status']}
                     feedback.append(item)
                     report['rejections'].append(item)
-            if len(accepted) >= limit or report['llm_processed'] >= summary_budget:
+                accepted = select_balanced(pool, quotas, ready_only=True, archive=archive)
+                durable = [{k:v for k,v in p.items() if k != 'selection_bucket'} for p in accepted]
+                if durable:
+                    archive = merge_records(archive + durable)
+                    write_json(root/'data/papers.json', {'schema_version':1, 'papers':archive})
+            accepted = select_balanced(pool, quotas, ready_only=True, archive=archive)
+            report['quota_progress'] = quota_progress(accepted, quotas)
+            record['quota_after'] = report['quota_progress']
+            write_json(root/'data/last_run.json', report)
+            if all(v['shortfall'] == 0 for v in report['quota_progress'].values()) or report['llm_processed'] >= summary_budget:
                 break
-            feedback.append({'reason':f'Only {len(accepted)}/{limit} qualified results. Search alternative primary sources or shorter/broader topic phrasing, keeping the same dates and eligibility.'})
-        papers = merge_records(archive + accepted) if accepted else archive
+            feedback.append({'reason':'Source quotas not filled; do not backfill with another source.',
+                             'quota_progress':report['quota_progress'],
+                             'action':'Find missing conference/arXiv routes in the same date window and eligibility scope.'})
+        durable = [{k:v for k,v in p.items() if k != 'selection_bucket'} for p in accepted]
+        papers = merge_records(archive + durable) if accepted else archive
         results = []
         for p in accepted:
             persisted = next((a for a in papers if identity_keys(a) & identity_keys(p)), None)
@@ -258,8 +356,10 @@ def search(root, config, args):
                 results.append({**p, 'id':persisted['id']})
         results.sort(key=lambda p:p.get('display_date', p['published']), reverse=True)
         report.update(finished_at=datetime.now(timezone.utc).isoformat(), returned=len(results),
+                      quota_progress=quota_progress(results, quotas),
                       total=len(papers), statuses=dict(Counter(p['status'] for p in papers)),
-                      result_ids=[p['id'] for p in results], deduplicated=len(archive)+len(accepted)-len(papers),
+                      result_ids=[p['id'] for p in results],
+                      deduplicated=sum(bool(identity_keys(p) & initial_archive_keys) for p in accepted),
                       elapsed_seconds=round(time.monotonic()-start,2), shortfall=max(0, limit-len(results)))
         ok = any(any(a.get('status')=='completed' for a in r.get('actions',[])) for r in report['rounds'])
         report['sources']['web_search'] = {'ok':ok, 'mode':'responses', 'verified':len(results), 'truncated':len(results)<limit}
@@ -272,5 +372,6 @@ def search(root, config, args):
         write_json(root/'data/search_results.json', {'report':report, 'papers':results})
         export_site(papers, report, root/'site')
         print(json.dumps({'returned':len(results), 'requested':limit, 'stop_reason':report['stop_reason'],
-                          'results':[{'title':p['title'],'date':p.get('display_date',p['published']), 'venue':p.get('venue_label'), 'topics':p.get('topics'), 'keywords':p['keywords'], 'method':p['method'], 'url':p.get('pdf_url') or p['verification']['url']} for p in results]}, ensure_ascii=False, indent=2), flush=True)
+                          'quota_progress':report['quota_progress'],
+                          'results':[{'title':p['title'], 'selection_bucket':p['selection_bucket'], 'date':p.get('display_date',p['published']), 'venue':p.get('venue_label'), 'topics':p.get('topics'), 'keywords':p['keywords'], 'method':p['method'], 'url':p.get('pdf_url') or p['verification']['url']} for p in results]}, ensure_ascii=False, indent=2), flush=True)
         return 0 if len(results)>=limit else 4 if ok else 2

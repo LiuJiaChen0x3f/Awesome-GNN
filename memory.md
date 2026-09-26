@@ -10,6 +10,11 @@
 
 ## 当前完成
 
+- 2026-09-26 来源配额更新：`search --limit N` 强制会议 ceil(N/2)、arXiv floor(N/2)，10为5+5，3为2+1。会议仍为项目允许的CCF-A主会+EMNLP主会；arXiv不限会议等级。`agent.py` 保存各自独立核验路线，结合历史身份别名跨组去重，同一论文最多一个名额；按分配路线的日期排序，缺额定向反馈补搜，不跨组补足、不扩大窗口。归档checkpoint保留已保存论文；selection_bucket仅在本次结果，历史归档不强制1:1。
+- 配额同步到 `prompts/search.request.txt`、`prompts/search.agent.txt`、README和已安装skill；报告新增source_quotas/quota_progress/每轮quota_before与quota_after。网页显示会议与arXiv各自完成数，并把“未补齐目标”与旧采集的抓取上限区分。
+- 本轮测试新增 `tests/test_quotas.py`，覆盖5+5、单来源不足、奇数、双路线分配、历史别名桥接、失败摘要、补搜、避免无用摘要调用；44项unittest通过，node语法及skill校验通过。真实验证发现引用标题带站名后缀，已仅对ACL Anthology/IJCAI匹配域名清理已知后缀，仍要求与原站元数据标题完全规范化匹配。
+- 两次真实 `search --limit 3`：均为2026-09-13至2026-09-26 UTC窗口、3轮补搜，最终会议0/2、arXiv1/1，未达标。首轮186.08秒；标题后缀修复后的最终轮195.08秒，返回ARGUS（2609.30184），新总结1篇，复用归档ID，归档仍94篇。会议候选遇到原站摘要不可用、URLError及目录页不匹配，不能由此声称窗口内不存在会议论文。结果/拒绝详情保存在data/search_results.json与data/last_run.json；没有扩大日期或用额外arXiv填缺额。网页本地实测显示“会议0/2；arXiv1/1”和预算不足提示，保留历史归档。密钥扫描、结果唯一性/五关键词/百字限制通过。
+
 - 推荐入口已升级为 `python run.py search --limit 3`：`agent.py` 使用 Responses web_search 搜索/打开网页，按原站核验反馈继续检索；旧 `run` 仍为兼容批处理，不能混同。`verification.py` 校验受限主站URL、精确标题、原始摘要、日期及会议主会信息。新字段含 topics、topic_evidence、publication_events、display_date、venue_label、pdf_url。归档不删除，旧记录不强制重算。
 - 当前用户需求仍读 `prompts/search.request.txt`；代理规则为 `search.agent.txt`，单篇总结为 `search.summary.zh.txt`。`search.en.txt` / `summarize.zh.txt` 仅用于旧入口。结果不足退出4，网络失败退出2；结果和详细工具轨迹在 `data/search_results.json` / `data/last_run.json`。
 - 供应商兼容性：实测添加 max_tool_calls 返回HTTP400，故默认不发送（send_max_tool_calls=false）。轮数/输出token有程序限制，单轮工具次数仅提示词目标，时间为软预算。store=false/instructions在完整实测成功，接口失败不自动重复付费搜索。

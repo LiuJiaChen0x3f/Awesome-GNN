@@ -10,15 +10,21 @@ Topic eligibility:
 - The primary method or task must involve at least one of these 11 controlled keywords in a graph-learning context: GNN, SSL, CL, OOD, TAG, GSL, HGT, TGN, KG, KGE, HGNN.
 - Use OR semantics: one matching topic is sufficient; several are allowed. Do not require all 11 or favor an older paper simply because it matches more topics. Mere background mentions are insufficient.
 
+Source quotas (hard requirement):
+- Split the requested result count evenly: ceil(N/2) independently verified conference papers and floor(N/2) independently verified arXiv papers. For 10 results, return 5 conference + 5 arXiv; for 3, return 2 conference + 1 arXiv. Runtime source_quotas is authoritative.
+- Conference slots require an eligible primary proceedings record; arXiv slots require an arXiv record and do not depend on conference rank or acceptance. An arXiv page mentioning a conference is not enough to fill a conference slot.
+- Deduplicate globally by DOI, arXiv ID and normalized title. A paper found through both routes may occupy either eligible bucket, but never two slots. Retain enough distinct candidates to meet both quotas.
+- Search deficient buckets explicitly and prioritize missing conference slots when arXiv is already full. Never fill one bucket's shortfall with the other. If the window or verification budget prevents filling a quota, return the partial results and report the shortfall separately for each bucket.
+
 Recency and ordering:
-- Search both the newest eligible proceedings and the newest arXiv submissions; request descending publication or first-submission date order where supported. Merge and deduplicate candidates across sources before applying the final result limit. Do not place older conference papers ahead of newer arXiv papers solely because of venue prestige.
+- Search both the newest eligible proceedings and the newest arXiv submissions; request descending publication or first-submission date order where supported. Select newest eligible papers within each source quota, deduplicating globally; then display the combined selection newest first. The quotas take precedence over a global newest-N ranking.
 - Use the verified formal publication date of the eligible conference paper, preferring the publisher's first online publication date for that conference version, then the proceedings publication date. Keep an earlier preprint submission date separate.
-- For the arXiv route, use the first submission date (v1), not the latest revision date. For a deduplicated paper with both routes, retain both dates and their provenance; use the later eligible event within the configured window for ordering, explicitly labeling it as conference publication or arXiv first submission. Return the paper only once.
+- For the arXiv route, use the first submission date (v1), not the latest revision date. For a deduplicated paper with both routes, retain both dates and their provenance. Use the date of the route assigned to its quota for this run: conference publication for conference slots, arXiv first submission for arXiv slots. Both routes must independently satisfy the date window to be eligible for either assignment. Return the paper only once.
 - Do not substitute revision, indexing, crawling, metadata-update, or acceptance dates for publication dates. Do not let a new revision make an old paper appear newly published.
 - Filter by the configured publication-date window and order eligible results by publication date, newest first. Use topic relevance only to break date ties.
 - Preserve partial date precision; never invent a month or day. If a missing or partial date cannot establish window eligibility or exact relative order, flag the uncertainty and do not claim the paper is among the newest verified results. Do not silently widen the window or relax venue constraints to fill the result count.
 
 Output:
-- Return no more than 5 final results; fewer verified results are acceptable.
+- Return at most the runtime requested_count with the required source split; fewer verified results are acceptable only with explicit source-specific shortages.
 - In the final webpage, show only the verified conference abbreviation (for example, NeurIPS, ICML, KDD, or EMNLP) in the conference badge, never its full name or a journal label.
 - For papers included through the arXiv route without a verified eligible conference, use the badge "arXiv"; do not invent a conference or rank. If an eligible conference is verified, use its abbreviation and retain the arXiv link as a source/PDF link.

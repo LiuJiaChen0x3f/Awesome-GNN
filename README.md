@@ -19,6 +19,8 @@ python run.py search --limit 3 --days 30
 
 `--limit` 是1至20篇的目标数量，覆盖需求文件内的示例数量。退出码0达到目标，4表示有搜索但不足，2表示联网搜索未成功。搜索排序是预算内的最佳努力，不能宣称全网最新排名。源码、测试和归档均不含密钥。
 
+**来源各占一半**：`python run.py search --limit 10` 要求5篇会议 + 5篇arXiv。奇数时会议多1篇，所以 `--limit 3` 是2篇会议 + 1篇arXiv，`--limit 1` 只找会议。会议仍须为上述合格主会；arXiv不限会议等级或录用状态。每组按各自发表日期优先检索，跨组去重，同一论文不能占两个名额。缺少会议时会继续定向搜索会议；达到预算仍不足，就报告各组缺额并退出4，不以arXiv补足，不静默扩大日期窗口。报告中的 `source_quotas` / `quota_progress` 及本次结果的 `selection_bucket` 可用于核对；历史归档不要求整体1:1。
+
 `config.json.search_agent` 默认3轮、单请求超时180秒、总软预算600秒、每轮10候选、10篇摘要预算（目标更大时至少为目标数）。超时不会自动重发付费搜索。当前供应商拒绝可选 `max_tool_calls` 参数，默认 `send_max_tool_calls=false`；12次/轮是提示词目标，不是硬上限。外层限制轮数、输出token和时间；只有供应商确认支持后才开启该参数。
 
 提示词：`search.request.txt` 是用户需求，`search.agent.txt` 是搜索执行与JSON格式，`search.summary.zh.txt` 是核验摘要的总结规则。全文PDF解析尚未实现。API需支持Responses联网搜索和Chat Completions摘要，不能仅凭模型名认定兼容。

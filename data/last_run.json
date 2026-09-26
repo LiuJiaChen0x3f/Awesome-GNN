@@ -1,131 +1,430 @@
 {
   "mode": "responses_web_search",
-  "started_at": "2026-09-26T15:37:17.439919+00:00",
+  "started_at": "2026-09-26T15:54:55.840859+00:00",
   "window": {
     "since": "2026-09-13",
     "until": "2026-09-26"
   },
   "llm_enabled": true,
   "requested": 3,
+  "source_quotas": {
+    "conference": 2,
+    "arxiv": 1
+  },
+  "quota_progress": {
+    "conference": {
+      "requested": 2,
+      "returned": 0,
+      "shortfall": 2
+    },
+    "arxiv": {
+      "requested": 1,
+      "returned": 1,
+      "shortfall": 0
+    }
+  },
   "rounds": [
     {
       "round": 1,
+      "quota_before": {
+        "conference": {
+          "requested": 2,
+          "returned": 0,
+          "shortfall": 2
+        },
+        "arxiv": {
+          "requested": 1,
+          "returned": 0,
+          "shortfall": 1
+        }
+      },
       "status": "completed",
       "actions": [
         {
           "status": "completed",
           "type": "search",
-          "query": "site.arxiv.org/abs/ \"2026\" \"Sep\" \"24\" \"graph\"",
+          "query": "site.arxiv.org/abs/ \"graph\" \"Sep 2026\"",
           "queries": [
-            "site.arxiv.org/abs/ \"2026\" \"Sep\" \"24\" \"graph\"",
-            "site.arxiv.org/abs/ \"2026\" \"Sep\" \"25\" \"graph neural\"",
-            "site.aclanthology.org \"2026\" \"September\"",
-            "site.dl.acm.org \"graph\" \"September 2026\""
+            "site.arxiv.org/abs/ \"graph\" \"Sep 2026\"",
+            "site.dl.acm.org \"graph\" \"September 2026\"",
+            "site.aclanthology.org/2026 \"September\" graph"
           ]
         },
         {
           "status": "completed",
           "type": "search",
-          "query": "site.arxiv.org/abs/ \"2026\" \"Sep 25\" \"graph\"",
+          "query": "site.dl.acm.org/doi \"2026\" \"September\" \"graph neural\"",
           "queries": [
-            "site.arxiv.org/abs/ \"2026\" \"Sep 25\" \"graph\"",
-            "site.arxiv.org/abs/ \"2026\" \"Sep 24\" \"graph\"",
-            "site.proceedings.mlr.press \"2026\" \"graph\"",
-            "site.dl.acm.org \"2026\" \"Published: 2\" \"September\" \"graph learning\""
+            "site.dl.acm.org/doi \"2026\" \"September\" \"graph neural\"",
+            "site.ijcai.org/proceedings/2026 graph publication",
+            "site.arxiv.org/abs/2609 \"graph neural\" \"25 Sep\"",
+            "site.arxiv.org/abs/2609 \"graph\" \"24 Sep\""
           ]
         },
         {
           "status": "completed",
           "type": "search",
-          "query": "site.arxiv.org \"Reachability-Based Formal Verification of Graph Neural Networks\"",
+          "query": "site.dl.acm.org \"2026\" \"Published: 25 September\" graph",
           "queries": [
-            "site.arxiv.org \"Reachability-Based Formal Verification of Graph Neural Networks\"",
-            "site.arxiv.org \"graph\" \"Submitted on 25 Sep 2026\"",
-            "site.arxiv.org \"graph\" \"Submitted on 24 Sep 2026\"",
-            "site.dl.acm.org \"KDD '26\" \"Publication Date\""
+            "site.dl.acm.org \"2026\" \"Published: 25 September\" graph",
+            "site.dl.acm.org \"2026\" \"Published: 18 September\" graph",
+            "site.arxiv.org/abs/2609 \"graph neural\" \"25\"",
+            "site.proceedings.mlr.press \"2026\" \"September\""
+          ]
+        },
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "site.dl.acm.org/doi/proceedings \"2026\" \"September\" \"KDD\"",
+          "queries": [
+            "site.dl.acm.org/doi/proceedings \"2026\" \"September\" \"KDD\"",
+            "site.ccf.org.cn 学术刊物 人工智能 A类 IJCAI"
+          ]
+        },
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "site.dl.acm.org \"graph\" \"September 2026\" \"conference\"",
+          "queries": [
+            "site.dl.acm.org \"graph\" \"September 2026\" \"conference\"",
+            "site.aclanthology.org/2026.emnlp \"graph\"",
+            "site.openaccess.thecvf.com \"2026\" \"September\""
           ]
         },
         {
           "status": "completed",
           "type": "open_page",
-          "url": "https://arxiv.org/search/advanced?abstracts=show&advanced=&classification-include_cross_list=include&date-date_type=submitted_date&date-filter_by=date_range&date-from_date=2026-09-13&date-to_date=2026-09-26&order=-announced_date_first&size=50&terms-0-field=all&terms-0-operator=AND&terms-0-term=graph"
-        },
-        {
-          "status": "completed",
-          "type": "open_page",
-          "url": "https://arxiv.org/search/advanced?abstracts=show&advanced=&classification-include_cross_list=include&date-date_type=submitted_date&date-filter_by=date_range&date-from_date=2026-09-13&date-to_date=2026-09-26&order=-announced_date_first&size=50&terms-0-field=all&terms-0-operator=AND&terms-0-term=graph"
+          "url": "https://arxiv.org/abs/2609.30184"
         },
         {
           "status": "completed",
           "type": "search",
-          "query": "\"GridSFM\" conference",
+          "query": "KDD 2026 proceedings publication date ACM August",
           "queries": [
-            "\"GridSFM\" conference",
-            "\"Graph-Based Inference and Topology-Aware\" conference",
-            "\"ARGUS: Role-Aware Event Knowledge Graphs\"",
+            "KDD 2026 proceedings publication date ACM August",
+            "\"graph\" \"conference\" \"September 2026\" \"Published\" \"ACM\"",
+            "\"graph\" \"2026\" \"September\" \"ICDE\" publication",
+            "\"graph\" \"2026\" \"September\" \"SIGIR\" publication"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "url": "https://arxiv.org/abs/2609.30184?utm_source=openai",
+          "title": "ARGUS: Role-Aware Event Knowledge Graphs for U.S. Employment-Discrimination Complaints"
+        },
+        {
+          "url": "https://arxiv.org/abs/2609.30184",
+          "title": "[2609.30184] ARGUS: Role-Aware Event Knowledge Graphs for U.S. Employment-Discrimination Complaints"
+        },
+        {
+          "url": "https://arxiv.org/abs/2609.30184",
+          "title": "[2609.30184] ARGUS: Role-Aware Event Knowledge Graphs for U.S. Employment-Discrimination Complaints"
+        },
+        {
+          "url": "https://aclanthology.org/2026.acl-long.1161/?utm_source=openai",
+          "title": "AgentGL: Towards Agentic Graph Learning with LLMs via Reinforcement Learning - ACL Anthology"
+        },
+        {
+          "url": "https://arxiv.org/search/advanced?abstracts=show&advanced=&classification-include_cross_list=include&date-date_type=submitted_date&date-filter_by=date_range&date-from_date=2026-09-13&date-to_date=2026-09-26&order=-announced_date_first&size=50&terms-0-field=title&terms-0-operator=AND&terms-0-term=graph",
+          "title": "Advanced Search | arXiv e-print repository"
+        }
+      ],
+      "usage": {
+        "input_tokens": 2301,
+        "output_tokens": 1730,
+        "total_tokens": 4031
+      },
+      "format_recovery": "url_citations",
+      "candidate_count": 2,
+      "notes": "Recovered candidates from response citations; all require primary-source verification.",
+      "quota_after": {
+        "conference": {
+          "requested": 2,
+          "returned": 0,
+          "shortfall": 2
+        },
+        "arxiv": {
+          "requested": 1,
+          "returned": 1,
+          "shortfall": 0
+        }
+      }
+    },
+    {
+      "round": 2,
+      "quota_before": {
+        "conference": {
+          "requested": 2,
+          "returned": 0,
+          "shortfall": 2
+        },
+        "arxiv": {
+          "requested": 1,
+          "returned": 1,
+          "shortfall": 0
+        }
+      },
+      "status": "completed",
+      "actions": [
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "site.aclanthology.org/2026 \"September\" \"graph\"",
+          "queries": [
+            "site.aclanthology.org/2026 \"September\" \"graph\"",
+            "site.dl.acm.org \"2026\" \"Sep 2026\" \"graph learning\"",
             "site.ijcai.org/proceedings/2026 \"graph\""
           ]
         },
         {
           "status": "completed",
+          "type": "search",
+          "query": "site.dl.acm.org/doi \"2026\" \"September\" \"graph neural\" \"Published\"",
+          "queries": [
+            "site.dl.acm.org/doi \"2026\" \"September\" \"graph neural\" \"Published\"",
+            "site.dl.acm.org/doi \"2026\" \"September\" \"knowledge graph\" \"Proceedings\"",
+            "site.ijcai.org/proceedings/2026 \"September\"",
+            "site.ccf.org.cn 国际学术会议 人工智能 A类 多媒体"
+          ]
+        },
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "\"graph\" \"2026\" \"Published: 2\" \"September\" conference",
+          "queries": [
+            "\"graph\" \"2026\" \"Published: 2\" \"September\" conference",
+            "\"graph neural\" \"2026\" \"September\" \"ACM\"",
+            "site.proceedings.mlr.press \"2026\" \"Sep\"",
+            "site.aclanthology.org/events/emnlp-2026/"
+          ]
+        },
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "\"2026\" \"graph\" \"September\" \"SIGCOMM\"",
+          "queries": [
+            "\"2026\" \"graph\" \"September\" \"SIGCOMM\"",
+            "\"2026\" \"graph\" \"September\" \"dl.acm.org/doi/10.1145\"",
+            "\"2026\" \"graph\" \"September\" \"proceedings\" \"published\" \"KDD\""
+          ]
+        },
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "\"graph\" \"2026\" \"September\" \"conference\" \"first online\"",
+          "queries": [
+            "\"graph\" \"2026\" \"September\" \"conference\" \"first online\"",
+            "\"graph\" \"2026\" \"September\" \"ICDE\"",
+            "\"graph\" \"2026\" \"September\" \"ACM Multimedia\"",
+            "\"graph\" \"2026\" \"September\" \"SIGIR\""
+          ]
+        },
+        {
+          "status": "completed",
           "type": "open_page",
-          "url": "https://arxiv.org/abs/2609.30173"
+          "url": "https://www.ijcai.org/proceedings/2026/62"
+        },
+        {
+          "status": "completed",
+          "type": "open_page",
+          "url": "https://www.ijcai.org/proceedings/2026/62"
         }
       ],
       "citations": [
         {
-          "url": "https://arxiv.org/abs/2609.30184",
-          "title": "[2609.30184] ARGUS: Role-Aware Event Knowledge Graphs for U.S. Employment-Discrimination Complaints"
+          "url": "https://www.ijcai.org/proceedings/2026/62",
+          "title": "Local Geometry Improves Explanation Robustness for Graph Neural Networks | IJCAI"
         },
         {
-          "url": "https://arxiv.org/abs/2609.30184",
-          "title": "[2609.30184] ARGUS: Role-Aware Event Knowledge Graphs for U.S. Employment-Discrimination Complaints"
+          "url": "https://aclanthology.org/2026.acl-long.1846/?utm_source=openai",
+          "title": "Evaluating LLMs on Large-Scale Graph Property Estimation via Random Walks - ACL Anthology"
         },
         {
-          "url": "https://arxiv.org/abs/2609.30173",
-          "title": "[2609.30173] GridSFM: A Foundation Model for Solving AC Optimal Power Flow"
-        },
-        {
-          "url": "https://arxiv.org/abs/2609.30173",
-          "title": "[2609.30173] GridSFM: A Foundation Model for Solving AC Optimal Power Flow"
-        },
-        {
-          "url": "https://arxiv.org/abs/2609.30150",
-          "title": "[2609.30150] Graph-Based Inference and Topology-Aware Multi-Agent Reinforcement Learning for Large-Scale Railway Network Management"
-        },
-        {
-          "url": "https://arxiv.org/abs/2609.30150",
-          "title": "[2609.30150] Graph-Based Inference and Topology-Aware Multi-Agent Reinforcement Learning for Large-Scale Railway Network Management"
-        },
-        {
-          "url": "https://arxiv.org/search/advanced?abstracts=show&advanced=&classification-include_cross_list=include&date-date_type=submitted_date&date-filter_by=date_range&date-from_date=2026-09-13&date-to_date=2026-09-26&order=-announced_date_first&size=50&terms-0-field=all&terms-0-operator=AND&terms-0-term=graph",
-          "title": "Advanced Search | arXiv e-print repository"
+          "url": "https://2026.emnlp.org/calls/main_conference_papers/?utm_source=openai",
+          "title": "Call for Main Conference Papers - EMNLP 2026"
         }
       ],
       "usage": {
-        "input_tokens": 1721,
-        "output_tokens": 1671,
-        "total_tokens": 3392
+        "input_tokens": 2494,
+        "output_tokens": 1319,
+        "total_tokens": 3813
       },
       "format_recovery": "url_citations",
-      "candidate_count": 3,
-      "notes": "Recovered candidates from response citations; all require primary-source verification."
+      "candidate_count": 2,
+      "notes": "Recovered candidates from response citations; all require primary-source verification.",
+      "quota_after": {
+        "conference": {
+          "requested": 2,
+          "returned": 0,
+          "shortfall": 2
+        },
+        "arxiv": {
+          "requested": 1,
+          "returned": 1,
+          "shortfall": 0
+        }
+      }
+    },
+    {
+      "round": 3,
+      "quota_before": {
+        "conference": {
+          "requested": 2,
+          "returned": 0,
+          "shortfall": 2
+        },
+        "arxiv": {
+          "requested": 1,
+          "returned": 1,
+          "shortfall": 0
+        }
+      },
+      "status": "completed",
+      "actions": [
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "site.ijcai.org/proceedings/2026 graph neural",
+          "queries": [
+            "site.ijcai.org/proceedings/2026 graph neural",
+            "site.aclanthology.org/2026 \"September\" \"graph\"",
+            "site.dl.acm.org \"graph\" \"First Online\" \"September 2026\""
+          ]
+        },
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "site.dl.acm.org/doi \"2026\" \"September\" \"graph neural\"",
+          "queries": [
+            "site.dl.acm.org/doi \"2026\" \"September\" \"graph neural\"",
+            "site.aclanthology.org/2026.emnlp \"graph\"",
+            "site.ccf.org.cn \"人工智能\" \"A类\" \"IJCAI\""
+          ]
+        },
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "site.dl.acm.org \"2026\" \"Published: 2\" \"Graph\" \"MM\"",
+          "queries": [
+            "site.dl.acm.org \"2026\" \"Published: 2\" \"Graph\" \"MM\"",
+            "\"graph\" \"September 2026\" \"proceedings\"",
+            "site.proceedings.mlr.press \"2026\" \"International Conference on Machine Learning\"",
+            "site.aclanthology.org \"2026.emnlp-main\""
+          ]
+        },
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "site.dl.acm.org \"2026\" \"graph\" \"September\" \"KDD\"",
+          "queries": [
+            "site.dl.acm.org \"2026\" \"graph\" \"September\" \"KDD\"",
+            "site.dl.acm.org \"2026\" \"graph\" \"September\" \"Proceedings of the 34th\"",
+            "site.link.springer.com/chapter \"2026\" \"graph\" \"First Online: 2\" \"September\""
+          ]
+        },
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "\"graph\" \"2026\" \"September\" site:dl.acm.org/doi/10.1145",
+          "queries": [
+            "\"graph\" \"2026\" \"September\" site:dl.acm.org/doi/10.1145",
+            "\"graph\" \"2026\" \"September\" site:openaccess.thecvf.com",
+            "\"graph\" \"2026\" \"September\" site:ieeexplore.ieee.org \"ICDE\""
+          ]
+        },
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "site.dl.acm.org \"MM '26\" \"graph\"",
+          "queries": [
+            "site.dl.acm.org \"MM '26\" \"graph\"",
+            "site.proceedings.neurips.cc \"2026\" \"graph\"",
+            "site.ojs.aaai.org \"2026\" \"graph\" \"Published\"",
+            "site.dl.acm.org \"2026\" \"September\" \"knowledge graph\""
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "url": "https://proceedings.mlr.press/",
+          "title": "Proceedings of Machine Learning Research | The Proceedings of Machine Learning Research (formerly JMLR Workshop and Conference Proceedings) is a series aimed specifically at publishing machine learning research presented at workshops and conferences. Each volume is separately titled and associated with a particular workshop or conference. Volumes are published online on the PMLR web site. The Series Editors are Neil D. Lawrence and Mark Reid."
+        },
+        {
+          "url": "https://2026.emnlp.org/program/main_papers/?utm_source=openai",
+          "title": "Accepted Main Conference Papers - EMNLP 2026"
+        },
+        {
+          "url": "https://neurips.cc/Downloads/2026?utm_source=openai",
+          "title": "Downloads"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/",
+          "title": "Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence | IJCAI"
+        }
+      ],
+      "usage": {
+        "input_tokens": 2686,
+        "output_tokens": 1393,
+        "total_tokens": 4079
+      },
+      "format_recovery": "url_citations",
+      "candidate_count": 2,
+      "notes": "Recovered candidates from response citations; all require primary-source verification.",
+      "quota_after": {
+        "conference": {
+          "requested": 2,
+          "returned": 0,
+          "shortfall": 2
+        },
+        "arxiv": {
+          "requested": 1,
+          "returned": 1,
+          "shortfall": 0
+        }
+      }
     }
   ],
   "sources": {
     "web_search": {
       "ok": true,
       "mode": "responses",
-      "verified": 3,
-      "truncated": false
+      "verified": 1,
+      "truncated": true
     }
   },
-  "rejections": [],
-  "request_hash": "23e2c10173b70b31a8b9f721ef4bf2d56b0f4c7790ad48f333fa2344eeeb17d5",
-  "llm_processed": 0,
+  "rejections": [
+    {
+      "url": "https://aclanthology.org/2026.acl-long.1161/?utm_source=openai",
+      "title": "AgentGL: Towards Agentic Graph Learning with LLMs via Reinforcement Learning",
+      "reason": "Primary source does not provide a usable abstract"
+    },
+    {
+      "url": "https://www.ijcai.org/proceedings/2026/62",
+      "title": "Local Geometry Improves Explanation Robustness for Graph Neural Networks",
+      "reason": "URLError"
+    },
+    {
+      "url": "https://aclanthology.org/2026.acl-long.1846/?utm_source=openai",
+      "title": "Evaluating LLMs on Large-Scale Graph Property Estimation via Random Walks",
+      "reason": "Primary source does not provide a usable abstract"
+    },
+    {
+      "url": "https://proceedings.mlr.press/",
+      "title": "Proceedings of Machine Learning Research | The Proceedings of Machine Learning Research (formerly JMLR Workshop and Conference Proceedings) is a series aimed specifically at publishing machine learning research presented at workshops and conferences. Each volume is separately titled and associated w",
+      "reason": "Candidate title does not match primary-source metadata"
+    },
+    {
+      "url": "https://www.ijcai.org/proceedings/2026/",
+      "title": "Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence",
+      "reason": "Candidate title does not match primary-source metadata"
+    }
+  ],
+  "request_hash": "db88aaec561a27d2d64bd88faec9397f0b7fe41cdea118576b937f00abeb31c0",
+  "llm_processed": 1,
   "coverage": "Best effort within time/tool budgets; not an exhaustive newest-paper ranking.",
-  "finished_at": "2026-09-26T15:38:07.503121+00:00",
-  "returned": 3,
+  "finished_at": "2026-09-26T15:58:10.916494+00:00",
+  "returned": 1,
   "total": 94,
   "statuses": {
     "missing_abstract": 5,
@@ -134,12 +433,10 @@
     "irrelevant": 2
   },
   "result_ids": [
-    "p-88d531326bb551c8c982",
-    "p-6d1a77425b943819e76f",
     "p-2831e61c090e2e962da5"
   ],
-  "deduplicated": 3,
-  "elapsed_seconds": 50.06,
-  "shortfall": 0,
-  "stop_reason": "target_reached"
+  "deduplicated": 1,
+  "elapsed_seconds": 195.08,
+  "shortfall": 2,
+  "stop_reason": "round_budget"
 }

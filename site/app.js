@@ -63,8 +63,9 @@
     if(!report.llm_enabled)notices.push('采集预览模式：尚未连接 LLM。当前展示真实论文元数据，关键词与方法摘要等待生成。');
     if(report.error)notices.push('最近一次采集未成功，当前展示已保存的数据。');
     if(report.mode==='responses_web_search')notices.push(`本次联网搜索返回 ${report.returned||0}/${report.requested||0} 篇经核验的论文。页面保留历史归档；旧记录未按新规则重新核验。`);
+    if(report.quota_progress){const q=report.quota_progress;notices.push(`本次来源配额：会议 ${q.conference.returned}/${q.conference.requested} 篇；arXiv ${q.arxiv.returned}/${q.arxiv.requested} 篇。每篇仅计入一组，缺额不跨组补齐。`);}
     const partial=Object.entries(report.sources||{}).filter(([,s])=>!s.ok||s.warning||s.truncated||s.failed_feeds);
-    if(partial.length)notices.push('采集范围提示：'+partial.map(([name,s])=>`${name} ${!s.ok?'请求失败':s.mode==='rss_fallback'?'仅含最新 RSS 公告':s.truncated?'达到抓取上限':'部分来源不可用'}`).join('；')+'。本列表不代表全网完整收录。');
+    if(partial.length)notices.push('采集范围提示：'+partial.map(([name,s])=>`${name} ${!s.ok?'请求失败':s.mode==='responses'&&s.truncated?'预算内未补齐目标':s.mode==='rss_fallback'?'仅含最新 RSS 公告':s.truncated?'达到抓取上限':'部分来源不可用'}`).join('；')+'。本列表不代表全网完整收录。');
     notices.forEach(s=>$('notices').append(node('div',s,'notice')));
     render();
   }).catch(()=>{$('updated').textContent='索引读取失败';$('papers').replaceChildren(node('div','无法加载论文数据。请通过本地 HTTP 服务或 GitHub Pages 打开页面，并确认 data/papers.json 已生成。','empty'));});

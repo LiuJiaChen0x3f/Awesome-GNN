@@ -11,6 +11,7 @@ description: 在 Awesome-GNN 中按固定需求调用 Responses 联网搜索，�
 
 - 推荐入口：`python run.py search --limit 3`。固定需求是 `prompts/search.request.txt`，不再用 SearchPlanner 先生成词。模型通过 Responses web_search 搜索/打开页面，程序独立核验、反馈不足并继续搜索。用户要求先不运行时只修改文件，不实测API。
 - 硬核验来源/会议在 `gnn_digest/verification.py`。改提示词不足以扩展允许来源；arXiv不限等级，非arXiv要求配置内主会。11主题命中一个即可，5个方法关键词不等于5个主题。
+- `search --limit N` 强制会议 ceil(N/2) + arXiv floor(N/2)：10为5+5，3为2+1。会议要求合格主会原站核验，arXiv不限会议等级。跨组去重，同一论文只占一格；两条路线分别核验、按所分配路线的日期排序。缺额定向补搜，不跨组填补、不放宽窗口；查看报告 source_quotas/quota_progress 与本次论文 selection_bucket。此比例只约束本次搜索，不重排历史归档。
 - 默认14天，可用 `--days`/`--until`；arXiv首次提交日，会议精确发表日，日期不足不捏造，窗口不足不静默放宽。旧归档保持，不声称旧记录已按新规则核验。
 - 本次结果：`data/search_results.json`；工具动作、引用、拒绝原因、预算及缺口：`data/last_run.json`。退出码4表示不足，2表示搜索失败，不能把它们描述为成功。
 - 新总结提示词：`prompts/search.summary.zh.txt`。只能依据核验的原始摘要；不能绕过title/url/venue/date验证。搜索代理实现为 `gnn_digest/agent.py`。
@@ -34,6 +35,6 @@ description: 在 Awesome-GNN 中按固定需求调用 Responses 联网搜索，�
 
 ## 验证与交付
 
-运行 `python -m unittest discover -s tests -v` 和 `node --check site/app.js`；涉及采集时进行预算有限的真实运行并查看来源状态。涉及页面时检查桌面和手机宽度、搜索、关键词、空状态、外链。
+运行 `python -m unittest discover -s tests -v` 和 `node --check site/app.js`；修改检索逻辑后按用户约定执行 `search --limit 3` 的真实验证，记录2会议+1arXiv的完成数与缺额，不把部分结果称为达标。用户本次明确不运行时遵从本次要求。涉及页面时检查桌面和手机宽度、搜索、关键词、空状态、外链。
 
 在 `memory.md` 记录修改位置、验证结果、数据覆盖限制和下一步。不要声称mock测试证明真实供应商API成功。远程仓库及API信息未提供时，完成本地代码并列出用户需提供的配置。

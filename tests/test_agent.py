@@ -25,6 +25,14 @@ def html(title='A Graph Neural Network', submitted='25 Sep 2026', extra=''):
 def candidate(i=1):
     return {'title':'A Graph Neural Network', 'url':f'https://arxiv.org/abs/2609.{i:05d}'}
 
+
+def conference_candidate():
+    return {'title':'A Graph Neural Network', 'url':'https://aclanthology.org/2026.emnlp-long.1/'}
+
+
+def conference_html():
+    return html(extra='<meta name="citation_conference_title" content="Proceedings of Empirical Methods in Natural Language Processing"><meta name="citation_publication_date" content="2026/09/25">')
+
 def response(items, actions=True, status='completed'):
     return {'status':status,'output':([{'type':'web_search_call','status':'completed','action':{'type':'search','queries':['graph papers']}}] if actions else []) + [{'type':'message','content':[{'type':'output_text','text':json.dumps({'candidates':items,'notes':''}), 'annotations':[]}]}]}
 
@@ -47,6 +55,18 @@ class VerificationTests(unittest.TestCase):
         self.assertEqual(p['abstract'],ABSTRACT)
         self.assertEqual(p['venue_label'],'arXiv')
         self.assertTrue(p['pdf_url'].endswith('/2609.00001'))
+
+    def test_citation_publisher_suffix_removed_only_on_matching_domain(self):
+        citations = [
+            {'url':'https://aclanthology.org/2026.acl-long.1/', 'title':'A Graph Neural Network - ACL Anthology'},
+            {'url':'https://www.ijcai.org/proceedings/2026/62', 'title':'A Graph Neural Network | IJCAI'},
+            {'url':'https://arxiv.org/abs/2609.00001', 'title':'A Graph Neural Network | IJCAI'},
+        ]
+        result = cited_candidates(citations, 10)
+        self.assertEqual([p['title'] for p in result], ['A Graph Neural Network','A Graph Neural Network','A Graph Neural Network | IJCAI'])
+        with patch('gnn_digest.verification.fetch_page',return_value=conference_html()):
+            verified = verify_candidate(result[0],date(2026,9,20),date(2026,9,26))
+        self.assertEqual(verified['date_basis'],'conference_publication')
 
     def test_old_revision_and_wrong_title_rejected(self):
         with patch('gnn_digest.verification.fetch_page',return_value=html(submitted='1 Jan 2025')):
@@ -119,14 +139,14 @@ class AgentTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root, config, args=self.setup_root(tmp)
             bad={**candidate(2),'url':'https://evil.test/paper'}
-            with patch('gnn_digest.agent.WebResearchAgent.search',side_effect=[response([bad]),response([candidate()])]) as agent, patch('gnn_digest.verification.fetch_page',return_value=html()), patch('gnn_digest.llm.get_json',return_value={'choices':[{'message':{'content':json.dumps(answer())}}]}):
+            with patch('gnn_digest.agent.WebResearchAgent.search',side_effect=[response([bad]),response([conference_candidate()])]) as agent, patch('gnn_digest.verification.fetch_page',return_value=conference_html()), patch('gnn_digest.llm.get_json',return_value={'choices':[{'message':{'content':json.dumps(answer())}}]}):
                 self.assertEqual(run(args),0)
             self.assertTrue(agent.call_args_list[1].args[0]['feedback'])
             report=read_json(root/'data/last_run.json',{})
             self.assertEqual(report['returned'],1)
             self.assertEqual(len(report['rounds']),2)
             self.assertEqual(len(report['rejections']),1)
-            with patch('gnn_digest.agent.WebResearchAgent.search',return_value=response([candidate()])), patch('gnn_digest.verification.fetch_page',return_value=html()), patch('gnn_digest.llm.get_json') as summary:
+            with patch('gnn_digest.agent.WebResearchAgent.search',return_value=response([conference_candidate()])), patch('gnn_digest.verification.fetch_page',return_value=conference_html()), patch('gnn_digest.llm.get_json') as summary:
                 self.assertEqual(run(args),0)
                 summary.assert_not_called()
             saved=read_json(root/'data/papers.json',{})['papers']
@@ -150,7 +170,7 @@ class AgentTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root, config, args=self.setup_root(tmp)
             a={'relevant':False,'topics':[],'topic_evidence':{},'keywords':[],'method':'','confidence':'low','evidence':[]}
-            with patch('gnn_digest.agent.WebResearchAgent.search',return_value=response([candidate()])),patch('gnn_digest.verification.fetch_page',return_value=html()),patch('gnn_digest.llm.get_json',return_value={'choices':[{'message':{'content':json.dumps(a)}}]}):
+            with patch('gnn_digest.agent.WebResearchAgent.search',return_value=response([conference_candidate()])),patch('gnn_digest.verification.fetch_page',return_value=conference_html()),patch('gnn_digest.llm.get_json',return_value={'choices':[{'message':{'content':json.dumps(a)}}]}):
                 self.assertEqual(search(root,config,args),4)
             self.assertEqual(read_json(root/'data/search_results.json',{})['papers'],[])
 
