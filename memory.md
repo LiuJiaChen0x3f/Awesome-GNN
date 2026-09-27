@@ -125,3 +125,9 @@
 - 新增函数工具协议回归测试；当前 `python -X utf8 -m unittest discover -s tests -v` 共 54 项通过，`node --check site/app.js` 与 `python -X utf8 -m compileall -q gnn_digest` 通过。
 - 修复后真实运行 `python -X utf8 run.py search --limit 3`，UTC 窗口为 2026-09-14 至 2026-09-27，共 3 轮、每轮实际工具搜索完成，无供应商协议错误。结果为 **1/3**：会议 0/2（缺额 2），arXiv 1/1；arXiv 论文为 `Reachability-Based Formal Verification of Graph Neural Networks with Node and Edge Features`，v1 日期 2026-09-24，取得约 80k 字符全文并复用已有 DeepSeek 全文总结。会议候选因不在允许来源、正式日期超窗口或原站 HTTP 错误被保守拒绝，不能据此断言窗口内没有会议论文。`data/last_run.json` 和 `data/search_results.json` 保留完整缺额与拒绝原因，历史归档仍为 94 篇；网页只导出精简字段，不含全文或 API key。
 - 代码已提交到本地 `main`（提交信息 `fix DeepSeek scholarly tool orchestration`）；尝试推送时 GitHub 凭据弹窗被取消，随后凭据复用脚本被本机安全策略拦截，因此远程尚未包含本轮提交。重新登录 GitHub 后执行 `git push origin main` 即可。
+
+## 2026-09-27 LAYSO Responses 联网能力测试
+
+- 按用户提供的配置，本机 `.env` 已切换为 `https://api.layso.ai/v1`、模型 `gpt-5.6-luna`、推理强度 `high`；Key 仅写入被 `.gitignore` 忽略的 `.env`，没有写入代码、报告、静态页面或 Git。
+- 脱敏探针：`GET /models` 返回 HTTP 200；`POST /responses` 返回 `completed`，输出包含 `web_search_call` 的 `search` 与 `open_page` 动作，实际打开了 arXiv 页面并返回论文内容。项目自身的 `WebResearchAgent` 同样以 `responses_web_search` 模式完成搜索，找到 `Local Geometry Improves Explanation Robustness for Graph Neural Networks` 的 IJCAI 2026 页面；独立核验器确认标题、主会、日期 `2026-09-16` 和 PDF 均有效。
+- 结论：DeepSeek 最近一次 5 篇运行的 `conference 0/3` 不是“模型不能联网”。其本地函数工具已经完成搜索，但在 3 轮/每轮工具预算内没有稳定返回可核验的合格会议落地页；报告还显示 KDD/WWW/VLDB/EMNLP 页面未命中允许主会或部分候选超出日期窗口。换用 LAYSO 原生 Responses 联网搜索后，会议检索链路已通过最小端到端测试。尚未用新供应商执行完整 `search --limit 5`，避免在能力探针后自动产生额外批量请求。

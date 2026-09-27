@@ -1,25 +1,25 @@
 {
   "mode": "function_tool",
-  "started_at": "2026-09-27T09:57:06.409383+00:00",
+  "started_at": "2026-09-27T10:10:33.786008+00:00",
   "window": {
     "since": "2026-09-14",
     "until": "2026-09-27"
   },
   "llm_enabled": true,
-  "requested": 3,
+  "requested": 5,
   "source_quotas": {
-    "conference": 2,
-    "arxiv": 1
+    "conference": 3,
+    "arxiv": 2
   },
   "quota_progress": {
     "conference": {
-      "requested": 2,
+      "requested": 3,
       "returned": 0,
-      "shortfall": 2
+      "shortfall": 3
     },
     "arxiv": {
-      "requested": 1,
-      "returned": 1,
+      "requested": 2,
+      "returned": 2,
       "shortfall": 0
     }
   },
@@ -28,14 +28,14 @@
       "round": 1,
       "quota_before": {
         "conference": {
+          "requested": 3,
+          "returned": 0,
+          "shortfall": 3
+        },
+        "arxiv": {
           "requested": 2,
           "returned": 0,
           "shortfall": 2
-        },
-        "arxiv": {
-          "requested": 1,
-          "returned": 0,
-          "shortfall": 1
         }
       },
       "status": "completed",
@@ -43,125 +43,12 @@
         {
           "status": "completed",
           "type": "search",
-          "query": "arXiv September 2026 graph neural network GNN submission"
+          "query": "arxiv graph neural network September 2026 new submission GNN"
         },
         {
           "status": "completed",
           "type": "search",
-          "query": "VLDB 2026 PVLDB volume 19 graph learning GNN paper"
-        },
-        {
-          "status": "completed",
-          "type": "search",
-          "query": "arxiv 2609 graph contrastive learning self-supervised graph neural network"
-        },
-        {
-          "status": "completed",
-          "type": "search",
-          "query": "arxiv 2609 knowledge graph embedding KGE link prediction September 2026"
-        }
-      ],
-      "citations": [],
-      "usage": {
-        "total_tokens": 6679
-      },
-      "candidate_count": 2,
-      "notes": "Tool budget was exhausted after two rounds, so this is a partial result. arXiv bucket: 2 candidates surfaced with v1 dates inside the 2026-09-14..2026-09-27 window (2026-09-24 and 2026-09-23) and explicit GNN topic relevance; both appeared as arXiv records in search results, but the abstract/landing pages could not be opened, so metadata is not independently confirmed beyond the search listing. Conference bucket: 0 verified candidates (shortfall of 2). No eligible main-proceedings landing page was retrieved; the supplied conference directories (KDD, WWW, SIGIR, SIGMOD, VLDB, ACM MM) were not fetched or audited, and ICDE had no directory, so no directory-to-title match or publisher page could be documented. Several other graph-related arXiv hits seen (e.g., 2609.03487, 2608.30652, 2608.16407, 2607.24314, 2606.17109, 2606.24948) fall outside the date window or were not graph-learning-focused and were excluded. No directory_url is provided because no audited directory match was verified. ",
-      "quota_after": {
-        "conference": {
-          "requested": 2,
-          "returned": 0,
-          "shortfall": 2
-        },
-        "arxiv": {
-          "requested": 1,
-          "returned": 1,
-          "shortfall": 0
-        }
-      }
-    },
-    {
-      "round": 2,
-      "quota_before": {
-        "conference": {
-          "requested": 2,
-          "returned": 0,
-          "shortfall": 2
-        },
-        "arxiv": {
-          "requested": 1,
-          "returned": 1,
-          "shortfall": 0
-        }
-      },
-      "status": "completed",
-      "actions": [
-        {
-          "status": "completed",
-          "type": "search",
-          "query": "KDD 2026 accepted papers graph neural network"
-        },
-        {
-          "status": "completed",
-          "type": "search",
-          "query": "WWW 2026 the web conference accepted papers graph learning"
-        },
-        {
-          "status": "completed",
-          "type": "search",
-          "query": "EMNLP 2026 main conference graph neural network knowledge graph"
-        },
-        {
-          "status": "completed",
-          "type": "search",
-          "query": "arXiv September 2026 graph neural network GNN new submission"
-        }
-      ],
-      "citations": [],
-      "usage": {
-        "total_tokens": 6774
-      },
-      "format_recovery": "tool_results",
-      "candidate_count": 10,
-      "notes": "Model returned no final candidates; recovered leads from completed local scholarly tool calls for independent verification.",
-      "quota_after": {
-        "conference": {
-          "requested": 2,
-          "returned": 0,
-          "shortfall": 2
-        },
-        "arxiv": {
-          "requested": 1,
-          "returned": 1,
-          "shortfall": 0
-        }
-      }
-    },
-    {
-      "round": 3,
-      "quota_before": {
-        "conference": {
-          "requested": 2,
-          "returned": 0,
-          "shortfall": 2
-        },
-        "arxiv": {
-          "requested": 1,
-          "returned": 1,
-          "shortfall": 0
-        }
-      },
-      "status": "completed",
-      "actions": [
-        {
-          "status": "completed",
-          "type": "search",
-          "query": "graph neural network accepted paper VLDB 2026 PVLDB volume 19 September 2026"
-        },
-        {
-          "status": "completed",
-          "type": "search",
-          "query": "arxiv September 2026 graph contrastive learning GNN new submission"
+          "query": "arxiv 2026 graph self-supervised learning contrastive learning graph"
         },
         {
           "status": "completed",
@@ -176,20 +63,133 @@
       ],
       "citations": [],
       "usage": {
-        "total_tokens": 7391
+        "total_tokens": 6937
+      },
+      "candidate_count": 3,
+      "notes": "Conference quota shortfall: 0 of 3 conference slots filled. Searches for KDD 2026 and EMNLP 2026 accepted-paper pages returned no eligible main-proceedings landing pages within the enabled primary-source domains; the only conference-linked hits were unrelated venues (e.g., ICPP) outside the eligible CCF-A/EMNLP set, so no conference candidate could be verified. arXiv quota: 2 required, 3 candidates listed (all within the 2026-09-14 to 2026-09-27 window, v1 dates shown by the search index: 09-24, 09-23, 09-14). Nearby in-topic arXiv hits (2609.12791 at 2026-09-11 and 2609.13339 at 2026-09-11) were excluded as outside the date window. Verification relied on search-result metadata only because the tool budget was exhausted before primary pages could be re-opened; titles and dates should be re-checked against the arXiv abs pages during verification. No claim of exhaustive coverage.",
+      "quota_after": {
+        "conference": {
+          "requested": 3,
+          "returned": 0,
+          "shortfall": 3
+        },
+        "arxiv": {
+          "requested": 2,
+          "returned": 2,
+          "shortfall": 0
+        }
+      }
+    },
+    {
+      "round": 2,
+      "quota_before": {
+        "conference": {
+          "requested": 3,
+          "returned": 0,
+          "shortfall": 3
+        },
+        "arxiv": {
+          "requested": 2,
+          "returned": 2,
+          "shortfall": 0
+        }
+      },
+      "status": "completed",
+      "actions": [
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "KDD 2026 accepted papers graph neural network"
+        },
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "WWW 2026 The Web Conference accepted papers graph learning GNN"
+        },
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "VLDB 2026 proceedings graph neural network knowledge graph"
+        },
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "EMNLP 2026 main conference graph neural network knowledge graph paper"
+        }
+      ],
+      "citations": [],
+      "usage": {
+        "total_tokens": 6545
       },
       "format_recovery": "tool_results",
       "candidate_count": 10,
       "notes": "Model returned no final candidates; recovered leads from completed local scholarly tool calls for independent verification.",
       "quota_after": {
         "conference": {
-          "requested": 2,
+          "requested": 3,
           "returned": 0,
-          "shortfall": 2
+          "shortfall": 3
         },
         "arxiv": {
-          "requested": 1,
-          "returned": 1,
+          "requested": 2,
+          "returned": 2,
+          "shortfall": 0
+        }
+      }
+    },
+    {
+      "round": 3,
+      "quota_before": {
+        "conference": {
+          "requested": 3,
+          "returned": 0,
+          "shortfall": 3
+        },
+        "arxiv": {
+          "requested": 2,
+          "returned": 2,
+          "shortfall": 0
+        }
+      },
+      "status": "completed",
+      "actions": [
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "KDD 2026 accepted papers graph neural network"
+        },
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "WWW 2026 The Web Conference accepted papers graph learning"
+        },
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "EMNLP 2026 main conference accepted papers knowledge graph"
+        },
+        {
+          "status": "completed",
+          "type": "search",
+          "query": "VLDB 2026 proceedings graph neural network"
+        }
+      ],
+      "citations": [],
+      "usage": {
+        "total_tokens": 7457
+      },
+      "format_recovery": "tool_results",
+      "candidate_count": 10,
+      "notes": "Model returned no final candidates; recovered leads from completed local scholarly tool calls for independent verification.",
+      "quota_after": {
+        "conference": {
+          "requested": 3,
+          "returned": 0,
+          "shortfall": 3
+        },
+        "arxiv": {
+          "requested": 2,
+          "returned": 2,
           "shortfall": 0
         }
       }
@@ -199,7 +199,7 @@
     "web_search": {
       "ok": true,
       "mode": "function_tool",
-      "verified": 1,
+      "verified": 2,
       "truncated": true
     }
   },
@@ -240,24 +240,9 @@
       "reason": "HTTPError"
     },
     {
-      "url": "https://arxiv.org/abs/2603.16800",
-      "title": "RaDAR: Relation-aware Diffusion-Asymmetric Graph Contrastive Learning for Recommendation",
-      "reason": "Verified publication date outside requested window: 2026-03-17"
-    },
-    {
-      "url": "https://dl.acm.org/doi/10.1145/3773078.3841262",
-      "title": "Exploring Revealed Behavior and Stated Profiles in Longitudinal News Recommendation",
-      "reason": "HTTPError"
-    },
-    {
-      "url": "https://arxiv.org/abs/2507.07141",
-      "title": "Str-GCL: Structural Commonsense Driven Graph Contrastive Learning",
-      "reason": "Verified publication date outside requested window: 2025-07-09"
-    },
-    {
-      "url": "https://arxiv.org/abs/2609.09504",
-      "title": "Inductive Biases in Field-Level Cosmological Inference from Galaxy Catalogs",
-      "reason": "Verified publication date outside requested window: 2026-09-08"
+      "url": "https://arxiv.org/abs/2404.15354",
+      "title": "Polynomial Selection in Spectral Graph Neural Networks: An Error-Sum of Function Slices Approach",
+      "reason": "Verified publication date outside requested window: 2024-04-15"
     },
     {
       "url": "https://dl.acm.org/doi/10.1145/3832810.3832863",
@@ -265,14 +250,9 @@
       "reason": "HTTPError"
     },
     {
-      "url": "https://arxiv.org/abs/2609.07083",
-      "title": "A covariance-based reduced-order framework for solving acoustic scattering problems",
-      "reason": "Verified publication date outside requested window: 2026-09-07"
-    },
-    {
-      "url": "https://arxiv.org/abs/2608.30103",
-      "title": "Graph4BiLO: Graph Neural Network Approximation for Bilevel Mixed-Integer Linear Optimization",
-      "reason": "Verified publication date outside requested window: 2026-08-31"
+      "url": "https://dl.acm.org/doi/proceedings/10.1145/3834580",
+      "title": "Proceedings of the 2026 ACM Conference on Human-AI Complementarity and Alignment",
+      "reason": "HTTPError"
     },
     {
       "url": "https://www.wjgnet.com/1948-9366/full/v18/i9/119666.htm",
@@ -280,28 +260,39 @@
       "reason": "Source domain is not an enabled primary source"
     },
     {
+      "url": "https://arxiv.org/abs/2603.16800",
+      "title": "RaDAR: Relation-aware Diffusion-Asymmetric Graph Contrastive Learning for Recommendation",
+      "reason": "Verified publication date outside requested window: 2026-03-17"
+    },
+    {
       "url": "https://www.wjgnet.com/1948-9366/full/v18/i9/121131.htm",
       "title": "Matched analysis of long-term oncological outcomes between watch-and-wait strategy and radical surgery after neoadjuvant therapy for rectal cancer",
       "reason": "Source domain is not an enabled primary source"
+    },
+    {
+      "url": "https://arxiv.org/abs/2507.07141",
+      "title": "Str-GCL: Structural Commonsense Driven Graph Contrastive Learning",
+      "reason": "Verified publication date outside requested window: 2025-07-09"
     }
   ],
   "request_hash": "db88aaec561a27d2d64bd88faec9397f0b7fe41cdea118576b937f00abeb31c0",
-  "llm_processed": 0,
+  "llm_processed": 1,
   "coverage": "Best effort within time/tool budgets; not an exhaustive newest-paper ranking.",
-  "finished_at": "2026-09-27T09:58:50.337317+00:00",
-  "returned": 1,
+  "finished_at": "2026-09-27T10:16:39.073146+00:00",
+  "returned": 2,
   "total": 94,
   "statuses": {
     "missing_abstract": 5,
-    "pending": 82,
-    "ready": 5,
+    "pending": 81,
+    "ready": 6,
     "irrelevant": 2
   },
   "result_ids": [
-    "p-9c42b556c5dab636e613"
+    "p-9c42b556c5dab636e613",
+    "p-af02a1cb7de2420d4348"
   ],
-  "deduplicated": 1,
-  "elapsed_seconds": 103.94,
-  "shortfall": 2,
+  "deduplicated": 2,
+  "elapsed_seconds": 365.3,
+  "shortfall": 3,
   "stop_reason": "round_budget"
 }

@@ -31,7 +31,7 @@ python run.py search --limit 3 --days 30
 
 后端 Python 3.11+，PDF 解析依赖 `pypdf`；前端 HTML/CSS/JavaScript，无需 Node 构建，部署到 GitHub Pages。
 
-> 当前本机联调配置为 `deepseek-flash`、低推理强度。密钥仅从环境变量或本机 `.env` 读取，不随仓库发布。数据状态与覆盖范围见页面及 `data/last_run.json`。
+> 当前本机联调配置为 LAYSO 的 `gpt-5.6-luna`、高推理强度。密钥仅从环境变量或本机 `.env` 读取，不随仓库发布。数据状态与覆盖范围见页面及 `data/last_run.json`。
 
 ## 兼容入口：旧批处理
 
