@@ -138,3 +138,9 @@
 - 修复 `tests/test_pipeline.py` 的静态导出回归夹具，新增测试确认新归档论文会出现在公开索引、状态/方法保留且 `full_text` 不会发布。`python -X utf8 -m unittest discover -s tests -q` 共 55 项通过；`node --check site/app.js`、`compileall`、`git diff --check` 均通过。
 - 执行 `python -X utf8 run.py build` 后归档 94 篇、公开索引 92 篇（2 篇 `irrelevant` 按设计不展示），ID 集合一致；公开索引不含 `full_text`、`abstract` 或 `evidence`。本次 `data/search_results.json` 的 2 篇最新结果均能在 `site/data/papers.json` 找到。通过本地 HTTP 服务实测 `/` 与 `/data/papers.json` 均 HTTP 200。
 - 当前只完成本地构建与验证；要更新线上 GitHub.io，需提交 `README.md`、`memory.md`、测试及之后检索生成的 `data/`、`site/` 变更并推送 `main`。此前 GitHub 凭据弹窗取消，远程可能仍未包含本地提交。
+
+## 2026-09-27 GitHub 仓库迁移
+
+- 按用户提供的新仓库地址，`origin` 已切换为规范地址 `https://github.com/Liujiachen1234567/Awesome-GNN.git`；旧账号仓库不再作为本地推送目标。
+- 清除旧 GitHub 凭据缓存后，完整 `main` 分支已成功推送，远程 `main` 当前包含提交 `4214f24`。远程 Test pipeline 已通过。
+- 新仓库的 Pages 预期地址为 `https://liujiachen1234567.github.io/Awesome-GNN/`。首次推送未触发 Pages（最后提交没有 `site/**` 改动），因此 `site/index.html` 增加了 canonical 链接以触发 `Publish site` 工作流；需确认工作流完成后再记录最终页面状态。
