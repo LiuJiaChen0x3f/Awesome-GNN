@@ -92,6 +92,9 @@
 
 ## 快速定位
 
+- 2026-09-27 模型改为本机 `gpt-5.6-luna` / `low`（`.env` 不入库）；`config.json` 和 `.env.example` 同步默认低推理强度。搜索路径允许每篇总结最多两次格式修复并记录具体校验失败。IJCAI 主会页面的正文摘要提取、Main Track 核验及 24 MB PDF 上限已补齐；可实读 `2026/310` 论文约 11k 字符的方法章节。arXiv PDF 的 “Problem formulation and method” 标题也可识别。53 项 unittest 通过。
+- 真实检索先以默认 14 天窗口运行 `search --limit 3`，结果 0/3；再以明确的 90 天窗口运行两次，仍均为 0/3。最后一次三轮中前两轮返回候选，第三轮供应商网络超时；arXiv 候选因方法正文或 LLM 输出校验失败，ACL 候选原站摘要未解析。`data/last_run.json`、`data/search_results.json` 保留最后一次真实失败报告，历史归档未用旧论文填充本轮配额。不能声称已检索成功 3 篇。后续优先处理 ACL 正文摘要解析和 low 模型的结构化输出稳定性，再做有界复验。
+
 - 2026-09-27 方法总结与目录辅助检索升级：`gnn_digest/fulltext.py` 限量读取 arXiv HTML/论文 PDF，识别方法章节；`gnn_digest/llm.py` 校验 200 字以内方法总结和至少一段方法正文逐字证据，正文加入缓存哈希。`gnn_digest/agent.py` 向 Responses 传审计过的会议目录，支持目录标题初筛、arXiv 精确标题回查；`gnn_digest/verification.py` 再次读取目录核对标题。目录证据只辅助发现，不证明会议正式发表日期，也不自动占会议配额。旧 `run/summarize` 新卡片同样要求正文。历史卡片没有批量重算。
 - 真实验证：两次 `python -X utf8 run.py search --limit 3`。首轮供应商返回候选，但论文方法章提取规则过窄，结果 0/3；已针对真实 arXiv `2609.28670` 的 “Graph Dynamics Model” 章节修正并单独读取成功（约 18k 字符）。第二轮 Responses 请求 `RequestError`，按不自动重复付费请求规则停止，0/3；两次都未满足 2 会议+1 arXiv，不得描述为成功。最新 `data/last_run.json` 记录第二轮故障。51 项 unittest 及 `node --check` 通过。下次服务恢复后需重跑三篇，核对摘要和方法章节证据。
 

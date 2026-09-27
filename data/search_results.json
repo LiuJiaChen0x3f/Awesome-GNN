@@ -1,9 +1,9 @@
 {
   "report": {
     "mode": "responses_web_search",
-    "started_at": "2026-09-27T06:34:50.734117+00:00",
+    "started_at": "2026-09-27T07:03:34.732466+00:00",
     "window": {
-      "since": "2026-09-14",
+      "since": "2026-06-30",
       "until": "2026-09-27"
     },
     "llm_enabled": true,
@@ -39,22 +39,295 @@
             "shortfall": 1
           }
         },
+        "status": "completed",
+        "actions": [
+          {
+            "status": "completed",
+            "type": "search",
+            "query": "site:arxiv.org/abs graph neural network OR graph learning submitted 2026 arXiv July 2026",
+            "queries": [
+              "site:arxiv.org/abs graph neural network OR graph learning submitted 2026 arXiv July 2026",
+              "site:kdd2026.kdd.org/papers graph neural network",
+              "site:proceedings.neurips.cc 2025 graph neural network proceedings",
+              "site:openaccess.thecvf.com 2026 graph neural network"
+            ]
+          },
+          {
+            "status": "completed",
+            "type": "open_page",
+            "url": "https://kdd2026.kdd.org/papers/"
+          },
+          {
+            "status": "completed",
+            "type": "find_in_page",
+            "url": "https://arxiv.org/search/?abstracts=show&order=-announced_date_first&query=graph+neural+network&searchtype=all&size=50"
+          },
+          {
+            "status": "completed",
+            "type": "open_page",
+            "url": "https://kdd2026.kdd.org/papers/"
+          },
+          {
+            "status": "completed",
+            "type": "search",
+            "query": "site:kdd2026.kdd.org \"Graph\" \"KDD 2026\" paper",
+            "queries": [
+              "site:kdd2026.kdd.org \"Graph\" \"KDD 2026\" paper",
+              "site:kdd2026.kdd.org/papers \"Graph Neural\"",
+              "site:arxiv.org/abs \"Submitted 2026-09\" graph",
+              "site:arxiv.org/abs \"2026-08\" \"graph neural\""
+            ]
+          },
+          {
+            "status": "completed",
+            "type": "search",
+            "query": "site:dl.acm.org/doi \"Ada-Comp\"",
+            "queries": [
+              "site:dl.acm.org/doi \"Ada-Comp\"",
+              "site:dl.acm.org/doi \"FlywayBench\"",
+              "site:arxiv.org/abs \"Ada-Comp\"",
+              "site:arxiv.org/abs \"FlywayBench\""
+            ]
+          },
+          {
+            "status": "completed",
+            "type": "search",
+            "query": "site:arxiv.org/abs/2609 graph learning \"Graph Neural Network\"",
+            "queries": [
+              "site:arxiv.org/abs/2609 graph learning \"Graph Neural Network\"",
+              "site:arxiv.org/abs/2608 graph learning \"Graph Neural Network\"",
+              "site:arxiv.org/abs/2607 graph learning \"Knowledge Graph\"",
+              "site:arxiv.org/abs/2609 \"heterogeneous graph\" learning"
+            ]
+          },
+          {
+            "status": "completed",
+            "type": "open_page",
+            "url": "https://export.arxiv.org/api/query?search_query=all:%22graph%22%20AND%20submittedDate:%5B202606300000%20TO%202026092700000%5D&start=0&max_results=20&sortBy=submittedDate&sortOrder=descending"
+          },
+          {
+            "status": "completed",
+            "type": "search",
+            "query": "site:arxiv.org/abs/2609 \"graph learning\"",
+            "queries": [
+              "site:arxiv.org/abs/2609 \"graph learning\"",
+              "site:arxiv.org/abs/2608 \"graph learning\"",
+              "site:arxiv.org/abs/2607 \"graph learning\"",
+              "site:arxiv.org/abs/2609 \"knowledge graph\" learning"
+            ]
+          },
+          {
+            "status": "completed",
+            "type": "search",
+            "query": "arXiv September 2026 graph neural network paper",
+            "queries": [
+              "arXiv September 2026 graph neural network paper",
+              "arXiv August 2026 graph neural network paper",
+              "arXiv July 2026 graph neural network paper",
+              "arXiv 2026 \"graph neural networks\" \"Date:\""
+            ]
+          },
+          {
+            "status": "completed",
+            "type": "open_page",
+            "url": "https://arxiv.org/abs/2608.08536"
+          }
+        ],
+        "citations": [],
+        "usage": {
+          "input_tokens": 80722,
+          "output_tokens": 1908,
+          "total_tokens": 82630
+        },
+        "candidate_count": 3,
+        "notes": "Verified arXiv candidates fall within the configured window (June 30–September 27, 2026) and directly involve graph learning/GNN methods. The conference quota remains short by 2: the audited KDD 2026 directory was available, but independently verifiable eligible main-proceedings publisher records and exact directory-to-arXiv matches could not be established within the search budget. The arXiv quota is represented by the newest candidate; the additional arXiv papers are alternatives.",
+        "quota_after": {
+          "conference": {
+            "requested": 2,
+            "returned": 0,
+            "shortfall": 2
+          },
+          "arxiv": {
+            "requested": 1,
+            "returned": 0,
+            "shortfall": 1
+          }
+        }
+      },
+      {
+        "round": 2,
+        "quota_before": {
+          "conference": {
+            "requested": 2,
+            "returned": 0,
+            "shortfall": 2
+          },
+          "arxiv": {
+            "requested": 1,
+            "returned": 0,
+            "shortfall": 1
+          }
+        },
+        "status": "completed",
+        "actions": [
+          {
+            "status": "completed",
+            "type": "search",
+            "query": "site:arxiv.org/abs/2609 graph neural network OR graph learning submitted September 2026",
+            "queries": [
+              "site:arxiv.org/abs/2609 graph neural network OR graph learning submitted September 2026",
+              "site:arxiv.org/abs/2608 graph neural network OR graph learning submitted August 2026",
+              "site:proceedings.neurips.cc 2026 graph neural network",
+              "site:openreview.net NeurIPS 2026 graph neural network"
+            ]
+          },
+          {
+            "status": "completed",
+            "type": "search",
+            "query": "site:proceedings.mlr.press 2026 graph neural network ICML 2026",
+            "queries": [
+              "site:proceedings.mlr.press 2026 graph neural network ICML 2026",
+              "site:openreview.net/forum \"Published:\" \"2026\" \"Graph Neural Network\" \"ICML 2026\"",
+              "site:arxiv.org/abs/2609 \"Graph Neural\"",
+              "site:arxiv.org/abs/2608 \"Graph Neural\""
+            ]
+          },
+          {
+            "status": "completed",
+            "type": "search",
+            "query": "site:arxiv.org/abs/2609 \"graph learning\"",
+            "queries": [
+              "site:arxiv.org/abs/2609 \"graph learning\"",
+              "site:arxiv.org/abs/2609 \"knowledge graph\"",
+              "site:arxiv.org/abs/2608 \"graph learning\"",
+              "site:arxiv.org/abs/2607 \"graph neural network\""
+            ]
+          },
+          {
+            "status": "completed",
+            "type": "search",
+            "query": "site:arxiv.org/abs/2607 \"knowledge graph embedding\"",
+            "queries": [
+              "site:arxiv.org/abs/2607 \"knowledge graph embedding\"",
+              "site:arxiv.org/abs/2607 \"graph neural network\" \"2026\"",
+              "site:arxiv.org/abs/2608 \"graph neural network\" \"2026\" -survey",
+              "site:arxiv.org/abs/2609 \"graph neural network\" \"2026\" -survey"
+            ]
+          },
+          {
+            "status": "completed",
+            "type": "search",
+            "query": "site:proceedings.mlr.press/v* \"ICML 2026\" \"graph neural\"",
+            "queries": [
+              "site:proceedings.mlr.press/v* \"ICML 2026\" \"graph neural\"",
+              "site:proceedings.mlr.press \"Proceedings of the 43rd International Conference on Machine Learning\" graph",
+              "site:proceedings.neurips.cc 2026 \"graph\"",
+              "site:aclanthology.org 2026 EMNLP graph neural"
+            ]
+          },
+          {
+            "status": "completed",
+            "type": "search",
+            "query": "site:aclanthology.org/2026.acl-long graph neural network",
+            "queries": [
+              "site:aclanthology.org/2026.acl-long graph neural network",
+              "site:aclanthology.org/2026.acl-long graph learning",
+              "site:aclanthology.org/2026.acl-long knowledge graph embedding",
+              "site:aclanthology.org/2026.acl-long text-attributed graph"
+            ]
+          },
+          {
+            "status": "completed",
+            "type": "search",
+            "query": "site:arxiv.org/abs/2609 \"graph\" \"Submitted on\" \"2026\" \"GNN\"",
+            "queries": [
+              "site:arxiv.org/abs/2609 \"graph\" \"Submitted on\" \"2026\" \"GNN\"",
+              "site:arxiv.org/abs/2608 \"graph\" \"Submitted on\" \"2026\" \"GNN\"",
+              "site:arxiv.org/abs/2607 \"graph\" \"Submitted on\" \"2026\" \"GNN\"",
+              "site:arxiv.org/abs/2609 \"knowledge graph\" \"Submitted on\""
+            ]
+          }
+        ],
+        "citations": [],
+        "usage": {
+          "input_tokens": 57596,
+          "output_tokens": 1499,
+          "total_tokens": 59095
+        },
+        "candidate_count": 2,
+        "notes": "Verified two ACL 2026 main-conference papers published in July 2026, satisfying the conference quota. No additional arXiv candidate in the June 30–September 27, 2026 window was sufficiently verifiable within the search budget without repeating previously rejected URLs; arXiv shortfall: 1.",
+        "quota_after": {
+          "conference": {
+            "requested": 2,
+            "returned": 0,
+            "shortfall": 2
+          },
+          "arxiv": {
+            "requested": 1,
+            "returned": 0,
+            "shortfall": 1
+          }
+        }
+      },
+      {
+        "round": 3,
+        "quota_before": {
+          "conference": {
+            "requested": 2,
+            "returned": 0,
+            "shortfall": 2
+          },
+          "arxiv": {
+            "requested": 1,
+            "returned": 0,
+            "shortfall": 1
+          }
+        },
         "error": "network/timeout failure"
       }
     ],
     "sources": {
       "web_search": {
-        "ok": false,
+        "ok": true,
         "mode": "responses",
         "verified": 0,
         "truncated": true
       }
     },
-    "rejections": [],
+    "rejections": [
+      {
+        "url": "https://arxiv.org/abs/2609.28979",
+        "title": "Spectral Graph Neural Networks with Hermite Polynomials: A Comprehensive Study",
+        "reason": "Summary/topic validation: missing_fulltext",
+        "detail": "Method full text unavailable: VerificationError, VerificationError"
+      },
+      {
+        "url": "https://arxiv.org/abs/2609.17061",
+        "title": "Repurposing Unified Topological Signatures for Graph Representation Learning",
+        "reason": "Summary/topic validation: failed",
+        "detail": "exactly five short keywords required"
+      },
+      {
+        "url": "https://arxiv.org/abs/2608.08536",
+        "title": "Can Graph Learning Learn Circuits?",
+        "reason": "Summary/topic validation: failed",
+        "detail": "Need allowed topics with verbatim abstract evidence"
+      },
+      {
+        "url": "https://aclanthology.org/2026.acl-long.1161/",
+        "title": "AgentGL: Towards Agentic Graph Learning with LLMs via Reinforcement Learning",
+        "reason": "Primary source does not provide a usable abstract"
+      },
+      {
+        "url": "https://aclanthology.org/2026.acl-long.1944/",
+        "title": "From Nodes to Narratives: Explaining Graph Neural Networks with LLMs and Graph Context",
+        "reason": "Primary source does not provide a usable abstract"
+      }
+    ],
     "request_hash": "db88aaec561a27d2d64bd88faec9397f0b7fe41cdea118576b937f00abeb31c0",
-    "llm_processed": 0,
+    "llm_processed": 3,
     "coverage": "Best effort within time/tool budgets; not an exhaustive newest-paper ranking.",
-    "finished_at": "2026-09-27T06:37:25.463147+00:00",
+    "finished_at": "2026-09-27T07:12:05.417903+00:00",
     "returned": 0,
     "total": 94,
     "statuses": {
@@ -65,9 +338,8 @@
     },
     "result_ids": [],
     "deduplicated": 0,
-    "elapsed_seconds": 154.73,
+    "elapsed_seconds": 510.69,
     "shortfall": 3,
-    "error": "No completed live web search; archive preserved",
     "stop_reason": "round_budget"
   },
   "papers": []

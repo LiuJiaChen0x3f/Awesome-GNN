@@ -28,7 +28,7 @@
     "attempts": 3,
     "json_mode": true,
     "temperature": null,
-    "reasoning_effort": "medium",
+    "reasoning_effort": "low",
     "token_limit_parameter": "max_completion_tokens",
     "max_tokens": 4096
   }

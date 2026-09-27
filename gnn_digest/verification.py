@@ -75,10 +75,11 @@ def fetch_page(url, timeout=25):
 
 
 class MetadataParser(HTMLParser):
-    def __init__(self):
+    def __init__(self, ijcai_abstract=False):
         super().__init__(convert_charrefs=True)
         self.meta, self.text, self.abstract_parts = {}, [], []
         self.depth, self.abstract_depth, self.ignore_depth = 0, None, None
+        self.ijcai_abstract = ijcai_abstract
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -90,7 +91,8 @@ class MetadataParser(HTMLParser):
             if tag in ('script', 'style') and self.ignore_depth is None:
                 self.ignore_depth = self.depth
             classes = attrs.get('class', '').split()
-            if self.abstract_depth is None and (attrs.get('id') == 'abstract' or 'abstract' in classes) and tag in ('div', 'blockquote', 'section', 'p'):
+            if self.abstract_depth is None and (attrs.get('id') == 'abstract' or 'abstract' in classes or
+                    (self.ijcai_abstract and 'col-md-12' in classes)) and tag in ('div', 'blockquote', 'section', 'p'):
                 self.abstract_depth = self.depth
 
     def handle_startendtag(self, tag, attrs):
@@ -152,7 +154,8 @@ def verify_candidate(candidate, since, until, timeout=25):
     if not isinstance(candidate, dict) or not isinstance(candidate.get('title'), str):
         raise VerificationError('Candidate must have a title and primary-source URL')
     url = canonical_url(candidate.get('url'))
-    page = MetadataParser()
+    host = urlparse(url).hostname
+    page = MetadataParser(ijcai_abstract=host in ('ijcai.org', 'www.ijcai.org'))
     page.feed(fetch_page(url, timeout=timeout))
     title = page.first('citation_title', 'dc.title')
     if not title or norm_title(title) != norm_title(candidate['title']):
@@ -162,7 +165,7 @@ def verify_candidate(candidate, since, until, timeout=25):
     if len(abstract) < 80 or len(abstract) > 25000:
         raise VerificationError('Primary source does not provide a usable abstract')
     authors = [clean(a) for a in page.meta.get('citation_author', [])]
-    is_arxiv = urlparse(url).hostname == 'arxiv.org'
+    is_arxiv = host == 'arxiv.org'
     if is_arxiv:
         text = clean(' '.join(page.text))
         first = re.search(r'Submitted on\s+(\d{1,2} [A-Za-z]+ \d{4})', text)
@@ -181,6 +184,8 @@ def verify_candidate(candidate, since, until, timeout=25):
         label = venue_abbreviation(venue)
         if not label:
             raise VerificationError('No verified allowed main-conference venue in source metadata')
+        if host in ('ijcai.org', 'www.ijcai.org') and not re.search(r'\bMain Track\.\s*Pages\b', clean(' '.join(page.text))):
+            raise VerificationError('IJCAI record is not identified as Main Track')
         if urlparse(url).hostname == 'aclanthology.org' and not re.search(r'/(\d{4})\.(acl|emnlp)-(long|short)\.\d+/?$', urlparse(url).path):
             raise VerificationError('ACL/EMNLP record is not a main-conference paper')
         published = exact_date(page.first('citation_online_date', 'citation_publication_date', 'dc.date'))

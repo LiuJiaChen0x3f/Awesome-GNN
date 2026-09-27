@@ -330,7 +330,8 @@ def search(root, config, args):
                             p[field] = cached[field]
                 elif report['llm_processed'] < summary_budget:
                     summarizer.config = {**config['llm'], 'require_methods':True,
-                        'timeout':min(config['llm']['timeout'], max(1, deadline-time.monotonic())), 'attempts':1}
+                        'timeout':min(config['llm']['timeout'], max(1, deadline-time.monotonic())),
+                        'attempts':min(2, config['llm']['attempts'])}
                     try:
                         load_methods(p, timeout=min(45, max(1, deadline-time.monotonic())))
                         summarizer.summarize(p)

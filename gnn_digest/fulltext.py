@@ -32,7 +32,7 @@ class Sections(HTMLParser):
 
 def method_sections(text):
     lines = [clean(line) for line in text.splitlines() if clean(line)]
-    heading = re.compile(r'^(?:##\s*(?:\d+(?:\.\d+)*\s*[.：:]?\s*)?|\d+(?:\.\d+)*\s*[.：:]?\s*)(?:proposed\s+)?(?:method(?:ology|s)?|approach|framework|model architecture|our model)\b', re.I)
+    heading = re.compile(r'^(?:##\s*(?:\d+(?:\.\d+)*\s*[.：:]?\s*)?|\d+(?:\.\d+)*\s*[.：:]?\s*)(?:problem formulation and |proposed\s+)?(?:method(?:ology|s)?|approach|framework|model architecture|our model)\b', re.I)
     named_heading = re.compile(r'^(?:##\s*)?\d+(?:\.\d+)*\s+[\w -]{0,100}\b(?:model|framework|architecture|algorithm|training)\b', re.I)
     start = next((i for i, line in enumerate(lines) if len(line) < 160 and
                   (heading.match(line) or named_heading.match(line)) and
@@ -52,8 +52,8 @@ def read_document(url, timeout):
     req = urllib.request.Request(url, headers={'User-Agent': 'Awesome-GNN/0.3 full-text research'})
     with urllib.request.build_opener(CheckedRedirect).open(req, timeout=timeout) as response:
         safe_scholarly_url(response.url)
-        raw = response.read(16_000_001)
-        if len(raw) > 16_000_000: raise VerificationError('Full text exceeds 16 MB limit')
+        raw = response.read(24_000_001)
+        if len(raw) > 24_000_000: raise VerificationError('Full text exceeds 24 MB limit')
         if response.headers.get('Content-Encoding') == 'gzip': raw = gzip.decompress(raw)
         if raw.startswith(b'%PDF-'):
             from pypdf import PdfReader

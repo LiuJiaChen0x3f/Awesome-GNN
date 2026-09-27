@@ -107,7 +107,8 @@ class Summarizer:
                 return
             except Exception as error:
                 if attempt == self.config["attempts"] - 1:
-                    p.update(status="failed", keywords=[], method="", error=type(error).__name__)
+                    detail = str(error) if isinstance(error, (ValueError, json.JSONDecodeError)) else type(error).__name__
+                    p.update(status="failed", keywords=[], method="", error=detail[:160])
                     return
                 time.sleep(min(2 ** attempt, 8))
                 # Send schema repair instruction, never expose provider body or credentials.

@@ -27,6 +27,11 @@ class FulltextTests(unittest.TestCase):
         self.assertIn('Graph Dynamics Model', methods)
         self.assertNotIn('results', methods)
 
+    def test_problem_formulation_and_method_section(self):
+        methods = method_sections('3 Problem formulation and method\n' + 'We estimate graph connectivity. ' * 25 + '\n4 Experiments\nresults')
+        self.assertIn('graph connectivity', methods)
+        self.assertNotIn('results', methods)
+
     def test_pdf_fallback_and_method_cache_hash(self):
         text = 'Graph representation learning\n3 Method\n' + 'We train graph representations. ' * 25 + '\n4 Experiments\nresults'
         p = {'title':'Graph representation learning','abstract':'Abstract','arxiv_id':'2609.00001','pdf_url':'https://arxiv.org/pdf/2609.00001'}

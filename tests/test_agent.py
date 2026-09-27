@@ -101,6 +101,18 @@ class VerificationTests(unittest.TestCase):
         self.assertEqual(venue_abbreviation('Findings of EMNLP'),'')
         self.assertEqual(venue_abbreviation('ICML Workshop'),'')
 
+    def test_ijcai_body_abstract_and_main_track(self):
+        c={'title':'A Graph Neural Network','url':'https://www.ijcai.org/proceedings/2026/310'}
+        meta='<meta name="citation_title" content="A Graph Neural Network"><meta name="citation_conference_title" content="International Joint Conference on Artificial Intelligence"><meta name="citation_online_date" content="2026/09/16">'
+        body='<div>Main Track. Pages 1-9.</div><div class="col-md-12">'+ABSTRACT+'</div>'
+        with patch('gnn_digest.verification.fetch_page',return_value='<html><head>'+meta+'</head><body>'+body+'</body></html>'):
+            p=verify_candidate(c,date(2026,9,14),date(2026,9,27))
+        self.assertEqual(p['abstract'],ABSTRACT)
+        self.assertEqual(p['venue_label'],'IJCAI')
+        with patch('gnn_digest.verification.fetch_page',return_value='<html><head>'+meta+'</head><body>'+body.replace('Main Track','AI4Tech')+'</body></html>'):
+            with self.assertRaises(VerificationError):
+                verify_candidate(c,date(2026,9,14),date(2026,9,27))
+
     def test_topics_require_evidence_and_no_five_topic_requirement(self):
         self.assertEqual(validate_topics(answer(),ABSTRACT)['topics'],['GNN'])
         for changes in ({'topics':['OTHER']},{'topic_evidence':{'GNN':'This is a made up statement'}},{'topics':['GNN','GNN']}):
