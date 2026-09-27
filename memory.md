@@ -143,4 +143,4 @@
 
 - 按用户提供的新仓库地址，`origin` 已切换为规范地址 `https://github.com/Liujiachen1234567/Awesome-GNN.git`；旧账号仓库不再作为本地推送目标。
 - 清除旧 GitHub 凭据缓存后，完整 `main` 分支已成功推送，远程 `main` 当前包含提交 `4214f24`。远程 Test pipeline 已通过。
-- 新仓库的 Pages 预期地址为 `https://liujiachen1234567.github.io/Awesome-GNN/`。首次推送未触发 Pages（最后提交没有 `site/**` 改动），因此 `site/index.html` 增加了 canonical 链接以触发 `Publish site` 工作流；需确认工作流完成后再记录最终页面状态。
+- 新仓库的 Pages 地址为 `https://liujiachen1234567.github.io/Awesome-GNN/`。首次推送未触发 Pages（最后提交没有 `site/**` 改动），`site/index.html` 增加 canonical 链接后已触发工作流；通过 Pages API 启用 Actions 发布并手动 dispatch 后，`Publish site` 成功，页面首页和 `data/papers.json` 均 HTTP 200，公开数据为 92 篇。
