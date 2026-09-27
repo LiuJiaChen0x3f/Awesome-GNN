@@ -81,7 +81,7 @@ class LLMTests(unittest.TestCase):
         self.assertEqual(validate_summary(answer(),ABSTRACT)['keywords'],answer()['keywords'])
 
     def test_bad_output(self):
-        for change in [{'keywords':['a']*5},{'method':'长'*101},{'method':'English only'},{'evidence':['This is not in the abstract']},{'relevant':'true'},{'keywords':['a','b','c','d']},{'confidence':'low'}]:
+        for change in [{'keywords':['a']*5},{'method':'长'*201},{'method':'English only'},{'evidence':['This is not in the abstract']},{'relevant':'true'},{'keywords':['a','b','c','d']},{'confidence':'low'}]:
             with self.subTest(change=change),self.assertRaises(ValueError):
                 validate_summary({**answer(),**change},ABSTRACT)
 
@@ -115,6 +115,11 @@ class LLMTests(unittest.TestCase):
 
 
 class PipelineTests(unittest.TestCase):
+    def setUp(self):
+        methods = patch('gnn_digest.cli.load_methods', side_effect=lambda p, **kw: p.update(method_text=ABSTRACT, fulltext_source={'url':'https://arxiv.org/pdf/2609.12345','format':'pdf'}))
+        methods.start()
+        self.addCleanup(methods.stop)
+
     def setup_root(self, temporary):
         root=Path(temporary);(root/'prompts').mkdir()
         (root/'prompts/summarize.zh.txt').write_text('prompt')

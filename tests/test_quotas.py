@@ -13,7 +13,7 @@ from gnn_digest.agent import search, source_quotas, select_balanced, verified_ro
 from gnn_digest.cli import ROOT
 from gnn_digest.models import identity_keys, merge_records, paper
 from gnn_digest.storage import read_json, write_json
-from test_agent import ABSTRACT, answer, response
+from test_agent import ABSTRACT, answer, response, mock_methods
 
 
 def record(name, route, day=25, status='ready'):
@@ -105,6 +105,7 @@ class QuotaSearchTests(unittest.TestCase):
         responses = [response([{'title':p['title'],'url':p['verification']['url']} for p in ps]) for ps in rounds]
         with patch('gnn_digest.agent.WebResearchAgent.search',side_effect=responses) as agent, \
              patch('gnn_digest.agent.verify_candidate',side_effect=lambda c,*a,**kw:dict(by_url[c['url']])), \
+             patch('gnn_digest.agent.load_methods',side_effect=mock_methods), \
              patch('gnn_digest.llm.get_json',return_value={'choices':[{'message':{'content':json.dumps(answer())}}]}) as summary:
             code = search(root,config,args)
         return code, read_json(root/'data/search_results.json',{}), agent, summary

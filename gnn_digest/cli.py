@@ -11,6 +11,8 @@ from .llm import SearchPlanner, Summarizer
 from .models import candidate, is_ccf_venue, merge_records, within_window
 from .sources import FETCHERS
 from .storage import export_site, lock, read_json, write_json
+from .fulltext import load_methods
+from .verification import VerificationError
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -54,7 +56,7 @@ def run(args):
             export_site(papers, read_json(root / "data" / "last_run.json", {}), root / "site")
             print(f"Exported {len(papers)} archived papers")
             return 0
-        engine = None if args.no_llm else Summarizer(config["llm"], (root / "prompts" / "summarize.zh.txt").read_text(encoding="utf-8"))
+        engine = None if args.no_llm else Summarizer({**config["llm"], 'require_methods':True}, (root / "prompts" / "summarize.zh.txt").read_text(encoding="utf-8"))
         search_prompt_path = root / "prompts" / "search.en.txt"
         if not search_prompt_path.exists():
             search_prompt_path = ROOT / "prompts" / "search.en.txt"
@@ -116,7 +118,11 @@ def run(args):
             # Workers return copies; only the main thread changes and saves the archive.
             def summarize_copy(p):
                 copy = dict(p)
-                engine.summarize(copy)
+                try:
+                    load_methods(copy)
+                    engine.summarize(copy)
+                except VerificationError as exc:
+                    copy.update(status='missing_fulltext', keywords=[], method='', error=str(exc)[:160])
                 return copy
             budget = config["max_llm_papers"]
             queue = iter(eligible[:budget])

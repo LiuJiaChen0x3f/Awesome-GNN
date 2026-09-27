@@ -15,6 +15,12 @@ from gnn_digest.storage import read_json, write_json
 from gnn_digest.verification import verify_candidate, VerificationError, safe_scholarly_url, venue_abbreviation
 
 ABSTRACT = 'We propose a graph neural network with attention-based message passing for molecular property prediction.'
+METHOD_TEXT = '3 Method\nOur graph neural network uses attention-based message passing for molecular property prediction. We encode atoms as nodes and bonds as edges, aggregate neighbor messages with attention weights, and train the representation for property prediction.'
+
+
+def mock_methods(p, **kwargs):
+    p['method_text'] = METHOD_TEXT
+    p['fulltext_source'] = {'url':'https://arxiv.org/pdf/2609.00001', 'format':'pdf'}
 
 def html(title='A Graph Neural Network', submitted='25 Sep 2026', extra=''):
     return f'''<html><head><meta name="citation_title" content="{title}"/>
@@ -37,7 +43,7 @@ def response(items, actions=True, status='completed'):
     return {'status':status,'output':([{'type':'web_search_call','status':'completed','action':{'type':'search','queries':['graph papers']}}] if actions else []) + [{'type':'message','content':[{'type':'output_text','text':json.dumps({'candidates':items,'notes':''}), 'annotations':[]}]}]}
 
 def answer():
-    return {'relevant':True,'topics':['GNN'],'topic_evidence':{'GNN':'We propose a graph neural network'},'keywords':['GNN','注意力','消息传递','分子图','属性预测'], 'method':'通过注意力加权消息传递学习分子图表示，预测分子属性。','confidence':'high','evidence':['attention-based message passing for molecular property prediction']}
+    return {'relevant':True,'topics':['GNN'],'topic_evidence':{'GNN':'We propose a graph neural network'},'keywords':['GNN','注意力','消息传递','分子图','属性预测'], 'method':'通过注意力加权消息传递学习分子图表示，预测分子属性。','confidence':'high','evidence':['We encode atoms as nodes and bonds as edges']}
 
 
 class VerificationTests(unittest.TestCase):
@@ -139,14 +145,14 @@ class AgentTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root, config, args=self.setup_root(tmp)
             bad={**candidate(2),'url':'https://evil.test/paper'}
-            with patch('gnn_digest.agent.WebResearchAgent.search',side_effect=[response([bad]),response([conference_candidate()])]) as agent, patch('gnn_digest.verification.fetch_page',return_value=conference_html()), patch('gnn_digest.llm.get_json',return_value={'choices':[{'message':{'content':json.dumps(answer())}}]}):
+            with patch('gnn_digest.agent.WebResearchAgent.search',side_effect=[response([bad]),response([conference_candidate()])]) as agent, patch('gnn_digest.verification.fetch_page',return_value=conference_html()), patch('gnn_digest.agent.load_methods',side_effect=mock_methods), patch('gnn_digest.llm.get_json',return_value={'choices':[{'message':{'content':json.dumps(answer())}}]}):
                 self.assertEqual(run(args),0)
             self.assertTrue(agent.call_args_list[1].args[0]['feedback'])
             report=read_json(root/'data/last_run.json',{})
             self.assertEqual(report['returned'],1)
             self.assertEqual(len(report['rounds']),2)
             self.assertEqual(len(report['rejections']),1)
-            with patch('gnn_digest.agent.WebResearchAgent.search',return_value=response([conference_candidate()])), patch('gnn_digest.verification.fetch_page',return_value=conference_html()), patch('gnn_digest.llm.get_json') as summary:
+            with patch('gnn_digest.agent.WebResearchAgent.search',return_value=response([conference_candidate()])), patch('gnn_digest.verification.fetch_page',return_value=conference_html()), patch('gnn_digest.agent.load_methods',side_effect=mock_methods), patch('gnn_digest.llm.get_json') as summary:
                 self.assertEqual(run(args),0)
                 summary.assert_not_called()
             saved=read_json(root/'data/papers.json',{})['papers']
@@ -170,7 +176,7 @@ class AgentTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root, config, args=self.setup_root(tmp)
             a={'relevant':False,'topics':[],'topic_evidence':{},'keywords':[],'method':'','confidence':'low','evidence':[]}
-            with patch('gnn_digest.agent.WebResearchAgent.search',return_value=response([conference_candidate()])),patch('gnn_digest.verification.fetch_page',return_value=conference_html()),patch('gnn_digest.llm.get_json',return_value={'choices':[{'message':{'content':json.dumps(a)}}]}):
+            with patch('gnn_digest.agent.WebResearchAgent.search',return_value=response([conference_candidate()])),patch('gnn_digest.verification.fetch_page',return_value=conference_html()),patch('gnn_digest.agent.load_methods',side_effect=mock_methods),patch('gnn_digest.llm.get_json',return_value={'choices':[{'message':{'content':json.dumps(a)}}]}):
                 self.assertEqual(search(root,config,args),4)
             self.assertEqual(read_json(root/'data/search_results.json',{})['papers'],[])
 

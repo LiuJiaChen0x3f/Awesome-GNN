@@ -26,8 +26,8 @@ def validate_summary(value, abstract):
         raise ValueError("exactly five short keywords required")
     if len({k.strip().casefold() for k in keywords}) != 5:
         raise ValueError("keywords must be unique")
-    if not 1 <= len(method) <= 100 or not re.search(r"[\u4e00-\u9fff]", method):
-        raise ValueError("method must be Chinese and 1-100 characters")
+    if not 1 <= len(method) <= 200 or not re.search(r"[\u4e00-\u9fff]", method):
+        raise ValueError("method must be Chinese and 1-200 characters")
     if not 1 <= len(evidence) <= 3 or any(not isinstance(e, str) or not 15 <= len(e) <= 200 or e not in abstract for e in evidence):
         raise ValueError("evidence must be 1-3 verbatim abstract spans")
     return {**value, "keywords": [k.strip() for k in keywords]}
@@ -72,7 +72,12 @@ class Summarizer:
 
     def summarize(self, p):
         abstract = p["abstract"][:20000]
-        messages = [{"role": "system", "content": self.prompt}, {"role": "user", "content": json.dumps({"title": p["title"], "abstract": abstract}, ensure_ascii=False)}]
+        methods = p.get('method_text', '')
+        if self.config.get('require_methods') and not methods:
+            p.update(status='missing_fulltext', keywords=[], method='')
+            return
+        grounding = abstract + '\n' + methods
+        messages = [{"role": "system", "content": self.prompt}, {"role": "user", "content": json.dumps({"title": p["title"], "abstract": abstract, "method_sections":methods}, ensure_ascii=False)}]
         for attempt in range(self.config["attempts"]):
             raw = None
             payload = {"model": self.model, "messages": messages}
@@ -86,9 +91,11 @@ class Summarizer:
             try:
                 response = get_json(self.endpoint, payload=payload, headers={"Authorization": "Bearer " + self.key}, timeout=self.config["timeout"], attempts=1)
                 raw = response["choices"][0]["message"]["content"]
-                result = validate_summary(json.loads(raw), abstract)
+                result = validate_summary(json.loads(raw), grounding)
+                if methods and result['relevant'] and result['confidence'] != 'low' and not any(e in methods for e in result['evidence']):
+                    raise ValueError('Need at least one verbatim method-section evidence span')
                 if self.extra_validator:
-                    result = self.extra_validator(result, abstract)
+                    result = self.extra_validator(result, grounding)
                 status = "irrelevant" if not result["relevant"] else "insufficient" if result["confidence"] == "low" else "ready"
                 p.update({k: result[k] for k in ("keywords", "method", "confidence", "evidence")})
                 if self.extra_validator:
@@ -107,7 +114,7 @@ class Summarizer:
                 if isinstance(raw, str):
                     messages.append({"role": "assistant", "content": raw[:12000]})
                 detail = str(error) if isinstance(error, (ValueError, json.JSONDecodeError)) else type(error).__name__
-                messages.append({"role": "user", "content": "上次输出或请求未通过校验：" + detail + "。请修正后输出完整JSON。证据必须从输入摘要复制连续原文，不改写、不省略，不加省略号。严格检查五个不同关键词、中文百字限制和字段类型。"})
+                messages.append({"role": "user", "content": "上次输出或请求未通过校验：" + detail + "。请修正后输出完整JSON。证据必须从输入摘要或方法章节复制连续原文，至少一段来自方法章节。严格检查五个不同关键词、中文200字限制和字段类型。"})
 
 
 class SearchPlanner:

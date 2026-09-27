@@ -13,7 +13,8 @@ from .http import RequestError, get_json
 from .llm import Summarizer
 from .models import content_hash, identity_keys, merge_records
 from .storage import export_site, lock, read_json, write_json
-from .verification import DOMAINS, TOPICS, VENUES, VerificationError, canonical_url, verify_candidate
+from .verification import DOMAINS, TOPICS, VENUES, DIRECTORY_SOURCES, VerificationError, canonical_url, verify_candidate, verify_directory_match
+from .fulltext import load_methods
 
 
 def endpoint(base, suffix):
@@ -37,6 +38,8 @@ def parse_candidates(text, limit):
     for item in value['candidates']:
         if not isinstance(item, dict) or any(not isinstance(item.get(k), str) or not item[k].strip() for k in ('title', 'url')):
             raise ValueError('Candidate needs title and url')
+        if 'directory_url' in item and not isinstance(item['directory_url'], str):
+            raise ValueError('directory_url must be a string')
     return value['candidates'], str(value.get('notes', ''))[:1000]
 
 
@@ -246,7 +249,8 @@ def search(root, config, args):
             context = {'research_request':request, 'utc_today':str(today),
                        'date_window':report['window'], 'requested_count':limit,
                        'candidate_limit':options['candidate_limit'], 'primary_source_domains':DOMAINS,
-                       'conference_aliases':VENUES, 'source_quotas':quotas, 'quota_progress':progress,
+                       'conference_aliases':VENUES, 'conference_directories':DIRECTORY_SOURCES,
+                       'source_quotas':quotas, 'quota_progress':progress,
                        'search_focus':[k for k,v in progress.items() if v['shortfall']],
                        'accepted':[{'title':p['title'], 'url':p['verification']['url'], 'selection_bucket':p['selection_bucket']} for p in accepted],
                        'feedback':feedback[-30:], 'instruction':'Fill each source quota independently. Prioritize deficient buckets, newest within each bucket. Never substitute arXiv for conference slots. Do not repeat known URLs; a NEW conference link for a known arXiv paper can establish a second eligible route, but the paper still counts only once.'}
@@ -291,6 +295,10 @@ def search(root, config, args):
                         continue
                     seen.add(url)
                     p = verify_candidate(c, since, today, timeout=min(25, max(1, deadline-time.monotonic())))
+                    if c.get('directory_url'):
+                        if p.get('date_basis') != 'arxiv_first_submission':
+                            raise VerificationError('Directory-assisted candidates must link to verified arXiv records')
+                        p['conference_evidence'] = verify_directory_match(p['title'], c['directory_url'], timeout=min(15, max(1, deadline-time.monotonic())))
                     verified.append(p)
                 except Exception as exc:
                     reason = str(exc)[:200] if isinstance(exc, VerificationError) else type(exc).__name__
@@ -308,6 +316,11 @@ def search(root, config, args):
                 if p is None:
                     break
                 attempted.add(p['verification']['url'])
+                previous = next((a for a in archive if identity_keys(p) & identity_keys(a)
+                                 and a.get('title') == p['title'] and a.get('abstract') == p['abstract']
+                                 and a.get('method_text') and a.get('fulltext_source')), None)
+                if previous:
+                    p.update(method_text=previous['method_text'], fulltext_source=previous['fulltext_source'])
                 cached = next((a for a in archive + pool if identity_keys(p) & identity_keys(a)
                                and content_hash(a) == content_hash(p) and summarizer.cached(a)
                                and a.get('topics') and a.get('topic_evidence')), None)
@@ -316,8 +329,13 @@ def search(root, config, args):
                         if field in cached:
                             p[field] = cached[field]
                 elif report['llm_processed'] < summary_budget:
-                    summarizer.config = {**config['llm'], 'timeout':min(config['llm']['timeout'], max(1, deadline-time.monotonic())), 'attempts':1}
-                    summarizer.summarize(p)
+                    summarizer.config = {**config['llm'], 'require_methods':True,
+                        'timeout':min(config['llm']['timeout'], max(1, deadline-time.monotonic())), 'attempts':1}
+                    try:
+                        load_methods(p, timeout=min(45, max(1, deadline-time.monotonic())))
+                        summarizer.summarize(p)
+                    except VerificationError as exc:
+                        p.update(status='missing_fulltext', keywords=[], method='', error=str(exc)[:160])
                     report['llm_processed'] += 1
                 else:
                     break
@@ -329,7 +347,9 @@ def search(root, config, args):
                 if p['status'] == 'ready' and p.get('topics'):
                     print(f'Verified {p["selection_bucket"]}: {p["published"]} | {p["venue_label"]} | {p["title"]}', flush=True)
                 else:
-                    item = {'url':p['verification']['url'], 'title':p['title'], 'reason':'Summary/topic validation: ' + p['status']}
+                    item = {'url':p['verification']['url'], 'title':p['title'],
+                            'reason':'Summary/topic validation: ' + p['status'],
+                            'detail':p.get('error', '')}
                     feedback.append(item)
                     report['rejections'].append(item)
                 accepted = select_balanced(pool, quotas, ready_only=True, archive=archive)

@@ -1,10 +1,10 @@
 {
   "report": {
     "mode": "responses_web_search",
-    "started_at": "2026-09-26T15:54:55.840859+00:00",
+    "started_at": "2026-09-27T06:34:50.734117+00:00",
     "window": {
-      "since": "2026-09-13",
-      "until": "2026-09-26"
+      "since": "2026-09-14",
+      "until": "2026-09-27"
     },
     "llm_enabled": true,
     "requested": 3,
@@ -20,8 +20,8 @@
       },
       "arxiv": {
         "requested": 1,
-        "returned": 1,
-        "shortfall": 0
+        "returned": 0,
+        "shortfall": 1
       }
     },
     "rounds": [
@@ -39,393 +39,23 @@
             "shortfall": 1
           }
         },
-        "status": "completed",
-        "actions": [
-          {
-            "status": "completed",
-            "type": "search",
-            "query": "site.arxiv.org/abs/ \"graph\" \"Sep 2026\"",
-            "queries": [
-              "site.arxiv.org/abs/ \"graph\" \"Sep 2026\"",
-              "site.dl.acm.org \"graph\" \"September 2026\"",
-              "site.aclanthology.org/2026 \"September\" graph"
-            ]
-          },
-          {
-            "status": "completed",
-            "type": "search",
-            "query": "site.dl.acm.org/doi \"2026\" \"September\" \"graph neural\"",
-            "queries": [
-              "site.dl.acm.org/doi \"2026\" \"September\" \"graph neural\"",
-              "site.ijcai.org/proceedings/2026 graph publication",
-              "site.arxiv.org/abs/2609 \"graph neural\" \"25 Sep\"",
-              "site.arxiv.org/abs/2609 \"graph\" \"24 Sep\""
-            ]
-          },
-          {
-            "status": "completed",
-            "type": "search",
-            "query": "site.dl.acm.org \"2026\" \"Published: 25 September\" graph",
-            "queries": [
-              "site.dl.acm.org \"2026\" \"Published: 25 September\" graph",
-              "site.dl.acm.org \"2026\" \"Published: 18 September\" graph",
-              "site.arxiv.org/abs/2609 \"graph neural\" \"25\"",
-              "site.proceedings.mlr.press \"2026\" \"September\""
-            ]
-          },
-          {
-            "status": "completed",
-            "type": "search",
-            "query": "site.dl.acm.org/doi/proceedings \"2026\" \"September\" \"KDD\"",
-            "queries": [
-              "site.dl.acm.org/doi/proceedings \"2026\" \"September\" \"KDD\"",
-              "site.ccf.org.cn 学术刊物 人工智能 A类 IJCAI"
-            ]
-          },
-          {
-            "status": "completed",
-            "type": "search",
-            "query": "site.dl.acm.org \"graph\" \"September 2026\" \"conference\"",
-            "queries": [
-              "site.dl.acm.org \"graph\" \"September 2026\" \"conference\"",
-              "site.aclanthology.org/2026.emnlp \"graph\"",
-              "site.openaccess.thecvf.com \"2026\" \"September\""
-            ]
-          },
-          {
-            "status": "completed",
-            "type": "open_page",
-            "url": "https://arxiv.org/abs/2609.30184"
-          },
-          {
-            "status": "completed",
-            "type": "search",
-            "query": "KDD 2026 proceedings publication date ACM August",
-            "queries": [
-              "KDD 2026 proceedings publication date ACM August",
-              "\"graph\" \"conference\" \"September 2026\" \"Published\" \"ACM\"",
-              "\"graph\" \"2026\" \"September\" \"ICDE\" publication",
-              "\"graph\" \"2026\" \"September\" \"SIGIR\" publication"
-            ]
-          }
-        ],
-        "citations": [
-          {
-            "url": "https://arxiv.org/abs/2609.30184?utm_source=openai",
-            "title": "ARGUS: Role-Aware Event Knowledge Graphs for U.S. Employment-Discrimination Complaints"
-          },
-          {
-            "url": "https://arxiv.org/abs/2609.30184",
-            "title": "[2609.30184] ARGUS: Role-Aware Event Knowledge Graphs for U.S. Employment-Discrimination Complaints"
-          },
-          {
-            "url": "https://arxiv.org/abs/2609.30184",
-            "title": "[2609.30184] ARGUS: Role-Aware Event Knowledge Graphs for U.S. Employment-Discrimination Complaints"
-          },
-          {
-            "url": "https://aclanthology.org/2026.acl-long.1161/?utm_source=openai",
-            "title": "AgentGL: Towards Agentic Graph Learning with LLMs via Reinforcement Learning - ACL Anthology"
-          },
-          {
-            "url": "https://arxiv.org/search/advanced?abstracts=show&advanced=&classification-include_cross_list=include&date-date_type=submitted_date&date-filter_by=date_range&date-from_date=2026-09-13&date-to_date=2026-09-26&order=-announced_date_first&size=50&terms-0-field=title&terms-0-operator=AND&terms-0-term=graph",
-            "title": "Advanced Search | arXiv e-print repository"
-          }
-        ],
-        "usage": {
-          "input_tokens": 2301,
-          "output_tokens": 1730,
-          "total_tokens": 4031
-        },
-        "format_recovery": "url_citations",
-        "candidate_count": 2,
-        "notes": "Recovered candidates from response citations; all require primary-source verification.",
-        "quota_after": {
-          "conference": {
-            "requested": 2,
-            "returned": 0,
-            "shortfall": 2
-          },
-          "arxiv": {
-            "requested": 1,
-            "returned": 1,
-            "shortfall": 0
-          }
-        }
-      },
-      {
-        "round": 2,
-        "quota_before": {
-          "conference": {
-            "requested": 2,
-            "returned": 0,
-            "shortfall": 2
-          },
-          "arxiv": {
-            "requested": 1,
-            "returned": 1,
-            "shortfall": 0
-          }
-        },
-        "status": "completed",
-        "actions": [
-          {
-            "status": "completed",
-            "type": "search",
-            "query": "site.aclanthology.org/2026 \"September\" \"graph\"",
-            "queries": [
-              "site.aclanthology.org/2026 \"September\" \"graph\"",
-              "site.dl.acm.org \"2026\" \"Sep 2026\" \"graph learning\"",
-              "site.ijcai.org/proceedings/2026 \"graph\""
-            ]
-          },
-          {
-            "status": "completed",
-            "type": "search",
-            "query": "site.dl.acm.org/doi \"2026\" \"September\" \"graph neural\" \"Published\"",
-            "queries": [
-              "site.dl.acm.org/doi \"2026\" \"September\" \"graph neural\" \"Published\"",
-              "site.dl.acm.org/doi \"2026\" \"September\" \"knowledge graph\" \"Proceedings\"",
-              "site.ijcai.org/proceedings/2026 \"September\"",
-              "site.ccf.org.cn 国际学术会议 人工智能 A类 多媒体"
-            ]
-          },
-          {
-            "status": "completed",
-            "type": "search",
-            "query": "\"graph\" \"2026\" \"Published: 2\" \"September\" conference",
-            "queries": [
-              "\"graph\" \"2026\" \"Published: 2\" \"September\" conference",
-              "\"graph neural\" \"2026\" \"September\" \"ACM\"",
-              "site.proceedings.mlr.press \"2026\" \"Sep\"",
-              "site.aclanthology.org/events/emnlp-2026/"
-            ]
-          },
-          {
-            "status": "completed",
-            "type": "search",
-            "query": "\"2026\" \"graph\" \"September\" \"SIGCOMM\"",
-            "queries": [
-              "\"2026\" \"graph\" \"September\" \"SIGCOMM\"",
-              "\"2026\" \"graph\" \"September\" \"dl.acm.org/doi/10.1145\"",
-              "\"2026\" \"graph\" \"September\" \"proceedings\" \"published\" \"KDD\""
-            ]
-          },
-          {
-            "status": "completed",
-            "type": "search",
-            "query": "\"graph\" \"2026\" \"September\" \"conference\" \"first online\"",
-            "queries": [
-              "\"graph\" \"2026\" \"September\" \"conference\" \"first online\"",
-              "\"graph\" \"2026\" \"September\" \"ICDE\"",
-              "\"graph\" \"2026\" \"September\" \"ACM Multimedia\"",
-              "\"graph\" \"2026\" \"September\" \"SIGIR\""
-            ]
-          },
-          {
-            "status": "completed",
-            "type": "open_page",
-            "url": "https://www.ijcai.org/proceedings/2026/62"
-          },
-          {
-            "status": "completed",
-            "type": "open_page",
-            "url": "https://www.ijcai.org/proceedings/2026/62"
-          }
-        ],
-        "citations": [
-          {
-            "url": "https://www.ijcai.org/proceedings/2026/62",
-            "title": "Local Geometry Improves Explanation Robustness for Graph Neural Networks | IJCAI"
-          },
-          {
-            "url": "https://aclanthology.org/2026.acl-long.1846/?utm_source=openai",
-            "title": "Evaluating LLMs on Large-Scale Graph Property Estimation via Random Walks - ACL Anthology"
-          },
-          {
-            "url": "https://2026.emnlp.org/calls/main_conference_papers/?utm_source=openai",
-            "title": "Call for Main Conference Papers - EMNLP 2026"
-          }
-        ],
-        "usage": {
-          "input_tokens": 2494,
-          "output_tokens": 1319,
-          "total_tokens": 3813
-        },
-        "format_recovery": "url_citations",
-        "candidate_count": 2,
-        "notes": "Recovered candidates from response citations; all require primary-source verification.",
-        "quota_after": {
-          "conference": {
-            "requested": 2,
-            "returned": 0,
-            "shortfall": 2
-          },
-          "arxiv": {
-            "requested": 1,
-            "returned": 1,
-            "shortfall": 0
-          }
-        }
-      },
-      {
-        "round": 3,
-        "quota_before": {
-          "conference": {
-            "requested": 2,
-            "returned": 0,
-            "shortfall": 2
-          },
-          "arxiv": {
-            "requested": 1,
-            "returned": 1,
-            "shortfall": 0
-          }
-        },
-        "status": "completed",
-        "actions": [
-          {
-            "status": "completed",
-            "type": "search",
-            "query": "site.ijcai.org/proceedings/2026 graph neural",
-            "queries": [
-              "site.ijcai.org/proceedings/2026 graph neural",
-              "site.aclanthology.org/2026 \"September\" \"graph\"",
-              "site.dl.acm.org \"graph\" \"First Online\" \"September 2026\""
-            ]
-          },
-          {
-            "status": "completed",
-            "type": "search",
-            "query": "site.dl.acm.org/doi \"2026\" \"September\" \"graph neural\"",
-            "queries": [
-              "site.dl.acm.org/doi \"2026\" \"September\" \"graph neural\"",
-              "site.aclanthology.org/2026.emnlp \"graph\"",
-              "site.ccf.org.cn \"人工智能\" \"A类\" \"IJCAI\""
-            ]
-          },
-          {
-            "status": "completed",
-            "type": "search",
-            "query": "site.dl.acm.org \"2026\" \"Published: 2\" \"Graph\" \"MM\"",
-            "queries": [
-              "site.dl.acm.org \"2026\" \"Published: 2\" \"Graph\" \"MM\"",
-              "\"graph\" \"September 2026\" \"proceedings\"",
-              "site.proceedings.mlr.press \"2026\" \"International Conference on Machine Learning\"",
-              "site.aclanthology.org \"2026.emnlp-main\""
-            ]
-          },
-          {
-            "status": "completed",
-            "type": "search",
-            "query": "site.dl.acm.org \"2026\" \"graph\" \"September\" \"KDD\"",
-            "queries": [
-              "site.dl.acm.org \"2026\" \"graph\" \"September\" \"KDD\"",
-              "site.dl.acm.org \"2026\" \"graph\" \"September\" \"Proceedings of the 34th\"",
-              "site.link.springer.com/chapter \"2026\" \"graph\" \"First Online: 2\" \"September\""
-            ]
-          },
-          {
-            "status": "completed",
-            "type": "search",
-            "query": "\"graph\" \"2026\" \"September\" site:dl.acm.org/doi/10.1145",
-            "queries": [
-              "\"graph\" \"2026\" \"September\" site:dl.acm.org/doi/10.1145",
-              "\"graph\" \"2026\" \"September\" site:openaccess.thecvf.com",
-              "\"graph\" \"2026\" \"September\" site:ieeexplore.ieee.org \"ICDE\""
-            ]
-          },
-          {
-            "status": "completed",
-            "type": "search",
-            "query": "site.dl.acm.org \"MM '26\" \"graph\"",
-            "queries": [
-              "site.dl.acm.org \"MM '26\" \"graph\"",
-              "site.proceedings.neurips.cc \"2026\" \"graph\"",
-              "site.ojs.aaai.org \"2026\" \"graph\" \"Published\"",
-              "site.dl.acm.org \"2026\" \"September\" \"knowledge graph\""
-            ]
-          }
-        ],
-        "citations": [
-          {
-            "url": "https://proceedings.mlr.press/",
-            "title": "Proceedings of Machine Learning Research | The Proceedings of Machine Learning Research (formerly JMLR Workshop and Conference Proceedings) is a series aimed specifically at publishing machine learning research presented at workshops and conferences. Each volume is separately titled and associated with a particular workshop or conference. Volumes are published online on the PMLR web site. The Series Editors are Neil D. Lawrence and Mark Reid."
-          },
-          {
-            "url": "https://2026.emnlp.org/program/main_papers/?utm_source=openai",
-            "title": "Accepted Main Conference Papers - EMNLP 2026"
-          },
-          {
-            "url": "https://neurips.cc/Downloads/2026?utm_source=openai",
-            "title": "Downloads"
-          },
-          {
-            "url": "https://www.ijcai.org/proceedings/2026/",
-            "title": "Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence | IJCAI"
-          }
-        ],
-        "usage": {
-          "input_tokens": 2686,
-          "output_tokens": 1393,
-          "total_tokens": 4079
-        },
-        "format_recovery": "url_citations",
-        "candidate_count": 2,
-        "notes": "Recovered candidates from response citations; all require primary-source verification.",
-        "quota_after": {
-          "conference": {
-            "requested": 2,
-            "returned": 0,
-            "shortfall": 2
-          },
-          "arxiv": {
-            "requested": 1,
-            "returned": 1,
-            "shortfall": 0
-          }
-        }
+        "error": "network/timeout failure"
       }
     ],
     "sources": {
       "web_search": {
-        "ok": true,
+        "ok": false,
         "mode": "responses",
-        "verified": 1,
+        "verified": 0,
         "truncated": true
       }
     },
-    "rejections": [
-      {
-        "url": "https://aclanthology.org/2026.acl-long.1161/?utm_source=openai",
-        "title": "AgentGL: Towards Agentic Graph Learning with LLMs via Reinforcement Learning",
-        "reason": "Primary source does not provide a usable abstract"
-      },
-      {
-        "url": "https://www.ijcai.org/proceedings/2026/62",
-        "title": "Local Geometry Improves Explanation Robustness for Graph Neural Networks",
-        "reason": "URLError"
-      },
-      {
-        "url": "https://aclanthology.org/2026.acl-long.1846/?utm_source=openai",
-        "title": "Evaluating LLMs on Large-Scale Graph Property Estimation via Random Walks",
-        "reason": "Primary source does not provide a usable abstract"
-      },
-      {
-        "url": "https://proceedings.mlr.press/",
-        "title": "Proceedings of Machine Learning Research | The Proceedings of Machine Learning Research (formerly JMLR Workshop and Conference Proceedings) is a series aimed specifically at publishing machine learning research presented at workshops and conferences. Each volume is separately titled and associated w",
-        "reason": "Candidate title does not match primary-source metadata"
-      },
-      {
-        "url": "https://www.ijcai.org/proceedings/2026/",
-        "title": "Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence",
-        "reason": "Candidate title does not match primary-source metadata"
-      }
-    ],
+    "rejections": [],
     "request_hash": "db88aaec561a27d2d64bd88faec9397f0b7fe41cdea118576b937f00abeb31c0",
-    "llm_processed": 1,
+    "llm_processed": 0,
     "coverage": "Best effort within time/tool budgets; not an exhaustive newest-paper ranking.",
-    "finished_at": "2026-09-26T15:58:10.916494+00:00",
-    "returned": 1,
+    "finished_at": "2026-09-27T06:37:25.463147+00:00",
+    "returned": 0,
     "total": 94,
     "statuses": {
       "missing_abstract": 5,
@@ -433,91 +63,12 @@
       "ready": 4,
       "irrelevant": 2
     },
-    "result_ids": [
-      "p-2831e61c090e2e962da5"
-    ],
-    "deduplicated": 1,
-    "elapsed_seconds": 195.08,
-    "shortfall": 2,
+    "result_ids": [],
+    "deduplicated": 0,
+    "elapsed_seconds": 154.73,
+    "shortfall": 3,
+    "error": "No completed live web search; archive preserved",
     "stop_reason": "round_budget"
   },
-  "papers": [
-    {
-      "id": "p-2831e61c090e2e962da5",
-      "title": "ARGUS: Role-Aware Event Knowledge Graphs for U.S. Employment-Discrimination Complaints",
-      "abstract": "U.S. employment-discrimination complaints describe complex event sequences that are not explicitly captured by lexical or embedding-based representations alone. We present ARGUS, a source-grounded pipeline that combines a 5W1H-inspired schema, legal-domain models, and LLM-based structured generation to construct document-level Event Knowledge Graphs (EKGs) from CourtListener complaints. ARGUS extracts fact-bearing statements, builds chunk-level event graphs with participant, temporal, and causal structure, and merges them into document-level representations. We evaluate graph quality through human and multi-model assessment and test downstream utility on claim classification and legal QA. The graph-structured classifier outperforms raw and linearized baselines on the held-out set, and EKG-only retrieval improves document-scoped QA, while open-retrieval gains remain limited by low first-stage candidate recall. These results suggest that EKGs are most useful for organizing and reasoning over evidence once relevant material has been retrieved.",
-      "authors": [
-        "Kannan, Sriram",
-        "Saseendran, Swetha",
-        "Kandi, Vishnu Vardhan Reddy",
-        "Barrett, Leslie",
-        "Seshadri, Madhavan",
-        "Santus, Enrico"
-      ],
-      "published": "2026-09-24",
-      "updated": "2026-09-24",
-      "doi": "",
-      "arxiv_id": "2609.30184",
-      "venue": "",
-      "publication_type": "preprint",
-      "sources": [
-        {
-          "name": "arxiv",
-          "id": "2609.30184",
-          "url": "https://arxiv.org/abs/2609.30184",
-          "date_basis": "arxiv_first_submission"
-        }
-      ],
-      "status": "ready",
-      "keywords": [
-        "KG",
-        "5W1H启发模式",
-        "LLM结构化生成",
-        "分块事件图合并",
-        "法律问答"
-      ],
-      "method": "结合5W1H启发模式、法律领域模型和LLM结构化生成提取事实，构建含参与者、时序及因果结构的分块事件知识图谱，再合并为文档级图谱，用于诉求分类和法律问答。",
-      "venue_label": "arXiv",
-      "date_basis": "arxiv_first_submission",
-      "display_date": "2026-09-24",
-      "pdf_url": "https://arxiv.org/pdf/2609.30184",
-      "verification": {
-        "url": "https://arxiv.org/abs/2609.30184",
-        "method": "primary_source_metadata",
-        "date": "2026-09-24"
-      },
-      "publication_events": [
-        {
-          "date": "2026-09-24",
-          "basis": "arxiv_first_submission",
-          "url": "https://arxiv.org/abs/2609.30184",
-          "venue": "arXiv"
-        }
-      ],
-      "ccf_venue": false,
-      "confidence": "high",
-      "evidence": [
-        "a source-grounded pipeline that combines a 5W1H-inspired schema, legal-domain models, and LLM-based structured generation",
-        "ARGUS extracts fact-bearing statements, builds chunk-level event graphs with participant, temporal, and causal structure, and merges them into document-level representations.",
-        "We evaluate graph quality through human and multi-model assessment and test downstream utility on claim classification and legal QA."
-      ],
-      "topics": [
-        "KG"
-      ],
-      "topic_evidence": {
-        "KG": "to construct document-level Event Knowledge Graphs (EKGs) from CourtListener complaints."
-      },
-      "summary_input_hash": "97dcba3735bccc74e08e8434b8064526ce1a3860a5ae51096c3ab550227c78ec",
-      "prompt_hash": "7f2b1b81715f22ea6e6aacaceddc055de88a835b5cd50cc25bfc88669d8a01fa",
-      "llm_model": "gpt-6-astra",
-      "llm_reasoning_effort": "medium",
-      "summarized_at": "2026-09-26T15:56:06.997283+00:00",
-      "llm_usage": {
-        "prompt_tokens": 1850,
-        "completion_tokens": 464,
-        "total_tokens": 2314
-      },
-      "selection_bucket": "arxiv"
-    }
-  ]
+  "papers": []
 }

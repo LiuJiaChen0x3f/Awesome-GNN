@@ -11,7 +11,7 @@ python run.py search --limit 3
 python run.py search --limit 3 --days 30
 ```
 
-本机 `.env` 使用既有 LLM_BASE_URL / LLM_API_KEY / LLM_MODEL / LLM_REASONING_EFFORT。`search` 现通过 **Responses + web_search** 让模型搜索、打开论文网页；不走旧的“先生成检索词再固定抓取”。每轮返回候选后，程序独立读取原站，核验标题、摘要、日期、会议；反馈拒绝原因和缺口，让模型继续搜索。最后通过 Chat Completions 生成5个关键词、百字方法及有原文证据的1至11个主题。没有合格结果不会凑数。
+本机 `.env` 使用既有 LLM_BASE_URL / LLM_API_KEY / LLM_MODEL / LLM_REASONING_EFFORT。`search` 通过 **Responses + web_search** 让模型搜索、打开论文网页。每轮返回候选后，程序独立核验标题、摘要、日期、会议，反馈拒绝原因和缺口。随后取得方法章节，通过 Chat Completions 生成5个关键词、200字以内的方法总结及有原文证据的主题。没有合格结果不会凑数。
 
 收录：项目列出的CCF-A主会 + EMNLP主会，或独立核验的arXiv论文（不限会议等级）。11主题任意命中一个即可，KG/KGE不强制使用GNN。arXiv用v1首次提交日，会议用正式发表日；不以修订日期冒充新论文。来源缺精确日期/会议元数据时拒绝并反馈，不根据模型声称的事实放行。主站域名和会议别名在 `gnn_digest/verification.py`，它不是完整CCF-A目录。
 
@@ -23,13 +23,13 @@ python run.py search --limit 3 --days 30
 
 `config.json.search_agent` 默认3轮、单请求超时180秒、总软预算600秒、每轮10候选、10篇摘要预算（目标更大时至少为目标数）。超时不会自动重发付费搜索。当前供应商拒绝可选 `max_tool_calls` 参数，默认 `send_max_tool_calls=false`；12次/轮是提示词目标，不是硬上限。外层限制轮数、输出token和时间；只有供应商确认支持后才开启该参数。
 
-提示词：`search.request.txt` 是用户需求，`search.agent.txt` 是搜索执行与JSON格式，`search.summary.zh.txt` 是核验摘要的总结规则。全文PDF解析尚未实现。API需支持Responses联网搜索和Chat Completions摘要，不能仅凭模型名认定兼容。
+提示词：`search.request.txt` 是用户需求，`search.agent.txt` 是搜索执行与JSON格式，`search.summary.zh.txt` 是结合方法章节的总结规则。API需支持Responses联网搜索和Chat Completions总结。
 
 只保留测试和静态Pages发布工作流，**没有每日采集任务，无需远程保存模型密钥**。本机运行后按需提交并推送网页数据。以下旧 `run` / `summarize` 命令作为兼容入口保留，不具有新 `search` 的完整核验流程。
 
-自动查找近期 GNN 论文，用 **5 个关键词 + 100 字以内的中文核心方法** 帮读者快速筛选。本地手动发起后自动完成搜索、核验、去重和摘要。
+自动查找近期 GNN 论文，用 **5 个关键词 + 200 字以内的中文核心方法** 帮读者快速筛选。本地手动发起后自动完成搜索、核验、去重和总结。
 
-后端 Python 3.11+，**零第三方运行依赖**；前端 HTML/CSS/JavaScript，无需 Node 构建或服务器，部署到 GitHub Pages。
+后端 Python 3.11+，PDF 解析依赖 `pypdf`；前端 HTML/CSS/JavaScript，无需 Node 构建，部署到 GitHub Pages。
 
 > 已接入真实 LLM 接口并验证方法卡片生成；使用 `gpt-6-astra`、中等推理强度。密钥仅从环境变量或本机 `.env` 读取，不随仓库发布。数据状态与覆盖范围见页面及 `data/last_run.json`。
 
@@ -38,7 +38,8 @@ python run.py search --limit 3 --days 30
 在仓库根目录运行：
 
 ```powershell
-# 不需要 pip install，先抓取真实数据
+# 安装 PDF 解析依赖，再抓取真实数据
+python -m pip install -e .
 python run.py run --no-llm
 
 # 预览页面，然后浏览器打开 http://localhost:8000
@@ -106,11 +107,11 @@ arXiv 使用官方 API 按更新时间检索；故障时回退最近 RSS 公告�
 
 **去重**：规范化 DOI、去版本 arXiv ID、来源 ID、去空白/标点及大小写差异后的完整标题。传递合并并持久保存所有身份别名，保留多个来源链接。避免宽松模糊标题匹配误合并不同研究；没有共有标识且改标题的版本可能仍重复，这是待增强的实体匹配范围。
 
-**LLM**：提示词集中在 [`prompts/summarize.zh.txt`](prompts/summarize.zh.txt)，可直接修改。提示词由本项目预先编写并版本管理，不让模型每次运行自行改写检索和总结口径。按标题与摘要判断相关性、给关键词排序、描述方法，提供原摘要逐字证据。程序检查 JSON、5个唯一短语、中文方法长度和证据真实性。不自动截断超长描述；通过重试修正。
+**LLM**：提示词集中在 [`prompts/summarize.zh.txt`](prompts/summarize.zh.txt) 和 [`prompts/search.summary.zh.txt`](prompts/search.summary.zh.txt)，可直接修改。程序将摘要和已获取的方法章节提供给模型，检查 JSON、5个唯一短语、200字上限及逐字证据；新版方法卡片至少要有一段正文方法证据。
 
-**缓存**：标题和摘要内容哈希 + 提示词哈希 + 模型名 + 推理强度共同决定是否重用。换提示词、模型或推理强度会使旧缓存失效；预算不足的重算任务显示为待处理。缺摘要或信息不足时不猜测。单篇失败会留下状态并在以后运行重试。
+**缓存**：标题、摘要与取得的方法章节内容哈希 + 提示词哈希 + 模型名 + 推理强度共同决定是否重用。换提示词、模型或推理强度会使旧缓存失效；预算不足的重算任务显示为待处理。缺摘要、缺方法正文或信息不足时不猜测。
 
-**边界**：当前以摘要为依据，不下载/阅读全文。不能保证百字概括覆盖论文所有方法，也不能保证检索覆盖全部学术网站。检索上限、源故障和RSS回退会显示在页面；缺摘要的论文仍可查到原文。
+**正文与来源**：`search` 优先获取 arXiv HTML，否则解析可用论文 PDF，抽取方法章节，与摘要一起生成200字以内的总结；缺方法正文时拒绝生成新版卡片。KDD、WWW、SIGIR、SIGMOD、VLDB、ICDE、ACM MM 的会议目录用于初筛标题，再让搜索代理按精确标题寻找 arXiv。目录标题不能代替正式发表日期；目录到 arXiv 的结果默认只计 arXiv 配额。历史卡片保留旧总结，不声称已重新阅读方法章节。兼容的旧 `run/summarize` 入口也要求方法正文才能生成新卡片。全文有大小和时间预算，方法提取可能因复杂排版失败；检索不保证覆盖全网。
 
 ## 文件位置
 

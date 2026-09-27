@@ -2,7 +2,7 @@
 (() => {
   'use strict';
   const $ = id => document.getElementById(id);
-  const labels = {ready:'方法卡片已生成',pending:'等待 LLM 摘要',failed:'摘要生成失败 · 将重试',missing_abstract:'来源未提供摘要',insufficient:'摘要信息不足'};
+  const labels = {ready:'方法卡片已生成',pending:'等待 LLM 总结',failed:'总结生成失败 · 将重试',missing_abstract:'来源未提供摘要',missing_fulltext:'方法正文未获取',insufficient:'原文信息不足'};
   let papers = [], keyword = '', limit = 30;
   const topicNames=['GNN','SSL','CL','OOD','TAG','GSL','HGT','TGN','KG','KGE','HGNN'];
   const paperDate=p=>p.display_date||p.published||'';
@@ -22,7 +22,7 @@
     e.append(meta,node('h3',p.title),node('p',p.authors.slice(0,5).join(' · ')+(p.authors.length>5?' 等':''),'authors'));
     const method=node('div',undefined,`method ${p.status==='ready'?'':'pending'}`);
     if(p.status==='ready') {method.append(node('span','核心方法 / METHOD','method-label'),node('span',p.method));}
-    else {method.textContent=p.status==='missing_abstract'?'该来源未提供摘要，暂不生成方法卡片。':p.status==='insufficient'?'摘要不足以支持可靠的方法描述，暂不展示推测内容。':p.status==='failed'?'模型请求或输出校验未通过，下次运行会自动重试。':'论文已收录；连接 LLM 后将自动生成五个关键词与百字方法摘要。';}
+    else {method.textContent=p.status==='missing_abstract'?'该来源未提供摘要，暂不生成方法卡片。':p.status==='missing_fulltext'?'暂未取得可核验的方法章节。':p.status==='insufficient'?'原文不足以支持可靠的方法描述，暂不展示推测内容。':p.status==='failed'?'模型请求或输出校验未通过，下次运行会自动重试。':'论文已收录；取得正文后将生成五个关键词与方法总结。';}
     const bottom=node('div',undefined,'card-bottom'), tags=node('div',undefined,'card-tags');
     p.keywords.forEach(k=>{const b=node('button',k,'chip'+(keyword===k?' active':''));b.setAttribute('aria-pressed',String(keyword===k));b.onclick=()=>selectKeyword(k);tags.append(b);});
     bottom.append(tags);
@@ -60,7 +60,7 @@
     [...counts].forEach(([k,n])=>{const b=node('button',k);b.dataset.keyword=k;b.append(node('span',n,'count'));b.onclick=()=>selectKeyword(k);$('keyword-cloud').append(b);});
     if(!counts.size)$('keyword-cloud').append(node('span','方法卡片生成后，关键词将在这里出现。','about-note'));
     const report=data.report||{}, notices=[];
-    if(!report.llm_enabled)notices.push('采集预览模式：尚未连接 LLM。当前展示真实论文元数据，关键词与方法摘要等待生成。');
+    if(!report.llm_enabled)notices.push('采集预览模式：尚未连接 LLM。当前展示真实论文元数据，关键词与方法总结等待生成。');
     if(report.error)notices.push('最近一次采集未成功，当前展示已保存的数据。');
     if(report.mode==='responses_web_search')notices.push(`本次联网搜索返回 ${report.returned||0}/${report.requested||0} 篇经核验的论文。页面保留历史归档；旧记录未按新规则重新核验。`);
     if(report.quota_progress){const q=report.quota_progress;notices.push(`本次来源配额：会议 ${q.conference.returned}/${q.conference.requested} 篇；arXiv ${q.arxiv.returned}/${q.arxiv.requested} 篇。每篇仅计入一组，缺额不跨组补齐。`);}

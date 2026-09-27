@@ -28,6 +28,15 @@ VENUES = {
 DOMAINS = ('arxiv.org', 'aclanthology.org', 'proceedings.mlr.press', 'proceedings.neurips.cc',
            'papers.nips.cc', 'openaccess.thecvf.com', 'dl.acm.org', 'ieeexplore.ieee.org',
            'ojs.aaai.org', 'ijcai.org', 'vldb.org', 'proceedings.com')
+DIRECTORY_SOURCES = {
+    'KDD': ('https://kdd2026.kdd.org/papers/',),
+    'WWW': ('https://www2026.thewebconf.org/',),
+    'SIGIR': ('https://sigir2025.dei.unipd.it/proceedings.html',),
+    'SIGMOD': ('https://2025.sigmod.org/sigmod_papers.shtml', 'https://2026.sigmod.org/sigmod_papers.shtml'),
+    'VLDB': ('https://www.vldb.org/pvldb/volumes/18/', 'https://www.vldb.org/pvldb/volumes/19/'),
+    'ICDE': (),
+    'ACM MM': ('https://acmmm2025.org/accepted-regular-papers/',),
+}
 
 
 class VerificationError(ValueError):
@@ -192,3 +201,26 @@ def verify_candidate(candidate, since, until, timeout=25):
              publication_events=[{'date':published, 'basis':basis, 'url':url, 'venue':label}],
              ccf_venue=not is_arxiv)
     return p
+
+
+def verify_directory_match(title, directory_url, timeout=15):
+    """A directory hit narrows discovery; it never establishes a conference route."""
+    venue = next((name for name, urls in DIRECTORY_SOURCES.items() if directory_url in urls), None)
+    if not venue:
+        raise VerificationError('Directory URL is not an audited conference source')
+    req = urllib.request.Request(directory_url, headers={'User-Agent':'Awesome-GNN/0.3 directory verification'})
+    with urllib.request.urlopen(req, timeout=timeout) as response:
+        if response.url != directory_url:
+            raise VerificationError('Directory redirected outside audited URL')
+        raw = response.read(3_000_001)
+        if len(raw) > 3_000_000:
+            raise VerificationError('Directory too large')
+        if raw.startswith(b'\x1f\x8b'):
+            import gzip
+            raw = gzip.decompress(raw)
+    page = MetadataParser(); page.feed(raw.decode('utf-8', errors='replace'))
+    text = clean(' '.join(page.text))
+    normalized = norm_title(title)
+    if len(normalized) < 20 or normalized not in norm_title(text):
+        raise VerificationError('Exact paper title absent from audited conference directory')
+    return {'venue':venue, 'directory_url':directory_url, 'status':'title_listed_only'}

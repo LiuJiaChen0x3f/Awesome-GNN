@@ -92,6 +92,9 @@
 
 ## 快速定位
 
+- 2026-09-27 方法总结与目录辅助检索升级：`gnn_digest/fulltext.py` 限量读取 arXiv HTML/论文 PDF，识别方法章节；`gnn_digest/llm.py` 校验 200 字以内方法总结和至少一段方法正文逐字证据，正文加入缓存哈希。`gnn_digest/agent.py` 向 Responses 传审计过的会议目录，支持目录标题初筛、arXiv 精确标题回查；`gnn_digest/verification.py` 再次读取目录核对标题。目录证据只辅助发现，不证明会议正式发表日期，也不自动占会议配额。旧 `run/summarize` 新卡片同样要求正文。历史卡片没有批量重算。
+- 真实验证：两次 `python -X utf8 run.py search --limit 3`。首轮供应商返回候选，但论文方法章提取规则过窄，结果 0/3；已针对真实 arXiv `2609.28670` 的 “Graph Dynamics Model” 章节修正并单独读取成功（约 18k 字符）。第二轮 Responses 请求 `RequestError`，按不自动重复付费请求规则停止，0/3；两次都未满足 2 会议+1 arXiv，不得描述为成功。最新 `data/last_run.json` 记录第二轮故障。51 项 unittest 及 `node --check` 通过。下次服务恢复后需重跑三篇，核对摘要和方法章节证据。
+
 - 2026-09-27 CCF-A 会议来源调研：`docs/CCF_A_SOURCES.md`；逐年入口 `docs/conference_sources.json`；只读探针 `scripts/probe_conference_sources.py`；抽样证据 `docs/conference_source_audit.json`。2025/2026 均有可读论文级内容的首批来源为 ICML、AAAI、IJCAI、ACL、CVPR；ICCV 仅 2025，NeurIPS 2025 可读而 2026 尚不可接入。其余站点有访问/元数据/主会身份限制，详见文档。本轮不改正式搜索逻辑或论文归档。正式接入时须解决 track、日期精度、PDF 与 arXiv 去重。
 
 - 采集与日期：`gnn_digest/sources.py`

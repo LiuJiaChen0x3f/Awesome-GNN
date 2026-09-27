@@ -7,7 +7,7 @@ name = "awesome-gnn-digest"
 version = "0.1.0"
 description = "Automated GNN paper discovery and grounded LLM digests"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = ["pypdf>=5,<7"]
 
 [project.scripts]
 gnn-digest = "gnn_digest.cli:main"
