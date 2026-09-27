@@ -7,14 +7,18 @@ import sys
 import time
 from collections import Counter
 from datetime import date, datetime, timedelta, timezone
-from urllib.parse import urlparse
+from urllib.parse import urlencode, urlparse
+import xml.etree.ElementTree as ET
 
-from .http import RequestError, get_json
+from .http import RequestError, get_json, request
 from .llm import Summarizer
-from .models import content_hash, identity_keys, merge_records
+from .models import arxiv_id, clean, content_hash, identity_keys, merge_records, paper
 from .storage import export_site, lock, read_json, write_json
 from .verification import DOMAINS, TOPICS, VENUES, DIRECTORY_SOURCES, VerificationError, canonical_url, verify_candidate, verify_directory_match
-from .fulltext import load_methods
+from .fulltext import load_fulltext, coerce_legacy_fulltext
+
+# Compatibility patch point; the implementation now always reads full text.
+load_methods = load_fulltext
 
 
 def endpoint(base, suffix):
@@ -43,7 +47,7 @@ def parse_candidates(text, limit):
     return value['candidates'], str(value.get('notes', ''))[:1000]
 
 
-def validate_topics(result, abstract):
+def validate_topics(result, full_text):
     topics, evidence = result.get('topics'), result.get('topic_evidence')
     if not isinstance(topics, list) or not isinstance(evidence, dict):
         raise ValueError('topics and topic_evidence required')
@@ -52,8 +56,8 @@ def validate_topics(result, abstract):
             raise ValueError('No topics for irrelevant/insufficient result')
     elif (not topics or any(t not in TOPICS for t in topics) or len(set(topics)) != len(topics)
           or set(evidence) != set(topics)
-          or any(not isinstance(s, str) or not 15 <= len(s) <= 200 or s not in abstract for s in evidence.values())):
-        raise ValueError('Need allowed topics with verbatim abstract evidence')
+          or any(not isinstance(s, str) or not 15 <= len(s) <= 200 or s not in full_text for s in evidence.values())):
+        raise ValueError('Need allowed topics with verbatim full-text evidence')
     return result
 
 
@@ -111,8 +115,328 @@ class WebResearchAgent:
         if parsed.scheme != 'https' and not (parsed.scheme == 'http' and parsed.hostname in ('localhost','127.0.0.1','::1')):
             raise ValueError('LLM endpoint must use HTTPS')
         self.url = endpoint(base, '/responses')
+        self.chat_url = endpoint(base, '/chat/completions')
+        # DeepSeek currently exposes function calling but does not execute the
+        # Responses ``web_search`` tool. Use the local scholarly search tool so
+        # the model still chooses and iterates queries instead of using a fixed
+        # query list. Other compatible providers keep the native Responses path.
+        self.search_mode = 'function_tool' if parsed.hostname in ('api.deepseek.com', 'api.deepseek.com.cn') else 'responses_web_search'
+
+    def _local_scholar_search(self, query, context):
+        """Run one model-requested scholarly search and return safe leads.
+
+        The returned metadata is only a lead. Every URL is independently
+        fetched and verified by ``verify_candidate`` before admission.
+        """
+        query = re.sub(r'\s+', ' ', str(query)).strip()[:180]
+        window = context.get('date_window') or {}
+        since = date.fromisoformat(window['since'])
+        until = date.fromisoformat(window['until'])
+        source_config = {
+            'queries': [query],
+            'max_per_source': max(10, min(40, self.options['candidate_limit'] * 3)),
+            'arxiv_categories': ['cs.LG', 'cs.AI', 'cs.SI', 'stat.ML'],
+        }
+        leads, errors = [], []
+
+        def html_arxiv_results(search_query):
+            params = {'query': search_query, 'searchtype': 'all', 'abstracts': 'show',
+                      'order': '-announced_date_first', 'size': 50}
+            page = request('https://arxiv.org/search/?' + urlencode(params),
+                           timeout=18, attempts=1).decode('utf-8', errors='replace')
+            result = []
+            for block in re.findall(r'<li[^>]+class=["\']arxiv-result["\'][^>]*>(.*?)</li>', page, re.I | re.S):
+                match = re.search(r'href=["\'](?:https?://arxiv\.org)?/abs/([^?"\']+)', block, re.I)
+                title_match = re.search(r'<p[^>]+class=["\']title\b[^"\']*["\'][^>]*>(.*?)</p>', block, re.I | re.S)
+                if not match or not title_match:
+                    continue
+                aid = arxiv_id(match.group(1))
+                if not aid:
+                    continue
+                submitted = re.search(r'Submitted\s+(\d{1,2}\s+[A-Za-z]+,?\s+\d{4})', clean(block), re.I)
+                stamp = ''
+                if submitted:
+                    for fmt in ('%d %B %Y', '%d %b %Y', '%d %B, %Y', '%d %b, %Y'):
+                        try:
+                            stamp = datetime.strptime(submitted.group(1), fmt).date().isoformat(); break
+                        except ValueError:
+                            pass
+                abstract_match = re.search(r'<span[^>]+class=["\'][^"\']*abstract-full[^"\']*["\'][^>]*>(.*?)</span>', block, re.I | re.S)
+                result.append({'title': clean(title_match.group(1)),
+                               'url': 'https://arxiv.org/abs/' + aid, 'source': 'arxiv',
+                               'published': stamp, 'venue': '',
+                               'abstract': clean(abstract_match.group(1) if abstract_match else '')[:1200]})
+            return result
+
+        # The regular batch adapters deliberately have generous retries and an
+        # RSS fallback. A model tool call needs a short, single-attempt budget,
+        # so use the same public APIs directly here.
+        try:
+            atom = {'a': 'http://www.w3.org/2005/Atom', 'x': 'http://arxiv.org/schemas/atom'}
+            arxiv_query = ('all:"' + query.replace('"', '') + '" AND '
+                           f'submittedDate:[{since:%Y%m%d}0000 TO {until:%Y%m%d}2359]')
+            params = {'search_query': arxiv_query, 'start': 0,
+                      'max_results': source_config['max_per_source'],
+                      'sortBy': 'submittedDate', 'sortOrder': 'descending'}
+            root = ET.fromstring(request('https://export.arxiv.org/api/query?' + urlencode(params),
+                                         timeout=18, attempts=1))
+            for entry in root.findall('a:entry', atom):
+                raw_id = entry.findtext('a:id', '', atom)
+                aid = arxiv_id(raw_id)
+                if not aid:
+                    continue
+                leads.append({'title': clean(entry.findtext('a:title', '', atom)),
+                              'url': 'https://arxiv.org/abs/' + aid, 'source': 'arxiv',
+                              'published': entry.findtext('a:published', '', atom)[:10],
+                              'venue': '',
+                              'abstract': clean(entry.findtext('a:summary', '', atom))[:1200]})
+        except Exception as exc:
+            # The export API can return 406 from some network egresses. The
+            # public HTML search is a bounded equivalent and does not require
+            # a separate credential.
+            try:
+                leads.extend(html_arxiv_results(query))
+            except Exception as html_exc:
+                errors.append('arxiv:' + type(exc).__name__ + '/' + type(html_exc).__name__)
+        if not any(p.get('source') == 'arxiv' for p in leads):
+            # Natural-language tool queries often include venue/date words that
+            # are useful to the model but too restrictive for arXiv's search
+            # parser. Retry once with those routing words removed.
+            stopwords = {'arxiv', 'site', 'accepted', 'papers', 'paper', 'new',
+                         'submission', 'submissions', 'recent', 'latest',
+                         'september', 'october', 'november', 'december',
+                         'january', 'february', 'march', 'april', 'may',
+                         'june', 'july', 'august', '2025', '2026'}
+            terms = [w for w in re.findall(r'[A-Za-z][A-Za-z-]*', query)
+                     if w.casefold() not in stopwords and len(w) > 2]
+            fallback_query = ' '.join(terms) or 'graph neural network'
+            try:
+                leads.extend(html_arxiv_results(fallback_query))
+            except Exception as exc:
+                errors.append('arxiv_fallback:' + type(exc).__name__)
+        try:
+            filters = f'from-pub-date:{since},until-pub-date:{until}'
+            params = {'query': query, 'filter': filters, 'sort': 'published',
+                      'order': 'desc', 'rows': source_config['max_per_source']}
+            data = get_json('https://api.crossref.org/works?' + urlencode(params),
+                            timeout=18, attempts=1).get('message', {})
+            for item in data.get('items', []):
+                parts = item.get('published', {}).get('date-parts', [[]])[0]
+                stamp = '-'.join(str(x).zfill(4 if i == 0 else 2)
+                                 for i, x in enumerate((parts + [1, 1])[:3])) if parts else ''
+                landing = ((item.get('resource') or {}).get('primary') or {}).get('URL') or item.get('URL')
+                links = item.get('link') or []
+                html_link = next((link.get('URL') for link in links
+                                  if isinstance(link, dict) and link.get('URL') and
+                                  'pdf' not in link.get('content-type', '').casefold()), None)
+                if landing and landing.startswith('https://doi.org/') and html_link:
+                    landing = html_link
+                landing = landing or ('https://doi.org/' + item['DOI'] if item.get('DOI') else '')
+                leads.append({'title': clean(' '.join(item.get('title', []))),
+                              'url': landing, 'source': 'crossref', 'published': stamp,
+                              'venue': clean(' '.join(item.get('container-title', []))),
+                              'abstract': clean(item.get('abstract', ''))[:1200]})
+        except Exception as exc:
+            errors.append('crossref:' + type(exc).__name__)
+        for paper_record in leads:
+            if not paper_record.get('title'):
+                continue
+            try:
+                url = canonical_url(paper_record.get('url', ''))
+            except (TypeError, ValueError):
+                continue
+            paper_record['url'] = url
+            # Keep only the fields the model needs to rank a lead.
+            paper_record['abstract'] = paper_record.get('abstract', '')[:1200]
+        leads = [paper_record for paper_record in leads if paper_record.get('url')]
+        # Preserve source diversity and remove exact duplicate URLs before the
+        # model sees the tool result.
+        unique, seen = [], set()
+        for lead in leads:
+            if lead['url'] in seen:
+                continue
+            seen.add(lead['url']); unique.append(lead)
+        # Interleave the two indexes so an arXiv-heavy result page cannot hide
+        # the conference leads needed by the outer 1:1 quota.
+        buckets = {name: [p for p in unique if p.get('source') == name]
+                   for name in ('crossref', 'arxiv')}
+        mixed = []
+        for index in range(self.options['candidate_limit']):
+            for name in ('crossref', 'arxiv'):
+                if index < len(buckets[name]):
+                    mixed.append(buckets[name][index])
+        mixed.extend(p for p in unique if p not in mixed)
+        # Tool results are discovery hints, not the evidence used for the
+        # final card. Keep them deliberately small so several sequential
+        # function calls cannot exceed the provider context window. The
+        # verifier below fetches the complete primary page again.
+        tool_limit = min(8, max(4, self.options['candidate_limit'] // 2 + 2))
+        compact = []
+        for lead in mixed[:tool_limit]:
+            compact.append({
+                'title': lead.get('title', ''),
+                'url': lead.get('url', ''),
+                'source': lead.get('source', ''),
+                'published': lead.get('published', ''),
+                'venue': lead.get('venue', ''),
+                'abstract': lead.get('abstract', '')[:400],
+            })
+        return {'query': query, 'results': compact, 'errors': errors}
+
+    @staticmethod
+    def _tool_result(actions, tool_leads, usage=None, provider_error=''):
+        """Build a completed response from tool evidence already obtained.
+
+        A provider may reject the final formatting turn after the local search
+        calls have completed (for example because the accumulated context is
+        too large). Those completed calls remain useful leads and should still
+        go through independent verification instead of being discarded.
+        """
+        output = [{'type': 'web_search_call', 'status': 'completed',
+                   'action': {'type': 'search', 'query': action['query']}}
+                  for action in actions]
+        output.append({'type': 'message', 'content': [
+            {'type': 'output_text', 'text': '', 'annotations': []}]})
+        result = {'status': 'completed', 'output': output,
+                  'usage': usage or {}, 'search_mode': 'function_tool',
+                  'tool_candidates': WebResearchAgent._dedup_tool_candidates(tool_leads)}
+        if provider_error:
+            result['provider_error'] = str(provider_error)[:200]
+        return result
+
+    def _function_search(self, context, timeout):
+        tool = {'type': 'function', 'function': {
+            'name': 'web_search',
+            'description': ('Search current public scholarly indexes for paper leads. '
+                            'The program will independently verify every returned URL.'),
+            'parameters': {'type': 'object', 'properties': {
+                'query': {'type': 'string', 'description': 'A focused scholarly web query including a topic and, when useful, a venue or source.'}},
+                'required': ['query'], 'additionalProperties': False},
+        }}
+        messages = [
+            {'role': 'system', 'content': self.prompt},
+            {'role': 'user', 'content': json.dumps(context, ensure_ascii=False)},
+        ]
+        actions, tool_calls, tool_leads = [], 0, []
+        max_calls = self.options['max_tool_calls_per_round']
+        last_response = None
+        while tool_calls < max_calls:
+            payload = {'model': self.model, 'messages': messages, 'tools': [tool],
+                       'tool_choice': 'auto',
+                       'max_completion_tokens': self.options['max_output_tokens']}
+            effort = os.getenv('LLM_REASONING_EFFORT') or self.llm.get('reasoning_effort')
+            if effort:
+                payload['reasoning_effort'] = effort
+            try:
+                last_response = get_json(self.chat_url, payload=payload,
+                                         headers={'Authorization': 'Bearer ' + self.key},
+                                         timeout=timeout, attempts=1)
+            except RequestError as exc:
+                if actions:
+                    return self._tool_result(actions, tool_leads, provider_error=exc)
+                raise
+            choice = (last_response.get('choices') or [{}])[0]
+            message = choice.get('message') or {}
+            calls = message.get('tool_calls') or []
+            if not calls:
+                text = message.get('content') or ''
+                output = [{'type': 'web_search_call', 'status': 'completed',
+                           'action': {'type': 'search', 'query': a['query']}}
+                          for a in actions]
+                output.append({'type': 'message', 'content': [
+                    {'type': 'output_text', 'text': text, 'annotations': []}]})
+                return {'status': 'completed', 'output': output,
+                        'usage': last_response.get('usage', {}),
+                        'search_mode': 'function_tool',
+                        'tool_candidates': self._dedup_tool_candidates(tool_leads)}
+            # Preserve the complete assistant tool-call message. Thinking-mode
+            # providers require reasoning_content on the next turn when it is
+            # present in the response.
+            assistant = {'role': 'assistant', 'content': message.get('content') or '',
+                         'tool_calls': calls}
+            if 'reasoning_content' in message:
+                assistant['reasoning_content'] = message['reasoning_content']
+            messages.append(assistant)
+            for call in calls:
+                function = call.get('function') or {}
+                call_id = call.get('id', f'call_{tool_calls + 1}')
+                # Providers may return more calls than the requested local
+                # budget in one assistant message. Every id still needs a
+                # corresponding tool message; skipped calls receive an empty
+                # bounded result and are never executed.
+                if tool_calls >= max_calls:
+                    messages.append({'role': 'tool', 'tool_call_id': call_id,
+                                     'content': json.dumps({
+                                         'query': '', 'results': [],
+                                         'errors': ['tool budget exhausted']
+                                     }, ensure_ascii=False)})
+                    continue
+                try:
+                    arguments = json.loads(function.get('arguments') or '{}')
+                    query = arguments.get('query')
+                    if not isinstance(query, str) or not query.strip():
+                        raise ValueError('query is required')
+                    result = self._local_scholar_search(query, context)
+                except Exception as exc:
+                    query = str((function.get('arguments') or '')[:180])
+                    result = {'query': query, 'results': [], 'errors': [type(exc).__name__]}
+                tool_calls += 1
+                actions.append({'query': str(query)[:180]})
+                tool_leads.extend(result.get('results', []))
+                messages.append({'role': 'tool', 'tool_call_id': call_id,
+                                 'content': json.dumps(result, ensure_ascii=False)})
+        # Ask for a final bounded JSON answer after the local tool budget. This
+        # call has no tools, so it cannot silently exceed the per-round budget.
+        messages.append({'role': 'user', 'content':
+                         '工具调用预算已用完。只根据已返回的工具结果输出候选JSON，不要再调用工具。'})
+        payload = {'model': self.model, 'messages': messages,
+                   'max_completion_tokens': self.options['max_output_tokens'],
+                   'response_format': {'type': 'json_object'}}
+        effort = os.getenv('LLM_REASONING_EFFORT') or self.llm.get('reasoning_effort')
+        if effort:
+            payload['reasoning_effort'] = effort
+        try:
+            last_response = get_json(self.chat_url, payload=payload,
+                                     headers={'Authorization': 'Bearer ' + self.key},
+                                     timeout=timeout, attempts=1)
+        except RequestError as exc:
+            # At least one local search completed, so keep its leads. The
+            # outer verifier will decide whether any lead is admissible.
+            return self._tool_result(actions, tool_leads, provider_error=exc)
+        message = ((last_response.get('choices') or [{}])[0].get('message') or {})
+        text = message.get('content') or ''
+        output = [{'type': 'web_search_call', 'status': 'completed',
+                   'action': {'type': 'search', 'query': a['query']}}
+                  for a in actions]
+        output.append({'type': 'message', 'content': [
+            {'type': 'output_text', 'text': text, 'annotations': []}]})
+        return {'status': 'completed', 'output': output,
+                'usage': last_response.get('usage', {}),
+                'search_mode': 'function_tool',
+                'tool_candidates': self._dedup_tool_candidates(tool_leads)}
+
+    @staticmethod
+    def _dedup_tool_candidates(leads):
+        result, seen = [], set()
+        for lead in leads:
+            url, title = lead.get('url'), lead.get('title')
+            if isinstance(url, str) and isinstance(title, str) and url not in seen:
+                seen.add(url)
+                result.append({'title': title, 'url': url})
+        buckets = {'conference': [], 'arxiv': []}
+        for lead in result:
+            bucket = 'arxiv' if urlparse(lead['url']).hostname in ('arxiv.org', 'www.arxiv.org') else 'conference'
+            buckets[bucket].append(lead)
+        mixed = []
+        for index in range(max(len(buckets['conference']), len(buckets['arxiv']))):
+            for bucket in ('conference', 'arxiv'):
+                if index < len(buckets[bucket]):
+                    mixed.append(buckets[bucket][index])
+        return mixed
 
     def search(self, context, timeout):
+        if self.search_mode == 'function_tool':
+            return self._function_search(context, timeout)
         payload = {'model':self.model, 'instructions':self.prompt,
                    'input':json.dumps(context, ensure_ascii=False),
                    'tools':[{'type':'web_search'}], 'tool_choice':'required',
@@ -226,10 +550,10 @@ def search(root, config, args):
     agent = WebResearchAgent(config['llm'], options, (root/'prompts/search.agent.txt').read_text(encoding='utf-8'))
     summary_prompt = (root/'prompts/search.summary.zh.txt').read_text(encoding='utf-8')
     summary_prompt += '\n研究需求（仅用于主题相关性判断）：\n' + request
-    summarizer = Summarizer(config['llm'], summary_prompt, extra_validator=validate_topics)
+    summarizer = Summarizer({**config['llm'], 'require_fulltext':True}, summary_prompt, extra_validator=validate_topics)
     start = time.monotonic()
     deadline = start + options['max_seconds']
-    report = {'mode':'responses_web_search', 'started_at':datetime.now(timezone.utc).isoformat(),
+    report = {'mode':agent.search_mode, 'started_at':datetime.now(timezone.utc).isoformat(),
               'window':{'since':str(since), 'until':str(today)}, 'llm_enabled':True,
               'requested':limit, 'source_quotas':quotas, 'quota_progress':quota_progress([],quotas),
               'rounds':[], 'sources':{}, 'rejections':[],
@@ -260,6 +584,8 @@ def search(root, config, args):
                 text, actions, citations = trace_response(response)
                 record.update(status=response.get('status'), actions=actions, citations=citations,
                               usage={k:v for k,v in response.get('usage',{}).items() if k in ('input_tokens','output_tokens','total_tokens')})
+                if response.get('provider_error'):
+                    record['provider_error'] = str(response['provider_error'])[:200]
                 if response.get('status') != 'completed':
                     raise ValueError('Responses output incomplete; no candidates admitted')
                 if not any(a.get('status') == 'completed' for a in actions):
@@ -268,10 +594,19 @@ def search(root, config, args):
                     candidates, notes = parse_candidates(text, options['candidate_limit'])
                 except (ValueError, TypeError):
                     candidates = cited_candidates(citations, options['candidate_limit'])
+                    if not candidates and response.get('tool_candidates'):
+                        candidates = response['tool_candidates'][:options['candidate_limit']]
+                        notes = 'Recovered candidates from completed local scholarly tool calls; all require primary-source verification.'
+                        record['format_recovery'] = 'tool_results'
+                    elif candidates:
+                        notes = 'Recovered candidates from response citations; all require primary-source verification.'
+                        record['format_recovery'] = 'url_citations'
                     if not candidates:
                         raise ValueError('No valid candidates JSON or primary-source citations') from None
-                    notes = 'Recovered candidates from response citations; all require primary-source verification.'
-                    record['format_recovery'] = 'url_citations'
+                if not candidates and response.get('tool_candidates'):
+                    candidates = response['tool_candidates'][:options['candidate_limit']]
+                    notes = 'Model returned no final candidates; recovered leads from completed local scholarly tool calls for independent verification.'
+                    record['format_recovery'] = 'tool_results'
                 record.update(candidate_count=len(candidates), notes=notes)
             except Exception as exc:
                 record['error'] = str(exc)[:200] if type(exc) is ValueError or isinstance(exc, RequestError) else type(exc).__name__
@@ -318,9 +653,9 @@ def search(root, config, args):
                 attempted.add(p['verification']['url'])
                 previous = next((a for a in archive if identity_keys(p) & identity_keys(a)
                                  and a.get('title') == p['title'] and a.get('abstract') == p['abstract']
-                                 and a.get('method_text') and a.get('fulltext_source')), None)
+                                 and a.get('full_text') and a.get('fulltext_source', {}).get('scope') == 'full_text'), None)
                 if previous:
-                    p.update(method_text=previous['method_text'], fulltext_source=previous['fulltext_source'])
+                    p.update(full_text=previous['full_text'], fulltext_source=previous['fulltext_source'])
                 cached = next((a for a in archive + pool if identity_keys(p) & identity_keys(a)
                                and content_hash(a) == content_hash(p) and summarizer.cached(a)
                                and a.get('topics') and a.get('topic_evidence')), None)
@@ -329,11 +664,12 @@ def search(root, config, args):
                         if field in cached:
                             p[field] = cached[field]
                 elif report['llm_processed'] < summary_budget:
-                    summarizer.config = {**config['llm'], 'require_methods':True,
+                    summarizer.config = {**config['llm'], 'require_fulltext':True,
                         'timeout':min(config['llm']['timeout'], max(1, deadline-time.monotonic())),
                         'attempts':min(2, config['llm']['attempts'])}
                     try:
                         load_methods(p, timeout=min(45, max(1, deadline-time.monotonic())))
+                        coerce_legacy_fulltext(p)
                         summarizer.summarize(p)
                     except VerificationError as exc:
                         p.update(status='missing_fulltext', keywords=[], method='', error=str(exc)[:160])
@@ -383,7 +719,7 @@ def search(root, config, args):
                       deduplicated=sum(bool(identity_keys(p) & initial_archive_keys) for p in accepted),
                       elapsed_seconds=round(time.monotonic()-start,2), shortfall=max(0, limit-len(results)))
         ok = any(any(a.get('status')=='completed' for a in r.get('actions',[])) for r in report['rounds'])
-        report['sources']['web_search'] = {'ok':ok, 'mode':'responses', 'verified':len(results), 'truncated':len(results)<limit}
+        report['sources']['web_search'] = {'ok':ok, 'mode':agent.search_mode, 'verified':len(results), 'truncated':len(results)<limit}
         if not ok:
             report['error'] = 'No completed live web search; archive preserved'
         report['stop_reason'] = ('target_reached' if len(results)>=limit else 'time_budget' if time.monotonic()>=deadline else 'summary_budget' if report['llm_processed']>=summary_budget else 'round_budget')

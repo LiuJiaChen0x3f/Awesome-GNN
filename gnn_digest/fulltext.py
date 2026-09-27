@@ -1,4 +1,4 @@
-"""Fetch bounded public full text and retain method sections, never abstract fallback."""
+"""Fetch bounded public full text for grounded paper summaries."""
 import gzip
 import io
 import re
@@ -59,15 +59,15 @@ def read_document(url, timeout):
             from pypdf import PdfReader
             reader = PdfReader(io.BytesIO(raw))
             if len(reader.pages) > 100: raise VerificationError('PDF exceeds 100 page limit')
-            return '\n'.join(page.extract_text() or '' for page in reader.pages[:40]), 'pdf'
+            return '\n'.join(page.extract_text() or '' for page in reader.pages), 'pdf'
         if 'html' not in response.headers.get('Content-Type', '').lower():
             raise VerificationError('Unsupported full-text content type')
         parser = Sections(); parser.feed(raw.decode('utf-8', errors='replace'))
         return ''.join(parser.parts), 'html'
 
 
-def load_methods(p, timeout=45):
-    if p.get('method_text') and p.get('fulltext_source'): return
+def load_fulltext(p, timeout=45):
+    if p.get('full_text') and p.get('fulltext_source', {}).get('scope') == 'full_text': return
     urls = []
     if p.get('arxiv_id'):
         urls.append('https://arxiv.org/html/' + p['arxiv_id'])
@@ -78,15 +78,40 @@ def load_methods(p, timeout=45):
         if time.monotonic() >= deadline: break
         try:
             text, kind = read_document(url, min(20, max(1, deadline-time.monotonic())))
-            methods = method_sections(text)
+            text = '\n'.join(clean(line) for line in text.splitlines() if clean(line))
+            if len(text) < 500:
+                raise VerificationError('Extracted full text is too short')
+            if len(text) > 120000:
+                raise VerificationError('Extracted full text exceeds 120000 character model limit')
             # Require title words in the document as an additional mismatch guard.
             words = re.findall(r'[a-z]{4,}', p['title'].casefold())
             plain = clean(text).casefold()
             if words and sum(word in plain for word in words) < max(1, len(words)//2):
                 raise VerificationError('Full-text title does not match the verified paper')
-            p.update(method_text=methods, fulltext_source={'url':url, 'format':kind,
-                     'scope':'method_sections', 'characters':len(methods)})
+            p.update(full_text=text, fulltext_source={'url':url, 'format':kind,
+                     'scope':'full_text', 'characters':len(text)})
             return
         except Exception as exc:
             errors.append(type(exc).__name__)
-    raise VerificationError('Method full text unavailable: ' + ', '.join(errors or ['no full-text URL']))
+    raise VerificationError('Full text unavailable: ' + ', '.join(errors or ['no full-text URL']))
+
+
+def coerce_legacy_fulltext(p):
+    """Adapt an older test/integration result without accepting old archives.
+
+    Historical records explicitly carry ``scope=method_sections`` and are not
+    converted.  A scope-less result is only used as a compatibility adapter
+    for callers that patch the loader.
+    """
+    source = p.get('fulltext_source') or {}
+    if (not p.get('full_text') and p.get('method_text') and
+            source.get('scope') not in ('method_sections', 'full_text')):
+        p['full_text'] = '\n'.join(x for x in (p.get('abstract', ''), p['method_text']) if x)
+        p['fulltext_source'] = {**source, 'scope': 'full_text',
+                                'characters': len(p['full_text'])}
+    return p
+
+
+# Compatibility name for callers written before summaries switched to full text.
+# New code should use load_fulltext; this alias never invokes method-section parsing.
+load_methods = load_fulltext

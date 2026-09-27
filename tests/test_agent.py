@@ -153,6 +153,28 @@ class AgentTests(unittest.TestCase):
         self.assertNotIn('response_format',payload)
         self.assertEqual(endpoint('https://example.test/v1/chat/completions','/responses'),'https://example.test/v1/responses')
 
+    @patch.dict(os.environ, {'LLM_BASE_URL':'https://api.deepseek.com/v1', 'LLM_API_KEY':'secret-probe',
+                             'LLM_MODEL':'deepseek-flash', 'LLM_REASONING_EFFORT':'low'})
+    def test_function_tool_replies_to_calls_skipped_by_budget(self):
+        calls = [
+            {'id':f'call_{i}', 'type':'function',
+             'function':{'name':'web_search', 'arguments':json.dumps({'query':f'graph paper {i}'})}}
+            for i in range(3)
+        ]
+        first = {'choices':[{'message':{'role':'assistant', 'content':'',
+                                        'reasoning_content':'search', 'tool_calls':calls}}]}
+        final = {'choices':[{'message':{'role':'assistant', 'content':json.dumps({'candidates':[], 'notes':''})}}]}
+        options={'max_tool_calls_per_round':1, 'max_output_tokens':2000}
+        agent=WebResearchAgent({'reasoning_effort':'low'}, options, 'instructions')
+        with patch.object(agent, '_local_scholar_search', return_value={'query':'graph paper 0', 'results':[], 'errors':[]}), \
+             patch('gnn_digest.agent.get_json', side_effect=[first, final]) as req:
+            result=agent.search({'research_request':'find papers'},30)
+        self.assertEqual(result['status'], 'completed')
+        second_payload=req.call_args_list[1].kwargs['payload']
+        tool_messages=[m for m in second_payload['messages'] if m.get('role') == 'tool']
+        self.assertEqual([m['tool_call_id'] for m in tool_messages], ['call_0','call_1','call_2'])
+        self.assertEqual(len(result['tool_candidates']), 0)
+
     def test_rejected_candidate_feedback_then_success_and_idempotence(self):
         with tempfile.TemporaryDirectory() as tmp:
             root, config, args=self.setup_root(tmp)

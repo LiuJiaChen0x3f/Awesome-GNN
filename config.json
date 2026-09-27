@@ -7,7 +7,7 @@
   "search_agent": {
     "send_max_tool_calls": false,
     "max_rounds": 3,
-    "max_tool_calls_per_round": 12,
+    "max_tool_calls_per_round": 4,
     "max_output_tokens": 6000,
     "candidate_limit": 10,
     "timeout": 180,

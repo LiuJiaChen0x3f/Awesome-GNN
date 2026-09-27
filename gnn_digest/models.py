@@ -53,7 +53,7 @@ def identity_keys(p):
 
 def content_hash(p):
     return hashlib.sha256((p["title"] + "\n" + p["abstract"] +
-                          ("\n" + p['method_text'] if p.get('method_text') else '')).encode()).hexdigest()
+                          ("\n" + p['full_text'] if p.get('full_text') else '')).encode()).hexdigest()
 
 
 def merge_records(records):
@@ -78,6 +78,8 @@ def merge_records(records):
     for members in groups.values():
         # Keep an already persisted ID and a stable ordering of provenance.
         merged = dict(members[0])
+        # Do not carry the pre-full-text method-only cache into new records.
+        merged.pop('method_text', None)
         with_abstract = [p for p in members if p.get("abstract")]
         richest = max(with_abstract or members, key=lambda p: (p.get("updated", ""), len(p.get("abstract", ""))))
         for field in ("abstract", "title", "authors"):
@@ -106,9 +108,18 @@ def merge_records(records):
             merged['venue'] = conference['venue_label'] if conference else ''
             merged['ccf_venue'] = conference is not None
             # Prefer newly verified text, not stale richer descriptions from older sources.
-            for field in ('title','abstract','authors','method_text','fulltext_source','conference_evidence'):
+            for field in ('title','abstract','authors','full_text','fulltext_source','conference_evidence'):
                 if field in recent:
                     merged[field] = recent[field]
+        # A newly verified route can arrive before a previously downloaded
+        # full text. Preserve that text when the identity is merged, but never
+        # revive a historical method-section-only field.
+        fulltext = next((p for p in reversed(members)
+                         if p.get('full_text') and
+                         p.get('fulltext_source', {}).get('scope') == 'full_text'), None)
+        if fulltext:
+            merged['full_text'] = fulltext['full_text']
+            merged['fulltext_source'] = fulltext['fulltext_source']
         # Reuse valid summaries even when merging an additional source.
         valid = next((p for p in reversed(members) if p.get("summary_input_hash") == content_hash(merged)), None)
         if valid:

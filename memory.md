@@ -4,9 +4,9 @@
 
 ## 用户目标与约定
 
-本地按固定研究需求发现最新GNN论文，LLM生成按重要性排序的5个关键词及100字内中文核心方法；跨来源、跨次运行去重；GitHub存储、GitHub Pages静态展示。用户要求可复用skill，开发过程保留memory.md。
+本地按固定研究需求发现最新GNN论文，LLM生成按重要性排序的1至5个关键词及200字内中文核心方法；总结依据可获取的论文全文，不再依赖摘要或方法章节标题；跨来源、跨次运行去重；GitHub存储、GitHub Pages静态展示。用户要求可复用skill，开发过程保留memory.md。
 
-默认以论文**标题+摘要**为事实来源，不声称已读全文。方法限制按Unicode字符计数，包括标点、英文和数字。关键词与方法必须由LLM生成；无API时只采集元数据，不造摘要。
+来源标题、日期和会议由程序独立核验；方法卡片必须先取得可提取的全文，再由LLM生成。方法限制按Unicode字符计数，包括标点、英文和数字。关键词与方法必须由LLM生成；无API时只采集元数据，不造总结。
 
 ## 当前完成
 
@@ -110,3 +110,18 @@
 - 验证：`tests/test_pipeline.py`
 
 本轮预览服务绑定`127.0.0.1:8000`。若已结束，用 `python -m http.server 8000 --bind 127.0.0.1 --directory site` 重启。
+
+## 2026-09-27 本轮全文总结改造
+
+- `gnn_digest/fulltext.py` 新增 `load_fulltext`：优先读取 arXiv HTML，再回退论文 PDF，读取全部可提取页面，不再调用方法章节标题识别；正文过短、超过120000字符、超过24 MB/100页或标题不匹配时明确拒绝。正文只保存在本地归档，`site/data/papers.json` 不导出全文。
+- `gnn_digest/verification.py` 不再因摘要缺失拒绝已核验来源；标题、日期、会议/主会轨道仍由原站元数据独立校验。`gnn_digest/llm.py` 与两份总结提示词改为只向模型提供全文，证据必须逐字来自全文，关键词放宽为1至5个且去重，方法保持200个Unicode字符上限。
+- `agent.py`、兼容的 `run/summarize` 路径、缓存哈希和去重合并均迁移到 `full_text`；旧的 `method_sections`/`method_text` 记录不会被当作新全文缓存。页面状态文案改为“全文未获取/全文方法总结”。
+- 本机 `.env` 已切换为 DeepSeek `https://api.deepseek.com`、`deepseek-flash`、low 推理；密钥不写入代码、日志、静态数据或 Git。已做模型列表和 Chat Completions JSON 探针，未在本记录写入密钥。
+- 本轮代码测试：53 项 unittest 通过，覆盖全文加载兼容、1至5关键词、去重、配额和旧入口；`node --check site/app.js` 待本轮最终改动后再次执行。下一步是真实 `python -X utf8 run.py search --limit 3`，记录会议2篇 + arXiv1篇的完成数和全文/LLM拒绝原因；不足时不以历史归档补齐。
+
+## 2026-09-27 DeepSeek 工具协议修复与复验
+
+- DeepSeek 本地函数工具链继续使用 `https://api.deepseek.com`、`deepseek-flash`、`low`。问题根因不是密钥：模型一次返回超过本地预算的多个 `tool_calls` 时，旧代码只给前几个 ID 回复 tool message，下一请求因此返回 HTTP 400（`insufficient tool messages following tool_calls message`）。`gnn_digest/agent.py` 现在为预算外 ID 回复有界的空结果，不执行额外搜索；本地工具结果每次最多保留 4–8 条，每条摘要最多 400 字符，完整标题/URL仍由程序独立核验。最终格式化请求失败时也保留已完成工具线索继续核验。`gnn_digest/http.py` 记录脱敏的供应商错误短消息，避免把请求体或密钥写入报告。
+- 新增函数工具协议回归测试；当前 `python -X utf8 -m unittest discover -s tests -v` 共 54 项通过，`node --check site/app.js` 与 `python -X utf8 -m compileall -q gnn_digest` 通过。
+- 修复后真实运行 `python -X utf8 run.py search --limit 3`，UTC 窗口为 2026-09-14 至 2026-09-27，共 3 轮、每轮实际工具搜索完成，无供应商协议错误。结果为 **1/3**：会议 0/2（缺额 2），arXiv 1/1；arXiv 论文为 `Reachability-Based Formal Verification of Graph Neural Networks with Node and Edge Features`，v1 日期 2026-09-24，取得约 80k 字符全文并复用已有 DeepSeek 全文总结。会议候选因不在允许来源、正式日期超窗口或原站 HTTP 错误被保守拒绝，不能据此断言窗口内没有会议论文。`data/last_run.json` 和 `data/search_results.json` 保留完整缺额与拒绝原因，历史归档仍为 94 篇；网页只导出精简字段，不含全文或 API key。
+- 代码已提交到本地 `main`（提交信息 `fix DeepSeek scholarly tool orchestration`）；尝试推送时 GitHub 凭据弹窗被取消，随后凭据复用脚本被本机安全策略拦截，因此远程尚未包含本轮提交。重新登录 GitHub 后执行 `git push origin main` 即可。

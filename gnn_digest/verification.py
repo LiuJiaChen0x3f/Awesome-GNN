@@ -25,7 +25,7 @@ VENUES = {
     'ICDE': ('international conference on data engineering', 'icde'),
     'EMNLP': ('empirical methods in natural language processing', 'emnlp'),
 }
-DOMAINS = ('arxiv.org', 'aclanthology.org', 'proceedings.mlr.press', 'proceedings.neurips.cc',
+DOMAINS = ('arxiv.org', 'doi.org', 'aclanthology.org', 'proceedings.mlr.press', 'proceedings.neurips.cc',
            'papers.nips.cc', 'openaccess.thecvf.com', 'dl.acm.org', 'ieeexplore.ieee.org',
            'ojs.aaai.org', 'ijcai.org', 'vldb.org', 'proceedings.com')
 DIRECTORY_SOURCES = {
@@ -162,8 +162,8 @@ def verify_candidate(candidate, since, until, timeout=25):
         raise VerificationError('Candidate title does not match primary-source metadata')
     abstract = clean(' '.join(page.abstract_parts)) or page.first('citation_abstract', 'dc.description', 'description')
     abstract = re.sub(r'^Abstract\s*:?\s*', '', abstract, flags=re.I).strip()
-    if len(abstract) < 80 or len(abstract) > 25000:
-        raise VerificationError('Primary source does not provide a usable abstract')
+    if len(abstract) > 25000:
+        abstract = ''
     authors = [clean(a) for a in page.meta.get('citation_author', [])]
     is_arxiv = host == 'arxiv.org'
     if is_arxiv:

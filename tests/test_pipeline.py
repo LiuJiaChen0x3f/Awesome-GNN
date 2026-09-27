@@ -81,9 +81,11 @@ class LLMTests(unittest.TestCase):
         self.assertEqual(validate_summary(answer(),ABSTRACT)['keywords'],answer()['keywords'])
 
     def test_bad_output(self):
-        for change in [{'keywords':['a']*5},{'method':'长'*201},{'method':'English only'},{'evidence':['This is not in the abstract']},{'relevant':'true'},{'keywords':['a','b','c','d']},{'confidence':'low'}]:
+        for change in [{'keywords':['a']*5},{'method':'长'*201},{'method':'English only'},{'evidence':['This is not in the abstract']},{'relevant':'true'},{'confidence':'low'}]:
             with self.subTest(change=change),self.assertRaises(ValueError):
                 validate_summary({**answer(),**change},ABSTRACT)
+        self.assertEqual(validate_summary({**answer(),'keywords':['GNN','注意力','消息传递','分子图']}, ABSTRACT)['keywords'],
+                         ['GNN','注意力','消息传递','分子图'])
 
     @patch.dict(os.environ,{'LLM_BASE_URL':'https://example.test/v1','LLM_API_KEY':'secret','LLM_MODEL':'test'})
     def test_repair_and_cache(self):

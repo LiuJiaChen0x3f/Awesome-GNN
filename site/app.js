@@ -2,7 +2,7 @@
 (() => {
   'use strict';
   const $ = id => document.getElementById(id);
-  const labels = {ready:'方法卡片已生成',pending:'等待 LLM 总结',failed:'总结生成失败 · 将重试',missing_abstract:'来源未提供摘要',missing_fulltext:'方法正文未获取',insufficient:'原文信息不足'};
+  const labels = {ready:'方法卡片已生成',pending:'等待 LLM 总结',failed:'总结生成失败 · 将重试',missing_abstract:'全文未获取',missing_fulltext:'全文未获取',insufficient:'原文信息不足'};
   let papers = [], keyword = '', limit = 30;
   const topicNames=['GNN','SSL','CL','OOD','TAG','GSL','HGT','TGN','KG','KGE','HGNN'];
   const paperDate=p=>p.display_date||p.published||'';
@@ -22,7 +22,7 @@
     e.append(meta,node('h3',p.title),node('p',p.authors.slice(0,5).join(' · ')+(p.authors.length>5?' 等':''),'authors'));
     const method=node('div',undefined,`method ${p.status==='ready'?'':'pending'}`);
     if(p.status==='ready') {method.append(node('span','核心方法 / METHOD','method-label'),node('span',p.method));}
-    else {method.textContent=p.status==='missing_abstract'?'该来源未提供摘要，暂不生成方法卡片。':p.status==='missing_fulltext'?'暂未取得可核验的方法章节。':p.status==='insufficient'?'原文不足以支持可靠的方法描述，暂不展示推测内容。':p.status==='failed'?'模型请求或输出校验未通过，下次运行会自动重试。':'论文已收录；取得正文后将生成五个关键词与方法总结。';}
+    else {method.textContent=(p.status==='missing_abstract'||p.status==='missing_fulltext')?'暂未取得可核验的论文全文。':p.status==='insufficient'?'全文不足以支持可靠的方法描述，暂不展示推测内容。':p.status==='failed'?'模型请求或输出校验未通过，下次运行会自动重试。':'论文已收录；取得全文后将生成关键词与方法总结。';}
     const bottom=node('div',undefined,'card-bottom'), tags=node('div',undefined,'card-tags');
     p.keywords.forEach(k=>{const b=node('button',k,'chip'+(keyword===k?' active':''));b.setAttribute('aria-pressed',String(keyword===k));b.onclick=()=>selectKeyword(k);tags.append(b);});
     bottom.append(tags);

@@ -11,8 +11,11 @@ from .llm import SearchPlanner, Summarizer
 from .models import candidate, is_ccf_venue, merge_records, within_window
 from .sources import FETCHERS
 from .storage import export_site, lock, read_json, write_json
-from .fulltext import load_methods
+from .fulltext import load_fulltext, coerce_legacy_fulltext
 from .verification import VerificationError
+
+# Compatibility patch point; the implementation now always reads full text.
+load_methods = load_fulltext
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -56,7 +59,7 @@ def run(args):
             export_site(papers, read_json(root / "data" / "last_run.json", {}), root / "site")
             print(f"Exported {len(papers)} archived papers")
             return 0
-        engine = None if args.no_llm else Summarizer({**config["llm"], 'require_methods':True}, (root / "prompts" / "summarize.zh.txt").read_text(encoding="utf-8"))
+        engine = None if args.no_llm else Summarizer({**config["llm"], 'require_fulltext':True}, (root / "prompts" / "summarize.zh.txt").read_text(encoding="utf-8"))
         search_prompt_path = root / "prompts" / "search.en.txt"
         if not search_prompt_path.exists():
             search_prompt_path = ROOT / "prompts" / "search.en.txt"
@@ -107,9 +110,6 @@ def run(args):
         llm_started = time.monotonic()
         eligible = []
         for p in papers:
-            if not p["abstract"]:
-                p.update(status="missing_abstract", keywords=[], method="")
-                continue
             if engine and not engine.cached(p) and p.get("status") in ("ready", "irrelevant", "insufficient"):
                 p.update(status="pending", keywords=[], method="")
             if engine and not engine.cached(p):
@@ -120,6 +120,7 @@ def run(args):
                 copy = dict(p)
                 try:
                     load_methods(copy)
+                    coerce_legacy_fulltext(copy)
                     engine.summarize(copy)
                 except VerificationError as exc:
                     copy.update(status='missing_fulltext', keywords=[], method='', error=str(exc)[:160])
@@ -148,7 +149,7 @@ def run(args):
                         submit_next()
         report.update(finished_at=datetime.now(timezone.utc).isoformat(), llm_processed=processed, total=len(papers), statuses=dict(Counter(p["status"] for p in papers)))
         if engine:
-            report["llm_remaining"] = sum(bool(p["abstract"]) and not engine.cached(p) for p in papers)
+            report["llm_remaining"] = sum(not engine.cached(p) for p in papers)
         write_json(state_path, {"schema_version": 1, "papers": papers})
         write_json(root / "data" / "last_run.json", report)
         export_site(papers, report, root / "site")
