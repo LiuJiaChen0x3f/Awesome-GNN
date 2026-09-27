@@ -131,3 +131,10 @@
 - 按用户提供的配置，本机 `.env` 已切换为 `https://api.layso.ai/v1`、模型 `gpt-5.6-luna`、推理强度 `high`；Key 仅写入被 `.gitignore` 忽略的 `.env`，没有写入代码、报告、静态页面或 Git。
 - 脱敏探针：`GET /models` 返回 HTTP 200；`POST /responses` 返回 `completed`，输出包含 `web_search_call` 的 `search` 与 `open_page` 动作，实际打开了 arXiv 页面并返回论文内容。项目自身的 `WebResearchAgent` 同样以 `responses_web_search` 模式完成搜索，找到 `Local Geometry Improves Explanation Robustness for Graph Neural Networks` 的 IJCAI 2026 页面；独立核验器确认标题、主会、日期 `2026-09-16` 和 PDF 均有效。
 - 结论：DeepSeek 最近一次 5 篇运行的 `conference 0/3` 不是“模型不能联网”。其本地函数工具已经完成搜索，但在 3 轮/每轮工具预算内没有稳定返回可核验的合格会议落地页；报告还显示 KDD/WWW/VLDB/EMNLP 页面未命中允许主会或部分候选超出日期窗口。换用 LAYSO 原生 Responses 联网搜索后，会议检索链路已通过最小端到端测试。尚未用新供应商执行完整 `search --limit 5`，避免在能力探针后自动产生额外批量请求。
+
+## 2026-09-27 静态页面增量导出核验
+
+- `search`、兼容的 `run`/`summarize` 和 `build` 均调用 `gnn_digest.storage.export_site`；导出文件为 `site/data/papers.json`，前端 `site/app.js` 通过 `fetch('./data/papers.json')` 加载，因此本机完成检索后只要提交 `site/`，新论文就会进入 GitHub Pages 页面。`.github/workflows/pages.yml` 在 `site/**` 变化时部署。
+- 修复 `tests/test_pipeline.py` 的静态导出回归夹具，新增测试确认新归档论文会出现在公开索引、状态/方法保留且 `full_text` 不会发布。`python -X utf8 -m unittest discover -s tests -q` 共 55 项通过；`node --check site/app.js`、`compileall`、`git diff --check` 均通过。
+- 执行 `python -X utf8 run.py build` 后归档 94 篇、公开索引 92 篇（2 篇 `irrelevant` 按设计不展示），ID 集合一致；公开索引不含 `full_text`、`abstract` 或 `evidence`。本次 `data/search_results.json` 的 2 篇最新结果均能在 `site/data/papers.json` 找到。通过本地 HTTP 服务实测 `/` 与 `/data/papers.json` 均 HTTP 200。
+- 当前只完成本地构建与验证；要更新线上 GitHub.io，需提交 `README.md`、`memory.md`、测试及之后检索生成的 `data/`、`site/` 变更并推送 `main`。此前 GitHub 凭据弹窗取消，远程可能仍未包含本地提交。

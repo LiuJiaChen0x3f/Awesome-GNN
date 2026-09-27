@@ -144,6 +144,20 @@ class PipelineTests(unittest.TestCase):
             self.assertNotIn('abstract',public['papers'][0])
             self.assertFalse(public['report']['sources']['crossref']['ok'])
 
+    def test_static_export_includes_new_archive_paper(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            p=sample(title='New Rendered Graph Paper')
+            p.update(status='ready', keywords=['GNN'], method='通过消息传递学习图表示。')
+            p['full_text']='private full text must stay out of the static index'
+            p['fulltext_source']={'scope':'full_text','url':'https://arxiv.org/pdf/2609.12345','format':'pdf'}
+            export_site([p], {'finished_at':'2026-09-27T00:00:00+00:00'}, root/'site')
+            public=read_json(root/'site/data/papers.json',{})
+            self.assertEqual([item['title'] for item in public['papers']], ['New Rendered Graph Paper'])
+            self.assertEqual(public['papers'][0]['status'], 'ready')
+            self.assertNotIn('full_text', public['papers'][0])
+            self.assertEqual(public['generated_at'], '2026-09-27T00:00:00+00:00')
+
     def test_queries_are_forwarded_to_source_adapters(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=self.setup_root(tmp)

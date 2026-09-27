@@ -87,7 +87,7 @@ python scripts/install_skill.py
 
 ## GitHub Pages 发布
 
-本机完成检索后，按需把数据和静态页面提交到仓库 main 分支。Pages Source 选择 GitHub Actions。保留 pages.yml（静态发布）与 test.yml（Windows/Linux测试）；原 update.yml 自动采集已移除，不需要远程 LLM Secret。
+本机完成检索后，`search`/`run` 会自动调用 `export_site`，把归档论文写入 `site/data/papers.json`；页面通过相对路径读取该文件，所以新卡片会随静态索引一起渲染。提交代码时要同时提交 `data/` 和 `site/` 的变更，再推送到 `main`，Pages Source 选择 GitHub Actions，`pages.yml` 会在 `site/**` 变化时发布。保留 pages.yml（静态发布）与 test.yml（Windows/Linux测试）；原 update.yml 自动采集已移除，不需要远程 LLM Secret。
 
 ## 旧流水线配置与处理约束
 
