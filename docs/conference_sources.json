@@ -1,0 +1,253 @@
+{
+  "scope": "Graph-learning-relevant CCF-A candidate sources; see human audit for classification and availability. URLs are probe seeds, not claims of existence.",
+  "ccf_reference": "https://www.ccf.org.cn/Academic_Evaluation/By_category/",
+  "probes": [
+    {
+      "venue": "ICML",
+      "year": 2025,
+      "homepage": "https://icml.cc",
+      "urls": [
+        "https://icml.cc/virtual/2025/papers.html"
+      ]
+    },
+    {
+      "venue": "ICML",
+      "year": 2026,
+      "homepage": "https://icml.cc",
+      "urls": [
+        "https://icml.cc/virtual/2026/papers.html"
+      ]
+    },
+    {
+      "venue": "NeurIPS",
+      "year": 2025,
+      "homepage": "https://neurips.cc",
+      "urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2025",
+        "https://neurips.cc/virtual/2025/papers.html"
+      ]
+    },
+    {
+      "venue": "NeurIPS",
+      "year": 2026,
+      "homepage": "https://neurips.cc",
+      "urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2026",
+        "https://neurips.cc/virtual/2026/papers.html"
+      ]
+    },
+    {
+      "venue": "AAAI",
+      "year": 2025,
+      "homepage": "https://aaai.org",
+      "urls": [
+        "https://ojs.aaai.org/index.php/AAAI/issue/view/637"
+      ]
+    },
+    {
+      "venue": "AAAI",
+      "year": 2026,
+      "homepage": "https://aaai.org",
+      "urls": [
+        "https://ojs.aaai.org/index.php/AAAI/issue/view/703"
+      ]
+    },
+    {
+      "venue": "IJCAI",
+      "year": 2025,
+      "homepage": "https://ijcai.org",
+      "urls": [
+        "https://www.ijcai.org/proceedings/2025/"
+      ]
+    },
+    {
+      "venue": "IJCAI",
+      "year": 2026,
+      "homepage": "https://ijcai.org",
+      "urls": [
+        "https://www.ijcai.org/proceedings/2026/"
+      ]
+    },
+    {
+      "venue": "KDD",
+      "year": 2025,
+      "homepage": "https://kdd.org",
+      "urls": [
+        "https://kdd2025.kdd.org/kdd2025/research-track-papers-2/"
+      ]
+    },
+    {
+      "venue": "KDD",
+      "year": 2026,
+      "homepage": "https://kdd.org",
+      "urls": [
+        "https://kdd2026.kdd.org/papers/"
+      ]
+    },
+    {
+      "venue": "WWW",
+      "year": 2025,
+      "homepage": "https://www.thewebconf.org",
+      "urls": [
+        "https://www2025.thewebconf.org/"
+      ]
+    },
+    {
+      "venue": "WWW",
+      "year": 2026,
+      "homepage": "https://www.thewebconf.org",
+      "urls": [
+        "https://www2026.thewebconf.org/",
+        "https://dl.acm.org/doi/proceedings/10.1145/3774904"
+      ]
+    },
+    {
+      "venue": "SIGIR",
+      "year": 2025,
+      "homepage": "https://sigir.org",
+      "urls": [
+        "https://sigir2025.dei.unipd.it/proceedings.html"
+      ]
+    },
+    {
+      "venue": "SIGIR",
+      "year": 2026,
+      "homepage": "https://sigir.org",
+      "urls": [
+        "https://sigir2026.org/"
+      ]
+    },
+    {
+      "venue": "ACL",
+      "year": 2025,
+      "homepage": "https://aclanthology.org",
+      "urls": [
+        "https://aclanthology.org/events/acl-2025/"
+      ]
+    },
+    {
+      "venue": "ACL",
+      "year": 2026,
+      "homepage": "https://aclanthology.org",
+      "urls": [
+        "https://aclanthology.org/events/acl-2026/"
+      ]
+    },
+    {
+      "venue": "CVPR",
+      "year": 2025,
+      "homepage": "https://cvpr.thecvf.com",
+      "urls": [
+        "https://openaccess.thecvf.com/CVPR2025?day=all"
+      ]
+    },
+    {
+      "venue": "CVPR",
+      "year": 2026,
+      "homepage": "https://cvpr.thecvf.com",
+      "urls": [
+        "https://openaccess.thecvf.com/CVPR2026?day=all"
+      ]
+    },
+    {
+      "venue": "ICCV",
+      "year": 2025,
+      "homepage": "https://iccv.thecvf.com",
+      "urls": [
+        "https://openaccess.thecvf.com/ICCV2025?day=all"
+      ]
+    },
+    {
+      "venue": "SIGMOD",
+      "year": 2025,
+      "homepage": "https://sigmod.org",
+      "urls": [
+        "https://2025.sigmod.org/toc-3-3.html",
+        "https://2025.sigmod.org/sigmod_papers.shtml"
+      ]
+    },
+    {
+      "venue": "SIGMOD",
+      "year": 2026,
+      "homepage": "https://sigmod.org",
+      "urls": [
+        "https://2026.sigmod.org/sigmod_papers.shtml"
+      ]
+    },
+    {
+      "venue": "VLDB",
+      "year": 2025,
+      "homepage": "https://vldb.org",
+      "urls": [
+        "https://www.vldb.org/pvldb/volumes/18/"
+      ]
+    },
+    {
+      "venue": "VLDB",
+      "year": 2026,
+      "homepage": "https://vldb.org",
+      "urls": [
+        "https://www.vldb.org/pvldb/volumes/19/"
+      ]
+    },
+    {
+      "venue": "ICDE",
+      "year": 2025,
+      "homepage": "https://icde2025.ieeecomputer.my",
+      "urls": [
+        "https://ieeexplore.ieee.org/xpl/conhome/1000178/all-proceedings"
+      ]
+    },
+    {
+      "venue": "ICDE",
+      "year": 2026,
+      "homepage": "https://icde2026.ieeecomputer.my",
+      "urls": [
+        "https://ieeexplore.ieee.org/xpl/conhome/1000178/all-proceedings"
+      ]
+    },
+    {
+      "venue": "ACM MM",
+      "year": 2025,
+      "homepage": "https://acmmm2025.org/",
+      "urls": [
+        "https://acmmm2025.org/accepted-regular-papers/"
+      ]
+    },
+    {
+      "venue": "ACM MM",
+      "year": 2026,
+      "homepage": "https://2026.acmmm.org/",
+      "urls": [
+        "https://2026.acmmm.org/"
+      ]
+    }
+  ],
+  "ccf_evidence": {
+    "checked_date": "2026-09-27",
+    "method": "CCF official current category pages read in browser; raw HTTP returned WAF page.",
+    "https://www.ccf.org.cn/Academic_Evaluation/AI/": [
+      "AAAI",
+      "NeurIPS",
+      "ACL",
+      "CVPR",
+      "ICCV",
+      "ICML",
+      "IJCAI"
+    ],
+    "https://www.ccf.org.cn/Academic_Evaluation/DM_CS/": [
+      "SIGMOD",
+      "KDD (official SIGKDD)",
+      "ICDE",
+      "SIGIR",
+      "VLDB"
+    ],
+    "https://www.ccf.org.cn/Academic_Evaluation/Cross_Compre_Emerg/": [
+      "WWW"
+    ],
+    "https://www.ccf.org.cn/Academic_Evaluation/CGAndMT/": [
+      "ACM MM"
+    ],
+    "exclusions": "ICLR not present in observed AI list. EMNLP and ECCV are B; ICDM, WSDM, CIKM are B. ICCV has no 2026 edition (biennial odd-year event)."
+  }
+}

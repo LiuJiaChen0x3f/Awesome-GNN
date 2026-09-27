@@ -1,0 +1,3291 @@
+{
+  "checked_at": "2026-09-27T05:51:06.787774+00:00",
+  "scope": "Availability samples, not exhaustive paper ingestion or eligibility verification. HTTP 200 alone is not proof of usable metadata.",
+  "results": [
+    {
+      "venue": "ICML",
+      "year": 2025,
+      "homepage": "https://icml.cc",
+      "attempts": [
+        {
+          "url": "https://icml.cc/virtual/2025/papers.html",
+          "http": 200,
+          "final_url": "https://icml.cc/virtual/2025/papers.html",
+          "content_type": "text/html; charset=utf-8",
+          "bytes_read": 470588,
+          "truncated": false,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "ICML 2025 Papers ICML 2025 Skip to yearly menu bar Skip to main content Main Navigation ICML Help/FAQ Contact ICML Create Profile Code of Conduct Privacy Policy Press Journal To Conference Track Careers Downloads Inclusion Future Meetings My Stuff Login Select Year: (2025) 2026 2025 2024 2023 2022 2",
+          "seconds": 2.25
+        }
+      ],
+      "paper_link_count": 3340,
+      "discovery_links": [
+        {
+          "url": "https://icml.cc/Conferences/2026/Press",
+          "text": "Press"
+        },
+        {
+          "url": "https://icml.cc/accounts/login?nextp=/virtual/2025/poster/46187 ",
+          "text": "Login"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/papers.html",
+          "text": "Select Year: (2025)"
+        },
+        {
+          "url": "https://icml.cc/Conferences/2026",
+          "text": "2026"
+        },
+        {
+          "url": "https://icml.cc/Conferences/2025",
+          "text": "2025"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/index.html",
+          "text": "Getting Started"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/calendar",
+          "text": "Schedule"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/events/tutorial",
+          "text": "Tutorials"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/eventlistwithbios/invited%20talk",
+          "text": "Invited Talks"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/events/oral",
+          "text": "Orals"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/awards_detail",
+          "text": "Awards"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/test-of-time-award",
+          "text": "Test of Time Award"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/papers.html",
+          "text": "Papers"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/events/2025SpotlightPosters",
+          "text": "Spotlight Posters"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/events/workshop",
+          "text": "Workshops"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/community?show=socials",
+          "text": "Socials"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/sponsor_list",
+          "text": "Exhibitors"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/events/expo",
+          "text": "Expo"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/organizers",
+          "text": "Organizers"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/search",
+          "text": ""
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/faq",
+          "text": "FAQ"
+        },
+        {
+          "url": "https://icml2025.vizhub.ai/",
+          "text": "Visualization"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/poster/45115",
+          "text": "Teaching Language Models to Critique via Reinforcement Learning"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/poster/44670",
+          "text": "On the Alignment between Fairness and Accuracy: from the Perspective of Adversarial Robustness"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/poster/43720",
+          "text": "Model Immunization from a Condition Number Perspective"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/poster/44326",
+          "text": "One-Pass Feature Evolvable Learning with Theoretical Guarantees"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/poster/45168",
+          "text": "Stacey: Promoting Stochastic Steepest Descent via Accelerated $\\ell_p$-Smooth Nonconvex Optimization"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/poster/44648",
+          "text": "ELMO : Efficiency via Low-precision and Peak Memory Optimization in Large Output Spaces"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/poster/46405",
+          "text": "Online Learning in Risk Sensitive constrained MDP"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/poster/45343",
+          "text": "AdaWorld: Learning Adaptable World Models with Latent Actions"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/poster/43731",
+          "text": "Unifying Knowledge from Diverse Datasets to Enhance Spatial-Temporal Modeling: A Granularity-Adaptive Geographical Embedding Approach"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/poster/44795",
+          "text": "Fine-Grained Captioning of Long Videos through Scene Graph Consolidation"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/poster/44671",
+          "text": "NeuroTree: Hierarchical Functional Brain Pathway Decoding for Mental Health Disorders"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/poster/40110",
+          "text": "Position: You Can't Manufacture a NeRF"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/poster/44126",
+          "text": "Toward a Unified Theory of Gradient Descent under Generalized Smoothness"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/poster/44890",
+          "text": "Not all solutions are created equal: An analytical dissociation of functional and representational similarity in deep linear neural networks"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/poster/44767",
+          "text": "Otter: Generating Tests from Issues to Validate SWE Patches"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/poster/45264",
+          "text": "Ringmaster ASGD: The First Asynchronous SGD with Optimal Time Complexity"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/poster/44663",
+          "text": "Reinforcement Learning with Random Time Horizons"
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/poster/44662",
+          "text": "On the Provable Separation of Scales in Maximal Update Parameterization"
+        }
+      ],
+      "graph_link_count": 200,
+      "sample_anchor_title": "Fine-Grained Captioning of Long Videos through Scene Graph Consolidation",
+      "sample": {
+        "url": "https://icml.cc/virtual/2025/poster/44795",
+        "http": 200,
+        "final_url": "https://icml.cc/virtual/2025/poster/44795",
+        "content_type": "text/html; charset=utf-8",
+        "bytes_read": 88365,
+        "truncated": false,
+        "title": "",
+        "date": "",
+        "venue": "",
+        "text_excerpt": "ICML Poster Fine-Grained Captioning of Long Videos through Scene Graph Consolidation ICML 2025 Skip to yearly menu bar Skip to main content Main Navigation ICML Help/FAQ Contact ICML Create Profile Code of Conduct Privacy Policy Press Journal To Conference Track Careers Downloads Inclusion Future Me",
+        "seconds": 1.66,
+        "abstract_section_excerpt": " Recent advances in vision-language models have led to impressive progress in caption generation for images and short video clips. However, these models remain constrained by their limited temporal receptive fields, making it difficult to producecoherent and comprehensive captions for long videos. While several methods have been proposed to aggregate information across video segments, they often rely on supervised fine-tuning or incur significant computational overhead. To address these challenges, we introduce a novel framework for long video captioning based on graph consolidation. Our approach first generates segment-level captions, corresponding to individual frames or short video intervals, using off-the-shelf visual captioning models. These captions are then parsed into individual scene graphs, which are subsequently consolidated into a unified graph representation that preserves both holistic context and fine-grained details throughout the video. A lightweight graph-to-text decoder then produces the final video-level caption. This framework effectively extends the temporal und",
+        "citation_metadata": {},
+        "related_links": [
+          {
+            "url": "https://icml.cc/media/icml-2025/Slides/44795.pdf",
+            "text": "Slides"
+          },
+          {
+            "url": "https://openreview.net/forum?id=aTC2euLwnh",
+            "text": "OpenReview"
+          },
+          {
+            "url": "https://proceedings.mlr.press",
+            "text": "ICML Proceedings at PMLR"
+          },
+          {
+            "url": "https://proceedings.mlr.press",
+            "text": "ICML Proceedings at PMLR"
+          }
+        ]
+      }
+    },
+    {
+      "venue": "ICML",
+      "year": 2026,
+      "homepage": "https://icml.cc",
+      "attempts": [
+        {
+          "url": "https://icml.cc/virtual/2026/papers.html",
+          "http": 200,
+          "final_url": "https://icml.cc/virtual/2026/papers.html",
+          "content_type": "text/html; charset=utf-8",
+          "bytes_read": 903456,
+          "truncated": false,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "ICML 2026 Papers ICML 2026 Skip to yearly menu bar Skip to main content Main Navigation ICML Help/FAQ Contact ICML Create Profile Code of Conduct Privacy Policy Press Journal To Conference Track Careers Downloads Inclusion Future Meetings My Stuff Login Select Year: (2026) 2026 2025 2024 2023 2022 2",
+          "seconds": 2.67
+        }
+      ],
+      "paper_link_count": 6629,
+      "discovery_links": [
+        {
+          "url": "https://icml.cc/Conferences/2026/Press",
+          "text": "Press"
+        },
+        {
+          "url": "https://icml.cc/accounts/login?nextp=/virtual/2026/poster/63696 ",
+          "text": "Login"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/papers.html",
+          "text": "Select Year: (2026)"
+        },
+        {
+          "url": "https://icml.cc/Conferences/2026",
+          "text": "2026"
+        },
+        {
+          "url": "https://icml.cc/Conferences/2025",
+          "text": "2025"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/index.html",
+          "text": "Getting Started"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/calendar?filter_events=&filter_rooms=",
+          "text": "Schedule"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/events/tutorial",
+          "text": "Tutorials"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/eventlistwithbios/invited%20talk",
+          "text": "Invited Talks"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/events/oral",
+          "text": "Orals"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/awards_detail",
+          "text": "Awards"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/test-of-time-award",
+          "text": "Test of Time Award"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/papers.html",
+          "text": "Papers"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/events/2026SpotlightPosters",
+          "text": "Spotlight Posters"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/events/2026-position-papers",
+          "text": "Position Paper Posters"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/events/2026-journal-track",
+          "text": "Journal Track Posters"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/events/workshop",
+          "text": "Workshops"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/events/social",
+          "text": "Socials"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/sponsor_list",
+          "text": "Exhibitors"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/events/2026-Expo",
+          "text": "Expo Talks, Demos, and Workshops"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/organizers",
+          "text": "Organizers"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/search",
+          "text": ""
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/poster/66328",
+          "text": "Omni-Perception Policy Optimization for Multimodal Emotion Reasoning"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/poster/66333",
+          "text": "AgentConductor: Topology Evolution for Multi-Agent Competition-Level Code Generation"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/poster/66331",
+          "text": "Veda: Scalable Video Diffusion via Distilled Sparse Attention"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/poster/66340",
+          "text": "Error Propagation Mechanisms and Compensation Strategies for Quantized Diffusion Models"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/poster/66335",
+          "text": "SAOT: Self-Supervised Continual Graph Learning with Structure-Aware Optimal Transport"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/poster/66337",
+          "text": "BASIL: Scalable Bayesian Semi-supervised Clustering with Feature Selection and Adaptive Constraint Weighting"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/poster/60474",
+          "text": "AVI-Bench: Toward Human-like Audio-Visual Intelligence of Omni-MLLMs"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/poster/66339",
+          "text": "Adaptive Multiscale Binary Expansion Tests for Independence"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/poster/66341",
+          "text": "ReLAM: Learning Anticipation Model for Rewarding Visual Robotic Manipulation"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/poster/66346",
+          "text": "The Shadow Price of Reasoning: Economic Perspective on Optimal Budget Allocation for LLMs"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/poster/64997",
+          "text": "RoCA: Robust Cross-Domain End-to-End Autonomous Driving"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/poster/66345",
+          "text": "Modality-Decoupled Online Recursive Editing"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/poster/66348",
+          "text": "Formalizing the Binding Problem"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/poster/66349",
+          "text": "How do Humans Process AI-generated Hallucination Contents: a Neuroimaging Study"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/poster/67054",
+          "text": "Position: Token Taxes Can Mitigate AI's Economic Risks"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/poster/61337",
+          "text": "Hyper-ICL: Attention Calibration with Hyperbolic Anchor Distillation for Multimodal In-Context Learning"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/poster/66350",
+          "text": "MGAL: A Multilingual Granularity-Aware Long-Context Benchmark"
+        },
+        {
+          "url": "https://icml.cc/virtual/2026/poster/66351",
+          "text": "Efficient Equivariant High-Order Crystal Tensor Prediction via Cartesian Local-Environment Many-Body Coupling"
+        }
+      ],
+      "graph_link_count": 256,
+      "sample_anchor_title": "SAOT: Self-Supervised Continual Graph Learning with Structure-Aware Optimal Transport",
+      "sample": {
+        "url": "https://icml.cc/virtual/2026/poster/66335",
+        "http": 200,
+        "final_url": "https://icml.cc/virtual/2026/poster/66335",
+        "content_type": "text/html; charset=utf-8",
+        "bytes_read": 87804,
+        "truncated": false,
+        "title": "",
+        "date": "",
+        "venue": "",
+        "text_excerpt": "ICML Poster SAOT: Self-Supervised Continual Graph Learning with Structure-Aware Optimal Transport ICML 2026 Skip to yearly menu bar Skip to main content Main Navigation ICML Help/FAQ Contact ICML Create Profile Code of Conduct Privacy Policy Press Journal To Conference Track Careers Downloads Inclus",
+        "seconds": 1.73,
+        "abstract_section_excerpt": " Self-supervised Continual Graph Learning (CGL) aims to successively learn from a graph sequence with different tasks without label supervision—a paradigm that has attracted widespread attention. Most existing self-supervised CGL methods rely on instance-level consistency objectives that enforce stability of individual node (or node-pair) embeddings. Due to optimizing nodes in isolation, these methods fail to maintain global relational structure, causing inter-node correspondences to progressively distort under continual learning. To this end, we propose a novel Structure-Aware Optimal Transport (SAOT) framework that explicitly captures and preserves relational structure within graph representations across sequential tasks. Specifically, SAOT leverages optimal transport theory to capture global inter-node correspondences, thereby facilitating and enhancing graph representation learning. Simultaneously, SAOT incorporates a cross-task knowledge distillation mechanism to preserve the previous structural knowledge. Extensive experiments on four CGL benchmark datasets demonstrate that SAO",
+        "citation_metadata": {},
+        "related_links": [
+          {
+            "url": "https://openreview.net/forum?id=4bAPXdeTbb",
+            "text": "OpenReview"
+          },
+          {
+            "url": "https://proceedings.mlr.press",
+            "text": "ICML Proceedings at PMLR"
+          },
+          {
+            "url": "https://proceedings.mlr.press",
+            "text": "ICML Proceedings at PMLR"
+          }
+        ]
+      }
+    },
+    {
+      "venue": "NeurIPS",
+      "year": 2025,
+      "homepage": "https://neurips.cc",
+      "attempts": [
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025",
+          "http": 200,
+          "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025",
+          "content_type": "text/html; charset=utf-8",
+          "bytes_read": 53914,
+          "truncated": false,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "Book NeurIPS Proceedings Search Advances in Neural Information Processing Systems 38 Creative AI NeurIPS 2025 Edited by D. Belgrave and C. Zhang and M. Coelho and L. Elliott and Y. Tian and P. Prakash See also: Advances in Neural Information Processing Systems 38 Main Conference 64 papers Gaze to th",
+          "seconds": 1.77
+        }
+      ],
+      "paper_link_count": 64,
+      "discovery_links": [
+        {
+          "url": "https://proceedings.neurips.cc/",
+          "text": "NeurIPS Proceedings"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/vol38-main-conference",
+          "text": "Advances in Neural Information Processing Systems 38 Main Conference"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/04440b43c10100305d21cdeb60262e98-Abstract-Creative_AI_Track.html",
+          "text": "Gaze to the Stars: AI and Public Art from Personal Affect and Collective Empathy"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/1350a018b6442df34ef97648647a3e16-Abstract-Creative_AI_Track.html",
+          "text": "Artificial \"Authentic\" Intelligence: Can AI Systems Embody and Evolve Cultural Heritage? A Case Study of \"Cyber Subin\" and Thai Traditional "
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/137298d9e40c90a36a29616d82e0e5a5-Abstract-Creative_AI_Track.html",
+          "text": "Learning to Move with Style: Few-Shot Cross-Modal Style Transfer for Creative Robot Motion Generation"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/245a7772c1c6725c1e439d7f789b48c2-Abstract-Creative_AI_Track.html",
+          "text": "MCP-Driven Parametric Modeling: Integrating LLM Agents into Architectural and Landscape Design Workflows"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/2491a3e3d3762e82f0d9bfd10b4aa8be-Abstract-Creative_AI_Track.html",
+          "text": "Roulettective: Repurposing a Vintage Slide Projector into an AI-Driven Physical Detective Game"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/2749a7947a64433eba96f368206ab8ab-Abstract-Creative_AI_Track.html",
+          "text": "Go witheFlow: Real-time Emotion Driven Audio Effects Modulation"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/3503be50156ebf28a1fa4ebea4113dd4-Abstract-Creative_AI_Track.html",
+          "text": "Green Topics, Deep Roots: Energy-Aware Topic Modelling of Multilingual Nigerian Lyrics"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/3bd4e338b06d69dbc16b66be1a0cd4f8-Abstract-Creative_AI_Track.html",
+          "text": "Possible You: AI-Generated Digital Twins as Creative Mirrors for Future Self Modeling"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/3d2c2f19aa4ca9493813f13aa044f926-Abstract-Creative_AI_Track.html",
+          "text": "Artism: AI-Driven Dual-Engine System for Art Generation and Critique"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/3ff6d26192f2c4cb6c61f51c9ceaa18f-Abstract-Creative_AI_Track.html",
+          "text": "CoTextor: Training-Free Modular Multilingual Text Editing via Layered Disentanglement and Depth-Aware Fusion"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/4051771acaf5ba90abe0539e1dc2821e-Abstract-Creative_AI_Track.html",
+          "text": "SPICE: A Synergistic, Precise, Iterative, and Customizable Image Editing Workflow"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/43a1df2fbca5618436dc77f2031f6416-Abstract-Creative_AI_Track.html",
+          "text": "Between Reality and AI Hallucinations: Reimagining the Sacred Soundscape of Ming Rituals"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/474a1cf382031a7d5f69cf06ed23bf01-Abstract-Creative_AI_Track.html",
+          "text": "Prompt-Character Divergence: A Responsibility Compass for Human-AI Creative Collaboration"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/4962124728954e41e3cfe990b3a307f4-Abstract-Creative_AI_Track.html",
+          "text": "Music Arena: Live Evaluation for Text-to-Music"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/4dee9f370ea18236c3f4c17c3d8015cd-Abstract-Creative_AI_Track.html",
+          "text": "Craving Checkpoint: An Interactive Fridge Lock for Mindful Eating"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/4fa42b8e14eeb7ae2d827a78e2cf37d6-Abstract-Creative_AI_Track.html",
+          "text": "Musings on AI Muses: Support for Human Creativity"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/51803731112cde21f6aaf207d0cd9e16-Abstract-Creative_AI_Track.html",
+          "text": "BioArtlas: Computational Clustering of Multi-Dimensional Complexity in Bioart"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/51e0f4062ab88b776fd0462381149bd3-Abstract-Creative_AI_Track.html",
+          "text": "ArtPeer: Artistic Alignment via Reflection-based Prompt Evolution with Simulated Artist"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/5392d643eccfce4025f6dd567af05a16-Abstract-Creative_AI_Track.html",
+          "text": "Large-Scale Training Data Attribution for Music Generative Models via Unlearning"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/57fd8c11123a66899dbb625c7318e986-Abstract-Creative_AI_Track.html",
+          "text": "\"Artificial Spectator\" Developing AI Audiences for Watching AI-Generated Films: A Speculative Exploration on the Future of Media and AI"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/5b5e910744ca0e2471af69bf25b2ae6c-Abstract-Creative_AI_Track.html",
+          "text": "A(I)nimism: Re-enchanting the World Through AI-Mediated Object Interaction"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/5e32b6c0640fc56f6d689a1ba155767e-Abstract-Creative_AI_Track.html",
+          "text": "Supporting Creative Ownership through Deep Learning-Based Music Variation"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/615229550c97d1c4d006a4bf6b54590e-Abstract-Creative_AI_Track.html",
+          "text": "Writing in Symbiosis: Mapping Human Creative Agency in the AI Era"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/699cd30e07eb38444f8aa235bdc1de89-Abstract-Creative_AI_Track.html",
+          "text": "Orchestrating Emergent Storytelling with Embodied Multi-Agent Systems"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/6a2b9382fa7c131ed57aa7e6b2587e5e-Abstract-Creative_AI_Track.html",
+          "text": "Live Music Models"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/6f4ffd47b29b0f1226e112f540f81008-Abstract-Creative_AI_Track.html",
+          "text": "EmoNest: Crafting Emotionally-Adaptive Experiences with Generative AI"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/7bb16375f9d6dedde526511a6ca6ad4e-Abstract-Creative_AI_Track.html",
+          "text": "TinyTim: a family of language models for divergent generation"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/7c9d96b1b0a820cd1c9987fb0f5a4c1c-Abstract-Creative_AI_Track.html",
+          "text": "Evaluating In Silico Creativity: An Expert Review of AI Chess Compositions"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/87fc2e7defe37cbfc803f06d2bcd922e-Abstract-Creative_AI_Track.html",
+          "text": "From Movement Memories to Robotic Dialogue: A Language-Mediated Pipeline for Somatic Machine Translation"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/899189eec57051b14ddac9fb839c799c-Abstract-Creative_AI_Track.html",
+          "text": "8bit-GPT: Exploring Human-AI Interaction on Obsolete Macintosh Operating Systems"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/8a70a1b21bd31d2a68c87aed4f901036-Abstract-Creative_AI_Track.html",
+          "text": "MCP2OSC: Parametric Control by Natural Language"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/8eff16dbfaa68e04ef464438b65884f6-Abstract-Creative_AI_Track.html",
+          "text": "The Stochastic Parrot: a physical AI Cohabitant"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/919c7c8884daf4268bfe108c31d19784-Abstract-Creative_AI_Track.html",
+          "text": "CraftGraffiti: Exploring Human Identity with Custom Graffiti Art via Facial-Preserving Diffusion Models"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/91ae44cea7a1a23e24941b83d55427d7-Abstract-Creative_AI_Track.html",
+          "text": "Knolling Bot: Teaching Robots the Human Notion of Tidiness"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/9c6f6aefb8aa4feb0567e2d163c3ac27-Abstract-Creative_AI_Track.html",
+          "text": "Visualizing Our Changing Earth: A Creative AI Framework for Democratizing Environmental Storytelling Through Satellite Imagery"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/9cd4b3c9f2f1bb0208d36ca986f6f4f9-Abstract-Creative_AI_Track.html",
+          "text": "Plan Before You Write: Improve LLM writing by planning"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/9ff8d77c980a61f762a8026463267ecf-Abstract-Creative_AI_Track.html",
+          "text": "Echoes of Humanity: Exploring the Perceived Humanness of AI Music"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/a3386597cce5ce1b2fe0f5c5c5a531db-Abstract-Creative_AI_Track.html",
+          "text": "Panel-by-Panel Souls: A Performative Workflow for Expressive Faces in AI-Assisted Manga Creation"
+        }
+      ],
+      "graph_link_count": 1,
+      "sample_anchor_title": "ProGress: Structured Music Generation via Graph Diffusion and Hierarchical Music Analysis",
+      "sample": {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/d9dbd63fac1856eb10d14e22d6898205-Abstract-Creative_AI_Track.html",
+        "http": 200,
+        "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/d9dbd63fac1856eb10d14e22d6898205-Abstract-Creative_AI_Track.html",
+        "content_type": "text/html; charset=utf-8",
+        "bytes_read": 9554,
+        "truncated": false,
+        "title": "ProGress: Structured Music Generation via Graph Diffusion and Hierarchical Music Analysis",
+        "date": "2026-08-14",
+        "venue": "",
+        "text_excerpt": "ProGress: Structured Music Generation via Graph Diffusion and Hierarchical Music Analysis NeurIPS Proceedings Search ProGress: Structured Music Generation via Graph Diffusion and Hierarchical Music Analysis Stephen Ni-Hahn, Chao Yang, Mingchen Ma, Cynthia Rudin, Simon Mak, Yue Jiang Advances in Neur",
+        "seconds": 1.31,
+        "abstract_section_excerpt": " Artificial Intelligence (AI) for music generation is undergoing rapid developments, with recent symbolic models leveraging sophisticated deep learning and diffusion model algorithms. One drawback with existing models is that they lack structural cohesion, particularly on harmonic-melodic structure. Furthermore, such existing models are largely \"black-box\" in nature and are not musically interpretable. This paper addresses these limitations via a novel generative music framework that incorporates concepts of Schenkerian analysis (SchA) in concert with a diffusion modeling framework. This framework, which we call ProGress ([Pro]longation-enhanced Di[Gress]), adapts state-of-the-art deep models for discrete diffusion (in particular, the DiGress model of Vignac et al., 2023) for interpretable and structured music generation. Concretely, our contributions include 1) novel adaptations of the DiGress model for music generation, 2) a novel SchA-inspired phrase fusion methodology, and 3) a framework allowing users to control various aspects of the generation process to create coherent musica",
+        "citation_metadata": {
+          "citation_title": "ProGress: Structured Music Generation via Graph Diffusion and Hierarchical Music Analysis",
+          "citation_author": "Jiang, Yue",
+          "citation_journal_title": "Advances in Neural Information Processing Systems",
+          "citation_volume": "38",
+          "citation_firstpage": "1014",
+          "citation_lastpage": "1027",
+          "citation_pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/d9dbd63fac1856eb10d14e22d6898205-Paper-Creative_AI_Track.pdf",
+          "citation_publication_date": "2026-08-14"
+        },
+        "related_links": [
+          {
+            "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/d9dbd63fac1856eb10d14e22d6898205-Paper-Creative_AI_Track.pdf",
+            "text": "Paper"
+          }
+        ],
+        "pdf_probe": {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/d9dbd63fac1856eb10d14e22d6898205-Paper-Creative_AI_Track.pdf",
+          "http": 200,
+          "final_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/d9dbd63fac1856eb10d14e22d6898205-Paper-Creative_AI_Track.pdf",
+          "content_type": "application/pdf",
+          "bytes_read": 1024,
+          "pdf_signature": true,
+          "seconds": 1.36
+        }
+      }
+    },
+    {
+      "venue": "NeurIPS",
+      "year": 2026,
+      "homepage": "https://neurips.cc",
+      "attempts": [
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2026",
+          "http": 404,
+          "seconds": 1.36
+        },
+        {
+          "url": "https://neurips.cc/virtual/2026/papers.html",
+          "http": 403,
+          "seconds": 1.78
+        }
+      ]
+    },
+    {
+      "venue": "AAAI",
+      "year": 2025,
+      "homepage": "https://aaai.org",
+      "attempts": [
+        {
+          "url": "https://ojs.aaai.org/index.php/AAAI/issue/view/637",
+          "http": 200,
+          "final_url": "https://ojs.aaai.org/index.php/AAAI/issue/view/637",
+          "content_type": "text/html; charset=utf-8",
+          "bytes_read": 13379,
+          "truncated": false,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "Vol. 39 No. 14: AAAI-25 Technical Tracks 14 | Proceedings of the AAAI Conference on Artificial Intelligence Skip to main content Skip to main navigation menu Skip to site footer Open Menu Proceedings of the AAAI Conference on Artificial Intelligence Current Archives About About the Journal Submissio",
+          "seconds": 1.19
+        }
+      ],
+      "paper_link_count": 223,
+      "discovery_links": [
+        {
+          "url": "https://ojs.aaai.org/index.php/AAAI/index",
+          "text": "Proceedings of the AAAI Conference on Artificial Intelligence"
+        }
+      ],
+      "graph_link_count": 8,
+      "sample_anchor_title": "GNN-Transformer Task Planning Enhanced with Semantic-Driven Data Augmentation",
+      "sample": {
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/33598",
+        "http": 200,
+        "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/33598",
+        "content_type": "text/html; charset=utf-8",
+        "bytes_read": 4892,
+        "truncated": false,
+        "title": "GNN-Transformer Task Planning Enhanced with Semantic-Driven Data Augmentation",
+        "date": "",
+        "venue": "",
+        "text_excerpt": "GNN-Transformer Task Planning Enhanced with Semantic-Driven Data Augmentation | Proceedings of the AAAI Conference on Artificial Intelligence Skip to main content Skip to main navigation menu Skip to site footer Open Menu Proceedings of the AAAI Conference on Artificial Intelligence Current Archives",
+        "seconds": 1.09,
+        "abstract_section_excerpt": " Natural language is the most intuitive means for humans to interact with robots, making task planning based on natural language commands a longstanding area of research. Large language models (LLMs) have significantly improved task planning by enhancing understanding of language and common sense. However, current methods still face several challenges: they lack a deep understanding of physical environments, their performance relies heavily on prompt examples, LLMs are oversized and not customized for specific tasks, and the planning costs remain high. To overcome these issues, we introduce the GNN-Transformer Task Planner (GTTP), designed to predict task-level actions by leveraging the semantic environment and incorporating historical state data. The GTTP architecture is scalable through the use of GNN layers, while transformer layers facilitate understanding task progression. In addition, our model uses a text encoder to embed environments, allowing it to be trained on simulated datasets and applied directly in real-world scenarios. We also propose an automated data generation meth",
+        "citation_metadata": {
+          "citation_journal_title": "Proceedings of the AAAI Conference on Artificial Intelligence",
+          "citation_journal_abbrev": "AAAI",
+          "citation_issn": "2374-3468",
+          "citation_author": "Yoonseon Oh",
+          "citation_author_institution": "Hanyang University",
+          "citation_title": "GNN-Transformer Task Planning Enhanced with Semantic-Driven Data Augmentation",
+          "citation_language": "en",
+          "citation_date": "2025/04/11",
+          "citation_volume": "39",
+          "citation_issue": "14",
+          "citation_firstpage": "14585",
+          "citation_lastpage": "14593",
+          "citation_doi": "10.1609/aaai.v39i14.33598",
+          "citation_abstract_html_url": "https://ojs.aaai.org/index.php/AAAI/article/view/33598",
+          "citation_pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/33598/35753"
+        },
+        "related_links": [],
+        "pdf_probe": {
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/download/33598/35753",
+          "http": 200,
+          "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/33598/35753",
+          "content_type": "application/pdf",
+          "bytes_read": 1024,
+          "pdf_signature": true,
+          "seconds": 1.22
+        }
+      }
+    },
+    {
+      "venue": "AAAI",
+      "year": 2026,
+      "homepage": "https://aaai.org",
+      "attempts": [
+        {
+          "url": "https://ojs.aaai.org/index.php/AAAI/issue/view/703",
+          "http": 200,
+          "final_url": "https://ojs.aaai.org/index.php/AAAI/issue/view/703",
+          "content_type": "text/html; charset=utf-8",
+          "bytes_read": 14780,
+          "truncated": false,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "Vol. 40 No. 22: AAAI-26 Technical Tracks 22 | Proceedings of the AAAI Conference on Artificial Intelligence Skip to main content Skip to main navigation menu Skip to site footer Open Menu Proceedings of the AAAI Conference on Artificial Intelligence Current Archives About About the Journal Submissio",
+          "seconds": 1.34
+        }
+      ],
+      "paper_link_count": 237,
+      "discovery_links": [
+        {
+          "url": "https://ojs.aaai.org/index.php/AAAI/index",
+          "text": "Proceedings of the AAAI Conference on Artificial Intelligence"
+        }
+      ],
+      "graph_link_count": 1,
+      "sample_anchor_title": "GraphGrasp: Lightweight and Efficient Graph-Guided 6-DoF Robotic Grasp Pose Estimation Network",
+      "sample": {
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/38940",
+        "http": 200,
+        "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/38940",
+        "content_type": "text/html; charset=utf-8",
+        "bytes_read": 4631,
+        "truncated": false,
+        "title": "GraphGrasp: Lightweight and Efficient Graph-Guided 6-DoF Robotic Grasp Pose Estimation Network",
+        "date": "",
+        "venue": "",
+        "text_excerpt": "GraphGrasp: Lightweight and Efficient Graph-Guided 6-DoF Robotic Grasp Pose Estimation Network | Proceedings of the AAAI Conference on Artificial Intelligence Skip to main content Skip to main navigation menu Skip to site footer Open Menu Proceedings of the AAAI Conference on Artificial Intelligence",
+        "seconds": 1.08,
+        "abstract_section_excerpt": " 6-DoF object grasping is a crucial skill for embodied intelligent robots. Previous methods often rely on large-scale networks for feature extraction, followed by grasp pose prediction, which increases the network's parameter count and overlooks the geometric and graph features of the point cloud. To address these challenges, we propose GraphGrasp, a graph-guided 6-DoF grasping pose prediction method. It performs graph analysis from the perspectives of scene, object, and grasping graphs. First, we introduce a graph feature embedding method based on local-global features to model the scene graph effectively. Then, we use a graph transformer strategy to represent spatial relationships between objects in the object graph. Finally, we propose a multi-metric, multi-level grasp pose evaluation algorithm to predict and explore graspable points, enabling effective construction of grasp graphs and accurate grasp pose evaluation. We test GraphGrasp on the GraspNet-1Billion dataset, and the results show that, compared to previous methods, it achieves nearly the same performance with about 1/5 o",
+        "citation_metadata": {
+          "citation_journal_title": "Proceedings of the AAAI Conference on Artificial Intelligence",
+          "citation_journal_abbrev": "AAAI",
+          "citation_issn": "2374-3468",
+          "citation_author": "Yuanqing Xia",
+          "citation_author_institution": "Beijing Institute of Technology\nZhongyuan University of Technology",
+          "citation_title": "GraphGrasp: Lightweight and Efficient Graph-Guided 6-DoF Robotic Grasp Pose Estimation Network",
+          "citation_language": "en",
+          "citation_date": "2026/03/14",
+          "citation_volume": "40",
+          "citation_issue": "22",
+          "citation_firstpage": "18719",
+          "citation_lastpage": "18727",
+          "citation_doi": "10.1609/aaai.v40i22.38940",
+          "citation_abstract_html_url": "https://ojs.aaai.org/index.php/AAAI/article/view/38940",
+          "citation_pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/38940/42902"
+        },
+        "related_links": [],
+        "pdf_probe": {
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/download/38940/42902",
+          "http": 200,
+          "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/38940/42902",
+          "content_type": "application/pdf",
+          "bytes_read": 1024,
+          "pdf_signature": true,
+          "seconds": 1.17
+        }
+      }
+    },
+    {
+      "venue": "IJCAI",
+      "year": 2025,
+      "homepage": "https://ijcai.org",
+      "attempts": [
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/",
+          "http": 200,
+          "final_url": "https://www.ijcai.org/proceedings/2025/",
+          "content_type": "text/html; charset=utf-8",
+          "bytes_read": 464129,
+          "truncated": false,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence | IJCAI Navigation Home Conferences Future Conferences Past Conferences Proceedings IJCAI 2026 Proceedings All Proceedings Awards Trustees/officers Current trustees Trustees Elect IJCAI Secretariat IJCAI Spons",
+          "seconds": 1.8
+        }
+      ],
+      "paper_link_count": 2560,
+      "discovery_links": [
+        {
+          "url": "https://www.ijcai.org/all_proceedings",
+          "text": "Proceedings"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/",
+          "text": "IJCAI 2026 Proceedings"
+        },
+        {
+          "url": "https://www.ijcai.org/all_proceedings",
+          "text": "All Proceedings"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/1",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/2",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/3",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/4",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/5",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/6",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/7",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/8",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/9",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/10",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/11",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/12",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/13",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/14",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/15",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/16",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/17",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/18",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/19",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/20",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/21",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/22",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/23",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/24",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/25",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/26",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/27",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/28",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/29",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/30",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/31",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/32",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/33",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/34",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/35",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/36",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2025/37",
+          "text": "Details"
+        }
+      ],
+      "graph_link_count": 0,
+      "sample_anchor_title": "Details",
+      "sample": {
+        "url": "https://www.ijcai.org/proceedings/2025/1",
+        "http": 200,
+        "final_url": "https://www.ijcai.org/proceedings/2025/1",
+        "content_type": "text/html; charset=utf-8",
+        "bytes_read": 11841,
+        "truncated": false,
+        "title": "Synthesising Minimum Cost Dynamic Norms",
+        "date": "2025/09/16",
+        "venue": "Thirty-Fourth International Joint Conference on Artificial Intelligence",
+        "text_excerpt": "Synthesising Minimum Cost Dynamic Norms | IJCAI Navigation Home Conferences Future Conferences Past Conferences Proceedings IJCAI 2026 Proceedings All Proceedings Awards Trustees/officers Current trustees Trustees Elect IJCAI Secretariat IJCAI Sponsorship and Publicity Officers IJCAI Team Local Arra",
+        "seconds": 0.97,
+        "abstract_section_excerpt": "",
+        "citation_metadata": {
+          "citation_title": "Synthesising Minimum Cost Dynamic Norms",
+          "citation_language": "en",
+          "citation_abstract_html_url": "https://www.ijcai.org/proceedings/2025/1",
+          "citation_author": "Giuseppe Perelli",
+          "citation_conference_title": "Thirty-Fourth International Joint Conference on Artificial Intelligence",
+          "citation_publication_date": "2025/09/16",
+          "citation_online_date": "2025/09/16",
+          "citation_date": "2025/09/16",
+          "citation_firstpage": "3",
+          "citation_lastpage": "11",
+          "citation_pdf_url": "https://www.ijcai.org/proceedings/2025/0001.pdf",
+          "citation_issn": "1045-0823",
+          "citation_doi": "10.24963/ijcai.2025/1",
+          "citation_volume": "1"
+        },
+        "related_links": [
+          {
+            "url": "https://www.ijcai.org/proceedings/2025/0001.pdf",
+            "text": "PDF"
+          }
+        ],
+        "pdf_probe": {
+          "url": "https://www.ijcai.org/proceedings/2025/0001.pdf",
+          "http": 200,
+          "final_url": "https://www.ijcai.org/proceedings/2025/0001.pdf",
+          "content_type": "application/pdf",
+          "bytes_read": 1024,
+          "pdf_signature": true,
+          "seconds": 0.99
+        }
+      }
+    },
+    {
+      "venue": "IJCAI",
+      "year": 2026,
+      "homepage": "https://ijcai.org",
+      "attempts": [
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/",
+          "http": 200,
+          "final_url": "https://www.ijcai.org/proceedings/2026/",
+          "content_type": "text/html; charset=utf-8",
+          "bytes_read": 358585,
+          "truncated": false,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence | IJCAI Navigation Home Conferences Future Conferences Past Conferences Proceedings IJCAI 2026 Proceedings All Proceedings Awards Trustees/officers Current trustees Trustees Elect IJCAI Secretariat IJCAI Sponso",
+          "seconds": 1.77
+        }
+      ],
+      "paper_link_count": 1944,
+      "discovery_links": [
+        {
+          "url": "https://www.ijcai.org/all_proceedings",
+          "text": "Proceedings"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/",
+          "text": "IJCAI 2026 Proceedings"
+        },
+        {
+          "url": "https://www.ijcai.org/all_proceedings",
+          "text": "All Proceedings"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/1",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/2",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/3",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/4",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/5",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/6",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/7",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/9",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/10",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/11",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/12",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/13",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/14",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/15",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/16",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/17",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/18",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/19",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/20",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/21",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/22",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/23",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/24",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/25",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/26",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/27",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/28",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/29",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/30",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/31",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/32",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/33",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/34",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/35",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/36",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/37",
+          "text": "Details"
+        },
+        {
+          "url": "https://www.ijcai.org/proceedings/2026/38",
+          "text": "Details"
+        }
+      ],
+      "graph_link_count": 0,
+      "sample_anchor_title": "Details",
+      "sample": {
+        "url": "https://www.ijcai.org/proceedings/2026/1",
+        "http": 200,
+        "final_url": "https://www.ijcai.org/proceedings/2026/1",
+        "content_type": "text/html; charset=utf-8",
+        "bytes_read": 12719,
+        "truncated": false,
+        "title": "Semantically Labelled Automata for Multi-Task Reinforcement Learning with LTL Instructions",
+        "date": "2026/09/16",
+        "venue": "Thirty-Fifth International Joint Conference on Artificial Intelligence",
+        "text_excerpt": "Semantically Labelled Automata for Multi-Task Reinforcement Learning with LTL Instructions | IJCAI Navigation Home Conferences Future Conferences Past Conferences Proceedings IJCAI 2026 Proceedings All Proceedings Awards Trustees/officers Current trustees Trustees Elect IJCAI Secretariat IJCAI Spons",
+        "seconds": 1.02,
+        "abstract_section_excerpt": "",
+        "citation_metadata": {
+          "citation_title": "Semantically Labelled Automata for Multi-Task Reinforcement Learning with LTL Instructions",
+          "citation_language": "en",
+          "citation_abstract_html_url": "https://www.ijcai.org/proceedings/2026/1",
+          "citation_author": "Christoph Weinhuber",
+          "citation_conference_title": "Thirty-Fifth International Joint Conference on Artificial Intelligence",
+          "citation_publication_date": "2026/09/16",
+          "citation_online_date": "2026/09/16",
+          "citation_date": "2026/09/16",
+          "citation_firstpage": "3",
+          "citation_lastpage": "11",
+          "citation_pdf_url": "https://www.ijcai.org/proceedings/2026/0001.pdf",
+          "citation_issn": "1045-0823",
+          "citation_doi": "10.24963/ijcai.2026/1",
+          "citation_volume": "1"
+        },
+        "related_links": [
+          {
+            "url": "https://www.ijcai.org/proceedings/2026/0001.pdf",
+            "text": "PDF"
+          }
+        ],
+        "pdf_probe": {
+          "url": "https://www.ijcai.org/proceedings/2026/0001.pdf",
+          "http": 200,
+          "final_url": "https://www.ijcai.org/proceedings/2026/0001.pdf",
+          "content_type": "application/pdf",
+          "bytes_read": 1024,
+          "pdf_signature": true,
+          "seconds": 0.95
+        }
+      }
+    },
+    {
+      "venue": "KDD",
+      "year": 2025,
+      "homepage": "https://kdd.org",
+      "attempts": [
+        {
+          "url": "https://kdd2025.kdd.org/kdd2025/research-track-papers-2/",
+          "http": 404,
+          "seconds": 2.67
+        }
+      ]
+    },
+    {
+      "venue": "KDD",
+      "year": 2026,
+      "homepage": "https://kdd.org",
+      "attempts": [
+        {
+          "url": "https://kdd2026.kdd.org/papers/",
+          "http": 200,
+          "final_url": "https://kdd2026.kdd.org/papers/",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes_read": 903309,
+          "truncated": false,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "Papers – KDD 2026 Skip to content MENU MENU Program Schedule at a Glance Full Program Papers Keynote Speakers Applied Data Science Invited Speakers Workshops Tutorials Korea Day Special Days PhD Consortium Undergraduate Consortium Author Presentation Instructions KDD Best Reviewers Photo Gallery Pho",
+          "seconds": 2.34
+        }
+      ],
+      "paper_link_count": 0,
+      "discovery_links": [
+        {
+          "url": "https://kdd2026.kdd.org/",
+          "text": ""
+        },
+        {
+          "url": "https://kdd2026.kdd.org/schedule-at-a-glance/",
+          "text": "Schedule at a Glance"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/full-program/",
+          "text": "Full Program"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/papers/",
+          "text": "Papers"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/keynote-speakers/",
+          "text": "Keynote Speakers"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/applied-data-science-invited-speakers/",
+          "text": "Applied Data Science Invited Speakers"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/workshops/",
+          "text": "Workshops"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/tutorials/",
+          "text": "Tutorials"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/korea-day/",
+          "text": "Korea Day"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/special-days/",
+          "text": "Special Days"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/phd-consortium/",
+          "text": "PhD Consortium"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/undergraduate-consortium-2/",
+          "text": "Undergraduate Consortium"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/author-presentation-instructions/",
+          "text": "Author Presentation Instructions"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/kdd-best-reviewers/",
+          "text": "KDD Best Reviewers"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/photo-gallery/",
+          "text": "Photo Gallery"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/photo-gallery-supplement/",
+          "text": "Photo Gallery: Supplement"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/registration-urgent-bulletin/",
+          "text": "Registration: Urgent Bulletin"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/hotel-information/",
+          "text": "Hotel Information: Official"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/hotel-information-additional/",
+          "text": "Hotel Information: Additional"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/food-at-the-conference/",
+          "text": "Food at the Conference"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/k-hospitality/",
+          "text": "K-Hospitality"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/childcare/",
+          "text": "Childcare"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/jeju-arrival-guid/",
+          "text": "Visa Information & Jeju Travel"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/guide-to-icc-jeju-seoul/",
+          "text": "Guide to ICC, Jeju & Seoul"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/no-show-presentation-policy/",
+          "text": "No-Show Presentation Policy"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/waitlist-faq/",
+          "text": "Waitlist FAQ"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/research-track-call-for-papers/",
+          "text": "Research Track: Call for Papers"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/applied-data-science-ads-track-call-for-papers/",
+          "text": "Applied Data Science (ADS) Track: Call for Papers"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/datasets-and-benchmarks-track-call-for-papers/",
+          "text": "Datasets and Benchmarks Track: Call for Papers"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/ai4sciences-track-call-for-papers/",
+          "text": "AI for Sciences Track: Call for Papers"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/kdd-2026-blue-sky-ideas-track-call-for-papers/",
+          "text": "Blue Sky Ideas Track: Call for Papers"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/call-for-lecture-style-tutorials/",
+          "text": "Call for Lecture-Style Tutorials"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/call-for-hands-on-tutorials/",
+          "text": "Call for Hands-On Tutorials"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/call-for-workshop-proposals/",
+          "text": "Call for Workshop Proposals"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/call-for-kdd-cup-proposals/",
+          "text": "Call for KDD Cup Proposals"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/undergraduate-consortium-call-for-submission/",
+          "text": "Undergraduate Consortium: Call for Submissions"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/call-for-ph-d-consortium-contributions/",
+          "text": "Call for Ph.D. Consortium Contributions"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/call-for-artifact-badging/",
+          "text": "Call for Artifact Badging"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/call-for-reviewers/",
+          "text": "Call for Reviewers"
+        },
+        {
+          "url": "https://kdd2026.kdd.org/call-for-nominations-acm-sigkdd-2026-innovation-service-and-rising-star-awards/",
+          "text": "Call for Nominations: ACM SIGKDD 2026 Innovation, Service, and Rising Star Awards"
+        }
+      ]
+    },
+    {
+      "venue": "WWW",
+      "year": 2025,
+      "homepage": "https://www.thewebconf.org",
+      "attempts": [
+        {
+          "url": "https://www2025.thewebconf.org/",
+          "error": "URLError",
+          "seconds": 2.75
+        }
+      ]
+    },
+    {
+      "venue": "WWW",
+      "year": 2026,
+      "homepage": "https://www.thewebconf.org",
+      "attempts": [
+        {
+          "url": "https://www2026.thewebconf.org/",
+          "http": 200,
+          "final_url": "https://www2026.thewebconf.org/",
+          "content_type": "text/html; charset=utf-8",
+          "bytes_read": 12375,
+          "truncated": false,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "The Web Conference 2026 - Dubai, UAE THE ACM WEB CONFERENCE 2026 Dubai, United Arab Emirates June 29-July 3, 2026 Conference updates Best paper award winner From Retrieval to Generation: Unifying External and Parametric Knowledge for Medical Question Answering Lei Li, Xiao Zhou, Yingying Zhang and X",
+          "seconds": 1.0
+        },
+        {
+          "url": "https://dl.acm.org/doi/proceedings/10.1145/3774904",
+          "http": 403,
+          "seconds": 0.97
+        }
+      ],
+      "paper_link_count": 0,
+      "discovery_links": [
+        {
+          "url": "https://dl.acm.org/doi/proceedings/10.1145/3774904",
+          "text": "Conference Proceedings"
+        },
+        {
+          "url": "https://dl.acm.org/doi/proceedings/10.1145/3774905",
+          "text": "Conference Companion Proceedings"
+        }
+      ]
+    },
+    {
+      "venue": "SIGIR",
+      "year": 2025,
+      "homepage": "https://sigir.org",
+      "attempts": [
+        {
+          "url": "https://sigir2025.dei.unipd.it/proceedings.html",
+          "http": 200,
+          "final_url": "https://sigir2025.dei.unipd.it/proceedings.html",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes_read": 354304,
+          "truncated": false,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "SIGIR '25: Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval Home Submit Call for Full Papers Call for Short Papers Call for Resource & Reproducibility Papers Call for Perspectives Papers Call for Low Resource Environments Call for Demons",
+          "seconds": 2.24
+        }
+      ],
+      "paper_link_count": 100,
+      "discovery_links": [
+        {
+          "url": "https://sigir2025.dei.unipd.it/call-full-papers.html",
+          "text": "Call for Full Papers"
+        },
+        {
+          "url": "https://sigir2025.dei.unipd.it/call-short-papers.html",
+          "text": "Call for Short Papers"
+        },
+        {
+          "url": "https://sigir2025.dei.unipd.it/call-res-repro-papers.html",
+          "text": "Call for Resource & Reproducibility Papers"
+        },
+        {
+          "url": "https://sigir2025.dei.unipd.it/call-perspectives-papers.html",
+          "text": "Call for Perspectives Papers"
+        },
+        {
+          "url": "https://sigir2025.dei.unipd.it/call-demo-papers.html",
+          "text": "Call for Demonstration Papers"
+        },
+        {
+          "url": "https://sigir2025.dei.unipd.it/call-doctoral-consortium.html",
+          "text": "Call for Doctoral Consortium Papers"
+        },
+        {
+          "url": "https://sigir2025.dei.unipd.it/accepted-papers.html",
+          "text": "Accepted Papers"
+        },
+        {
+          "url": "https://sigir2025.dei.unipd.it/proceedings.html",
+          "text": "Proceedings"
+        },
+        {
+          "url": "https://ictir2025.cs.umass.edu/",
+          "text": "ICTIR"
+        },
+        {
+          "url": "https://www.google.com/url?q=https://dl.acm.org/doi/proceedings/10.1145/3726302&source=gmail-imap&ust=1753063686000000&usg=AOvVaw3bD4KIFaOCod6bAPPew9ZC",
+          "text": "Full Citation in the ACM Digital Library"
+        },
+        {
+          "url": "https://www.google.com/url?q=https://dl.acm.org/doi/10.1145/3726302.3730048&source=gmail-imap&ust=1753063686000000&usg=AOvVaw0z7sWmLp3-8stkJ0fETGrT",
+          "text": "OmniNER2025: Diverse and Comprehensive Fine-Grained NER Dataset and Benchmark for Chinese"
+        },
+        {
+          "url": "https://www.linkedin.com/company/sigir-2025/",
+          "text": "LinkedIn"
+        },
+        {
+          "url": "mailto:sigir2025-info@dei.unipd.it",
+          "text": "sigir2025-info@dei.unipd.it"
+        }
+      ],
+      "graph_link_count": 6,
+      "sample_anchor_title": "MSCRS: Multi-modal Semantic Graph Prompt Learning Framework for Conversational Recommender Systems",
+      "sample": {
+        "url": "https://www.google.com/url?q=https://dl.acm.org/doi/10.1145/3726302.3730040&source=gmail-imap&ust=1753063686000000&usg=AOvVaw04Y5VHXBckYHNbU3zK3JTK",
+        "http": 200,
+        "final_url": "https://www.google.com/url?q=https://dl.acm.org/doi/10.1145/3726302.3730040&source=gmail-imap&ust=1753063686000000&usg=AOvVaw04Y5VHXBckYHNbU3zK3JTK",
+        "content_type": "text/html; charset=ISO-8859-1",
+        "bytes_read": 1549,
+        "truncated": false,
+        "title": "",
+        "date": "",
+        "venue": "",
+        "text_excerpt": "Redirect Notice Redirect Notice The previous page is sending you to https://dl.acm.org/doi/10.1145/3726302.3730040 . If you do not want to visit that page, you can return to the previous page .",
+        "seconds": 1.01,
+        "abstract_section_excerpt": "",
+        "citation_metadata": {},
+        "related_links": []
+      }
+    },
+    {
+      "venue": "SIGIR",
+      "year": 2026,
+      "homepage": "https://sigir.org",
+      "attempts": [
+        {
+          "url": "https://sigir2026.org/",
+          "http": 200,
+          "final_url": "https://sigir2026.org/en-AU",
+          "content_type": "text/html; charset=utf-8",
+          "bytes_read": 1067383,
+          "truncated": false,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "SIGIR 2026 - 49th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+          "seconds": 3.27
+        }
+      ],
+      "paper_link_count": 0,
+      "discovery_links": []
+    },
+    {
+      "venue": "ACL",
+      "year": 2025,
+      "homepage": "https://aclanthology.org",
+      "attempts": [
+        {
+          "url": "https://aclanthology.org/events/acl-2025/",
+          "http": 200,
+          "final_url": "https://aclanthology.org/events/acl-2025/",
+          "content_type": "text/html; charset=utf-8",
+          "bytes_read": 6000001,
+          "truncated": true,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "63rd Annual Meeting of the Association for Computational Linguistics - ACL Anthology ACL Anthology About Announcements Communication channels Related work Copyright Credits Volunteer Development Feedback Using Author directory Citing papers Links in the Anthology Data access All FAQs Details Antholo",
+          "seconds": 3.09
+        }
+      ],
+      "paper_link_count": 1701,
+      "discovery_links": [
+        {
+          "url": "https://aclanthology.org/faq/bib/",
+          "text": "Citing papers"
+        },
+        {
+          "url": "https://2025.aclweb.org",
+          "text": "Website"
+        },
+        {
+          "url": "https://aclanthology.org/2025.acl.handbook.pdf",
+          "text": "Conference handbook"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025acl-long",
+          "text": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025acl-short",
+          "text": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025acl-demo",
+          "text": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025acl-srw",
+          "text": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 4: Student Research Workshop)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025acl-tutorials",
+          "text": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 5: Tutorial Abstracts)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025acl-industry",
+          "text": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 6: Industry Track)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025findings-acl",
+          "text": "Findings of the Association for Computational Linguistics: ACL 2025"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025africanlp-1",
+          "text": "Proceedings of the Sixth Workshop on African Natural Language Processing (AfricaNLP 2025)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025analogyangle-1",
+          "text": "Proceedings of the 2nd Workshop on Analogical Abstraction in Cognition, Perception, and Language (Analogy-Angle II)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025argmining-1",
+          "text": "Proceedings of the 12th Argument mining Workshop"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025bea-1",
+          "text": "Proceedings of the 20th Workshop on Innovative Use of NLP for Building Educational Applications (BEA 2025)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025bionlp-1",
+          "text": "Proceedings of the 24th Workshop on Biomedical Language Processing"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025bionlp-share",
+          "text": "Proceedings of the 24th Workshop on Biomedical Language Processing (Shared Tasks)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025bsnlp-1",
+          "text": "Proceedings of the 10th Workshop on Slavic Natural Language Processing (Slavic NLP 2025)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025climatenlp-1",
+          "text": "Proceedings of the 2nd Workshop on Natural Language Processing Meets Climate Change (ClimateNLP 2025)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025conll-1",
+          "text": "Proceedings of the 29th Conference on Computational Natural Language Learning"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025fever-1",
+          "text": "Proceedings of the Eighth Fact Extraction and VERification Workshop (FEVER)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025fieldmatters-1",
+          "text": "Proceedings of the Fourth Workshop on NLP Applications to Field Linguistics"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025gebnlp-1",
+          "text": "Proceedings of the 6th Workshop on Gender Bias in Natural Language Processing (GeBNLP)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025gem-1",
+          "text": "Proceedings of the Fourth Workshop on Generation, Evaluation and Metrics (GEM²)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025iwslt-1",
+          "text": "Proceedings of the 22nd International Conference on Spoken Language Translation (IWSLT 2025)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025knowllm-1",
+          "text": "Proceedings of the 3rd Workshop on Towards Knowledgeable Foundation Models (KnowFM)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025l2m2-1",
+          "text": "Proceedings of the First Workshop on Large Language Model Memorization (L2M2)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025law-1",
+          "text": "Proceedings of the 19th Linguistic Annotation Workshop (LAW-XIX-2025)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025llmsec-1",
+          "text": "Proceedings of the The First Workshop on LLM Security (LLMSEC)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025magmar-1",
+          "text": "Proceedings of the 1st Workshop on Multimodal Augmented Generation via Multimodal Retrieval (MAGMaR 2025)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025nlp4pi-1",
+          "text": "Proceedings of the Fourth Workshop on NLP for Positive Impact (NLP4PI)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025realm-1",
+          "text": "Proceedings of the 1st Workshop for Research on Agent Language Models (REALM 2025)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025sdp-1",
+          "text": "Proceedings of the Fifth Workshop on Scholarly Document Processing (SDP 2025)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025semeval-1",
+          "text": "Proceedings of the 19th International Workshop on Semantic Evaluation (SemEval-2025)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025sicon-1",
+          "text": "Proceedings of the Third Workshop on Social Influence in Conversations (SICon 2025)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025sigtyp-1",
+          "text": "Proceedings of the 7th Workshop on Research in Computational Linguistic Typology and Multilingual NLP"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025trl-1",
+          "text": "Proceedings of the 4th Table Representation Learning Workshop"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025unlp-1",
+          "text": "Proceedings of the Fourth Ukrainian Natural Language Processing Workshop (UNLP 2025)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025wikinlp-1",
+          "text": "Proceedings of the 2nd Workshop on Advancing Natural Language Processing for Wikipedia (WikiNLP 2025)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025woah-1",
+          "text": "Proceedings of the The 9th Workshop on Online Abuse and Harms (WOAH)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2025/#2025xllm-1",
+          "text": "Proceedings of the 1st Joint Workshop on Large Language Models and Structure Modeling (XLLM 2025)"
+        }
+      ],
+      "graph_link_count": 47,
+      "sample_anchor_title": "GraphNarrator: Generating Textual Explanations for Graph Neural Networks",
+      "sample": {
+        "url": "https://aclanthology.org/2025.acl-long.2/",
+        "http": 200,
+        "final_url": "https://aclanthology.org/2025.acl-long.2/",
+        "content_type": "text/html; charset=utf-8",
+        "bytes_read": 44513,
+        "truncated": false,
+        "title": "GraphNarrator: Generating Textual Explanations for Graph Neural Networks",
+        "date": "2025/7",
+        "venue": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "text_excerpt": "GraphNarrator: Generating Textual Explanations for Graph Neural Networks - ACL Anthology ACL Anthology About Announcements Communication channels Related work Copyright Credits Volunteer Development Feedback Using Author directory Citing papers Links in the Anthology Data access All FAQs Details Ant",
+        "seconds": 1.48,
+        "abstract_section_excerpt": "> <identifier type=\"citekey\">pan-etal-2025-graphnarrator</identifier> <identifier type=\"doi\">10.18653/v1/2025.acl-long.2</identifier> <location> <url>https://aclanthology.org/2025.acl-long.2/</url> </location> <part> <date>2025-07</date> <extent unit=\"page\"> <start>23</start> <end>42</end> </extent> </part> </mods> </modsCollection> Download as File Copy to Clipboard %0 Conference Proceedings %T GraphNarrator: Generating Textual Explanations for Graph Neural Networks %A Pan, Bo %A Xiong, Zhen %A Wu, Guanchen %A Zhang, Zheng %A Zhang, Yifei %A Hu, Yuntong %A Zhao, Liang %Y Che, Wanxiang %Y Nabende, Joyce %Y Shutova, Ekaterina %Y Pilehvar, Mohammad Taher %S Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) %D 2025 %8 July %I Association for Computational Linguistics %C Vienna, Austria %@ 979-8-89176-251-0 %F pan-etal-2025-graphnarrator %X Graph representation learning has garnered significant attention due to its broad applications in various domains, such as recommendation systems and social network analysis. Despite advanc",
+        "citation_metadata": {
+          "citation_title": "GraphNarrator: Generating Textual Explanations for Graph Neural Networks",
+          "citation_author": "Liang Zhao (赵亮)",
+          "citation_conference_title": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+          "citation_publication_date": "2025/7",
+          "citation_pdf_url": "https://aclanthology.org/2025.acl-long.2.pdf",
+          "citation_firstpage": "23",
+          "citation_lastpage": "42",
+          "citation_doi": "10.18653/v1/2025.acl-long.2"
+        },
+        "related_links": [
+          {
+            "url": "https://aclanthology.org/2025.acl-long.2.pdf",
+            "text": "GraphNarrator: Generating Textual Explanations for Graph Neural Networks"
+          },
+          {
+            "url": "https://aclanthology.org/2025.acl-long.2.pdf",
+            "text": "https://aclanthology.org/2025.acl-long.2.pdf"
+          },
+          {
+            "url": "https://aclanthology.org/2025.acl-long.2.pdf",
+            "text": "PDF"
+          }
+        ],
+        "pdf_probe": {
+          "url": "https://aclanthology.org/2025.acl-long.2.pdf",
+          "http": 200,
+          "final_url": "https://aclanthology.org/2025.acl-long.2.pdf",
+          "content_type": "application/pdf",
+          "bytes_read": 1024,
+          "pdf_signature": true,
+          "seconds": 1.31
+        }
+      }
+    },
+    {
+      "venue": "ACL",
+      "year": 2026,
+      "homepage": "https://aclanthology.org",
+      "attempts": [
+        {
+          "url": "https://aclanthology.org/events/acl-2026/",
+          "http": 200,
+          "final_url": "https://aclanthology.org/events/acl-2026/",
+          "content_type": "text/html; charset=utf-8",
+          "bytes_read": 6000001,
+          "truncated": true,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "64th Annual Meeting of the Association for Computational Linguistics - ACL Anthology ACL Anthology About Announcements Communication channels Related work Copyright Credits Volunteer Development Feedback Using Author directory Citing papers Links in the Anthology Data access All FAQs Details Antholo",
+          "seconds": 3.88
+        }
+      ],
+      "paper_link_count": 1937,
+      "discovery_links": [
+        {
+          "url": "https://aclanthology.org/faq/bib/",
+          "text": "Citing papers"
+        },
+        {
+          "url": "https://2026.aclweb.org",
+          "text": "Website"
+        },
+        {
+          "url": "https://aclanthology.org/2026.acl.handbook.pdf",
+          "text": "Conference handbook"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026acl-long",
+          "text": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026acl-short",
+          "text": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026acl-demo",
+          "text": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026acl-srw",
+          "text": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 4: Student Research Workshop)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026acl-tutorials",
+          "text": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 5: Tutorial Abstracts)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026acl-industry",
+          "text": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 6: Industry Track)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026findings-acl",
+          "text": "Findings of the Association for Computational Linguistics: ACL 2026"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026alvr-main",
+          "text": "Proceedings of the 4th Workshop on Advances in Language and Vision Research (ALVR)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026americasnlp-6",
+          "text": "Proceedings of the Sixth Workshop on NLP for Indigenous Languages of the Americas (AmericasNLP)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026argmining-1",
+          "text": "Proceedings of the 13th Workshop on Argument Mining and Reasoning"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026bea-1",
+          "text": "Proceedings of the 21st Workshop on Innovative Use of NLP for Building Educational Applications (BEA 2026)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026beyondalignment-1",
+          "text": "Proceedings of Beyond Alignment: Transdisciplinary Conversations on Human-AI Futures"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026bigpicture-main",
+          "text": "Proceedings of The Big Picture v2: Crafting a Research Narrative"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026bionlp-1",
+          "text": "BioNLP 2026"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026bionlp-2",
+          "text": "Proceedings of the BioNLP 2026 (Shared Tasks)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026c3nlp-1",
+          "text": "Proceedings of the 4th Workshop on Cross-Cultural Considerations in NLP (C3NLP 2026)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026cdl-1",
+          "text": "Proceedings of the 1st Workshop on Computational Developmental Linguistics (CDL)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026chum-1",
+          "text": "Proceedings of the 2nd Workshop on Computational Humor (CHum 2026)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026clpsych-1",
+          "text": "Proceedings of the 11th Workshop on Computational Linguistics and Clinical Psychology (CLPsych 2026)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026codi-1",
+          "text": "Proceedings of the 2nd Joint Workshop on Computational Approaches to Discourse, Context and Document-Level Inferences and Computational Mode"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026computel-1",
+          "text": "Proceedings of the Ninth Workshop on the Use of Computational Methods in the Study of Endangered Languages (ComputEL-9)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026conll-main",
+          "text": "Proceedings of the 30th Conference on Computational Natural Language Learning"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026customnlp4u-1",
+          "text": "Proceedings of the Second Workshop on Customizable NLP: Progress and Challenges in Customizing NLP for a Domain, Application, Group, or Indi"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026dravidianlangtech-1",
+          "text": "Proceedings of the Sixth Workshop on Speech, Vision, and Language Technologies for Dravidian Languages"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026eeuca-1",
+          "text": "Proceedings of the 9th Workshop on Event Extraction and Understanding: Challenges and Applications (EEUCA 2026)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026evaleval-1",
+          "text": "Proceedings of the Workshop on Evaluating Evaluations (EvalEval)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026gem-main",
+          "text": "Proceedings of the Fifth Workshop on Generation, Evaluation and Metrics (GEM)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026iwslt-1",
+          "text": "Proceedings of the 23rd International Conference on Spoken Language Translation (IWSLT 2026)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026knowfm-1",
+          "text": "Proceedings of the 4th Workshop on Towards Knowledgeable Foundation Models (KnowFM 2026)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026law-main",
+          "text": "Proceedings of the 20th Linguistic Annotation Workshop (LAW XX)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026ltedi-1",
+          "text": "Proceedings of the Sixth Workshop on Language Technology for Equality, Diversity, Inclusion"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026magmar-main",
+          "text": "Proceedings of the 2nd Workshop on Multimodal Augmented Generation via Multimodal Retrieval (MAGMaR 2026)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026mellm-1",
+          "text": "Proceedings of the 1st Workshop on Multilinguality in the Era of Large Language Models (MeLLM 2026)"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026nlp4dh-1",
+          "text": "Proceedings of the 6th International Conference on Natural Language Processing for the Digital Humanities"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026nlpcss-1",
+          "text": "Proceedings of the Seventh Workshop on Natural Language Processing and Computational Social Science"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026privatenlp-main",
+          "text": "Proceedings of the Seventh Workshop on Privacy in Natural Language Processing"
+        },
+        {
+          "url": "https://aclanthology.org/events/acl-2026/#2026rag4reports-1",
+          "text": "Proceedings of the 1st Workshop on Multilingual Report Generation via Retrieval Augmented Generation (RAG4Reports 2026)"
+        }
+      ],
+      "graph_link_count": 61,
+      "sample_anchor_title": "CAPruner: Conceptual-Adjacent Scene Graph Pruner for Enhancing 3D Spatial Reasoning of Large Language Models",
+      "sample": {
+        "url": "https://aclanthology.org/2026.acl-long.23/",
+        "http": 200,
+        "final_url": "https://aclanthology.org/2026.acl-long.23/",
+        "content_type": "text/html; charset=utf-8",
+        "bytes_read": 45124,
+        "truncated": false,
+        "title": "CAPruner: Conceptual-Adjacent Scene Graph Pruner for Enhancing 3D Spatial Reasoning of Large Language Models",
+        "date": "2026/7",
+        "venue": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "text_excerpt": "CAPruner: Conceptual-Adjacent Scene Graph Pruner for Enhancing 3D Spatial Reasoning of Large Language Models - ACL Anthology ACL Anthology About Announcements Communication channels Related work Copyright Credits Volunteer Development Feedback Using Author directory Citing papers Links in the Anthol",
+        "seconds": 1.41,
+        "abstract_section_excerpt": "> <identifier type=\"citekey\">zhou-etal-2026-capruner</identifier> <identifier type=\"doi\">10.18653/v1/2026.acl-long.23</identifier> <location> <url>https://aclanthology.org/2026.acl-long.23/</url> </location> <part> <date>2026-07</date> <extent unit=\"page\"> <start>555</start> <end>567</end> </extent> </part> </mods> </modsCollection> Download as File Copy to Clipboard %0 Conference Proceedings %T CAPruner: Conceptual-Adjacent Scene Graph Pruner for Enhancing 3D Spatial Reasoning of Large Language Models %A Zhou, Shengli %A Wang, Xiangchen %A Chen, Guanhua %A Zheng, Feng %Y Liakata, Maria %Y Moreira, Viviane P. %Y Zhang, Jiajun %Y Jurgens, David %S Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) %D 2026 %8 July %I Association for Computational Linguistics %C San Diego, California, United States %@ 979-8-89176-390-6 %F zhou-etal-2026-capruner %X Large language models (LLMs) have recently been applied to 3D vision-language (3D-VL) tasks, which require spatial reasoning to identify target objects relative to anchors. Scene gr",
+        "citation_metadata": {
+          "citation_title": "CAPruner: Conceptual-Adjacent Scene Graph Pruner for Enhancing 3D Spatial Reasoning of Large Language Models",
+          "citation_author": "Feng Zheng",
+          "citation_conference_title": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+          "citation_publication_date": "2026/7",
+          "citation_pdf_url": "https://aclanthology.org/2026.acl-long.23.pdf",
+          "citation_firstpage": "555",
+          "citation_lastpage": "567",
+          "citation_doi": "10.18653/v1/2026.acl-long.23"
+        },
+        "related_links": [
+          {
+            "url": "https://aclanthology.org/2026.acl-long.23.pdf",
+            "text": "CAPruner: Conceptual-Adjacent Scene Graph Pruner for Enhancing 3D Spatial Reasoning of Large Languag"
+          },
+          {
+            "url": "https://aclanthology.org/2026.acl-long.23.pdf",
+            "text": "https://aclanthology.org/2026.acl-long.23.pdf"
+          },
+          {
+            "url": "https://aclanthology.org/attachments/2026.acl-long.23.checklist.pdf",
+            "text": "2026.acl-long.23.checklist.pdf"
+          },
+          {
+            "url": "https://aclanthology.org/2026.acl-long.23.pdf",
+            "text": "PDF"
+          },
+          {
+            "url": "https://aclanthology.org/attachments/2026.acl-long.23.checklist.pdf",
+            "text": "Checklist"
+          }
+        ],
+        "pdf_probe": {
+          "url": "https://aclanthology.org/2026.acl-long.23.pdf",
+          "http": 200,
+          "final_url": "https://aclanthology.org/2026.acl-long.23.pdf",
+          "content_type": "application/pdf",
+          "bytes_read": 1024,
+          "pdf_signature": true,
+          "seconds": 1.28
+        }
+      }
+    },
+    {
+      "venue": "CVPR",
+      "year": 2025,
+      "homepage": "https://cvpr.thecvf.com",
+      "attempts": [
+        {
+          "url": "https://openaccess.thecvf.com/CVPR2025?day=all",
+          "http": 200,
+          "final_url": "https://openaccess.thecvf.com/CVPR2025?day=all",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes_read": 6000001,
+          "truncated": true,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "CVPR 2025 Open Access Repository CVPR 2025 open access These CVPR 2025 papers are the Open Access versions, provided by the Computer Vision Foundation. Except for the watermark, they are identical to the accepted versions; the final published version of the proceedings is available on IEEE Xplore. T",
+          "seconds": 3.56
+        }
+      ],
+      "paper_link_count": 4107,
+      "discovery_links": [
+        {
+          "url": "https://cvpr.thecvf.com/",
+          "text": "CVPR 2025"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/CVPR2025",
+          "text": "Back"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Xiao_Deterministic_Image-to-Image_Translation_via_Denoising_Brownian_Bridge_Models_with_Dual_CVPR_2025_paper.html",
+          "text": "Deterministic Image-to-Image Translation via Denoising Brownian Bridge Models with Dual Approximators"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Xiao_Deterministic_Image-to-Image_Translation_via_Denoising_Brownian_Bridge_Models_with_Dual_CVPR_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Ahmed_Towards_Source-Free_Machine_Unlearning_CVPR_2025_paper.html",
+          "text": "Towards Source-Free Machine Unlearning"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Ahmed_Towards_Source-Free_Machine_Unlearning_CVPR_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Ahmed_Towards_Source-Free_Machine_CVPR_2025_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Yao_Uni4D_Unifying_Visual_Foundation_Models_for_4D_Modeling_from_a_CVPR_2025_paper.html",
+          "text": "Uni4D: Unifying Visual Foundation Models for 4D Modeling from a Single Video"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Yao_Uni4D_Unifying_Visual_Foundation_Models_for_4D_Modeling_from_a_CVPR_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Yao_Uni4D_Unifying_Visual_CVPR_2025_supplemental.zip",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Lee_DynScene_Scalable_Generation_of_Dynamic_Robotic_Manipulation_Scenes_for_Embodied_CVPR_2025_paper.html",
+          "text": "DynScene: Scalable Generation of Dynamic Robotic Manipulation Scenes for Embodied AI"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Lee_DynScene_Scalable_Generation_of_Dynamic_Robotic_Manipulation_Scenes_for_Embodied_CVPR_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Lee_DynScene_Scalable_Generation_CVPR_2025_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Rosu_DiffLocks_Generating_3D_Hair_from_a_Single_Image_using_Diffusion_CVPR_2025_paper.html",
+          "text": "DiffLocks: Generating 3D Hair from a Single Image using Diffusion Models"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Rosu_DiffLocks_Generating_3D_Hair_from_a_Single_Image_using_Diffusion_CVPR_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Rosu_DiffLocks_Generating_3D_CVPR_2025_supplemental.zip",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Liu_Hyperbolic_Category_Discovery_CVPR_2025_paper.html",
+          "text": "Hyperbolic Category Discovery"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_Hyperbolic_Category_Discovery_CVPR_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Liu_Hyperbolic_Category_Discovery_CVPR_2025_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Chen_The_Language_of_Motion_Unifying_Verbal_and_Non-verbal_Language_of_CVPR_2025_paper.html",
+          "text": "The Language of Motion: Unifying Verbal and Non-verbal Language of 3D Human Motion"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Chen_The_Language_of_Motion_Unifying_Verbal_and_Non-verbal_Language_of_CVPR_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Chen_The_Language_of_CVPR_2025_supplemental.zip",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Nguyen_CALICO_Part-Focused_Semantic_Co-Segmentation_with_Large_Vision-Language_Models_CVPR_2025_paper.html",
+          "text": "CALICO: Part-Focused Semantic Co-Segmentation with Large Vision-Language Models"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Nguyen_CALICO_Part-Focused_Semantic_Co-Segmentation_with_Large_Vision-Language_Models_CVPR_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Nguyen_CALICO_Part-Focused_Semantic_CVPR_2025_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Yan_Task_Preference_Optimization_Improving_Multimodal_Large_Language_Models_with_Vision_CVPR_2025_paper.html",
+          "text": "Task Preference Optimization: Improving Multimodal Large Language Models with Vision Task Alignment"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Yan_Task_Preference_Optimization_Improving_Multimodal_Large_Language_Models_with_Vision_CVPR_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Yan_Task_Preference_Optimization_CVPR_2025_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Chen_Cross-modal_Causal_Relation_Alignment_for_Video_Question_Grounding_CVPR_2025_paper.html",
+          "text": "Cross-modal Causal Relation Alignment for Video Question Grounding"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Chen_Cross-modal_Causal_Relation_Alignment_for_Video_Question_Grounding_CVPR_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Chen_Cross-modal_Causal_Relation_CVPR_2025_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Deng_Words_or_Vision_Do_Vision-Language_Models_Have_Blind_Faith_in_CVPR_2025_paper.html",
+          "text": "Words or Vision: Do Vision-Language Models Have Blind Faith in Text?"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Deng_Words_or_Vision_Do_Vision-Language_Models_Have_Blind_Faith_in_CVPR_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Deng_Words_or_Vision_CVPR_2025_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Liang_Diffusion_Renderer_Neural_Inverse_and_Forward_Rendering_with_Video_Diffusion_CVPR_2025_paper.html",
+          "text": "Diffusion Renderer: Neural Inverse and Forward Rendering with Video Diffusion Models"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Liang_Diffusion_Renderer_Neural_Inverse_and_Forward_Rendering_with_Video_Diffusion_CVPR_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Liang_Diffusion_Renderer_Neural_CVPR_2025_supplemental.zip",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Liu_Harnessing_Frequency_Spectrum_Insights_for_Image_Copyright_Protection_Against_Diffusion_CVPR_2025_paper.html",
+          "text": "Harnessing Frequency Spectrum Insights for Image Copyright Protection Against Diffusion Models"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Liu_Harnessing_Frequency_Spectrum_Insights_for_Image_Copyright_Protection_Against_Diffusion_CVPR_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Liu_Harnessing_Frequency_Spectrum_CVPR_2025_supplemental.pdf",
+          "text": "supp"
+        }
+      ],
+      "graph_link_count": 27,
+      "sample_anchor_title": "End-to-End HOI Reconstruction Transformer with Graph-based Encoding",
+      "sample": {
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Wang_End-to-End_HOI_Reconstruction_Transformer_with_Graph-based_Encoding_CVPR_2025_paper.html",
+        "http": 200,
+        "final_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Wang_End-to-End_HOI_Reconstruction_Transformer_with_Graph-based_Encoding_CVPR_2025_paper.html",
+        "content_type": "text/html; charset=UTF-8",
+        "bytes_read": 6355,
+        "truncated": false,
+        "title": "End-to-End HOI Reconstruction Transformer with Graph-based Encoding",
+        "date": "2025",
+        "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+        "text_excerpt": "CVPR 2025 Open Access Repository CVPR 2025 open access These CVPR 2025 papers are the Open Access versions, provided by the Computer Vision Foundation. Except for the watermark, they are identical to the accepted versions; the final published version of the proceedings is available on IEEE Xplore. T",
+        "seconds": 1.36,
+        "abstract_section_excerpt": " Human-object interaction (HOI) reconstruction has garnered significant attention due to its diverse applications and the success of capturing human meshes. Existing HOI reconstruction methods often rely on explicitly modeling interactions between humans and objects. However, such a way leads to a natural conflict between 3D mesh reconstruction, which emphasizes global structure, and fine-grained contact reconstruction, which focuses on local details. To address the limitations of explicit modeling, we propose the End-to-End HOI Reconstruction Transformer with Graph-based Encoding (HOI-TG). It implicitly learns the interaction between humans and objects by leveraging self-attention mechanisms. Within the transformer architecture, we devise graph residual blocks to aggregate the topology among vertices of different spatial structures. This dual focus effectively balances global and local representations. Without bells and whistles, HOI-TG achieves state-of-the-art performance on BEHAVE and InterCap datasets. Particularly on the challenging InterCap dataset, our method improves the rec",
+        "citation_metadata": {
+          "citation_title": "End-to-End HOI Reconstruction Transformer with Graph-based Encoding",
+          "citation_author": "Li, Dongjiang",
+          "citation_publication_date": "2025",
+          "citation_conference_title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+          "citation_firstpage": "27706",
+          "citation_lastpage": "27715",
+          "citation_pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_End-to-End_HOI_Reconstruction_Transformer_with_Graph-based_Encoding_CVPR_2025_paper.pdf"
+        },
+        "related_links": [
+          {
+            "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_End-to-End_HOI_Reconstruction_Transformer_with_Graph-based_Encoding_CVPR_2025_paper.pdf",
+            "text": "pdf"
+          },
+          {
+            "url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Wang_End-to-End_HOI_Reconstruction_CVPR_2025_supplemental.pdf",
+            "text": "supp"
+          }
+        ],
+        "pdf_probe": {
+          "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_End-to-End_HOI_Reconstruction_Transformer_with_Graph-based_Encoding_CVPR_2025_paper.pdf",
+          "http": 200,
+          "final_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_End-to-End_HOI_Reconstruction_Transformer_with_Graph-based_Encoding_CVPR_2025_paper.pdf",
+          "content_type": "application/pdf",
+          "bytes_read": 1024,
+          "pdf_signature": true,
+          "seconds": 1.23
+        }
+      }
+    },
+    {
+      "venue": "CVPR",
+      "year": 2026,
+      "homepage": "https://cvpr.thecvf.com",
+      "attempts": [
+        {
+          "url": "https://openaccess.thecvf.com/CVPR2026?day=all",
+          "http": 200,
+          "final_url": "https://openaccess.thecvf.com/CVPR2026?day=all",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes_read": 6000001,
+          "truncated": true,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "CVPR 2026 Open Access Repository CVPR 2026 open access These CVPR 2026 papers are the Open Access versions, provided by the Computer Vision Foundation. Except for the watermark, they are identical to the accepted versions; the final published version of the proceedings is available on IEEE Xplore. T",
+          "seconds": 4.05
+        }
+      ],
+      "paper_link_count": 4014,
+      "discovery_links": [
+        {
+          "url": "https://cvpr.thecvf.com/",
+          "text": "CVPR 2026"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/CVPR2026",
+          "text": "Back"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Xiao_Generalizable_Structure-Aware_Keypoint_Correspondence_for_Category-Unified_3D_Single_Object_Tracking_CVPR_2026_paper.html",
+          "text": "Generalizable Structure-Aware Keypoint Correspondence for Category-Unified 3D Single Object Tracking"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Xiao_Generalizable_Structure-Aware_Keypoint_Correspondence_for_Category-Unified_3D_Single_Object_Tracking_CVPR_2026_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Xiao_Generalizable_Structure-Aware_Keypoint_CVPR_2026_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yang_DirectFisheye-GS_Enabling_Native_Fisheye_Input_in_Gaussian_Splatting_with_Cross-View_CVPR_2026_paper.html",
+          "text": "DirectFisheye-GS: Enabling Native Fisheye Input in Gaussian Splatting with Cross-View Joint Optimization"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yang_DirectFisheye-GS_Enabling_Native_Fisheye_Input_in_Gaussian_Splatting_with_Cross-View_CVPR_2026_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Yang_DirectFisheye-GS_Enabling_Native_CVPR_2026_supplemental.zip",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Jia_CompBench_Benchmarking_Complex_Instruction-guided_Image_Editing_CVPR_2026_paper.html",
+          "text": "CompBench: Benchmarking Complex Instruction-guided Image Editing"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Jia_CompBench_Benchmarking_Complex_Instruction-guided_Image_Editing_CVPR_2026_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Lyu_Choreographing_a_World_of_Dynamic_Objects_CVPR_2026_paper.html",
+          "text": "Choreographing a World of Dynamic Objects"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Lyu_Choreographing_a_World_of_Dynamic_Objects_CVPR_2026_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Lyu_Choreographing_a_World_CVPR_2026_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_Spk2VidNet_A_Hierarchical_Recurrent_Architecture_for_High-Fidelity_Video_Reconstruction_from_CVPR_2026_paper.html",
+          "text": "Spk2VidNet: A Hierarchical Recurrent Architecture for High-Fidelity Video Reconstruction from Long Spike-Camera Streams"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_Spk2VidNet_A_Hierarchical_Recurrent_Architecture_for_High-Fidelity_Video_Reconstruction_from_CVPR_2026_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Wang_Spk2VidNet_A_Hierarchical_CVPR_2026_supplemental.zip",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Michel_Continual_Distillation_of_Teachers_from_Different_Domains_CVPR_2026_paper.html",
+          "text": "Continual Distillation of Teachers from Different Domains"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Michel_Continual_Distillation_of_Teachers_from_Different_Domains_CVPR_2026_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Michel_Continual_Distillation_of_CVPR_2026_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Shekhar_GT-SVJ_Generative-Transformer-Based_Self-Supervised_Video_Judge_For_Efficient_Video_Reward_Modeling_CVPR_2026_paper.html",
+          "text": "GT-SVJ: Generative-Transformer-Based Self-Supervised Video Judge For Efficient Video Reward Modeling"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Shekhar_GT-SVJ_Generative-Transformer-Based_Self-Supervised_Video_Judge_For_Efficient_Video_Reward_Modeling_CVPR_2026_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Shekhar_GT-SVJ_Generative-Transformer-Based_Self-Supervised_CVPR_2026_supplemental.zip",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Xu_Beyond_Euclidean_Gossip_KL-Barycentric_Consensus_on_Heterogeneous_and_Imbalanced_Images_CVPR_2026_paper.html",
+          "text": "Beyond Euclidean Gossip: KL-Barycentric Consensus on Heterogeneous and Imbalanced Images"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Xu_Beyond_Euclidean_Gossip_KL-Barycentric_Consensus_on_Heterogeneous_and_Imbalanced_Images_CVPR_2026_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Xu_Beyond_Euclidean_Gossip_CVPR_2026_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Bassole_HybridDriveVLA_Vision-Language-Action_Model_with_Visual_CoT_reasoning_and_ToT_Evaluation_CVPR_2026_paper.html",
+          "text": "HybridDriveVLA: Vision-Language-Action Model with Visual CoT reasoning and ToT Evaluation for Autonomous Driving"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Bassole_HybridDriveVLA_Vision-Language-Action_Model_with_Visual_CoT_reasoning_and_ToT_Evaluation_CVPR_2026_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Bassole_HybridDriveVLA_Vision-Language-Action_Model_CVPR_2026_supplemental.zip",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Jeong_Training-free_Perceptually_Consistent_Low-Resolution_Previews_with_High-Resolution_Image_for_Efficient_CVPR_2026_paper.html",
+          "text": "Training-free, Perceptually Consistent Low-Resolution Previews with High-Resolution Image for Efficient Workflows of Diffusion Models"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Jeong_Training-free_Perceptually_Consistent_Low-Resolution_Previews_with_High-Resolution_Image_for_Efficient_CVPR_2026_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Jeong_Training-free_Perceptually_Consistent_CVPR_2026_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Chen_Catalyst4D_High-Fidelity_3D-to-4D_Scene_Editing_via_Dynamic_Propagation_CVPR_2026_paper.html",
+          "text": "Catalyst4D: High-Fidelity 3D-to-4D Scene Editing via Dynamic Propagation"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Chen_Catalyst4D_High-Fidelity_3D-to-4D_Scene_Editing_via_Dynamic_Propagation_CVPR_2026_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Chen_Catalyst4D_High-Fidelity_3D-to-4D_CVPR_2026_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Xia_Cloning_Deterministic_Worlds_The_Critical_Role_of_Latent_Geometry_in_CVPR_2026_paper.html",
+          "text": "Cloning Deterministic Worlds: The Critical Role of Latent Geometry in Long-Horizon World Models"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Xia_Cloning_Deterministic_Worlds_The_Critical_Role_of_Latent_Geometry_in_CVPR_2026_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Xia_Cloning_Deterministic_Worlds_CVPR_2026_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Niu_CME-CAD_Heterogeneous_Collaborative_Multi-Expert_Reinforcement_Learning_for_CAD_Code_Generation_CVPR_2026_paper.html",
+          "text": "CME-CAD: Heterogeneous Collaborative Multi-Expert Reinforcement Learning for CAD Code Generation"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Niu_CME-CAD_Heterogeneous_Collaborative_Multi-Expert_Reinforcement_Learning_for_CAD_Code_Generation_CVPR_2026_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Niu_CME-CAD_Heterogeneous_Collaborative_CVPR_2026_supplemental.pdf",
+          "text": "supp"
+        }
+      ],
+      "graph_link_count": 32,
+      "sample_anchor_title": "GraphVLM: Benchmarking Vision Language Models for Multimodal Graph Learning",
+      "sample": {
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Liu_GraphVLM_Benchmarking_Vision_Language_Models_for_Multimodal_Graph_Learning_CVPR_2026_paper.html",
+        "http": 200,
+        "final_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Liu_GraphVLM_Benchmarking_Vision_Language_Models_for_Multimodal_Graph_Learning_CVPR_2026_paper.html",
+        "content_type": "text/html; charset=UTF-8",
+        "bytes_read": 6525,
+        "truncated": false,
+        "title": "GraphVLM: Benchmarking Vision Language Models for Multimodal Graph Learning",
+        "date": "2026",
+        "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+        "text_excerpt": "CVPR 2026 Open Access Repository CVPR 2026 open access These CVPR 2026 papers are the Open Access versions, provided by the Computer Vision Foundation. Except for the watermark, they are identical to the accepted versions; the final published version of the proceedings is available on IEEE Xplore. T",
+        "seconds": 1.24,
+        "abstract_section_excerpt": " Vision-Language Models (VLMs) have demonstrated remarkable capabilities in aligning and understanding multimodal signals, yet their potential to reason over structured data, where multimodal entities are connected through explicit relational graphs, remains largely underexplored. Unlocking this capability is crucial for real-world applications such as social networks, recommendation systems, and scientific discovery, where multimodal information is inherently structured. To bridge this gap, we present GraphVLM, a systematic benchmark designed to evaluate and harness the capabilities of VLMs for multimodal graph learning (MMGL). GraphVLM investigates three complementary paradigms for integrating VLMs with graph reasoning: (1) VLM-as-Encoder, which enriches graph neural networks through multimodal feature fusion; (2) VLM-as-Aligner, which bridges modalities in latent or linguistic space to facilitate LLM-based structured reasoning; and (3) VLM-as-Predictor, which directly employs VLMs as multimodal backbones for graph learning tasks. Extensive experiments across six datasets from dive",
+        "citation_metadata": {
+          "citation_title": "GraphVLM: Benchmarking Vision Language Models for Multimodal Graph Learning",
+          "citation_author": "Tan, Qiaoyu",
+          "citation_publication_date": "2026",
+          "citation_conference_title": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+          "citation_firstpage": "9491",
+          "citation_lastpage": "9500",
+          "citation_pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Liu_GraphVLM_Benchmarking_Vision_Language_Models_for_Multimodal_Graph_Learning_CVPR_2026_paper.pdf"
+        },
+        "related_links": [
+          {
+            "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Liu_GraphVLM_Benchmarking_Vision_Language_Models_for_Multimodal_Graph_Learning_CVPR_2026_paper.pdf",
+            "text": "pdf"
+          },
+          {
+            "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Liu_GraphVLM_Benchmarking_Vision_CVPR_2026_supplemental.pdf",
+            "text": "supp"
+          }
+        ],
+        "pdf_probe": {
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Liu_GraphVLM_Benchmarking_Vision_Language_Models_for_Multimodal_Graph_Learning_CVPR_2026_paper.pdf",
+          "http": 200,
+          "final_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Liu_GraphVLM_Benchmarking_Vision_Language_Models_for_Multimodal_Graph_Learning_CVPR_2026_paper.pdf",
+          "content_type": "application/pdf",
+          "bytes_read": 1024,
+          "pdf_signature": true,
+          "seconds": 1.2
+        }
+      }
+    },
+    {
+      "venue": "ICCV",
+      "year": 2025,
+      "homepage": "https://iccv.thecvf.com",
+      "attempts": [
+        {
+          "url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+          "http": 200,
+          "final_url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes_read": 6000001,
+          "truncated": true,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "ICCV 2025 Open Access Repository ICCV 2025 open access These ICCV 2025 papers are the Open Access versions, provided by the Computer Vision Foundation. Except for the watermark, they are identical to the accepted versions; the final published version of the proceedings is available on IEEE Xplore. T",
+          "seconds": 3.34
+        }
+      ],
+      "paper_link_count": 4210,
+      "discovery_links": [
+        {
+          "url": "https://iccv.thecvf.com/",
+          "text": "ICCV 2025"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/ICCV2025",
+          "text": "Back"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Wang_kh_Symmetry_Understanding_of_3D_Shapes_via_Chirality_Disentanglement_ICCV_2025_paper.html",
+          "text": "kh: Symmetry Understanding of 3D Shapes via Chirality Disentanglement"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Wang_kh_Symmetry_Understanding_of_3D_Shapes_via_Chirality_Disentanglement_ICCV_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Wang_kh_Symmetry_Understanding_ICCV_2025_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Yang_Efficient_Adaptation_of_Pre-trained_Vision_Transformer_underpinned_by_Approximately_Orthogonal_ICCV_2025_paper.html",
+          "text": "Efficient Adaptation of Pre-trained Vision Transformer underpinned by Approximately Orthogonal Fine-Tuning Strategy"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Yang_Efficient_Adaptation_of_Pre-trained_Vision_Transformer_underpinned_by_Approximately_Orthogonal_ICCV_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Yang_Efficient_Adaptation_of_ICCV_2025_supplemental.zip",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Ding_MM-IFEngine_Towards_Multimodal_Instruction_Following_ICCV_2025_paper.html",
+          "text": "MM-IFEngine: Towards Multimodal Instruction Following"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Ding_MM-IFEngine_Towards_Multimodal_Instruction_Following_ICCV_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Ding_MM-IFEngine_Towards_Multimodal_ICCV_2025_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Zhou_Who_is_a_Better_Talker_Subjective_and_Objective_Quality_Assessment_ICCV_2025_paper.html",
+          "text": "Who is a Better Talker: Subjective and Objective Quality Assessment for AI-Generated Talking Heads"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Zhou_Who_is_a_Better_Talker_Subjective_and_Objective_Quality_Assessment_ICCV_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Zhou_Who_is_a_ICCV_2025_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Yang_LayerAnimate_Layer-level_Control_for_Animation_ICCV_2025_paper.html",
+          "text": "LayerAnimate: Layer-level Control for Animation"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Yang_LayerAnimate_Layer-level_Control_for_Animation_ICCV_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Yang_LayerAnimate_Layer-level_Control_ICCV_2025_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Wang_Towards_a_Unified_Copernicus_Foundation_Model_for_Earth_Vision_ICCV_2025_paper.html",
+          "text": "Towards a Unified Copernicus Foundation Model for Earth Vision"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Wang_Towards_a_Unified_Copernicus_Foundation_Model_for_Earth_Vision_ICCV_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Wang_Towards_a_Unified_ICCV_2025_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Ghosh_ROADWork_A_Dataset_and_Benchmark_for_Learning_to_Recognize_Observe_ICCV_2025_paper.html",
+          "text": "ROADWork: A Dataset and Benchmark for Learning to Recognize, Observe, Analyze and Drive Through Work Zones"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Ghosh_ROADWork_A_Dataset_and_Benchmark_for_Learning_to_Recognize_Observe_ICCV_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Ghosh_ROADWork_A_Dataset_ICCV_2025_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Luo_Gradient_Decomposition_and_Alignment_for_Incremental_Object_Detection_ICCV_2025_paper.html",
+          "text": "Gradient Decomposition and Alignment for Incremental Object Detection"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Luo_Gradient_Decomposition_and_Alignment_for_Incremental_Object_Detection_ICCV_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Luo_Gradient_Decomposition_and_ICCV_2025_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Mao_One_Polyp_Identifies_All_One-Shot_Polyp_Segmentation_with_SAM_via_ICCV_2025_paper.html",
+          "text": "One Polyp Identifies All: One-Shot Polyp Segmentation with SAM via Cascaded Priors and Iterative Prompt Evolution"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Mao_One_Polyp_Identifies_All_One-Shot_Polyp_Segmentation_with_SAM_via_ICCV_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Mao_One_Polyp_Identifies_ICCV_2025_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Asaad_Gradient_Extrapolation_for_Debiased_Representation_Learning_ICCV_2025_paper.html",
+          "text": "Gradient Extrapolation for Debiased Representation Learning"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Asaad_Gradient_Extrapolation_for_Debiased_Representation_Learning_ICCV_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Asaad_Gradient_Extrapolation_for_ICCV_2025_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Huang_From_Gaze_to_Movement_Predicting_Visual_Attention_for_Autonomous_Driving_ICCV_2025_paper.html",
+          "text": "From Gaze to Movement: Predicting Visual Attention for Autonomous Driving Human-Machine Interaction based on Programmatic Imitation Learning"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Huang_From_Gaze_to_Movement_Predicting_Visual_Attention_for_Autonomous_Driving_ICCV_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Huang_From_Gaze_to_ICCV_2025_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Wu_Less-to-More_Generalization_Unlocking_More_Controllability_by_In-Context_Generation_ICCV_2025_paper.html",
+          "text": "Less-to-More Generalization: Unlocking More Controllability by In-Context Generation"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Wu_Less-to-More_Generalization_Unlocking_More_Controllability_by_In-Context_Generation_ICCV_2025_paper.pdf",
+          "text": "pdf"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Wu_Less-to-More_Generalization_Unlocking_ICCV_2025_supplemental.pdf",
+          "text": "supp"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Hernandez_Improving_Large_Vision_and_Language_Models_by_Learning_from_a_ICCV_2025_paper.html",
+          "text": "Improving Large Vision and Language Models by Learning from a Panel of Peers"
+        },
+        {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Hernandez_Improving_Large_Vision_and_Language_Models_by_Learning_from_a_ICCV_2025_paper.pdf",
+          "text": "pdf"
+        }
+      ],
+      "graph_link_count": 27,
+      "sample_anchor_title": "Open-Vocabulary Octree-Graph for 3D Scene Understanding",
+      "sample": {
+        "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Wang_Open-Vocabulary_Octree-Graph_for_3D_Scene_Understanding_ICCV_2025_paper.html",
+        "http": 200,
+        "final_url": "https://openaccess.thecvf.com/content/ICCV2025/html/Wang_Open-Vocabulary_Octree-Graph_for_3D_Scene_Understanding_ICCV_2025_paper.html",
+        "content_type": "text/html; charset=UTF-8",
+        "bytes_read": 6373,
+        "truncated": false,
+        "title": "Open-Vocabulary Octree-Graph for 3D Scene Understanding",
+        "date": "2025",
+        "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+        "text_excerpt": "ICCV 2025 Open Access Repository ICCV 2025 open access These ICCV 2025 papers are the Open Access versions, provided by the Computer Vision Foundation. Except for the watermark, they are identical to the accepted versions; the final published version of the proceedings is available on IEEE Xplore. T",
+        "seconds": 1.19,
+        "abstract_section_excerpt": " Open-vocabulary 3D scene understanding is indispensable for embodied agents. Recent works leverage pretrained vision-language models (VLMs) for object segmentation and project them to point clouds to build 3D maps. Despite progress, a point cloud is a set of unordered coordinates that requires substantial storage space and can not directly convey occupancy information or spatial relation, making existing methods inefficient for downstream tasks, e.g., path planning and complex text-based object retrieval. To address these issues, we propose Octree-Graph, a novel scene representation for open-vocabulary 3D scene understanding. Specifically, a Chronological Group-wise Segment Merging (CGSM) strategy and an Instance Feature Aggregation (IFA) algorithm are first designed to get 3D instances and corresponding semantic features. Subsequently, an adaptive-octree structure is developed that stores semantics and depicts the occupancy of an object adjustably according to its shape. Finally, the Octree-Graph is constructed where each adaptive-octree acts as a graph node, and edges describe the",
+        "citation_metadata": {
+          "citation_title": "Open-Vocabulary Octree-Graph for 3D Scene Understanding",
+          "citation_author": "Zhao, Bin",
+          "citation_publication_date": "2025",
+          "citation_conference_title": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+          "citation_firstpage": "7037",
+          "citation_lastpage": "7047",
+          "citation_pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Wang_Open-Vocabulary_Octree-Graph_for_3D_Scene_Understanding_ICCV_2025_paper.pdf"
+        },
+        "related_links": [
+          {
+            "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Wang_Open-Vocabulary_Octree-Graph_for_3D_Scene_Understanding_ICCV_2025_paper.pdf",
+            "text": "pdf"
+          }
+        ],
+        "pdf_probe": {
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Wang_Open-Vocabulary_Octree-Graph_for_3D_Scene_Understanding_ICCV_2025_paper.pdf",
+          "http": 200,
+          "final_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Wang_Open-Vocabulary_Octree-Graph_for_3D_Scene_Understanding_ICCV_2025_paper.pdf",
+          "content_type": "application/pdf",
+          "bytes_read": 1024,
+          "pdf_signature": true,
+          "seconds": 1.16
+        }
+      }
+    },
+    {
+      "venue": "SIGMOD",
+      "year": 2025,
+      "homepage": "https://sigmod.org",
+      "attempts": [
+        {
+          "url": "https://2025.sigmod.org/toc-3-3.html",
+          "http": 200,
+          "final_url": "https://2025.sigmod.org/toc-3-3.html",
+          "content_type": "text/html",
+          "bytes_read": 337970,
+          "truncated": false,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "Proceedings of the ACM on Management of Data: SIGMOD: Vol. 3, No. 3. 2025 Full Citation in the ACM Digital Library PACMMOD V3, N3 (SIGMOD), June 2025: Editorial Azza Abouzied Joseph M. Hellerstein Divyakant Agrawal The Proceedings of the ACM on Management of Data (PACMMOD) is concerned with the prin",
+          "seconds": 2.16
+        },
+        {
+          "url": "https://2025.sigmod.org/sigmod_papers.shtml",
+          "http": 200,
+          "final_url": "https://2025.sigmod.org/sigmod_papers.shtml",
+          "content_type": "text/html",
+          "bytes_read": 90661,
+          "truncated": false,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "The 2025 ACM SIGMOD/PODS Conference: Berlin, Germany - Accepted Papers for SIGMOD Welcome Homepage Reproducibility Inclusion and Diversity Organization Organization SIGMOD PC PODS PC SIGMOD Industry PC SIGMOD Demo PC Sponsor Opportunities ACM SIGMOD Online Participant Information Registration Confer",
+          "seconds": 1.83
+        }
+      ],
+      "paper_link_count": 0,
+      "discovery_links": [
+        {
+          "url": "https://2025.sigmod.org/calls_papers_inclusion_and_diversity.shtml",
+          "text": "Inclusion and Diversity"
+        },
+        {
+          "url": "https://2025.sigmod.org/sigmod_papers.shtml",
+          "text": "Accepted Papers"
+        },
+        {
+          "url": "https://2025.sigmod.org/sigmod_demo_papers.shtml",
+          "text": "Accepted Demos"
+        },
+        {
+          "url": "https://2025.sigmod.org/sigmod_workshops.shtml",
+          "text": "Accepted Workshops"
+        },
+        {
+          "url": "https://2025.sigmod.org/sigmod_tutorials.shtml",
+          "text": "Accepted Tutorials"
+        },
+        {
+          "url": "https://2025.sigmod.org/sigmod_industry_papers.shtml",
+          "text": "Accepted Industry Papers"
+        },
+        {
+          "url": "https://2025.sigmod.org/pods_papers.shtml",
+          "text": "Research Papers"
+        },
+        {
+          "url": "https://2025.sigmod.org/calls_papers_important_dates.shtml",
+          "text": "Important Dates"
+        },
+        {
+          "url": "https://2025.sigmod.org/calls_papers_sigmod_research.shtml",
+          "text": "SIGMOD Call for Research Papers"
+        },
+        {
+          "url": "https://2025.sigmod.org/calls_papers_pods_research.shtml",
+          "text": "PODS Call for Research Papers"
+        },
+        {
+          "url": "https://2025.sigmod.org/calls_industrial_track_papers.shtml",
+          "text": "SIGMOD Call for Industrial Track Papers"
+        },
+        {
+          "url": "https://sigmod-contest-2025.github.io/index.html",
+          "text": "SIGMOD Programming Contest"
+        },
+        {
+          "url": "https://2025.sigmod.org/toc-3-3.html",
+          "text": "Proceedings of the ACM on Management of Data, Volume 3, Issue 3"
+        },
+        {
+          "url": "https://2025.sigmod.org/toc-3-1.html",
+          "text": "Proceedings of the ACM on Management of Data, Volume 3, Issue 1"
+        },
+        {
+          "url": "https://2025.sigmod.org/toc-2-6.html",
+          "text": "Proceedings of the ACM on Management of Data, Volume 2, Issue 6"
+        }
+      ]
+    },
+    {
+      "venue": "SIGMOD",
+      "year": 2026,
+      "homepage": "https://sigmod.org",
+      "attempts": [
+        {
+          "url": "https://2026.sigmod.org/sigmod_papers.shtml",
+          "http": 200,
+          "final_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+          "content_type": "text/html",
+          "bytes_read": 140006,
+          "truncated": false,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "The 2026 ACM SIGMOD/PODS Conference: Bengaluru, India - Accepted Papers for SIGMOD ☰ Navigation Welcome Homepage News Program Program Overview SIGMOD Detailed Program PODS Detailed Program Plenary Poster Sessions Program Brochure Venue Map Special Events Joint SIGMOD/PODS Warmup Event New Researcher",
+          "seconds": 1.98
+        }
+      ],
+      "paper_link_count": 0,
+      "discovery_links": [
+        {
+          "url": "https://2026.sigmod.org/sigmod_papers.shtml",
+          "text": "Accepted Papers"
+        },
+        {
+          "url": "https://2026.sigmod.org/sigmod_demos.shtml",
+          "text": "Accepted Demos"
+        },
+        {
+          "url": "https://2026.sigmod.org/sigmod_industry_papers.shtml",
+          "text": "Accepted Industry Papers"
+        },
+        {
+          "url": "https://2026.sigmod.org/pods_papers.shtml",
+          "text": "Accepted Papers"
+        },
+        {
+          "url": "https://2026.sigmod.org/calls_papers_important_dates.shtml",
+          "text": "Important Dates"
+        },
+        {
+          "url": "https://2026.sigmod.org/calls_papers_sigmod_research.shtml",
+          "text": "SIGMOD Call for Research Papers"
+        },
+        {
+          "url": "https://2026.sigmod.org/calls_papers_pods_research.shtml",
+          "text": "PODS Call for Research Papers"
+        },
+        {
+          "url": "https://2026.sigmod.org/calls_industrial_track_papers.shtml",
+          "text": "SIGMOD Call for Industrial Track Papers"
+        },
+        {
+          "url": "https://2026.sigmod.org/sigmod_call_for_workshop_papers.shtml",
+          "text": "SIGMOD Call for Workshop Papers"
+        },
+        {
+          "url": "https://www.linkedin.com/company/acm-sigmod-2026/",
+          "text": ""
+        },
+        {
+          "url": "https://dl.acm.org/toc/PACMMOD/2025/3/4",
+          "text": "https://dl.acm.org/toc/PACMMOD/2025/3/4"
+        },
+        {
+          "url": "https://dl.acm.org/toc/PACMMOD/2025/3/6",
+          "text": "https://dl.acm.org/toc/PACMMOD/2025/3/6"
+        },
+        {
+          "url": "https://dl.acm.org/toc/pacmmod/2026/4/1",
+          "text": "https://dl.acm.org/toc/PACMMOD/2026/4/1"
+        },
+        {
+          "url": "https://dl.acm.org/toc/pacmmod/2026/4/3",
+          "text": "https://dl.acm.org/toc/PACMMOD/2026/4/3"
+        }
+      ]
+    },
+    {
+      "venue": "VLDB",
+      "year": 2025,
+      "homepage": "https://vldb.org",
+      "attempts": [
+        {
+          "url": "https://www.vldb.org/pvldb/volumes/18/",
+          "http": 200,
+          "final_url": "https://www.vldb.org/pvldb/volumes/18/",
+          "content_type": "text/html",
+          "bytes_read": 1010751,
+          "truncated": false,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "Proceedings of the VLDB Endowment Start Current Submission Volume 19 Volume 20 Contributions Submission Formatting Review Board CMT Website All Volumes Reproducibility General Information Contact Organization Publication Policies Rights & Responsibilities Open Access Statement FAQ Privacy Policy Sta",
+          "seconds": 8.73
+        }
+      ],
+      "paper_link_count": 13,
+      "discovery_links": [
+        {
+          "url": "https://cmt3.research.microsoft.com/PVLDBv19_2026",
+          "text": "CMT Website"
+        }
+      ],
+      "graph_link_count": 0,
+      "sample_anchor_title": "Front Matter",
+      "sample": {
+        "url": "https://www.vldb.org/pvldb/vol18/FrontMatterVol18No1.pdf",
+        "http": 200,
+        "final_url": "https://www.vldb.org/pvldb/vol18/FrontMatterVol18No1.pdf",
+        "content_type": "application/pdf",
+        "bytes_read": 1024,
+        "pdf_signature": true,
+        "seconds": 2.12
+      }
+    },
+    {
+      "venue": "VLDB",
+      "year": 2026,
+      "homepage": "https://vldb.org",
+      "attempts": [
+        {
+          "url": "https://www.vldb.org/pvldb/volumes/19/",
+          "http": 200,
+          "final_url": "https://www.vldb.org/pvldb/volumes/19/",
+          "content_type": "text/html",
+          "bytes_read": 925270,
+          "truncated": false,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "Proceedings of the VLDB Endowment Start Current Submission Volume 19 Volume 20 Contributions Submission Formatting Review Board CMT Website All Volumes Reproducibility General Information Contact Organization Publication Policies Rights & Responsibilities Open Access Statement FAQ Privacy Policy Sta",
+          "seconds": 7.69
+        }
+      ],
+      "paper_link_count": 12,
+      "discovery_links": [
+        {
+          "url": "https://cmt3.research.microsoft.com/PVLDBv19_2026",
+          "text": "CMT Website"
+        }
+      ],
+      "graph_link_count": 0,
+      "sample_anchor_title": "Front Matter",
+      "sample": {
+        "url": "https://www.vldb.org/pvldb/vol19/FrontMatterVol19No1.pdf",
+        "http": 200,
+        "final_url": "https://www.vldb.org/pvldb/vol19/FrontMatterVol19No1.pdf",
+        "content_type": "application/pdf",
+        "bytes_read": 1024,
+        "pdf_signature": true,
+        "seconds": 2.33
+      }
+    },
+    {
+      "venue": "ICDE",
+      "year": 2025,
+      "homepage": "https://icde2025.ieeecomputer.my",
+      "attempts": [
+        {
+          "url": "https://ieeexplore.ieee.org/xpl/conhome/1000178/all-proceedings",
+          "http": 200,
+          "final_url": "https://ieeexplore.ieee.org/xpl/conhome/1000178/all-proceedings",
+          "content_type": "text/html;charset=UTF-8",
+          "bytes_read": 36208,
+          "truncated": false,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "IEEE Account Change Username/Password Update Address Purchase Details Payment Options Order History View Purchased Documents Profile Information Communications Preferences Profession and Education Technical Interests Need Help? US & Canada: +1 800 678 4333 Worldwide: +1 732 981 0060 Contact & Suppor",
+          "seconds": 1.25
+        }
+      ],
+      "paper_link_count": 0,
+      "discovery_links": []
+    },
+    {
+      "venue": "ICDE",
+      "year": 2026,
+      "homepage": "https://icde2026.ieeecomputer.my",
+      "attempts": [
+        {
+          "url": "https://ieeexplore.ieee.org/xpl/conhome/1000178/all-proceedings",
+          "http": 200,
+          "final_url": "https://ieeexplore.ieee.org/xpl/conhome/1000178/all-proceedings",
+          "content_type": "text/html;charset=UTF-8",
+          "bytes_read": 36208,
+          "truncated": false,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "IEEE Account Change Username/Password Update Address Purchase Details Payment Options Order History View Purchased Documents Profile Information Communications Preferences Profession and Education Technical Interests Need Help? US & Canada: +1 800 678 4333 Worldwide: +1 732 981 0060 Contact & Suppor",
+          "seconds": 1.2
+        }
+      ],
+      "paper_link_count": 0,
+      "discovery_links": []
+    },
+    {
+      "venue": "ACM MM",
+      "year": 2025,
+      "homepage": "https://acmmm2025.org/",
+      "attempts": [
+        {
+          "url": "https://acmmm2025.org/accepted-regular-papers/",
+          "http": 200,
+          "final_url": "https://acmmm2025.org/accepted-regular-papers/",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes_read": 393165,
+          "truncated": false,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "Accepted Regular Papers | 2025 ACM Multimedia Home Calls Topics of Interest Regular Papers Brave New Ideas Datasets Demos / Videos Doctoral Symposium Grand Challenge Proposals Grand Challenge Interactive/Digital Art Industrial Demonstrations Call for Industry Expert Talks Open Source Software Reprod",
+          "seconds": 2.89
+        }
+      ],
+      "paper_link_count": 0,
+      "discovery_links": [
+        {
+          "url": "https://acmmm2025.org/",
+          "text": ""
+        },
+        {
+          "url": "https://acmmm2025.org/",
+          "text": "Home"
+        },
+        {
+          "url": "https://acmmm2025.org/research-topics/",
+          "text": "Calls"
+        },
+        {
+          "url": "https://acmmm2025.org/topics-of-interest/",
+          "text": "Topics of Interest"
+        },
+        {
+          "url": "https://acmmm2025.org/call-for-papers/",
+          "text": "Regular Papers"
+        },
+        {
+          "url": "https://acmmm2025.org/call-for-brave-new-ideas/",
+          "text": "Brave New Ideas"
+        },
+        {
+          "url": "https://acmmm2025.org/datasets/",
+          "text": "Datasets"
+        },
+        {
+          "url": "https://acmmm2025.org/call-for-demos-videos/",
+          "text": "Demos / Videos"
+        },
+        {
+          "url": "https://acmmm2025.org/call-for-doctoral-symposium/",
+          "text": "Doctoral Symposium"
+        },
+        {
+          "url": "https://acmmm2025.org/call-for-grand-challenge-proposals/",
+          "text": "Grand Challenge Proposals"
+        },
+        {
+          "url": "https://acmmm2025.org/call-for-grand-challenge-participation/",
+          "text": "Grand Challenge"
+        },
+        {
+          "url": "https://acmmm2025.org/call-for-interactive-art-submissions/",
+          "text": "Interactive/Digital Art"
+        },
+        {
+          "url": "https://acmmm2025.org/call-for-industrial-demonstrations/",
+          "text": "Industrial Demonstrations"
+        },
+        {
+          "url": "https://acmmm2025.org/industry-expert-talks-2/",
+          "text": "Call for Industry Expert Talks"
+        },
+        {
+          "url": "https://acmmm2025.org/call-for-open-source-software/",
+          "text": "Open Source Software"
+        },
+        {
+          "url": "https://project.inria.fr/acmmmreproducibility/acm-mm-2025-call-for-reproducibility-papers/",
+          "text": "Reproducibility Companion Papers"
+        },
+        {
+          "url": "https://acmmm2025.org/25989244-2/",
+          "text": "Tutorials"
+        },
+        {
+          "url": "https://acmmm2025.org/call-for-workshops/",
+          "text": "Workshops"
+        },
+        {
+          "url": "https://acmmm2025.org/important-dates/",
+          "text": "Dates"
+        },
+        {
+          "url": "https://acmmm2025.org/infos/",
+          "text": "Guidelines"
+        },
+        {
+          "url": "https://acmmm2025.org/authors-advocate/",
+          "text": "Author’s Advocate"
+        },
+        {
+          "url": "https://acmmm2025.org/information-for-authors/",
+          "text": "Info for Authors"
+        },
+        {
+          "url": "https://acmmm2025.org/reviewer-and-area-chair-guidelines/",
+          "text": "Info for Reviewers and ACs"
+        },
+        {
+          "url": "https://acmmm2025.org/acm-mm25-conference-agends/",
+          "text": "Conference Agenda"
+        },
+        {
+          "url": "https://acmmm2025.org/social-events/",
+          "text": "Social Events"
+        },
+        {
+          "url": "https://acmmm2025.org/keynotes/",
+          "text": "Keynotes"
+        },
+        {
+          "url": "https://acmmm2025.org/workshop/",
+          "text": "Workshops"
+        },
+        {
+          "url": "https://acmmm2025.org/grand-challenge/",
+          "text": "Grand Challenges"
+        },
+        {
+          "url": "https://acmmm2025.org/accepted-regular-papers/",
+          "text": "Regular Papers"
+        },
+        {
+          "url": "https://acmmm2025.org/accepted-papers-datasets/",
+          "text": "Datasets"
+        },
+        {
+          "url": "https://acmmm2025.org/accepted-papers-brave-new-ideas/",
+          "text": "Brave New Ideas"
+        },
+        {
+          "url": "https://acmmm2025.org/accepted-papers-demo-video/",
+          "text": "Demos/Videos"
+        },
+        {
+          "url": "https://acmmm2025.org/accepted-papers-open-source-software/",
+          "text": "Open Source Software"
+        },
+        {
+          "url": "https://acmmm2025.org/accepted-papers-doctoral-symposium/",
+          "text": "Doctoral Symposium"
+        },
+        {
+          "url": "https://acmmm2025.org/accepted-papers-interactive-art/",
+          "text": "Interactive Art"
+        },
+        {
+          "url": "https://acmmm2025.org/hackathon/",
+          "text": "Hackathon"
+        },
+        {
+          "url": "https://acmmm2025.org/tutorial/",
+          "text": "Tutorials"
+        },
+        {
+          "url": "https://acmmm2025.org/industry-program/",
+          "text": "Industry Programme"
+        },
+        {
+          "url": "https://acmmm2025.org/industry-keynotes/",
+          "text": "Industry Keynotes"
+        },
+        {
+          "url": "https://acmmm2025.org/industry-expert-talks/",
+          "text": "Industry Expert Talks"
+        }
+      ]
+    },
+    {
+      "venue": "ACM MM",
+      "year": 2026,
+      "homepage": "https://2026.acmmm.org/",
+      "attempts": [
+        {
+          "url": "https://2026.acmmm.org/",
+          "http": 200,
+          "final_url": "https://2026.acmmm.org/",
+          "content_type": "text/html",
+          "bytes_read": 8485,
+          "truncated": false,
+          "title": "",
+          "date": "",
+          "venue": "",
+          "text_excerpt": "ACM Multimedia 2026 — Welcome Welcome to the 34th ACM International Conference on Multimedia Rio de Janeiro, Brazil — 10–14 November 2026. The premier conference exploring multimedia research and applications. Welcome to ACM Multimedia, the premier international conference dedicated to advancing res",
+          "seconds": 1.36
+        }
+      ],
+      "paper_link_count": 0,
+      "discovery_links": [
+        {
+          "url": "https://2026.acmmm.org/site/topics.html",
+          "text": "list of topics of interest and their descriptions"
+        }
+      ]
+    }
+  ]
+}

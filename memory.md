@@ -92,6 +92,8 @@
 
 ## 快速定位
 
+- 2026-09-27 CCF-A 会议来源调研：`docs/CCF_A_SOURCES.md`；逐年入口 `docs/conference_sources.json`；只读探针 `scripts/probe_conference_sources.py`；抽样证据 `docs/conference_source_audit.json`。2025/2026 均有可读论文级内容的首批来源为 ICML、AAAI、IJCAI、ACL、CVPR；ICCV 仅 2025，NeurIPS 2025 可读而 2026 尚不可接入。其余站点有访问/元数据/主会身份限制，详见文档。本轮不改正式搜索逻辑或论文归档。正式接入时须解决 track、日期精度、PDF 与 arXiv 去重。
+
 - 采集与日期：`gnn_digest/sources.py`
 - 去重与身份：`gnn_digest/models.py`
 - 提示词/LLM：`prompts/summarize.zh.txt`、`gnn_digest/llm.py`

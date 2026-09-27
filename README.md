@@ -76,6 +76,8 @@ python run.py build
 
 源文件：[`skills/gnn-paper-digest/SKILL.md`](skills/gnn-paper-digest/SKILL.md)。它指导后续 agent 运行、修改、验证本项目，不是定时任务的必需依赖。
 
+2025/2026 年图学习相关 CCF-A 会议官网与论文源的可抓取性调查见 [`docs/CCF_A_SOURCES.md`](docs/CCF_A_SOURCES.md)；其中的只读探针与来源清单不参与当前正式搜索流程。
+
 ```powershell
 python scripts/install_skill.py
 ```
