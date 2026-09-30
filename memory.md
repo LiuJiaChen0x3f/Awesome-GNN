@@ -239,3 +239,9 @@
 - 缓存全文有 28 篇总结请求失败、2 篇待总结；本次对 28 篇做有界重试，连续 3 批 `network/timeout failure` 后断路停止，未产生新总结。失败项保留在 `.local/literature-audit/`，不进入页面。另有 271 篇全文未解决、132 篇元数据未解决；这些状态不能当作无相关论文。
 - `scripts/publish_literature_audit.py --final`、`report_literature_audit.py`、`validate_literature_export.py` 完成；校验确认 301 张卡片身份唯一、151–200 可见字符的方法总结及逐字全文证据有效，公开数据不含全文/证据。91 项 Python 测试、3 项 JS 渲染测试、JS 语法和 `git diff --check` 通过。浏览器实测本地页面显示 301 篇，TAG 筛选显示 161 篇，复位和 PDF 链接可用。
 - 最终范围、逐会数量和未解决原因见 `docs/latest_conference_coverage_audit.md`，待处理清单见 `data/literature_pending.json`。本次仅更新本地数据和页面，**尚未提交或推送 GitHub**；线上 GitHub Pages 不会自动得到这 188 篇。
+
+### 2026-09-30 旧仓库发布状态
+
+- `origin` 已改回 `https://github.com/LiuJiaChen0x3f/Awesome-GNN.git`；本地 `main` 的 `da66446` 已提交 301 篇索引、页面改动和审计数据。`site/app.js` 的“最新更新时间”已去掉“本地时间”后缀，`site/index.html` 的 canonical 指向旧账号 Pages。
+- 旧仓库 `main` 仍为 `adb55c2`，可正常快进；本机现有 GitHub 凭据属于另一个账号，推送返回 403。SSH 无可用公钥授权。不能称已推送或已上线。
+- 2026-09-30 检查旧站 `data/papers.json` 仍为 92 篇、生成时间 2026-09-27；本地待发布索引为 301 篇、生成时间 2026-09-30。获得旧仓库写权限后推送 `main`，核对 Pages 工作流和线上数据，再更新本节状态。
