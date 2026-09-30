@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Connected ideas</title>
+  <desc id="desc">A teal and violet graph connects paper cards, surrounded by soft orbital curves and small stars.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFFAF7"/><stop offset=".52" stop-color="#F7F9FF"/><stop offset="1" stop-color="#F3EEFF"/>
+    </linearGradient>
+    <linearGradient id="bridge" x1="430" y1="110" x2="770" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38B2A3"/><stop offset="1" stop-color="#9980DB"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1" fill="#94A5BB" opacity=".17"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="220" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="220" rx="24" fill="url(#dots)"/>
+  <g stroke-width="1.2">
+    <ellipse cx="290" cy="110" rx="210" ry="80" stroke="#C9E8E2" transform="rotate(-8 290 110)"/>
+    <ellipse cx="910" cy="110" rx="210" ry="80" stroke="#E1D8F5" transform="rotate(8 910 110)"/>
+    <path d="M46 169C204 230 345 4 519 66M681 154C855 216 996-10 1154 51" stroke="#D9DFEE" stroke-dasharray="4 8"/>
+  </g>
+  <g stroke="#6ABBAF" stroke-width="2" stroke-linecap="round" opacity=".65">
+    <path d="M165 112L240 57L300 119L227 174L165 112L300 119L373 59L426 128L347 180L300 119M240 57L373 59M227 174L347 180M300 119L426 128"/>
+  </g>
+  <g fill="#F4FFFC" stroke="#49A797" stroke-width="3">
+    <circle cx="165" cy="112" r="9"/><circle cx="240" cy="57" r="11"/><circle cx="227" cy="174" r="8"/>
+    <circle cx="373" cy="59" r="8"/><circle cx="426" cy="128" r="11"/><circle cx="347" cy="180" r="7"/>
+  </g>
+  <circle cx="300" cy="119" r="24" fill="#36A994" opacity=".12"/>
+  <circle cx="300" cy="119" r="13" fill="#269F8A"/>
+  <g stroke="#A493CF" stroke-width="2" stroke-linecap="round" opacity=".65">
+    <path d="M774 92L847 46L906 110L846 167L774 92L906 110L979 60L1047 120L971 177L906 110M847 46L979 60M846 167L971 177M906 110L1047 120"/>
+  </g>
+  <g fill="#FCFAFF" stroke="#9980C8" stroke-width="3">
+    <circle cx="774" cy="92" r="11"/><circle cx="847" cy="46" r="7"/><circle cx="846" cy="167" r="10"/>
+    <circle cx="979" cy="60" r="9"/><circle cx="1047" cy="120" r="8"/><circle cx="971" cy="177" r="7"/>
+  </g>
+  <circle cx="906" cy="110" r="24" fill="#9980DB" opacity=".14"/>
+  <circle cx="906" cy="110" r="13" fill="#9575C9"/>
+  <path d="M439 128C485 128 475 106 524 106M673 106C722 106 718 92 761 92" stroke="url(#bridge)" stroke-width="2.5" stroke-dasharray="5 7" stroke-linecap="round"/>
+  <circle cx="600" cy="110" r="83" fill="white" opacity=".5"/>
+  <g transform="rotate(-10 600 110)">
+    <rect x="538" y="50" width="94" height="122" rx="12" fill="#E4F2EF" stroke="#BEDCD4" stroke-width="1.5"/>
+  </g>
+  <g transform="rotate(9 600 110)">
+    <rect x="568" y="49" width="94" height="122" rx="12" fill="#EEE9F8" stroke="#D8CDEC" stroke-width="1.5"/>
+  </g>
+  <rect x="552" y="43" width="96" height="128" rx="12" fill="white" stroke="#D6E0E8" stroke-width="1.5"/>
+  <rect x="568" y="60" width="31" height="5" rx="2.5" fill="#52AE9D"/>
+  <path d="M569 80H629M569 88H612" stroke="#CED8E2" stroke-width="3" stroke-linecap="round"/>
+  <path d="M578 132L599 105L623 134L578 132L602 148L623 134M599 105L602 148" stroke="#A1B5C9" stroke-width="1.8"/>
+  <circle cx="578" cy="132" r="5" fill="#52AE9D"/><circle cx="599" cy="105" r="5" fill="#9A83CD"/>
+  <circle cx="623" cy="134" r="5" fill="#52AE9D"/><circle cx="602" cy="148" r="4" fill="#9A83CD"/>
+  <g stroke-linecap="round" stroke-width="2">
+    <path d="M107 57V69M101 63H113M463 44V54M458 49H468" stroke="#74BDB0"/>
+    <path d="M1100 155V167M1094 161H1106M726 173V183M721 178H731" stroke="#AF9AD6"/>
+  </g>
+  <g fill="#B7CBCB"><circle cx="130" cy="164" r="3"/><circle cx="490" cy="167" r="3"/></g>
+  <g fill="#BFB2DB"><circle cx="1080" cy="66" r="3"/><circle cx="706" cy="47" r="3"/></g>
+</svg>

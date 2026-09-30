@@ -251,3 +251,8 @@
 - README 改为项目首页：线上入口、可视化流程、实际任务、301 篇时间点、覆盖限制、Skill 安装与调用、数据发布路径。旧的冗长实现说明由 Skill 操作参考和现有审计文档承接。
 - `skills/gnn-paper-digest/` 现在包含入口 `SKILL.md`、按需读取的 `references/workflows.md` 及 `install.py`。旧根目录 `scripts/install_skill.py` 已移除；安装器复制完整文件夹，已有差异默认停止，显式 `--replace` 会先备份。用户仍需 Awesome-GNN 项目代码与本机 API 配置，Skill 文件夹不是独立论文流水线。
 - 新增安装行为测试；92 项 Python 测试及 Skill 格式校验通过。本机 Skill 已升级，旧版保存在 `C:/Users/19878/.codex/skill-backups/`。此次未运行付费论文检索，未更改页面数据或搜索逻辑。
+
+### 2026-09-30 README 顶部装饰调整
+
+- 按截图移除顶部三枚技术徽章与收录数量引用说明，保留标题、导航和覆盖审计入口。
+- 新增本地 SVG 横幅 `docs/assets/graph-banner.svg`，采用青绿/淡紫节点网络、论文卡片与轨道点阵装饰；无需第三方图片请求，可随 README 宽度缩放。此次只调整仓库说明外观。

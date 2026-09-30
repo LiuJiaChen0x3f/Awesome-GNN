@@ -6,13 +6,9 @@
 
 [在线浏览论文](https://liujiachen0x3f.github.io/Awesome-GNN/) · [使用 Skill](#用-codex-skill-更新论文) · [覆盖审计](docs/latest_conference_coverage_audit.md)
 
-![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-静态站点-222222?logo=github)
-![Topics](https://img.shields.io/badge/主题-TAG%20%7C%20OOD-0F766E)
+<img src="docs/assets/graph-banner.svg" alt="图学习主题装饰：连接的图节点与论文卡片" width="100%" />
 
 </div>
-
-> 截至 2026-09-30，网页收录 **301 篇**去重论文。它是持续更新的研究索引，不代表相关论文已全部收齐；待核验范围见[覆盖审计](docs/latest_conference_coverage_audit.md)。
 
 ## 项目做什么
 
