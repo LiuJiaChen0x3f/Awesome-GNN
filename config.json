@@ -1,6 +1,18 @@
 {
   "days": 14,
+  "search_windows": {
+    "conference_since": "2025-01-01",
+    "arxiv_since": "2026-01-01"
+  },
   "max_per_source": 150,
+  "bulk_search": {
+    "conference_years": [2026, 2025],
+    "batch_limit": 12,
+    "arxiv_rounds": 4,
+    "conference_passes": 2,
+    "max_seconds": 7200,
+    "max_summary_papers": 240
+  },
   "max_llm_papers": 50,
   "max_llm_seconds": 1200,
   "llm_concurrency": 3,

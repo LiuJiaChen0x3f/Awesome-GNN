@@ -1,0 +1,55 @@
+[
+  {
+    "url": "https://openreview.net/group?id=logconference.io/LOG/2026/Conference",
+    "status": 200,
+    "size": 176715,
+    "title": "LOG 2026 Conference | OpenReview",
+    "text": "LOG 2026 Conference | OpenReview OpenReview .net OpenReview .net Login OpenReview .net Login Loading About OpenReview Contact FAQ Hosting a Venue Sponsors Terms of Use / Privacy Policy All Venues Donate News OpenReview is a long-term project to advance science through improved peer review with legal nonprofit status. We gratefully acknowledge the support of the OpenReview Sponsors . © 2026 OpenReview Loading",
+    "links": []
+  },
+  {
+    "url": "https://api2.openreview.net/notes?content.venueid=logconference.io/LOG/2026/Conference&limit=1000",
+    "status": 403,
+    "size": 331,
+    "title": "",
+    "text": "{\"name\":\"ChallengeRequiredError\",\"message\":\"Challenge verification required (2026-09-29-6510651)\",\"status\":403,\"details\":{\"challengeUrl\":\"https://openreview.net/challenge?redirect=https%3A%2F%2Fapi2.openreview.net%2Fnotes%3Fcontent.venueid%3Dlogconference.io%2FLOG%2F2026%2FConference%26limit%3D1000\",\"reqId\":\"2026-09-29-6510651\"}}",
+    "links": []
+  },
+  {
+    "url": "https://neurips.cc/virtual/2026/papers.html",
+    "status": 403,
+    "size": 49865,
+    "title": "NeurIPS 2026 Conference Site",
+    "text": "NeurIPS 2026 Conference Site Skip to yearly menu bar Skip to main content Main Navigation NeurIPS Help/FAQ Contact NeurIPS Create Profile Code of Ethics Code of Conduct Journal To Conference Track Diversity & Inclusion Proceedings Future Meetings Press Exhibitor Information Privacy Policy Downloads My Stuff Login Sydney Atlanta Paris Select Year: (2026) 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 Earlier Conferences Dates Submit Call for Papers Main Track Handbook Reviewing Guidelines Call for Evaluations & Datasets Evaluations and Datasets FAQ Reviewing Guidelines Call for Position Papers Call for Reproducibility Call for Tutorials Call For Competitions Competition Track Reviewing Guidelines Call for Workshops Call For Affinity Events Call for Educational Resources Call For Creative AI Call for Social Events Call for Journal Papers Call for Expo AI Reviewing Experiment Attend Hotels Visa Information Volunteering and Financial Assistance Attending with Children Organizers Organizing Committee NeurIPS Board NeurIPS Foundation Exhibitors 2026 Exhibitors Portal EAC Information The NeurIPS 2026 conference site is currently closed. See the date \"Virtual Site Opens\" on the dates page for\n            when it opens. Successful Page Load NeurIPS uses cookies for essential functions only. We do not sell your personal\n                        information. Our Privacy Policy » Accept The NeurIPS Logo above may be used on presentations. Right-click and choose\n                            download. It is a vector graphic and may be used at any scale. Useful links Press Proceedings Contact 1269 Law St, San Diego CA 92109 Email NeurIPS Proceedings",
+    "links": [
+      {
+        "text": "Proceedings",
+        "href": "https://proceedings.neurips.cc/"
+      },
+      {
+        "text": "Call for Papers",
+        "href": "/Conferences/2026/CallForPapers"
+      },
+      {
+        "text": "Call for Position Papers",
+        "href": "/Conferences/2026/CallForPositionPapers"
+      },
+      {
+        "text": "Call for Journal Papers",
+        "href": "/public/JournalToConference"
+      },
+      {
+        "text": "Proceedings",
+        "href": "https://proceedings.neurips.cc/"
+      },
+      {
+        "text": "NeurIPS Proceedings",
+        "href": "https://proceedings.neurips.cc"
+      }
+    ]
+  },
+  {
+    "url": "https://eccv.ecva.net/",
+    "error_type": "SSLError"
+  }
+]

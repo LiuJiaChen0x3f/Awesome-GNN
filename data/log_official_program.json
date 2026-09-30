@@ -1,0 +1,434 @@
+[
+  {
+    "title": "EC-Gate: Expansion Contribution-Aware Gating for Structure-Guided Message Passing in GNNs",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=PazZzZ0fgA",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "Learning particle dynamics subject to rigid body manipulations using graph neural networks",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=vGjFGfHR42",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "Learning to Collaborate: Personalized Federated GNNs",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=RsWHAerLMb",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "Synthesize-on-Graph: Knowledgeable Synthetic Data Generation for Continued Pre-training of Large Language Models",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=mkx3UyFPLl",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "Detecting Learning Dynamics in Graph Transformers via Spectral Deviations",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=dubWNqfasD",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "Tuning-Free LLM Can Build A Strong Recommender Under Sparse Connectivity And Knowledge Gap Via Extracting Intent",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=oYnXboHALK",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "Integrating Temporal and Structural Context in Graph Transformers for Relational Deep Learning",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=O4eCrIFmwa",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "Generalized Degrees for Scalable Discrete Time Dynamic Graph Generation",
+    "decision": "Oral",
+    "openreview_url": "https://openreview.net/forum?id=yVJXsCC8NY",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "FSW-GNN: A Bi-Lipschitz WL-Equivalent Graph Neural Network",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=zVXZK5JRHB",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "Learning Kronecker-Structured Graphs from Smooth Signals",
+    "decision": "Oral",
+    "openreview_url": "https://openreview.net/forum?id=kuDtgSMEFn",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "Graph Cut-Based Semi-Supervised Learning via p-Conductances",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=b3IzAJiruU",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "Mapping the gene space at single-cell resolution with gene signal pattern analysis",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=d59AhkXdqe",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "TopoFormer: An Efficient Link-Set Prediction Architecture for Ad Hoc Network Topology Generation",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=Y7VOUTjPeY",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "GraphLand: Evaluating Graph Machine Learning Models on Diverse Industrial Data",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=DDpToPGYOu",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "TANGO: Graph Neural Dynamics via Learned Energy and Tangential Flows",
+    "decision": "Oral",
+    "openreview_url": "https://openreview.net/forum?id=c3aN3wecSt",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "G-Loss: Graph-Guided Fine-Tuning of Language Models",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=8DIZVVKSra",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "Rethinking Test Generalisation In Neural Algorithmic Reasoning",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=mX0tP6kivu",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "FLORA: GNNs as Predictors of Agentic Workflow Performances",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=RmlDI5kUxa",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "Overcoming Information Bottlenecks in Directed Graph Neural Networks through Rewiring",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=cuI1BeP8QP",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "Virtual Nodes Go Temporal",
+    "decision": "Oral",
+    "openreview_url": "https://openreview.net/forum?id=jdKtkiH9ze",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "Link Prediction with Untrained Message Passing Layers",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=2M6MJf4CTL",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "DyGSSM: Multi-view Dynamic Graph Embeddings with SSM Gradient Update",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=uRLMoB6Ijx",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "Complex-Weighted Convolutional Networks: Provable Expressiveness via Complex Diffusion",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=EgRvGMd2Zp",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "Less is More: Using Buffer Nodes to Reduce Excessive Majority Node Influence in Class Imbalance Graphs",
+    "decision": "Oral",
+    "openreview_url": "https://openreview.net/forum?id=6ikB5L1kzq",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-1751485898.csv",
+    "sha256": "7e95f571c79ca6008482f6f65edabaee07943fdb1c5a7c3dafdaf4744bc93916",
+    "year": 2025
+  },
+  {
+    "title": "KNARsack: Teaching Neural Algorithmic Reasoners to Solve Pseudo-Polynomial Problems",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=cwj418JPv7",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "Random Forest Autoencoders for Guided Representation Learning",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=OFlcPZiXOs",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "Low-Shot Graph Learning with Topological and Spectral Embeddings",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=XpoqfBlWGK",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "An Improved and Generalised Analysis for Spectral Clustering",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=KTVWD9lMhM",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "Learning to Collaborate: Personalized Federated GNNs",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=RsWHAerLMb",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "Generative Latent Space Dynamics of Electron Density",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=s4l8zc1w8e",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "Efficient Neural Common Neighbor for Temporal Graph Link Prediction",
+    "decision": "Oral",
+    "openreview_url": "https://openreview.net/forum?id=ffsDVGiKRm",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "SearchViG: Optimal Vision GNNs via Ramanujan Spectral Optimization",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=cmEzgaYIJC",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "Controllable Generation of Drug-like Molecules with Multi-modal Variational Flow",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=qsAy8vSuW7",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "Weisfeiler and Leman Follow the Arrow of Time: Expressive Power of Message Passing in Temporal Event Graphs",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=JAozIZcC7d",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "Flow Divergence: Comparing Hierarchical Network Partitions based on Relative Entropy",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=B5ksarDPdh",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "TopoGeoNet: A Scalable Topological and Geometric Learning Framework for Spatial Graph",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=g6fjyROuQB",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "Generalized Degrees for Scalable Discrete Time Dynamic Graph Generation",
+    "decision": "Oral",
+    "openreview_url": "https://openreview.net/forum?id=yVJXsCC8NY",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "Short-Range Oversquashing",
+    "decision": "Oral",
+    "openreview_url": "https://openreview.net/forum?id=rmX8Jamnyg",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "Bring Complex Geometric Information to LLMs: A Positional Survey of Graph Parametric Representation",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=AZmt7LlBmI",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "Leveraging Classical Algorithms for Graph Neural Networks",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=N3uWMaUnex",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "Differentiable Community Detection with Graph Neural Networks and Stochastic Block Models",
+    "decision": "Oral",
+    "openreview_url": "https://openreview.net/forum?id=T1vdfm1THf",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "When Structure Doesn’t Help: LLMs Do Not Read Text-Attributed Graphs as Effectively as We Expected",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=ijQTdlHJze",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "Graph-Guided Time Series Generation with Applications to Financial Correlation Modeling",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=SfUm1571Fn",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "Contextual Tokenization for Graph Inverted Indices",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=X7GUCvMfl2",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "One Model, Any Conjunctive Query: Graph Neural Networks for Answering Queries over Incomplete Knowledge Graphs",
+    "decision": "Oral",
+    "openreview_url": "https://openreview.net/forum?id=Fo2GLDelI1",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "RotaTouille: Rotation Equivariant Deep Learning for Contours",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=VbCLyz3uW7",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "Relaxed Equivariance via Multitask Learning",
+    "decision": "Poster",
+    "openreview_url": "https://openreview.net/forum?id=xrzYdsIv3f",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  },
+  {
+    "title": "Exploring Intrinsic Structures of Hyperedges as Point Clouds",
+    "decision": "Oral",
+    "openreview_url": "https://openreview.net/forum?id=CIYl0o3d5d",
+    "program_url": "https://log2025.logconference.org/schedule-posters",
+    "csv_snapshot": "log-posters-2039914825.csv",
+    "sha256": "e241e1534a58449085f465b890848810fc8b25e6d43422bb8509196460dc08ff",
+    "year": 2025
+  }
+]

@@ -1,0 +1,727 @@
+{
+  "finished_at": "2026-09-29T11:11:16.104129+00:00",
+  "manifest": ".local/literature-audit/gap-import-manifest.json",
+  "outcomes": [
+    {
+      "title": "DAPrompt: Dual Alignment Prompt of Structure and Semantics for Few-shot Graph Learning",
+      "venue": "AAAI",
+      "year": 2026,
+      "discovery": {
+        "detail_path": "conference-publications/folders/years/2026/publications_aaai26/daprompt_aaai26/README.md",
+        "discovered_via": "literature_repository",
+        "category": "Heterophily",
+        "catalog_id": 2100
+      },
+      "checked_at": "2026-09-29T11:09:57.626778+00:00",
+      "status": "fulltext_prepared",
+      "paper_id": "p-1633a0f6016ae1cdfae9",
+      "topics": [],
+      "validation_errors": []
+    },
+    {
+      "title": "GraphTextack: A Realistic Black-Box Node Injection Attack on LLM-Enhanced GNNs",
+      "venue": "AAAI",
+      "year": 2026,
+      "discovery": {
+        "detail_path": "conference-publications/folders/years/2026/publications_aaai26/graphtextack_aaai26/README.md",
+        "discovered_via": "literature_repository",
+        "category": "Language Models",
+        "catalog_id": 2004
+      },
+      "checked_at": "2026-09-29T11:09:57.627692+00:00",
+      "status": "fulltext_prepared",
+      "paper_id": "p-88c8bb6501c40fe32a1b",
+      "topics": [],
+      "validation_errors": []
+    },
+    {
+      "title": "LLM Collaborative Filtering: User-Item Graph as New Language",
+      "venue": "AAAI",
+      "year": 2026,
+      "discovery": {
+        "detail_path": "conference-publications/folders/years/2026/publications_aaai26/nlcf_aaai26/README.md",
+        "discovered_via": "literature_repository",
+        "category": "Language Models",
+        "catalog_id": 2032
+      },
+      "checked_at": "2026-09-29T11:09:57.628883+00:00",
+      "status": "fulltext_prepared",
+      "paper_id": "p-d102298402812845ffd9",
+      "topics": [],
+      "validation_errors": []
+    },
+    {
+      "title": "Stage-Aware Graph Contrastive Learning with Node-oriented Mixture of Experts",
+      "venue": "AAAI",
+      "year": 2026,
+      "discovery": {
+        "detail_path": "conference-publications/folders/years/2026/publications_aaai26/nodemoe_aaai26/README.md",
+        "discovered_via": "literature_repository",
+        "category": "Language Models",
+        "catalog_id": 1995
+      },
+      "checked_at": "2026-09-29T11:09:57.629549+00:00",
+      "status": "fulltext_prepared",
+      "paper_id": "p-0cb04d3e8968560f2828",
+      "topics": [],
+      "validation_errors": []
+    },
+    {
+      "title": "Subspace-Aware Graph Construction and Contrastive Alignment for Multimodal Recommendation with Large Language Models",
+      "venue": "AAAI",
+      "year": 2026,
+      "discovery": {
+        "detail_path": "conference-publications/folders/years/2026/publications_aaai26/sccarl_aaai26/README.md",
+        "discovered_via": "literature_repository",
+        "category": "Language Models",
+        "catalog_id": 1992
+      },
+      "checked_at": "2026-09-29T11:09:57.630548+00:00",
+      "status": "fulltext_prepared",
+      "paper_id": "p-a06066abdc18b4731cf7",
+      "topics": [],
+      "validation_errors": []
+    },
+    {
+      "title": "Unifying Multi-View Knowledge for Graph Learning via Model Collaboration",
+      "venue": "AAAI",
+      "year": 2026,
+      "discovery": {
+        "detail_path": "conference-publications/folders/years/2026/publications_aaai26/c3m_aaai26/README.md",
+        "discovered_via": "literature_repository",
+        "category": "Language Models",
+        "catalog_id": 2007
+      },
+      "checked_at": "2026-09-29T11:10:02.664497+00:00",
+      "status": "fulltext_prepared",
+      "paper_id": "p-13a0677a5be9d6cbae5e",
+      "topics": [],
+      "validation_errors": []
+    },
+    {
+      "title": "Vision-Language Models Guided Graph Concept Reasoning for Interpretable Diabetic Retinopathy Diagnosis",
+      "venue": "AAAI",
+      "year": 2026,
+      "discovery": {
+        "detail_path": "conference-publications/folders/years/2026/publications_aaai26/vlmgcr_aaai26/README.md",
+        "discovered_via": "literature_repository",
+        "category": "Language Models",
+        "catalog_id": 2008
+      },
+      "checked_at": "2026-09-29T11:10:03.659048+00:00",
+      "status": "fulltext_prepared",
+      "paper_id": "p-048967314ba7e9f2cdd1",
+      "topics": [],
+      "validation_errors": []
+    },
+    {
+      "title": "Zero-shot Recommendation: Towards Class Semantic Relation Learning for Inferring Labels of Unseen Micro-videos",
+      "venue": "AAAI",
+      "year": 2026,
+      "discovery": {
+        "detail_path": "conference-publications/folders/years/2026/publications_aaai26/csrl_aaai26/README.md",
+        "discovered_via": "literature_repository",
+        "category": "Language Models",
+        "catalog_id": 1998
+      },
+      "checked_at": "2026-09-29T11:10:08.954528+00:00",
+      "status": "fulltext_prepared",
+      "paper_id": "p-4fc7bca405da99b7ea36",
+      "topics": [],
+      "validation_errors": []
+    },
+    {
+      "title": "A Graph Talks, But Who’s Listening? Rethinking Evaluations for Graph-Language Models",
+      "venue": "ACL",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://aclanthology.org/events/acl-2026/",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:10.396012+00:00",
+      "status": "metadata_unresolved",
+      "errors": [
+        {
+          "url": "https://aclanthology.org/2026.findings-acl.1624/",
+          "error": "No verified allowed main-conference venue in source metadata"
+        }
+      ]
+    },
+    {
+      "title": "CVRH : Cross-modal Variational Role Hypergraph Network via Semantic Enhancement for Multi-modal Event Argument Extraction",
+      "venue": "ACL",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://aclanthology.org/events/acl-2026/",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:11.030577+00:00",
+      "status": "metadata_unresolved",
+      "errors": [
+        {
+          "url": "https://aclanthology.org/2026.findings-acl.978/",
+          "error": "No verified allowed main-conference venue in source metadata"
+        }
+      ]
+    },
+    {
+      "title": "Colorful Talks with Graphs: Human-Interpretable Graph Encodings for Large Language Models",
+      "venue": "ACL",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://aclanthology.org/events/acl-2026/",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:11.943395+00:00",
+      "status": "metadata_unresolved",
+      "errors": [
+        {
+          "url": "https://aclanthology.org/2026.findings-acl.2049/",
+          "error": "No verified allowed main-conference venue in source metadata"
+        }
+      ]
+    },
+    {
+      "title": "Critic Rule Induction: Improving Temporal Knowledge Graph Forecasting with Generator-Critic Language Models",
+      "venue": "ACL",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://aclanthology.org/events/acl-2026/",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:12.748598+00:00",
+      "status": "metadata_unresolved",
+      "errors": [
+        {
+          "url": "https://aclanthology.org/2026.findings-acl.1471/",
+          "error": "No verified allowed main-conference venue in source metadata"
+        }
+      ]
+    },
+    {
+      "title": "EHRAG : Bridging Semantic Gaps in Lightweight G raph RAG via Hybrid Hypergraph Construction and Retrieval",
+      "venue": "ACL",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://aclanthology.org/events/acl-2026/",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:13.787735+00:00",
+      "status": "metadata_unresolved",
+      "errors": [
+        {
+          "url": "https://aclanthology.org/2026.findings-acl.1233/",
+          "error": "No verified allowed main-conference venue in source metadata"
+        }
+      ]
+    },
+    {
+      "title": "From Graph to Text and Back: Semantic Fidelity in Automated Industrial Knowledge Graphs",
+      "venue": "ACL",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://aclanthology.org/events/acl-2026/",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:14.514684+00:00",
+      "status": "metadata_unresolved",
+      "errors": [
+        {
+          "url": "https://aclanthology.org/2026.acl-industry.140/",
+          "error": "ACL/EMNLP record is not a main-conference paper"
+        }
+      ]
+    },
+    {
+      "title": "G a L a: Hypergraph-Guided Visual Language Models for Procedural Planning",
+      "venue": "ACL",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://aclanthology.org/events/acl-2026/",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:15.238416+00:00",
+      "status": "metadata_unresolved",
+      "errors": [
+        {
+          "url": "https://aclanthology.org/2026.findings-acl.980/",
+          "error": "No verified allowed main-conference venue in source metadata"
+        }
+      ]
+    },
+    {
+      "title": "GCCLA : Graph-Conditioned Cross-Lingual Adaptation of Large Language Models Under Extreme Data Scarcity (A Case Study in T igrigna)",
+      "venue": "ACL",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://aclanthology.org/events/acl-2026/",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:15.639319+00:00",
+      "status": "metadata_unresolved",
+      "errors": [
+        {
+          "url": "https://aclanthology.org/2026.c3nlp-1.4/",
+          "error": "No verified allowed main-conference venue in source metadata"
+        }
+      ]
+    },
+    {
+      "title": "Investigating Links between Illicit Massage Businesses through Natural Language Processing and Graph Machine Learning",
+      "venue": "ACL",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://aclanthology.org/events/acl-2026/",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:15.852400+00:00",
+      "status": "metadata_unresolved",
+      "errors": [
+        {
+          "url": "https://aclanthology.org/2026.findings-acl.1702/",
+          "error": "No verified allowed main-conference venue in source metadata"
+        }
+      ]
+    },
+    {
+      "title": "K- GIP : Diagnosing Logical Fractures in Large Vision-Language Models via Verification Scene Graphs and Sequential Pruning",
+      "venue": "ACL",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://aclanthology.org/events/acl-2026/",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:16.284100+00:00",
+      "status": "metadata_unresolved",
+      "errors": [
+        {
+          "url": "https://aclanthology.org/2026.findings-acl.497/",
+          "error": "No verified allowed main-conference venue in source metadata"
+        }
+      ]
+    },
+    {
+      "title": "KGR xn- LLM : Knowledge Graph Enhanced Large Language Models for Molecular Reaction Reasoning",
+      "venue": "ACL",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://aclanthology.org/events/acl-2026/",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:17.088295+00:00",
+      "status": "metadata_unresolved",
+      "errors": [
+        {
+          "url": "https://aclanthology.org/2026.bionlp-1.22/",
+          "error": "No verified allowed main-conference venue in source metadata"
+        }
+      ]
+    },
+    {
+      "title": "MAKI : Multi-layer Aligned Knowledge Injection for Structure-aware Knowledge Graph Completion with Large Language Models",
+      "venue": "ACL",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://aclanthology.org/events/acl-2026/",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:17.263232+00:00",
+      "status": "metadata_unresolved",
+      "errors": [
+        {
+          "url": "https://aclanthology.org/2026.findings-acl.1423/",
+          "error": "No verified allowed main-conference venue in source metadata"
+        }
+      ]
+    },
+    {
+      "title": "See or Say Graphs: Agent-Driven Scalable Graph Understanding with Vision-Language Models",
+      "venue": "ACL",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://aclanthology.org/events/acl-2026/",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:17.414900+00:00",
+      "status": "metadata_unresolved",
+      "errors": [
+        {
+          "url": "https://aclanthology.org/2026.findings-acl.2066/",
+          "error": "No verified allowed main-conference venue in source metadata"
+        }
+      ]
+    },
+    {
+      "title": "Structure-Aware Zero-Shot Relational Learning for Knowledge Graphs without External Knowledge",
+      "venue": "ACL",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://aclanthology.org/events/acl-2026/",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:18.337073+00:00",
+      "status": "metadata_unresolved",
+      "errors": [
+        {
+          "url": "https://aclanthology.org/2026.findings-acl.941/",
+          "error": "No verified allowed main-conference venue in source metadata"
+        }
+      ]
+    },
+    {
+      "title": "CASPA: Graph-Structured Concept Anchors for Modality-Agnostic Adaptation in Vision-Language Models",
+      "venue": "CVPR",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://openaccess.thecvf.com/CVPR2026?day=all",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:18.470182+00:00",
+      "status": "fulltext_prepared",
+      "paper_id": "p-c979b9a354f24cc5a0a7",
+      "topics": [],
+      "validation_errors": []
+    },
+    {
+      "title": "Actions Speak Louder than Prompts: A Large-Scale Study of LLMs for Graph Inference",
+      "venue": "ICLR",
+      "year": 2026,
+      "discovery": {
+        "detail_path": "conference-publications/folders/years/2026/publications_iclr26/graphascode_iclr26/README.md",
+        "discovered_via": "literature_repository",
+        "category": "Heterophily",
+        "catalog_id": 2755
+      },
+      "checked_at": "2026-09-29T11:10:18.654968+00:00",
+      "status": "fulltext_prepared",
+      "paper_id": "p-7cf6e08b1283fba154a8",
+      "topics": [],
+      "validation_errors": []
+    },
+    {
+      "title": "Relational Transformer: Toward Zero-Shot Foundation Models for Relational Data",
+      "venue": "ICLR",
+      "year": 2026,
+      "discovery": {
+        "detail_path": "conference-publications/folders/years/2026/publications_iclr26/rt_iclr26/README.md",
+        "discovered_via": "literature_repository",
+        "category": "In-Context Learning",
+        "catalog_id": 2737
+      },
+      "checked_at": "2026-09-29T11:10:18.813683+00:00",
+      "status": "fulltext_prepared",
+      "paper_id": "p-34d415e130e80bc90667",
+      "topics": [],
+      "validation_errors": []
+    },
+    {
+      "title": "Can Computational Reducibility Lead to Transferable Models for Graph Combinatorial Optimization?",
+      "venue": "ICML",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://icml.cc/virtual/2026/papers.html",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:19.060879+00:00",
+      "status": "fulltext_unresolved",
+      "error": "Full text unavailable: HTTPError"
+    },
+    {
+      "title": "DiP-G: Discrete Prompting for Graph Neural Networks",
+      "venue": "ICML",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://icml.cc/virtual/2026/papers.html",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:19.976084+00:00",
+      "status": "fulltext_unresolved",
+      "error": "Full text unavailable: HTTPError"
+    },
+    {
+      "title": "FLAG: Foundation model representation with Latent diffusion Alignment via Graph for spatial gene expression prediction",
+      "venue": "ICML",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://icml.cc/virtual/2026/papers.html",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:25.772153+00:00",
+      "status": "fulltext_unresolved",
+      "error": "Full text unavailable: HTTPError"
+    },
+    {
+      "title": "Message Tuning Outshines Graph Prompt Tuning: A Prismatic Space Perspective",
+      "venue": "ICML",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://icml.cc/virtual/2026/papers.html",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:28.502600+00:00",
+      "status": "fulltext_unresolved",
+      "error": "Full text unavailable: HTTPError"
+    },
+    {
+      "title": "PromptDyG: Test-Time Prompt Adaptation on Dynamic Graphs",
+      "venue": "ICML",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://icml.cc/virtual/2026/papers.html",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:29.539452+00:00",
+      "status": "fulltext_unresolved",
+      "error": "Full text unavailable: HTTPError"
+    },
+    {
+      "title": "Same Graph Cross-Task Transfer in GNNs: Protocols and Predictors",
+      "venue": "ICML",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://icml.cc/virtual/2026/papers.html",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:33.677079+00:00",
+      "status": "fulltext_unresolved",
+      "error": "Full text unavailable: HTTPError"
+    },
+    {
+      "title": "Size Transferability of Graph Convolutional Networks across Sparsity: A Generalized Graphon Perspective",
+      "venue": "ICML",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://icml.cc/virtual/2026/papers.html",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:34.144020+00:00",
+      "status": "fulltext_unresolved",
+      "error": "Full text unavailable: HTTPError"
+    },
+    {
+      "title": "TriForces: Augmenting Atomistic GNNs for Transferable Representations",
+      "venue": "ICML",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://icml.cc/virtual/2026/papers.html",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:34.300179+00:00",
+      "status": "fulltext_unresolved",
+      "error": "Full text unavailable: HTTPError"
+    },
+    {
+      "title": "Use What You Know: Causal Foundation Models with Partial Graphs",
+      "venue": "ICML",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://icml.cc/virtual/2026/papers.html",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:35.159735+00:00",
+      "status": "fulltext_unresolved",
+      "error": "Full text unavailable: HTTPError"
+    },
+    {
+      "title": "Advancing Graph Few-Shot Learning via In-Context Learning",
+      "venue": "KDD",
+      "year": 2026,
+      "discovery": {
+        "detail_path": "conference-publications/folders/years/2026/publications_kdd26/vision_kdd26/README.md",
+        "discovered_via": "literature_repository",
+        "category": "Graph Prompting, Zero-Shot & In-Context Transfer",
+        "catalog_id": 3236
+      },
+      "checked_at": "2026-09-29T11:10:35.417828+00:00",
+      "status": "fulltext_unresolved",
+      "error": "Full text unavailable: no full-text URL"
+    },
+    {
+      "title": "Geometry-aware Test-Time Adaptation on Graphs",
+      "venue": "KDD",
+      "year": 2026,
+      "discovery": {
+        "detail_path": "conference-publications/folders/years/2026/publications_kdd26/geotta_kdd26/README.md",
+        "discovered_via": "literature_repository",
+        "category": "Hyperbolic Geometry & Geometry-Aware Graph Transfer",
+        "catalog_id": 3217
+      },
+      "checked_at": "2026-09-29T11:10:38.018374+00:00",
+      "status": "fulltext_unresolved",
+      "error": "Full text unavailable: no full-text URL"
+    },
+    {
+      "title": "H4G: Unlocking Faithful Inference for Zero-Shot Graph Learning in Hyperbolic Space",
+      "venue": "KDD",
+      "year": 2026,
+      "discovery": {
+        "detail_path": "conference-publications/folders/years/2026/publications_kdd26/h4g_kdd26/README.md",
+        "discovered_via": "literature_repository",
+        "category": "Hyperbolic Geometry & Geometry-Aware Graph Transfer",
+        "catalog_id": 3215
+      },
+      "checked_at": "2026-09-29T11:10:38.443584+00:00",
+      "status": "fulltext_unresolved",
+      "error": "Full text unavailable: no full-text URL"
+    },
+    {
+      "title": "Learning and Editing Universal Graph Prompt Tuning via Reinforcement Learning",
+      "venue": "KDD",
+      "year": 2026,
+      "discovery": {
+        "detail_path": "conference-publications/folders/years/2026/publications_kdd26/leap_kdd26/README.md",
+        "discovered_via": "literature_repository",
+        "category": "Graph Prompting, Zero-Shot & In-Context Transfer",
+        "catalog_id": 3235
+      },
+      "checked_at": "2026-09-29T11:10:38.703836+00:00",
+      "status": "metadata_unresolved",
+      "errors": [
+        {
+          "url": "https://dl.acm.org/doi/10.1145/3770854.3780291",
+          "error": "RequestError"
+        }
+      ]
+    },
+    {
+      "title": "MOBI: Monolithic Graph-Language Modeling Beyond Modality Interference",
+      "venue": "KDD",
+      "year": 2026,
+      "discovery": {
+        "detail_path": "conference-publications/folders/years/2026/publications_kdd26/mobi_kdd26/README.md",
+        "discovered_via": "literature_repository",
+        "category": "Cross-Domain Pretraining & Graph Foundation Models",
+        "catalog_id": 3234
+      },
+      "checked_at": "2026-09-29T11:10:39.378328+00:00",
+      "status": "fulltext_unresolved",
+      "error": "Full text unavailable: HTTPError"
+    },
+    {
+      "title": "Node4All: Learning Node Representation Beyond Datasets",
+      "venue": "KDD",
+      "year": 2026,
+      "discovery": {
+        "detail_path": "conference-publications/folders/years/2026/publications_kdd26/node4all_kdd26/README.md",
+        "discovered_via": "literature_repository",
+        "category": "Cross-Domain Pretraining & Graph Foundation Models",
+        "catalog_id": 3232
+      },
+      "checked_at": "2026-09-29T11:10:40.345725+00:00",
+      "status": "fulltext_unresolved",
+      "error": "Full text unavailable: no full-text URL"
+    },
+    {
+      "title": "Simple yet Effective Diffusion-based Graph Data Augmentation via Complementary Diffusion Transfer",
+      "venue": "KDD",
+      "year": 2026,
+      "discovery": {
+        "detail_path": "conference-publications/folders/years/2026/publications_kdd26/codit_kdd26/README.md",
+        "discovered_via": "literature_repository",
+        "category": "Contrastive Learning, Graph Autoencoding & Diffusion Augmentation",
+        "catalog_id": 3225
+      },
+      "checked_at": "2026-09-29T11:10:42.060021+00:00",
+      "status": "fulltext_unresolved",
+      "error": "Full text unavailable: no full-text URL"
+    },
+    {
+      "title": "Test-Time Search for Automated GFM Fine-Tuning",
+      "venue": "KDD",
+      "year": 2026,
+      "discovery": {
+        "detail_path": "conference-publications/folders/years/2026/publications_kdd26/gfmtuner_kdd26/README.md",
+        "discovered_via": "literature_repository",
+        "category": "Cross-Domain Pretraining & Graph Foundation Models",
+        "catalog_id": 3231
+      },
+      "checked_at": "2026-09-29T11:10:42.906643+00:00",
+      "status": "fulltext_unresolved",
+      "error": "Full text unavailable: HTTPError"
+    },
+    {
+      "title": "MGRAG: Semantic Subgraph Matching and Graph-Aware Caching for Multimodal\n                  Retrieval-Augmented Generation",
+      "venue": "VLDB",
+      "year": 2026,
+      "discovery": {
+        "directory_url": "https://www.vldb.org/2026/program.html",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:43.224018+00:00",
+      "status": "fulltext_prepared",
+      "paper_id": "p-80541492a3c042ba8f01",
+      "topics": [],
+      "validation_errors": []
+    },
+    {
+      "title": "Combining Structural and Textual Knowledge for Knowledge Graph Link Prediction via Large Language Models",
+      "venue": "WSDM",
+      "year": 2026,
+      "discovery": {
+        "detail_path": "conference-publications/folders/years/2026/publications_wsdm26/stkglp_wsdm26/README.md",
+        "discovered_via": "literature_repository",
+        "category": "Language Models",
+        "catalog_id": 3575
+      },
+      "checked_at": "2026-09-29T11:10:44.992999+00:00",
+      "status": "fulltext_unresolved",
+      "error": "Full text unavailable: no full-text URL"
+    },
+    {
+      "title": "3DGraphLLM: Combining Semantic Graphs and Large Language Models for 3D Scene Understanding",
+      "venue": "ICCV",
+      "year": 2025,
+      "discovery": {
+        "detail_path": "conference-publications/folders/years/2025/publications_iccv25/3dgraphllm_iccv25/README.md",
+        "discovered_via": "literature_repository",
+        "category": "Scene Graphs",
+        "catalog_id": 532
+      },
+      "checked_at": "2026-09-29T11:10:45.187581+00:00",
+      "status": "fulltext_prepared",
+      "paper_id": "p-82da075809848e2655ef",
+      "topics": [],
+      "validation_errors": []
+    },
+    {
+      "title": "Aligning Vision to Language: Annotation-Free Multimodal Knowledge Graph Construction for Enhanced LLMs Reasoning",
+      "venue": "ICCV",
+      "year": 2025,
+      "discovery": {
+        "directory_url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+        "discovered_via": "official_directory",
+        "category": "Official directory: graph-related title"
+      },
+      "checked_at": "2026-09-29T11:10:47.128857+00:00",
+      "status": "fulltext_prepared",
+      "paper_id": "p-a51343ae6d4652764ccf",
+      "topics": [],
+      "validation_errors": []
+    }
+  ]
+}

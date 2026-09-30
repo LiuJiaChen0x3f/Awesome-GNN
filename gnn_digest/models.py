@@ -7,7 +7,12 @@ from urllib.parse import unquote
 
 
 def clean(value):
-    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", str(value or "")))).strip()
+    text=str(value or '')
+    if any(0xD800 <= ord(c) <= 0xDFFF for c in text):
+        # Some PDF fonts expose UTF-16 surrogate pairs as separate code
+        # points. Combine valid pairs losslessly; mark undecodable glyphs.
+        text=text.encode('utf-16-le','surrogatepass').decode('utf-16-le','replace')
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", text))).strip()
 
 
 def norm_title(value):
@@ -100,7 +105,7 @@ def merge_records(records):
             merged['publication_events'] = list(events.values())
             # Prefer the newly fetched record when the original publication date ties.
             recent = max(reversed(verified), key=lambda p:p.get('display_date', p['published']))
-            for field in ('display_date','date_basis','verification','pdf_url'):
+            for field in ('display_date','date_basis','verification','pdf_url','date_precision','conference_year'):
                 if field in recent:
                     merged[field] = recent[field]
             conference = next((p for p in verified if p.get('venue_label') not in (None, '', 'arXiv')), None)
@@ -123,7 +128,7 @@ def merge_records(records):
         # Reuse valid summaries even when merging an additional source.
         valid = next((p for p in reversed(members) if p.get("summary_input_hash") == content_hash(merged)), None)
         if valid:
-            for field in ("status", "keywords", "method", "confidence", "evidence", "summary_input_hash", "prompt_hash", "llm_model", "llm_reasoning_effort", "llm_usage", "summarized_at", "topics", "topic_evidence"):
+            for field in ("status", "keywords", "method", "confidence", "evidence", "evidence_locations", "topic_evidence_locations", "validation_errors", "summary_input_hash", "prompt_hash", "llm_model", "llm_reasoning_effort", "llm_usage", "summarized_at", "topics", "topic_evidence"):
                 if field in valid:
                     merged[field] = valid[field]
         elif merged.get("summary_input_hash"):

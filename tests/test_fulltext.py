@@ -44,7 +44,7 @@ class FulltextTests(unittest.TestCase):
 
     def test_summary_character_limit_is_200(self):
         v = {'relevant':True,'confidence':'high','keywords':['a','b','c','d','e'],
-             'method':'图'*200,'evidence':['We train graph representations.']}
+             'method':'**图方法**'+'图'*197,'evidence':['We train graph representations.']}
         validate_summary(v, 'We train graph representations.')
         with self.assertRaises(ValueError):
             validate_summary({**v,'method':'图'*201}, 'We train graph representations.')

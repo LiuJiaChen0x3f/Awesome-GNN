@@ -1,0 +1,769 @@
+{
+  "candidates": [
+    {
+      "title": "Logic Meets Language: Hybrid Query Answering over Incomplete Text-Labeled Graphs",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "11-MAIN"
+    },
+    {
+      "title": "CRU-Reason: Knowledge Graph-Grounded and Interpretable Clinical Prediction with Clinical Rationale Units",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "71-MAIN"
+    },
+    {
+      "title": "From Text to Structure: The PACKaGE Benchmark for Bidirectional Causal Reasoning in Paragraphs and Graphs",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "76-MAIN"
+    },
+    {
+      "title": "Graph2Counsel: Clinically Grounded Synthetic Counseling Dialogue Generation from Client Psychological Graphs",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "225-MAIN"
+    },
+    {
+      "title": "TKG-Thinker: Towards Dynamic Reasoning over Temporal Knowledge Graphs via Agentic Reinforcement Learning",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "412-MAIN"
+    },
+    {
+      "title": "Medical Bilingualism: Cross-Ontology Graph Retrieval for Incommensurable Knowledge Bases",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "550-MAIN"
+    },
+    {
+      "title": "HyperProve: Answer-Guided Hypergraph Expansion for Multi-Hop Question Answering",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "585-MAIN"
+    },
+    {
+      "title": "MemDreamer: Decoupling Perception and Reasoning for Long Video Understanding via Agentic Hierarchical Graph Memory",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "735-MAIN"
+    },
+    {
+      "title": "FBV-KGQA: Forward-Backward Verification for Knowledge Graph Question Answering",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "802-MAIN"
+    },
+    {
+      "title": "GraphLit: Learning Text-Enriched Dynamic Character Network Representations for Literary Study",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "809-MAIN"
+    },
+    {
+      "title": "H²Table: Hierarchical Hypergraph-Enhanced Large Language Models for Complex Table Reasoning",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "869-MAIN"
+    },
+    {
+      "title": "Not All or None: Dynamic Construction of Target-aware Memory Graph for Conversational Stance Detection",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "966-MAIN"
+    },
+    {
+      "title": "ReGraP-LLaVA: Reasoning enabled Graph-based Personalized Large Language and Vision Assistant",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "995-MAIN"
+    },
+    {
+      "title": "StruProKGR: A Structural and Probabilistic Framework for Sparse Knowledge Graph Reasoning",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "1014-MAIN"
+    },
+    {
+      "title": "CentralKV: Compressing Long-Context LLMs via Attention-Graph Centrality",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "1037-MAIN"
+    },
+    {
+      "title": "Dual-Prompt-Driven Textual Knowledge Graph Generation With Heterogeneous Information Embedding for CTR Prediction",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "1086-MAIN"
+    },
+    {
+      "title": "Time is Not a Label: Continuous Phase Rotation for Temporal Knowledge Graphs and Agentic Memory",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "1172-MAIN"
+    },
+    {
+      "title": "Peak-Then-Collapse and the Four Interface Channels of Knowledge-Graph Tool Use",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "1181-MAIN"
+    },
+    {
+      "title": "Beyond Input Understanding: Diagnosing Multilingual Mathematical Reasoning with Directed Acyclic Trace Graphs",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "1227-MAIN"
+    },
+    {
+      "title": "PathSoft: Hybrid Soft Prompting with Ranked Reasoning Paths for Knowledge Graph Question Answering",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "1261-MAIN"
+    },
+    {
+      "title": "Correct Prediction, Wrong Steps? Consensus Reasoning Knowledge Graph for Robust Chain-of-Thought Synthesis",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "1306-MAIN"
+    },
+    {
+      "title": "GSEM: Graph-based Self-Evolving Memory for Experience Augmented Clinical Reasoning",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "1313-MAIN"
+    },
+    {
+      "title": "LLM-Powered Holistic Enhancement for Text-Attributed Graphs",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "1501-MAIN"
+    },
+    {
+      "title": "Self-Correction Can Amplify Hallucinations: Fact-Level Repair with Graph-Based Evidence Routing in Multimodal Generation",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "1693-MAIN"
+    },
+    {
+      "title": "Graph Evidence Is Not Enough: Diagnosing Native Decoder Use in Graph-Augmented LLMs",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "1707-MAIN"
+    },
+    {
+      "title": "ReFeedGraph: Graph-Grounded Reusable Feedback for Debate Improvement",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "1803-MAIN"
+    },
+    {
+      "title": "Half a Link can Be Enough to Predict a Whole Link: Understanding Generalization in Knowledge Graph Foundation Models",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "1984-MAIN"
+    },
+    {
+      "title": "DrugReason: Dynamic Multi-View Reasoning over Knowledge Graph and Language Evidence for Drug Repurposing",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "2009-MAIN"
+    },
+    {
+      "title": "PunGraph: Retrieval-Enhanced Phonetic-Semantic Graph Reasoning for Pun Understanding",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "2241-MAIN"
+    },
+    {
+      "title": "Beyond Passive Debate: Intent-Driven Multi-Agent Deliberation for Reasoning under Incomplete Knowledge Graphs",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "2316-MAIN"
+    },
+    {
+      "title": "KG-RLVR: Reinforcing LLM Reasoning with Knowledge Graph-Derived Process Rewards",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "2425-MAIN"
+    },
+    {
+      "title": "Towards Holistic Knowledge Retrieval for Augmented Generation: Integrating Graph-Grounded and Query-Aligned Knowledge",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "2448-MAIN"
+    },
+    {
+      "title": "HyperRAG-IHM: Incremental Hyperedge Maintenance for Hypergraph RAG under Corpus Expansion",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "2451-MAIN"
+    },
+    {
+      "title": "Cognitively Decoupled Meta-Induction for Out-of-Distribution Generalization",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "2457-MAIN"
+    },
+    {
+      "title": "LLM as GNN: Graph Vocabulary Learning for Text-Attributed Graph Foundation Models",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "2557-MAIN"
+    },
+    {
+      "title": "Pattern Over-Generalization of Knowledge Graph Embedding",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "2660-MAIN"
+    },
+    {
+      "title": "Tokenization as Structural Inductive Bias: Grapheme-Constrained Subwords for Multilingual Modeling and Vocabulary Surgery",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "2706-MAIN"
+    },
+    {
+      "title": "CORTEX: High-Quality Cross-Domain Organization of Web-Scale Corpora through Ontological Corpus Graph",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "2740-MAIN"
+    },
+    {
+      "title": "Controllable Text-Attributed Graph Generation via LLM-Based Substructure Modeling",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "2770-MAIN"
+    },
+    {
+      "title": "Import What You Need: Learning When and How to Augment EHR Graphs with External Knowledge",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "2856-MAIN"
+    },
+    {
+      "title": "TSHMem: A Temporal-Semantic Hierarchical Memory Graph for Long-Term Conversational Agents",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "2887-MAIN"
+    },
+    {
+      "title": "GRAFE: Graph-Reasoned Automated Feedback and Evaluation for Structure-Aware Essay Assessment",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "2947-MAIN"
+    },
+    {
+      "title": "BiG-SURE - Bipartite Graph for Semantic Uncertainty and Reliability Estimation of LLMs",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "3007-MAIN"
+    },
+    {
+      "title": "Lung-R1: A Knowledge Graph-Guided LLM for Pulmonary Diagnostic Reasoning",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "3120-MAIN"
+    },
+    {
+      "title": "One Model, Many Graphs: Learning over Attributed Graphs across Heterogeneous Modalities with Vision-Language Models",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "3274-MAIN"
+    },
+    {
+      "title": "MedF$^2$Route: Evidence-Routed Graph Verification for Hallucination Detection in Clinical LVLMs",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "3295-MAIN"
+    },
+    {
+      "title": "CROG: Coverage-aware Reasoning Optimization on Graphs for Multi-hop Question Answering",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "3340-MAIN"
+    },
+    {
+      "title": "HiTeC: Hierarchical Contrastive Learning on Text-Attributed Hypergraph with Semantic-Aware Augmentation",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "3444-MAIN"
+    },
+    {
+      "title": "Not All Queries Are Equal: Query-Type-Aware Mixture-of-Experts for Temporal Knowledge Graph Forecasting",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "3717-MAIN"
+    },
+    {
+      "title": "Bridging Text and Structure via Latent Query Refinement for Knowledge Graph Completion",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "3842-MAIN"
+    },
+    {
+      "title": "Cognition on Graph: Navigating Massive Knowledge Space via Cognitive Cycles and Bidirectional Graph-Text Synergy",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "4088-MAIN"
+    },
+    {
+      "title": "Beyond Sparse Rewards: A New Benchmark and Structure-Aware Graph Alignment for Micro-Drama Understanding",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "4098-MAIN"
+    },
+    {
+      "title": "SHAPE: Structural Hypergraph Augmentation with Personalized Event Memory for Temporal Knowledge Graph Reasoning",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "4164-MAIN"
+    },
+    {
+      "title": "CoFGraph: Interleaving Reciprocal Calibration with Confidence Feedback for LLM-Augmented Graph Learning",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "4218-MAIN"
+    },
+    {
+      "title": "Ontology-Based Knowledge Graphs for Industrial Standards with Scope-Aware Logical Rule Structuring",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "4310-MAIN"
+    },
+    {
+      "title": "When Graphs Whisper: Graph Structure Serialization for Embedding Alignment in Cold-Start Recommendation",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "4356-MAIN"
+    },
+    {
+      "title": "GNN-CB: A Graph Neural Network Competition Benchmark for Human and LLM Evaluation",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "5352-MAIN"
+    },
+    {
+      "title": "Span-Based Reasoning with Anonymous Knowledge Graphs",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "5389-MAIN"
+    },
+    {
+      "title": "Zero-Shot Tabular Learning via Hypergraph Reasoning with LLMs",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "5583-MAIN"
+    },
+    {
+      "title": "PGMem: Tightly Coupled Persona–Memory Graph for Lifelong Personalized Agents",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "5895-MAIN"
+    },
+    {
+      "title": "Beyond Static Retrieval: Opportunities and Pitfalls of Iterative Retrieval in GraphRAG",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "5908-MAIN"
+    },
+    {
+      "title": "HyperGVL: Benchmarking and Improving Large Vision-Language Models in Hypergraph Understanding and Reasoning",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "5922-MAIN"
+    },
+    {
+      "title": "REFINE: LLM Refinement over Budgeted Text-Attributed Graphs for Personalized Medical Concept Representation",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "5985-MAIN"
+    },
+    {
+      "title": "Call Neighbours Yourself: Graph Walks with Destination-Conditioned On-Policy Self-Distillation",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "6024-MAIN"
+    },
+    {
+      "title": "Mitigating False Credit Propagation: Probabilistic Graphical Reward Aggregation for Rubric-Based Reinforcement Learning",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "6029-MAIN"
+    },
+    {
+      "title": "StructSynth: Dependency Graphs as Generation Plans for Low-Data Tabular Synthesis with Language Models",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "6137-MAIN"
+    },
+    {
+      "title": "GLOBE: Training-Free Calibration for Image-Text Retrieval with Global-Local Bias and Graph Evidence",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "6240-MAIN"
+    },
+    {
+      "title": "GraphVerse: A Comprehensive Visual Graph Reasoning Benchmark for Multimodal Large Language Models",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "6248-MAIN"
+    },
+    {
+      "title": "Denoising the Future: Context-Aware Spectral Diffusion for Temporal Knowledge Graph Extrapolation",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "6498-MAIN"
+    },
+    {
+      "title": "CLARUS: Hierarchical Hypergraph Modeling for Unsupervised Discharge Summarization",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "6519-MAIN"
+    },
+    {
+      "title": "Divide by Question, Conquer by Agent: SPLIT-RAG with Question-driven graph partitioning",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "6670-MAIN"
+    },
+    {
+      "title": "GraphProfiler: Source-Linked Sensitive Attribute Inference via Personal Knowledge Graphs",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "6768-MAIN"
+    },
+    {
+      "title": "LLM Explainability with Counterfactual Chains and Causal Graphs",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "6814-MAIN"
+    },
+    {
+      "title": "Beyond Linearization: Attributed Table Graphs for Table Reasoning",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "6966-MAIN"
+    },
+    {
+      "title": "HEAR-RAG: A Hypergraph-Based Evidence-Aware Retrieval-Augmented Generation Framework for Multi-Hop Question Answering",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "7036-MAIN"
+    },
+    {
+      "title": "GraphRAG-Router: Learning Cost-Efficient Routing over GraphRAGs and LLMs with Reinforcement Learning",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "7062-MAIN"
+    },
+    {
+      "title": "Athena: Vulnerability-Affected Library Identification via Knowledge Graph Completion",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "7114-MAIN"
+    },
+    {
+      "title": "Plan-and-Verify Video Reward Reasoning with Spatio-Temporal Scene Graph Grounding",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "7208-MAIN"
+    },
+    {
+      "title": "Foresight-on-Graph: Vision-Guided Knowledge Graph Reasoning with Large Language Models",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "7380-MAIN"
+    },
+    {
+      "title": "Guiding Graph: Explicit Query-Structure Guidance for Knowledge Graph Question Answering",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "7450-MAIN"
+    },
+    {
+      "title": "AGE-Sampler: Adaptive-granularity Graph-enhanced Event Sampling for Long-Video Understanding",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "7767-MAIN"
+    },
+    {
+      "title": "SAGE: Semantic Attribute Graphs for Multi-Entity Visual Retrieval",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "7879-MAIN"
+    },
+    {
+      "title": "TDGNet: Hallucination Detection in Diffusion Language Models via Temporal Dynamic Graphs",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "8235-MAIN"
+    },
+    {
+      "title": "Do Models Use What They Write? Causal Computation Graph Recovery for CoT Faithfulness",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "8927-MAIN"
+    },
+    {
+      "title": "Graph-of-Skills: Dependency-Aware Structural Retrieval for Massive Agent Skills",
+      "venue": "emnlp",
+      "venue_label": "EMNLP",
+      "year": 2026,
+      "category": "EMNLP 2026 official MAIN program",
+      "discovered_via": "official_program_csv",
+      "program_paper_id": "8991-MAIN"
+    }
+  ]
+}

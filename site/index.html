@@ -3,25 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="自动追踪图神经网络论文，用1至5个关键词与200字以内核心方法发现值得读的研究。">
+  <meta name="description" content="追踪文本属性图TAG与图学习OOD论文，以151至200字方法总结和重点方法标记筛选研究。">
   <meta name="color-scheme" content="light">
-  <link rel="canonical" href="https://liujiachen1234567.github.io/Awesome-GNN/">
+  <link rel="canonical" href="https://liujiachen0x3f.github.io/Awesome-GNN/">
   <title>Awesome GNN · 图学习研究雷达</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css">
-  <script src="./app.js" defer></script>
+  <link rel="stylesheet" href="./style.css?v=e70777724d">
+  <script src="./method-markdown.js?v=58f75f3bbc" defer></script>
+  <script src="./app.js?v=5768c2f94d" defer></script>
 </head>
 <body>
   <a href="#papers" class="skip">跳至论文列表</a>
-  <header class="topbar"><a class="brand" href="./"><span class="brand-icon" aria-hidden="true">⠿</span> Awesome <strong>GNN</strong><span class="edition">RESEARCH RADAR</span></a><a class="data-link" href="./data/papers.json">开放数据 <span aria-hidden="true">↗</span></a></header>
+  <header class="topbar"><a class="brand" href="./"><span class="brand-icon" aria-hidden="true">⠿</span> Awesome <strong>GNN</strong><span class="edition">RESEARCH RADAR</span></a></header>
   <main>
     <section class="index-head">
-      <div><p class="eyebrow"><span></span> GNN RESEARCH INDEX</p><h1>图神经网络论文</h1><p class="intro">检索 CCF-A、EMNLP 与 arXiv，最新论文优先，按关键词快速筛选。</p></div>
+      <div><p class="eyebrow"><span></span> GNN RESEARCH INDEX</p><h1>图神经网络论文</h1></div>
       <div class="update-line"><span class="pulse"></span><span id="updated">正在加载研究索引…</span></div>
     </section>
-    <section class="stats" aria-label="论文统计"><div><span id="total">—</span><p>已收录论文</p></div><div><span id="ready">—</span><p>已生成方法卡片</p></div><div><span id="source-count">—</span><p>数据来源</p></div><div class="stat-note"><span>1–5 × 200</span><p>关键词 · 方法总结上限</p></div></section>
+    <section class="stats" aria-label="论文统计"><div><span id="total">—</span><p>已收录论文</p></div></section>
     <div class="workspace">
-      <aside class="filters" aria-label="筛选论文"><div class="filter-heading"><h2>筛选研究</h2><button id="reset" class="text-button">重置</button></div><label for="source">论文来源</label><select id="source"><option value="">全部来源</option></select><label for="period">发布时间</label><select id="period"><option value="">全部时间</option><option value="7">最近 7 天</option><option value="30">最近 30 天</option><option value="90">最近 90 天</option></select><label for="status">处理状态</label><select id="status"><option value="">全部论文</option><option value="ready">已生成方法卡片</option><option value="pending">待处理论文</option></select><div class="keyword-heading"><h3>探索关键词</h3><span>点击筛选</span></div><div id="keyword-cloud" class="keyword-cloud"></div><div class="about-note"><span class="note-icon">↳</span><p>方法卡片由 LLM 阅读可获取的论文全文生成，保留来源，供初步筛选。关键结论请查阅原文。</p></div></aside>
+      <aside class="filters" aria-label="筛选论文"><div class="filter-heading"><h2>筛选研究</h2><button id="reset" class="text-button">重置</button></div><label for="source">论文来源</label><select id="source"><option value="">全部来源</option></select><label for="period">发布时间</label><select id="period"><option value="">全部时间</option><option value="7">最近 7 天</option><option value="30">最近 30 天</option><option value="90">最近 90 天</option></select><div class="keyword-heading"><h3>探索关键词</h3><span>点击筛选</span></div><div id="keyword-cloud" class="keyword-cloud"></div></aside>
       <section class="results" aria-label="研究列表"><div class="search-wrap"><span aria-hidden="true">⌕</span><label class="sr-only" for="search">搜索论文标题、关键词、作者或方法</label><input id="search" type="search" placeholder="搜索标题、关键词、作者或核心方法…" autocomplete="off"><kbd>/</kbd></div><div class="result-heading"><h2>研究动态 <span id="result-count" aria-live="polite"></span></h2><label class="sort-label">排序 <select id="sort"><option value="newest">最新发布</option><option value="oldest">最早发布</option><option value="title">标题 A–Z</option></select></label></div><div id="notices" role="status"></div><div id="active-tags"></div><div id="papers" aria-live="polite"><div class="empty">正在读取论文索引…</div></div><button id="load-more" class="load-more" hidden>加载更多论文</button></section>
     </div>
   </main>

@@ -1,0 +1,173 @@
+{
+  "as_of": "2026-09-29",
+  "rule": "For each conference choose publicly verifiable 2026, otherwise 2025; access failure is not evidence of non-publication. Existing archive is retained.",
+  "conferences": [
+    {
+      "key": "webconf",
+      "venue_label": "WWW",
+      "selected_year": 2026,
+      "selection_status": "verified_edition",
+      "source_url": "",
+      "note": "Official primary-source metadata required per paper; catalogue inclusion alone is insufficient."
+    },
+    {
+      "key": "kdd",
+      "venue_label": "KDD",
+      "selected_year": 2026,
+      "selection_status": "verified_edition",
+      "source_url": "",
+      "note": "Official primary-source metadata required per paper; catalogue inclusion alone is insufficient."
+    },
+    {
+      "key": "acl",
+      "venue_label": "ACL",
+      "selected_year": 2026,
+      "selection_status": "verified_edition",
+      "source_url": "https://aclanthology.org/events/acl-2026/",
+      "note": "Official primary-source metadata required per paper; catalogue inclusion alone is insufficient."
+    },
+    {
+      "key": "icdm",
+      "venue_label": "ICDM",
+      "selected_year": 2025,
+      "selection_status": "provisional_2025_fallback",
+      "source_url": "",
+      "note": "2026 matching proceedings not confirmed by bounded Crossref/source checks; 2025 fallback remains provisional."
+    },
+    {
+      "key": "wsdm",
+      "venue_label": "WSDM",
+      "selected_year": 2026,
+      "selection_status": "verified_edition",
+      "source_url": "",
+      "note": "Official primary-source metadata required per paper; catalogue inclusion alone is insufficient."
+    },
+    {
+      "key": "iccv",
+      "venue_label": "ICCV",
+      "selected_year": 2025,
+      "selection_status": "verified_edition",
+      "source_url": "https://openaccess.thecvf.com/ICCV2025",
+      "note": "Use published 2025 edition; do not invent an annual ICCV 2026 edition."
+    },
+    {
+      "key": "naacl",
+      "venue_label": "NAACL",
+      "selected_year": 2025,
+      "selection_status": "verified_edition",
+      "source_url": "https://aclanthology.org/events/naacl-2025/",
+      "note": "Official primary-source metadata required per paper; catalogue inclusion alone is insufficient."
+    },
+    {
+      "key": "neurips",
+      "venue_label": "NeurIPS",
+      "selected_year": 2025,
+      "selection_status": "provisional_2025_fallback",
+      "source_url": "https://proceedings.neurips.cc/",
+      "note": "2026 virtual directory returned 403; 2026 proceedings not obtained. 2025 is a verified fallback, not proof that no 2026 accepted papers exist."
+    },
+    {
+      "key": "cvpr",
+      "venue_label": "CVPR",
+      "selected_year": 2026,
+      "selection_status": "verified_edition",
+      "source_url": "https://openaccess.thecvf.com/CVPR2026",
+      "note": "Official primary-source metadata required per paper; catalogue inclusion alone is insufficient."
+    },
+    {
+      "key": "log",
+      "venue_label": "LoG",
+      "selected_year": null,
+      "selection_status": "latest_list_unresolved",
+      "source_url": "https://openreview.net/group?id=logconference.io/LOG/2026/Conference",
+      "note": "2026 acceptance announcement exists, but official accepted-paper list/track could not be read; OpenReview API 403. Do not publish new LoG 2025 papers as a confirmed latest edition."
+    },
+    {
+      "key": "iclr",
+      "venue_label": "ICLR",
+      "selected_year": 2026,
+      "selection_status": "verified_edition",
+      "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026",
+      "note": "Official primary-source metadata required per paper; catalogue inclusion alone is insufficient."
+    },
+    {
+      "key": "emnlp",
+      "venue_label": "EMNLP",
+      "selected_year": 2026,
+      "selection_status": "verified_edition",
+      "source_url": "https://2026.emnlp.org/program/",
+      "note": "2026 official program has 2710 MAIN titles; 85 graph-related candidates attempted. Findings/industry/demo excluded. Most matching full texts remain unresolved."
+    },
+    {
+      "key": "aaai",
+      "venue_label": "AAAI",
+      "selected_year": 2026,
+      "selection_status": "verified_edition",
+      "source_url": "https://ojs.aaai.org/index.php/AAAI/issue/archive",
+      "note": "Official primary-source metadata required per paper; catalogue inclusion alone is insufficient."
+    },
+    {
+      "key": "ijcai",
+      "venue_label": "IJCAI",
+      "selected_year": 2026,
+      "selection_status": "verified_edition",
+      "source_url": "https://www.ijcai.org/proceedings/2026/",
+      "note": "Official primary-source metadata required per paper; catalogue inclusion alone is insufficient."
+    },
+    {
+      "key": "icml",
+      "venue_label": "ICML",
+      "selected_year": 2026,
+      "selection_status": "verified_edition",
+      "source_url": "https://icml.cc/virtual/2026/papers.html",
+      "note": "Official primary-source metadata required per paper; catalogue inclusion alone is insufficient."
+    },
+    {
+      "key": "sigir",
+      "venue_label": "SIGIR",
+      "selected_year": 2026,
+      "selection_status": "verified_edition",
+      "source_url": "",
+      "note": "Official primary-source metadata required per paper; catalogue inclusion alone is insufficient."
+    },
+    {
+      "key": "sigmod",
+      "venue_label": "SIGMOD",
+      "selected_year": 2026,
+      "selection_status": "verified_edition",
+      "source_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+      "note": "Official primary-source metadata required per paper; catalogue inclusion alone is insufficient."
+    },
+    {
+      "key": "vldb",
+      "venue_label": "VLDB",
+      "selected_year": 2026,
+      "selection_status": "verified_edition",
+      "source_url": "https://www.vldb.org/2026/program.html",
+      "note": "Official primary-source metadata required per paper; catalogue inclusion alone is insufficient."
+    },
+    {
+      "key": "icde",
+      "venue_label": "ICDE",
+      "selected_year": 2026,
+      "selection_status": "verified_edition",
+      "source_url": "",
+      "note": "Official primary-source metadata required per paper; catalogue inclusion alone is insufficient."
+    },
+    {
+      "key": "mm",
+      "venue_label": "ACM MM",
+      "selected_year": 2025,
+      "selection_status": "provisional_2025_fallback",
+      "source_url": "",
+      "note": "2026 matching proceedings not confirmed by bounded Crossref/source checks; 2025 fallback remains provisional."
+    }
+  ],
+  "additional_scope_checks": [
+    {
+      "venue_label": "ECCV",
+      "status": "unresolved",
+      "note": "No 2026 index found in the reference catalogue snapshot; official homepage request failed with SSLError. Not claimed covered."
+    }
+  ]
+}

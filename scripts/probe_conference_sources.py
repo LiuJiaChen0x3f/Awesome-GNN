@@ -51,7 +51,7 @@ def fetch(url, pdf=False):
     finally: result['seconds']=round(time.monotonic()-start,2)
     return result,None
 
-PATTERN=r'/virtual/\d{4}/(?:poster|oral)/\d+|/hash/.*Abstract|/html/.*\.html|/proceedings/\d{4}/\d+|/\d{4}\.(?:acl|emnlp)-(?:long|short)\.\d+/?$|/article/view/\d+|/v\d+/[^/]+\.html|/doi/(?:abs/)?10\.|/document/\d+|/papers/.*\.pdf|/vol\d+/[^/]+\.pdf'
+PATTERN=r'/virtual/\d{4}/(?:poster|oral)/\d+|/hash/.*Abstract|/html/.*\.html|/proceedings/\d{4}/\d+|/\d{4}\.(?:acl|emnlp)-(?:main|long|short)\.\d+/?$|/article/view/\d+|/v\d+/[^/]+\.html|/doi/(?:abs/)?10\.|/document/\d+|/papers/.*\.pdf|/vol\d+/[^/]+\.pdf'
 
 def audit(entry):
     result={k:v for k,v in entry.items() if k!='urls'}; result['attempts']=[]

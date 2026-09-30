@@ -1,0 +1,1433 @@
+[
+  {
+    "title": "Accelerating Maximum Common Subgraph Computation by Exploiting Symmetries",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Acyclic Graph Pattern Counting under Local Differential Privacy",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "An Efficient Streaming Algorithm for Approximating Graphlet Distributions",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "BEACON: Budget-Aware Entity Matching Across Domains",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Beyond Maximum Common Subgraph: A Framework Maximizing Shared Computation for Multi-Query Subgraph Matching",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Bound-Tightened Densest Subgraph Discovery on GPU",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Bw-Graph: An Efficient Graph Storage System Harmonizing Topology-Aware Tree with Paged CSR",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "CMANNS: GPU-Accelerated Graph Index Construction for ANNS via Compute–Memory Disaggregation",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Efficient Anchored Densest Subgraph Discovery: Improved Time Complexity and Practical Performance",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Efficient Meta-subgraph Instance Search over Large Heterogeneous Information Networks",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Enhancing Graph-based Approximate Maximum Inner Product Search via Norm-Adaptive Partitioning",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "FaaSBoard: Efficient Graph Processing with a Disaggregated Architecture on Serverless Services",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Fast Estimation of Pairwise Biharmonic Distance on Graphs",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "FastGNAS: Accelerating and Scaling Graph Neural Architecture Search on Multi-GPUs via Ring-Based Model Migration",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "GEM: A Native Graph-based Index for Multi-Vector Retrieval",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "GraphRTX: Lighting the Way to Scalable Graph Analytics",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Maintaining Biconnected Components in Streaming Graphs",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Mathematical Foundations of Poisoning Attacks on Linear Regression over Cumulative Distribution Functions",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Octopus: Efficient Hypergraph Pattern Mining with Practical Processing-in-Memory Architecture",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "ORDER: Optimal Routing with Path Indexing in Exchange Graph [Data-Intensive & Data Science Application]",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Periodic Community Search in Temporal Graphs: Time Series-based Methods",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "PJsim: Towards Precise and Scalable Graph Similarity",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Querying Cohesive Subgraphs in Temporal Graphs",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Shape-Agnostic Table Overlap Discovery: A Maximum Common Subhypergraph Approach",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Sublime: Selecting Subgraph Matching Algorithms via Machine Learning",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Through the Lens of Hubness: A Revisit on Graph-Based Approximate Nearest Neighbor Search: [Experiments & Analysis]",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Zero-Redundancy Search for Bi-Components in Bipartite Graphs",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "A Unified Framework for Dense Subgraph Maintenance over Dynamic Bipartite Graphs",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "An Extensive Experimental Study of Indexes in Continuous Subgraph Matching: [Experiments & Analysis]",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Chatty-KG: A Multi-Agent AI System for On-Demand Conversational Question Answering over Knowledge Graphs",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Distribution-Aware Exploration for Adaptive HNSW Search",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Efficient and Robust Out-Of-Distribution Vector Similarity Search with Cross-Distribution Monotonic Graph",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Efficient Influential Community Search over Dynamic Graphs",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Enabling Efficient Update on Rule-Based Compressed Graph",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Enumerating Graph Pattern Matches with ML Oracles",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Fast-Convergent Proximity Graphs for Approximate Nearest Neighbor Search",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "FGIM: a Fast Graph-based Indexes Merging Framework for Approximate Nearest Neighbor Search",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Order-based Algorithms for Efficient Core Maintenance in Large Bipartite Graphs",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "R2O: A Dual-Layer Framework for Joint Rewriting and Ordering in Distributed Property Graph Query Optimization",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "RadixGraph: A Fast, Space-Optimized Data Structure for Dynamic Graph Storage",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "SG-Serve: Efficient Model Serving for Subgraph-based Graph Representation Learning",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "LLM-Powered Interactive Graph Search: A Scalable and Practical Approach",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Continuous Subgraph Matching via Cost-Model-based Dynamic Vertex Dominance Embeddings",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Gem: Scalable Monotonic Graph Processing Beyond Billion-Scale on a Single Machine",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Efficient and Scalable Directed Densest Subgraph Discovery",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "GeoKGM: A Multimodal Large Language Model for Zero-Shot Knowledge Graph Completion in Geospatial Databases",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "A Comprehensive Survey of Subgraph Matching: [Experiments & Analysis]",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Budgeted Strong Community Search in Heterogeneous Graphs",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Efficient Approximate Nearest Neighbor Search via Hemi-Sphere Centroids Graph",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "N2E: A General Framework to Reduce Node-Differential Privacy to Edge-Differential Privacy for Graph Analytics",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "DRPQ: Distributed Evaluation of Regular Path Queries On Streaming Graphs",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "PrivAGS: Differentially Private Attributed Graph Synthesis",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "MAVIS: Materialized View for Subgraph Matching",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Triangle Counting in Hypergraph Streams: A Complete and Practical Approach",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "NeuSO: Neural Optimizer for Subgraph Queries",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Scalable Graph Indexing using GPUs for Approximate Nearest Neighbor Search",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Efficient Exact Resistance Distance Computation on Small-Treewidth Graphs: A Labelling Approach",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "DRAMA: Unifying Data Retrieval and Analysis for Open-Domain Queries",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Effective Clustering for Large Multi-Relational Graphs",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "GraphTwin: Cache-Centric Bit-Level Graph Representation for Fast and Exact Graph Queries",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "GraphMatch: Subgraph Query Processing on Steroids",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "ACGraph: An Efficient Asynchronous Out-of-Core Graph Processing Framework",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "DepCache: A KV Cache Management Framework for GraphRAG with Dependency Attention",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "SWIFT: Enabling Large-Scale Temporal Graph Learning on a Single Machine",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "BEE: Towards Redundancy Reduction via Block-Separator Decomposition for Subgraph Matching",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "PGTuner: An Efficient Framework for Automatic and Transferable Configuration Tuning of Proximity Graphs",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Testing Graph Databases with Synthesized Queries",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "NeutronHeter: Optimizing Distributed Graph Neural Network Training for Heterogeneous Clusters",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Rainbow: Risk-aware Index Benefit Estimation Facing Out Of Distribution Workloads",
+    "venue": "sigmod",
+    "venue_label": "SIGMOD",
+    "year": 2026,
+    "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+    "discovered_via": "official_directory",
+    "category": "SIGMOD official research papers"
+  },
+  {
+    "title": "Effective Durable Community Search in Large Temporal Graph",
+    "url": "https://www.vldb.org/pvldb/vol19/p127-zhou.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "MH-GIN: Multi-scale Heterogeneous Graph-based Imputation Network for AIS Data",
+    "url": "https://www.vldb.org/pvldb/vol19/p170-li.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "AGIS: Fast Approximate Graph Pattern Mining with Structure-Informed Sampling",
+    "url": "https://www.vldb.org/pvldb/vol19/p238-lee.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "RED-ANNS: A RDMA-Enabled Distributed Framework for Graph-Based Approximate Nearest Neighbor Search",
+    "url": "https://www.vldb.org/pvldb/vol19/p399-chen.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Aquila: A High-Concurrency System for Incremental Graph Query",
+    "url": "https://www.vldb.org/pvldb/vol19/p468-zhao.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "A Topology-Aware Localized Update Strategy for Graph-Based ANN Index",
+    "url": "https://www.vldb.org/pvldb/vol19/p495-yu.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Scalable Approximate Biclique Counting over Large Bipartite Graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p576-chen.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Chipmink: Efficient Delta Identification for Massive Object Graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p603-chockchowwat.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "TRIM: An Efficient Framework for Exact Eccentricity Computation on Large-Scale Graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p644-zhang.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Efficient Partition-based Approaches for Diversified Top-k Subgraph Matching",
+    "url": "https://www.vldb.org/pvldb/vol19/p698-yang.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Efficient Temporal Edge-Core Maintenance in Streaming Graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p726-tan.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Understanding Evolving Graph Structures for Large Discrete-Time Dynamic Graph Representation",
+    "url": "https://www.vldb.org/pvldb/vol19/p862-xu.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Efficient Temporal Subgraph Management: A New Interval Index",
+    "url": "https://www.vldb.org/pvldb/vol19/p1170-wen.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Efficient GNN Training on Giant Graphs with Collective Batching and Scheduling",
+    "url": "https://www.vldb.org/pvldb/vol19/p1184-zhang.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Dinkel: State-Aware and Granular Framework for Validating Graph Databases",
+    "url": "https://www.vldb.org/pvldb/vol19/p1198-jiang.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Repairing Property Graphs under PG-Constraints",
+    "url": "https://www.vldb.org/pvldb/vol19/p1212-spinrath.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "A Semantics-aware Approach for Graph Edit Distance Estimation over Knowledge Graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p1226-zhou.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "TurboLynx: Schemaless Graph Engine Strikes Back for General-Purpose Analytics",
+    "url": "https://www.vldb.org/pvldb/vol19/p1250-han.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "SQL-Exchange: Transforming SQL Queries Across Domains",
+    "url": "https://www.vldb.org/pvldb/vol19/p1291-daviran.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "DBAIOps: A Reasoning LLM-Enhanced Database Operation and Maintenance System using Knowledge Graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p1319-zhou.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Anchored Maximum Communities over Large Directed Graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p1345-huang.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "TACO: A Benchmark for Open-Domain Text-to-SQL with Ambiguous and Cross-Database Queries",
+    "url": "https://www.vldb.org/pvldb/vol19/p1386-fan.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Structural Normalization of Property Graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p1400-egger.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "I/O Optimizations in Graph-Based Disk-Resident Approximate Nearest Neighbor Search: A Design Space Exploration",
+    "url": "https://www.vldb.org/pvldb/vol19/p1484-li.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Love-at-First-Sight: First Answers Without the Awkward Silence in Big Knowledge Graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p1544-kondylakis.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "CEMR: An Effective Subgraph Matching Algorithm with Redundant Extension Elimination",
+    "url": "https://www.vldb.org/pvldb/vol19/p1572-yang.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "FlareDTDG: Harnessing Temporal Recency for Scalable Discrete-Time Dynamic Graph Training",
+    "url": "https://www.vldb.org/pvldb/vol19/p1614-wang.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Characterizing Parallel Subgraph Matching Performance: A Systematic Study of Interactions, Scalability, and Enumeration",
+    "url": "https://www.vldb.org/pvldb/vol19/p1659-yu.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Theoretically and Practically Efficient Resistance Distance Computation on Large Graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p1688-yang.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "gMatch: Fine-Grained and Hardware-Efficient Subgraph Matching on GPUs",
+    "url": "https://www.vldb.org/pvldb/vol19/p1740-sun.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Enabling Index-free Adjacency in Oblivious Graph Processing with Delayed Duplications",
+    "url": "https://www.vldb.org/pvldb/vol19/p1826-cao.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Multimodal Knowledge Graph Completion via Relation-Aware Negative Sampling with Diffusion-based Interpolation",
+    "url": "https://www.vldb.org/pvldb/vol19/p1949-li.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "RT-RkNN: Reverse k Nearest Neighbor Queries as a Graphics Ray Casting Problem",
+    "url": "https://www.vldb.org/pvldb/vol19/p1963-bai.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Counting HyperGraphlets via Color Coding: a Quadratic Barrier and How to Break It",
+    "url": "https://www.vldb.org/pvldb/vol19/p2073-bressan.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Auditing for Demographic Bias in Opaque Rankings",
+    "url": "https://www.vldb.org/pvldb/vol19/p2140-bonchi.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Aggregating maximal cliques in real-world graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p2183-basu.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "PRISM: A Training System to Unlock the Potential of Temporal Graph Learning Through Staleness Avoidance",
+    "url": "https://www.vldb.org/pvldb/vol19/p2196-islam.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "QA-GraphRAG: Query-Adaptive Plug-and-Play Retrieval Integration for Graph-based Retrieval-Augmented Generation",
+    "url": "https://www.vldb.org/pvldb/vol19/p2224-sheng.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Testing Graph Databases via Transformations Between Fixed-Length and Variable-Length Queries",
+    "url": "https://www.vldb.org/pvldb/vol19/p2234-gui.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "MDS-FSM: Coverage-Based Frequent Subgraph Mining in Single Graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p2276-liu.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Subgraph Enumeration: Beyond Tree Decomposition",
+    "url": "https://www.vldb.org/pvldb/vol19/p2303-li.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "MGRAG: Semantic Subgraph Matching and Graph-Aware Caching for Multimodal Retrieval-Augmented Generation",
+    "url": "https://www.vldb.org/pvldb/vol19/p2480-wang.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "TVA: A Version-aware Temporal Graph Storage System for Real-time Analytics",
+    "url": "https://www.vldb.org/pvldb/vol19/p2536-li.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Efficient Hyper-truss Decomposition over Hypergraphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p2549-wang.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Efficient Locally h-Clique Densest Subgraph Discovery via Divide-and-Conquer",
+    "url": "https://www.vldb.org/pvldb/vol19/p2577-zhou.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "GPU-Accelerated 𝜂-threshold Decomposition for Uncertain Graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p2591-gao.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "X-Wim: Massive Parallelization of Weighted Matching in Bipartite Graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p2643-fan.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "ThunderGNN: Unlocking Tensor Cores for Graph Neural Networks",
+    "url": "https://www.vldb.org/pvldb/vol19/p2699-chen.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "FeLoG: Scalable and Efficient Distributed Graph Embedding with Feedback Loop Mechanism",
+    "url": "https://www.vldb.org/pvldb/vol19/p2803-fang.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Sparse Neighborhood Graph-Based Approximate Nearest Neighbor Search Revisited: Theoretical Analysis and Optimization",
+    "url": "https://www.vldb.org/pvldb/vol19/p2817-zhou.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "RNSG: A Range-Aware Graph Index for Efficient Range-Filtered Approximate Nearest Neighbor Search",
+    "url": "https://www.vldb.org/pvldb/vol19/p2839-zou.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Sankofa: Online Query-adaptive Dynamic Graph Summaries",
+    "url": "https://www.vldb.org/pvldb/vol19/p2908-karras.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "HEXA: A Disjoint-Subgraph-Based Indexing Framework for Approximate Nearest Neighbor Search at Billion Scale",
+    "url": "https://www.vldb.org/pvldb/vol19/p2922-shen.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Noisy Interactive Graph Search: An Uncertainty-Based Approach with Online Modeling of Latent Expertise and Difficulty",
+    "url": "https://www.vldb.org/pvldb/vol19/p3119-tang.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Worst-Case Optimal BGPs on Temporal Graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p3174-reutter.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Maximum Defective Biclique Search in Large Bipartite Graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p3259-li.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "UniTG: A Unified System for Efficient and Seamless Textual Graph Learning",
+    "url": "https://www.vldb.org/pvldb/vol19/p3273-liu.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Efficient and Secure Range Counting over Distributed Geographic Data with Query Range Protection",
+    "url": "https://www.vldb.org/pvldb/vol19/p3317-yang.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Resource-Efficient FirmCore Decomposition on Billion-scale Multilayer Graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p3483-mottin.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Breaking Structural Isolation: Scalable Graph Clustering via Community-Aware Sampling and Structural Entropy",
+    "url": "https://www.vldb.org/pvldb/vol19/p3497-peng.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Computing Why-Provenance for Property Graph Queries",
+    "url": "https://www.vldb.org/pvldb/vol19/p3552-ganepola.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Efficient GPU-Accelerated Local Subgraph Counting",
+    "url": "https://www.vldb.org/pvldb/vol19/p3592-yiu.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "CGIF: Combining Proximity Graphs and Inverted Files for Efficient Filtered Vector Search over Arbitrary Predicates",
+    "url": "https://www.vldb.org/pvldb/vol19/p3663-luo.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "ANNiE: A Learned Query Cost Estimator for Graph-Based Approximate Nearest Neighbor Search",
+    "url": "https://www.vldb.org/pvldb/vol19/p3820-wang.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Virtualizing Recursion: Just-In-Time Graph Analytics in a Hyperscale Relational Warehouse",
+    "url": "https://www.vldb.org/pvldb/vol19/p4103-arnold.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "BiLink: Bidirectional Meta-paths for Link Discovery in Billion-Scale Heterogeneous Graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p4316-hang.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "One Ring to Shuffle Them All: Scalable Intra-Process Data Redistribution with Ring-Buffer Shuffle in Redpanda Oxla",
+    "url": "https://www.vldb.org/pvldb/vol19/p4372-szymanski.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "GraphAlg Playground: An Online Platform for Learning and Experimenting with the GraphAlg Language",
+    "url": "https://www.vldb.org/pvldb/vol19/p4546-graaf.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "GraphContainer: A Unified Platform for Comparing and Debugging Graph RAG Methods",
+    "url": "https://www.vldb.org/pvldb/vol19/p4550-an.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "PGShield: Maintaining Path Constraints in Property Graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p4590-spinrath.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "GraphAgent: An Effective Knowledge-Guided GNN Model Selection System",
+    "url": "https://www.vldb.org/pvldb/vol19/p4630-li.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "SuperDRI: Graph-Guided Autonomous Troubleshooting for Cloud Databases",
+    "url": "https://www.vldb.org/pvldb/vol19/p4678-zhu.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "ImputePilot: A Graphical Model Selection Toolkit for Time Series Imputation",
+    "url": "https://www.vldb.org/pvldb/vol19/p4742-chen.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Provlepsis4j: Querying Future Graphs in Neo4j",
+    "url": "https://www.vldb.org/pvldb/vol19/p4770-gkartzios.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Tursio for Credit Unions: Structured Data Search with Automated Context Graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p4786-tripathi.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Cedar: A Columnar LSM-Engine for Temporal Property Graphs",
+    "url": "https://www.vldb.org/pvldb/vol19/p4790-ma.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "TurboLynx in Action: A Schemaless Graph Engine for General-Purpose Analytics",
+    "url": "https://www.vldb.org/pvldb/vol19/p4830-han.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "SAGA: Synthetic Agentic Graph Architecture for Temporal Benchmark Generation",
+    "url": "https://www.vldb.org/pvldb/vol19/p4834-zhang.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "From Human-Graph to Agent-Graph Interaction: State of the Art and Future Directions",
+    "url": "https://www.vldb.org/pvldb/vol19/p4878-bhowmick.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Graph-Based Retrieval-Augmented Generation: Applications, Challenges, Solutions, and Opportunities",
+    "url": "https://www.vldb.org/pvldb/vol19/p4900-zhou.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  },
+  {
+    "title": "Graph Foundation Models: State of the Art and Future Directions",
+    "url": "https://www.vldb.org/pvldb/vol19/p4918-zhou.pdf",
+    "venue": "vldb",
+    "venue_label": "VLDB",
+    "year": 2026,
+    "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+    "discovered_via": "official_volume_index",
+    "category": "PVLDB 19; conference membership still required"
+  }
+]

@@ -1,4 +1,4 @@
-Find recent graph-learning papers within the configured date window, prioritizing the most recently published eligible papers.
+Find recent graph-learning papers within the configured source-specific date windows, prioritizing the most recently published eligible papers. Defaults: published proceedings of the 2025 and 2026 editions of every enabled conference, and arXiv v1 submissions from 2026-01-01 through today. Conference discovery must sweep all enabled venues, not concentrate on IJCAI. Never invent future or unpublished proceedings. Runtime source_windows overrides these defaults. Each route must satisfy its own window; do not use the conference window for an arXiv slot.
 
 Venue eligibility:
 - Include CCF-A main-conference papers and EMNLP main-conference papers. EMNLP is the user's sole permitted CCF-B exception; this does not admit other B-class conferences.
@@ -7,22 +7,26 @@ Venue eligibility:
 - Verify the actual conference and track from authoritative proceedings or publisher metadata. Do not infer acceptance from the title, abstract, author affiliation, or an unverified arXiv record. Do not infer CCF rank from the existing broad venue configuration.
 
 Topic eligibility:
-- The primary method or task must involve at least one of these 11 controlled keywords in a graph-learning context: GNN, SSL, CL, OOD, TAG, GSL, HGT, TGN, KG, KGE, HGNN.
-- Use OR semantics: one matching topic is sufficient; several are allowed. Do not require all 11 or favor an older paper simply because it matches more topics. Mere background mentions are insufficient.
+- The primary method or task must address TAG (text-attributed graphs) OR OOD (out-of-distribution graph learning). These are the ONLY active topic labels; generic GNN, SSL, CL, TGN, KG or other graph topics do not independently qualify.
+- TAG requires meaningful learning over graphs whose nodes or edges carry natural-language text, with a method that uses text semantics and graph structure. Using an LLM or a knowledge graph alone is insufficient.
+- OOD requires an explicit graph train/test distribution shift, cross-domain adaptation/generalization, or environment-shift problem with relevant method design/evaluation. Ordinary random-split accuracy, few-shot learning, temporal prediction or generic robustness alone is insufficient.
+- Use OR semantics: one of TAG/OOD is enough; both are allowed. Background mentions are insufficient. Full-text evidence must support each assigned topic; never relabel an unrelated paper to fill quotas.
 
-Source quotas (hard requirement):
-- Split the requested result count evenly: ceil(N/2) independently verified conference papers and floor(N/2) independently verified arXiv papers. For 10 results, return 5 conference + 5 arXiv; for 3, return 2 conference + 1 arXiv. Runtime source_quotas is authoritative.
-- Conference slots require an eligible primary proceedings record; arXiv slots require an arXiv record and do not depend on conference rank or acceptance. An arXiv page mentioning a conference is not enough to fill a conference slot.
-- Deduplicate globally by DOI, arXiv ID and normalized title. A paper found through both routes may occupy either eligible bucket, but never two slots. Retain enough distinct candidates to meet both quotas.
-- Search deficient buckets explicitly and prioritize missing conference slots when arXiv is already full. Never fill one bucket's shortfall with the other. If the window or verification budget prevents filling a quota, return the partial results and report the shortfall separately for each bucket.
+Source quotas and coverage:
+- A 100-paper run initially targets 80 independently verified conference papers and 20 independently verified arXiv papers. After bounded arXiv searches, transfer its unfilled slots to conferences (0 arXiv means up to 100 conferences). Never fill missing conference slots with excess arXiv papers.
+- Runtime source_quotas and search_scope are authoritative for the current batch; do not impose an 80/20 ratio inside a conference-only or arXiv-only batch. Small legacy runs use their supplied quotas.
+- For a focused conference batch, search ONLY the supplied venue and edition year, including TAG and OOD. Check actual published proceedings, report unavailable/unpublished editions, and search all supplied venues across the full sweep. Do not return IJCAI as a substitute for another venue. Exclude already accepted titles in exclude_titles.
+- Conference slots require an eligible primary proceedings record. A separately verified matching arXiv version may supply its full text but does not establish conference acceptance. Return fulltext_url as an arXiv abstract URL when the conference has no accessible PDF.
+- Deduplicate globally by DOI, arXiv ID and normalized title. One paper occupies only one slot even if it has conference and arXiv versions.
+- Stop with verified partial results when the finite coverage sweep or safety budget ends. Report source and venue coverage gaps; do not relax topic relevance or fabricate titles to reach 100.
 
 Recency and ordering:
 - Search both the newest eligible proceedings and the newest arXiv submissions; request descending publication or first-submission date order where supported. Select newest eligible papers within each source quota, deduplicating globally; then display the combined selection newest first. The quotas take precedence over a global newest-N ranking.
 - Use the verified formal publication date of the eligible conference paper, preferring the publisher's first online publication date for that conference version, then the proceedings publication date. Keep an earlier preprint submission date separate.
-- For the arXiv route, use the first submission date (v1), not the latest revision date. For a deduplicated paper with both routes, retain both dates and their provenance. Use the date of the route assigned to its quota for this run: conference publication for conference slots, arXiv first submission for arXiv slots. Both routes must independently satisfy the date window to be eligible for either assignment. Return the paper only once.
+- For the arXiv route, use the first submission date (v1), not the latest revision date. For a deduplicated paper with both routes, retain both dates and their provenance. Use the date of the route assigned to its quota for this run: conference publication for conference slots, arXiv first submission for arXiv slots. A route is eligible only if it satisfies its own source window; a paper may qualify for one route but not the other. Return the paper only once.
 - Do not substitute revision, indexing, crawling, metadata-update, or acceptance dates for publication dates. Do not let a new revision make an old paper appear newly published.
 - Filter by the configured publication-date window and order eligible results by publication date, newest first. Use topic relevance only to break date ties.
-- Preserve partial date precision; never invent a month or day. If a missing or partial date cannot establish window eligibility or exact relative order, flag the uncertainty and do not claim the paper is among the newest verified results. Do not silently widen the window or relax venue constraints to fill the result count.
+- Preserve partial date precision; never invent a month or day. Year/month precision from a published official proceedings page is acceptable for these broad windows when eligibility is established. Preserve the original precision and conference edition; do not invent a day or claim exact ordering between partially dated papers. A future acceptance list is not a published paper. Do not silently widen the window or relax venue constraints to fill the result count.
 
 Output:
 - Return at most the runtime requested_count with the required source split; fewer verified results are acceptable only with explicit source-specific shortages.

@@ -1,3 +1,4 @@
+from summary_fixtures import VALID_METHOD
 import json
 import os
 import shutil
@@ -14,7 +15,7 @@ from gnn_digest.models import content_hash, merge_records
 from gnn_digest.storage import read_json, write_json
 from gnn_digest.verification import verify_candidate, VerificationError, safe_scholarly_url, venue_abbreviation
 
-ABSTRACT = 'We propose a graph neural network with attention-based message passing for molecular property prediction.'
+ABSTRACT = 'We study text-attributed graphs with attention-based message passing for molecular property prediction.'
 METHOD_TEXT = '3 Method\nOur graph neural network uses attention-based message passing for molecular property prediction. We encode atoms as nodes and bonds as edges, aggregate neighbor messages with attention weights, and train the representation for property prediction.'
 
 
@@ -43,7 +44,7 @@ def response(items, actions=True, status='completed'):
     return {'status':status,'output':([{'type':'web_search_call','status':'completed','action':{'type':'search','queries':['graph papers']}}] if actions else []) + [{'type':'message','content':[{'type':'output_text','text':json.dumps({'candidates':items,'notes':''}), 'annotations':[]}]}]}
 
 def answer():
-    return {'relevant':True,'topics':['GNN'],'topic_evidence':{'GNN':'We propose a graph neural network'},'keywords':['GNN','注意力','消息传递','分子图','属性预测'], 'method':'通过注意力加权消息传递学习分子图表示，预测分子属性。','confidence':'high','evidence':['We encode atoms as nodes and bonds as edges']}
+    return {'relevant':True,'topics':['TAG'],'topic_evidence':{'TAG':'We study text-attributed graphs'},'keywords':['TAG','注意力','消息传递','分子图','属性预测'], 'method':VALID_METHOD,'confidence':'high','evidence':['We encode atoms as nodes and bonds as edges']}
 
 
 class VerificationTests(unittest.TestCase):
@@ -93,6 +94,8 @@ class VerificationTests(unittest.TestCase):
         with patch('gnn_digest.verification.fetch_page',return_value=html(extra=meta)):
             p=verify_candidate(c,date(2026,9,20),date(2026,9,26))
             self.assertEqual(p['venue_label'],'EMNLP')
+            main=verify_candidate({**c,'url':'https://aclanthology.org/2026.emnlp-main.1/'},date(2026,9,20),date(2026,9,26))
+            self.assertEqual(main['venue_label'],'EMNLP')
             with self.assertRaises(VerificationError):
                 verify_candidate({**c,'url':'https://aclanthology.org/2026.findings-emnlp.1/'},date(2026,9,20),date(2026,9,26))
         with patch('gnn_digest.verification.fetch_page',return_value=html(extra=meta.replace('2026/09/25','2026/09'))):
@@ -114,8 +117,8 @@ class VerificationTests(unittest.TestCase):
                 verify_candidate(c,date(2026,9,14),date(2026,9,27))
 
     def test_topics_require_evidence_and_no_five_topic_requirement(self):
-        self.assertEqual(validate_topics(answer(),ABSTRACT)['topics'],['GNN'])
-        for changes in ({'topics':['OTHER']},{'topic_evidence':{'GNN':'This is a made up statement'}},{'topics':['GNN','GNN']}):
+        self.assertEqual(validate_topics(answer(),ABSTRACT)['topics'],['TAG'])
+        for changes in ({'topics':['OTHER']},{'topic_evidence':{'TAG':'This is a made up statement'}},{'topics':['TAG','TAG']}):
             with self.assertRaises(ValueError):
                 validate_topics({**answer(),**changes},ABSTRACT)
 
@@ -191,7 +194,7 @@ class AgentTests(unittest.TestCase):
                 summary.assert_not_called()
             saved=read_json(root/'data/papers.json',{})['papers']
             self.assertEqual(len(saved),1)
-            self.assertEqual(saved[0]['topics'],['GNN'])
+            self.assertEqual(saved[0]['topics'],['TAG'])
             self.assertNotIn('secret-probe',(root/'data/last_run.json').read_text())
 
     def test_no_actual_search_or_incomplete_response_preserves_archive(self):
@@ -205,6 +208,20 @@ class AgentTests(unittest.TestCase):
                 self.assertIn(code,(2,4))
                 fetch.assert_not_called()
                 self.assertEqual(before,(root/'data/papers.json').read_bytes())
+
+    def test_directory_hint_does_not_reject_verified_conference(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root,config,args=self.setup_root(tmp)
+            item={**conference_candidate(),'directory_url':'https://kdd2026.kdd.org/papers/'}
+            with patch('gnn_digest.agent.WebResearchAgent.search',return_value=response([item])), \
+                 patch('gnn_digest.verification.fetch_page',return_value=conference_html()), \
+                 patch('gnn_digest.agent.load_methods',side_effect=mock_methods), \
+                 patch('gnn_digest.agent.verify_directory_match') as directory, \
+                 patch('gnn_digest.llm.get_json',return_value={'choices':[{'message':{'content':json.dumps(answer())}}]}):
+                self.assertEqual(search(root,config,args),0)
+                directory.assert_not_called()
+            p=read_json(root/'data/search_results.json',{})['papers'][0]
+            self.assertEqual(p['selection_bucket'],'conference')
 
     def test_irrelevant_summary_not_published_as_result(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -224,7 +241,7 @@ class AgentTests(unittest.TestCase):
         self.assertEqual(len(merged),1)
         self.assertEqual(merged[0]['id'],'historic-id')
         self.assertEqual(merged[0]['status'],'ready')
-        self.assertEqual(merged[0]['topics'],['GNN'])
+        self.assertEqual(merged[0]['topics'],['TAG'])
 
 
 if __name__=='__main__':

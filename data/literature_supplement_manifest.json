@@ -1,0 +1,4154 @@
+{
+  "candidates": [
+    {
+      "title": "Graph-augmented and Over-smoothing-resistant Contrastive Clustering for Short Text",
+      "venue": "aaai",
+      "year": 2026,
+      "category": "Oversmoothing",
+      "index_path": "conference-publications/folders/years/2026/publications_aaai26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_aaai26/gocc_aaai26/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 2120,
+      "venue_label": "AAAI",
+      "official_matches": [],
+      "priority": 1
+    },
+    {
+      "title": "HSA-Net: Hierarchical and Structure-Aware Framework for Efficient and Scalable Molecular Language Modeling",
+      "venue": "aaai",
+      "year": 2026,
+      "category": "Oversmoothing",
+      "index_path": "conference-publications/folders/years/2026/publications_aaai26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_aaai26/hsanet_aaai26/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 2111,
+      "venue_label": "AAAI",
+      "official_matches": [],
+      "priority": 1
+    },
+    {
+      "title": "Make Model Transparent: Brain Network Analysis via Causal and Knowledge Graph Learning",
+      "venue": "aaai",
+      "year": 2026,
+      "category": "Graph Transformers",
+      "index_path": "conference-publications/folders/years/2026/publications_aaai26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_aaai26/brainckt_aaai26/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 2094,
+      "venue_label": "AAAI",
+      "official_matches": [],
+      "priority": 1
+    },
+    {
+      "title": "MyGram: Modality-aware Graph Transformer with Global Distribution for Multi-modal Entity Alignment",
+      "venue": "aaai",
+      "year": 2026,
+      "category": "Graph Transformers",
+      "index_path": "conference-publications/folders/years/2026/publications_aaai26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_aaai26/mygram_aaai26/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 2091,
+      "venue_label": "AAAI",
+      "official_matches": [],
+      "priority": 1
+    },
+    {
+      "title": "NTSFormer: A Self-Teaching Graph Transformer for Multimodal Isolated Cold-Start Node Classification",
+      "venue": "aaai",
+      "year": 2026,
+      "category": "Graph Transformers",
+      "index_path": "conference-publications/folders/years/2026/publications_aaai26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_aaai26/ntsformer_aaai26/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 2086,
+      "venue_label": "AAAI",
+      "official_matches": [],
+      "priority": 0
+    },
+    {
+      "title": "Scalable Semi-supervised Community Search via Graph Transformer on Attributed Heterogeneous Information Networks",
+      "venue": "aaai",
+      "year": 2026,
+      "category": "Graph Transformers",
+      "index_path": "conference-publications/folders/years/2026/publications_aaai26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_aaai26/semisupervised_aaai26/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 2085,
+      "venue_label": "AAAI",
+      "official_matches": [],
+      "priority": 0
+    },
+    {
+      "title": "A First Step towards Dialog Simulation with Grounded Dialog Graphs",
+      "url": "https://aclanthology.org/2026.codi-1.11/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "A First Step towards Dialog Simulation with Grounded Dialog Graphs",
+          "url": "https://aclanthology.org/2026.codi-1.11/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Analyze Like a Venture Capitalist: Information-Gain and Knowledge Enhanced Graph Reasoning for Startup Success Prediction",
+      "url": "https://aclanthology.org/2026.findings-acl.1555/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "Analyze Like a Venture Capitalist: Information-Gain and Knowledge Enhanced Graph Reasoning for Startup Success Prediction",
+          "url": "https://aclanthology.org/2026.findings-acl.1555/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Anonpsy: A Graph-Based Framework for Structure-Preserving De-identification of Psychiatric Narratives",
+      "url": "https://aclanthology.org/2026.findings-acl.963/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "Anonpsy: A Graph-Based Framework for Structure-Preserving De-identification of Psychiatric Narratives",
+          "url": "https://aclanthology.org/2026.findings-acl.963/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Belief Is All You Need: Signed Belief Graph Neural Networks for Topic Modeling in Conspiratorial Discourse",
+      "url": "https://aclanthology.org/2026.nlpcss-1.20/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "Belief Is All You Need: Signed Belief Graph Neural Networks for Topic Modeling in Conspiratorial Discourse",
+          "url": "https://aclanthology.org/2026.nlpcss-1.20/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Beyond Knowledge Graphs: P ub M ed BERT Embeddings as a Competitive Standalone Modality for Drug Re-purposing",
+      "url": "https://aclanthology.org/2026.bionlp-1.13/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "Beyond Knowledge Graphs: P ub M ed BERT Embeddings as a Competitive Standalone Modality for Drug Re-purposing",
+          "url": "https://aclanthology.org/2026.bionlp-1.13/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Do Syntactic Features Help Biomedical Relation Extraction? An Empirical Study of Verb Token and Dependency Graph Augmentation",
+      "url": "https://aclanthology.org/2026.bionlp-1.12/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "Do Syntactic Features Help Biomedical Relation Extraction? An Empirical Study of Verb Token and Dependency Graph Augmentation",
+          "url": "https://aclanthology.org/2026.bionlp-1.12/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Exploring Graph Learning Tasks with Pure LLM s: A Comprehensive Benchmark and Investigation",
+      "url": "https://aclanthology.org/2026.findings-acl.389/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "Exploring Graph Learning Tasks with Pure LLM s: A Comprehensive Benchmark and Investigation",
+          "url": "https://aclanthology.org/2026.findings-acl.389/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "From Graphs to Hypergraphs: Enhancing Aspect-Term Sentiment Analysis via Multi-Level Relational Modeling",
+      "url": "https://aclanthology.org/2026.acl-srw.53/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "From Graphs to Hypergraphs: Enhancing Aspect-Term Sentiment Analysis via Multi-Level Relational Modeling",
+          "url": "https://aclanthology.org/2026.acl-srw.53/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "GOB ench: Stage-Wise Diagnostics and the Visual Paradox in Multimodal Graph Optimization",
+      "url": "https://aclanthology.org/2026.findings-acl.306/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "GOB ench: Stage-Wise Diagnostics and the Visual Paradox in Multimodal Graph Optimization",
+          "url": "https://aclanthology.org/2026.findings-acl.306/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Generalizable LLM Learning of Graph Synthetic Data with Post-training Alignment",
+      "url": "https://aclanthology.org/2026.findings-acl.586/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "Generalizable LLM Learning of Graph Synthetic Data with Post-training Alignment",
+          "url": "https://aclanthology.org/2026.findings-acl.586/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "Generalization in Graph Reasoning: A Systematic Comparison of LLM Training Approaches",
+      "url": "https://aclanthology.org/2026.surgellm-1.18/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "Generalization in Graph Reasoning: A Systematic Comparison of LLM Training Approaches",
+          "url": "https://aclanthology.org/2026.surgellm-1.18/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "L ogos KG : Hardware-Optimized Scalable and Interpretable Knowledge Graph Retrieval",
+      "url": "https://aclanthology.org/2026.acl-long.1966/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "L ogos KG : Hardware-Optimized Scalable and Interpretable Knowledge Graph Retrieval",
+          "url": "https://aclanthology.org/2026.acl-long.1966/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "LATE - IIMAS at S emeval-2026 Task 13: Evaluating GNN s, PLM s, LLM s, and Stylometry for Automatic Code Identification",
+      "url": "https://aclanthology.org/2026.semeval-1.339/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "LATE - IIMAS at S emeval-2026 Task 13: Evaluating GNN s, PLM s, LLM s, and Stylometry for Automatic Code Identification",
+          "url": "https://aclanthology.org/2026.semeval-1.339/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "LEDGER : Scaling Agentic Document Editing with Dependency-aware Graph Retrieval",
+      "url": "https://aclanthology.org/2026.findings-acl.515/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "LEDGER : Scaling Agentic Document Editing with Dependency-aware Graph Retrieval",
+          "url": "https://aclanthology.org/2026.findings-acl.515/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Leakage-Aware User-Level ADHD Signal Classification from Social Media: When Graph Aggregation Helps, and When It Does Not",
+      "url": "https://aclanthology.org/2026.acl-srw.47/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "Leakage-Aware User-Level ADHD Signal Classification from Social Media: When Graph Aggregation Helps, and When It Does Not",
+          "url": "https://aclanthology.org/2026.acl-srw.47/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Not All Modalities at Once: Dynamic Dropout and Bidirectional Fusion for Robust Multi-modal Knowledge Graph Completion",
+      "url": "https://aclanthology.org/2026.findings-acl.890/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "Not All Modalities at Once: Dynamic Dropout and Bidirectional Fusion for Robust Multi-modal Knowledge Graph Completion",
+          "url": "https://aclanthology.org/2026.findings-acl.890/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "P anorama RAG : Enabling Consistent Global Topic Awareness in Graph-Based RAG",
+      "url": "https://aclanthology.org/2026.findings-acl.1998/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "P anorama RAG : Enabling Consistent Global Topic Awareness in Graph-Based RAG",
+          "url": "https://aclanthology.org/2026.findings-acl.1998/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "PUEB - D im ASR at S em E val-2026 Task 3: Escaping the Mean Regression Trap with Graph-Enhanced Transformers for Dimensional Aspect-Based Sentiment Regression",
+      "url": "https://aclanthology.org/2026.semeval-1.53/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "PUEB - D im ASR at S em E val-2026 Task 3: Escaping the Mean Regression Trap with Graph-Enhanced Transformers for Dimensional Aspect-Based Sentiment Regression",
+          "url": "https://aclanthology.org/2026.semeval-1.53/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Query-Aware Graph Attention for Precise Subgraph Retrieval in Knowledge-Augmented Reasoning",
+      "url": "https://aclanthology.org/2026.findings-acl.398/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "Query-Aware Graph Attention for Precise Subgraph Retrieval in Knowledge-Augmented Reasoning",
+          "url": "https://aclanthology.org/2026.findings-acl.398/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "SGG -R 3 : From Next-Token Prediction to End-to-End Unbiased Scene Graph Generation",
+      "url": "https://aclanthology.org/2026.findings-acl.992/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "SGG -R 3 : From Next-Token Prediction to End-to-End Unbiased Scene Graph Generation",
+          "url": "https://aclanthology.org/2026.findings-acl.992/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "SR - RAG : Verifiable Multi-Hop Reasoning via On-the-fly Symbolic Graph Construction",
+      "url": "https://aclanthology.org/2026.findings-acl.1922/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "SR - RAG : Verifiable Multi-Hop Reasoning via On-the-fly Symbolic Graph Construction",
+          "url": "https://aclanthology.org/2026.findings-acl.1922/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "T ag RAG : Tag-guided Hierarchical Knowledge Graph Retrieval-Augmented Generation",
+      "url": "https://aclanthology.org/2026.findings-acl.321/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "T ag RAG : Tag-guided Hierarchical Knowledge Graph Retrieval-Augmented Generation",
+          "url": "https://aclanthology.org/2026.findings-acl.321/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "T opo RAG : Graph-based RAG via Topology-aware Approximate Nearest Neighbor Search",
+      "url": "https://aclanthology.org/2026.findings-acl.1703/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "T opo RAG : Graph-based RAG via Topology-aware Approximate Nearest Neighbor Search",
+          "url": "https://aclanthology.org/2026.findings-acl.1703/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "TRUST : Towards Robust Social Bot Detection via Uncertainty-Guided Pseudo-Labeling and Graph Structure Purification",
+      "url": "https://aclanthology.org/2026.findings-acl.1575/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "TRUST : Towards Robust Social Bot Detection via Uncertainty-Guided Pseudo-Labeling and Graph Structure Purification",
+          "url": "https://aclanthology.org/2026.findings-acl.1575/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Thesis Proposal: On the Granularity-Robustness Trade-off in Text-Derived Knowledge Graphs",
+      "url": "https://aclanthology.org/2026.acl-srw.17/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "Thesis Proposal: On the Granularity-Robustness Trade-off in Text-Derived Knowledge Graphs",
+          "url": "https://aclanthology.org/2026.acl-srw.17/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "UCGR ec: User-Centric Graph Learning for LLM -based Sequential Recommendation",
+      "url": "https://aclanthology.org/2026.findings-acl.175/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "UCGR ec: User-Centric Graph Learning for LLM -based Sequential Recommendation",
+          "url": "https://aclanthology.org/2026.findings-acl.175/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "Z oom RAG : Hierarchical Random-walk Zooming across Multi-scale Information Graphs for Fast and Accurate RAG",
+      "url": "https://aclanthology.org/2026.findings-acl.1643/",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "Z oom RAG : Hierarchical Random-walk Zooming across Multi-scale Information Graphs for Fast and Accurate RAG",
+          "url": "https://aclanthology.org/2026.findings-acl.1643/",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "https://github.com/HKUDS/AnyGraph",
+      "url": "https://github.com/HKUDS/AnyGraph",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "https://github.com/HKUDS/AnyGraph",
+          "url": "https://github.com/HKUDS/AnyGraph",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "https://github.com/Ji-Cather/Graphia.git",
+      "url": "https://github.com/Ji-Cather/Graphia.git",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "https://github.com/Ji-Cather/Graphia.git",
+          "url": "https://github.com/Ji-Cather/Graphia.git",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "https://github.com/XMUDeepLIT/LegalGraphRAG",
+      "url": "https://github.com/XMUDeepLIT/LegalGraphRAG",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "https://github.com/XMUDeepLIT/LegalGraphRAG",
+          "url": "https://github.com/XMUDeepLIT/LegalGraphRAG",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "https://github.com/nf202/Text2Graph",
+      "url": "https://github.com/nf202/Text2Graph",
+      "directory_url": "https://aclanthology.org/events/acl-2026/",
+      "venue": "acl",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ACL",
+      "official_matches": [
+        {
+          "title": "https://github.com/nf202/Text2Graph",
+          "url": "https://github.com/nf202/Text2Graph",
+          "directory_url": "https://aclanthology.org/events/acl-2026/",
+          "venue": "ACL",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "M^3KG-RAG: Multi-hop Multimodal Knowledge Graph-enhanced Retrieval-Augmented Generation",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Park_M3KG-RAG_Multi-hop_Multimodal_Knowledge_Graph-enhanced_Retrieval-Augmented_Generation_CVPR_2026_paper.html",
+      "directory_url": "https://openaccess.thecvf.com/CVPR2026?day=all",
+      "venue": "cvpr",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "CVPR",
+      "official_matches": [
+        {
+          "title": "M^3KG-RAG: Multi-hop Multimodal Knowledge Graph-enhanced Retrieval-Augmented Generation",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Park_M3KG-RAG_Multi-hop_Multimodal_Knowledge_Graph-enhanced_Retrieval-Augmented_Generation_CVPR_2026_paper.html",
+          "directory_url": "https://openaccess.thecvf.com/CVPR2026?day=all",
+          "venue": "CVPR",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "AGRAG: Advanced Graph-Based Retrieval-Augmented Generation for LLMs",
+      "url": "https://doi.org/10.1109/icde65706.2026.00110",
+      "venue_label": "ICDE",
+      "venue": "icde",
+      "year": 2026,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Clue-RAG: Towards Accurate and Cost-Efficient Graph-Based RAG Via Multi-Partite Graph-Based Index",
+      "url": "https://doi.org/10.1109/icde65706.2026.00179",
+      "venue_label": "ICDE",
+      "venue": "icde",
+      "year": 2026,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "GalaxyRAG: Graph Retrieval-Augmented Generation for Enterprise Knowledge Systems",
+      "url": "https://doi.org/10.1109/icde65706.2026.00302",
+      "venue_label": "ICDE",
+      "venue": "icde",
+      "year": 2026,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Label-Constrained Column Annotation with Language Models and Graph Neural Networks",
+      "url": "https://doi.org/10.1109/icde65706.2026.00171",
+      "venue_label": "ICDE",
+      "venue": "icde",
+      "year": 2026,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Learning From Graph-Graph Relationship: A New Perspective on Graph-Level Anomaly Detection",
+      "url": "https://doi.org/10.1109/tkde.2025.3618929",
+      "venue_label": "ICDE",
+      "venue": "icde",
+      "year": 2026,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "IEEE Transactions on Knowledge and Data Engineering",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Schema-GraphRAG: Bridging Hybrid Search and Graph Traversal for Complex Retrieval Tasks",
+      "url": "https://doi.org/10.1109/icde65706.2026.00317",
+      "venue_label": "ICDE",
+      "venue": "icde",
+      "year": 2026,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "TopFGL: A Topology-Aware and Distributionagnostic Federated Learning Framework Tackling Topological Heterogeneity on Graph Data",
+      "url": "https://doi.org/10.1109/icde65706.2026.00044",
+      "venue_label": "ICDE",
+      "venue": "icde",
+      "year": 2026,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": ": One LLM Token for Explicit Graph Structural Understanding",
+      "url": "https://iclr.cc/virtual/2026/poster/10008310",
+      "venue": "iclr",
+      "year": 2026,
+      "category": "Official directory: graph-related title",
+      "discovered_via": "official_directory",
+      "venue_label": "ICLR",
+      "existing_id": null,
+      "official_matches": [
+        {
+          "title": ": One LLM Token for Explicit Graph Structural Understanding",
+          "url": "https://iclr.cc/virtual/2026/poster/10008310",
+          "venue": "ICLR",
+          "year": 2026
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "DR-GGAD: Dual Residual Centering for Mitigating Anomaly Non‑Discriminativity in Generalist Graph Anomaly Detection",
+      "url": "https://iclr.cc/virtual/2026/poster/10007814",
+      "venue": "iclr",
+      "year": 2026,
+      "category": "Official directory: graph-related title",
+      "discovered_via": "official_directory",
+      "venue_label": "ICLR",
+      "existing_id": null,
+      "official_matches": [
+        {
+          "title": "DR-GGAD: Dual Residual Centering for Mitigating Anomaly Non‑Discriminativity in Generalist Graph Anomaly Detection",
+          "url": "https://iclr.cc/virtual/2026/poster/10007814",
+          "venue": "ICLR",
+          "year": 2026
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Glance for Context: Learning When to Leverage LLMs for Node-Aware GNN-LLM Fusion",
+      "venue": "iclr",
+      "year": 2026,
+      "category": "Heterophily",
+      "index_path": "conference-publications/folders/years/2026/publications_iclr26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_iclr26/glance_iclr26/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 2754,
+      "venue_label": "ICLR",
+      "official_matches": [
+        {
+          "title": "Glance for Context: Learning When to Leverage LLMs for Node-Aware GNN-LLM Fusion",
+          "url": "https://iclr.cc/virtual/2026/poster/10007415",
+          "venue": "ICLR",
+          "year": 2026
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "Graph Tokenization for Bridging Graphs and Transformers",
+      "venue": "iclr",
+      "year": 2026,
+      "category": "Graph Transformers",
+      "index_path": "conference-publications/folders/years/2026/publications_iclr26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_iclr26/bpe_iclr26/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 2748,
+      "venue_label": "ICLR",
+      "official_matches": [
+        {
+          "title": "Graph Tokenization for Bridging Graphs and Transformers",
+          "url": "https://iclr.cc/virtual/2026/poster/10007901",
+          "venue": "ICLR",
+          "year": 2026
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "GraphUniverse: Synthetic Graph Generation for Evaluating Inductive Generalization",
+      "venue": "iclr",
+      "year": 2026,
+      "category": "Graph Transformers",
+      "index_path": "conference-publications/folders/years/2026/publications_iclr26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_iclr26/graphuniverse_iclr26/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 2743,
+      "venue_label": "ICLR",
+      "official_matches": [
+        {
+          "title": "GraphUniverse: Synthetic Graph Generation for Evaluating Inductive Generalization",
+          "url": "https://iclr.cc/virtual/2026/poster/10007878",
+          "venue": "ICLR",
+          "year": 2026
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "UniOD: A Universal Model for Outlier Detection across Diverse Domains",
+      "venue": "iclr",
+      "year": 2026,
+      "category": "Node Classification",
+      "index_path": "conference-publications/folders/years/2026/publications_iclr26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_iclr26/uniod_iclr26/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 2766,
+      "venue_label": "ICLR",
+      "official_matches": [
+        {
+          "title": "UniOD: A Universal Model for Outlier Detection across Diverse Domains",
+          "url": "https://iclr.cc/virtual/2026/poster/10010636",
+          "venue": "ICLR",
+          "year": 2026
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "$G^2$-Reader: Dual Evolving Graphs for Multimodal Document QA",
+      "url": "https://icml.cc/virtual/2026/poster/66682",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "$G^2$-Reader: Dual Evolving Graphs for Multimodal Document QA",
+          "url": "https://icml.cc/virtual/2026/poster/66682",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Adapting to Evolving Graphs: A Scalable Framework for Dynamic Coarsening",
+      "url": "https://icml.cc/virtual/2026/poster/63893",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Adapting to Evolving Graphs: A Scalable Framework for Dynamic Coarsening",
+          "url": "https://icml.cc/virtual/2026/poster/63893",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Adaptive Memory Retention in Dynamic Graphs",
+      "url": "https://icml.cc/virtual/2026/poster/60730",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Adaptive Memory Retention in Dynamic Graphs",
+          "url": "https://icml.cc/virtual/2026/poster/60730",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Adaptive Recurrent Message Passing for Test Time Computing on Graphs",
+      "url": "https://icml.cc/virtual/2026/poster/64927",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Adaptive Recurrent Message Passing for Test Time Computing on Graphs",
+          "url": "https://icml.cc/virtual/2026/poster/64927",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Beyond Explicit Edges: Robust Reasoning over Noisy and Sparse Knowledge Graphs",
+      "url": "https://icml.cc/virtual/2026/poster/66268",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Beyond Explicit Edges: Robust Reasoning over Noisy and Sparse Knowledge Graphs",
+          "url": "https://icml.cc/virtual/2026/poster/66268",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Beyond Tokens: Enhancing RTL Quality Estimation via Structural Graph Learning",
+      "url": "https://icml.cc/virtual/2026/poster/61768",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Beyond Tokens: Enhancing RTL Quality Estimation via Structural Graph Learning",
+          "url": "https://icml.cc/virtual/2026/poster/61768",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Boundary Embedding Shaping with Adaptive Contrastive Learning for Graph Structural Disentanglement",
+      "url": "https://icml.cc/virtual/2026/poster/63688",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Boundary Embedding Shaping with Adaptive Contrastive Learning for Graph Structural Disentanglement",
+          "url": "https://icml.cc/virtual/2026/poster/63688",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "CCLRec: Consensus-driven Contrastive Learning for LLM-enhanced Graph Recommendation",
+      "url": "https://icml.cc/virtual/2026/poster/65594",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "CCLRec: Consensus-driven Contrastive Learning for LLM-enhanced Graph Recommendation",
+          "url": "https://icml.cc/virtual/2026/poster/65594",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "CELL: A Causal Perspective for Fairness-aware Graph Adaptation",
+      "url": "https://icml.cc/virtual/2026/poster/65733",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "CELL: A Causal Perspective for Fairness-aware Graph Adaptation",
+          "url": "https://icml.cc/virtual/2026/poster/65733",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "COPF: An Online Framework for Deployment-Stable Counterfactual Fairness in Evolving Graphs",
+      "url": "https://icml.cc/virtual/2026/poster/66593",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "COPF: An Online Framework for Deployment-Stable Counterfactual Fairness in Evolving Graphs",
+          "url": "https://icml.cc/virtual/2026/poster/66593",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Capacity-Agnostic Parameter Isolation for Continual Graph Learning",
+      "url": "https://icml.cc/virtual/2026/poster/62314",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Capacity-Agnostic Parameter Isolation for Continual Graph Learning",
+          "url": "https://icml.cc/virtual/2026/poster/62314",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Delving into Non-Exchangeability for Conformal Prediction in Graph-Structured Multivariate Time Series",
+      "url": "https://icml.cc/virtual/2026/poster/66198",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Delving into Non-Exchangeability for Conformal Prediction in Graph-Structured Multivariate Time Series",
+          "url": "https://icml.cc/virtual/2026/poster/66198",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Discriminative Mixture-of-Experts on Graphs with Reliable Expert Fusion",
+      "url": "https://icml.cc/virtual/2026/poster/62265",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Discriminative Mixture-of-Experts on Graphs with Reliable Expert Fusion",
+          "url": "https://icml.cc/virtual/2026/poster/62265",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Enhancing LLMs for Graph Tasks via Graph-aware LoRA Generation",
+      "url": "https://icml.cc/virtual/2026/poster/65661",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Enhancing LLMs for Graph Tasks via Graph-aware LoRA Generation",
+          "url": "https://icml.cc/virtual/2026/poster/65661",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "Fast Mixture of Curvature-Aware Experts for Diverse and Dynamic Graph Topologies",
+      "url": "https://icml.cc/virtual/2026/poster/62688",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Fast Mixture of Curvature-Aware Experts for Diverse and Dynamic Graph Topologies",
+          "url": "https://icml.cc/virtual/2026/poster/62688",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Federated Graph Learning via Structure-Aware Fusion Using a Kalman Framework with Learnable Dynamics",
+      "url": "https://icml.cc/virtual/2026/poster/63973",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Federated Graph Learning via Structure-Aware Fusion Using a Kalman Framework with Learnable Dynamics",
+          "url": "https://icml.cc/virtual/2026/poster/63973",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "From Moments to Models: Graphon-Mixture Learning for Mixup and Contrastive Learning",
+      "url": "https://icml.cc/virtual/2026/poster/62690",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "From Moments to Models: Graphon-Mixture Learning for Mixup and Contrastive Learning",
+          "url": "https://icml.cc/virtual/2026/poster/62690",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "From Retrieval to Translation: Translating Query into Graph-level Clues for Retrieval-Augmented Generation",
+      "url": "https://icml.cc/virtual/2026/poster/65759",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "From Retrieval to Translation: Translating Query into Graph-level Clues for Retrieval-Augmented Generation",
+          "url": "https://icml.cc/virtual/2026/poster/65759",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "GFedCL: Graph-Based Federated Continual Learning with Spatial and Temporal Awareness",
+      "url": "https://icml.cc/virtual/2026/poster/62665",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "GFedCL: Graph-Based Federated Continual Learning with Spatial and Temporal Awareness",
+          "url": "https://icml.cc/virtual/2026/poster/62665",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "GLAD: Bidirectional Structure-Attribute Alignment via Latent Graph Diffusion Models",
+      "url": "https://icml.cc/virtual/2026/poster/61411",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "GLAD: Bidirectional Structure-Attribute Alignment via Latent Graph Diffusion Models",
+          "url": "https://icml.cc/virtual/2026/poster/61411",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "GOCM: Single-Step Graph Outlier Synthesis via Origin Consistency Model",
+      "url": "https://icml.cc/virtual/2026/poster/65857",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "GOCM: Single-Step Graph Outlier Synthesis via Origin Consistency Model",
+          "url": "https://icml.cc/virtual/2026/poster/65857",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "Generalist Graph Anomaly Detection via Prototype-Based Distillation",
+      "url": "https://icml.cc/virtual/2026/poster/64137",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Generalist Graph Anomaly Detection via Prototype-Based Distillation",
+          "url": "https://icml.cc/virtual/2026/poster/64137",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Graph is a Natural Regularization: Revisiting Vector Quantization for Graph Representation Learning",
+      "url": "https://icml.cc/virtual/2026/poster/62731",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Graph is a Natural Regularization: Revisiting Vector Quantization for Graph Representation Learning",
+          "url": "https://icml.cc/virtual/2026/poster/62731",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Graph is a Substrate Across Data Modalities",
+      "url": "https://icml.cc/virtual/2026/poster/66111",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Graph is a Substrate Across Data Modalities",
+          "url": "https://icml.cc/virtual/2026/poster/66111",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Graph-R1: Towards Agentic GraphRAG Framework via End-to-end Reinforcement Learning",
+      "url": "https://icml.cc/virtual/2026/poster/63269",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Graph-R1: Towards Agentic GraphRAG Framework via End-to-end Reinforcement Learning",
+          "url": "https://icml.cc/virtual/2026/poster/63269",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "GraphP-FL: Personalized Federated Graph Learning via Dynamic Structure Awareness and Fisher Information Elastic Alignment",
+      "url": "https://icml.cc/virtual/2026/poster/66484",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "GraphP-FL: Personalized Federated Graph Learning via Dynamic Structure Awareness and Fisher Information Elastic Alignment",
+          "url": "https://icml.cc/virtual/2026/poster/66484",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "H$^2$CL: Heterogeneity-Aware Hypergraph Contrastive Learning for Robust Representation Learning",
+      "url": "https://icml.cc/virtual/2026/poster/65562",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "H$^2$CL: Heterogeneity-Aware Hypergraph Contrastive Learning for Robust Representation Learning",
+          "url": "https://icml.cc/virtual/2026/poster/65562",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "HInT: Hypergraph Infusion at the Structural Layers Improves Table Understanding",
+      "url": "https://icml.cc/virtual/2026/poster/66822",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "HInT: Hypergraph Infusion at the Structural Layers Improves Table Understanding",
+          "url": "https://icml.cc/virtual/2026/poster/66822",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "HSMAD: Heterophily-Driven Spectral and Manifold Learning for Graph Anomaly Detection",
+      "url": "https://icml.cc/virtual/2026/poster/61639",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "HSMAD: Heterophily-Driven Spectral and Manifold Learning for Graph Anomaly Detection",
+          "url": "https://icml.cc/virtual/2026/poster/61639",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Heterogeneity-Aware Knowledge Sharing for Graph Federated Learning",
+      "url": "https://icml.cc/virtual/2026/poster/60770",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Heterogeneity-Aware Knowledge Sharing for Graph Federated Learning",
+          "url": "https://icml.cc/virtual/2026/poster/60770",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Homophily-Heterogeneity Gradient Surgery for Federated Graph Learning",
+      "url": "https://icml.cc/virtual/2026/poster/66304",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Homophily-Heterogeneity Gradient Surgery for Federated Graph Learning",
+          "url": "https://icml.cc/virtual/2026/poster/66304",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Identifying and Correcting Label Noise for Robust GNNs via Influence Contradiction",
+      "url": "https://icml.cc/virtual/2026/poster/61316",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Identifying and Correcting Label Noise for Robust GNNs via Influence Contradiction",
+          "url": "https://icml.cc/virtual/2026/poster/61316",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Intra-Modal Neighbors Never Lie: Rectifying Inter-Modal Noisy Correspondence via Graph-Based Intra-Modal Reasoning",
+      "url": "https://icml.cc/virtual/2026/poster/65301",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Intra-Modal Neighbors Never Lie: Rectifying Inter-Modal Noisy Correspondence via Graph-Based Intra-Modal Reasoning",
+          "url": "https://icml.cc/virtual/2026/poster/65301",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Is Fixing Schema Graphs Necessary? Full-Resolution Graph Structure Learning for Relational Deep Learning",
+      "url": "https://icml.cc/virtual/2026/poster/66492",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Is Fixing Schema Graphs Necessary? Full-Resolution Graph Structure Learning for Relational Deep Learning",
+          "url": "https://icml.cc/virtual/2026/poster/66492",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Is Graph Mixup Beneficial? Investigating Interpolation And Empirical Performance of Graph Mixup Methods",
+      "url": "https://icml.cc/virtual/2026/poster/64758",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Is Graph Mixup Beneficial? Investigating Interpolation And Empirical Performance of Graph Mixup Methods",
+          "url": "https://icml.cc/virtual/2026/poster/64758",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "LECTOR: Joint Learning of Scientific Reasoning Graphs and Introduction Generation",
+      "url": "https://icml.cc/virtual/2026/poster/62710",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "LECTOR: Joint Learning of Scientific Reasoning Graphs and Introduction Generation",
+          "url": "https://icml.cc/virtual/2026/poster/62710",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Learnable Kernel Density Estimation for Graphs and Its Application to Graph-Level Anomaly Detection",
+      "url": "https://icml.cc/virtual/2026/poster/65183",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Learnable Kernel Density Estimation for Graphs and Its Application to Graph-Level Anomaly Detection",
+          "url": "https://icml.cc/virtual/2026/poster/65183",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Learning Discriminative and Generalizable Anomaly Detector for Dynamic Graph with Limited Supervision",
+      "url": "https://icml.cc/virtual/2026/poster/62615",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Learning Discriminative and Generalizable Anomaly Detector for Dynamic Graph with Limited Supervision",
+          "url": "https://icml.cc/virtual/2026/poster/62615",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "Learning the Neighborhood: Contrast-Free Multimodal Self-Supervised Molecular Graph Pretraining",
+      "url": "https://icml.cc/virtual/2026/poster/63596",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Learning the Neighborhood: Contrast-Free Multimodal Self-Supervised Molecular Graph Pretraining",
+          "url": "https://icml.cc/virtual/2026/poster/63596",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "MV-FGAD: Towards Efficient and Effective Federated Graph Anomaly Detection via Multi-view Learning",
+      "url": "https://icml.cc/virtual/2026/poster/60641",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "MV-FGAD: Towards Efficient and Effective Federated Graph Anomaly Detection via Multi-view Learning",
+          "url": "https://icml.cc/virtual/2026/poster/60641",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Modeling Spectral Energy Shifts in Spatio-Temporal Graph Anomaly Detection",
+      "url": "https://icml.cc/virtual/2026/poster/61205",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Modeling Spectral Energy Shifts in Spatio-Temporal Graph Anomaly Detection",
+          "url": "https://icml.cc/virtual/2026/poster/61205",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "Normality Calibration in Semi-supervised Graph Anomaly Detection",
+      "url": "https://icml.cc/virtual/2026/poster/62208",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Normality Calibration in Semi-supervised Graph Anomaly Detection",
+          "url": "https://icml.cc/virtual/2026/poster/62208",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "OpenMAG: A Comprehensive Benchmark for Multimodal-Attributed Graph",
+      "url": "https://icml.cc/virtual/2026/poster/64650",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "OpenMAG: A Comprehensive Benchmark for Multimodal-Attributed Graph",
+          "url": "https://icml.cc/virtual/2026/poster/64650",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Progressive Graph Structure Adjustment for Homophily Shift Adaptation",
+      "url": "https://icml.cc/virtual/2026/poster/64322",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Progressive Graph Structure Adjustment for Homophily Shift Adaptation",
+          "url": "https://icml.cc/virtual/2026/poster/64322",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "Quantile-Free Uncertainty Quantification in Graph Neural Networks",
+      "url": "https://icml.cc/virtual/2026/poster/60491",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Quantile-Free Uncertainty Quantification in Graph Neural Networks",
+          "url": "https://icml.cc/virtual/2026/poster/60491",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "ReCoG: Relational and Compact Context Graph Learning for Few-shot Molecular Property Prediction",
+      "url": "https://icml.cc/virtual/2026/poster/61905",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "ReCoG: Relational and Compact Context Graph Learning for Few-shot Molecular Property Prediction",
+          "url": "https://icml.cc/virtual/2026/poster/61905",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "Rethinking Feature Alignment in Generalist Graph Anomaly Detection: A Relational Fingerprint-based Approach",
+      "url": "https://icml.cc/virtual/2026/poster/65828",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Rethinking Feature Alignment in Generalist Graph Anomaly Detection: A Relational Fingerprint-based Approach",
+          "url": "https://icml.cc/virtual/2026/poster/65828",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Rethinking GNNs and Missing Features: Challenges, Evaluation and a Robust Solution",
+      "url": "https://icml.cc/virtual/2026/poster/65396",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Rethinking GNNs and Missing Features: Challenges, Evaluation and a Robust Solution",
+          "url": "https://icml.cc/virtual/2026/poster/65396",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "SAOT: Self-Supervised Continual Graph Learning with Structure-Aware Optimal Transport",
+      "url": "https://icml.cc/virtual/2026/poster/66335",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "SAOT: Self-Supervised Continual Graph Learning with Structure-Aware Optimal Transport",
+          "url": "https://icml.cc/virtual/2026/poster/66335",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Subspace-Aware Feature Reshaping for Open-Set Graph Class-Incremental Learning",
+      "url": "https://icml.cc/virtual/2026/poster/64163",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Subspace-Aware Feature Reshaping for Open-Set Graph Class-Incremental Learning",
+          "url": "https://icml.cc/virtual/2026/poster/64163",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "Uncertainty-Constrained Trustworthiness for Graph Learning",
+      "url": "https://icml.cc/virtual/2026/poster/62848",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Uncertainty-Constrained Trustworthiness for Graph Learning",
+          "url": "https://icml.cc/virtual/2026/poster/62848",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "UniRTL: Unifying Code and Graph for Robust RTL Representation Learning",
+      "url": "https://icml.cc/virtual/2026/poster/62281",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "UniRTL: Unifying Code and Graph for Robust RTL Representation Learning",
+          "url": "https://icml.cc/virtual/2026/poster/62281",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "View Space: Learning Representation across Arbitrary Graphs",
+      "url": "https://icml.cc/virtual/2026/poster/65826",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "View Space: Learning Representation across Arbitrary Graphs",
+          "url": "https://icml.cc/virtual/2026/poster/65826",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Weaving Graph over Tokens: Contextualizing Structured Sequences for LLMs",
+      "url": "https://icml.cc/virtual/2026/poster/62437",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "Weaving Graph over Tokens: Contextualizing Structured Sequences for LLMs",
+          "url": "https://icml.cc/virtual/2026/poster/62437",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "When LLMs Encounter Open-world Graph Learning: A Fresh View on Unlabeled Data Uncertainty",
+      "url": "https://icml.cc/virtual/2026/poster/60613",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "When LLMs Encounter Open-world Graph Learning: A Fresh View on Unlabeled Data Uncertainty",
+          "url": "https://icml.cc/virtual/2026/poster/60613",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "X-EviProbe: Post-hoc Parameter-Free Evidential Uncertainty Quantification for Frozen Graph Neural Networks",
+      "url": "https://icml.cc/virtual/2026/poster/65499",
+      "directory_url": "https://icml.cc/virtual/2026/papers.html",
+      "venue": "icml",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICML",
+      "official_matches": [
+        {
+          "title": "X-EviProbe: Post-hoc Parameter-Free Evidential Uncertainty Quantification for Frozen Graph Neural Networks",
+          "url": "https://icml.cc/virtual/2026/poster/65499",
+          "directory_url": "https://icml.cc/virtual/2026/papers.html",
+          "venue": "ICML",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "A Comprehensive Benchmark for Graph Textual Summarization",
+      "venue": "kdd",
+      "year": 2026,
+      "category": "Graph-Structured LLM Reasoning, Scientific & Summarization Benchmarks",
+      "index_path": "conference-publications/folders/years/2026/publications_kdd26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_kdd26/surveygraphsum_kdd26/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 3381,
+      "venue_label": "KDD",
+      "official_matches": [],
+      "priority": 1
+    },
+    {
+      "title": "AnchorGK: Anchor-based Incremental and Stratified Graph Learning Framework for Inductive Spatio-Temporal Kriging",
+      "venue": "kdd",
+      "year": 2026,
+      "category": "Scalable & Generalizable Spatio-Temporal Graph Forecasting",
+      "index_path": "conference-publications/folders/years/2026/publications_kdd26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_kdd26/anchorgk_kdd26/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 3359,
+      "venue_label": "KDD",
+      "official_matches": [],
+      "priority": 1
+    },
+    {
+      "title": "CausalPOI: Spatio-Temporal Graph-Based Causal Modeling for Cold-Start POI Check-in Forecasting",
+      "venue": "kdd",
+      "year": 2026,
+      "category": "Counterfactual Analysis, Network Treatment Effects & Causal Mobility Forecasting",
+      "index_path": "conference-publications/folders/years/2026/publications_kdd26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_kdd26/causalpoi_kdd26/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 3368,
+      "venue_label": "KDD",
+      "official_matches": [],
+      "priority": 1
+    },
+    {
+      "title": "DyGADBench: A Comprehensive Benchmark for Anomaly Detection in Dynamic Graphs",
+      "venue": "kdd",
+      "year": 2026,
+      "category": "Temporal, Positional & Software Graph Benchmarks",
+      "index_path": "conference-publications/folders/years/2026/publications_kdd26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_kdd26/dygadbench_kdd26/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 3377,
+      "venue_label": "KDD",
+      "official_matches": [],
+      "priority": 0
+    },
+    {
+      "title": "Generalizing GNNs with Tokenized Mixture of Experts",
+      "venue": "kdd",
+      "year": 2026,
+      "category": "Adaptive Message Passing, Experts & Virtual Nodes",
+      "index_path": "conference-publications/folders/years/2026/publications_kdd26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_kdd26/stemgnn_kdd26/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 3203,
+      "venue_label": "KDD",
+      "official_matches": [],
+      "priority": 1
+    },
+    {
+      "title": "Improving Heterogeneous Graph Contrastive Learning Robustness via Hierarchical Vulnerability Protection",
+      "venue": "kdd",
+      "year": 2026,
+      "category": "Contrastive Learning, Graph Autoencoding & Diffusion Augmentation",
+      "index_path": "conference-publications/folders/years/2026/publications_kdd26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_kdd26/hvphgcl_kdd26/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 3223,
+      "venue_label": "KDD",
+      "official_matches": [],
+      "priority": 0
+    },
+    {
+      "title": "Learning Robust Hypergraph Embeddings for Distribution-Free Uncertainty Quantification",
+      "venue": "kdd",
+      "year": 2026,
+      "category": "Hypergraph Embeddings, Contrastive Reconstruction, Uncertainty & Multi-View Clustering",
+      "index_path": "conference-publications/folders/years/2026/publications_kdd26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_kdd26/ccfhgnn_kdd26/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 3221,
+      "venue_label": "KDD",
+      "official_matches": [],
+      "priority": 1
+    },
+    {
+      "title": "Topology-Aware Neural Collapse for Generalized Category Discovery on Graphs",
+      "venue": "kdd",
+      "year": 2026,
+      "category": "Few-Shot, Long-Tail & Semi-Supervised Graph Learning",
+      "index_path": "conference-publications/folders/years/2026/publications_kdd26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_kdd26/toponc_kdd26/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 3230,
+      "venue_label": "KDD",
+      "official_matches": [],
+      "priority": 1
+    },
+    {
+      "title": "Trajectory-Aware Clinical Risk Prediction via Severity-Grounded Knowledge Graphs and Retrieval-Augmented Generation",
+      "venue": "kdd",
+      "year": 2026,
+      "category": "Clinical Risk & Biomedical Association Learning on Graphs",
+      "index_path": "conference-publications/folders/years/2026/publications_kdd26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_kdd26/tracer_kdd26/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 3374,
+      "venue_label": "KDD",
+      "official_matches": [],
+      "priority": 0
+    },
+    {
+      "title": "Unified Spatio-Temporal Tokens are Bases for Generalizable Traffic Forecasting",
+      "venue": "kdd",
+      "year": 2026,
+      "category": "Traffic, Mobility & Pedestrian Trajectory Prediction",
+      "index_path": "conference-publications/folders/years/2026/publications_kdd26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_kdd26/stunet_kdd26/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 3358,
+      "venue_label": "KDD",
+      "official_matches": [],
+      "priority": 1
+    },
+    {
+      "title": "A Graph-Enhanced MLLM for Hierarchical Multimodal Emotion Understanding and Support in Conversations",
+      "url": "https://doi.org/10.1145/3805712.3809910",
+      "venue": "sigir",
+      "venue_label": "SIGIR",
+      "year": 2026,
+      "category": "Official publisher bibliography",
+      "discovered_via": "crossref_container_query",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "ACE: Semantically-Grounded Graph Alignment via Affective Contrastive Learning",
+      "url": "https://doi.org/10.1145/3805712.3809526",
+      "venue": "sigir",
+      "venue_label": "SIGIR",
+      "year": 2026,
+      "category": "Official publisher bibliography",
+      "discovered_via": "crossref_container_query",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "DCGL: Dual-Channel Graph Learning with Large Language Models for Knowledge-Aware Recommendation",
+      "url": "https://doi.org/10.1145/3805712.3809546",
+      "venue": "sigir",
+      "venue_label": "SIGIR",
+      "year": 2026,
+      "category": "Official publisher bibliography",
+      "discovered_via": "crossref_container_query",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "DIGEST: Dynamic Graph Refinement with Dual Contrastive Semantic Transfer for Multimodal Recommendation",
+      "url": "https://doi.org/10.1145/3805712.3809642",
+      "venue": "sigir",
+      "venue_label": "SIGIR",
+      "year": 2026,
+      "category": "Official publisher bibliography",
+      "discovered_via": "crossref_container_query",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Depression Detection from Social Media: A Mutual Guidance Multi-modal Network with Complementary Graph Learning",
+      "url": "https://doi.org/10.1145/3805712.3809550",
+      "venue": "sigir",
+      "venue_label": "SIGIR",
+      "year": 2026,
+      "category": "Official publisher bibliography",
+      "discovered_via": "crossref_container_query",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Disentangling from Collaborative and Semantic Views: Graph Collaborative Filtering for Q&amp;A Recommendation",
+      "url": "https://doi.org/10.1145/3805712.3809553",
+      "venue": "sigir",
+      "venue_label": "SIGIR",
+      "year": 2026,
+      "category": "Official publisher bibliography",
+      "discovered_via": "crossref_container_query",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Hierarchical Cluster-based Open-World Graph Active Learning",
+      "url": "https://doi.org/10.1145/3805712.3809744",
+      "venue": "sigir",
+      "venue_label": "SIGIR",
+      "year": 2026,
+      "category": "Official publisher bibliography",
+      "discovered_via": "crossref_container_query",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Inductive Subgraphs as Shortcuts: Causal Disentanglement for Heterophilic Graph Learning",
+      "url": "https://doi.org/10.1145/3805712.3809673",
+      "venue": "sigir",
+      "venue_label": "SIGIR",
+      "year": 2026,
+      "category": "Official publisher bibliography",
+      "discovered_via": "crossref_container_query",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Multi-Faceted Continual Knowledge Graph Embedding for Semantic-Aware Link Prediction",
+      "url": "https://doi.org/10.1145/3805712.3809683",
+      "venue": "sigir",
+      "venue_label": "SIGIR",
+      "year": 2026,
+      "category": "Official publisher bibliography",
+      "discovered_via": "crossref_container_query",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Named Entity-Driven Graph Smoothing to Enhance Pretrained Document Embeddings in Clustering Tasks",
+      "url": "https://doi.org/10.1145/3805712.3809879",
+      "venue": "sigir",
+      "venue_label": "SIGIR",
+      "year": 2026,
+      "category": "Official publisher bibliography",
+      "discovered_via": "crossref_container_query",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Prototype-Calibrated Graph Prompting for Few-Shot Graph Adaptation",
+      "url": "https://doi.org/10.1145/3805712.3809886",
+      "venue": "sigir",
+      "venue_label": "SIGIR",
+      "year": 2026,
+      "category": "Official publisher bibliography",
+      "discovered_via": "crossref_container_query",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Retrieval-Augmented Contrastive Learning for Dynamic Graph Anomaly Detection",
+      "url": "https://doi.org/10.1145/3805712.3809965",
+      "venue": "sigir",
+      "venue_label": "SIGIR",
+      "year": 2026,
+      "category": "Official publisher bibliography",
+      "discovered_via": "crossref_container_query",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Unsupervised 2D Image-Based 3D Model Retrieval via Decision Boundary Alignment and Graph Semantic Propagation",
+      "url": "https://doi.org/10.1145/3805712.3809620",
+      "venue": "sigir",
+      "venue_label": "SIGIR",
+      "year": 2026,
+      "category": "Official publisher bibliography",
+      "discovered_via": "crossref_container_query",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Verbalizing LightGCN: Direct Learning of Textual Representations from User-Item Interaction Graph via LLMs",
+      "url": "https://doi.org/10.1145/3805712.3809621",
+      "venue": "sigir",
+      "venue_label": "SIGIR",
+      "year": 2026,
+      "category": "Official publisher bibliography",
+      "discovered_via": "crossref_container_query",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Chatty-KG: A Multi-Agent AI System for On-Demand Conversational Question Answering over Knowledge Graphs",
+      "venue": "sigmod",
+      "venue_label": "SIGMOD",
+      "year": 2026,
+      "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+      "discovered_via": "official_directory",
+      "category": "SIGMOD official research papers",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "DepCache: A KV Cache Management Framework for GraphRAG with Dependency Attention",
+      "venue": "sigmod",
+      "venue_label": "SIGMOD",
+      "year": 2026,
+      "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+      "discovered_via": "official_directory",
+      "category": "SIGMOD official research papers",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "GeoKGM: A Multimodal Large Language Model for Zero-Shot Knowledge Graph Completion in Geospatial Databases",
+      "venue": "sigmod",
+      "venue_label": "SIGMOD",
+      "year": 2026,
+      "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+      "discovered_via": "official_directory",
+      "category": "SIGMOD official research papers",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "LLM-Powered Interactive Graph Search: A Scalable and Practical Approach",
+      "venue": "sigmod",
+      "venue_label": "SIGMOD",
+      "year": 2026,
+      "directory_url": "https://2026.sigmod.org/sigmod_papers.shtml",
+      "discovered_via": "official_directory",
+      "category": "SIGMOD official research papers",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Graph-Based Retrieval-Augmented Generation: Applications, Challenges, Solutions, and\n                    Opportunities Tutorial 11 Tutorial\n                    11",
+      "url": "https://www.vldb.org/2026/program.html#tut-15",
+      "directory_url": "https://www.vldb.org/2026/program.html",
+      "venue": "vldb",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "VLDB",
+      "official_matches": [
+        {
+          "title": "Graph-Based Retrieval-Augmented Generation: Applications, Challenges, Solutions, and\n                    Opportunities Tutorial 11 Tutorial\n                    11",
+          "url": "https://www.vldb.org/2026/program.html#tut-15",
+          "directory_url": "https://www.vldb.org/2026/program.html",
+          "venue": "VLDB",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Graph-Based Retrieval-Augmented Generation: Applications, Challenges, Solutions, and Opportunities",
+      "url": "https://www.vldb.org/pvldb/vol19/p4900-zhou.pdf",
+      "venue": "vldb",
+      "venue_label": "VLDB",
+      "year": 2026,
+      "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+      "discovered_via": "official_volume_index",
+      "category": "PVLDB 19; conference membership still required",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "GraphContainer: A Unified Platform for Comparing and Debugging Graph\n                RAG Methods",
+      "url": "https://www.vldb.org/pvldb/vol19/p4550-an.pdf",
+      "directory_url": "https://www.vldb.org/2026/program.html",
+      "venue": "vldb",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "VLDB",
+      "official_matches": [
+        {
+          "title": "GraphContainer: A Unified Platform for Comparing and Debugging Graph\n                RAG Methods",
+          "url": "https://www.vldb.org/pvldb/vol19/p4550-an.pdf",
+          "directory_url": "https://www.vldb.org/2026/program.html",
+          "venue": "VLDB",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        },
+        {
+          "title": "GraphContainer: A Unified Platform for Comparing and Debugging Graph RAG Methods",
+          "url": "https://www.vldb.org/pvldb/vol19/p4550-an.pdf",
+          "venue": "vldb",
+          "venue_label": "VLDB",
+          "year": 2026,
+          "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+          "discovered_via": "official_volume_index",
+          "category": "PVLDB 19; conference membership still required",
+          "existing_id": null,
+          "official_matches": []
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "In-depth Analysis of Graph-based RAG in a Unified Framework",
+      "url": "https://www.vldb.org/pvldb/vol18/p5623-zhou.pdf",
+      "directory_url": "https://www.vldb.org/2026/program.html",
+      "venue": "vldb",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "VLDB",
+      "official_matches": [
+        {
+          "title": "In-depth Analysis of Graph-based RAG in a Unified Framework",
+          "url": "https://www.vldb.org/pvldb/vol18/p5623-zhou.pdf",
+          "directory_url": "https://www.vldb.org/2026/program.html",
+          "venue": "VLDB",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        },
+        {
+          "title": "In-depth Analysis of Graph-based RAG in a Unified Framework",
+          "url": "https://www.vldb.org/pvldb/vol18/p5623-zhou.pdf",
+          "directory_url": "https://www.vldb.org/2026/program.html",
+          "venue": "VLDB",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Multimodal Knowledge Graph Completion via Relation-Aware Negative Sampling with\n                  Diffusion-Based Interpolation",
+      "url": "https://www.vldb.org/pvldb/vol19/p1949-li.pdf",
+      "directory_url": "https://www.vldb.org/2026/program.html",
+      "venue": "vldb",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "VLDB",
+      "official_matches": [
+        {
+          "title": "Multimodal Knowledge Graph Completion via Relation-Aware Negative Sampling with\n                  Diffusion-Based Interpolation",
+          "url": "https://www.vldb.org/pvldb/vol19/p1949-li.pdf",
+          "directory_url": "https://www.vldb.org/2026/program.html",
+          "venue": "VLDB",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        },
+        {
+          "title": "Multimodal Knowledge Graph\n                Completion via Relation-Aware Negative Sampling with Diffusion-Based Interpolation",
+          "url": "https://www.vldb.org/pvldb/vol19/p1949-li.pdf",
+          "directory_url": "https://www.vldb.org/2026/program.html",
+          "venue": "VLDB",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        },
+        {
+          "title": "Multimodal Knowledge Graph Completion via Relation-Aware Negative Sampling with Diffusion-based Interpolation",
+          "url": "https://www.vldb.org/pvldb/vol19/p1949-li.pdf",
+          "venue": "vldb",
+          "venue_label": "VLDB",
+          "year": 2026,
+          "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+          "discovered_via": "official_volume_index",
+          "category": "PVLDB 19; conference membership still required",
+          "existing_id": null,
+          "official_matches": []
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "QA-GraphRAG: Query-Adaptive Plug-and-Play Retrieval Integration for\n                  Graph-based Retrieval-Augmented Generation",
+      "url": "https://www.vldb.org/pvldb/vol19/p2224-sheng.pdf",
+      "directory_url": "https://www.vldb.org/2026/program.html",
+      "venue": "vldb",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "VLDB",
+      "official_matches": [
+        {
+          "title": "QA-GraphRAG: Query-Adaptive Plug-and-Play Retrieval Integration for\n                  Graph-based Retrieval-Augmented Generation",
+          "url": "https://www.vldb.org/pvldb/vol19/p2224-sheng.pdf",
+          "directory_url": "https://www.vldb.org/2026/program.html",
+          "venue": "VLDB",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        },
+        {
+          "title": "QA-GraphRAG:\n                Query-Adaptive Plug-and-Play Retrieval Integration for Graph-based Retrieval-Augmented Generation",
+          "url": "https://www.vldb.org/pvldb/vol19/p2224-sheng.pdf",
+          "directory_url": "https://www.vldb.org/2026/program.html",
+          "venue": "VLDB",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        },
+        {
+          "title": "QA-GraphRAG: Query-Adaptive Plug-and-Play Retrieval Integration for Graph-based Retrieval-Augmented Generation",
+          "url": "https://www.vldb.org/pvldb/vol19/p2224-sheng.pdf",
+          "venue": "vldb",
+          "venue_label": "VLDB",
+          "year": 2026,
+          "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+          "discovered_via": "official_volume_index",
+          "category": "PVLDB 19; conference membership still required",
+          "existing_id": null,
+          "official_matches": []
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Understanding Evolving Graph Structures for Large Discrete-Time Dynamic Graph\n                  Representation",
+      "url": "https://www.vldb.org/pvldb/vol19/p862-xu.pdf",
+      "directory_url": "https://www.vldb.org/2026/program.html",
+      "venue": "vldb",
+      "year": 2026,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "VLDB",
+      "official_matches": [
+        {
+          "title": "Understanding Evolving Graph Structures for Large Discrete-Time Dynamic Graph\n                  Representation",
+          "url": "https://www.vldb.org/pvldb/vol19/p862-xu.pdf",
+          "directory_url": "https://www.vldb.org/2026/program.html",
+          "venue": "VLDB",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        },
+        {
+          "title": "Understanding Evolving\n                Graph Structures for Large Discrete-Time Dynamic Graph Representation",
+          "url": "https://www.vldb.org/pvldb/vol19/p862-xu.pdf",
+          "directory_url": "https://www.vldb.org/2026/program.html",
+          "venue": "VLDB",
+          "year": 2026,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        },
+        {
+          "title": "Understanding Evolving Graph Structures for Large Discrete-Time Dynamic Graph Representation",
+          "url": "https://www.vldb.org/pvldb/vol19/p862-xu.pdf",
+          "venue": "vldb",
+          "venue_label": "VLDB",
+          "year": 2026,
+          "directory_url": "https://www.vldb.org/pvldb/volumes/19/",
+          "discovered_via": "official_volume_index",
+          "category": "PVLDB 19; conference membership still required",
+          "existing_id": null,
+          "official_matches": []
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Conversational Entity Retrieval from a Knowledge Graph using Aggregation of Fine-grained Relevance Signals with Graph Convolutions and Self-Attention",
+      "venue": "wsdm",
+      "year": 2026,
+      "category": "Knowledge Graphs",
+      "index_path": "conference-publications/folders/years/2026/publications_wsdm26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_wsdm26/dragon_wsdm26/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 3581,
+      "venue_label": "WSDM",
+      "official_matches": [],
+      "priority": 0
+    },
+    {
+      "title": "Does Homophily Help in Robust Test-time Node Classification?",
+      "venue": "wsdm",
+      "year": 2026,
+      "category": "Miscellaneous",
+      "index_path": "conference-publications/folders/years/2026/publications_wsdm26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_wsdm26/graphost_wsdm26/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 3594,
+      "venue_label": "WSDM",
+      "official_matches": [],
+      "priority": 0
+    },
+    {
+      "title": "Taming Non-Stationary Knowledge Growth: Dynamic Global Memory Framework for Lifelong Knowledge Graph Embedding",
+      "venue": "wsdm",
+      "year": 2026,
+      "category": "Knowledge Graphs",
+      "index_path": "conference-publications/folders/years/2026/publications_wsdm26/README.md",
+      "detail_path": "conference-publications/folders/years/2026/publications_wsdm26/dygm_wsdm26/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 3579,
+      "venue_label": "WSDM",
+      "official_matches": [],
+      "priority": 0
+    },
+    {
+      "title": "Dynamic Group Detection using VLM-augmented Temporal Groupness Graph",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Yokoyama_Dynamic_Group_Detection_using_VLM-augmented_Temporal_Groupness_Graph_ICCV_2025_paper.html",
+      "directory_url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+      "venue": "iccv",
+      "year": 2025,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICCV",
+      "official_matches": [
+        {
+          "title": "Dynamic Group Detection using VLM-augmented Temporal Groupness Graph",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Yokoyama_Dynamic_Group_Detection_using_VLM-augmented_Temporal_Groupness_Graph_ICCV_2025_paper.html",
+          "directory_url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+          "venue": "ICCV",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "GRAB: A Challenging GRaph Analysis Benchmark for Large Multimodal Models",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Roberts_GRAB_A_Challenging_GRaph_Analysis_Benchmark_for_Large_Multimodal_Models_ICCV_2025_paper.html",
+      "directory_url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+      "venue": "iccv",
+      "year": 2025,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICCV",
+      "official_matches": [
+        {
+          "title": "GRAB: A Challenging GRaph Analysis Benchmark for Large Multimodal Models",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Roberts_GRAB_A_Challenging_GRaph_Analysis_Benchmark_for_Large_Multimodal_Models_ICCV_2025_paper.html",
+          "directory_url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+          "venue": "ICCV",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Leveraging Panoptic Scene Graph for Evaluating Fine-Grained Text-to-Image Generation",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Deng_Leveraging_Panoptic_Scene_Graph_for_Evaluating_Fine-Grained_Text-to-Image_Generation_ICCV_2025_paper.html",
+      "directory_url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+      "venue": "iccv",
+      "year": 2025,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICCV",
+      "official_matches": [
+        {
+          "title": "Leveraging Panoptic Scene Graph for Evaluating Fine-Grained Text-to-Image Generation",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Deng_Leveraging_Panoptic_Scene_Graph_for_Evaluating_Fine-Grained_Text-to-Image_Generation_ICCV_2025_paper.html",
+          "directory_url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+          "venue": "ICCV",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "Open-Vocabulary Octree-Graph for 3D Scene Understanding",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Wang_Open-Vocabulary_Octree-Graph_for_3D_Scene_Understanding_ICCV_2025_paper.html",
+      "directory_url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+      "venue": "iccv",
+      "year": 2025,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICCV",
+      "official_matches": [
+        {
+          "title": "Open-Vocabulary Octree-Graph for 3D Scene Understanding",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Wang_Open-Vocabulary_Octree-Graph_for_3D_Scene_Understanding_ICCV_2025_paper.html",
+          "directory_url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+          "venue": "ICCV",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "SPADE: Spatial-Aware Denoising Network for Open-vocabulary Panoptic Scene Graph Generation with Long- and Local-range Context Reasoning",
+      "venue": "iccv",
+      "year": 2025,
+      "category": "Scene Graph Generation",
+      "index_path": "conference-publications/folders/years/2025/publications_iccv25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_iccv25/spade_iccv25/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 524,
+      "venue_label": "ICCV",
+      "official_matches": [
+        {
+          "title": "SPADE: Spatial-Aware Denoising Network for Open-vocabulary Panoptic Scene Graph Generation with Long- and Local-range Context Reasoning",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Hu_SPADE_Spatial-Aware_Denoising_Network_for_Open-vocabulary_Panoptic_Scene_Graph_Generation_ICCV_2025_paper.html",
+          "directory_url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+          "venue": "ICCV",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "Scene Graph Guided Generation: Enable Accurate Relations Generation in Text-to-Image Models via Textural Rectification",
+      "venue": "iccv",
+      "year": 2025,
+      "category": "Scene Graphs",
+      "index_path": "conference-publications/folders/years/2025/publications_iccv25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_iccv25/sgadapter_iccv25/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 529,
+      "venue_label": "ICCV",
+      "official_matches": [
+        {
+          "title": "Scene Graph Guided Generation: Enable Accurate Relations Generation in Text-to-Image Models via Textural Rectification",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Shen_Scene_Graph_Guided_Generation_Enable_Accurate_Relations_Generation_in_Text-to-Image_ICCV_2025_paper.html",
+          "directory_url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+          "venue": "ICCV",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "Taming the Untamed: Graph-Based Knowledge Retrieval and Reasoning for MLLMs to Conquer the Unknown",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Wang_Taming_the_Untamed_Graph-Based_Knowledge_Retrieval_and_Reasoning_for_MLLMs_ICCV_2025_paper.html",
+      "directory_url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+      "venue": "iccv",
+      "year": 2025,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "ICCV",
+      "official_matches": [
+        {
+          "title": "Taming the Untamed: Graph-Based Knowledge Retrieval and Reasoning for MLLMs to Conquer the Unknown",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Wang_Taming_the_Untamed_Graph-Based_Knowledge_Retrieval_and_Reasoning_for_MLLMs_ICCV_2025_paper.html",
+          "directory_url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+          "venue": "ICCV",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Vision-Language Interactive Relation Mining for Open-Vocabulary Scene Graph Generation",
+      "venue": "iccv",
+      "year": 2025,
+      "category": "Scene Graph Generation",
+      "index_path": "conference-publications/folders/years/2025/publications_iccv25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_iccv25/vlirm_iccv25/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 525,
+      "venue_label": "ICCV",
+      "official_matches": [
+        {
+          "title": "Vision-Language Interactive Relation Mining for Open-Vocabulary Scene Graph Generation",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Min_Vision-Language_Interactive_Relation_Mining_for_Open-Vocabulary_Scene_Graph_Generation_ICCV_2025_paper.html",
+          "directory_url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+          "venue": "ICCV",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 2
+    },
+    {
+      "title": "Vision-Language Neural Graph Featurization for Extracting Retinal Lesions",
+      "venue": "iccv",
+      "year": 2025,
+      "category": "Biomedical Data",
+      "index_path": "conference-publications/folders/years/2025/publications_iccv25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_iccv25/vlngf_iccv25/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 547,
+      "venue_label": "ICCV",
+      "official_matches": [
+        {
+          "title": "Vision-Language Neural Graph Featurization for Extracting Retinal Lesions",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Hassan_Vision-Language_Neural_Graph_Featurization_for_Extracting_Retinal_Lesions_ICCV_2025_paper.html",
+          "directory_url": "https://openaccess.thecvf.com/ICCV2025?day=all",
+          "venue": "ICCV",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 2
+    },
+    {
+      "title": "Anomaly Detection via Graph Contrastive Learning",
+      "url": "https://doi.org/10.1137/1.9781611978520.6",
+      "venue_label": "ICDM",
+      "venue": "icdm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "Proceedings of the 2025 SIAM International Conference on Data Mining (SDM)",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Attributed Hypergraph Generation with Realistic Interplay Between Structure and Attributes",
+      "venue": "icdm",
+      "year": 2025,
+      "category": "Hypergraphs",
+      "index_path": "conference-publications/folders/years/2025/publications_icdm25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_icdm25/noah_icdm25/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 579,
+      "venue_label": "ICDM",
+      "official_matches": [],
+      "priority": 0
+    },
+    {
+      "title": "BERT-enhanced Rumor Detection Based on the Graph Convolutional Network",
+      "url": "https://doi.org/10.1109/iccvdm66874.2025.11290096",
+      "venue_label": "ICDM",
+      "venue": "icdm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "2025 6th International Conference on Computer Vision and Data Mining (ICCVDM)",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "CAST-GNN: Continual Adaptive Learning for Custom Spatio-Temporal Knowledge Graphs via Graph Neural Networks",
+      "venue": "icdm",
+      "year": 2025,
+      "category": "Knowledge Graphs",
+      "index_path": "conference-publications/folders/years/2025/publications_icdm25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_icdm25/castgnn_icdm25/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 582,
+      "venue_label": "ICDM",
+      "official_matches": [
+        {
+          "title": "CAST-GNN: Continual Adaptive Learning for Custom Spatio-Temporal Knowledge Graphs via Graph Neural Networks",
+          "url": "https://doi.org/10.1109/icdm65498.2025.00083",
+          "venue_label": "ICDM",
+          "venue": "icdm",
+          "year": 2025,
+          "category": "Publisher-deposited bibliography; edition and full text to verify",
+          "discovered_via": "crossref_container_query",
+          "container": "2025 IEEE International Conference on Data Mining (ICDM)",
+          "existing_id": null,
+          "official_matches": []
+        }
+      ],
+      "priority": 0,
+      "url": "https://doi.org/10.1109/icdm65498.2025.00083"
+    },
+    {
+      "title": "Dilution of Unreliable Information: Learning in Graph with Noisy Structures and Absent Attributes",
+      "venue": "icdm",
+      "year": 2025,
+      "category": "Robustness",
+      "index_path": "conference-publications/folders/years/2025/publications_icdm25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_icdm25/rena_icdm25/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 596,
+      "venue_label": "ICDM",
+      "official_matches": [
+        {
+          "title": "Dilution of Unreliable Information: Learning in Graph with Noisy Structures and Absent Attributes",
+          "url": "https://doi.org/10.1109/icdm65498.2025.00145",
+          "venue_label": "ICDM",
+          "venue": "icdm",
+          "year": 2025,
+          "category": "Publisher-deposited bibliography; edition and full text to verify",
+          "discovered_via": "crossref_container_query",
+          "container": "2025 IEEE International Conference on Data Mining (ICDM)",
+          "existing_id": null,
+          "official_matches": []
+        }
+      ],
+      "priority": 0,
+      "url": "https://doi.org/10.1109/icdm65498.2025.00145"
+    },
+    {
+      "title": "Equipping Graph Autoencoders: Revisiting Masking Strategies from a Robustness Perspective",
+      "url": "https://doi.org/10.1137/1.9781611978520.39",
+      "venue_label": "ICDM",
+      "venue": "icdm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "Proceedings of the 2025 SIAM International Conference on Data Mining (SDM)",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Heterogeneous Graph Anomaly Detection with Graph Wavelet Transformer",
+      "venue": "icdm",
+      "year": 2025,
+      "category": "Heterogeneous Graphs",
+      "index_path": "conference-publications/folders/years/2025/publications_icdm25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_icdm25/gwt_icdm25/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 591,
+      "venue_label": "ICDM",
+      "official_matches": [
+        {
+          "title": "Heterogeneous Graph Anomaly Detection with Graph Wavelet Transformer",
+          "url": "https://doi.org/10.1109/icdm65498.2025.00100",
+          "venue_label": "ICDM",
+          "venue": "icdm",
+          "year": 2025,
+          "category": "Publisher-deposited bibliography; edition and full text to verify",
+          "discovered_via": "crossref_container_query",
+          "container": "2025 IEEE International Conference on Data Mining (ICDM)",
+          "existing_id": null,
+          "official_matches": []
+        }
+      ],
+      "priority": 0,
+      "url": "https://doi.org/10.1109/icdm65498.2025.00100"
+    },
+    {
+      "title": "HyperModal: Dynamic Hypergraph Contrastive Learning for Multi-Modal Representation",
+      "venue": "icdm",
+      "year": 2025,
+      "category": "Contrastive Learning",
+      "index_path": "conference-publications/folders/years/2025/publications_icdm25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_icdm25/hmodal_icdm25/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 576,
+      "venue_label": "ICDM",
+      "official_matches": [],
+      "priority": 0
+    },
+    {
+      "title": "LifelongSkill: Toward Modality-Varying Lifelong Learning with Latent Knowledge Hypergraph",
+      "venue": "icdm",
+      "year": 2025,
+      "category": "Hypergraphs",
+      "index_path": "conference-publications/folders/years/2025/publications_icdm25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_icdm25/lskill_icdm25/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 581,
+      "venue_label": "ICDM",
+      "official_matches": [],
+      "priority": 0
+    },
+    {
+      "title": "Link Completion for Dynamic Knowledge Graphs with Entity Drift",
+      "venue": "icdm",
+      "year": 2025,
+      "category": "Knowledge Graphs",
+      "index_path": "conference-publications/folders/years/2025/publications_icdm25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_icdm25/lced_icdm25/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 584,
+      "venue_label": "ICDM",
+      "official_matches": [],
+      "priority": 0
+    },
+    {
+      "title": "PromptEG: Scalable Prompt-Based Temporal Generalization on Evolving Graphs",
+      "venue": "icdm",
+      "year": 2025,
+      "category": "Temporal Data",
+      "index_path": "conference-publications/folders/years/2025/publications_icdm25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_icdm25/prompteg_icdm25/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 566,
+      "venue_label": "ICDM",
+      "official_matches": [],
+      "priority": 2
+    },
+    {
+      "title": "REGE: A Method for Incorporating Uncertainty in Graph Embeddings",
+      "url": "https://doi.org/10.1137/1.9781611978520.40",
+      "venue_label": "ICDM",
+      "venue": "icdm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "Proceedings of the 2025 SIAM International Conference on Data Mining (SDM)",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Test-Time GNN Model Evaluation on Dynamic Graphs",
+      "venue": "icdm",
+      "year": 2025,
+      "category": "Distribution Shifts",
+      "index_path": "conference-publications/folders/years/2025/publications_icdm25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_icdm25/dygeval_icdm25/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 563,
+      "venue_label": "ICDM",
+      "official_matches": [],
+      "priority": 2
+    },
+    {
+      "title": "Trivial Graph Features and Classical Learning are Enough to Detect Random Anomalies",
+      "venue": "icdm",
+      "year": 2025,
+      "category": "Anomaly Detection",
+      "index_path": "conference-publications/folders/years/2025/publications_icdm25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_icdm25/tgf_icdm25/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 592,
+      "venue_label": "ICDM",
+      "official_matches": [
+        {
+          "title": "Trivial Graph Features and Classical Learning are Enough to Detect Random Anomalies",
+          "url": "https://doi.org/10.1109/icdm65498.2025.00142",
+          "venue_label": "ICDM",
+          "venue": "icdm",
+          "year": 2025,
+          "category": "Publisher-deposited bibliography; edition and full text to verify",
+          "discovered_via": "crossref_container_query",
+          "container": "2025 IEEE International Conference on Data Mining (ICDM)",
+          "existing_id": null,
+          "official_matches": []
+        }
+      ],
+      "priority": 0,
+      "url": "https://doi.org/10.1109/icdm65498.2025.00142"
+    },
+    {
+      "title": "When LLM Meets Simplicial Complex: A Novel Graph Prompt Learning on Ethereum Transaction Networks",
+      "venue": "icdm",
+      "year": 2025,
+      "category": "Language Models",
+      "index_path": "conference-publications/folders/years/2025/publications_icdm25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_icdm25/llmsc_icdm25/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 587,
+      "venue_label": "ICDM",
+      "official_matches": [
+        {
+          "title": "When LLM Meets Simplicial Complex: A Novel Graph Prompt Learning on Ethereum Transaction Networks",
+          "url": "https://doi.org/10.1109/icdm65498.2025.00148",
+          "venue_label": "ICDM",
+          "venue": "icdm",
+          "year": 2025,
+          "category": "Publisher-deposited bibliography; edition and full text to verify",
+          "discovered_via": "crossref_container_query",
+          "container": "2025 IEEE International Conference on Data Mining (ICDM)",
+          "existing_id": null,
+          "official_matches": []
+        }
+      ],
+      "priority": 2,
+      "url": "https://doi.org/10.1109/icdm65498.2025.00148"
+    },
+    {
+      "title": "FLORA: GNNs as Predictors of Agentic Workflow Performances",
+      "venue": "log",
+      "year": 2025,
+      "category": "Language Models",
+      "index_path": "conference-publications/folders/years/2025/publications_log25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_log25/flora_log25/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 1452,
+      "venue_label": "LoG",
+      "official_matches": [
+        {
+          "title": "FLORA: GNNs as Predictors of Agentic Workflow Performances",
+          "url": "https://openreview.net/forum?id=RmlDI5kUxa",
+          "venue": "log",
+          "venue_label": "LoG",
+          "year": 2025,
+          "category": "Official main conference poster schedule",
+          "discovered_via": "official_program_csv",
+          "existing_id": null,
+          "official_matches": []
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "Learning to Collaborate: Personalized Federated GNNs",
+      "venue": "log",
+      "year": 2025,
+      "category": "Coarsening",
+      "index_path": "conference-publications/folders/years/2025/publications_log25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_log25/pfedgnn_log25/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 1430,
+      "venue_label": "LoG",
+      "official_matches": [
+        {
+          "title": "Learning to Collaborate: Personalized Federated GNNs",
+          "url": "https://openreview.net/forum?id=RsWHAerLMb",
+          "venue": "log",
+          "venue_label": "LoG",
+          "year": 2025,
+          "category": "Official main conference poster schedule",
+          "discovered_via": "official_program_csv",
+          "existing_id": null,
+          "official_matches": []
+        },
+        {
+          "title": "Learning to Collaborate: Personalized Federated GNNs",
+          "url": "https://openreview.net/forum?id=RsWHAerLMb",
+          "venue": "log",
+          "venue_label": "LoG",
+          "year": 2025,
+          "category": "Official main conference poster schedule",
+          "discovered_via": "official_program_csv",
+          "existing_id": null,
+          "official_matches": []
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Relaxed Equivariance via Multitask Learning",
+      "venue": "log",
+      "year": 2025,
+      "category": "Molecules",
+      "index_path": "conference-publications/folders/years/2025/publications_log25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_log25/remul_log25/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 1444,
+      "venue_label": "LoG",
+      "official_matches": [
+        {
+          "title": "Relaxed Equivariance via Multitask Learning",
+          "url": "https://openreview.net/forum?id=xrzYdsIv3f",
+          "venue": "log",
+          "venue_label": "LoG",
+          "year": 2025,
+          "category": "Official main conference poster schedule",
+          "discovered_via": "official_program_csv",
+          "existing_id": null,
+          "official_matches": []
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Synthesize-on-Graph: Knowledgeable Synthetic Data Generation for Continued Pre-training of Large Language Models",
+      "venue": "log",
+      "year": 2025,
+      "category": "Language Models",
+      "index_path": "conference-publications/folders/years/2025/publications_log25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_log25/sog_log25/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 1451,
+      "venue_label": "LoG",
+      "official_matches": [
+        {
+          "title": "Synthesize-on-Graph: Knowledgeable Synthetic Data Generation for Continued Pre-training of Large Language Models",
+          "url": "https://openreview.net/forum?id=mkx3UyFPLl",
+          "venue": "log",
+          "venue_label": "LoG",
+          "year": 2025,
+          "category": "Official main conference poster schedule",
+          "discovered_via": "official_program_csv",
+          "existing_id": null,
+          "official_matches": []
+        }
+      ],
+      "priority": 2
+    },
+    {
+      "title": "Tuning-Free LLM Can Build A Strong Recommender Under Sparse Connectivity And Knowledge Gap Via Extracting Intent",
+      "venue": "log",
+      "year": 2025,
+      "category": "Language Models",
+      "index_path": "conference-publications/folders/years/2025/publications_log25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_log25/ikgr_log25/README.md",
+      "in_scope": false,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 1450,
+      "venue_label": "LoG",
+      "official_matches": [
+        {
+          "title": "Tuning-Free LLM Can Build A Strong Recommender Under Sparse Connectivity And Knowledge Gap Via Extracting Intent",
+          "url": "https://openreview.net/forum?id=oYnXboHALK",
+          "venue": "log",
+          "venue_label": "LoG",
+          "year": 2025,
+          "category": "Official main conference poster schedule",
+          "discovered_via": "official_program_csv",
+          "existing_id": null,
+          "official_matches": []
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "Breaking Semantic Barriers: A Zero-Shot Generalized Framework for Graph Anomaly Detection",
+      "url": "https://doi.org/10.1145/3746027.3755173",
+      "venue_label": "ACM MM",
+      "venue": "mm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "Proceedings of the 33rd ACM International Conference on Multimedia",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Can LLMs Find Fraudsters? Multi-level LLM Enhanced Graph Fraud Detection",
+      "url": "https://doi.org/10.1145/3746027.3755245",
+      "venue_label": "ACM MM",
+      "venue": "mm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "Proceedings of the 33rd ACM International Conference on Multimedia",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Disentangling Homophily and Heterophily in Multimodal Graph Clustering",
+      "url": "https://doi.org/10.1145/3746027.3755631",
+      "venue_label": "ACM MM",
+      "venue": "mm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "Proceedings of the 33rd ACM International Conference on Multimedia",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Entity Graph Alignment and Visual Reasoning for Multimodal Fake News Detection",
+      "url": "https://doi.org/10.1145/3746027.3754591",
+      "venue_label": "ACM MM",
+      "venue": "mm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "Proceedings of the 33rd ACM International Conference on Multimedia",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "FedRog: Robust Federated Graph Classification for Strong Heterogeneity and High-Noise Scenarios",
+      "url": "https://doi.org/10.1145/3746027.3755358",
+      "venue_label": "ACM MM",
+      "venue": "mm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "Proceedings of the 33rd ACM International Conference on Multimedia",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "GTHNA: Local-global Graph Transformer with Memory Reconstruction for Holistic Node Anomaly Evaluation",
+      "url": "https://doi.org/10.1145/3746027.3755334",
+      "venue_label": "ACM MM",
+      "venue": "mm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "Proceedings of the 33rd ACM International Conference on Multimedia",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Graph Anomaly Detection via Structure to Attribute Reconstruction",
+      "url": "https://doi.org/10.1109/icme59968.2025.11210117",
+      "venue_label": "ACM MM",
+      "venue": "mm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "HGAC\n                    <sub>LLM</sub>\n                    : Attribute Completion in Heterogeneous Graph with Integration of External Knowledge from Large Language Models",
+      "url": "https://doi.org/10.1145/3746027.3755800",
+      "venue_label": "ACM MM",
+      "venue": "mm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "Proceedings of the 33rd ACM International Conference on Multimedia",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "KEGNN: Knowledge-Enhanced Graph Neural Networks for User Engagement Prediction",
+      "url": "https://doi.org/10.1145/3731715.3733368",
+      "venue_label": "ACM MM",
+      "venue": "mm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "Proceedings of the 2025 International Conference on Multimedia Retrieval",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "MGSGM: Multi-Granularity Selective Graph Mamba for Image-Text Retrieval",
+      "url": "https://doi.org/10.1145/3731715.3734427",
+      "venue_label": "ACM MM",
+      "venue": "mm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "Proceedings of the 2025 International Conference on Multimedia Retrieval",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "MeDKCoOp: Dual Knowledge-guided Graph Prompt Learning for Biomedical Vision-Language Models",
+      "url": "https://doi.org/10.1145/3746027.3755135",
+      "venue_label": "ACM MM",
+      "venue": "mm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "Proceedings of the 33rd ACM International Conference on Multimedia",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Multi-Level Graph Pruning-Based Framework for Graph Retrieval-Augmented Generation",
+      "url": "https://doi.org/10.1109/icme59968.2025.11209364",
+      "venue_label": "ACM MM",
+      "venue": "mm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Open-Scene Understanding-oriented 3D Scene Graph Generation",
+      "url": "https://doi.org/10.1109/icme59968.2025.11209525",
+      "venue_label": "ACM MM",
+      "venue": "mm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Refining Interactions: Enhancing Anisotropy in Graph Neural Networks with Language Semantics",
+      "url": "https://doi.org/10.1109/icme59968.2025.11209302",
+      "venue_label": "ACM MM",
+      "venue": "mm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Toward Robust Signed Graph Learning through Joint Input-Target Denoising",
+      "url": "https://doi.org/10.1145/3746027.3755645",
+      "venue_label": "ACM MM",
+      "venue": "mm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "Proceedings of the 33rd ACM International Conference on Multimedia",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Towards Effective Open-set Graph Class-incremental Learning",
+      "url": "https://doi.org/10.1145/3746027.3754822",
+      "venue_label": "ACM MM",
+      "venue": "mm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "Proceedings of the 33rd ACM International Conference on Multimedia",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "Universal Scene Graph Generation via Semantic Feature Alignment",
+      "url": "https://doi.org/10.1109/icme59968.2025.11209357",
+      "venue_label": "ACM MM",
+      "venue": "mm",
+      "year": 2025,
+      "category": "Publisher-deposited bibliography; edition and full text to verify",
+      "discovered_via": "crossref_container_query",
+      "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)",
+      "existing_id": null,
+      "official_matches": []
+    },
+    {
+      "title": "BOOM: Benchmarking Out-Of-distribution Molecular Property Predictions of Machine Learning Models",
+      "url": "https://neurips.cc/virtual/2025/poster/121661",
+      "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+      "venue": "neurips",
+      "year": 2025,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "NeurIPS",
+      "official_matches": [
+        {
+          "title": "BOOM: Benchmarking Out-Of-distribution Molecular Property Predictions of Machine Learning Models",
+          "url": "https://neurips.cc/virtual/2025/poster/121661",
+          "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+          "venue": "NeurIPS",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 2
+    },
+    {
+      "title": "Distribution Learning Meets Graph Structure Sampling",
+      "url": "https://neurips.cc/virtual/2025/poster/115271",
+      "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+      "venue": "neurips",
+      "year": 2025,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "NeurIPS",
+      "official_matches": [
+        {
+          "title": "Distribution Learning Meets Graph Structure Sampling",
+          "url": "https://neurips.cc/virtual/2025/poster/115271",
+          "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+          "venue": "NeurIPS",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "ExGra-Med: Extended Context Graph Alignment for Medical Vision-Language Models",
+      "url": "https://neurips.cc/virtual/2025/poster/117826",
+      "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+      "venue": "neurips",
+      "year": 2025,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "NeurIPS",
+      "official_matches": [
+        {
+          "title": "ExGra-Med: Extended Context Graph Alignment for Medical Vision-Language Models",
+          "url": "https://neurips.cc/virtual/2025/poster/117826",
+          "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+          "venue": "NeurIPS",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 2
+    },
+    {
+      "title": "GLNCD: Graph-Level Novel Category Discovery",
+      "venue": "neurips",
+      "year": 2025,
+      "category": "Images",
+      "index_path": "conference-publications/folders/years/2025/publications_neurips25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_neurips25/glncd_neurips25/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 1775,
+      "venue_label": "NeurIPS",
+      "official_matches": [
+        {
+          "title": "GLNCD: Graph-Level Novel Category Discovery",
+          "url": "https://neurips.cc/virtual/2025/poster/116856",
+          "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+          "venue": "NeurIPS",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Graph–Smoothed Bayesian Black-Box Shift Estimator and Its Information Geometry",
+      "url": "https://neurips.cc/virtual/2025/poster/117639",
+      "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+      "venue": "neurips",
+      "year": 2025,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "NeurIPS",
+      "official_matches": [
+        {
+          "title": "Graph–Smoothed Bayesian Black-Box Shift Estimator and Its Information Geometry",
+          "url": "https://neurips.cc/virtual/2025/poster/117639",
+          "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+          "venue": "NeurIPS",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "Interaction-Centric Knowledge Infusion and Transfer for Open Vocabulary Scene Graph Generation",
+      "url": "https://neurips.cc/virtual/2025/poster/116684",
+      "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+      "venue": "neurips",
+      "year": 2025,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "NeurIPS",
+      "official_matches": [
+        {
+          "title": "Interaction-Centric Knowledge Infusion and Transfer for Open Vocabulary Scene Graph Generation",
+          "url": "https://neurips.cc/virtual/2025/poster/116684",
+          "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+          "venue": "NeurIPS",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 2
+    },
+    {
+      "title": "Knowledge Graph Enhanced Generative Multi-modal Models for Class-Incremental Learning",
+      "venue": "neurips",
+      "year": 2025,
+      "category": "Vision",
+      "index_path": "conference-publications/folders/years/2025/publications_neurips25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_neurips25/kggmm_neurips25/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 1788,
+      "venue_label": "NeurIPS",
+      "official_matches": [
+        {
+          "title": "Knowledge Graph Enhanced Generative Multi-modal Models for Class-Incremental Learning",
+          "url": "https://neurips.cc/virtual/2025/poster/117916",
+          "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+          "venue": "NeurIPS",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Object-Centric Representation Learning for Enhanced 3D Semantic Scene Graph Prediction",
+      "venue": "neurips",
+      "year": 2025,
+      "category": "Vision",
+      "index_path": "conference-publications/folders/years/2025/publications_neurips25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_neurips25/ocrl_neurips25/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 1790,
+      "venue_label": "NeurIPS",
+      "official_matches": [
+        {
+          "title": "Object-Centric Representation Learning for Enhanced 3D Semantic Scene Graph Prediction",
+          "url": "https://neurips.cc/virtual/2025/poster/118536",
+          "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+          "venue": "NeurIPS",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 2
+    },
+    {
+      "title": "RDB2G-Bench: A Comprehensive Benchmark for Automatic Graph Modeling of Relational Databases",
+      "venue": "neurips",
+      "year": 2025,
+      "category": "Benchmarks",
+      "index_path": "conference-publications/folders/years/2025/publications_neurips25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_neurips25/rdb2gbench_neurips25/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 1796,
+      "venue_label": "NeurIPS",
+      "official_matches": [
+        {
+          "title": "RDB2G-Bench: A Comprehensive Benchmark for Automatic Graph Modeling of Relational Databases",
+          "url": "https://neurips.cc/virtual/2025/poster/121572",
+          "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+          "venue": "NeurIPS",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "SAGE: A Unified Framework for Generalizable Object State Recognition with State-Action Graph Embedding",
+      "venue": "neurips",
+      "year": 2025,
+      "category": "Vision",
+      "index_path": "conference-publications/folders/years/2025/publications_neurips25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_neurips25/sage_neurips25/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 1789,
+      "venue_label": "NeurIPS",
+      "official_matches": [
+        {
+          "title": "SAGE: A Unified Framework for Generalizable Object State Recognition with State-Action Graph Embedding",
+          "url": "https://neurips.cc/virtual/2025/poster/116464",
+          "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+          "venue": "NeurIPS",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "Self-Assembling Graph Perceptrons",
+      "url": "https://neurips.cc/virtual/2025/poster/119837",
+      "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+      "venue": "neurips",
+      "year": 2025,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "NeurIPS",
+      "official_matches": [
+        {
+          "title": "Self-Assembling Graph Perceptrons",
+          "url": "https://neurips.cc/virtual/2025/poster/119837",
+          "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+          "venue": "NeurIPS",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "The Underappreciated Power of Vision Models for Graph Structural Understanding",
+      "venue": "neurips",
+      "year": 2025,
+      "category": "Vision",
+      "index_path": "conference-publications/folders/years/2025/publications_neurips25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_neurips25/graphabstract_neurips25/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 1787,
+      "venue_label": "NeurIPS",
+      "official_matches": [
+        {
+          "title": "The Underappreciated Power of Vision Models for Graph Structural Understanding",
+          "url": "https://neurips.cc/virtual/2025/poster/119762",
+          "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+          "venue": "NeurIPS",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "Towards Generalizable Retina Vessel Segmentation with Deformable Graph Priors",
+      "venue": "neurips",
+      "year": 2025,
+      "category": "Images",
+      "index_path": "conference-publications/folders/years/2025/publications_neurips25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_neurips25/graphseg_neurips25/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 1779,
+      "venue_label": "NeurIPS",
+      "official_matches": [
+        {
+          "title": "Towards Generalizable Retina Vessel Segmentation with Deformable Graph Priors",
+          "url": "https://neurips.cc/virtual/2025/poster/115045",
+          "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+          "venue": "NeurIPS",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 1
+    },
+    {
+      "title": "Unsupervised Learning for Optimal Transport plan prediction between unbalanced graphs",
+      "url": "https://neurips.cc/virtual/2025/poster/118707",
+      "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+      "venue": "neurips",
+      "year": 2025,
+      "existing_id": null,
+      "discovered_via": "official_directory",
+      "category": "Official directory: graph-related title",
+      "venue_label": "NeurIPS",
+      "official_matches": [
+        {
+          "title": "Unsupervised Learning for Optimal Transport plan prediction between unbalanced graphs",
+          "url": "https://neurips.cc/virtual/2025/poster/118707",
+          "directory_url": "https://neurips.cc/virtual/2025/papers.html",
+          "venue": "NeurIPS",
+          "year": 2025,
+          "existing_id": null,
+          "discovered_via": "official_directory"
+        }
+      ],
+      "priority": 0
+    },
+    {
+      "title": "When No Paths Lead to Rome: Benchmarking Systematic Neural Relational Reasoning",
+      "venue": "neurips",
+      "year": 2025,
+      "category": "Benchmarks",
+      "index_path": "conference-publications/folders/years/2025/publications_neurips25/README.md",
+      "detail_path": "conference-publications/folders/years/2025/publications_neurips25/wnpltr_neurips25/README.md",
+      "in_scope": true,
+      "existing_id": null,
+      "discovered_via": "literature_repository",
+      "catalog_id": 1798,
+      "venue_label": "NeurIPS",
+      "official_matches": [],
+      "priority": 0
+    }
+  ]
+}

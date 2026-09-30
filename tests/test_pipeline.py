@@ -1,3 +1,4 @@
+from summary_fixtures import VALID_METHOD
 import copy
 import json
 import os
@@ -26,7 +27,7 @@ def sample(**kwargs):
 
 
 def answer():
-    return {'relevant': True, 'keywords': ['图神经网络', '注意力机制', '消息传递', '分子图', '属性预测'], 'method': '以分子为图，通过注意力加权的消息传递学习节点表示，用于预测分子属性。', 'confidence': 'high', 'evidence': ['attention-based message passing for molecular property prediction']}
+    return {'relevant': True, 'keywords': ['图神经网络', '注意力机制', '消息传递', '分子图', '属性预测'], 'method': VALID_METHOD, 'confidence': 'high', 'evidence': ['attention-based message passing for molecular property prediction']}
 
 
 class DedupTests(unittest.TestCase):

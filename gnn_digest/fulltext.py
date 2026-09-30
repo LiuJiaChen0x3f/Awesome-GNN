@@ -4,9 +4,12 @@ import io
 import re
 import time
 import urllib.request
+import xml.etree.ElementTree as ET
+from datetime import date
+from urllib.parse import urlencode, urlparse
 from html.parser import HTMLParser
 
-from .models import clean
+from .models import clean, norm_title, arxiv_id
 from .verification import CheckedRedirect, VerificationError, safe_scholarly_url
 
 
@@ -66,8 +69,19 @@ def read_document(url, timeout):
         return ''.join(parser.parts), 'html'
 
 
-def load_fulltext(p, timeout=45):
+def load_fulltext(p, timeout=45, max_characters=120000):
     if p.get('full_text') and p.get('fulltext_source', {}).get('scope') == 'full_text': return
+    lookup_started=time.monotonic()
+    if p.get('_allow_arxiv_lookup') and not p.get('arxiv_id') and (
+            not p.get('pdf_url') or urlparse(p.get('pdf_url','')).hostname in ('dl.acm.org','openreview.net','ieeexplore.ieee.org')):
+        try:
+            match=find_arxiv_fulltext(p['title'],min(15,max(1,timeout/2)))
+            if match:
+                p.update(arxiv_id=match['arxiv_id'],pdf_url=match['pdf_url'],
+                         fulltext_alternate_verification=match['verification'])
+        except Exception:
+            pass  # Try the independently verified publisher PDF below.
+    timeout=max(1,timeout-(time.monotonic()-lookup_started))
     urls = []
     if p.get('arxiv_id'):
         urls.append('https://arxiv.org/html/' + p['arxiv_id'])
@@ -81,8 +95,8 @@ def load_fulltext(p, timeout=45):
             text = '\n'.join(clean(line) for line in text.splitlines() if clean(line))
             if len(text) < 500:
                 raise VerificationError('Extracted full text is too short')
-            if len(text) > 120000:
-                raise VerificationError('Extracted full text exceeds 120000 character model limit')
+            if len(text) > max_characters:
+                raise VerificationError(f'Extracted full text exceeds {max_characters} character model limit')
             # Require title words in the document as an additional mismatch guard.
             words = re.findall(r'[a-z]{4,}', p['title'].casefold())
             plain = clean(text).casefold()
@@ -92,8 +106,25 @@ def load_fulltext(p, timeout=45):
                      'scope':'full_text', 'characters':len(text)})
             return
         except Exception as exc:
-            errors.append(type(exc).__name__)
+            detail = str(exc)[:160] if isinstance(exc, VerificationError) else type(exc).__name__
+            errors.append(detail)
     raise VerificationError('Full text unavailable: ' + ', '.join(errors or ['no full-text URL']))
+
+
+def find_arxiv_fulltext(title, timeout=15):
+    """Resolve a known conference title, never discover papers via fixed terms."""
+    from .http import request
+    from .verification import verify_candidate
+    query=urlencode({'search_query':'ti:"'+title.replace('"','')+'"','max_results':3})
+    raw=request('https://export.arxiv.org/api/query?'+query,timeout=timeout,attempts=1)
+    ns={'a':'http://www.w3.org/2005/Atom'}
+    for entry in ET.fromstring(raw).findall('a:entry',ns):
+        found=clean(entry.findtext('a:title','',ns))
+        aid=arxiv_id(entry.findtext('a:id','',ns))
+        if aid and norm_title(found)==norm_title(title):
+            return verify_candidate({'title':title,'url':'https://arxiv.org/abs/'+aid},
+                                    date(1991,1,1),date.today(),timeout=timeout)
+    return None
 
 
 def coerce_legacy_fulltext(p):

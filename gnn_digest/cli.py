@@ -166,9 +166,14 @@ def main():
     parser.add_argument("--root", default=str(ROOT))
     parser.add_argument("--config")
     parser.add_argument("--days", type=int)
+    parser.add_argument("--conference-days", type=int, help="Override conference start with a lookback")
+    parser.add_argument("--arxiv-days", type=int, help="Override arXiv start with a lookback")
+    parser.add_argument("--conference-since", help="Conference publication start date, default 2025-01-01")
+    parser.add_argument("--arxiv-since", help="arXiv v1 start date, default 2026-01-01")
+    parser.add_argument("--resume", action="store_true", help="Resume the matching bulk checkpoint without repeating completed batches")
     parser.add_argument("--until", help="UTC date YYYY-MM-DD; defaults to actual execution date")
     parser.add_argument("--no-llm", action="store_true", help="Collect metadata without inventing summaries")
-    parser.add_argument("--limit", type=int, default=5, help="Target number of verified web-search results (1-20)")
+    parser.add_argument("--limit", type=int, default=5, help="Target verified papers (1-100); >20 runs a venue/year coverage sweep")
     args = parser.parse_args()
     try:
         if args.limit < 1:

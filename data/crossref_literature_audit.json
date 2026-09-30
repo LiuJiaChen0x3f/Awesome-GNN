@@ -1,0 +1,2131 @@
+[
+  {
+    "venue": "SIGIR",
+    "year": 2026,
+    "container_query": "Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "candidates": [],
+    "error": "HTTPError"
+  },
+  {
+    "venue": "ICDE",
+    "year": 2026,
+    "container_query": "2026 IEEE 42nd International Conference on Data Engineering",
+    "candidates": [
+      {
+        "title": "Towards the Distributed Large-Scale $k$-NN Graph Construction by Graph Merge",
+        "url": "https://doi.org/10.1109/icde65706.2026.00015",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "GeoLayer: Towards Low-Latency and Cost-Efficient Geo-Distributed Graph Stores with Layered Graph",
+        "url": "https://doi.org/10.1109/icde65706.2026.00079",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "C\n                    <sup>2</sup>\n                    graph: A Compression-Collaboration Algorithm for CPU-GPU Hybrid Weighted Graph Traversals",
+        "url": "https://doi.org/10.1109/icde65706.2026.00225",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "Interpreting Graph Inference with Skyline Explanations",
+        "url": "https://doi.org/10.1109/icde65706.2026.00064",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "Efficient Graph Matching with Pattern Reduction",
+        "url": "https://doi.org/10.1109/icde65706.2026.00248",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "Clue-RAG: Towards Accurate and Cost-Efficient Graph-Based RAG Via Multi-Partite Graph-Based Index",
+        "url": "https://doi.org/10.1109/icde65706.2026.00179",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "PRIME: Efficient Algorithm for Token Graph Routing Problem",
+        "url": "https://doi.org/10.1109/icde65706.2026.00214",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "Minimum $k$-Vertex Connected Graph Search (Extended Abstract)",
+        "url": "https://doi.org/10.1109/icde65706.2026.00337",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "FlashEKGR: Fast Embedding-Based Knowledge Graph Reasoning Models Training",
+        "url": "https://doi.org/10.1109/icde65706.2026.00260",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "Grace: Alleviating Reconstruction Cost in Dynamic Graph Processing Systems",
+        "url": "https://doi.org/10.1109/icde65706.2026.00075",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "AGRAG: Advanced Graph-Based Retrieval-Augmented Generation for LLMs",
+        "url": "https://doi.org/10.1109/icde65706.2026.00110",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "GalaxyRAG: Graph Retrieval-Augmented Generation for Enterprise Knowledge Systems",
+        "url": "https://doi.org/10.1109/icde65706.2026.00302",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "Graph Query Generation with Constraint-Guided Large Language Agents",
+        "url": "https://doi.org/10.1109/icde65706.2026.00283",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "GLIDE: GPU-Accelerated ANN Graph Index Construction via Data Locality",
+        "url": "https://doi.org/10.1109/icde65706.2026.00250",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "ProGQL: A Provenance Graph Query System for Cyber Attack Investigation",
+        "url": "https://doi.org/10.1109/icde65706.2026.00051",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "Unifying Graph Traversals and Time Series Joins in Hybrid Graphs",
+        "url": "https://doi.org/10.1109/icde65706.2026.00164",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "On Graph Rewiring with Motifs: A Find-and-Replace Approach",
+        "url": "https://doi.org/10.1109/icde65706.2026.00017",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "Zero-Knowledge Verifiable Graph Query Evaluation via Expansion-Centric Operator Decomposition",
+        "url": "https://doi.org/10.1109/icde65706.2026.00041",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "Overcoming the Sync-Compute Dilemma in Parallel Graph-Based Vector Retrieval",
+        "url": "https://doi.org/10.1109/icde65706.2026.00125",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "Label-Constrained Column Annotation with Language Models and Graph Neural Networks",
+        "url": "https://doi.org/10.1109/icde65706.2026.00171",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "CFDGraph: Privacy-Preserving Graph Processing for Large-Scale Collaborative Fraud Detection",
+        "url": "https://doi.org/10.1109/icde65706.2026.00138",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "TAPE: A Temporal Graph-Based Memory System for Personal LLM Agents",
+        "url": "https://doi.org/10.1109/icde65706.2026.00318",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "Rethinking Flexible Graph Similarity Computation: One-Step Alignment with Global Guidance",
+        "url": "https://doi.org/10.1109/icde65706.2026.00111",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "City-Wide Origin-Destination Matrix Generation via Cascaded Graph Denoising Diffusion",
+        "url": "https://doi.org/10.1109/icde65706.2026.00228",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "GoCache: Accelerating Out-Of-Core Graph Queries with Pattern-Driven Caching",
+        "url": "https://doi.org/10.1109/icde65706.2026.00217",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "ConvD: Attention Enhanced Dynamic Convolutional Embeddings for Knowledge Graph Completion (Extended Abstract)",
+        "url": "https://doi.org/10.1109/icde65706.2026.00347",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "Graph2Region: Efficient Graph Similarity Learning With Structure and Scale Restoration (Extended Abstract)",
+        "url": "https://doi.org/10.1109/icde65706.2026.00341",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "RaSE-KGC: A Relation-Aware Segment Encoding Approach for Knowledge Graph Completion",
+        "url": "https://doi.org/10.1109/icde65706.2026.00223",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "VisiFold: Long-Term Traffic Forecasting via Temporal Folding Graph and Node Visibility",
+        "url": "https://doi.org/10.1109/icde65706.2026.00230",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "Schema-GraphRAG: Bridging Hybrid Search and Graph Traversal for Complex Retrieval Tasks",
+        "url": "https://doi.org/10.1109/icde65706.2026.00317",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "Trajectory–User Linking via Heterogeneous Preference Graph and Dual-Encoder Mutual Distillation",
+        "url": "https://doi.org/10.1109/icde65706.2026.00092",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "JetBGC: Joint Robust Embedding and Structural Fusion Bipartite Graph Clustering (Extended Abstract)",
+        "url": "https://doi.org/10.1109/icde65706.2026.00346",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "Efficient Traffic Forecasting on Large-Scale Road Network by Regularized Adaptive Graph Convolution",
+        "url": "https://doi.org/10.1109/icde65706.2026.00068",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "SNI-GNN: SmartNIC-Assisted Full-Graph GNN Training with In-Network Embedding Prediction",
+        "url": "https://doi.org/10.1109/icde65706.2026.00139",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "Micro: a Lightweight Middleware for Optimizing Cross-Store Cross-Model Graph-Relation Joins",
+        "url": "https://doi.org/10.1109/icde65706.2026.00030",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "BAMG: A Block-Aware Monotonic Graph Index for Disk-Based Approximate Nearest Neighbor Search",
+        "url": "https://doi.org/10.1109/icde65706.2026.00252",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "APEX: Adaptive Variable-Wise Parallel Execution for Worst-Case Optimal Joins on Graph Queries",
+        "url": "https://doi.org/10.1109/icde65706.2026.00206",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "TopFGL: A Topology-Aware and Distributionagnostic Federated Learning Framework Tackling Topological Heterogeneity on Graph Data",
+        "url": "https://doi.org/10.1109/icde65706.2026.00044",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "GeminiSketch: An Accurate and Efficient Sketch for Summarizing Temporal Graph Streams with Rolling-Out Elimination",
+        "url": "https://doi.org/10.1109/icde65706.2026.00010",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 IEEE 42nd International Conference on Data Engineering (ICDE)"
+      },
+      {
+        "title": "A Decoder-Enhanced Autoencoder for Heterogeneous Graph Representation Learning",
+        "url": "https://doi.org/10.1145/3830340.3830343",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2026 9th International Conference on Data Storage and Data Engineering"
+      },
+      {
+        "title": "Heterogeneous Graph Representation Learning Based on Attribute Completion and Semantic Awareness",
+        "url": "https://doi.org/10.1145/3830340.3830356",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2026 9th International Conference on Data Storage and Data Engineering"
+      },
+      {
+        "title": "Graph-Based Credit Risk Modeling in P2P Lending Using Gower-Derived Centrality Features",
+        "url": "https://doi.org/10.1109/aide69088.2026.11544711",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 International Conference on Artificial Intelligence and Data Engineering (AIDE)"
+      },
+      {
+        "title": "Learning From Graph-Graph Relationship: A New Perspective on Graph-Level Anomaly Detection",
+        "url": "https://doi.org/10.1109/tkde.2025.3618929",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "IEEE Transactions on Knowledge and Data Engineering"
+      },
+      {
+        "title": "Unveiling Influential Nodes in Complex Networks: A Journey Through Graph Learning, Community Insights, and Fuzzy Hybrids",
+        "url": "https://doi.org/10.1109/aide69088.2026.11544700",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2026 International Conference on Artificial Intelligence and Data Engineering (AIDE)"
+      },
+      {
+        "title": "K Graph Centers",
+        "url": "https://doi.org/10.1109/tkde.2026.3701456",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "IEEE Transactions on Knowledge and Data Engineering"
+      },
+      {
+        "title": "Privacy-Preserving Graph Similarity Matching Query Over Encrypted Graph Database",
+        "url": "https://doi.org/10.1109/tkde.2026.3656414",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "IEEE Transactions on Knowledge and Data Engineering"
+      },
+      {
+        "title": "Coupled Surface-Subsurface Dynamics in River Networks: A Pressure-Driven Physics-Informed Graph Neural Network Approach",
+        "url": "https://doi.org/10.1145/3830340.3830341",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2026 9th International Conference on Data Storage and Data Engineering"
+      },
+      {
+        "title": "BOGK: Bayesian Optimization-Driven Graph Kernel Ensemble for Graph-Level Clustering",
+        "url": "https://doi.org/10.1109/tkde.2026.3658514",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "IEEE Transactions on Knowledge and Data Engineering"
+      },
+      {
+        "title": "Ensemble Graph Neural Networks With Individual Decision Feedback for Graph Classification",
+        "url": "https://doi.org/10.1109/tkde.2026.3691148",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "IEEE Transactions on Knowledge and Data Engineering"
+      },
+      {
+        "title": "Fast Bipartite Graph Clustering",
+        "url": "https://doi.org/10.1109/tkde.2026.3734593",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "IEEE Transactions on Knowledge and Data Engineering"
+      },
+      {
+        "title": "GETL: An Extract-Transform-Load Framework Across Graph Models in Graph Warehouse",
+        "url": "https://doi.org/10.1109/tkde.2026.3655790",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "IEEE Transactions on Knowledge and Data Engineering"
+      },
+      {
+        "title": "GEM-Distill: Graph Ensemble Multi-Level Distillation for MLP-Based Graph Classification",
+        "url": "https://doi.org/10.1109/tkde.2026.3722236",
+        "venue_label": "ICDE",
+        "venue": "icde",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "IEEE Transactions on Knowledge and Data Engineering"
+      }
+    ],
+    "total_query_hits": 10156
+  },
+  {
+    "venue": "ACM MM",
+    "year": 2025,
+    "container_query": "Proceedings of the 33rd ACM International Conference on Multimedia",
+    "candidates": [
+      {
+        "title": "Robust Tensor Learning with Graph Diffusion for Scalable Multi-view Graph Clustering",
+        "url": "https://doi.org/10.1145/3746027.3755787",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Clustering-Oriented Generative Attribute Graph Imputation",
+        "url": "https://doi.org/10.1145/3746027.3754952",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Deep Graph Clustering with Disentangled Representation Learning",
+        "url": "https://doi.org/10.1145/3746027.3755826",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Graph Canvas for Controllable 3D Scene Generation",
+        "url": "https://doi.org/10.1145/3746027.3754554",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Graph Unlearning Meets Influence-aware Negative Preference Optimization",
+        "url": "https://doi.org/10.1145/3746027.3754941",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "PG-Agent: An Agent Powered by Page Graph",
+        "url": "https://doi.org/10.1145/3746027.3755189",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Towards Effective Open-set Graph Class-incremental Learning",
+        "url": "https://doi.org/10.1145/3746027.3754822",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Disentangling Homophily and Heterophily in Multimodal Graph Clustering",
+        "url": "https://doi.org/10.1145/3746027.3755631",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Graph-Guided Dual-Level Augmentation for 3D Scene Segmentation",
+        "url": "https://doi.org/10.1145/3746027.3755547",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "BridgeGLM: Bridging Graph and Language Spaces for Domain Generalization",
+        "url": "https://doi.org/10.1145/3746027.3755086",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "CODE: Towards Partial Label Graph Learning via Coupled Dual Separation",
+        "url": "https://doi.org/10.1145/3746027.3755812",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Toward Robust Signed Graph Learning through Joint Input-Target Denoising",
+        "url": "https://doi.org/10.1145/3746027.3755645",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Self-Supervised Vision Graph Neural Networks Based on Contrastive Learning",
+        "url": "https://doi.org/10.1145/3746027.3755590",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "GraphWorld: Ultra-fast Graph Engine for World-Wide Web Searching",
+        "url": "https://doi.org/10.1145/3746027.3755776",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "OIMGC-Net: Optimization-inspired Interpretable Multi-view Graph Clustering Network",
+        "url": "https://doi.org/10.1145/3746027.3755555",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Graph-based Approximate Nearest Neighbor Search by Deep Reinforcement Routing",
+        "url": "https://doi.org/10.1145/3746027.3754945",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "TAMER: Interest Tree Augmented Modality Graph Recommender for Multimodal Recommendation",
+        "url": "https://doi.org/10.1145/3746027.3754953",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "WFF: Wavelet-based Information Fusion for Multimodal Knowledge Graph Link Prediction",
+        "url": "https://doi.org/10.1145/3746027.3755661",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Dual-Constraint Multi-view Fuzzy Clustering with Scalable Anchor Graph Learning",
+        "url": "https://doi.org/10.1145/3746027.3755078",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Can LLMs Find Fraudsters? Multi-level LLM Enhanced Graph Fraud Detection",
+        "url": "https://doi.org/10.1145/3746027.3755245",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Real-Time EEG Emotion Recognition from Dynamic Mixed Spatiotemporal Graph Learning",
+        "url": "https://doi.org/10.1145/3746027.3755389",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Unsupervised Cross-view Message Passing Method for Multi-view Graph Clustering",
+        "url": "https://doi.org/10.1145/3746027.3754969",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Entity Graph Alignment and Visual Reasoning for Multimodal Fake News Detection",
+        "url": "https://doi.org/10.1145/3746027.3754591",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Accelerating Long Video Understanding via Compressed Scene Graph-Enabled Chain-of-Thought",
+        "url": "https://doi.org/10.1145/3746027.3754765",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Breaking Semantic Barriers: A Zero-Shot Generalized Framework for Graph Anomaly Detection",
+        "url": "https://doi.org/10.1145/3746027.3755173",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "SafeDriveRAG: Towards Safe Autonomous Driving with Knowledge Graph-based Retrieval-Augmented Generation",
+        "url": "https://doi.org/10.1145/3746027.3755868",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Multi-view Graph Clustering with Dual Structure Awareness for Remote Sensing Data",
+        "url": "https://doi.org/10.1145/3746027.3755870",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "GraphSplat: Sparse-View Generalizable 3D Gaussian Splatting is Worth Graph of Nodes",
+        "url": "https://doi.org/10.1145/3746027.3755481",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Multi-view Graph Clustering with Dual Relation Optimization for Remote Sensing Data",
+        "url": "https://doi.org/10.1145/3746027.3754774",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "CDIB: Consistency Discovery-guided Information Bottleneck for Multi-modal Knowledge Graph Reasoning",
+        "url": "https://doi.org/10.1145/3746027.3754929",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Where Views Meet Curves: Virtual Anchors for Hyperbolic Multi-View Graph Diffusion",
+        "url": "https://doi.org/10.1145/3746027.3755704",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "MeDKCoOp: Dual Knowledge-guided Graph Prompt Learning for Biomedical Vision-Language Models",
+        "url": "https://doi.org/10.1145/3746027.3755135",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Neighbor Contrastive Learning with Weakened Consensus Graph for Deep Multi-View Clustering",
+        "url": "https://doi.org/10.1145/3746027.3755382",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Text-to-Image Generation with Multi-modal Knowledge Graph Construction and Retrieval",
+        "url": "https://doi.org/10.1145/3746027.3754792",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "FedRog: Robust Federated Graph Classification for Strong Heterogeneity and High-Noise Scenarios",
+        "url": "https://doi.org/10.1145/3746027.3755358",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Frequency-refined Graph Convolution Network with Cross-modal Wavelet Denoising for Recommendation",
+        "url": "https://doi.org/10.1145/3746027.3755249",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Dark Side of Modalities: Reinforced Multimodal Distillation for Multimodal Knowledge Graph Reasoning",
+        "url": "https://doi.org/10.1145/3746027.3754576",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "DATE: Dual Prompt Learning with Information Bottleneck for Graph Out-of-Distribution Generalization",
+        "url": "https://doi.org/10.1145/3746027.3755795",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Adaptive Graph Attention-Guided Parallel Sampling and Embedded Selection for Multi-Model Fitting",
+        "url": "https://doi.org/10.1145/3746027.3755050",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "EventFormer: A Node-graph Hierarchical Attention Transformer for Action-centric Video Event Prediction",
+        "url": "https://doi.org/10.1145/3746027.3755556",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "GTHNA: Local-global Graph Transformer with Memory Reconstruction for Holistic Node Anomaly Evaluation",
+        "url": "https://doi.org/10.1145/3746027.3755334",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Test-time Graph OOD Detection via Dynamic Dictionary Expansion and OOD Score Calibration",
+        "url": "https://doi.org/10.1145/3746027.3755741",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Addressing Granularity-induced Semantic Drift in OvOD via Graph-guided semantically consistent representation",
+        "url": "https://doi.org/10.1145/3746027.3754936",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "HoloTrace: LLM-based Bidirectional Causal Knowledge Graph for Edge-Cloud Video Anomaly Detection",
+        "url": "https://doi.org/10.1145/3746027.3755185",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Graph-Perceptron with Semantic Fidelity for No-Reference Super-Resolution Image Quality Assessment",
+        "url": "https://doi.org/10.1145/3746027.3755269",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "SegTraj: A Segmented-Trajectory-Aware Spatio-Temporal Graph Convolutional Network for Social Group Detection",
+        "url": "https://doi.org/10.1145/3746027.3755506",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Bridging Inter-Class Ambiguity and Spatial Variability in Flexible Object Recognition via Graph Distillation",
+        "url": "https://doi.org/10.1145/3746027.3755858",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "SALVG: Latent Variable Gene Augmented Graph Learning for Multi-View Clustering in Spatial Transcriptomics",
+        "url": "https://doi.org/10.1145/3746027.3755560",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "DUIMC: Deep Unbalanced Incomplete Multi-View Clustering via Graph Constrained Imputation and Contrastive Learning",
+        "url": "https://doi.org/10.1145/3746027.3754735",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "VISA: Group-wise Visual Token Selection and Aggregation via Graph Summarization for Efficient MLLMs Inference",
+        "url": "https://doi.org/10.1145/3746027.3755792",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "The Best is Yet to Come: Graph Convolution in the Testing Phase for Multimodal Recommendation",
+        "url": "https://doi.org/10.1145/3746027.3755781",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Court of LLMs: Evidence-Augmented Generation via Multi-LLM Collaboration for Text-Attributed Graph Anomaly Detection",
+        "url": "https://doi.org/10.1145/3746027.3754821",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Signal-SGN: A Spiking Graph Convolutional Network for Skeleton Action Recognition via Learning Temporal-Frequency Dynamics",
+        "url": "https://doi.org/10.1145/3746027.3755246",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "MedAI Hub: A Multimodal Medical Data Platform with Evolutionary Image Enhancement and Graph-Driven Literature Retrieval",
+        "url": "https://doi.org/10.1145/3746027.3761832",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "A Large-Scale Dataset for Short-Video Topic Peak Prediction and a Large Heterogeneous Graph Model",
+        "url": "https://doi.org/10.1145/3746027.3755248",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "HGAC\n                    <sub>LLM</sub>\n                    : Attribute Completion in Heterogeneous Graph with Integration of External Knowledge from Large Language Models",
+        "url": "https://doi.org/10.1145/3746027.3755800",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 33rd ACM International Conference on Multimedia"
+      },
+      {
+        "title": "Adversarial Masked Graph Autoencoders for Improved Graph Representation Learning",
+        "url": "https://doi.org/10.1145/3731715.3733270",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2025 International Conference on Multimedia Retrieval"
+      },
+      {
+        "title": "IDiffPose: Equilibrium Substitution for Lightweight Diffusion-Graph-Based Pose Estimation",
+        "url": "https://doi.org/10.1145/3743093.3771064",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 7th ACM International Conference on Multimedia in Asia"
+      },
+      {
+        "title": "Magnetic Framelet-Based Graph Contrastive Learning for Signed-Directed Graph",
+        "url": "https://doi.org/10.1109/icme59968.2025.11209246",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "Multi-Level Graph Pruning-Based Framework for Graph Retrieval-Augmented Generation",
+        "url": "https://doi.org/10.1109/icme59968.2025.11209364",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "SuPACape: Graph-based Category-Agnostic Pose Estimation with Super-Category and Pose Adaptivity",
+        "url": "https://doi.org/10.1145/3743093.3770954",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 7th ACM International Conference on Multimedia in Asia"
+      },
+      {
+        "title": "A Unified Ensemble Clustering Framework via Higher-Order Graph Diffusion and Feedback-Based Refinement",
+        "url": "https://doi.org/10.1145/3743093.3771061",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 7th ACM International Conference on Multimedia in Asia"
+      },
+      {
+        "title": "GraphTEN: Graph Enhanced Texture Encoding Network",
+        "url": "https://doi.org/10.1109/icme59968.2025.11209780",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "Graph Alignment Using Seed-Oriented Subgraph Matching",
+        "url": "https://doi.org/10.1145/3731715.3733350",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2025 International Conference on Multimedia Retrieval"
+      },
+      {
+        "title": "Multilayer Graph Clustering with Lightweight Contrastive Learning",
+        "url": "https://doi.org/10.1145/3731715.3733399",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2025 International Conference on Multimedia Retrieval"
+      },
+      {
+        "title": "Intent-Augmented Multimodal Graph Embedding for Multimedia Recommendation",
+        "url": "https://doi.org/10.1145/3731715.3733481",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2025 International Conference on Multimedia Retrieval"
+      },
+      {
+        "title": "Universal Scene Graph Generation via Semantic Feature Alignment",
+        "url": "https://doi.org/10.1109/icme59968.2025.11209357",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "Relation-Aware Graph Attention Network for Nuclei Classification",
+        "url": "https://doi.org/10.1109/icme59968.2025.11210169",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "Open-Scene Understanding-oriented 3D Scene Graph Generation",
+        "url": "https://doi.org/10.1109/icme59968.2025.11209525",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "Graph Anomaly Detection via Structure to Attribute Reconstruction",
+        "url": "https://doi.org/10.1109/icme59968.2025.11210117",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "Multimodal Emotion Recognition in Conversations via Graph Structure Learning",
+        "url": "https://doi.org/10.1109/icme59968.2025.11209584",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "Hierarchical Graph Learning Framework for Multimodal Conversational Emotion Recognition",
+        "url": "https://doi.org/10.1109/icme59968.2025.11210100",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "GA-Clip: Semantic-Aware Graph Augmentation for Contrastive Learning",
+        "url": "https://doi.org/10.1109/icme59968.2025.11210233",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "Heterogeneous Graph Embedding for Multimodal Multi-Label Emotion Recognition",
+        "url": "https://doi.org/10.1145/3731715.3733353",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2025 International Conference on Multimedia Retrieval"
+      },
+      {
+        "title": "Enhanced Multi-View Clustering with Multiple Linear Graph Filtering",
+        "url": "https://doi.org/10.1145/3731715.3733323",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2025 International Conference on Multimedia Retrieval"
+      },
+      {
+        "title": "SFi-Former: Sparse Flow Induced Attention for Graph Transformer",
+        "url": "https://doi.org/10.1145/3731715.3733432",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2025 International Conference on Multimedia Retrieval"
+      },
+      {
+        "title": "DAG-AFL: Directed Acyclic Graph-based Asynchronous Federated Learning",
+        "url": "https://doi.org/10.1109/icme59968.2025.11209407",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "MGSGM: Multi-Granularity Selective Graph Mamba for Image-Text Retrieval",
+        "url": "https://doi.org/10.1145/3731715.3734427",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2025 International Conference on Multimedia Retrieval"
+      },
+      {
+        "title": "Coarse-To-Fine Graph Reasoning for 3D Hand Mesh Reconstruction",
+        "url": "https://doi.org/10.1109/icme59968.2025.11209021",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "Dual Mutual Information-Driven Multimodal Recommendation with Denoising Graph Autoencoder",
+        "url": "https://doi.org/10.1109/icme59968.2025.11210199",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "KEGNN: Knowledge-Enhanced Graph Neural Networks for User Engagement Prediction",
+        "url": "https://doi.org/10.1145/3731715.3733368",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2025 International Conference on Multimedia Retrieval"
+      },
+      {
+        "title": "MedQuery: A Graph-Driven Medical Literature-Enhanced Query Answering System",
+        "url": "https://doi.org/10.1145/3731715.3733383",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2025 International Conference on Multimedia Retrieval"
+      },
+      {
+        "title": "LL4G: Self-Supervised Dynamic Optimization for Graph-Based Personality Detection",
+        "url": "https://doi.org/10.1109/icme59968.2025.11209311",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "SLGN: Spatiotemporal Language-Guided Graph Network for Referring Video Segmentation",
+        "url": "https://doi.org/10.1109/icme59968.2025.11209578",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "STGGait: A Graph Transformer Network for Pose-based Gait Recognition",
+        "url": "https://doi.org/10.1109/icme59968.2025.11209877",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "HRGR: Enhancing Image Manipulation Detection via Hierarchical Region-aware Graph Reasoning",
+        "url": "https://doi.org/10.1109/icme59968.2025.11209303",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "Evidential Graph Contrastive Alignment for Source-Free Blending-Target Domain Adaptation",
+        "url": "https://doi.org/10.1109/icme59968.2025.11209911",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "IP-KGQA: Intent-Aware Prompt Learning for Knowledge Graph Question Answering",
+        "url": "https://doi.org/10.1109/icme59968.2025.11209577",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "3D Scene Graph Generation with Cross-Modal Alignment and Adversarial Learning",
+        "url": "https://doi.org/10.1145/3731715.3733257",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2025 International Conference on Multimedia Retrieval"
+      },
+      {
+        "title": "Scene Graph Generation with Large Vision-Language Model and Its Applications",
+        "url": "https://doi.org/10.1109/icme59968.2025.11210017",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "Refining Interactions: Enhancing Anisotropy in Graph Neural Networks with Language Semantics",
+        "url": "https://doi.org/10.1109/icme59968.2025.11209302",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "GraphDEH: Graph Diffusion Enhanced Hypergrpah Method for Class-Imbalanced Node Classification",
+        "url": "https://doi.org/10.1109/icme59968.2025.11209104",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "EG-Gaussian: Epipolar Geometry and Graph Network Enhanced 3D Gaussian Splatting",
+        "url": "https://doi.org/10.1109/icme59968.2025.11209117",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "SAVE-GSL: Scalable and Expressive Graph Structure Learning for Large Graphs",
+        "url": "https://doi.org/10.1109/icme59968.2025.11209928",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "A Semantic-Enhanced Heterogeneous Graph Learning Method for Flexible Objects Recognition",
+        "url": "https://doi.org/10.1109/icme59968.2025.11210079",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      },
+      {
+        "title": "Geometrically-Inspired Irregular Expansion Techniques for Graph-based Point Cloud Learning",
+        "url": "https://doi.org/10.1109/icme59968.2025.11210119",
+        "venue_label": "ACM MM",
+        "venue": "mm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Multimedia and Expo (ICME)"
+      }
+    ],
+    "total_query_hits": 8699
+  },
+  {
+    "venue": "SIGMOD",
+    "year": 2026,
+    "container_query": "Proceedings of the ACM on Management of Data",
+    "candidates": [
+      {
+        "title": "Bw-Graph: An Efficient Graph Storage System Harmonizing Topology-Aware Tree with Paged CSR",
+        "url": "https://doi.org/10.1145/3802025",
+        "venue_label": "SIGMOD",
+        "venue": "sigmod",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the ACM on Management of Data"
+      },
+      {
+        "title": "Enumerating Graph Pattern Matches with ML Oracles",
+        "url": "https://doi.org/10.1145/3786648",
+        "venue_label": "SIGMOD",
+        "venue": "sigmod",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the ACM on Management of Data"
+      },
+      {
+        "title": "PJsim: Towards Precise and Scalable Graph Similarity",
+        "url": "https://doi.org/10.1145/3802100",
+        "venue_label": "SIGMOD",
+        "venue": "sigmod",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the ACM on Management of Data"
+      },
+      {
+        "title": "Acyclic Graph Pattern Counting under Local Differential Privacy",
+        "url": "https://doi.org/10.1145/3802006",
+        "venue_label": "SIGMOD",
+        "venue": "sigmod",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the ACM on Management of Data"
+      },
+      {
+        "title": "Enabling Efficient Update on Rule-Based Compressed Graph",
+        "url": "https://doi.org/10.1145/3786646",
+        "venue_label": "SIGMOD",
+        "venue": "sigmod",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the ACM on Management of Data"
+      },
+      {
+        "title": "GraphRTX: Lighting the Way to Scalable Graph Analytics",
+        "url": "https://doi.org/10.1145/3802070",
+        "venue_label": "SIGMOD",
+        "venue": "sigmod",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the ACM on Management of Data"
+      },
+      {
+        "title": "GEM: A Native Graph-based Index for Multi-Vector Retrieval",
+        "url": "https://doi.org/10.1145/3802065",
+        "venue_label": "SIGMOD",
+        "venue": "sigmod",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the ACM on Management of Data"
+      },
+      {
+        "title": "FaaSBoard: Efficient Graph Processing with a Disaggregated Architecture on Serverless Services",
+        "url": "https://doi.org/10.1145/3802054",
+        "venue_label": "SIGMOD",
+        "venue": "sigmod",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the ACM on Management of Data"
+      },
+      {
+        "title": "SG-Serve: Efficient Model Serving for Subgraph-based Graph Representation Learning",
+        "url": "https://doi.org/10.1145/3786697",
+        "venue_label": "SIGMOD",
+        "venue": "sigmod",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the ACM on Management of Data"
+      },
+      {
+        "title": "RadixGraph: A Fast, Space-Optimized Data Structure for Dynamic Graph Storage",
+        "url": "https://doi.org/10.1145/3786686",
+        "venue_label": "SIGMOD",
+        "venue": "sigmod",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the ACM on Management of Data"
+      },
+      {
+        "title": "CMANNS: GPU-Accelerated Graph Index Construction for ANNS via Compute–Memory Disaggregation",
+        "url": "https://doi.org/10.1145/3802027",
+        "venue_label": "SIGMOD",
+        "venue": "sigmod",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the ACM on Management of Data"
+      },
+      {
+        "title": "Enhancing Graph-based Approximate Maximum Inner Product Search via Norm-Adaptive Partitioning",
+        "url": "https://doi.org/10.1145/3802051",
+        "venue_label": "SIGMOD",
+        "venue": "sigmod",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the ACM on Management of Data"
+      },
+      {
+        "title": "FGIM: a Fast Graph-based Indexes Merging Framework for Approximate Nearest Neighbor Search",
+        "url": "https://doi.org/10.1145/3786651",
+        "venue_label": "SIGMOD",
+        "venue": "sigmod",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the ACM on Management of Data"
+      },
+      {
+        "title": "Efficient and Robust Out-Of-Distribution Vector Similarity Search with Cross-Distribution Monotonic Graph",
+        "url": "https://doi.org/10.1145/3786643",
+        "venue_label": "SIGMOD",
+        "venue": "sigmod",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the ACM on Management of Data"
+      },
+      {
+        "title": "ORDER: Optimal Routing with Path Indexing in Exchange Graph [Data-Intensive &amp; Data Science Application]",
+        "url": "https://doi.org/10.1145/3802097",
+        "venue_label": "SIGMOD",
+        "venue": "sigmod",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the ACM on Management of Data"
+      },
+      {
+        "title": "FastGNAS: Accelerating and Scaling Graph Neural Architecture Search on Multi-GPUs via Ring-Based Model Migration",
+        "url": "https://doi.org/10.1145/3802059",
+        "venue_label": "SIGMOD",
+        "venue": "sigmod",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the ACM on Management of Data"
+      },
+      {
+        "title": "R2O: A Dual-Layer Framework for Joint Rewriting and Ordering in Distributed Property Graph Query Optimization",
+        "url": "https://doi.org/10.1145/3786685",
+        "venue_label": "SIGMOD",
+        "venue": "sigmod",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the ACM on Management of Data"
+      },
+      {
+        "title": "Through the Lens of Hubness: A Revisit on Graph-Based Approximate Nearest Neighbor Search: [Experiments &amp; Analysis]",
+        "url": "https://doi.org/10.1145/3802120",
+        "venue_label": "SIGMOD",
+        "venue": "sigmod",
+        "year": 2026,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the ACM on Management of Data"
+      }
+    ],
+    "total_query_hits": 2001
+  },
+  {
+    "venue": "ICDM",
+    "year": 2025,
+    "container_query": "2025 IEEE International Conference on Data Mining",
+    "candidates": [
+      {
+        "title": "Heterogeneous Graph Anomaly Detection with Graph Wavelet Transformer",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00100",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "Negative-Free Graph Contrastive Learning for Recommendation",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00059",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "Heterogeneous Graph-Based Sequential Recommendation with Disentangled Methods",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00021",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "Hierarchical Structure Enhanced Graph Representation for Link Prediction",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00058",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "CGLE: Class-Label Graph Link Estimator for Link Prediction",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00067",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "Test-Time Graph Rebirth for GNN Generalization Under Distribution Shifts",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00105",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "LHGEL: Large Heterogeneous Graph Ensemble Learning using Batch View Aggregation",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00079",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "Towards Propagation-Aware Representation Learning for Supervised Social Media Graph Analytics",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00073",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "Federated Graph Out-of-Distribution Generalization via Representation Propagation and Scattering",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00107",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "Edge Probability Graph Models Beyond Edge Independency: Concepts, Analyses, and Algorithms",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00017",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "Uncertainty Quantification of Conformalized Spatio-Temporal Graph Convolutional Network on Forecasting",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00184",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "Incorporating Dynamic Logic Alignment into Knowledge Graph Reasoning Based on Reinforcement Learning",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00175",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "Trivial Graph Features and Classical Learning are Enough to Detect Random Anomalies",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00142",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "Reasoning Over User Preferences: Knowledge Graph-Augmented LLMs for Explainable Conversational Recommendations",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00159",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "Class-Aware Spatio-Temporal Graph Contrastive Learning for Multivariate Time Series Data",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00169",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "Dilution of Unreliable Information: Learning in Graph with Noisy Structures and Absent Attributes",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00145",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "Burger: Robust Graph Denoising-Augmentation Fusion and Multi-Semantic Modeling for Social Recommendation",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00047",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "DelayNetODE: Delay-Aware System Modelling Using Graph Attention and Continuous-Time Neural Dynamics",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00044",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "EC-LDA: Label Distribution Inference Attack Against Federated Graph Learning with Embedding Compression",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00023",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "OTESGN: Optimal Transport-Enhanced Syntactic-Semantic Graph Networks for Aspect-Based Sentiment Analysis",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00052",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "Effective and Efficient Similarity Search for DNA Sequences Through de Bruijn Sum Graph Embedding",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00095",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "When LLM Meets Simplicial Complex: A Novel Graph Prompt Learning on Ethereum Transaction Networks",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00148",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "CAST-GNN: Continual Adaptive Learning for Custom Spatio-Temporal Knowledge Graphs via Graph Neural Networks",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00083",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "Sc-GRIP: a Graph Convolutional Approach to Infer Gene Interaction Polarity from Single-Cell Data",
+        "url": "https://doi.org/10.1109/icdm65498.2025.00111",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 IEEE International Conference on Data Mining (ICDM)"
+      },
+      {
+        "title": "A Lightweight Attention-Frequency Fusion Framework for Temporal Knowledge Graph Reasoning",
+        "url": "https://doi.org/10.1109/bddm68348.2025.11442173",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 International Conference on Big Data and Data Mining (BDDM)"
+      },
+      {
+        "title": "A Deep Relational Graph Convolutional Network for Emotion Recognition in Conversation",
+        "url": "https://doi.org/10.1109/bddm68348.2025.11442238",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 International Conference on Big Data and Data Mining (BDDM)"
+      },
+      {
+        "title": "Brain-DGCNN: A Multi-Scale Dynamic Graph Neural Network for Parkinson's Disease Diagnosis",
+        "url": "https://doi.org/10.1109/bddm68348.2025.11442006",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 International Conference on Big Data and Data Mining (BDDM)"
+      },
+      {
+        "title": "A Mixture-of-Experts and Dual Grid Labeling Based Graph Pairwise Network for Event Causality Extraction",
+        "url": "https://doi.org/10.1109/bddm68348.2025.11442161",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 International Conference on Big Data and Data Mining (BDDM)"
+      },
+      {
+        "title": "Research on the Construction and Management of a Railway Engineering Progress Knowledge Graph Based on Large Models",
+        "url": "https://doi.org/10.1109/bddm68348.2025.11442159",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 International Conference on Big Data and Data Mining (BDDM)"
+      },
+      {
+        "title": "Anomaly Detection via Graph Contrastive Learning",
+        "url": "https://doi.org/10.1137/1.9781611978520.6",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2025 SIAM International Conference on Data Mining (SDM)"
+      },
+      {
+        "title": "Bidirectional Attention-Enhanced Knowledge Graph Embeddings for Link Prediction",
+        "url": "https://doi.org/10.1109/iccvdm66874.2025.11289923",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 6th International Conference on Computer Vision and Data Mining (ICCVDM)"
+      },
+      {
+        "title": "GAIM: Attacking Graph Neural Networks via Adversarial Influence Maximization",
+        "url": "https://doi.org/10.1137/1.9781611978520.66",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2025 SIAM International Conference on Data Mining (SDM)"
+      },
+      {
+        "title": "REGE: A Method for Incorporating Uncertainty in Graph Embeddings",
+        "url": "https://doi.org/10.1137/1.9781611978520.40",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2025 SIAM International Conference on Data Mining (SDM)"
+      },
+      {
+        "title": "Equipping Graph Autoencoders: Revisiting Masking Strategies from a Robustness Perspective",
+        "url": "https://doi.org/10.1137/1.9781611978520.39",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2025 SIAM International Conference on Data Mining (SDM)"
+      },
+      {
+        "title": "Feature Deviation Embedding Improves Graph Structure Learning for Spatial Interpolation",
+        "url": "https://doi.org/10.1137/1.9781611978520.38",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2025 SIAM International Conference on Data Mining (SDM)"
+      },
+      {
+        "title": "BERT-enhanced Rumor Detection Based on the Graph Convolutional Network",
+        "url": "https://doi.org/10.1109/iccvdm66874.2025.11290096",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 6th International Conference on Computer Vision and Data Mining (ICCVDM)"
+      },
+      {
+        "title": "Knowledge Graph Enhanced AI Agent Framework for Programming Competition Training",
+        "url": "https://doi.org/10.1109/iccvdm66874.2025.11290016",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 6th International Conference on Computer Vision and Data Mining (ICCVDM)"
+      },
+      {
+        "title": "Optimizing Transit Network Expansion with Gated Attentive Graph Reinforcement Learning",
+        "url": "https://doi.org/10.1137/1.9781611978520.37",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2025 SIAM International Conference on Data Mining (SDM)"
+      },
+      {
+        "title": "Spatio-Temporal Graph-Based Detection of Malware Traffic for Satellite Network",
+        "url": "https://doi.org/10.1109/icdm68174.2025.11309581",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 2nd International Conference on Intelligent Computing and Data Mining (ICDM)"
+      },
+      {
+        "title": "Fine-grained Spatio-temporal Event Prediction with Self-adaptive Anchor Graph",
+        "url": "https://doi.org/10.1137/1.9781611978520.60",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Proceedings of the 2025 SIAM International Conference on Data Mining (SDM)"
+      },
+      {
+        "title": "GB-FRD: Graph-Based Fraud Ring Detection in P2P Payment Networks",
+        "url": "https://doi.org/10.1109/iccvdm66874.2025.11290341",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 6th International Conference on Computer Vision and Data Mining (ICCVDM)"
+      },
+      {
+        "title": "Adaptive multimodal graph learning for knowledge graph completion",
+        "url": "https://doi.org/10.1007/s10618-025-01139-x",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "Data Mining and Knowledge Discovery"
+      },
+      {
+        "title": "Multi-Scale Convolutional Meta-Relation Learning for Few-shot Knowledge Graph Completion",
+        "url": "https://doi.org/10.1109/iccvdm66874.2025.11290391",
+        "venue_label": "ICDM",
+        "venue": "icdm",
+        "year": 2025,
+        "category": "Publisher-deposited bibliography; edition and full text to verify",
+        "discovered_via": "crossref_container_query",
+        "container": "2025 6th International Conference on Computer Vision and Data Mining (ICCVDM)"
+      }
+    ],
+    "total_query_hits": 11711
+  }
+]

@@ -1,0 +1,425 @@
+{
+  "requested": 100,
+  "returned": 100,
+  "source_counts": {
+    "conference": 80,
+    "arxiv": 20
+  },
+  "source_windows": {
+    "conference": {
+      "since": "2025-01-01",
+      "until": "2026-09-29",
+      "days": 637
+    },
+    "arxiv": {
+      "since": "2026-01-01",
+      "until": "2026-09-29",
+      "days": 272
+    }
+  },
+  "stop_reason": "target_reached",
+  "website_papers": 103,
+  "archive_papers": 104,
+  "live_conference_scopes": 29,
+  "planned_conference_scopes": 29,
+  "method_length_range": [
+    155,
+    200
+  ],
+  "venue_counts": {
+    "NeurIPS": {
+      "2025": 3,
+      "2026": 0
+    },
+    "ICML": {
+      "2025": 2,
+      "2026": 4
+    },
+    "KDD": {
+      "2025": 3,
+      "2026": 6
+    },
+    "AAAI": {
+      "2025": 3,
+      "2026": 20
+    },
+    "IJCAI": {
+      "2025": 3,
+      "2026": 11
+    },
+    "ACL": {
+      "2025": 1,
+      "2026": 3
+    },
+    "CVPR": {
+      "2025": 2,
+      "2026": 3
+    },
+    "ICCV": {
+      "2025": 2,
+      "2026": 0
+    },
+    "SIGMOD": {
+      "2025": 0,
+      "2026": 0
+    },
+    "VLDB": {
+      "2025": 0,
+      "2026": 1
+    },
+    "SIGIR": {
+      "2025": 3,
+      "2026": 1
+    },
+    "WWW": {
+      "2025": 4,
+      "2026": 3
+    },
+    "ICDE": {
+      "2025": 1,
+      "2026": 0
+    },
+    "EMNLP": {
+      "2025": 0,
+      "2026": 0
+    },
+    "ACM MM": {
+      "2025": 1,
+      "2026": 0
+    }
+  },
+  "scopes": [
+    {
+      "bucket": "conference",
+      "venue": "NeurIPS",
+      "year": 2026,
+      "attempts": 2,
+      "live_search_completed": true,
+      "returned": 0,
+      "status": "no_verified_result",
+      "rejection_codes": {}
+    },
+    {
+      "bucket": "conference",
+      "venue": "ICML",
+      "year": 2026,
+      "attempts": 3,
+      "live_search_completed": true,
+      "returned": 4,
+      "status": "verified_results",
+      "rejection_codes": {
+        "validation_failed": 6,
+        "source_unreachable": 2,
+        "missing_venue": 1,
+        "fulltext_too_large": 1
+      }
+    },
+    {
+      "bucket": "conference",
+      "venue": "KDD",
+      "year": 2026,
+      "attempts": 3,
+      "live_search_completed": true,
+      "returned": 6,
+      "status": "verified_results",
+      "rejection_codes": {
+        "validation_failed": 10,
+        "title_mismatch": 3,
+        "missing_fulltext": 3
+      }
+    },
+    {
+      "bucket": "conference",
+      "venue": "AAAI",
+      "year": 2026,
+      "attempts": 2,
+      "live_search_completed": true,
+      "returned": 20,
+      "status": "verified_results",
+      "rejection_codes": {}
+    },
+    {
+      "bucket": "conference",
+      "venue": "IJCAI",
+      "year": 2026,
+      "attempts": 1,
+      "live_search_completed": true,
+      "returned": 11,
+      "status": "verified_results",
+      "rejection_codes": {
+        "missing_venue": 1
+      }
+    },
+    {
+      "bucket": "conference",
+      "venue": "ACL",
+      "year": 2026,
+      "attempts": 2,
+      "live_search_completed": true,
+      "returned": 3,
+      "status": "verified_results",
+      "rejection_codes": {
+        "missing_date": 6
+      }
+    },
+    {
+      "bucket": "conference",
+      "venue": "CVPR",
+      "year": 2026,
+      "attempts": 1,
+      "live_search_completed": true,
+      "returned": 3,
+      "status": "verified_results",
+      "rejection_codes": {}
+    },
+    {
+      "bucket": "conference",
+      "venue": "SIGMOD",
+      "year": 2026,
+      "attempts": 2,
+      "live_search_completed": true,
+      "returned": 0,
+      "status": "no_verified_result",
+      "rejection_codes": {
+        "missing_venue": 1
+      }
+    },
+    {
+      "bucket": "conference",
+      "venue": "VLDB",
+      "year": 2026,
+      "attempts": 4,
+      "live_search_completed": true,
+      "returned": 1,
+      "status": "verified_results",
+      "rejection_codes": {
+        "validation_failed": 2,
+        "missing_fulltext": 1,
+        "source_unreachable": 1
+      }
+    },
+    {
+      "bucket": "conference",
+      "venue": "SIGIR",
+      "year": 2026,
+      "attempts": 1,
+      "live_search_completed": true,
+      "returned": 1,
+      "status": "verified_results",
+      "rejection_codes": {}
+    },
+    {
+      "bucket": "conference",
+      "venue": "WWW",
+      "year": 2026,
+      "attempts": 1,
+      "live_search_completed": true,
+      "returned": 3,
+      "status": "verified_results",
+      "rejection_codes": {
+        "missing_fulltext": 5,
+        "validation_failed": 1
+      }
+    },
+    {
+      "bucket": "conference",
+      "venue": "ICDE",
+      "year": 2026,
+      "attempts": 1,
+      "live_search_completed": true,
+      "returned": 0,
+      "status": "no_verified_result",
+      "rejection_codes": {}
+    },
+    {
+      "bucket": "conference",
+      "venue": "EMNLP",
+      "year": 2026,
+      "attempts": 1,
+      "live_search_completed": true,
+      "returned": 0,
+      "status": "no_verified_result",
+      "rejection_codes": {}
+    },
+    {
+      "bucket": "conference",
+      "venue": "ACM MM",
+      "year": 2026,
+      "attempts": 1,
+      "live_search_completed": true,
+      "returned": 0,
+      "status": "no_verified_result",
+      "rejection_codes": {}
+    },
+    {
+      "bucket": "conference",
+      "venue": "NeurIPS",
+      "year": 2025,
+      "attempts": 1,
+      "live_search_completed": true,
+      "returned": 3,
+      "status": "verified_results",
+      "rejection_codes": {}
+    },
+    {
+      "bucket": "conference",
+      "venue": "ICML",
+      "year": 2025,
+      "attempts": 1,
+      "live_search_completed": true,
+      "returned": 2,
+      "status": "verified_results",
+      "rejection_codes": {
+        "missing_fulltext": 1
+      }
+    },
+    {
+      "bucket": "conference",
+      "venue": "KDD",
+      "year": 2025,
+      "attempts": 1,
+      "live_search_completed": true,
+      "returned": 3,
+      "status": "verified_results",
+      "rejection_codes": {}
+    },
+    {
+      "bucket": "conference",
+      "venue": "AAAI",
+      "year": 2025,
+      "attempts": 1,
+      "live_search_completed": true,
+      "returned": 3,
+      "status": "verified_results",
+      "rejection_codes": {}
+    },
+    {
+      "bucket": "conference",
+      "venue": "IJCAI",
+      "year": 2025,
+      "attempts": 1,
+      "live_search_completed": true,
+      "returned": 3,
+      "status": "verified_results",
+      "rejection_codes": {}
+    },
+    {
+      "bucket": "conference",
+      "venue": "ACL",
+      "year": 2025,
+      "attempts": 1,
+      "live_search_completed": true,
+      "returned": 1,
+      "status": "verified_results",
+      "rejection_codes": {}
+    },
+    {
+      "bucket": "conference",
+      "venue": "CVPR",
+      "year": 2025,
+      "attempts": 1,
+      "live_search_completed": true,
+      "returned": 2,
+      "status": "verified_results",
+      "rejection_codes": {
+        "validation_failed": 1
+      }
+    },
+    {
+      "bucket": "conference",
+      "venue": "ICCV",
+      "year": 2025,
+      "attempts": 1,
+      "live_search_completed": true,
+      "returned": 2,
+      "status": "verified_results",
+      "rejection_codes": {
+        "validation_failed": 2
+      }
+    },
+    {
+      "bucket": "conference",
+      "venue": "SIGMOD",
+      "year": 2025,
+      "attempts": 1,
+      "live_search_completed": true,
+      "returned": 0,
+      "status": "no_verified_result",
+      "rejection_codes": {}
+    },
+    {
+      "bucket": "conference",
+      "venue": "VLDB",
+      "year": 2025,
+      "attempts": 1,
+      "live_search_completed": true,
+      "returned": 0,
+      "status": "no_verified_result",
+      "rejection_codes": {
+        "missing_venue": 4
+      }
+    },
+    {
+      "bucket": "conference",
+      "venue": "SIGIR",
+      "year": 2025,
+      "attempts": 1,
+      "live_search_completed": true,
+      "returned": 3,
+      "status": "verified_results",
+      "rejection_codes": {
+        "source_unreachable": 1
+      }
+    },
+    {
+      "bucket": "conference",
+      "venue": "WWW",
+      "year": 2025,
+      "attempts": 2,
+      "live_search_completed": true,
+      "returned": 4,
+      "status": "verified_results",
+      "rejection_codes": {
+        "missing_venue": 3,
+        "source_unreachable": 1
+      }
+    },
+    {
+      "bucket": "conference",
+      "venue": "ICDE",
+      "year": 2025,
+      "attempts": 1,
+      "live_search_completed": true,
+      "returned": 1,
+      "status": "verified_results",
+      "rejection_codes": {
+        "missing_fulltext": 2
+      }
+    },
+    {
+      "bucket": "conference",
+      "venue": "EMNLP",
+      "year": 2025,
+      "attempts": 3,
+      "live_search_completed": true,
+      "returned": 0,
+      "status": "no_verified_result",
+      "rejection_codes": {
+        "missing_venue": 4,
+        "fulltext_too_large": 1
+      }
+    },
+    {
+      "bucket": "conference",
+      "venue": "ACM MM",
+      "year": 2025,
+      "attempts": 1,
+      "live_search_completed": true,
+      "returned": 1,
+      "status": "verified_results",
+      "rejection_codes": {
+        "source_unreachable": 3
+      }
+    }
+  ]
+}

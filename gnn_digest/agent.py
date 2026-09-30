@@ -5,6 +5,7 @@ import os
 import re
 import sys
 import time
+from contextlib import nullcontext
 from collections import Counter
 from datetime import date, datetime, timedelta, timezone
 from urllib.parse import urlencode, urlparse
@@ -12,6 +13,7 @@ import xml.etree.ElementTree as ET
 
 from .http import RequestError, get_json, request
 from .llm import Summarizer
+from .evidence import locate_evidence
 from .models import arxiv_id, clean, content_hash, identity_keys, merge_records, paper
 from .storage import export_site, lock, read_json, write_json
 from .verification import DOMAINS, TOPICS, VENUES, DIRECTORY_SOURCES, VerificationError, canonical_url, verify_candidate, verify_directory_match
@@ -28,6 +30,53 @@ def endpoint(base, suffix):
             base = base[:-len(tail)]
             break
     return base + suffix
+
+
+def source_windows(config, args, today):
+    """Specific CLI window > shared --days > per-source config > defaults."""
+    configured = config.get('search_windows', {})
+    windows = {}
+    for bucket, default in (('conference', 90), ('arxiv', 14)):
+        days = getattr(args, bucket+'_days', None)
+        if days is None:
+            days = getattr(args, 'days', None)
+        if days is None:
+            start = getattr(args, bucket+'_since', None) or configured.get(bucket+'_since')
+            if start:
+                start = date.fromisoformat(start)
+                if start > today:
+                    raise ValueError(f'{bucket}_since is after the cutoff')
+                windows[bucket] = {'since':str(start), 'until':str(today), 'days':(today-start).days+1}
+                continue
+            days = configured.get(bucket+'_days', default)
+        if type(days) is not int or not 1 <= days <= 3660:
+            raise ValueError(f'{bucket}_days must be an integer in 1..3660')
+        windows[bucket] = {'since':str(today-timedelta(days=days-1)), 'until':str(today), 'days':days}
+    return windows
+
+
+def recovery_feedback(stage, error):
+    """Concrete next steps, without accepting model-supplied metadata as proof."""
+    detail = str(error)
+    lower = detail.casefold()
+    if stage == 'fulltext' and ('exceeds' in lower or 'too large' in lower):
+        code, action = 'fulltext_too_large', 'The available full text exceeds the configured processing limit. Seek an eligible different paper with obtainable full text; do not truncate silently or summarize only its abstract.'
+    elif 'outside requested window' in lower:
+        code, action = 'outside_window', 'Find a different paper within source_windows for that route; never replace publication with revision/acceptance dates.'
+    elif re.search(r'\bdate\b|\bprecision\b', lower):
+        code, action = 'missing_date', 'Open the official proceedings detail/BibTeX/DOI record to find a landing page with exact publication metadata. Do not invent dates.'
+    elif 'conference' in lower or 'main track' in lower:
+        code, action = 'missing_venue', 'Find an allowed main-proceedings detail page with track/venue metadata. An arXiv or directory mention cannot fill a conference slot.'
+    elif 'title' in lower:
+        code, action = 'title_mismatch', 'Open the primary page and copy its exact title before resubmitting the candidate.'
+    elif any(s in lower for s in ('http', 'urlerror', 'ssl', 'timeout', 'connection', 'oserror')):
+        code, action = 'source_unreachable', 'Use web open_page to inspect accessibility and search the exact title for an alternative allowed primary page; local verification is still required.'
+    elif stage == 'fulltext':
+        code, action = 'missing_fulltext', 'Search the exact title for an accessible official PDF or matching arXiv version; submit its primary landing page for verification. Do not summarize snippets.'
+    else:
+        code, action = 'validation_failed', 'Use the field-specific validation detail; find another eligible candidate if the paper cannot be verified.'
+    return {'stage':stage, 'code':code, 'next_action':action,
+            'retry_same_url':stage == 'metadata' and code in ('source_unreachable', 'title_mismatch')}
 
 
 def parse_candidates(text, limit):
@@ -54,10 +103,14 @@ def validate_topics(result, full_text):
     if not result['relevant'] or result['confidence'] == 'low':
         if topics or evidence:
             raise ValueError('No topics for irrelevant/insufficient result')
-    elif (not topics or any(t not in TOPICS for t in topics) or len(set(topics)) != len(topics)
-          or set(evidence) != set(topics)
-          or any(not isinstance(s, str) or not 15 <= len(s) <= 200 or s not in full_text for s in evidence.values())):
-        raise ValueError('Need allowed topics with verbatim full-text evidence')
+    else:
+        if not topics or any(t not in TOPICS for t in topics) or len(set(topics)) != len(topics):
+            raise ValueError('topics: expected unique allowed topic names')
+        if set(evidence) != set(topics):
+            raise ValueError('topic_evidence: keys must match topics exactly')
+        matches = {t:locate_evidence(evidence[t], full_text, f'topic_evidence.{t}') for t in topics}
+        result = {**result, 'topic_evidence':{t:m[0] for t,m in matches.items()},
+                  'topic_evidence_locations':{t:m[1] for t,m in matches.items()}}
     return result
 
 
@@ -129,9 +182,11 @@ class WebResearchAgent:
         fetched and verified by ``verify_candidate`` before admission.
         """
         query = re.sub(r'\s+', ' ', str(query)).strip()[:180]
-        window = context.get('date_window') or {}
+        windows = context.get('source_windows') or {}
+        window = windows.get('arxiv') or context.get('date_window') or {}
         since = date.fromisoformat(window['since'])
         until = date.fromisoformat(window['until'])
+        conference_window = windows.get('conference') or window
         source_config = {
             'queries': [query],
             'max_per_source': max(10, min(40, self.options['candidate_limit'] * 3)),
@@ -215,7 +270,7 @@ class WebResearchAgent:
             except Exception as exc:
                 errors.append('arxiv_fallback:' + type(exc).__name__)
         try:
-            filters = f'from-pub-date:{since},until-pub-date:{until}'
+            filters = f'from-pub-date:{conference_window["since"]},until-pub-date:{conference_window["until"]}'
             params = {'query': query, 'filter': filters, 'sort': 'published',
                       'order': 'desc', 'rows': source_config['max_per_source']}
             data = get_json('https://api.crossref.org/works?' + urlencode(params),
@@ -473,7 +528,7 @@ def verified_route(p):
     host = urlparse(url).hostname
     if host == 'arxiv.org' and p.get('date_basis') == 'arxiv_first_submission':
         return 'arxiv'
-    if host and host != 'arxiv.org' and p.get('date_basis') == 'conference_publication' and p.get('venue_label') in VENUES:
+    if host and host != 'arxiv.org' and p.get('date_basis') in ('conference_publication','conference_program_publication','conference_edition') and p.get('venue_label') in VENUES:
         return 'conference'
     return None
 
@@ -532,37 +587,42 @@ def search(root, config, args):
     if args.no_llm:
         raise ValueError('search requires a web-search-capable LLM; use run --no-llm for legacy metadata collection')
     limit = getattr(args, 'limit', 5)
+    if limit > 20 and not config.get('_bulk_child'):
+        from .bulk import bulk_search
+        return bulk_search(root, config, args)
     if not 1 <= limit <= 20:
         raise ValueError('search --limit must be 1..20')
-    quotas = source_quotas(limit)
+    quotas = config.get('_source_quotas') or source_quotas(limit)
+    if sum(quotas.values()) != limit or any(type(v) is not int or v < 0 for v in quotas.values()):
+        raise ValueError('Source quotas must be nonnegative integers adding to limit')
     options = dict(max_rounds=3, max_tool_calls_per_round=12, max_output_tokens=6000,
                    candidate_limit=10, timeout=180, max_seconds=600, max_summary_papers=10)
     options.update(config.get('search_agent', {}))
     validate_options(options)
     today = date.fromisoformat(args.until) if args.until else datetime.now(timezone.utc).date()
-    days = args.days if args.days is not None else config['days']
-    if days < 1:
-        raise ValueError('days must be positive')
-    since = today - timedelta(days=days-1)
+    windows = source_windows(config, args, today)
+    # Compatibility envelope only. Admission always uses the specific route.
+    since = min(date.fromisoformat(w['since']) for w in windows.values())
     request = (root/'prompts/search.request.txt').read_text(encoding='utf-8').strip()
     if not request:
         raise ValueError('Fixed search request is empty')
     agent = WebResearchAgent(config['llm'], options, (root/'prompts/search.agent.txt').read_text(encoding='utf-8'))
     summary_prompt = (root/'prompts/search.summary.zh.txt').read_text(encoding='utf-8')
     summary_prompt += '\n研究需求（仅用于主题相关性判断）：\n' + request
-    summarizer = Summarizer({**config['llm'], 'require_fulltext':True}, summary_prompt, extra_validator=validate_topics)
+    summarizer = Summarizer({**config['llm'], 'require_fulltext':True, 'evidence_mode':'segments'}, summary_prompt, extra_validator=validate_topics)
     start = time.monotonic()
     deadline = start + options['max_seconds']
     report = {'mode':agent.search_mode, 'started_at':datetime.now(timezone.utc).isoformat(),
-              'window':{'since':str(since), 'until':str(today)}, 'llm_enabled':True,
-              'requested':limit, 'source_quotas':quotas, 'quota_progress':quota_progress([],quotas),
+              'window':{'since':str(since), 'until':str(today)}, 'source_windows':windows, 'llm_enabled':True,
+              'requested':limit, 'active_topics':list(TOPICS), 'source_quotas':quotas, 'quota_progress':quota_progress([],quotas),
               'rounds':[], 'sources':{}, 'rejections':[],
               'request_hash':hashlib.sha256(request.encode()).hexdigest(), 'llm_processed':0,
               'coverage':'Best effort within time/tool budgets; not an exhaustive newest-paper ranking.'}
-    with lock(root/'data/pipeline.lock'):
+    with (nullcontext() if config.get('_lock_held') else lock(root/'data/pipeline.lock')):
         archive = read_json(root/'data/papers.json', {'schema_version':1, 'papers':[]})['papers']
         initial_archive_keys = {k for p in archive for k in identity_keys(p)}
-        accepted, pool, seen, feedback = [], [], set(), []
+        accepted, pool, seen, feedback = [], [], set(), list(config.get('_prior_feedback',[]))
+        verification_attempts = Counter()
         summary_budget = max(limit, options['max_summary_papers'])
         for round_number in range(1, options['max_rounds']+1):
             if time.monotonic() >= deadline:
@@ -571,13 +631,15 @@ def search(root, config, args):
             print(f'Web research round {round_number}/{options["max_rounds"]}: ' +
                   ' | '.join(f'{k} {v["returned"]}/{v["requested"]}' for k,v in progress.items()), flush=True)
             context = {'research_request':request, 'utc_today':str(today),
-                       'date_window':report['window'], 'requested_count':limit,
+                       'date_window':report['window'], 'source_windows':windows, 'active_topics':list(TOPICS), 'requested_count':limit,
                        'candidate_limit':options['candidate_limit'], 'primary_source_domains':DOMAINS,
                        'conference_aliases':VENUES, 'conference_directories':DIRECTORY_SOURCES,
+                       'search_scope':config.get('_search_scope', {}),
+                       'exclude_titles':config.get('_exclude_titles', []),
                        'source_quotas':quotas, 'quota_progress':progress,
                        'search_focus':[k for k,v in progress.items() if v['shortfall']],
                        'accepted':[{'title':p['title'], 'url':p['verification']['url'], 'selection_bucket':p['selection_bucket']} for p in accepted],
-                       'feedback':feedback[-30:], 'instruction':'Fill each source quota independently. Prioritize deficient buckets, newest within each bucket. Never substitute arXiv for conference slots. Do not repeat known URLs; a NEW conference link for a known arXiv paper can establish a second eligible route, but the paper still counts only once.'}
+                       'feedback':feedback[-30:], 'instruction':'Fill each source quota independently. Prioritize deficient buckets, newest within each bucket. Never substitute arXiv for conference slots. Repeat a rejected URL only when feedback.retry_same_url is true, at most once, with a corrected title or after a transient network failure. A NEW conference link for a known arXiv paper can establish another route, but the paper still counts only once.'}
             record = {'round':round_number, 'quota_before':progress}
             try:
                 response = agent.search(context, min(options['timeout'], max(1, deadline-time.monotonic())))
@@ -626,31 +688,58 @@ def search(root, config, args):
                     break
                 try:
                     url = canonical_url(c['url'])
-                    if url in seen:
+                    if url in seen or verification_attempts[url] >= 2:
                         continue
+                    verification_attempts[url] += 1
                     seen.add(url)
-                    p = verify_candidate(c, since, today, timeout=min(25, max(1, deadline-time.monotonic())))
+                    bucket = 'arxiv' if urlparse(url).hostname == 'arxiv.org' else 'conference'
+                    route_since = date.fromisoformat(windows[bucket]['since'])
+                    p = verify_candidate({**c,'_conference_year':config.get('_search_scope',{}).get('year')}, route_since, today, timeout=min(25, max(1, deadline-time.monotonic())))
+                    scope = config.get('_search_scope', {})
+                    if scope.get('bucket') and bucket != scope['bucket']:
+                        raise VerificationError('Candidate belongs to another source bucket than this focused batch')
+                    if scope.get('venue') and p.get('venue_label') != scope['venue']:
+                        raise VerificationError('Candidate belongs to another conference than this focused batch')
+                    if bucket == 'conference' and scope.get('year') and p.get('conference_year') != scope['year']:
+                        raise VerificationError('Conference edition does not match focused year')
+                    if config.get('_exclude_titles') and clean(p['title']).casefold() in {clean(t).casefold() for t in config['_exclude_titles']}:
+                        continue
+                    if c.get('fulltext_url'):
+                        alternate = verify_candidate({'title':p['title'], 'url':c['fulltext_url']}, date(1991,1,1), today, timeout=20)
+                        if alternate.get('arxiv_id'):
+                            p['arxiv_id'] = alternate['arxiv_id']
+                            p['pdf_url'] = alternate['pdf_url']
+                            p['fulltext_alternate_verification'] = alternate['verification']
                     if c.get('directory_url'):
-                        if p.get('date_basis') != 'arxiv_first_submission':
-                            raise VerificationError('Directory-assisted candidates must link to verified arXiv records')
-                        p['conference_evidence'] = verify_directory_match(p['title'], c['directory_url'], timeout=min(15, max(1, deadline-time.monotonic())))
+                        if p.get('date_basis') == 'arxiv_first_submission':
+                            p['conference_evidence'] = verify_directory_match(p['title'], c['directory_url'], timeout=min(15, max(1, deadline-time.monotonic())))
+                        # A verified publisher/DOI conference record already
+                        # proves this route. An extra discovery-directory hint
+                        # must not turn it into an arXiv-only candidate.
                     verified.append(p)
                 except Exception as exc:
-                    reason = str(exc)[:200] if isinstance(exc, VerificationError) else type(exc).__name__
-                    item = {'url':c['url'], 'title':c['title'][:300], 'reason':reason}
+                    reason = str(exc)[:200] if isinstance(exc, (VerificationError,RequestError)) else type(exc).__name__
+                    item = {'url':c['url'], 'title':c['title'][:300], 'reason':reason,
+                            **recovery_feedback('metadata', reason)}
+                    if item['retry_same_url']:
+                        retry_url = canonical_url(c['url'])
+                        item['retry_same_url'] = verification_attempts[retry_url] < 2
+                        if item['retry_same_url']:
+                            seen.discard(retry_url)
                     feedback.append(item)
                     report['rejections'].append(item)
             # Keep independently verified routes until assignment; a merged venue label
             # must never turn an arXiv-only verification into a conference slot.
             pool.extend(verified)
             attempted = set()
-            while time.monotonic() < deadline:
+            while time.monotonic() < deadline and not config.get('_discovery_only'):
                 selected = select_balanced(pool, quotas, archive=archive)
                 p = next((p for p in selected if p['status'] != 'ready' and
                           p['verification']['url'] not in attempted), None)
                 if p is None:
                     break
                 attempted.add(p['verification']['url'])
+                print(f'Processing {p["selection_bucket"]}: {p["venue_label"]} | {p["title"]}',flush=True)
                 previous = next((a for a in archive if identity_keys(p) & identity_keys(a)
                                  and a.get('title') == p['title'] and a.get('abstract') == p['abstract']
                                  and a.get('full_text') and a.get('fulltext_source', {}).get('scope') == 'full_text'), None)
@@ -660,19 +749,23 @@ def search(root, config, args):
                                and content_hash(a) == content_hash(p) and summarizer.cached(a)
                                and a.get('topics') and a.get('topic_evidence')), None)
                 if cached:
-                    for field in ('keywords','method','confidence','evidence','summary_input_hash','prompt_hash','llm_model','llm_reasoning_effort','summarized_at','topics','topic_evidence','status'):
+                    for field in ('keywords','method','confidence','evidence','evidence_locations','topic_evidence_locations','summary_input_hash','prompt_hash','llm_model','llm_reasoning_effort','summarized_at','topics','topic_evidence','status'):
                         if field in cached:
                             p[field] = cached[field]
                 elif report['llm_processed'] < summary_budget:
-                    summarizer.config = {**config['llm'], 'require_fulltext':True,
+                    summarizer.config = {**config['llm'], 'require_fulltext':True, 'evidence_mode':'segments',
                         'timeout':min(config['llm']['timeout'], max(1, deadline-time.monotonic())),
                         'attempts':min(2, config['llm']['attempts'])}
                     try:
+                        if config.get('_bulk_child'):
+                            p['_allow_arxiv_lookup'] = True
                         load_methods(p, timeout=min(45, max(1, deadline-time.monotonic())))
                         coerce_legacy_fulltext(p)
                         summarizer.summarize(p)
                     except VerificationError as exc:
                         p.update(status='missing_fulltext', keywords=[], method='', error=str(exc)[:160])
+                    finally:
+                        p.pop('_allow_arxiv_lookup',None)
                     report['llm_processed'] += 1
                 else:
                     break
@@ -684,9 +777,12 @@ def search(root, config, args):
                 if p['status'] == 'ready' and p.get('topics'):
                     print(f'Verified {p["selection_bucket"]}: {p["published"]} | {p["venue_label"]} | {p["title"]}', flush=True)
                 else:
+                    stage = 'fulltext' if p['status'] == 'missing_fulltext' else 'summary'
                     item = {'url':p['verification']['url'], 'title':p['title'],
                             'reason':'Summary/topic validation: ' + p['status'],
-                            'detail':p.get('error', '')}
+                            'detail':p.get('error', ''),
+                            'validation_errors':p.get('validation_errors', []),
+                            **recovery_feedback(stage, p.get('error', ''))}
                     feedback.append(item)
                     report['rejections'].append(item)
                 accepted = select_balanced(pool, quotas, ready_only=True, archive=archive)
@@ -702,7 +798,8 @@ def search(root, config, args):
                 break
             feedback.append({'reason':'Source quotas not filled; do not backfill with another source.',
                              'quota_progress':report['quota_progress'],
-                             'action':'Find missing conference/arXiv routes in the same date window and eligibility scope.'})
+                             'source_windows':windows,
+                             'action':'Find missing conference/arXiv routes in their own source_windows and eligibility scope; use next_action on each rejection.'})
         durable = [{k:v for k,v in p.items() if k != 'selection_bucket'} for p in accepted]
         papers = merge_records(archive + durable) if accepted else archive
         results = []
