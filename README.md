@@ -20,16 +20,6 @@
 | 总结 | LLM 阅读可提取的全文，生成 **151–200 个可见字符**的中文方法描述，加粗关键方法名称，并提供可回溯的原文证据。 |
 | 发布 | 本地运行后导出静态 JSON；推送 `site/` 到 `main` 时由 GitHub Actions 更新 [GitHub Pages](https://liujiachen0x3f.github.io/Awesome-GNN/)。 |
 
-```mermaid
-flowchart LR
-    A[固定研究需求] --> B[LLM 多步搜索]
-    B --> C[来源与全文核验]
-    C --> D[跨来源去重]
-    D --> E[LLM 方法总结]
-    E --> F[静态论文索引]
-    F --> G[GitHub Pages]
-```
-
 网页支持按 TAG/OOD、来源和日期筛选，搜索标题、作者与方法，按发布时间排序；论文链接优先打开 PDF。会议卡片显示届次与简称，arXiv 卡片显示提交日期。页面只发布阅读所需的精简索引，不包含全文证据或 API 密钥。
 
 ## 用 Codex Skill 更新论文
