@@ -245,3 +245,9 @@
 - `origin` 已改回 `https://github.com/LiuJiaChen0x3f/Awesome-GNN.git`；本地 `main` 的 `da66446` 已提交 301 篇索引、页面改动和审计数据。`site/app.js` 的“最新更新时间”已去掉“本地时间”后缀，`site/index.html` 的 canonical 指向旧账号 Pages。
 - 旧仓库起点为 `adb55c2`。初次推送被新账号凭据以 403 拒绝；用户完成旧账号的 Git Credential Manager 浏览器授权后，`main` 已快进推送至 `b3c3322`，没有强推或覆盖远端历史。
 - `Publish site` 工作流运行 `36660169947` 成功。线上 `data/papers.json` 已从原 92 篇更新为 **301 篇**，生成时间为 2026-09-30 10:05:33；浏览器实际加载显示 301 篇及“最新更新时间：2026/09/30 10:05”，不再显示“本地时间”。线上 JS 资源哈希与本地一致，canonical 指向旧账号 Pages。
+
+### 2026-09-30 README 与 Skill 单目录整理
+
+- README 改为项目首页：线上入口、可视化流程、实际任务、301 篇时间点、覆盖限制、Skill 安装与调用、数据发布路径。旧的冗长实现说明由 Skill 操作参考和现有审计文档承接。
+- `skills/gnn-paper-digest/` 现在包含入口 `SKILL.md`、按需读取的 `references/workflows.md` 及 `install.py`。旧根目录 `scripts/install_skill.py` 已移除；安装器复制完整文件夹，已有差异默认停止，显式 `--replace` 会先备份。用户仍需 Awesome-GNN 项目代码与本机 API 配置，Skill 文件夹不是独立论文流水线。
+- 新增安装行为测试；92 项 Python 测试及 Skill 格式校验通过。本机 Skill 已升级，旧版保存在 `C:/Users/19878/.codex/skill-backups/`。此次未运行付费论文检索，未更改页面数据或搜索逻辑。
