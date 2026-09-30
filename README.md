@@ -69,7 +69,7 @@ python -m http.server 8000 --directory site
 | [`data/last_run.json`](data/last_run.json) | 最近运行的来源、拒绝原因和预算状态 |
 | [`site/data/papers.json`](site/data/papers.json) | 页面读取的精简索引 |
 | [`docs/latest_conference_coverage_audit.md`](docs/latest_conference_coverage_audit.md) | 最新会议届次、已入库与待处理范围 |
-| [`memory.md`](memory.md) | 开发和核验记录 |
+| `memory.md`（仅本地） | 开发和核验记录，不提交到仓库 |
 
 检索完成后，确认 `data/` 与 `site/` 的变化，再提交并推送到 `main`。工作流 [`.github/workflows/pages.yml`](.github/workflows/pages.yml) 在 `site/**` 变化时发布静态页面。会议目录或论文题名只是候选发现线索；访问失败、缺少全文和未完成的总结会保留为待处理项，不等同于“没有相关论文”。
 
