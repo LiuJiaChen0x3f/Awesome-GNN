@@ -106,7 +106,12 @@ class WindowTests(unittest.TestCase):
         today = date(2026,9,29)
         windows = source_windows({}, args, today)
         self.assertEqual(windows['conference']['since'], '2026-07-02')
-        self.assertEqual(windows['arxiv']['since'], '2026-09-16')
+        self.assertEqual(windows['arxiv']['since'], '2026-07-29')
+        self.assertEqual(source_windows({}, Namespace(days=None), date(2026, 4, 30))['arxiv']['since'], '2026-02-28')
+        self.assertEqual(source_windows({}, Namespace(days=None), date(2026, 3, 31))['arxiv']['since'], '2026-01-31')
+        self.assertEqual(source_windows({'search_windows':{'arxiv_months':2}},
+                                        Namespace(days=None, arxiv_since='2026-08-01'), today)['arxiv']['since'],
+                         '2026-08-01')
         args.days, args.conference_days = 30, 60
         windows = source_windows({}, args, today)
         self.assertEqual(windows['conference']['days'],60)

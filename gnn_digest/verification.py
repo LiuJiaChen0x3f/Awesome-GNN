@@ -453,20 +453,29 @@ def verify_candidate(candidate, since, until, timeout=25):
     else:
         venue = page.first('citation_conference_title', 'citation_inbook_title', 'prism.publicationname')
         text = clean(' '.join(page.text))
+        track = ''
         if host == 'ojs.aaai.org' and re.search(r'/AAAI/article/view/\d+', url):
             if not re.search(r'Technical Tracks?', text, re.I):
                 raise VerificationError('AAAI page does not identify a technical main track')
             venue = page.first('citation_journal_title') or venue
         if host in ('proceedings.neurips.cc','papers.nips.cc','proceedings.iclr.cc'):
-            if not re.search(r'-Abstract(?:-Conference)?\.html$',urlparse(url).path):
-                raise VerificationError('NeurIPS record is not identified as main conference track')
+            path = urlparse(url).path
+            datasets = (host != 'proceedings.iclr.cc' and
+                        path.endswith('-Abstract-Datasets_and_Benchmarks_Track.html') and
+                        'Datasets and Benchmarks Track' in text)
+            if not re.search(r'-Abstract(?:-Conference)?\.html$', path) and not datasets:
+                raise VerificationError('Proceedings record is not an allowed archival research track')
+            track = 'Datasets and Benchmarks' if datasets else 'Main Track'
             venue = page.first('citation_journal_title') or venue
         # Journal metadata is not conference evidence (including PACM/VLDB until verified explicitly).
         label = venue_abbreviation(venue)
         if not label:
             raise VerificationError('No verified allowed main-conference venue in source metadata')
-        if host in ('ijcai.org', 'www.ijcai.org') and not re.search(r'\bMain Track\.\s*Pages\b', clean(' '.join(page.text))):
-            raise VerificationError('IJCAI record is not identified as Main Track')
+        if host in ('ijcai.org', 'www.ijcai.org'):
+            match = re.search(r'\b(Main Track|AI and Social Good|AI and Health|AI4Tech(?:: AI Enabling Technologies)?)\.\s*Pages\b', text)
+            if not match:
+                raise VerificationError('IJCAI record is not an allowed archival research track')
+            track = match.group(1)
         if urlparse(url).hostname == 'aclanthology.org' and not re.search(r'/(\d{4})\.(acl|emnlp|naacl)-(main|long|short)\.\d+/?$', urlparse(url).path):
             raise VerificationError('ACL/EMNLP record is not a main-conference paper')
         published, precision = publication_date(page.first('citation_online_date', 'citation_publication_date', 'dc.date', 'citation_date'), since, until)
@@ -476,6 +485,8 @@ def verify_candidate(candidate, since, until, timeout=25):
                   publication_type='conference', date_basis='conference_publication')
         basis = 'conference_publication'
         p.update(date_precision=precision, conference_year=conference_edition(url, venue, published))
+        if track:
+            p['publication_track'] = track
         raw_pdf = page.first('citation_pdf_url')
         try:
             pdf = safe_scholarly_url(urljoin(url, raw_pdf)) if raw_pdf else ''
@@ -487,6 +498,8 @@ def verify_candidate(candidate, since, until, timeout=25):
              verification={'url':url, 'method':'primary_source_metadata', 'date':published},
              publication_events=[{'date':published, 'basis':basis, 'url':url, 'venue':label}],
              ccf_venue=not is_arxiv)
+    if p.get('publication_track'):
+        p['verification']['track'] = p['publication_track']
     return p
 
 

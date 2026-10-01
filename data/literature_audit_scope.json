@@ -1,5 +1,12 @@
 {
   "as_of": "2026-09-29",
+  "recovery_as_of": "2026-10-01",
+  "track_policy": {
+    "user_confirmed_at": "2026-09-30",
+    "include": ["main research", "IJCAI AI and Social Good", "IJCAI AI and Health", "IJCAI AI4Tech", "NeurIPS Datasets and Benchmarks"],
+    "exclude": ["Findings", "workshop", "demo", "doctoral consortium", "survey", "non-archival submissions"],
+    "requirement": "Official archival track evidence and a concrete TAG/OOD method grounded in complete text. Track eligibility alone does not establish topic relevance."
+  },
   "rule": "For each conference choose publicly verifiable 2026, otherwise 2025; access failure is not evidence of non-publication. Existing archive is retained.",
   "conferences": [
     {
@@ -64,7 +71,7 @@
       "selected_year": 2025,
       "selection_status": "provisional_2025_fallback",
       "source_url": "https://proceedings.neurips.cc/",
-      "note": "2026 virtual directory returned 403; 2026 proceedings not obtained. 2025 is a verified fallback, not proof that no 2026 accepted papers exist."
+      "note": "Rechecked 2026-09-30: the 2026 virtual directory returns 403 with an explicit notice that the virtual site is currently closed. 2026 proceedings not obtained. 2025 remains a verified fallback, not proof that no 2026 accepted papers exist."
     },
     {
       "key": "cvpr",
@@ -80,7 +87,7 @@
       "selected_year": null,
       "selection_status": "latest_list_unresolved",
       "source_url": "https://openreview.net/group?id=logconference.io/LOG/2026/Conference",
-      "note": "2026 acceptance announcement exists, but official accepted-paper list/track could not be read; OpenReview API 403. Do not publish new LoG 2025 papers as a confirmed latest edition."
+      "note": "Rechecked 2026-09-30: official CfP lists final decisions on September 13; this is a schedule, not a verified public acceptance list. The homepage Program link remains a placeholder. Official accepted papers and tracks remain unresolved; do not present LoG 2025 as a confirmed latest edition."
     },
     {
       "key": "iclr",

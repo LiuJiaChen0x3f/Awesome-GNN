@@ -1,7 +1,29 @@
 {
-  "updated_at": "2026-09-30T02:05:33.096706+00:00",
-  "returned": 188,
+  "updated_at": "2026-10-01T04:42:38.504954+00:00",
+  "returned": 288,
   "results": [
+    {
+      "id": "p-fd0247aacc10efb46e77",
+      "title": "Temporal Motif-aware Graph Test-time Adaptation for OOD Blockchain Anomaly Detection",
+      "venue_label": "IJCAI",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向恶意交易演化导致的训练图与无标签测试图分布偏移，**TEMG-TTA**在有向时序交易图上检测异常地址。它统计三节点时序模体的节点角色次数，将共享模体原型、角色嵌入及时序与方向位置编码融合进原始节点特征，再以二元交叉熵预训练GNN。测试时筛选中高置信节点，对丢边扰动图上的学生施加**师生表征一致性**和模体相似节点驱动的**InfoNCE**，并用指数滑动平均更新教师以适应目标图。",
+      "pdf_url": "https://www.ijcai.org/proceedings/2026/0802.pdf"
+    },
+    {
+      "id": "p-e194d4149882f867dc8b",
+      "title": "Structure-Aware Contrastive Learning for Biomedical Embeddings: Bridging the Gap Between HPO and Clinical Literature",
+      "venue_label": "IJCAI",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向HPO术语文本稀缺且语言语义与本体临床关系错位的问题，**神经符号对齐框架**从PubMed抽取含术语或同义词的句子，并过滤否定、枚举和过长上下文。它按后代传播的OMIM疾病集合计算**疾病重叠相似度**，以锚点采样构造同术语正例、近邻难负例和随机负例。双编码器用**AnglE损失**排序句对并部分冻结底层，所得表征用于表型检索及患者与疾病向量匹配。",
+      "pdf_url": "https://www.ijcai.org/proceedings/2026/0760.pdf"
+    },
     {
       "id": "p-d4d1d7a34788e21d9b52",
       "title": "Inductive Knowledge Graph Wave Networks",
@@ -13,6 +35,39 @@
       ],
       "method": "面向测试时出现未见实体与关系的归纳知识图谱推理，**KGWN**先以名称和描述的文本编码初始化实体及关系，再从查询局部子图构造逐关系对称或提升波算子。**关系频率门控**分别学习传播强度、关系权重及平滑或锐化倾向，并通过速度归一化与锚定更新维持深层传播稳定。未见关系经文本连接的关系图推断波参数，无需梯度更新即可驱动实体传播，最终以三元组评分完成链路预测，并用二元交叉熵或间隔排序损失训练。",
       "pdf_url": "https://www.ijcai.org/proceedings/2026/0329.pdf"
+    },
+    {
+      "id": "p-ca25853bd6038b229df9",
+      "title": "LLM-Enhanced Knowledge and Learning Path Understanding for Graph-based Educational Recommendation",
+      "venue_label": "IJCAI",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向含资源文本与学习交互的教育图推荐，**KLU4EduRec**用LLM概括资源标题、内容和关联概念，经文本嵌入、适配器及图传播形成资源语义。它按相邻资源语义变化的平滑累积漂移切分学习路径，汇合段内行为摘要与资源知识，并用**GRU**时序聚合为学习者语义。**门控融合**结合LightGCN结构表示，**InfoNCE对齐**约束同一学习者或资源的双视图，再以BPR训练并据内积生成Top-K推荐。",
+      "pdf_url": "https://www.ijcai.org/proceedings/2026/0813.pdf"
+    },
+    {
+      "id": "p-c7a7446372127e213907",
+      "title": "LLM-Guided Monte Carlo Tree Search over Knowledge Graphs: Composing Mechanistic Explanations for Drug–Disease Pairs",
+      "venue_label": "IJCAI",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向生物医学知识图谱中的药物—疾病多步机制检索，**TESSERA**将实体标签与描述交给LLM作局部语义判断，并由有向类型边限定合法路径。它以目标条件PageRank筛选邻居，用**列表式先验策略**批量比较动作，再由**比较式状态评估**结合深度相近竞争路径和已接纳解释给出叶值。**MCTS**依PUCT选择、扩展并回传价值，最终合并所有到达疾病节点的路径为解释子图。",
+      "pdf_url": "https://www.ijcai.org/proceedings/2026/0751.pdf"
+    },
+    {
+      "id": "p-9b8602056a7b3862a563",
+      "title": "D²G-TO: Task-aware and OOD-guided Discrete Graph Diffusion for Robust CNS Drug Discovery",
+      "venue_label": "IJCAI",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向训练分子与生成候选间的结构分布偏移，**D²G-TO**在离散图扩散中联合控制多种药理属性与分布一致性。其先对原子、化学键逐步加噪，并以属性条件预训练去噪器；再扰动候选图构造伪OOD参照。**SSG**用邻接矩阵差异和跨图节点特征距离选择近ID、远OOD的引导图。Graph Transformer经条件归一化融合属性，联合扩散重构、任务监督和结构一致性损失，从随机噪声图反向采样分子。",
+      "pdf_url": "https://www.ijcai.org/proceedings/2026/0781.pdf"
     },
     {
       "id": "p-94fee34cd87a787e5daf",
@@ -35,6 +90,17 @@
       ],
       "method": "针对源数据预训练后直接对齐结构与模式均变化的未见知识图谱，**EAFM**以种子实体对作为两图共享局部锚点，并行初始化相对结构坐标，避免依赖固定实体表示。**合并关系图**通过五类头尾交互学习跨图关系先验，再以关系条件的EntGNN同步传播锚点信息，缩短跨图推理路径。交互匹配器融合实体差值与目标表示，以双向交叉熵学习一致对齐；推理时冻结编码器，无需微调即可预测新图中的实体对应关系。",
       "pdf_url": "https://www.ijcai.org/proceedings/2026/0282.pdf"
+    },
+    {
+      "id": "p-11d690047b68af434a7d",
+      "title": "Leveraging Implicit Contexts via LLM–Graph Fusion for Temporal Knowledge Graph Reasoning",
+      "venue_label": "IJCAI",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向时序知识图谱四元组遗漏原始文本隐式语境的问题，**TTGFN**按查询实体和时间从离线仓库选取查询时刻前最近的文本片段。LoRA适配的LLM将片段与查询编码为语义向量，并以检索、语言建模和对比目标分两阶段学习以抑制噪声。时序图编码器聚合历史邻居、关系和时间差形成结构查询，**门控融合**逐维合并两路表示，再对共享实体词典打分完成尾实体预测。",
+      "pdf_url": "https://www.ijcai.org/proceedings/2026/0727.pdf"
     },
     {
       "id": "p-07b7ecb3ba396144f5f3",
@@ -81,6 +147,17 @@
       "pdf_url": "https://www.vldb.org/pvldb/vol19/p2480-wang.pdf"
     },
     {
+      "id": "p-0cc64762d95613960693",
+      "title": "QA-GraphRAG: Query-Adaptive Plug-and-Play Retrieval Integration for Graph-based Retrieval-Augmented Generation",
+      "venue_label": "VLDB",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向图式RAG固定检索层级难以兼顾事实型与复杂查询的问题，**QA-GraphRAG**在分层文本知识库前加入查询自适应路由。编码器将查询转为嵌入，三层**MLP路由器**输出知识层级偏好，以不同起始层级所得答案的准确率向量监督，并用**Gumbel-Softmax**近似硬选择。推理时从预测层级检索相关文本块，再把查询与文本送入生成器作答；路由器既可跨数据集预训练，也可用少量目标查询微调。",
+      "pdf_url": "https://www.vldb.org/pvldb/vol19/p2224-sheng.pdf"
+    },
+    {
       "id": "p-0107e5a5ef7325477e0b",
       "title": "Multimodal Knowledge Graph Completion via Relation-Aware Negative Sampling with Diffusion-Based Interpolation",
       "venue_label": "VLDB",
@@ -90,6 +167,50 @@
       ],
       "method": "面向融合文本、图像与结构的多模态知识图谱补全，**RelDINS**为实体编码结构、BERT文本和VGG视觉特征，并投影到共享空间。**RMEL**先平均融合多模态表示，再按关系基数类型把门控后的关系语义注入头实体、尾实体或双方。**DINS**将正例与随机负例扩散到噪声空间，以动态系数执行球面插值并反向去噪，逐步生成更难且语义相关的负例。模型联合优化补全损失、硬负例损失与正则项，以三元组评分完成缺失实体排序。",
       "pdf_url": "https://www.vldb.org/pvldb/vol19/p1949-li.pdf"
+    },
+    {
+      "id": "p-e75db4c3ebc2ab1985dd",
+      "title": "Node4All: Learning Node Representation Beyond Datasets",
+      "venue_label": "KDD",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "针对拓扑、特征维度与分布跨数据集变化的节点表示，**Node4All**仅在合成图上预训练，并直接迁移到未参与训练的真实图。它把特征列拆为共享拓扑的通道图，**CGT**用逐坐标多跳聚合构造令牌，经Transformer汇聚为标量后拼接各通道。训练中生成多样结构及图相关特征，**DropNode掩码自编码**删除部分节点，以余弦重建损失恢复其特征；推理所得表示供节点分类复用，无需目标数据集训练或调参。",
+      "pdf_url": "https://arxiv.org/pdf/2607.17272"
+    },
+    {
+      "id": "p-d5191d095754fb4eadfb",
+      "title": "Unified Multi-Domain Graph Pre-training for Homogeneous and Heterogeneous Graphs via Domain-Specific Expert Encoding",
+      "venue_label": "KDD",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "针对预训练源图与下游目标图在类型、属性和拓扑上的跨域偏移，**GPH²**统一迁移同质与异质图。它以删边或元路径构造多视图，共享视图内GNN并用注意力聚合；各域采用非共享专家，以DGI式局部—全局互信息目标独立预训练。下游冻结专家，将目标图表示线性对齐到共享空间，再以**类别级注意力投票**融合logit，并联合交叉熵与注意向量正交约束完成少样本节点分类。",
+      "pdf_url": "https://arxiv.org/pdf/2602.13075"
+    },
+    {
+      "id": "p-cf8673a9c1595224ee8f",
+      "title": "MemGraphRAG: Memory-based Multi-Agent System for Graph Retrieval-Augmented Generation",
+      "venue_label": "KDD",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "**MemGraphRAG**针对文本图检索中的跨文档冲突与结构碎片化，将模式、事实和原文段落存入三层共享记忆，并关联类型、实体与段落节点。多智能体按模式频率筛选事实，回溯原文裁决冲突，再以共享类型和嵌入相似度桥接子图。检索时将查询与文本的语义相似度结合节点度惩罚、段落信息密度，生成结构感知初始权重。通过**个性化PageRank**传播并排序，选取段落和实体作为语言模型回答的证据。",
+      "pdf_url": "https://arxiv.org/pdf/2606.00610"
+    },
+    {
+      "id": "p-cdb4acb5293b3db6c49a",
+      "title": "Generalizing GNNs with Tokenized Mixture of Experts",
+      "venue_label": "KDD",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向冻结部署中训练图与测试节点度数、同配性分布变化，**STEM-GNN**同时兼顾图预测的分布外泛化与扰动稳定。它以节点特征和邻域聚合结果为输入，由**MoE编码器**按节点、层生成软路由并混合共享专家，扩展不同环境下的计算路径。随后**VQ词元接口**用学习码本量化表示并在微调时冻结码本，以吸收未跨量化边界的漂移；线性预测头加入**Lipschitz正则**，联合任务损失限制残余词元变化的输出放大，供节点、边和图任务预测。",
+      "pdf_url": "https://arxiv.org/pdf/2602.09258"
     },
     {
       "id": "p-bf3b108c0768f7d1e2bc",
@@ -115,6 +236,29 @@
       "pdf_url": "https://arxiv.org/pdf/2602.11641"
     },
     {
+      "id": "p-843aa6332ae80fdb1ec5",
+      "title": "USBD: Universal Structural Basis Distillation for Source-Free Graph Domain Adaptation",
+      "venue_label": "KDD",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向源数据不可访问且源、目标图拓扑分布不同的图分类，**USBD**以含邻接、节点特征和标签的合成原型图承载源知识。其双层优化在原型上训练代理，并以语义匹配、狄利克雷能量锚点及GW距离保持类别边界、覆盖全频谱并抑制拓扑冗余。测试时，**谱感知自适应推理**汇总目标图的归一化狄利克雷能量，以核注意力加权原型。再用加权交叉熵训练目标代理，将原始目标图输入该代理完成无标签分类。",
+      "pdf_url": "https://arxiv.org/pdf/2602.08431"
+    },
+    {
+      "id": "p-4d370d54d92275d489e6",
+      "title": "H4G: Unlocking Faithful Inference for Zero-Shot Graph Learning in Hyperbolic Space",
+      "venue_label": "KDD",
+      "conference_year": 2026,
+      "topics": [
+        "TAG",
+        "OOD"
+      ],
+      "method": "**H4G**面向文本属性图跨域零样本节点预测，缓解图文表征位于大双曲半径造成的细粒度结构丢失。图编码器与预训练语言模型提取节点结构和文本语义，经线性变换与指数映射进入庞加莱球。**块对角半径调整**以可学习缩放矩阵执行莫比乌斯乘法，将两模态嵌入移近原点；**层次对比学习**对齐匹配图文对，并用恒等正则防止坍缩。推理时同样调整目标节点和类别描述，按最小双曲距离分类且无需目标域微调。",
+      "pdf_url": "https://arxiv.org/pdf/2510.12094"
+    },
+    {
       "id": "p-2c4e6db7744e58006fa8",
       "title": "Generalizing Graph Foundation Models via Hyperbolic Retrieval-Augmented Generation",
       "venue_label": "KDD",
@@ -125,6 +269,28 @@
       ],
       "method": "面向预训练图基础模型在未见领域分布偏移下的零样本推理，**HyRAG**以节点文本查询外部层级知识。**双曲知识索引**把实体与关系的语言表示映射到庞加莱球，并以距离损失、蕴含锥角度约束和径向正则保持语义层级。**多粒度检索**分别获取全局语义锚点与局部细节，再由**双路径融合**将知识注入节点特征及辅助属性图，并按预测熵门控融合，用于节点分类和链接预测。",
       "pdf_url": "https://arxiv.org/pdf/2606.03307"
+    },
+    {
+      "id": "p-2b05e4e75129a4b8d1b0",
+      "title": "CausalPOI: Spatio-Temporal Graph-Based Causal Modeling for Cold-Start POI Check-in Forecasting",
+      "venue_label": "KDD",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向无历史记录的新POI签到预测，**CausalPOI**将POI文本标签经BERT编码，并按空间邻近、周活跃状态与功能关系构建时变一跳图。**ST-FIG**以对比预训练所得功能语义和距离衰减共同赋权，再由共享GATv2、位置编码及GRU汇聚时空表示。因果模块构造拓扑对齐的处理与控制图，以目标语义置零及移除功能项模拟反事实；联合事实序列均方误差与倾向分类损失训练，双输出头预测签到轨迹并计算ITE。",
+      "pdf_url": "https://arxiv.org/pdf/2606.05413"
+    },
+    {
+      "id": "p-d2442d8505eab67698eb",
+      "title": "DCGL: Dual-Channel Graph Learning with Large Language Models for Knowledge-Aware Recommendation",
+      "venue_label": "SIGIR",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向知识图谱推荐中语义与行为静态混合及频率异质问题，**DCGL**将实体属性生成文本描述，经编码与适配得到语义嵌入，并以独立ID嵌入表征行为。双通道分别以RGAT聚合知识关系、LightGCN传播用户物品交互；**多层对比学习**在通道内约束增强视图一致，并跨通道对齐用户表示。**频率感知门控**结合两路表示和交互频率自适应融合，联合BPR、对比、门控与正则目标训练，按融合得分完成Top-K推荐。",
+      "pdf_url": "https://arxiv.org/pdf/2605.07314"
     },
     {
       "id": "p-d962f5c5a04dc656ef7b",
@@ -191,6 +357,17 @@
       ],
       "method": "面向冻结LLM生成的节点文本向量缺乏拓扑感知且直接降维会破坏语义的问题，**GASE**先为中心节点与采样邻居构造序列。**TSSE**利用层间语义反馈压缩各邻居文本，并以渐进掩码依次完成片段隔离、星形结构传播和全局融合。随后**SDSI**按协方差谱划分语义富集与结构注入子空间，仅在低语义方差维度学习结构嵌入并经GNN传播；分类交叉熵与跨空间对齐损失联合训练，推理直接预测节点标签。",
       "pdf_url": "https://aclanthology.org/2026.acl-long.1434.pdf"
+    },
+    {
+      "id": "p-907192eebe442caf05ca",
+      "title": "LegalGraphRAG: Multi-Agent Graph Retrieval-Augmented Generation for Reliable Legal Reasoning",
+      "venue_label": "ACL",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "**LegalGraphRAG**针对法律文本粒度混杂与证据不适用问题，将案例、法条和司法解释组织为事实、本体、规则三层图。案例文本按四类法律要素抽取并编码，以近邻连边和社区摘要关联相似案件。研究员合并语义匹配、社区扩展和罪名邻居检索，获得候选证据。审计员依据**诊断清单**与司法解释逐项核验案件事实，剪除不适用法条及关联节点，再由裁决员结合已验证子图预测罪名、法条和刑期，附上证据引用。",
+      "pdf_url": "https://aclanthology.org/2026.acl-long.1738.pdf"
     },
     {
       "id": "p-8e7e9be205236addcb1e",
@@ -292,6 +469,17 @@
       "pdf_url": "https://aclanthology.org/2026.acl-long.1944.pdf"
     },
     {
+      "id": "p-48f13cf8e01baab9b08d",
+      "title": "Evolving Beyond Snapshots: Harmonizing Structure and Sequence via Entity State Tuning for Temporal Knowledge Graph Forecasting",
+      "venue_label": "ACL",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向时间分布偏移下的时序知识图谱外推，**EST**为实体维护跨快照持续演化的全局状态。它以门控融合静态嵌入与慢状态，经结构编码、时间差校准和可插拔序列骨干生成查询相关上下文。**双轨状态演化**用指数滑动更新快记忆，并以信息惊奇门控慢记忆回写；**反事实一致性学习**选取历史上合理但当前错误的尾实体，以负对数似然训练并完成未来尾实体排序。",
+      "pdf_url": "https://aclanthology.org/2026.acl-long.1776.pdf"
+    },
+    {
       "id": "p-43bfac81ef9a41ba0cf7",
       "title": "All Changes May Have Invariant Principles: Improving Ever-Shifting Harmful Meme Detection via Design Concept Reproduction",
       "venue_label": "ACL",
@@ -348,6 +536,28 @@
       "pdf_url": "https://aclanthology.org/2026.acl-long.823.pdf"
     },
     {
+      "id": "p-fbb67efe487cd8fed484",
+      "title": "Bridging Structure and Semantics: Uncertainty-Modulated Dual-Path Diffusion for Robust Text-Attributed Graph Learning",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "针对文本属性图中结构—语义错配及文本、拓扑双源噪声，**UDPD**先由LLM提取节点文本关键词并经Sentence-BERT编码语义，同时以原文编码初始化GCN得到结构表示，再取二者差值形成语义残差。**协同双路径扩散**并行净化结构与残差，预测熵门控的交叉注意力让两支互为条件。训练联合两路初态重构与标签平滑分类损失；推理从原始表示逐步反向去噪，组合净化表示用于节点分类。",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/yu26ab/yu26ab.pdf"
+    },
+    {
+      "id": "p-f31548b904d78cc7d78e",
+      "title": "From Retrieval to Translation: Translating Query into Graph-level Clues for Retrieval-Augmented Generation",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "针对结构增强RAG因关系缺失与语义漂移导致的段落检索失准，**KG-Translator**将查询检索改写为图级线索翻译。它以轻量NER和句法分析抽取实体，并将实体掩码后的原句作为超关系，构建有向**ParseKG**。专用LLM通过Trie实体前缀与FM-index关系子串约束进行双向解码，并以**结构感知微调**学习生成实体—关系线索。推理时将线索回溯至原段落，经轻量模型排序后把Top-k上下文交给通用LLM作答。",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/liu26fy/liu26fy.pdf"
+    },
+    {
       "id": "p-f2cd08b7c0c58a9647e6",
       "title": "When Do Graph Foundation Models Transfer? A Data-Centric Theory",
       "venue_label": "ICML",
@@ -357,6 +567,61 @@
       ],
       "method": "论文研究图基础模型在图规模与生成机制变化下的跨域输出偏移。先将不同大小的有限图嵌入共同的**阶梯图元**空间，并以特征向量或投影式**谱位置编码**生成节点结构令牌，交由集合式或消息传递骨干预测。理论结合骨干与位置编码稳定性，把输出差异分解为两侧有限采样误差和重标记不变的**图元域差异**。该分解用于诊断负迁移，并指导通过更大图或图合并降低采样误差、控制训练测试生成器失配。",
       "pdf_url": "https://arxiv.org/pdf/2605.29828"
+    },
+    {
+      "id": "p-e440cc06e30648e98879",
+      "title": "$G^2$-Reader: Dual Evolving Graphs for Multimodal Document QA",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向多模态长文档问答中跨页文本、表格与图像证据被扁平切分的问题，**G²-Reader**构建内容图与规划图。内容图以段落和多模态元素为节点，用视觉语言模型生成摘要、关键词与统一嵌入，并迭代联合更新节点属性及引用、因果、跨模态等关系。检索时按查询相似度选点并扩展一跳邻域，形成结构化证据子图。**规划图**将问题分解为有依赖的子问题，按拓扑序检索与作答，经充分性检查反复修订，最终汇总验证证据生成答案。",
+      "pdf_url": "https://arxiv.org/pdf/2601.22055"
+    },
+    {
+      "id": "p-deda5dbae5a9d338ce44",
+      "title": "Graph Neural Networks Are Not Continuous Across Graph Resolutions",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "针对训练与推理图分辨率不同导致表征失配的问题，**尺度连续GNN**以节点特征、边权和非归一化图拉普拉斯表示高低分辨率图。它用**拉普拉斯变换传播**将多时刻热扩散核加权积分，并以投影和插值算子对齐粗细图；谱网络据此替换归一化拉普拉斯多项式，消息传递则以该矩阵加权消息并求和。训练沿用下游监督目标；推理时，**热核收敛界**界定粗细图的表示差异，图级表示经加权聚合与MLP完成跨分辨率回归。",
+      "pdf_url": "https://arxiv.org/pdf/2605.31315"
+    },
+    {
+      "id": "p-dc5398c0c6effd6be699",
+      "title": "Rethinking GNNs and Missing Features: Challenges, Evaluation and a Robust Solution",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "针对节点特征缺失机制在训练与测试间由MNAR转为完整或MCAR的分布偏移，论文提出**GNNmim**用于节点级预测。它先将未观测属性零填充，再把逐项二值缺失掩码与节点特征拼接，交给标准GNN沿图边聚合。该**缺失指示方法**不学习插补值，而让模型依据掩码辨别占位零并利用邻域信息；训练后直接输出节点分类或回归结果，并在不同缺失机制与缺失率下评测。",
+      "pdf_url": "https://arxiv.org/pdf/2601.04855"
+    },
+    {
+      "id": "p-d98e0a9544e1acbca286",
+      "title": "Subspace-Aware Feature Reshaping for Open-Set Graph Class-Incremental Learning",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向未来或无关未知类进入测试图、且历史图不可回放的开放集图类增量学习，**SAFER**冻结预训练GNN作为稳定坐标，并以PPR扩散增强节点特征。各任务用归一化中心和截断PCA低秩基建立**子空间指纹**；查询投影到各任务仿射子空间，以重构残差加中心距离的能量同时路由任务并按阈值拒识。训练以节点自适应提示调制输入，在适配器空间结合监督对比、加权交叉熵与可选焦点损失压紧类内几何；接纳节点由所选任务分类头预测。",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/zhang26jd/zhang26jd.pdf"
+    },
+    {
+      "id": "p-c565d36d175fca702e6a",
+      "title": "Uncertainty-Constrained Trustworthiness for Graph Learning",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向拓扑、节点特征与标签扰动造成的训练—测试图分布偏移，**DICT**为半监督节点分类生成多份扰动图，与原图混合形成经验分布。它以图结构、特征和标签的加权运输代价构造**Wasserstein不确定集**，最小化集合内最坏期望损失。借助强对偶和局部连续性，将无限维目标化为经验损失加**局部Lipschitz正则**；标注节点用一阶梯度、未标注节点用二阶高斯探针估计敏感度，再聚合并优化分类器。",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/zhang26ch/zhang26ch.pdf"
     },
     {
       "id": "p-ba1704067772ab3f843b",
@@ -370,6 +635,17 @@
       "pdf_url": "https://arxiv.org/pdf/2606.03270"
     },
     {
+      "id": "p-b25b1feb927899f60114",
+      "title": "Weaving Graph over Tokens: Contextualizing Structured Sequences for LLMs",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "Weaver面向文本属性图推理，将节点及可选边文本编成token块，并保留块内位置与拉普拉斯结构坐标。**Graph-Causal Masking**在块内维持自回归、块间开放双向注意，使语义编码与拓扑传播同步进行。**GoRoPE**把词序和图坐标差写入查询与键的旋转相位，配合**局部优先偏置**区分结构对称节点。模型以合成图推理和场景图进行LoRA结构对齐，再按图与查询自回归生成答案，并可继续微调节点分类和链路预测。",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/chen26gm/chen26gm.pdf"
+    },
+    {
       "id": "p-a21aa1718d9fcabae55c",
       "title": "GFMate: Empowering Graph Foundation Models with Test-time Prompt Tuning",
       "venue_label": "ICML",
@@ -381,6 +657,84 @@
       "pdf_url": "https://arxiv.org/pdf/2605.14809"
     },
     {
+      "id": "p-9facc83c78182e8b41db",
+      "title": "Size Transferability of Graph Convolutional Networks across Sparsity: A Generalized Graphon Perspective",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "针对从采样子图向更大目标图迁移时规模与边密度共同变化的问题，方法用广义graphon刻画任意稀疏图序列。**双重采样**经截断、缩放生成稀疏graphon及其节点信号，再采样边与特征；**拉伸变换**按边密度放大结构，避免极限退化为零。**GWCN**在拉伸graphon上递归执行多阶卷积和通道聚合，并共享GCN参数；通过约束算子与信号差异，得到由图规模、密度及网络结构共同决定的迁移误差上界。",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/shu26a/shu26a.pdf"
+    },
+    {
+      "id": "p-99432c5095899acdf68a",
+      "title": "CELL: A Causal Perspective for Fairness-aware Graph Adaptation",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向源图有任务与敏感标签、目标图完全无标签且图分布变化的公平节点分类，**CELL**以双GNN分别编码敏感因素与任务因果因素。它用CLUB上界和条件InfoNCE约束两类表示解耦，再以目标伪任务及敏感标签构造组间对比关系。随后连接任务标签相同但敏感标签不同的跨域节点，施加**公平二部图对齐**；联合互信息、无偏学习、对齐及高置信伪标签损失完成目标图预测。",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/li26gu/li26gu.pdf"
+    },
+    {
+      "id": "p-914dcacaedab2bc56eab",
+      "title": "From Distribution to Geometry: Stable Graph Generalization via Invariant Barycenters",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向训练与测试图分布不一致的图分类，**DIGL**先以属性扰动和结构编辑生成对抗环境，再用可学习边掩码拆分不变与环境特异子图并分别编码。它将同类图在各环境中的不变表示建模为高斯分布，以**Wasserstein重心**估计共享类别原型并最小化跨环境传输距离。随后以**解耦正则**降低两类表示的互信息、强化变体表示的环境差异，并联合分类、原型对齐与解耦损失训练，推理时用不变表示完成未见分布上的分类。",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/du26o/du26o.pdf"
+    },
+    {
+      "id": "p-8e5e473484c019abbeea",
+      "title": "COPF: An Online Framework for Deployment-Stable Counterfactual Fairness in Evolving Graphs",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向演化图在线链接推荐中策略更新引发的反馈分布偏移与公平漂移，**COPF**在骨干评分器外增加决策层。它以显式探索和倾向概率日志构造曝光反事实，并用图感知自归一化**GA-DR**伪结果估计群体处理效应。**Residual-OI**按群体、分数桶及可选结构角色审计残差并生成窗口证书；多校准偏移与**PI原始-对偶控制器**依据效应平等和最小效应约束调整群体logit，随后随机Top-K曝光并在线更新图及估计器。",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/li26kb/li26kb.pdf"
+    },
+    {
+      "id": "p-88535d2f57fe41e8cdcc",
+      "title": "A Graph Foundation Model with Cross-Modal Alignment and Modality-Aware Expert Fusion for Multi-Modal Graphs",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "TAG",
+        "OOD"
+      ],
+      "method": "面向含文本、图像属性且需迁移到未见图域的多模态图，**CAME**先用冻结CLIP编码节点文本与图像，再由两个模态专属GNN在同一拓扑上传播，保留各自结构语义。**维度门控融合**逐坐标组合两路表示，三组稀疏Top-k专家经组内路由和模态级路由生成统一表示。训练以文本—图像、文本—融合及图像—融合三项**跨模态InfoNCE**对齐同一节点，所得表示用于节点、边及链接任务。",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/he26at/he26at.pdf"
+    },
+    {
+      "id": "p-850bc4be90769db58854",
+      "title": "Progressive Graph Structure Adjustment for Homophily Shift Adaptation",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向源图与无标签目标图节点同配性分布不一致的图域适应，**PSAHS**通过结构校正学习可迁移的节点分类器。源侧利用真值标签重加权同类与异类边，并为低同配节点补充同类连接，以闭式节点强度提升至统一阈值。目标侧以结构感知GNN和属性MLP的一致预测筛选可靠伪标签，仅渐进修正低同配节点。训练交替执行结构调整与**域对抗表示对齐**，以源域交叉熵保持判别性并缩小调整后图的跨域表示差异。",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/wen26j/wen26j.pdf"
+    },
+    {
+      "id": "p-7910ba174892d6f7c357",
+      "title": "LECTOR: Joint Optimization of Scientific Reasoning Graphs and Introduction Generation",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向依据论文正文生成逻辑忠实引言的CCIG任务，**LECTOR**将方法、结果和分析中的自包含句子建为节点，以演绎、归纳、溯因关系连接成单根有向无环推理图。随后以图为科学叙事依据、引用列表为引文来源，按**CARS框架**组织领域、缺口与贡献。训练把正文到图再到引言视为统一轨迹，以**逻辑-表达共奖励**评估图有效性、图文忠实性、论文一致性、写作质量和引用对齐，并用简化PPO联合更新抽取与生成策略。",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/xiao26s/xiao26s.pdf"
+    },
+    {
       "id": "p-691b3679d955447a28d8",
       "title": "What Information Matters? Graph Out-of-Distribution Detection via Tri-Component Information Decomposition",
       "venue_label": "ICML",
@@ -390,6 +744,72 @@
       ],
       "method": "面向节点特征、图结构或二者联合变化下的图OOD节点检测，**Tide**以联合GNN编码特征与邻接得到Z，并用仅接收属性的MLP和常量特征GCN分别提取V、Q。**三分量信息分解**通过条件独立与成对互信息最小化，使Z保留标签相关的特征—结构交互并隔离单输入伪相关；三路**信息瓶颈**压缩标签无关噪声。推理时仅保留联合分类器，由预测logit计算并传播能量分数，以阈值区分ID与OOD节点。",
       "pdf_url": "https://arxiv.org/pdf/2605.13032"
+    },
+    {
+      "id": "p-65dd51761ca2d20f0603",
+      "title": "Rethinking Feature Alignment in Generalist Graph Anomaly Detection: A Relational Fingerprint-based Approach",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向源图训练、未见目标图免更新的跨域节点异常检测，**ReFi-GAD**以关系指纹替代语义与维度异构的原始特征。它将邻域位置与方向、全局方向一致性、度和聚类系数转为百分位秩，形成统一五维**ReFi**。支持与查询指纹经MLP和掩码Transformer交互，再由**SNR自适应精炼**按目标域判别维度重标定。源域采用情节式BCE训练，推理时依据查询与正常、异常支持节点的余弦相似度产生异常分数，不更新参数。",
+      "pdf_url": "https://arxiv.org/pdf/2605.25429"
+    },
+    {
+      "id": "p-53943140c9e82297b23e",
+      "title": "Graph-R1: Towards Agentic GraphRAG Framework via End-to-end Reinforcement Learning",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "Graph-R1面向由文本语料构建的知识超图问答，将文档片段中的实体与n元关系抽取为节点和超边，并用共享编码器生成语义向量。**多轮图交互**让LLM依次反思、判断继续或终止并生成查询；继续时以实体和超边双路检索，经倒数排名融合后将事实写回状态，终止时生成答案。训练以**GRPO**优化完整轨迹，结合结构格式奖励与基于答案token级F1的答案奖励，使检索决策和最终生成共同受监督。",
+      "pdf_url": "https://arxiv.org/pdf/2507.21892"
+    },
+    {
+      "id": "p-42709c3e1f9aa6b79744",
+      "title": "CCLRec: Consensus-driven Contrastive Learning for LLM-enhanced Graph Recommendation",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "针对用户—物品交互图中协同结构与LLM语义监督冲突，**CCLRec**将文本属性、用户历史生成的语义嵌入与图卷积ID表示融合。它分别以语义中心相似度和物品共现矩阵构造正负样本，再用**结构—语义共识挖掘**取两视图交集，筛出共同认可的样本对。训练时，**共识驱动对比损失**加权强化共识正负对，并与**BPR排序损失**联合优化用户和物品表示，最终按内积得分执行Top-K推荐。",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/guo26p/guo26p.pdf"
+    },
+    {
+      "id": "p-414f1597e86d412e72ca",
+      "title": "HInT: Hypergraph Infusion at the Structural Layers Improves Table Understanding",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "针对表格序列化削弱行列关系的问题，**HInT**先用行列结构掩码与注意力图的LASSO稀疏对齐，定位承载表格关系的结构层。它将单元格建为节点、同行同列及层级表头建为超边，并从层内词元状态平均池化初始化节点和超边。**HyperTrans**以交叉注意力传播高阶关系，再由**词元级门控融合**写回对应词元；模型经腐败检测预训练后，以含中间推理步骤的监督端到端生成答案。",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/lee26p/lee26p.pdf"
+    },
+    {
+      "id": "p-3e30f66f92e859762cc4",
+      "title": "CLINIC: Towards High-quality Graph Out-Of-Distribution Detection",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向仅用分布内图训练、测试时区分分布内外图的任务，**CLINIC**先以GNN编码原图及增强视图，并按批内互近邻关系构造上下文亲和图。**高阶亲和增强**用元GNN传播并检索语义近邻，双重一致性约束两视图的邻居相似度分布及同邻域聚类预测。再以类内、最近异类中心距离压缩分布内边界；联合三项损失训练，推理时以压缩比作为OOD分数。",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/wang26kt/wang26kt.pdf"
+    },
+    {
+      "id": "p-3e2b6a566c5b11f26898",
+      "title": "Generalist Graph Anomaly Detection via Prototype-Based Distillation",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向训练图与跨域未见图的属性、拓扑偏移，**ProMoS**以无标签多图训练零样本节点异常检测器。冻结自监督GNN教师，向共享分支和Top-K稀疏个性化分支组成的**混合学生**蒸馏正常性先验。**原型软标签蒸馏**用KL散度对齐师生原型分布，可靠性加权的承诺与细化损失稳定教师空间并更新原型。推理无需适配，融合蒸馏偏差与嵌入到最近原型的几何偏差生成异常分数。",
+      "pdf_url": "https://arxiv.org/pdf/2605.26857"
     },
     {
       "id": "p-3e0a30d1ea5ab0e71204",
@@ -414,6 +834,28 @@
       "pdf_url": "https://arxiv.org/pdf/2602.04116"
     },
     {
+      "id": "p-3814577f2bf381be2d60",
+      "title": "Adaptive Recurrent Message Passing for Test Time Computing on Graphs",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "针对预训练图模型在未见下游图上因感受野需求不同而难以零样本迁移的问题，**AdaR**复用同一消息传递层，以可变递归步数扩展节点感受野。每步拼接当前表示、固定总时间下的**归一化步编码**及节点与目标代理的关系，经速度函数残差更新；伪节点将数量不一的目标聚合为定长代理。训练以任务损失梯度约束逐步与全程位移，并优化末步任务损失；测试时无需改参即可增加步数，并依据节点与目标的平均内积退出。",
+      "pdf_url": "https://arxiv.org/pdf/2606.22462"
+    },
+    {
+      "id": "p-35c84d4d8d2040025e82",
+      "title": "View Space: Learning Representation across Arbitrary Graphs",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "针对训练图与未见图在节点数、拓扑及特征维度和语义上的变化，本文研究无需重训编码器的跨图节点表示与分类。**视图堆叠**用多种邻接传播算子生成节点特征矩阵，并沿新轴组成固定维视图向量。**GVT**以共享MLP逐个压缩节点—特征视图向量，保持节点与特征置换等变，并形成融合结构响应的表示。**RGVT**共享同一非线性GVT参数循环多步，以可选深度扩展感受野；预训练联合优化编码器和分类器，迁移时冻结编码器，仅训练轻量预测器。",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/lee26ah/lee26ah.pdf"
+    },
+    {
       "id": "p-32d5c33544e589f94948",
       "title": "Structure-Centric Graph Foundation Model via Geometric Bases",
       "venue_label": "ICML",
@@ -423,6 +865,17 @@
       ],
       "method": "面向跨域图中拓扑变化与节点特征维度不一致，**SCGFM**以图的度量测度空间表示替代依赖统一特征接口。它学习若干**几何基**，用切片Gromov-Wasserstein距离计算输入图到各基的结构坐标，并以加权基重构、图统计重构和基多样性联合预训练。下游利用**GW传输计划**把节点特征投影到基上，再拼接结构坐标、解码统计与投影特征形成嵌入，以冻结编码器完成跨域少样本图级和节点级分类。",
       "pdf_url": "https://arxiv.org/pdf/2605.08689"
+    },
+    {
+      "id": "p-2e855852e843603568ab",
+      "title": "X-EviProbe: Post-hoc Parameter-Free Evidential Uncertainty Quantification for Frozen Graph Neural Networks",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向冻结GNN在留出类别分布偏移下的节点OOD检测，**X-EviProbe**以训练与验证节点为参考，从冻结嵌入、logit和预测概率构造无须再训练的狄利克雷证据。其**几何证据提取**用查询节点到参考集的L1最近邻距离度量支持，并以误分类节点作误差锚点区分认知与偶然不确定性。**全息证据融合**以几何门控logit证据总量、按概率分配类别，再沿图传播标量证据强度；推理时以传播后总强度的倒数识别未见类别节点。",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/guo26ac/guo26ac.pdf"
     },
     {
       "id": "p-2644273c414a44af9ac8",
@@ -445,6 +898,52 @@
       ],
       "method": "面向动态图训练异常稀缺且测试含未见异常类型的开放集偏移，**SDGAD**处理连续时间交互流。它分别编码含当前事件和仅历史序列的节点状态，取差并拼接两端形成**残差表示**。**双同心超球限制**将正常残差约束在环形区间，并只把未充分分离的异常推向外侧；正规化流拟合正常似然，**双边界优化**在正常与异常阈值间设置缓冲。训练联合最大似然、限制和边界损失，推理以似然补值给出事件异常分数。",
       "pdf_url": "https://arxiv.org/pdf/2602.20019"
+    },
+    {
+      "id": "p-22ad60f4c37e3a04cdcd",
+      "title": "Enhancing LLMs for Graph Tasks via Graph-aware LoRA Generation",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "TAG",
+        "OOD"
+      ],
+      "method": "面向图数据集特征与标签空间变化下的零样本迁移，**GaRA**将节点文本、任务描述和局部子图序列编码为提示，并用GNN在完整图上传播后最大池化为全局表示。**图感知LoRA生成**由全局表示产生低秩矩阵，叠加到LoRA左因子并作用于语言模型隐藏层，以补充局部提示遗漏的高层结构。**范数重缩放**令生成矩阵平均列范数匹配LoRA左矩阵，再以标签文本交叉熵训练，用于未见数据集的节点分类、链路预测与图分类。",
+      "pdf_url": "https://arxiv.org/pdf/2606.22429"
+    },
+    {
+      "id": "p-12210692680f5e8c48f2",
+      "title": "Beyond Explicit Edges: Robust Reasoning over Noisy and Sparse Knowledge Graphs",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向噪声、稀疏且连接缺失的文本属性知识图谱，**INSES**联合节点和边的文本描述、类型、节点嵌入完成多跳问答。它从问题抽取实体并以余弦相似度定位初始节点，再由**LLM导航器**筛选邻接三元组并判断证据是否充分。**相似度扩展**将过阈值的近邻与候选端点合并为下一轮节点，动态形成虚拟边并排除已访问节点，直至可回答或达到迭代上限。路由器将简单高置信问题交给朴素RAG，其余升级到图搜索，最终以所选三元组生成答案。",
+      "pdf_url": "https://arxiv.org/pdf/2603.14006"
+    },
+    {
+      "id": "p-0c3f71645c49b5c859f2",
+      "title": "When LLMs Encounter Open-world Graph Learning: A Fresh View on Unlabeled Data Uncertainty",
+      "venue_label": "ICML",
+      "conference_year": 2026,
+      "topics": [
+        "TAG",
+        "OOD"
+      ],
+      "method": "面向文本属性图中未标注节点可能来自已知或新类别的开放世界学习，**OGA**先以预训练图语言编码器联合编码节点描述与拓扑。**ALT**通过个性化PageRank传播和邻域加权动态构造类别概念，以概念距离和置信阈值分类已知节点并拒识未知节点；训练联合交叉熵、拓扑平滑与概念分离损失。随后**GLA**用语义增强社区划分、度感知标注、社区内蒸馏及社区间融合生成新类标签，并将其分配给节点以扩充监督、重训下游图模型。",
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/wen26e/wen26e.pdf"
+    },
+    {
+      "id": "p-1458b047eda9f441b568",
+      "title": "AGRAG: Advanced Graph-Based Retrieval-Augmented Generation for LLMs",
+      "venue_label": "ICDE",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向图式RAG的建图噪声与推理链不完整问题，**AGRAG**以TFIDF抽取文本块实体，由LLM识别关系，并将文本块与实体关联成图。查询映射并过滤三元组后，以PPR作节点影响分、以语义相似度作边成本；**MCMI子图**从连接映射三元组的最小成本Steiner树出发，按成本影响比贪心扩展，形成可含环的显式推理路径。最后，**混合检索**融合BM25与稠密相似度补充文本块，与序列化子图共同输入LLM生成答案。",
+      "pdf_url": "https://arxiv.org/pdf/2511.05549"
     },
     {
       "id": "p-fed2ae0649d2b8c72726",
@@ -489,6 +988,18 @@
       ],
       "method": "面向ID预训练模型在测试批次中识别异分布图，**RedOUT**冻结原GNN，以节点特征和邻接结构生成原图表示。它最小化结构熵，并用MERGE、DROP构造固定高度编码树，将**ReGIB**的去冗余关键结构实例化为树视图，自底向上聚合得到树嵌入。训练树编码器时，**对比损失**保留树视图与原图的必要信息，**条件去冗余损失**借助伪标签压低同类条件冗余；两项加权后的总损失直接作为OOD分数。",
       "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/adc8f8b701b008611b196e00b8e81dab-Paper-Conference.pdf"
+    },
+    {
+      "id": "p-f5f1c114f2dbfc3e5971",
+      "title": "UniHG: A Large-scale Universal Heterogeneous Graph Dataset and Benchmark for Representation Learning and Cross-Domain Transferring",
+      "venue_label": "NeurIPS",
+      "conference_year": 2025,
+      "topics": [
+        "TAG",
+        "OOD"
+      ],
+      "method": "面向大规模多属性异构文本图，UniHG将实体描述及关联描述重组为统一句式，并用CLIP文本编码器把节点与边投到共享语义空间。**HGD**先在CPU上以关系感知邻接张量执行无参数的多跳**AFP**，再由MLP编码各跳表示。**图无关特征映射**通过逐跳对角注意力和残差汇聚传播特征，以二元交叉熵学习多标签节点分布；预训练嵌入经文本检索后作为自监督信号注入跨域推荐。",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/1568882ba1a50316e87852542523739c-Paper-Datasets_and_Benchmarks_Track.pdf"
     },
     {
       "id": "p-f52ad53c43570f34d180",
@@ -568,6 +1079,29 @@
       "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/e92e6d20f7b5db5c2a1b23964d170fe2-Paper-Conference.pdf"
     },
     {
+      "id": "p-dcc1643255ba639d9481",
+      "title": "One for All: Universal Topological Primitive Transfer for Graph Structure Learning",
+      "venue_label": "NeurIPS",
+      "conference_year": 2025,
+      "topics": [
+        "TAG",
+        "OOD"
+      ],
+      "method": "**G²SN-Transfer**面向源图到不同领域目标图的结构知识适应。统计节点两跳内拓扑基元，经字典生成节点文本注释，并用共享词袋编码文本与基元分数。**G²SN**让双流输入共同控制状态空间模型的选择过程，以均方误差重建文本特征完成预训练。迁移时，**AdaCross-Transfer**按基元分布加权，将结构表示与目标图GNN特征交叉注意力融合，再以单一下游任务损失训练预测器。",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/235c66f525a8db97f7181a944938cf6e-Paper-Conference.pdf"
+    },
+    {
+      "id": "p-d80fd5269f535491f342",
+      "title": "One Prompt Fits All: Universal Graph Adaptation for Pretrained Models",
+      "venue_label": "NeurIPS",
+      "conference_year": 2025,
+      "topics": [
+        "OOD"
+      ],
+      "method": "针对预训练与下游图跨域、同配性转异配性造成的结构分布偏移，**UniPrompt**在少样本节点分类中冻结图编码器。它按节点特征余弦相似度构造**kNN拓扑提示**，以可学习边权门控剪枝或增强消息传递。随后用**自举式拓扑融合**逐轮加权原邻接与提示邻接，将所得图送入编码器；仅以标注节点的交叉熵联合优化提示参数和轻量分类头，使前者对齐下游输入、后者适配标签。",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/7b7d7985f62284060d65f532ed2ea5fa-Paper-Conference.pdf"
+    },
+    {
       "id": "p-d78024cd7e223d95d40d",
       "title": "ReMindRAG: Low-Cost LLM-Guided Knowledge Graph Traversal for Efficient RAG",
       "venue_label": "NeurIPS",
@@ -612,6 +1146,28 @@
       "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/4c5722bad9759216474df8fc46c97af2-Paper-Conference.pdf"
     },
     {
+      "id": "p-b4bda12405bbbaf0f4c8",
+      "title": "On Transferring Transferability: Towards a Theory for Size Generalization",
+      "venue_label": "NeurIPS",
+      "conference_year": 2025,
+      "topics": [
+        "OOD"
+      ],
+      "method": "针对小规模训练、较大图测试的尺寸分布偏移，论文以复制嵌入把不同节点数的图信号识别为同一步图极限，并用割距离或算子范数比较。**一致序列框架**要求各尺寸映射兼容且在极限空间连续，从而控制跨尺寸输出差异并导出含采样偏移项的泛化界。进一步构造**Continuous GGNN**：保留复制兼容、算子范数有界的等变线性基，连接消息传递式非线性，使模型对算子二范数局部Lipschitz并对割距离连续，用于大图预测。",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/60b393761eea35bf491687c46e4f1a5a-Paper-Conference.pdf"
+    },
+    {
+      "id": "p-b3331332ede554f332ed",
+      "title": "GraphKeeper: Graph Domain-Incremental Learning via Knowledge Disentanglement and Preservation",
+      "venue_label": "NeurIPS",
+      "conference_year": 2025,
+      "topics": [
+        "OOD"
+      ],
+      "method": "针对结构与特征语义随增量图域变化、旧域不可访问时的遗忘，**GraphKeeper**先以SVD统一特征维度，并在冻结预训练GNN上为每个域配置独立LoRA。**域内外解耦**用类别对比约束压紧同类、分离异类，并将当前域推离旧域聚类原型。**无偏知识保持**递归更新岭回归闭式分类器；测试时经随机高维映射匹配最近域原型，选择对应PEFT编码并预测节点标签。",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/01d78b294d80491fecddea897cf03642-Paper-Conference.pdf"
+    },
+    {
       "id": "p-a2feca2ddaa692215f0a",
       "title": "IA-GGAD: Zero-shot Generalist Graph Anomaly Detection via Invariant and Affinity Learning",
       "venue_label": "NeurIPS",
@@ -643,6 +1199,17 @@
       ],
       "method": "针对结构、特征、标签及跨图域变化下，节点嵌入范数扰动使高范数OOD节点获得低能量的问题，**GeoEnergy**重构能量式图OOD检测。GNN先由节点特征与邻接关系消息传递得到表示，再以**超球面权重归一化**将类别权重投影到单位球面，保留特征范数并用缩放因子分离角度相似性与幅值。训练时以该角度logit替代标准内积并沿用分类目标；推理时计算**角度能量分数**，以低能量识别ID、高能量识别OOD，且无需改动图编码器。",
       "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/8bd9f3ae50e9e1230e483dda4873e710-Paper-Conference.pdf"
+    },
+    {
+      "id": "p-99d2e9947d79f76a8c4d",
+      "title": "MiNT: Multi-Network Transfer Benchmark for Temporal Graph Learning",
+      "venue_label": "NeurIPS",
+      "conference_year": 2025,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向训练图与未见同域或跨域动态图的分布变化，**MiNT**学习可迁移的图级时序表示，预测未来网络增长或收缩。它将各图组织为按时间排列的快照，TGNN结合当前快照和历史隐状态逐步编码。训练以**顺序打乱**改变每轮网络次序，并用**上下文切换**在切换网络时重置历史嵌入，防止状态串扰。解码器汇聚节点表示和图级度特征进行二分类；推理时冻结参数，以新历史状态前向处理未见图并零样本预测。",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/c5548168cb7324f714365a971dfe76d1-Paper-Datasets_and_Benchmarks_Track.pdf"
     },
     {
       "id": "p-90d20a09f64cc2dc21fc",
@@ -689,6 +1256,29 @@
       "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/ab062c6281873221743383f9619e07d2-Paper-Conference.pdf"
     },
     {
+      "id": "p-70a68572149c919eac9d",
+      "title": "Refining Norms: A Post-hoc Framework for OOD Detection in Graph Neural Networks",
+      "venue_label": "NeurIPS",
+      "conference_year": 2025,
+      "topics": [
+        "OOD"
+      ],
+      "method": "针对预训练GNN在节点级与图级分布外输入上的检测，**RAGNOR**以冻结模型生成的节点嵌入及其L2范数为输入，无需重训。它先用训练集ID统计量执行**全局Z分数归一化**，再对一跳、可选二跳邻域的归一化范数取中位数并加权融合，形成稳健局部参照。节点分数取自身归一化范数与参照之差的绝对值，以阈值判别OOD；图级则对节点分数取最大值或均值，且可按差异缩放分类logit以抑制过置信。",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/39fac857b4467e3ef4f358186bb07d81-Paper-Conference.pdf"
+    },
+    {
+      "id": "p-6f953089b578c1926f85",
+      "title": "GRAVER: Generative Graph Vocabularies for Robust Graph Foundation Models Fine-tuning",
+      "venue_label": "NeurIPS",
+      "conference_year": 2025,
+      "topics": [
+        "TAG",
+        "OOD"
+      ],
+      "method": "面向多域预训练到未见目标域的结构与属性偏移，**GRAVER**将节点原始文本和类描述编码后与原特征拼接对齐，再以软路由把ego图分解为因子子图。**图元专家**按类联合估计结构、特征graphon并采样图元；**MoE-CoE**依据目标支持样本选择源域并组合类级图元，叠加到最大度节点。预训练结合对比链接预测与通道互信息约束；微调冻结编码器，优化图提示和路由不确定性，以查询到类原型的相似度完成节点或图分类。",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/185969291540b3cd86e70c51e8af5d08-Paper-Conference.pdf"
+    },
+    {
       "id": "p-6db79483487ce0cd0dc0",
       "title": "Graph-KV: Breaking Sequence via Injecting Structural Biases into Large Language Models",
       "venue_label": "NeurIPS",
@@ -700,6 +1290,17 @@
       "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/62caaa619dfa26bbc6eb7a0c1b8026f1-Paper-Conference.pdf"
     },
     {
+      "id": "p-6a28bfe363e3ddad0856",
+      "title": "ExGra-Med: Extended Context Graph Alignment for Medical Vision-Language Models",
+      "venue_label": "NeurIPS",
+      "conference_year": 2025,
+      "topics": [
+        "TAG"
+      ],
+      "method": "针对少量医疗指令数据下的视觉文本对齐，**EXGRA-MED**将图像、原始回答和语义一致的扩展回答分别建图。ViT与投影器编码图像，LLM编码两类文本；池化后以k近邻连边，并用消息传递更新节点。**重心图对齐**按已知三元组构造共享重心，将三图分别映射到它，同时匹配节点特征与边结构。训练用预测匹配和真实对应间的汉明损失约束表示，以**IMLE黑盒梯度**穿过离散求解器，并与自回归损失联合优化用于医疗问答。",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/9df0a10002a16365d03792ee5098376d-Paper-Conference.pdf"
+    },
+    {
       "id": "p-61c839add104aefe9bad",
       "title": "Dynamic Bundling with Large Language Models for Zero-Shot Inference on Text-Attributed Graphs",
       "venue_label": "NeurIPS",
@@ -709,6 +1310,29 @@
       ],
       "method": "该文解决文本属性图零样本节点分类中LLM难利用拓扑且单节点伪标签噪声大的问题。**DENSE**先编码节点文本，并按拓扑近邻或语义近邻组成文本束，查询LLM获得多数类别束标签。GNN联合节点表示与边结构，以**束级熵监督**和**排序监督**拟合束标签；训练中通过**动态束精炼**逐次剔除对该类别置信度最低的节点，最终输出各节点类别。",
       "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/e4343147340c9d65f4c780451eb066f9-Paper-Conference.pdf"
+    },
+    {
+      "id": "p-5f8df2e58005b77bc3f4",
+      "title": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+      "venue_label": "NeurIPS",
+      "conference_year": 2025,
+      "topics": [
+        "TAG",
+        "OOD"
+      ],
+      "method": "面向未见领域的图增强多跳检索，**GFM-RAG**从文档抽取三元组并建立实体—文档倒排索引。查询和关系由同一句向量模型编码，**查询依赖GNN**从查询实体沿图多层传递，输出实体相关分数。先以掩码实体进行图谱补全预训练，再用问题和支持文档实体微调，联合BCE与排序损失。推理时按逆文档频率汇总高分实体对应文档，取前K篇供LLM生成答案，无需在未见数据集上再训练。",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/33ca0b1102b54c191a9a45a05adafaf4-Paper-Conference.pdf"
+    },
+    {
+      "id": "p-5cbc0a856588136c766c",
+      "title": "RoFt-Mol: Benchmarking Robust Fine-tuning with Molecular Graph Foundation Models",
+      "venue_label": "NeurIPS",
+      "conference_year": 2025,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向分子图基础模型在支架结构与分子尺寸偏移下的性质预测，先以预训练GNN编码分子图，再在下游标注上全量微调编码器与预测头。**DWiSE-FT**对每个编码层分别设置混合系数，将预训练权重与全量微调权重逐层线性插值。各层系数通过验证损失梯度自动优化，在无需为不同系数重复微调的后处理中生成插值模型，并由原预测头完成分类或回归；随机、支架及尺寸划分共同检验其分布内外适应性。",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/013acf7d59f4333131fc8581e86148b1-Paper-Datasets_and_Benchmarks_Track.pdf"
     },
     {
       "id": "p-5012df836f8781e79188",
@@ -800,6 +1424,17 @@
       "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/55a8634fed896037dbbe3acf38b342e9-Paper-Conference.pdf"
     },
     {
+      "id": "p-16f9961d37056843919b",
+      "title": "Equilibrium Policy Generalization: A Reinforcement Learning Framework for Cross-Graph Zero-Shot Generalization in Pursuit-Evasion Games",
+      "venue_label": "NeurIPS",
+      "conference_year": 2025,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向追逃博弈在训练图与未见图结构变化下的零样本策略迁移，**EPG**在多种图上联合训练追捕者或逃逸者。节点以到各智能体及出口的归一化**最短路距离特征**表示，经掩码自注意力、解码器和指针网络按序生成多智能体联合动作。训练以单图均衡策略构造对手和参考策略，在SAC策略损失中加入**KL引导**，并用交互转移学习价值网络；测试时仅重算距离即可在新图执行。",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/45a30141c6719e9cfedfb51f1c665a37-Paper-Conference.pdf"
+    },
+    {
       "id": "p-1578730725d3aa26ce6d",
       "title": "Equivariance Everywhere All At Once: A Recipe for Graph Foundation Models",
       "venue_label": "NeurIPS",
@@ -811,6 +1446,17 @@
       "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/2b89783b68cdcfa7c8d7b08c09f47b2a-Paper-Conference.pdf"
     },
     {
+      "id": "p-14bb95332f1abeb90967",
+      "title": "Enhanced Expert Merging for Mixture-of-Experts in Graph Foundation Models",
+      "venue_label": "NeurIPS",
+      "conference_year": 2025,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向跨数据集零样本图迁移中的结构与特征异质性，方法以SVD统一邻接与节点特征维度，经非参数消息传递形成节点表示，再由路由器选取top-k专家。**KDEM**将参数融合专家作为学生、输出集成作为教师，周期性以MSE蒸馏并联合边三元组自监督损失训练。**PPEM**则周期性用EMA把所选专家推向加权平均，同时保留未选专家差异；推理时仅运行融合专家完成链接预测或节点分类。",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/201e1777dfabe595d766d5222f20f2dd-Paper-Conference.pdf"
+    },
+    {
       "id": "p-1303e8ab5811dd1c202d",
       "title": "Cross-Domain Graph Data Scaling: A Showcase with Diffusion Models",
       "venue_label": "NeurIPS",
@@ -820,6 +1466,18 @@
       ],
       "method": "面向跨域图预训练与下游数据在结构分布和特征空间上的差异，**UniAug**仅学习可跨域共享的拓扑模式，规避异构或缺失节点特征。其以节点度、时间步和聚类伪标签为条件，用图Transformer与链路预测器构成**自条件离散扩散模型**，通过变分下界恢复邻接结构。下游冻结扩散模型，训练**NOS引导头**注入节点、边或图级目标，经朗之万引导生成新结构并保留原节点特征，再交给任务专用GNN完成预测。",
       "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/b2fa07e58da29247ddea5a12f472bb0e-Paper-Conference.pdf"
+    },
+    {
+      "id": "p-05c1c71cf82a6769d84e",
+      "title": "Towards Graph Foundation Models: Training on Knowledge Graphs Enables Transferability to General Graphs",
+      "venue_label": "NeurIPS",
+      "conference_year": 2025,
+      "topics": [
+        "TAG",
+        "OOD"
+      ],
+      "method": "面向从知识图谱预训练后零样本迁移到未见领域及节点、边、图级任务的分布变化，**SCR**把节点与图分类改写为含标签节点、图节点及类型边的知识图谱推理。文本描述经BERT编码，其他节点特征经SVD统一维度；**SCMP**以语义近邻增强可区分初始化，用冻结共享CMP传播全局语义，再与查询条件结构表示融合。关系图先生成条件关系表示，三元组经MLP打分，以正负样本交叉熵预训练；推理时转换目标图后直接预测标签，无需微调。",
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/de04896f011beff76c91e094f72727f4-Paper-Conference.pdf"
     },
     {
       "id": "p-f9624b5a21858314eb6a",
@@ -844,6 +1502,18 @@
       "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/23fcc63005ac1a6e460ec4e209d17607-Paper-Conference.pdf"
     },
     {
+      "id": "p-d9e2fd697473029086c6",
+      "title": "G-reasoner: Foundation Models for Unified Reasoning over Graph-structured Knowledge",
+      "venue_label": "ICLR",
+      "conference_year": 2026,
+      "topics": [
+        "TAG",
+        "OOD"
+      ],
+      "method": "针对异构文本图检索推理及跨结构、跨领域迁移，**G-reasoner**用**QuadGraph**统一属性、实体、文档、社区四层节点与跨层关系。文本编码器将节点、关系和查询映射到同一空间，查询依赖GNN通过DistMult消息传递融合语义与拓扑，由类型专属预测器输出相关度。训练联合相关节点似然与教师伪标签的**KL蒸馏**，并在多域、多构图数据上学习；推理时无需微调，按类型选Top-k节点组成提示供LLM生成答案。",
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/67e2da8af2476c7441c881fc253042a6-Paper-Conference.pdf"
+    },
+    {
       "id": "p-ce02286a3917f37e3022",
       "title": "ConRep4CO: Contrastive Representation Learning of Combinatorial Optimization Instances across Types",
       "venue_label": "ICLR",
@@ -866,6 +1536,17 @@
       "pdf_url": "https://arxiv.org/pdf/2511.20290"
     },
     {
+      "id": "p-bbe785f60d6be85c18d2",
+      "title": "Flock: A Knowledge Graph Foundation Model via Learning on Random Walks",
+      "venue_label": "ICLR",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向训练图外的新知识图谱及未见实体、关系的零样本链接预测，**FLOCK**以概率节点—关系等变性替代确定性等变约束。它按查询采样非回溯随机游走，并用**节点—关系匿名化**将访问轨迹、方向、查询标记与当前状态编码为图无关序列。双向GRU联合生成实体和关系更新提议，**加权共识协议**按置信度汇聚回原图并迭代更新。模型以正负事实的负对数似然训练，推理时集成多次随机预测完成实体或关系排序。",
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/3ddbd473456a57e3cafb1ee51ddf8ff6-Paper-Conference.pdf"
+    },
+    {
       "id": "p-adf40d40a4e2f556809e",
       "title": "TRIDENT: Cross-Domain Trajectory Spatio-Temporal Representation via Distance-Preserving Triplet Learning",
       "venue_label": "ICLR",
@@ -886,6 +1567,17 @@
       ],
       "method": "面向训练与测试药物分布变化下的DDI预测，**I2Mole**将两分子原子两两连边成合并图，以注意力加权并截断弱关系边，完成分子内外消息传递。随后用**图信息瓶颈**按可学习替换概率注入噪声，保留标签相关核心子图并分离非核心环境。再以**环境码本**量化环境子图，将核心表示与多个环境向量拼接，通过跨环境加权分类损失联合预测、压缩和码本目标，学习分布不变表示用于未知药物及跨数据域预测。",
       "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/03e04426e80332d1d99f023aa493df04-Paper-Conference.pdf"
+    },
+    {
+      "id": "p-a598f1b597a5d7281d22",
+      "title": "Learning and Editing Universal Graph Prompt Tuning via Reinforcement Learning",
+      "venue_label": "KDD",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向分子骨架划分导致的训练测试结构偏移，**LEAP**冻结预训练图模型，并为所有节点加入由基向量注意聚合生成的通用特征提示。**H-PPO**以提示图的节点表征为状态，由离散演员选择节点、连续演员生成受限编辑向量，逐步修正其提示。策略奖励结合下游损失下降与**编辑收敛率**，评论家估计累计回报；投影头、基提示和线性映射按标签损失联合更新，最终提示图用于图级或节点级预测。",
+      "pdf_url": "https://arxiv.org/pdf/2512.08763"
     },
     {
       "id": "p-a4b2aceb0249c37f86f2",
@@ -930,6 +1622,18 @@
       ],
       "method": "面向源图训练后直接迁移到属性与拓扑分布变化的未见图异常检测，**DR-GGAD**以双残差中心缓解正常与异常表示重叠。它先统一节点特征维度，经共享轻量图卷积提取多层表示，并拼接相对首层的差分形成节点残差。**超残差中心**聚类正常残差，以拉近正常、间隔推远异常；**亲和残差**约束邻域残差方向一致。训练联合两项损失，推理时冻结参数，融合节点到中心的距离与邻域偏离得分，输出目标图异常分数。",
       "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/7538e7a7a589a267f49527fe6fbc640e-Paper-Conference.pdf"
+    },
+    {
+      "id": "p-80569236f03af362c50d",
+      "title": "HGNet: Scalable Foundation Model for Automated Knowledge Graph Generation from Scientific Literature",
+      "venue_label": "ICLR",
+      "conference_year": 2026,
+      "topics": [
+        "TAG",
+        "OOD"
+      ],
+      "method": "面向跨科学领域的文本知识图谱构建，方法以共享SciBERT编码文档与实体，并用**OSD**分离相邻词嵌入变化中的正交语义转折，结合**多尺度TCQK**卷积查询键识别长实体。**HGNet**预测实体对的父子、同级与无边概率，将其作为三通道消息传递的软边权，得到结构感知表示。训练联合关系分类、**DHL**的无环与捷径惩罚及CAF抽象轴排序约束，最终输出细粒度关系三元组，并用于未见学科的零样本迁移。",
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/1557cc3e1a67f985dbdb162db9963dd0-Paper-Conference.pdf"
     },
     {
       "id": "p-7cf6e08b1283fba154a8",
@@ -1110,6 +1814,17 @@
       "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/d7d3163a0418121b5e2a437d7599f22a-Paper-Conference.pdf"
     },
     {
+      "id": "p-24dabfbbdf4c35521b98",
+      "title": "SAGA: Structural Aggregation Guided Alignment with Dynamic View and Neighborhood Order Selection for Multiview Graph Domain Adaptation",
+      "venue_label": "ICLR",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向有标注多视图源图到无标注目标图的跨域节点分类，**SAGA**处理关系视图及不同邻域阶数上的结构偏移。它逐视图传播节点特征并注入原始特征作为传送向量，再以共享MLP编码器和解码器生成表示并执行重构。**SAD**在嵌入空间衡量各源目标视图—跳数组合的结构差异，逐轮选取最小差异的主导组合并按差异加权。模型以主导表示实施域内跨视图对齐和源目标对比对齐，联合重构、源域交叉熵及目标熵目标训练，最终预测目标节点标签。",
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/9a62e7b62af323594450ba36bc01e7d1-Paper-Conference.pdf"
+    },
+    {
       "id": "p-2104d7da9b8b9dd1c629",
       "title": "A General Spatio-Temporal Backbone with Scalable Contextual Pattern Bank for Urban Continual Forecasting",
       "venue_label": "ICLR",
@@ -1196,6 +1911,72 @@
       ],
       "method": "面向源域有标注、目标域无标注且节点特征、边属性和结构持续偏移的动态边异常检测，**DP-DGAD**从时序自我图经GNN与Transformer编码演化模式。正常与异常**动态原型**由对齐损失学习并存入缓冲区，按跨域相似性和类间差异保留共享原型、吸收域特定原型。评分器以原型分布的均值和协方差计算异常概率，并联合交叉熵训练；目标域选取低熵预测作为伪标签，仅用原型对齐更新后完成检测。",
       "pdf_url": "https://arxiv.org/pdf/2508.00664"
+    },
+    {
+      "id": "p-c56ddd8d4c2eae415a6f",
+      "title": "VecFormer: Towards Efficient and Generalizable Graph Transformer with Graph Token Attention",
+      "venue_label": "WWW",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "针对节点特征伪相关与子图规模、密度和度数变化造成的图节点分类分布偏移，**VecFormer**以GNN编码属性图。第一阶段用**SoftVQ双码本**软量化节点表示，并通过节点特征、邻接结构及图表示重构学习特征码和结构码。第二阶段将两类码融合为图令牌列表，以节点图令牌为查询执行**图令牌交叉注意力**并残差保留局部信息，最终用分类损失训练，在未见偏移测试集上预测节点类别。",
+      "pdf_url": "https://arxiv.org/pdf/2602.19622"
+    },
+    {
+      "id": "p-3c5783408e87395d0fa0",
+      "title": "Detecting Miscitation on the Scholarly Web through LLM-Augmented Text-Rich Graph Learning",
+      "venue_label": "WWW",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向文本丰富引文图的误引边分类，**LAGMiD**编码论文节点内容与引文上下文，并从目标引文沿引用边抽取经语义筛选的多跳证据链。**证据链推理**逐跳核验引文语境与被引内容，形成中间推理状态；分层蒸馏以InfoNCE对齐各跳LLM状态和对应层GNN边表示。协同训练按预测熵选取不确定边，仅以高置信且标签一致的LLM结果蒸馏，并联合二元交叉熵训练GNN完成误引判别。",
+      "pdf_url": "https://arxiv.org/pdf/2603.12290"
+    },
+    {
+      "id": "p-38b8e11c1f00e7b5618e",
+      "title": "VL-KGE: Vision–Language Models Meet Knowledge Graph Embeddings",
+      "venue_label": "WWW",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "针对实体模态不齐且需保留关系语义的多模态知识图谱补全，**VL-KGE**统一建模图结构、图像与实体文本。预训练视觉语言编码器生成对齐的图文特征，线性投影后与可训练结构嵌入按现有模态平均、拼接或加权融合。融合表示接入TransE、DistMult等KGE评分器；未见实体屏蔽其结构嵌入，仅依赖预训练特征完成归纳预测。模型以随机破坏头尾所得负三元组和正三元组优化**逻辑损失**，用于链接预测与语义检索。",
+      "pdf_url": "https://arxiv.org/pdf/2603.02435"
+    },
+    {
+      "id": "p-283f43e7f52a0f20cef3",
+      "title": "LEDA: Latent Semantic Distribution Alignment for Multi-domain Graph Pre-training",
+      "venue_label": "WWW",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向节点特征维度和语义各异、测试图来自未见域的跨域预训练，**LEDA**先以SVD初始化投影基，再由共享MLP构成的**DPU**把各域特征映射至统一空间。重构损失与正交约束共同保留原始信息并区分投影方向，随后共享GCN融合邻接结构。**LDA**以双GCN估计各域高斯后验，经重参数采样和共享解码器重构特征，并用KL散度将各后验对齐共同先验；冻结编码器后，以线性分类器或类别原型完成跨域节点及图分类。",
+      "pdf_url": "https://arxiv.org/pdf/2602.22660"
+    },
+    {
+      "id": "p-1e399697427b59ba1198",
+      "title": "Unveiling the Vulnerability of Graph-LLMs: An Interpretable Multi-Dimensional Adversarial Attack on TAGs",
+      "venue_label": "WWW",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向黑盒条件下文本属性图Graph-LLM同时受语义与拓扑操纵的漏洞，**IMDGA**联合攻击节点文本和消息传递边。**Topological SHAP**通过遮蔽词并汇总目标节点及邻居预测变化，筛出关键词。**语义扰动模块**用MLM生成上下文候选，再按邻域置信差与标签翻转评分选择替词。若文本攻击未翻转标签，**边剪枝模块**融合预测差异、特征影响和节点度定位脆弱子图，以近似Shapley归因删除高贡献边，实施结构攻击。",
+      "pdf_url": "https://arxiv.org/pdf/2510.12233"
+    },
+    {
+      "id": "p-01923a1f0c78d11f2221",
+      "title": "Toward Graph-Tokenizing Large Language Models with Reconstructive Graph Instruction Tuning",
+      "venue_label": "WWW",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向仅靠文本监督导致图文对齐隐式、图上下文利用不足的文本属性图预测，**RGLM**将中心节点子图按邻居层级序列化，并投影为LLM前缀图令牌。它对同一节点的隐藏图令牌均值聚合，再从该表示重建图信息。**RGLM-Decoder**以MSE和BCE恢复文本编码的节点特征及邻接结构；另两种变体用余弦回归或条件去噪重建预训练GNN的潜在节点表示。训练联合自回归文本损失与图重建损失，推理时由LLM完成节点分类或链接预测。",
+      "pdf_url": "https://arxiv.org/pdf/2603.01385"
     },
     {
       "id": "p-fad635b196434c16126e",
@@ -1417,6 +2198,17 @@
       ],
       "method": "面向多模态情感分析中模态内结构缺失与跨模态语义错位，**SSU**以依存句法构建词节点文本图，并用文本引导注意及自适应稀疏化生成音频、视觉图。全局文本池化形成**语义锚点**，注入各图并经共享GAT与融合GAT传播，实现结构桥接和跨模态对齐。训练联合回归、监督分类、结构扰动对比与融合表示对齐损失，所得表示用于情感分类和回归。",
       "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/39766/43727"
+    },
+    {
+      "id": "p-88c8bb6501c40fe32a1b",
+      "title": "GraphTextack: A Realistic Black-Box Node Injection Attack on LLM-Enhanced GNNs",
+      "venue_label": "AAAI",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "**GraphTextack**针对文本属性图的黑盒投毒，仅注入节点，不修改原有节点与边。候选联合编码连接与类别采样策略，从对应类别的经验分布抽取文本特征，目标模型通过语言编码与图消息传递进行分类。**多目标适应度**结合两跳邻域预测置信度变化与注入节点的PageRank影响力，引导精英选择、连接交叉和特征变异。逐轮选出最佳候选并注入图中，在训练前污染数据，以降低未标注节点的分类性能。",
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/39604/43565"
     },
     {
       "id": "p-870be27f231c08e7dce7",
@@ -1731,6 +2523,28 @@
       "pdf_url": "https://arxiv.org/pdf/2510.22289"
     },
     {
+      "id": "p-a48c13f90c1ca9aabb5e",
+      "title": "Prompt Tuning without Labeled Samples for Zero-Shot Node Classification in Text-Attributed Graphs",
+      "venue_label": "WSDM",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向无标注样本的文本属性图零样本节点分类，**ZPT**先以GCN和Transformer编码节点结构与文本，并通过节点—文本及邻居摘要的对比目标对齐表示。**UBCG**采用条件变分自编码器，以文本表示为类别代理生成图表示，并由图表示反向生成文本表示，以重构项和KL散度学习双模态分布。下游仅输入类别名，采样潜变量依次合成图与文本嵌入，用作样本优化**连续提示**；推理时融合测试节点两种嵌入与类别权重的余弦概率完成分类。",
+      "pdf_url": "https://arxiv.org/pdf/2601.03793"
+    },
+    {
+      "id": "p-ec485d1fdfc3fef693f8",
+      "title": "A Brain Graph Foundation Model: Pre-Training and Prompt-Tuning across Broad Atlases and Disorders",
+      "venue_label": "ICLR",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向跨站点、图谱分区及未见疾病造成的脑图分布变化，**BrainGFM**从ROI时间序列相关性构图，以相关谱为节点特征并加入RWSE结构编码。共享GraphTransformer通过**GCL与GMAE**联合学习扰动不变的表示和掩码节点、边重建能力。迁移时冻结骨干，以疾病—图谱任务的内外循环元学习图提示；零样本时再将BioClinicalBERT编码的疾病和图谱描述作为语言令牌，与ROI令牌拼接完成分类。",
+      "pdf_url": "https://arxiv.org/pdf/2506.02044"
+    },
+    {
       "id": "p-dbf250440f3ea6dc0c8e",
       "title": "HEIST: A Graph Foundation Model for Spatial Transcriptomics and Proteomics Data",
       "venue_label": "ICLR",
@@ -1830,6 +2644,50 @@
       "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/An_Hg-I2P_Bridging_Modalities_for_Generalizable_Image-to-Point-Cloud_Registration_via_Heterogeneous_Graphs_CVPR_2026_paper.pdf"
     },
     {
+      "id": "p-ee18981eb303591cabf8",
+      "title": "Cognition on Graph: Navigating Massive Knowledge Space via Cognitive Cycles and Bidirectional Graph-Text Synergy",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向全球混合知识库的多跳问答，**CoG**由问题生成子查询与锚点实体，在知识图谱和实体对应文档间迭代构造证据链。**双源探索**先执行实体链接、关系筛选与事实剪枝，再经页面概览、章节选择及文本块和表格细读提取语义证据。**图文综合**蒸馏异构事实，并将文本发现的实体反馈为图探索锚点。**反思式重规划**依据笔记、候选池和交互历史决定继续、回退或改写策略，证据充分后汇总记忆生成答案。",
+      "pdf_url": "https://arxiv.org/pdf/2609.12791"
+    },
+    {
+      "id": "p-e0fa09ea0ee9bfe18feb",
+      "title": "CORTEX: High-Quality Cross-Domain Organization of Web-Scale Corpora through Ontological Corpus Graph",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向网页语料缺乏层级组织与跨域检索的问题，**CORTEX**将精炼文档、概念链本体及其链接构成三层异构OCG。以多教师蒸馏模型筛选文档，LLM随语料演化层级概念链；编码文档与概念描述后按余弦相似度选链，再将抽取关键词链接到链。**TFS加权**融合典型性、链接置信度和链级逆文档频率，汇聚关键词权重以计算任意层级概念关联；倒排索引据此执行域内与跨域检索，并为跨域问答合成选择证据。",
+      "pdf_url": "https://arxiv.org/pdf/2606.30175"
+    },
+    {
+      "id": "p-dfb7f7d39768d380cb8e",
+      "title": "PGMem: Tightly Coupled Persona–Memory Graph for Lifelong Personalized Agents",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向长期对话中画像与事件记忆脱节、旧偏好干扰生成的问题，**PGMem**将原始话轮、情节摘要、短期状态和稳定特质组织为异构文本节点。它用来源边记录抽象溯源，并以支持、冲突、迁移三类**证据边**连接记忆与画像。查询时融合语义相似度和词汇重叠选取种子，再沿带符号证据路径扩展间接相关节点。最后用**有效性感知排序**结合支持/冲突路径计数与查询相关性，移除被替代信号，将定额证据交给语言模型生成个性化回复。",
+      "pdf_url": "https://arxiv.org/pdf/2608.01708"
+    },
+    {
+      "id": "p-d809a83dd8e57fe2283c",
+      "title": "PunGraph: Retrieval-Enhanced Phonetic-Semantic Graph Reasoning for Pun Understanding",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "PunGraph面向异形与同形双关理解，将词、发音关系及词典释义组织为**音义词汇图**。它融合Unisyn、IPA相似度与G2P扩展建立近音边，并以WordNet定义补充节点语义。对初始推理错误的样本，**图检索增强**按阈值触发：异形双关检索一跳近音及语义候选，同形双关提取候选词义。候选被格式化为选项交给LLM结合句境选择，限制生成空间并输出替代词或双重词义。",
+      "pdf_url": "https://arxiv.org/pdf/2609.16557"
+    },
+    {
       "id": "p-d495354eee8ff0748328",
       "title": "IEBGL:An Interpretability-Enhanced Brain Graph Learning Framework with LLM-Instructed Topology and Literature-Augmented Semantics",
       "venue_label": "CVPR",
@@ -1841,6 +2699,28 @@
       "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Duan_IEBGLAn_Interpretability-Enhanced_Brain_Graph_Learning_Framework_with_LLM-Instructed_Topology_and_CVPR_2026_paper.pdf"
     },
     {
+      "id": "p-cc74c1f7c96e75176390",
+      "title": "Graph2Counsel: Clinically Grounded Synthetic Counseling Dialogue Generation from Client Psychological Graphs",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "本文面向由自然语言心理过程节点及兴奋或抑制关系构成的文本属性图，生成临床扎根的多轮咨询对话。**Graph2Counsel**将CPG编码为过程—关系—过程边列表，并由同一图派生多样化客户档案。最终采用**引导式咨询**，把CPG、档案与从真实会谈抽取的咨询师策略共同输入LLM，以对话规范约束双方话语和渐进节奏。生成会话再拆成对话历史—咨询师回复样本，以**QLoRA**微调Llama3-8B用于咨询回复与评测。",
+      "pdf_url": "https://arxiv.org/pdf/2604.20382"
+    },
+    {
+      "id": "p-c161bc41b42a2c074263",
+      "title": "Athena: Vulnerability-Affected Library Identification via Knowledge Graph Completion",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "**Athena**面向漏洞影响库识别，将CVE、库、CWE、CPE与生态实体及五类关系构成安全知识图，把缺失影响关系转为尾实体预测；实体由标识符和自然语言描述联合表示。**对比式KGC**双编码头实体—关系查询与候选库，以对比学习在共享空间融合文本语义和图关系并召回候选。**多实例指令微调**再把邻域事实及适配器投影的KGC嵌入注入LLM，**先提升后填充**将判定正确的库前置，并以原排名补足多标签结果。",
+      "pdf_url": "https://arxiv.org/pdf/2609.01187"
+    },
+    {
       "id": "p-c011a81a8237e11df329",
       "title": "M^3KG-RAG: Multi-hop Multimodal Knowledge Graph-enhanced Retrieval-Augmented Generation",
       "venue_label": "CVPR",
@@ -1848,8 +2728,54 @@
       "topics": [
         "TAG"
       ],
-      "method": "面向音频、视频与文本查询中的多跳知识检索，**M3KG-RAG**先由多智能体改写多模态语料并抽取三元组，再为实体检索、筛选和细化文本描述，形成连接视听数据的多跳图。检索时按查询模态召回关联三元组，**GRASP**用视听定位分数剔除未出现实体，再由轻量LLM删除无助于回答的事实。最终将保留的关系与实体描述拼接进MLLM提示，生成有证据支撑的答案。",
+      "method": "面向音视频问答的跨模态检索失配，**M3KG-RAG**从文本、音频与视觉样本构建多跳多模态知识图。多智能体重写语境并抽取三元组，将实体规范化、补充经上下文筛选和自反检查的描述，再链接对应音视频。推理时，**模态内检索**由同模态近邻取得候选三元组，**GRASP**以视听定位分数过滤未出现实体，并让轻量LLM删除无助于回答的事实；保留的关系与实体描述随查询输入MLLM生成答案。",
       "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Park_M3KG-RAG_Multi-hop_Multimodal_Knowledge_Graph-enhanced_Retrieval-Augmented_Generation_CVPR_2026_paper.pdf"
+    },
+    {
+      "id": "p-bfa228e1d4e380f3f84a",
+      "title": "One Model, Many Graphs: Learning over Attributed Graphs across Heterogeneous Modalities with Vision-Language Models",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG",
+        "OOD"
+      ],
+      "method": "面向文本、图像及多模态属性图，并迁移到模态模式不同且无需微调的未见图，**OMG-VLM**以预训练VLM共享文本与视觉表示。**目标感知文本聚合**由中心文本生成查询，以跨注意力检索邻居词元；**图感知视觉适配器**先压缩各邻居图像，再由中心图像词元聚合。两类图上下文词元与任务指令拼接，联合优化适配器和VLM的自回归生成目标，用于节点分类与链接预测。",
+      "pdf_url": "https://arxiv.org/pdf/2607.19128"
+    },
+    {
+      "id": "p-b1ee18f26c8973abee4e",
+      "title": "ReGraP-LLaVA: Reasoning enabled Graph-based Personalized Large Language and Vision Assistant",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向个性化多模态问答中的关系推理，**ReGraP-LLaVA**联合图像、概念与属性节点、关系边及CoT问答。**软图提示**用GNN编码独热图，再经MLP投影至语言词嵌入空间，与问题和视觉令牌拼接；**硬图提示**将相连三元组转为关系描述，并扩展实体、关系推理令牌。训练以LLaVA标准语言损失预测CoT答案，使模型在识别个性化概念后，沿其属性与关系完成描述和问答。",
+      "pdf_url": "https://arxiv.org/pdf/2505.03654"
+    },
+    {
+      "id": "p-ac0a2854265a31ae52bb",
+      "title": "LLM as GNN: Graph Vocabulary Learning for Text-Attributed Graph Foundation Models",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG",
+        "OOD"
+      ],
+      "method": "针对文本属性图跨图、跨任务及未见数据集迁移，**PromptGFM**以节点文本为初始表示，并用一跳邻居描述承载局部结构。**提示式GNN**让LLM逐层执行邻居采样、聚合更新，以自然语言对比指令约束相邻节点接近，迭代生成兼具语义与高阶依赖的紧凑文本。模型将该文本分词为**语言图词汇**中的节点ID，嵌入任务模板后进行多指令自回归微调；生成式链路预测再用**前缀树约束解码**限定到真实候选节点。",
+      "pdf_url": "https://arxiv.org/pdf/2503.03313"
+    },
+    {
+      "id": "p-a7e5db09970753cc311a",
+      "title": "HiTeC: Hierarchical Contrastive Learning on Text-Attributed Hypergraph with Semantic-Aware Augmentation",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向节点带文本属性的超图，**HiTeC**以两阶段自监督框架融合文本语义与高阶结构。先由预训练语言模型编码节点文本，以一跳共超边邻居和其余节点构造**结构感知三元组损失**，获得拓扑增强表示。冻结文本编码器后，将领域、全局拓扑和邻居上下文拼接至原文，并按超边语义凝聚度丢弃关联，形成双视图交给HGNN传播。最终联合节点、超边及**ss-walk子图对比目标**预训练表示，用于节点分类与超边预测。",
+      "pdf_url": "https://arxiv.org/pdf/2508.03104"
     },
     {
       "id": "p-9542c8dba1e39f8066c0",
@@ -1885,6 +2811,50 @@
       "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Du_SPEGC_Continual_Test-Time_Adaptation_via_Semantic-Prompt-Enhanced_Graph_Clustering_for_Medical_CVPR_2026_paper.pdf"
     },
     {
+      "id": "p-881adc3de97a8c817875",
+      "title": "Not All or None: Dynamic Construction of Target-aware Memory Graph for Conversational Stance Detection",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向多轮对话中完整历史易引入无关噪声的立场检测，**TamGraph**以最终话语和目标为起点，沿回复链逐步回溯。它从候选历史轮次抽取目标相关原子命题，并归纳命题间支持、反对、质疑等关系，以命题为节点、关系为边动态更新记忆图。每次将结构化图序列化为提示交给LLM预测；**熵引导记忆更新**仅保留降低预测熵的轮次，并在熵低于阈值或历史耗尽时停止。最后使用最近一次保留图的预测输出支持、反对或中立标签。",
+      "pdf_url": "https://arxiv.org/pdf/2608.29066"
+    },
+    {
+      "id": "p-87cfe3a3ccbd2d4efe4e",
+      "title": "SAGE: Semantic Attribute Graphs for Multi-Entity Visual Retrieval",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向密集文档中多实体、多属性证据被单一向量稀释的问题，**SAGE**先以OCR切分文本与图像区域，并用冻结VLM为视觉区域生成语义描述。**层次实体—属性图**由冻结LLM聚合语义一致记录，叶节点融合组合裁剪、OCR文本和描述的多模态嵌入。查询经**两阶段检索**先找实体根节点再匹配属性，并由清单迭代补齐缺失证据；最终序列化子图与视觉裁剪，交给冻结VLM生成答案，全流程无需训练。",
+      "pdf_url": "https://arxiv.org/pdf/2609.04255"
+    },
+    {
+      "id": "p-83c13a842e13df490a83",
+      "title": "GSEM: Graph-based Self-Evolving Memory for Experience Augmented Clinical Reasoning",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向临床推理中经验适用边界与协作关系难建模的问题，**GSEM**将成功和失败轨迹提炼为带条件、策略、极性及质量分数的文本经验。**双层记忆图**用角色实体和决策流表示经验内部结构，以加权边连接经验。检索融合实体稀疏召回与语义稠密召回形成多种子，再按边权和节点质量引导LLM收集、探索、回溯或停止。任务反馈按检索排序分配信用，在线校准节点质量与边权，所得经验供LLM生成临床决策。",
+      "pdf_url": "https://arxiv.org/pdf/2603.22096"
+    },
+    {
+      "id": "p-80a0f89cebe0928e57bb",
+      "title": "H²Table: Hierarchical Hypergraph-Enhanced Large Language Models for Complex Table Reasoning",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向复杂层次表格问答，**H²Table**将含文本或数值的单元格建为节点、各级自然语言行列标题建为嵌套超边，并以RoBERTa初始化表示。**层次超图编码器**依次执行V2E、C2P、P2C、E2V消息传递，融合单元格、标题与跨层依赖。**查询式结构对齐**通过可学习查询交叉注意图表示，压缩出软结构提示，与序列化表格和问题共同送入经LoRA微调的LLM生成答案，以二元交叉熵端到端训练。",
+      "pdf_url": "https://arxiv.org/pdf/2609.01216"
+    },
+    {
       "id": "p-79164981d37013bdec58",
       "title": "CGU-Bayes: Causal Graph Uncertainty-Guided Bayesian Inference for Domain Generalization",
       "venue_label": "CVPR",
@@ -1894,6 +2864,17 @@
       ],
       "method": "面向训练域与未见测试域存在分布偏移、且样本有限或含噪时因果结构估计不稳的问题，**CGU-Bayes**先用**NF-iVAE**从图像提取可辨识潜变量。再以**DAG-GFlowNet**学习因果图后验，从采样图中选取因果马尔可夫毯特征，并分别训练稳健预测器。推理时计算单图认知不确定性，将其转为测试样本与各因果图的对齐权重，加权汇聚多图预测，以降低对单一偏置结构的依赖并完成未见域分类或回归。",
       "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yin_CGU-Bayes_Causal_Graph_Uncertainty-Guided_Bayesian_Inference_for_Domain_Generalization_CVPR_2026_paper.pdf"
+    },
+    {
+      "id": "p-720d188563b47bfdc730",
+      "title": "GraphLit: Learning Text-Enriched Dynamic Character Network Representations for Literary Study",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向长篇小说中角色关系与文本语境割裂的问题，**DHCN**按叙事块构建动态异构图，以角色、文本段为节点，并用共现关系和角色提及连接。角色别名提示与段落原文经同一文本编码器初始化，因果Transformer注入段内顺序，**HGT**沿两类边融合语义与社会结构。**GraphLit**遮蔽边和属性后联合重建，并加入全局角色链接预测与ListMLE块排序；注意力池化得到角色、块和书籍表示，供角色分类、引文归属等任务使用。",
+      "pdf_url": "https://arxiv.org/pdf/2605.28643"
     },
     {
       "id": "p-6c77ed691c7b65b43977",
@@ -1906,6 +2887,61 @@
       ],
       "method": "PCGR面向新操纵类型下的多模态虚假信息检测，将图文证据与可读概念组织为可扩展概率概念图。模型以CLIP编码图文、SBERT编码概念描述，并通过正负原型估计概念概率。**自动概念增长**从高损样本提议并筛选新概念，再融合语义相似、Soft-PMI与逻辑关系构图；**层级注意聚合**自顶向下传播软判断。训练联合真伪预测与**概念正交约束**，由根节点概率输出粗粒度及细粒度结果。",
       "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yang_Probabilistic_Concept_Graph_Reasoning_for_Multimodal_Misinformation_Detection_CVPR_2026_paper.pdf"
+    },
+    {
+      "id": "p-5db3121541abced06fb5",
+      "title": "HyperProve: Answer-Guided Hypergraph Expansion for Multi-Hop Question Answering",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向多跳问答中固定查询易丢失桥接证据的问题，**HyperProve**将语料段落拆成带实体参与者与来源的原子事实超边，并以同义实体、共享实体和同源文档建立转移图。系统分解问题并重写后续子查询，将已验证中间答案及支持超边作为结构前沿，再与新稠密种子合并。**查询偏置局部扩展**混合结构转移和事实文本相似度进行个性化排序；各跳答案均可得时整合，否则汇总证据交给阅读器生成答案。",
+      "pdf_url": "https://arxiv.org/pdf/2609.13768"
+    },
+    {
+      "id": "p-5c863f6928d5d412caa3",
+      "title": "MemDreamer: Decoupling Perception and Reasoning for Long Video Understanding via Agentic Hierarchical Graph Memory",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向长视频问答中的视觉令牌膨胀与线索割裂，**MemDreamer**将感知和推理解耦，把流式视频转成纯文本图记忆。它按语义边界切分宏事件，在实体与微事件间建立空间属性、主客体及时序因果边，并自底向上聚合为超级事件和视频根。推理模型通过**分层图记忆**的导航、语义与时间搜索及关系遍历工具，在观察—推理—行动循环中逐步定位证据。每轮仅压缩保留查询相关线索，汇入历史轨迹后生成最终答案。",
+      "pdf_url": "https://arxiv.org/pdf/2606.07512"
+    },
+    {
+      "id": "p-4fbefa9036bedc252353",
+      "title": "Time is Not a Label: Continuous Phase Rotation for Temporal Knowledge Graphs and Agentic Memory",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "**RoMem**以Temporal OpenIE将文本片段构成时序知识图，实体与片段为节点，自然语言关系事实为边。**语义速度门**把关系短语嵌入映射为波动率，控制复数图嵌入的**连续相位旋转**，使静态事实稳定、动态旧事实失配。冻结门控后，以三元组和时间对比损失学习目标图嵌入与时间频谱。检索融合文本稠密相似度、Personalised PageRank与时序图分数重排事实。",
+      "pdf_url": "https://arxiv.org/pdf/2604.11544"
+    },
+    {
+      "id": "p-48d8c0064ab05d204bb5",
+      "title": "Beyond Linearization: Attributed Table Graphs for Table Reasoning",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向表格问答与事实验证中线性化削弱行列绑定、答案位置敏感的问题，**TabGR**将表格构造成属性表图：行锚点与单元值为节点，列标题标注连接边，并以三元组显式承载结构。它从问题的精确匹配和LLM语义选择初始化锚点，按列迭代扩展相关子图；**QG-PPR**再沿同行或同列传播问题相关性，重排行间及行内证据。最终LLM在排序后三元组上执行**CoT**，同时生成答案、推理文本及可映射回图的证据路径，无需任务专用训练。",
+      "pdf_url": "https://arxiv.org/pdf/2601.08444"
+    },
+    {
+      "id": "p-419481916ba81676b3f5",
+      "title": "TDGNet: Hallucination Detection in Diffusion Language Models via Temporal Dynamic Graphs",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向扩散语言模型中事实性线索随去噪过程漂移、修正或持续的幻觉检测，**TDGNet**将各步词元建成时序动态图。节点取末层隐藏状态，边由多头平均注意力经阈值稀疏化，并以注意力强度作边属性；**MPNN-GRU**先聚合邻域，再更新每个词元的持久记忆。**时序注意力**汇聚各步记忆，词元表示经均值池化和二分类器输出响应级概率，也可直接用于词元级定位；模型以二元交叉熵端到端训练。",
+      "pdf_url": "https://arxiv.org/pdf/2602.08048"
     },
     {
       "id": "p-3d9ac70d25f10dc2c0d0",
@@ -1941,6 +2977,39 @@
       "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Jiang_Mamba_Learns_in_Context_Structure-Aware_Domain_Generalization_for_Multi-Task_Point_CVPR_2026_paper.pdf"
     },
     {
+      "id": "p-2a28797cacadf43dd381",
+      "title": "Graph-of-Skills: Dependency-Aware Structural Retrieval for Massive Agent Skills",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向大规模代理技能库中语义检索遗漏执行前置技能的问题，**GoS**将技能包规范化为含名称、能力摘要、I/O与执行入口的节点，并以依赖、工作流、语义和替代关系构建有向类型图。查询先经**语义-词法混合播种**形成种子分布，再以关系加权的**反向感知PPR**从命中的高层技能回溯解析、配置等前置技能。最终融合扩散分数与字段级查询证据重排，并在单技能及全局上下文预算内水合为含来源路径和执行说明的技能束，供代理直接执行。",
+      "pdf_url": "https://arxiv.org/pdf/2604.05333"
+    },
+    {
+      "id": "p-291afd2ff018d0114908",
+      "title": "GraphProfiler: Source-Linked Sensitive Attribute Inference via Personal Knowledge Graphs",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向长篇用户发帖中分散线索导致的敏感属性推断与溯源问题，**GraphProfiler**先将每条帖子设为带稳定来源标识的文本文件。它用定向抽取提示构建含文本单元、实体、关系、嵌入和来源映射的个人知识图，并按拓扑检测社区、生成主题报告。推理时以属性专属查询检索局部图上下文，模型输出属性值及所引图表记录；**来源解析器**再沿索引映射回原帖，形成可检查的记录与文本证据，用于属性预测和泄露审计。",
+      "pdf_url": "https://arxiv.org/pdf/2609.12448"
+    },
+    {
+      "id": "p-169576e74059723ce22d",
+      "title": "Import What You Need: Learning When and How to Augment EHR Graphs with External Knowledge",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向稀疏纵向EHR图，**ReTA**将医学概念文本蒸馏为定义与临床级联，经知识图谱落地和聚类形成语义向量及紧凑子图模板。每次就诊结合当前编码与历史状态检索候选，策略在**Soft Import**、**Hard Import**和跳过间择一，分别偏移节点特征或嫁接子图。语义自注意力与图注意力结构通道经门控融合；配对奖励鼓励相对基础图的预测损失下降并惩罚新增节点成本，两阶段训练后执行临床预测。",
+      "pdf_url": "https://arxiv.org/pdf/2609.01839"
+    },
+    {
       "id": "p-11fa420856a6bf51da7e",
       "title": "FedSST: Rethinking Fair Federated Graph Learning under Structural Shift",
       "venue_label": "CVPR",
@@ -1950,6 +3019,39 @@
       ],
       "method": "面向跨数据集与跨领域联邦图分类中的拓扑分布差异，**FedSST**用固定CSBM探针图输入各客户端GIN，以嵌入相似图的拉普拉斯平滑度形成结构画像，并映射为偏好中间画像的公平权重。**SLTA**据权重分配差异化本地训练轮数，避免一致客户端过拟合和偏离客户端发散。**SSCA**在客户端融合全局与本地模型，再由服务器加权聚合，以兼顾共享结构模式、个性知识和跨域泛化公平。",
       "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhao_FedSST_Rethinking_Fair_Federated_Graph_Learning_under_Structural_Shift_CVPR_2026_paper.pdf"
+    },
+    {
+      "id": "p-0107c656fce3529d8a1a",
+      "title": "HyperGVL: Benchmarking and Improving Large Vision-Language Models in Hypergraph Understanding and Reasoning",
+      "venue_label": "EMNLP",
+      "conference_year": 2026,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向超图问答到未见节点分类任务的分布迁移，**WiseHyGR**学习按问题选择合适的文本与视觉结构表示。它先依据每个元问题在35种表示组合上的最佳表现构建**PRM**标签，再将HO-Neigh超图描述与问题文本输入DeBERTaV3分类路由器。推理时路由器选择表示组合供LVLM作答；模型仅在HyperGVL任务上训练，并以零样本插件方式用于多源真实超图节点分类。",
+      "pdf_url": "https://arxiv.org/pdf/2604.15648"
+    },
+    {
+      "id": "p-531d6cea484715869580",
+      "title": "Test-Time GNN Model Evaluation on Dynamic Graphs",
+      "venue_label": "ICDM",
+      "conference_year": 2025,
+      "topics": [
+        "OOD"
+      ],
+      "method": "针对时间间隔引发节点特征与拓扑偏移、且测试图无标签时的DGNN性能估计，**DyGEval**先从训练图截取种子图，并以EdgeDrop生成多种模拟测试图。固定的待评DGNN提取训练图与模拟图的节点嵌入，以余弦相似度构造节点级**差异表示**，并用模拟图标签计算NDCG监督。Graphormer式评估器以MSE回归该分数；部署时对未知图计算同类差异，直接估计其NDCG以支持模型选择。",
+      "pdf_url": "https://arxiv.org/pdf/2509.23816"
+    },
+    {
+      "id": "p-54f1d00b84b063a315e2",
+      "title": "Towards Effective Open-set Graph Class-incremental Learning",
+      "venue_label": "ACM MM",
+      "conference_year": 2025,
+      "topics": [
+        "OOD"
+      ],
+      "method": "面向类别依次出现且测试含未见类别的开放集图节点分类，**OGCIL**以GNN编码带属性子图，并用知识蒸馏稳定跨任务表示。**原型CVAE**以类别原型为高斯先验，在嵌入空间重放旧类样本，再混合不同已知类及伪样本生成OOD嵌入。**原型超球分类损失**将同类拉向原型、把异类与伪OOD推离各超球，并联合重构、KL与蒸馏目标训练；推理时按到最近原型的距离阈值区分已知类别与未知节点。",
+      "pdf_url": "https://arxiv.org/pdf/2507.17687"
     },
     {
       "id": "p-f6e423bfbbf177f95ffa",
@@ -2049,6 +3151,17 @@
       ],
       "method": "面向训练仅含基础关系、推理需识别未见关系的开放词汇场景图生成，**VL-IRM**以对象对的视觉与空间特征构造关系表示，并与关系文本嵌入匹配。**生成式关系识别**将视觉关系特征输入条件语言模型，自回归生成开放关系名称，并用可学习上下文适配文本空间。**分层关系扩展**利用视觉关系伪标签补全稀疏关系，再动态估计谓词偏置并调整分类与生成损失；推理时直接生成关系词并组成场景图。",
       "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Min_Vision-Language_Interactive_Relation_Mining_for_Open-Vocabulary_Scene_Graph_Generation_ICCV_2025_paper.pdf"
+    },
+    {
+      "id": "p-72f70ede4b3e2f085a35",
+      "title": "Taming the Untamed: Graph-Based Knowledge Retrieval and Reasoning for MLLMs to Conquer the Unknown",
+      "venue_label": "ICCV",
+      "conference_year": 2025,
+      "topics": [
+        "TAG"
+      ],
+      "method": "面向罕见游戏领域的多模态知识图问答，**MH-MMKG**将怪物与攻击设为实体，以关系连边，并为实体附加视频、关键帧、字幕和文本上下文。**感知器**先把查询视觉内容转成描述，主题选择代理定位根实体。**多代理检索器**交替执行扩展与验证，按广度优先筛选邻居并判断路径知识是否充分，直至开放实体为空。最后将检索子图的至多五条根到叶路径文本化，交由MLLM结合原查询生成答案，全流程无需额外训练。",
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Wang_Taming_the_Untamed_Graph-Based_Knowledge_Retrieval_and_Reasoning_for_MLLMs_ICCV_2025_paper.pdf"
     },
     {
       "id": "p-71e48daf6e34436c9352",

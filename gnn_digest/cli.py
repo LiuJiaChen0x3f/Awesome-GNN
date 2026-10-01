@@ -169,7 +169,7 @@ def main():
     parser.add_argument("--conference-days", type=int, help="Override conference start with a lookback")
     parser.add_argument("--arxiv-days", type=int, help="Override arXiv start with a lookback")
     parser.add_argument("--conference-since", help="Conference publication start date, default 2025-01-01")
-    parser.add_argument("--arxiv-since", help="arXiv v1 start date, default 2026-01-01")
+    parser.add_argument("--arxiv-since", help="arXiv v1 start date; defaults to two calendar months before the cutoff")
     parser.add_argument("--resume", action="store_true", help="Resume the matching bulk checkpoint without repeating completed batches")
     parser.add_argument("--until", help="UTC date YYYY-MM-DD; defaults to actual execution date")
     parser.add_argument("--no-llm", action="store_true", help="Collect metadata without inventing summaries")

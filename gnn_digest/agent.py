@@ -5,8 +5,10 @@ import os
 import re
 import sys
 import time
+from itertools import zip_longest
 from contextlib import nullcontext
 from collections import Counter
+from calendar import monthrange
 from datetime import date, datetime, timedelta, timezone
 from urllib.parse import urlencode, urlparse
 import xml.etree.ElementTree as ET
@@ -14,10 +16,11 @@ import xml.etree.ElementTree as ET
 from .http import RequestError, get_json, request
 from .llm import Summarizer
 from .evidence import locate_evidence
-from .models import arxiv_id, clean, content_hash, identity_keys, merge_records, paper
+from .models import arxiv_id, clean, content_hash, identity_keys, merge_records, norm_title, paper
 from .storage import export_site, lock, read_json, write_json
 from .verification import DOMAINS, TOPICS, VENUES, DIRECTORY_SOURCES, VerificationError, canonical_url, verify_candidate, verify_directory_match
 from .fulltext import load_fulltext, coerce_legacy_fulltext
+from .arxiv_search import model_arxiv_queries, search_html
 
 # Compatibility patch point; the implementation now always reads full text.
 load_methods = load_fulltext
@@ -46,6 +49,17 @@ def source_windows(config, args, today):
                 start = date.fromisoformat(start)
                 if start > today:
                     raise ValueError(f'{bucket}_since is after the cutoff')
+                windows[bucket] = {'since':str(start), 'until':str(today), 'days':(today-start).days+1}
+                continue
+            months = configured.get(bucket+'_months', 2 if bucket == 'arxiv' and
+                                    bucket+'_days' not in configured else None)
+            if months is not None:
+                if type(months) is not int or not 1 <= months <= 120:
+                    raise ValueError(f'{bucket}_months must be an integer in 1..120')
+                month_index = today.year * 12 + today.month - 1 - months
+                year, month = divmod(month_index, 12)
+                month += 1
+                start = date(year, month, min(today.day, monthrange(year, month)[1]))
                 windows[bucket] = {'since':str(start), 'until':str(today), 'days':(today-start).days+1}
                 continue
             days = configured.get(bucket+'_days', default)
@@ -195,33 +209,7 @@ class WebResearchAgent:
         leads, errors = [], []
 
         def html_arxiv_results(search_query):
-            params = {'query': search_query, 'searchtype': 'all', 'abstracts': 'show',
-                      'order': '-announced_date_first', 'size': 50}
-            page = request('https://arxiv.org/search/?' + urlencode(params),
-                           timeout=18, attempts=1).decode('utf-8', errors='replace')
-            result = []
-            for block in re.findall(r'<li[^>]+class=["\']arxiv-result["\'][^>]*>(.*?)</li>', page, re.I | re.S):
-                match = re.search(r'href=["\'](?:https?://arxiv\.org)?/abs/([^?"\']+)', block, re.I)
-                title_match = re.search(r'<p[^>]+class=["\']title\b[^"\']*["\'][^>]*>(.*?)</p>', block, re.I | re.S)
-                if not match or not title_match:
-                    continue
-                aid = arxiv_id(match.group(1))
-                if not aid:
-                    continue
-                submitted = re.search(r'Submitted\s+(\d{1,2}\s+[A-Za-z]+,?\s+\d{4})', clean(block), re.I)
-                stamp = ''
-                if submitted:
-                    for fmt in ('%d %B %Y', '%d %b %Y', '%d %B, %Y', '%d %b, %Y'):
-                        try:
-                            stamp = datetime.strptime(submitted.group(1), fmt).date().isoformat(); break
-                        except ValueError:
-                            pass
-                abstract_match = re.search(r'<span[^>]+class=["\'][^"\']*abstract-full[^"\']*["\'][^>]*>(.*?)</span>', block, re.I | re.S)
-                result.append({'title': clean(title_match.group(1)),
-                               'url': 'https://arxiv.org/abs/' + aid, 'source': 'arxiv',
-                               'published': stamp, 'venue': '',
-                               'abstract': clean(abstract_match.group(1) if abstract_match else '')[:1200]})
-            return result
+            return search_html(search_query, since, until, limit=source_config['max_per_source'])
 
         # The regular batch adapters deliberately have generous retries and an
         # RSS fallback. A model tool call needs a short, single-attempt budget,
@@ -621,6 +609,8 @@ def search(root, config, args):
     with (nullcontext() if config.get('_lock_held') else lock(root/'data/pipeline.lock')):
         archive = read_json(root/'data/papers.json', {'schema_version':1, 'papers':[]})['papers']
         initial_archive_keys = {k for p in archive for k in identity_keys(p)}
+        ready_archive_keys = {k for p in archive if p.get('status') == 'ready'
+                              for k in identity_keys(p)}
         accepted, pool, seen, feedback = [], [], set(), list(config.get('_prior_feedback',[]))
         verification_attempts = Counter()
         summary_budget = max(limit, options['max_summary_papers'])
@@ -669,6 +659,49 @@ def search(root, config, args):
                     candidates = response['tool_candidates'][:options['candidate_limit']]
                     notes = 'Model returned no final candidates; recovered leads from completed local scholarly tool calls for independent verification.'
                     record['format_recovery'] = 'tool_results'
+                if agent.search_mode == 'responses_web_search' and progress['arxiv']['shortfall']:
+                    def known_arxiv(candidate):
+                        if urlparse(candidate['url']).hostname != 'arxiv.org':
+                            return False
+                        aid = arxiv_id(candidate['url'])
+                        title = norm_title(candidate['title'])
+                        return (aid and 'arxiv:' + aid in ready_archive_keys or
+                                title and 'title:' + title in ready_archive_keys)
+
+                    before = len(candidates)
+                    candidates = [c for c in candidates if canonical_url(c['url']) not in seen
+                                  and not known_arxiv(c)]
+                    skipped_existing = before - len(candidates)
+                    existing = {canonical_url(c['url']) for c in candidates}
+                    arxiv_count = sum(urlparse(url).hostname == 'arxiv.org' for url in existing)
+                    if arxiv_count < progress['arxiv']['shortfall']:
+                        queries = model_arxiv_queries(actions)
+                        added, errors, lead_groups = 0, [], []
+                        for query in queries:
+                            if time.monotonic() >= deadline:
+                                break
+                            try:
+                                leads = search_html(query, date.fromisoformat(windows['arxiv']['since']),
+                                                    today, limit=options['candidate_limit'],
+                                                    timeout=min(18, max(1, deadline-time.monotonic())))
+                                lead_groups.append(leads)
+                            except RequestError as exc:
+                                errors.append(str(exc)[:100])
+                        for group in zip_longest(*lead_groups):
+                            for lead in group:
+                                if lead is None or len(candidates) >= options['candidate_limit']:
+                                    continue
+                                url = canonical_url(lead['url'])
+                                if url in existing or url in seen or known_arxiv(lead):
+                                    continue
+                                candidates.append(lead)
+                                existing.add(url)
+                                added += 1
+                        record['arxiv_html_fallback'] = {'queries': queries, 'candidates_added': added,
+                                                         'skipped_known': skipped_existing,
+                                                         'errors': errors}
+                        if added:
+                            notes += f' Local arXiv search supplied {added} additional leads for independent verification.'
                 record.update(candidate_count=len(candidates), notes=notes)
             except Exception as exc:
                 record['error'] = str(exc)[:200] if type(exc) is ValueError or isinstance(exc, RequestError) else type(exc).__name__

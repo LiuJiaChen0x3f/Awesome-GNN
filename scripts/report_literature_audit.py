@@ -45,7 +45,7 @@ def main():
     pending = []
     for path in (folder / 'outcomes').glob('*.json'):
         o = read_json(path, {})
-        if o['status'] not in {'metadata_unresolved', 'fulltext_unresolved', 'summary_request_failed', 'summary_validation_failed', 'fulltext_prepared'}:
+        if o['status'] not in {'metadata_unresolved', 'fulltext_unresolved', 'summary_request_failed', 'summary_validation_failed', 'fulltext_prepared', 'topic_unresolved', 'insufficient'}:
             continue
         if o['year'] != latest.get(o['venue']):
             continue
@@ -55,6 +55,17 @@ def main():
             'status': o['status'], 'error': o.get('error'), 'errors': o.get('errors', []),
             'pdf_url': p.get('pdf_url'), 'verified_source': p.get('verification', {}).get('url'),
             'discovery': o.get('discovery', {}),
+            'last_recovery_at': o.get('recovery_checked_at'),
+            'last_recovery_error': o.get('recovery_error'),
+            'scope_evidence': o.get('scope_evidence'),
+            'scope_decision': o.get('scope_decision'),
+            'official_index_match': o.get('official_index_match'),
+            'latest_recovery_search': o.get('latest_recovery_search'),
+            'next_action': ('review_topic_evidence' if o['status'] in ('topic_unresolved', 'insufficient') else
+                            'scope_decision' if o.get('scope_evidence') and not o.get('scope_decision') else
+                            'verify_metadata' if o['status'] == 'metadata_unresolved' else
+                            'retrieve_fulltext' if o['status'] == 'fulltext_unresolved' else
+                            'summarize_fulltext'),
         })
     pending.sort(key=lambda p: (p['status'], p['venue'], p['title']))
     coverage = {
@@ -79,17 +90,19 @@ def main():
         rows.append(f'| {venue} | {year or "待确认"} | {fresh} | {total} | {waiting} | {status} |')
     lines = [
         '# TAG / OOD 最新会议论文覆盖审计', '',
-        f'核查基准日：{scope["as_of"]}。报告生成：{coverage["generated_at"]}。', '',
+        f'核查基准日：{scope["as_of"]}；恢复复核日：{scope.get("recovery_as_of", scope["as_of"])}。报告生成：{coverage["generated_at"]}。', '',
         f'本轮去重后新增 **{len(actual_new)} 篇**，本地公开索引合计 **{len(public)} 篇**。',
         '这是有来源证据的补漏结果，不是“已收齐全部相关论文”的声明。未获得全文、名单访问失败和审核失败均保留为待处理项。', '',
         '## 范围和取舍', '',
         '- 每个会议独立选择最新公开可核验届次：有 2026 就用 2026，否则核查 2025。访问失败不能证明 2026 尚未公布。',
         '- 保留原有 113 篇公开记录；本轮新增执行最新届次规则，没有擅自删除之前收录的旧届论文。',
-        '- 范围扩展至 ICLR、LoG、ICDM、WSDM、NAACL。仅主会，排除 Findings、workshop、非主会/尚未核验的投稿。',
+        '- 范围扩展至 ICLR、LoG、ICDM、WSDM、NAACL。纳入正式归档的专题研究及数据集/基准轨道，包括 IJCAI AI and Health / AI and Social Good / AI4Tech、NeurIPS Datasets and Benchmarks；仍排除 Findings、workshop、演示、博士生论坛、综述及尚未核验的投稿。',
         '- TAG/OOD 必须是论文实际方法或实验设置。仅背景提及、普通归纳划分、训练客户端 Non-IID 不足以认定 OOD。',
         '- 每篇卡片有完整正文输入、151–200 可见字符方法总结、1–4 处方法加粗、1–5 个内部关键词和可定位全文证据；网页只展示 TAG/OOD 主题。', '',
         '## 各会议结果', '',
-        '“页面该届”包含之前已收录的相同届次；“待处理”是候选数，不是已确认相关论文数。', '',
+        '“页面该届”是该届目前已上架的论文总数，包含此前已收录记录；“待处理”是尚未完成核验的候选论文数，不是等待举办的会议，也不是已确认相关论文数。',
+        '恢复处理结果及范围选择见 [待处理清单处理记录](pending_resolution.md)。已确认的非主会轨道不再混入技术失败清单。', '',
+        '2026-10-01 全文补查与严格主题复核见 [arXiv 与出版方补查记录](arxiv_recovery_2026-10-01.md)。', '',
         '| 会议 | 本轮届次 | 新增 | 页面该届 | 待处理 | 届次证据状态 |',
         '|---|---:|---:|---:|---:|---|', *rows, '',
         '## 发现与筛选覆盖', '',
@@ -99,12 +112,12 @@ def main():
         '- EMNLP 2026 独立处理：官方公开日程含 2,710 个 MAIN 条目，提取并核验 85 个图相关题名；该计数不混入前面的历史索引 ID。',
         '- 修正了额外初筛缓存的批次编号漂移：覆盖率按成功 reviewed_ids 的并集计算；补审缓存以输入内容哈希命名，不再通过批次数推断覆盖率。', '',
         '## 仍然存在的缺口', '',
-        '- LoG 2026 有录用公布线索，但官方 OpenReview 名单/轨道尚未完整取得，API 返回 403。本轮不将 LoG 2025 冒充已确认的最新届次。',
-        '- NeurIPS 2026 官网目录返回 403，尚未取得完整公开名单；2025 作为可核验回退。ACM MM / ICDM 的 2026 公开论文集也未完成确认，不能断言不存在。',
+        '- LoG 2026 官方征稿页列出的决定公布日期为 9 月 13 日，但本次官网 Program 仍为占位链接，OpenReview 录用名单/轨道尚未完整核验。决定日期不等于已取得公开名单，不将 LoG 2025 冒充已确认的最新届次。',
+        '- NeurIPS 2026 目录返回 403，正文明确提示会议虚拟站点尚未开放；2025 作为可核验回退。ACM MM 2026 首页可达但未取得完整论文目录，ICDM 站点存在 TLS 访问失败，不能据此断言论文未公布。',
         '- EMNLP 2026 多数题名尚未定位到可核对的完整正文；两篇原有 arXiv 记录已根据官方 MAIN 名单补充会议归属，不重复新增。',
         '- ECCV 2026 未在参考仓库快照中发现相应索引，官网请求发生 SSL 错误；记录为范围缺口，不宣称已覆盖。',
         '- 出版方/OpenReview PDF 返回访问错误、无可匹配全文，以及超出 PDF 安全大小限制的候选仍未上架；不能使用相似题名替代。',
-        f'- 当前仍有 {coverage["status_counts"].get("summary_request_failed", 0)} 篇完整正文因模型请求失败待总结；失败以网络超时为主。此前恢复探针官网和模型均返回 200，但不能保证持续可达。', '',
+        f'- 最新届次待处理：书目 {sum(p["status"] == "metadata_unresolved" for p in pending)} 条，全文 {sum(p["status"] == "fulltext_unresolved" for p in pending)} 条，模型请求失败 {sum(p["status"] == "summary_request_failed" for p in pending)} 条，总结校验失败 {sum(p["status"] == "summary_validation_failed" for p in pending)} 条，已取全文待总结 {sum(p["status"] == "fulltext_prepared" for p in pending)} 条，主题证据待复核 {sum(p["status"] == "topic_unresolved" for p in pending)} 条。数量是候选记录数；请求成功不代表所有站点持续可达。', '',
         '## 可复核文件与恢复', '',
         '- `data/literature_audit_scope.json`：有效届次和证据限制。',
         '- `data/literature_audit_results.json`：新增论文题名、会议、总结和 PDF。',

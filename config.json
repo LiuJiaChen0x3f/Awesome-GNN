@@ -2,7 +2,7 @@
   "days": 14,
   "search_windows": {
     "conference_since": "2025-01-01",
-    "arxiv_since": "2026-01-01"
+    "arxiv_months": 2
   },
   "max_per_source": 150,
   "bulk_search": {

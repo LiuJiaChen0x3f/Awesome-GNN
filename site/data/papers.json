@@ -1,25 +1,26 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-30T02:05:33.096706+00:00",
+  "generated_at": "2026-10-01T04:42:38.504954+00:00",
   "report": {
     "started_at": "2026-09-29T08:53:26.584803+00:00",
-    "updated_at": "2026-09-30T02:05:33.096706+00:00",
+    "updated_at": "2026-10-01T04:42:38.504954+00:00",
     "in_progress": false,
     "llm_enabled": true,
     "mode": "latest_edition_catalogue_audit",
     "coverage_complete": false,
-    "new_ready_papers": 188,
-    "verified_audit_papers": 190,
+    "new_ready_papers": 288,
+    "verified_audit_papers": 290,
     "withdrawn_audit_checkpoint_titles": [],
     "status_counts": {
-      "metadata_unresolved": 132,
-      "irrelevant": 123,
-      "fulltext_unresolved": 271,
-      "ready": 192,
-      "summary_request_failed": 28,
+      "excluded_track": 49,
+      "irrelevant": 228,
+      "fulltext_unresolved": 145,
+      "ready": 294,
+      "metadata_unresolved": 29,
       "superseded_edition": 17,
       "fulltext_prepared": 2,
-      "excluded_track": 3
+      "excluded_venue": 2,
+      "already_in_archive": 2
     },
     "latest_editions": {
       "webconf": 2026,
@@ -45,19 +46,24 @@
     },
     "scope": "latest publicly verifiable edition per conference; EMNLP 2026 main program; LoG latest edition unresolved",
     "venue_counts": {
-      "2026 IJCAI": 6,
-      "2026 VLDB": 3,
-      "2026 KDD": 5,
-      "2026 ACL": 20,
-      "2026 ICML": 9,
-      "2025 NeurIPS": 34,
-      "2026 ICLR": 38,
-      "2026 WWW": 1,
-      "2026 AAAI": 47,
-      "2026 WSDM": 1,
+      "2026 IJCAI": 12,
+      "2026 VLDB": 4,
+      "2026 KDD": 13,
+      "2026 SIGIR": 1,
+      "2026 ACL": 22,
+      "2026 ICML": 36,
+      "2026 ICDE": 1,
+      "2025 NeurIPS": 48,
+      "2026 ICLR": 43,
+      "2026 WWW": 7,
+      "2026 AAAI": 48,
+      "2026 WSDM": 2,
       "2026 CVPR": 12,
+      "2026 EMNLP": 24,
+      "2025 ICDM": 1,
+      "2025 ACM MM": 1,
       "2025 NAACL": 8,
-      "2025 ICCV": 4
+      "2025 ICCV": 5
     },
     "sources": {}
   },
@@ -355,6 +361,53 @@
       ]
     },
     {
+      "id": "p-fd0247aacc10efb46e77",
+      "title": "Temporal Motif-aware Graph Test-time Adaptation for OOD Blockchain Anomaly Detection",
+      "authors": [
+        "Runang He",
+        "Tongya Zheng",
+        "Huiling Peng",
+        "Yuanyu Wan",
+        "Bingde Hu",
+        "Jiawei Chen",
+        "Canghong Jin",
+        "Mingli Song",
+        "Can Wang"
+      ],
+      "published": "2026-09-16",
+      "updated": "2026-09-16",
+      "venue": "IJCAI",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.24963/ijcai.2026/802",
+          "url": "https://www.ijcai.org//proceedings/2026/802",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "图测试时适应",
+        "时序模体表示",
+        "师生一致性",
+        "模体对比学习"
+      ],
+      "method": "面向恶意交易演化导致的训练图与无标签测试图分布偏移，**TEMG-TTA**在有向时序交易图上检测异常地址。它统计三节点时序模体的节点角色次数，将共享模体原型、角色嵌入及时序与方向位置编码融合进原始节点特征，再以二元交叉熵预训练GNN。测试时筛选中高置信节点，对丢边扰动图上的学生施加**师生表征一致性**和模体相似节点驱动的**InfoNCE**，并用指数滑动平均更新教师以适应目标图。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T15:08:43.820975+00:00",
+      "venue_label": "IJCAI",
+      "display_date": "2026-09-16",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://www.ijcai.org/proceedings/2026/0802.pdf",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
       "id": "p-f83481646d70c555206b",
       "title": "StreamMTS: Towards Streaming Multivariate Time Series Forecasting",
       "authors": [
@@ -443,6 +496,48 @@
       ]
     },
     {
+      "id": "p-e194d4149882f867dc8b",
+      "title": "Structure-Aware Contrastive Learning for Biomedical Embeddings: Bridging the Gap Between HPO and Clinical Literature",
+      "authors": [
+        "Jose Luis Mellina Andreu",
+        "Alejandro Cisterna García",
+        "Juan Botía"
+      ],
+      "published": "2026-09-16",
+      "updated": "2026-09-16",
+      "venue": "IJCAI",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.24963/ijcai.2026/760",
+          "url": "https://www.ijcai.org//proceedings/2026/760",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "文献上下文增强",
+        "疾病重叠相似度",
+        "锚点难例采样",
+        "神经符号对齐",
+        "表型嵌入"
+      ],
+      "method": "面向HPO术语文本稀缺且语言语义与本体临床关系错位的问题，**神经符号对齐框架**从PubMed抽取含术语或同义词的句子，并过滤否定、枚举和过长上下文。它按后代传播的OMIM疾病集合计算**疾病重叠相似度**，以锚点采样构造同术语正例、近邻难负例和随机负例。双编码器用**AnglE损失**排序句对并部分冻结底层，所得表征用于表型检索及患者与疾病向量匹配。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T15:09:35.614463+00:00",
+      "venue_label": "IJCAI",
+      "display_date": "2026-09-16",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://www.ijcai.org/proceedings/2026/0760.pdf",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
       "id": "p-d4d1d7a34788e21d9b52",
       "title": "Inductive Knowledge Graph Wave Networks",
       "authors": [
@@ -481,6 +576,91 @@
       "topics": [
         "TAG",
         "OOD"
+      ]
+    },
+    {
+      "id": "p-ca25853bd6038b229df9",
+      "title": "LLM-Enhanced Knowledge and Learning Path Understanding for Graph-based Educational Recommendation",
+      "authors": [
+        "Qingqing Liang",
+        "Shuyan Zheng",
+        "Peiwei Xia",
+        "Chunyang Wang",
+        "Xuesong Lu",
+        "Aoying Zhou"
+      ],
+      "published": "2026-09-16",
+      "updated": "2026-09-16",
+      "venue": "IJCAI",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.24963/ijcai.2026/813",
+          "url": "https://www.ijcai.org//proceedings/2026/813",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "教育文本属性图",
+        "学习路径分段",
+        "结构语义对齐",
+        "门控表示融合"
+      ],
+      "method": "面向含资源文本与学习交互的教育图推荐，**KLU4EduRec**用LLM概括资源标题、内容和关联概念，经文本嵌入、适配器及图传播形成资源语义。它按相邻资源语义变化的平滑累积漂移切分学习路径，汇合段内行为摘要与资源知识，并用**GRU**时序聚合为学习者语义。**门控融合**结合LightGCN结构表示，**InfoNCE对齐**约束同一学习者或资源的双视图，再以BPR训练并据内积生成Top-K推荐。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T15:10:33.475639+00:00",
+      "venue_label": "IJCAI",
+      "display_date": "2026-09-16",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://www.ijcai.org/proceedings/2026/0813.pdf",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-c7a7446372127e213907",
+      "title": "LLM-Guided Monte Carlo Tree Search over Knowledge Graphs: Composing Mechanistic Explanations for Drug–Disease Pairs",
+      "authors": [
+        "Rishabh Jakhar",
+        "Michel Dumontier",
+        "Remzi Celebi"
+      ],
+      "published": "2026-09-16",
+      "updated": "2026-09-16",
+      "venue": "IJCAI",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.24963/ijcai.2026/751",
+          "url": "https://www.ijcai.org//proceedings/2026/751",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "语义引导图搜索",
+        "列表式动作先验",
+        "比较式路径评估",
+        "机制解释子图"
+      ],
+      "method": "面向生物医学知识图谱中的药物—疾病多步机制检索，**TESSERA**将实体标签与描述交给LLM作局部语义判断，并由有向类型边限定合法路径。它以目标条件PageRank筛选邻居，用**列表式先验策略**批量比较动作，再由**比较式状态评估**结合深度相近竞争路径和已接纳解释给出叶值。**MCTS**依PUCT选择、扩展并回传价值，最终合并所有到达疾病节点的路径为解释子图。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T15:10:33.466882+00:00",
+      "venue_label": "IJCAI",
+      "display_date": "2026-09-16",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://www.ijcai.org/proceedings/2026/0751.pdf",
+      "topics": [
+        "TAG"
       ]
     },
     {
@@ -568,6 +748,53 @@
       "date_precision": "day",
       "conference_year": 2026,
       "pdf_url": "https://www.ijcai.org/proceedings/2026/0286.pdf",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-9b8602056a7b3862a563",
+      "title": "D²G-TO: Task-aware and OOD-guided Discrete Graph Diffusion for Robust CNS Drug Discovery",
+      "authors": [
+        "Xue Zhai",
+        "Chu-An Yang",
+        "Minghao Liu",
+        "Xu Dong",
+        "Han Wang",
+        "Weiwei Han",
+        "Ting Gao",
+        "LiHong Hu"
+      ],
+      "published": "2026-09-16",
+      "updated": "2026-09-16",
+      "venue": "IJCAI",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.24963/ijcai.2026/781",
+          "url": "https://www.ijcai.org//proceedings/2026/781",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "离散图扩散",
+        "结构相似性引导",
+        "伪OOD参照",
+        "分布一致性",
+        "多属性条件生成"
+      ],
+      "method": "面向训练分子与生成候选间的结构分布偏移，**D²G-TO**在离散图扩散中联合控制多种药理属性与分布一致性。其先对原子、化学键逐步加噪，并以属性条件预训练去噪器；再扰动候选图构造伪OOD参照。**SSG**用邻接矩阵差异和跨图节点特征距离选择近ID、远OOD的引导图。Graph Transformer经条件归一化融合属性，联合扩散重构、任务监督和结构一致性损失，从随机噪声图反向采样分子。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T15:14:10.045037+00:00",
+      "venue_label": "IJCAI",
+      "display_date": "2026-09-16",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://www.ijcai.org/proceedings/2026/0781.pdf",
       "topics": [
         "OOD"
       ]
@@ -1093,6 +1320,48 @@
       "pdf_url": "https://www.ijcai.org/proceedings/2026/0594.pdf",
       "topics": [
         "OOD"
+      ]
+    },
+    {
+      "id": "p-11d690047b68af434a7d",
+      "title": "Leveraging Implicit Contexts via LLM–Graph Fusion for Temporal Knowledge Graph Reasoning",
+      "authors": [
+        "Zeshu Tian",
+        "Junjie Tao",
+        "Hongli Zhang"
+      ],
+      "published": "2026-09-16",
+      "updated": "2026-09-16",
+      "venue": "IJCAI",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.24963/ijcai.2026/727",
+          "url": "https://www.ijcai.org//proceedings/2026/727",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "隐式语境检索",
+        "时序图文本融合",
+        "门控表示融合",
+        "多目标训练",
+        "尾实体预测"
+      ],
+      "method": "面向时序知识图谱四元组遗漏原始文本隐式语境的问题，**TTGFN**按查询实体和时间从离线仓库选取查询时刻前最近的文本片段。LoRA适配的LLM将片段与查询编码为语义向量，并以检索、语言建模和对比目标分两阶段学习以抑制噪声。时序图编码器聚合历史邻居、关系和时间差形成结构查询，**门控融合**逐维合并两路表示，再对共享实体词典打分完成尾实体预测。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T15:09:35.634943+00:00",
+      "venue_label": "IJCAI",
+      "display_date": "2026-09-16",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://www.ijcai.org/proceedings/2026/0727.pdf",
+      "topics": [
+        "TAG"
       ]
     },
     {
@@ -1697,6 +1966,51 @@
       ]
     },
     {
+      "id": "p-0cc64762d95613960693",
+      "title": "QA-GraphRAG: Query-Adaptive Plug-and-Play Retrieval Integration for Graph-based Retrieval-Augmented Generation",
+      "authors": [
+        "Zeang Sheng",
+        "Ruihong Sun",
+        "Jiahao Xu",
+        "Hanmei Luo",
+        "Peng Chen",
+        "Wentao Zhang",
+        "Bin Cui"
+      ],
+      "published": "2026-08-19",
+      "updated": "2026-08-19",
+      "venue": "VLDB",
+      "publication_type": "conference-associated-journal",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.14778/3819518.3819546",
+          "url": "https://doi.org/10.14778/3819518.3819546",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "查询自适应检索",
+        "知识层级路由",
+        "分层文本知识库",
+        "跨数据集预训练"
+      ],
+      "method": "面向图式RAG固定检索层级难以兼顾事实型与复杂查询的问题，**QA-GraphRAG**在分层文本知识库前加入查询自适应路由。编码器将查询转为嵌入，三层**MLP路由器**输出知识层级偏好，以不同起始层级所得答案的准确率向量监督，并用**Gumbel-Softmax**近似硬选择。推理时从预测层级检索相关文本块，再把查询与文本送入生成器作答；路由器既可跨数据集预训练，也可用少量目标查询微调。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T14:57:42.694362+00:00",
+      "venue_label": "VLDB",
+      "display_date": "2026-08-19",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://www.vldb.org/pvldb/vol19/p2224-sheng.pdf",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
       "id": "p-0107e5a5ef7325477e0b",
       "title": "Multimodal Knowledge Graph Completion via Relation-Aware Negative Sampling with Diffusion-Based Interpolation",
       "authors": [
@@ -1822,6 +2136,183 @@
       "pdf_url": "https://arxiv.org/pdf/2608.10699",
       "topics": [
         "TAG",
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-e75db4c3ebc2ab1985dd",
+      "title": "Node4All: Learning Node Representation Beyond Datasets",
+      "authors": [
+        "Dooho Lee",
+        "Jaemin Yoo"
+      ],
+      "published": "2026-08-08",
+      "updated": "2026-08-08",
+      "venue": "KDD",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.1145/3770855.3817828",
+          "url": "https://dl.acm.org/doi/10.1145/3770855.3817828",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "跨数据集泛化",
+        "通道图处理",
+        "合成图预训练",
+        "多跳令牌化",
+        "节点特征重建"
+      ],
+      "method": "针对拓扑、特征维度与分布跨数据集变化的节点表示，**Node4All**仅在合成图上预训练，并直接迁移到未参与训练的真实图。它把特征列拆为共享拓扑的通道图，**CGT**用逐坐标多跳聚合构造令牌，经Transformer汇聚为标量后拼接各通道。训练中生成多样结构及图相关特征，**DropNode掩码自编码**删除部分节点，以余弦重建损失恢复其特征；推理所得表示供节点分类复用，无需目标数据集训练或调参。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:27:14.249944+00:00",
+      "venue_label": "KDD",
+      "display_date": "2026-08-08",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2607.17272",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-d5191d095754fb4eadfb",
+      "title": "Unified Multi-Domain Graph Pre-training for Homogeneous and Heterogeneous Graphs via Domain-Specific Expert Encoding",
+      "authors": [
+        "Chundong Liang",
+        "Yongqi Huang",
+        "Dongxiao He",
+        "Peiyuan Li",
+        "Yawen Li",
+        "Di Jin",
+        "Weixiong Zhang"
+      ],
+      "published": "2026-08-08",
+      "updated": "2026-08-08",
+      "venue": "KDD",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.1145/3770855.3817734",
+          "url": "https://dl.acm.org/doi/10.1145/3770855.3817734",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "跨域图预训练",
+        "多视图图构造",
+        "域特定专家",
+        "类别级专家融合"
+      ],
+      "method": "针对预训练源图与下游目标图在类型、属性和拓扑上的跨域偏移，**GPH²**统一迁移同质与异质图。它以删边或元路径构造多视图，共享视图内GNN并用注意力聚合；各域采用非共享专家，以DGI式局部—全局互信息目标独立预训练。下游冻结专家，将目标图表示线性对齐到共享空间，再以**类别级注意力投票**融合logit，并联合交叉熵与注意向量正交约束完成少样本节点分类。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:14:10.675091+00:00",
+      "venue_label": "KDD",
+      "display_date": "2026-08-08",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2602.13075",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-cf8673a9c1595224ee8f",
+      "title": "MemGraphRAG: Memory-based Multi-Agent System for Graph Retrieval-Augmented Generation",
+      "authors": [
+        "Chuanjie Wu",
+        "Zhishang Xiang",
+        "Yunbo Tang",
+        "Zerui Chen",
+        "Qinggang Zhang",
+        "Jinsong Su"
+      ],
+      "published": "2026-08-08",
+      "updated": "2026-08-08",
+      "venue": "KDD",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.1145/3770855.3818074",
+          "url": "https://dl.acm.org/doi/10.1145/3770855.3818074",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "三层全局记忆",
+        "多智能体冲突消解",
+        "记忆引导桥接",
+        "结构感知检索"
+      ],
+      "method": "**MemGraphRAG**针对文本图检索中的跨文档冲突与结构碎片化，将模式、事实和原文段落存入三层共享记忆，并关联类型、实体与段落节点。多智能体按模式频率筛选事实，回溯原文裁决冲突，再以共享类型和嵌入相似度桥接子图。检索时将查询与文本的语义相似度结合节点度惩罚、段落信息密度，生成结构感知初始权重。通过**个性化PageRank**传播并排序，选取段落和实体作为语言模型回答的证据。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T06:23:17.607755+00:00",
+      "venue_label": "KDD",
+      "display_date": "2026-08-08",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2606.00610",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-cdb4acb5293b3db6c49a",
+      "title": "Generalizing GNNs with Tokenized Mixture of Experts",
+      "authors": [
+        "Xiaoguang Guo",
+        "Zehong Wang",
+        "Jiazheng Li",
+        "Shawn Spitzel",
+        "Qi Yang",
+        "Kaize Ding",
+        "Jundong Li",
+        "Chuxu Zhang"
+      ],
+      "published": "2026-08-08",
+      "updated": "2026-08-08",
+      "venue": "KDD",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.1145/3770855.3817952",
+          "url": "https://doi.org/10.1145/3770855.3817952",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "实例条件路由",
+        "混合专家编码器",
+        "向量量化词元",
+        "冻结部署",
+        "Lipschitz正则"
+      ],
+      "method": "面向冻结部署中训练图与测试节点度数、同配性分布变化，**STEM-GNN**同时兼顾图预测的分布外泛化与扰动稳定。它以节点特征和邻域聚合结果为输入，由**MoE编码器**按节点、层生成软路由并混合共享专家，扩展不同环境下的计算路径。随后**VQ词元接口**用学习码本量化表示并在微调时冻结码本，以吸收未跨量化边界的漂移；线性预测头加入**Lipschitz正则**，联合任务损失限制残余词元变化的输出放大，供节点、边和图任务预测。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:26:58.221607+00:00",
+      "venue_label": "KDD",
+      "display_date": "2026-08-08",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2602.09258",
+      "topics": [
         "OOD"
       ]
     },
@@ -2007,6 +2498,92 @@
       ]
     },
     {
+      "id": "p-843aa6332ae80fdb1ec5",
+      "title": "USBD: Universal Structural Basis Distillation for Source-Free Graph Domain Adaptation",
+      "authors": [
+        "Yingxu Wang",
+        "Kunyu Zhang",
+        "Mengzhu Wang",
+        "Siyang Gao",
+        "Nan Yin"
+      ],
+      "published": "2026-08-08",
+      "updated": "2026-08-08",
+      "venue": "KDD",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.1145/3770855.3817842",
+          "url": "https://dl.acm.org/doi/10.1145/3770855.3817842",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "源无关图域适应",
+        "结构基蒸馏",
+        "狄利克雷能量覆盖",
+        "谱感知原型激活",
+        "双层优化"
+      ],
+      "method": "面向源数据不可访问且源、目标图拓扑分布不同的图分类，**USBD**以含邻接、节点特征和标签的合成原型图承载源知识。其双层优化在原型上训练代理，并以语义匹配、狄利克雷能量锚点及GW距离保持类别边界、覆盖全频谱并抑制拓扑冗余。测试时，**谱感知自适应推理**汇总目标图的归一化狄利克雷能量，以核注意力加权原型。再用加权交叉熵训练目标代理，将原始目标图输入该代理完成无标签分类。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:15:09.552499+00:00",
+      "venue_label": "KDD",
+      "display_date": "2026-08-08",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2602.08431",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-4d370d54d92275d489e6",
+      "title": "H4G: Unlocking Faithful Inference for Zero-Shot Graph Learning in Hyperbolic Space",
+      "authors": [
+        "Heng Zhang",
+        "Jin Huang"
+      ],
+      "published": "2026-08-08",
+      "updated": "2026-08-08",
+      "venue": "KDD",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.1145/3770855.3817675",
+          "url": "https://dl.acm.org/doi/10.1145/3770855.3817675",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "双曲图文对齐",
+        "半径调整",
+        "莫比乌斯乘法",
+        "层次对比学习",
+        "跨域零样本预测"
+      ],
+      "method": "**H4G**面向文本属性图跨域零样本节点预测，缓解图文表征位于大双曲半径造成的细粒度结构丢失。图编码器与预训练语言模型提取节点结构和文本语义，经线性变换与指数映射进入庞加莱球。**块对角半径调整**以可学习缩放矩阵执行莫比乌斯乘法，将两模态嵌入移近原点；**层次对比学习**对齐匹配图文对，并用恒等正则防止坍缩。推理时同样调整目标节点和类别描述，按最小双曲距离分类且无需目标域微调。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:26:00.916117+00:00",
+      "venue_label": "KDD",
+      "display_date": "2026-08-08",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2510.12094",
+      "topics": [
+        "TAG",
+        "OOD"
+      ]
+    },
+    {
       "id": "p-2c4e6db7744e58006fa8",
       "title": "Generalizing Graph Foundation Models via Hyperbolic Retrieval-Augmented Generation",
       "authors": [
@@ -2051,6 +2628,51 @@
       "topics": [
         "TAG",
         "OOD"
+      ]
+    },
+    {
+      "id": "p-2b05e4e75129a4b8d1b0",
+      "title": "CausalPOI: Spatio-Temporal Graph-Based Causal Modeling for Cold-Start POI Check-in Forecasting",
+      "authors": [
+        "Zhaoqi Zhang",
+        "Miao Xie",
+        "Yi Li",
+        "Linyou Cai",
+        "Siqiang Luo",
+        "Gao Cong"
+      ],
+      "published": "2026-08-08",
+      "updated": "2026-08-08",
+      "venue": "KDD",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.1145/3770855.3817641",
+          "url": "https://doi.org/10.1145/3770855.3817641",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "功能交互图",
+        "文本标签编码",
+        "处理控制图",
+        "反事实预测",
+        "时空图编码"
+      ],
+      "method": "面向无历史记录的新POI签到预测，**CausalPOI**将POI文本标签经BERT编码，并按空间邻近、周活跃状态与功能关系构建时变一跳图。**ST-FIG**以对比预训练所得功能语义和距离衰减共同赋权，再由共享GATv2、位置编码及GRU汇聚时空表示。因果模块构造拓扑对齐的处理与控制图，以目标语义置零及移除功能项模拟反事实；联合事实序列均方误差与倾向分类损失训练，双输出头预测签到轨迹并计算ITE。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:26:16.960668+00:00",
+      "venue_label": "KDD",
+      "display_date": "2026-08-08",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2606.05413",
+      "topics": [
+        "TAG"
       ]
     },
     {
@@ -2182,6 +2804,51 @@
       "date_precision": "day",
       "conference_year": 2026,
       "pdf_url": "https://arxiv.org/pdf/2510.19384",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-d2442d8505eab67698eb",
+      "title": "DCGL: Dual-Channel Graph Learning with Large Language Models for Knowledge-Aware Recommendation",
+      "authors": [
+        "Xinchi Zou",
+        "Tongzhenzhi Su",
+        "Jianjun Li",
+        "Yuan Fu",
+        "Chang Liu",
+        "Zhiying Deng",
+        "Zhiwei Shen"
+      ],
+      "published": "2026-07-19",
+      "updated": "2026-07-19",
+      "venue": "SIGIR",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.1145/3805712.3809546",
+          "url": "https://doi.org/10.1145/3805712.3809546",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "双通道图学习",
+        "语义行为对齐",
+        "多层对比学习",
+        "频率感知门控"
+      ],
+      "method": "面向知识图谱推荐中语义与行为静态混合及频率异质问题，**DCGL**将实体属性生成文本描述，经编码与适配得到语义嵌入，并以独立ID嵌入表征行为。双通道分别以RGAT聚合知识关系、LightGCN传播用户物品交互；**多层对比学习**在通道内约束增强视图一致，并跨通道对齐用户表示。**频率感知门控**结合两路表示和交互频率自适应融合，联合BPR、对比、门控与正则目标训练，按融合得分完成Top-K推荐。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:14:29.591823+00:00",
+      "venue_label": "SIGIR",
+      "display_date": "2026-07-19",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2605.07314",
       "topics": [
         "TAG"
       ]
@@ -2489,6 +3156,52 @@
       "date_precision": "month",
       "conference_year": 2026,
       "pdf_url": "https://aclanthology.org/2026.acl-long.1434.pdf",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-907192eebe442caf05ca",
+      "title": "LegalGraphRAG: Multi-Agent Graph Retrieval-Augmented Generation for Reliable Legal Reasoning",
+      "authors": [
+        "Zerui Chen",
+        "Qinggang Zhang",
+        "Zhishang Xiang",
+        "Zhimin Wei",
+        "Linfeng Gao",
+        "Xiao Huang",
+        "Zhihong Zhang",
+        "Jinsong Su"
+      ],
+      "published": "2026-07",
+      "updated": "2026-07",
+      "venue": "ACL",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.18653/v1/2026.acl-long.1738",
+          "url": "https://aclanthology.org/2026.acl-long.1738/",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "法律文本图检索",
+        "本体对齐",
+        "社区扩展检索",
+        "证据核验剪枝"
+      ],
+      "method": "**LegalGraphRAG**针对法律文本粒度混杂与证据不适用问题，将案例、法条和司法解释组织为事实、本体、规则三层图。案例文本按四类法律要素抽取并编码，以近邻连边和社区摘要关联相似案件。研究员合并语义匹配、社区扩展和罪名邻居检索，获得候选证据。审计员依据**诊断清单**与司法解释逐项核验案件事实，剪除不适用法条及关联节点，再由裁决员结合已验证子图预测罪名、法条和刑期，附上证据引用。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T06:22:57.382561+00:00",
+      "venue_label": "ACL",
+      "display_date": "2026-07",
+      "date_basis": "conference_publication",
+      "date_precision": "month",
+      "conference_year": 2026,
+      "pdf_url": "https://aclanthology.org/2026.acl-long.1738.pdf",
       "topics": [
         "TAG"
       ]
@@ -2937,6 +3650,52 @@
       "pdf_url": "https://aclanthology.org/2026.acl-long.1944.pdf",
       "topics": [
         "TAG"
+      ]
+    },
+    {
+      "id": "p-48f13cf8e01baab9b08d",
+      "title": "Evolving Beyond Snapshots: Harmonizing Structure and Sequence via Entity State Tuning for Temporal Knowledge Graph Forecasting",
+      "authors": [
+        "Siyuan Li",
+        "Yunjia Wu",
+        "Yiyong Xiao",
+        "Pingyang Huang",
+        "Peize Li",
+        "Ruitong Liu",
+        "Yan Wen",
+        "Te Sun"
+      ],
+      "published": "2026-07",
+      "updated": "2026-07",
+      "venue": "ACL",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.18653/v1/2026.acl-long.1776",
+          "url": "https://aclanthology.org/2026.acl-long.1776/",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "时间分布偏移",
+        "持久实体状态",
+        "双轨记忆更新",
+        "反事实一致性"
+      ],
+      "method": "面向时间分布偏移下的时序知识图谱外推，**EST**为实体维护跨快照持续演化的全局状态。它以门控融合静态嵌入与慢状态，经结构编码、时间差校准和可插拔序列骨干生成查询相关上下文。**双轨状态演化**用指数滑动更新快记忆，并以信息惊奇门控慢记忆回写；**反事实一致性学习**选取历史上合理但当前错误的尾实体，以负对数似然训练并完成未来尾实体排序。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T15:00:52.076439+00:00",
+      "venue_label": "ACL",
+      "display_date": "2026-07",
+      "date_basis": "conference_publication",
+      "date_precision": "month",
+      "conference_year": 2026,
+      "pdf_url": "https://aclanthology.org/2026.acl-long.1776.pdf",
+      "topics": [
+        "OOD"
       ]
     },
     {
@@ -3471,6 +4230,96 @@
       ]
     },
     {
+      "id": "p-fbb67efe487cd8fed484",
+      "title": "Bridging Structure and Semantics: Uncertainty-Modulated Dual-Path Diffusion for Robust Text-Attributed Graph Learning",
+      "authors": [
+        "Zhizhi Yu",
+        "Jiachen Liu",
+        "Qingyu Li",
+        "Dongxiao He",
+        "Di Jin"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/65665",
+          "url": "https://icml.cc/virtual/2026/poster/65665",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "结构语义对齐",
+        "双路径扩散",
+        "不确定性门控",
+        "语义残差",
+        "特征净化"
+      ],
+      "method": "针对文本属性图中结构—语义错配及文本、拓扑双源噪声，**UDPD**先由LLM提取节点文本关键词并经Sentence-BERT编码语义，同时以原文编码初始化GCN得到结构表示，再取二者差值形成语义残差。**协同双路径扩散**并行净化结构与残差，预测熵门控的交叉注意力让两支互为条件。训练联合两路初态重构与标签平滑分类损失；推理从原始表示逐步反向去噪，组合净化表示用于节点分类。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:31:10.723496+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/yu26ab/yu26ab.pdf",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-f31548b904d78cc7d78e",
+      "title": "From Retrieval to Translation: Translating Query into Graph-level Clues for Retrieval-Augmented Generation",
+      "authors": [
+        "Qichuan Liu",
+        "Qinggang Zhang",
+        "Yuxuan Hu",
+        "Chenfeng Zheng",
+        "Zerui Chen",
+        "Chentao Zhang",
+        "Zhihong Zhang"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/65759",
+          "url": "https://icml.cc/virtual/2026/poster/65759",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "查询线索翻译",
+        "文本超关系",
+        "图约束解码",
+        "双向翻译",
+        "线索回溯检索"
+      ],
+      "method": "针对结构增强RAG因关系缺失与语义漂移导致的段落检索失准，**KG-Translator**将查询检索改写为图级线索翻译。它以轻量NER和句法分析抽取实体，并将实体掩码后的原句作为超关系，构建有向**ParseKG**。专用LLM通过Trie实体前缀与FM-index关系子串约束进行双向解码，并以**结构感知微调**学习生成实体—关系线索。推理时将线索回溯至原段落，经轻量模型排序后把Top-k上下文交给通用LLM作答。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:37:48.642170+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/liu26fy/liu26fy.pdf",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
       "id": "p-f2cd08b7c0c58a9647e6",
       "title": "When Do Graph Foundation Models Transfer? A Data-Centric Theory",
       "authors": [
@@ -3517,6 +4366,147 @@
       ]
     },
     {
+      "id": "p-e440cc06e30648e98879",
+      "title": "$G^2$-Reader: Dual Evolving Graphs for Multimodal Document QA",
+      "authors": [
+        "Yaxin Du",
+        "Junru Song",
+        "Yifan Zhou",
+        "Cheng Wang",
+        "Jiahao Gu",
+        "Zimeng Chen",
+        "Menglan Chen",
+        "Wen Yao",
+        "Yang Yang",
+        "Ying Wen",
+        "Siheng Chen"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/66682",
+          "url": "https://icml.cc/virtual/2026/poster/66682",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "多模态内容图",
+        "图结构演化",
+        "结构化子图检索",
+        "规划图"
+      ],
+      "method": "面向多模态长文档问答中跨页文本、表格与图像证据被扁平切分的问题，**G²-Reader**构建内容图与规划图。内容图以段落和多模态元素为节点，用视觉语言模型生成摘要、关键词与统一嵌入，并迭代联合更新节点属性及引用、因果、跨模态等关系。检索时按查询相似度选点并扩展一跳邻域，形成结构化证据子图。**规划图**将问题分解为有依赖的子问题，按拓扑序检索与作答，经充分性检查反复修订，最终汇总验证证据生成答案。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:21:54.261394+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2601.22055",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-deda5dbae5a9d338ce44",
+      "title": "Graph Neural Networks Are Not Continuous Across Graph Resolutions",
+      "authors": [
+        "Christian Koke",
+        "Yuesong Shen",
+        "Abhishek Saroha",
+        "Marvin Eisenberger",
+        "Bastian Rieck",
+        "Michael Bronstein",
+        "Daniel Cremers"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/61479",
+          "url": "https://icml.cc/virtual/2026/poster/61479",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "跨分辨率泛化",
+        "尺度连续GNN",
+        "拉普拉斯变换传播",
+        "热核收敛"
+      ],
+      "method": "针对训练与推理图分辨率不同导致表征失配的问题，**尺度连续GNN**以节点特征、边权和非归一化图拉普拉斯表示高低分辨率图。它用**拉普拉斯变换传播**将多时刻热扩散核加权积分，并以投影和插值算子对齐粗细图；谱网络据此替换归一化拉普拉斯多项式，消息传递则以该矩阵加权消息并求和。训练沿用下游监督目标；推理时，**热核收敛界**界定粗细图的表示差异，图级表示经加权聚合与MLP完成跨分辨率回归。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T14:57:02.530303+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2605.31315",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-dc5398c0c6effd6be699",
+      "title": "Rethinking GNNs and Missing Features: Challenges, Evaluation and a Robust Solution",
+      "authors": [
+        "Francesco Ferrini",
+        "Veronica Lachi",
+        "Antonio Longa",
+        "Bruno Lepri",
+        "Akiyoshi Matono",
+        "Andrea Passerini",
+        "Xin Liu",
+        "Manfred Jaeger"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/65396",
+          "url": "https://icml.cc/virtual/2026/poster/65396",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "缺失机制偏移",
+        "缺失指示掩码",
+        "节点特征缺失",
+        "零填充",
+        "图消息传递"
+      ],
+      "method": "针对节点特征缺失机制在训练与测试间由MNAR转为完整或MCAR的分布偏移，论文提出**GNNmim**用于节点级预测。它先将未观测属性零填充，再把逐项二值缺失掩码与节点特征拼接，交给标准GNN沿图边聚合。该**缺失指示方法**不学习插补值，而让模型依据掩码辨别占位零并利用邻域信息；训练后直接输出节点分类或回归结果，并在不同缺失机制与缺失率下评测。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:28:55.461570+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2601.04855",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
       "id": "p-da0badc50e64b7f22db4",
       "title": "GP2F: Cross-Domain Graph Prompting with Adaptive Fusion of Pre-trained Graph Neural Networks",
       "authors": [
@@ -3555,6 +4545,97 @@
       "date_precision": "day",
       "conference_year": 2026,
       "pdf_url": "https://arxiv.org/pdf/2602.11629",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-d98e0a9544e1acbca286",
+      "title": "Subspace-Aware Feature Reshaping for Open-Set Graph Class-Incremental Learning",
+      "authors": [
+        "Weichao Zhang",
+        "Shuai Zheng",
+        "Yeyu Yan",
+        "Zhizhe Liu",
+        "Zhenfeng Zhu",
+        "Yao Zhao"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/64163",
+          "url": "https://icml.cc/virtual/2026/poster/64163",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "开放集图类增量学习",
+        "子空间指纹",
+        "能量路由",
+        "未知类别拒识",
+        "几何一致性"
+      ],
+      "method": "面向未来或无关未知类进入测试图、且历史图不可回放的开放集图类增量学习，**SAFER**冻结预训练GNN作为稳定坐标，并以PPR扩散增强节点特征。各任务用归一化中心和截断PCA低秩基建立**子空间指纹**；查询投影到各任务仿射子空间，以重构残差加中心距离的能量同时路由任务并按阈值拒识。训练以节点自适应提示调制输入，在适配器空间结合监督对比、加权交叉熵与可选焦点损失压紧类内几何；接纳节点由所选任务分类头预测。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:40:09.067367+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/zhang26jd/zhang26jd.pdf",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-c565d36d175fca702e6a",
+      "title": "Uncertainty-Constrained Trustworthiness for Graph Learning",
+      "authors": [
+        "Chunhui Zhang",
+        "Pengqi Li",
+        "Lizhong Ding",
+        "Ye Yuan",
+        "Peng Yang",
+        "Changsheng Li",
+        "Guoren Wang"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/62848",
+          "url": "https://icml.cc/virtual/2026/poster/62848",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "分布鲁棒图学习",
+        "Wasserstein不确定集",
+        "局部Lipschitz正则",
+        "多模态图扰动",
+        "敏感度估计"
+      ],
+      "method": "面向拓扑、节点特征与标签扰动造成的训练—测试图分布偏移，**DICT**为半监督节点分类生成多份扰动图，与原图混合形成经验分布。它以图结构、特征和标签的加权运输代价构造**Wasserstein不确定集**，最小化集合内最坏期望损失。借助强对偶和局部连续性，将无限维目标化为经验损失加**局部Lipschitz正则**；标注节点用一阶梯度、未标注节点用二阶高斯探针估计敏感度，再聚合并优化分类器。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:37:07.283301+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/zhang26ch/zhang26ch.pdf",
       "topics": [
         "OOD"
       ]
@@ -3605,6 +4686,52 @@
       ]
     },
     {
+      "id": "p-b25b1feb927899f60114",
+      "title": "Weaving Graph over Tokens: Contextualizing Structured Sequences for LLMs",
+      "authors": [
+        "Jiaxuan Chen",
+        "Zixing Zhang",
+        "Ruijun Mao",
+        "Wei Sun",
+        "Zhicheng Liang",
+        "Yuhang Zhang",
+        "Yaxi Liu",
+        "Fangxin Wang"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/62437",
+          "url": "https://icml.cc/virtual/2026/poster/62437",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "图语言注意力",
+        "图因果掩码",
+        "旋转结构编码",
+        "局部优先偏置"
+      ],
+      "method": "Weaver面向文本属性图推理，将节点及可选边文本编成token块，并保留块内位置与拉普拉斯结构坐标。**Graph-Causal Masking**在块内维持自回归、块间开放双向注意，使语义编码与拓扑传播同步进行。**GoRoPE**把词序和图坐标差写入查询与键的旋转相位，配合**局部优先偏置**区分结构对称节点。模型以合成图推理和场景图进行LoRA结构对齐，再按图与查询自回归生成答案，并可继续微调节点分类和链路预测。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:36:51.522911+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/chen26gm/chen26gm.pdf",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
       "id": "p-a21aa1718d9fcabae55c",
       "title": "GFMate: Empowering Graph Foundation Models with Test-time Prompt Tuning",
       "authors": [
@@ -3647,6 +4774,50 @@
       ]
     },
     {
+      "id": "p-9facc83c78182e8b41db",
+      "title": "Size Transferability of Graph Convolutional Networks across Sparsity: A Generalized Graphon Perspective",
+      "authors": [
+        "Qinji Shu",
+        "Hang Sheng",
+        "Feng Ji",
+        "Hui Feng",
+        "Bo Hu"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/63645",
+          "url": "https://icml.cc/virtual/2026/poster/63645",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "跨稀疏度迁移",
+        "规模迁移",
+        "广义图卷积网络",
+        "graphon拉伸",
+        "迁移误差界"
+      ],
+      "method": "针对从采样子图向更大目标图迁移时规模与边密度共同变化的问题，方法用广义graphon刻画任意稀疏图序列。**双重采样**经截断、缩放生成稀疏graphon及其节点信号，再采样边与特征；**拉伸变换**按边密度放大结构，避免极限退化为零。**GWCN**在拉伸graphon上递归执行多阶卷积和通道聚合，并共享GCN参数；通过约束算子与信号差异，得到由图规模、密度及网络结构共同决定的迁移误差上界。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:37:25.488930+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/shu26a/shu26a.pdf",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
       "id": "p-9f25f54241bcd8ccb700",
       "title": "ERAlign: Energy-based Representation Alignment of GNNs and LLMs on Text-attributed Graphs",
       "authors": [
@@ -3683,6 +4854,273 @@
       "date_precision": "day",
       "conference_year": 2026,
       "pdf_url": "https://arxiv.org/pdf/2606.10461",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-99432c5095899acdf68a",
+      "title": "CELL: A Causal Perspective for Fairness-aware Graph Adaptation",
+      "authors": [
+        "Hourun Li",
+        "Yifan Wang",
+        "Qinghua Ran",
+        "Junyu Luo",
+        "Jia Yang",
+        "Changling Zhou",
+        "Zhiping Xiao",
+        "Wei Ju",
+        "Xiao Luo",
+        "Ming Zhang"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/65733",
+          "url": "https://icml.cc/virtual/2026/poster/65733",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "公平图域适应",
+        "因果表示解耦",
+        "群组感知伪标签",
+        "二部图域对齐"
+      ],
+      "method": "面向源图有任务与敏感标签、目标图完全无标签且图分布变化的公平节点分类，**CELL**以双GNN分别编码敏感因素与任务因果因素。它用CLUB上界和条件InfoNCE约束两类表示解耦，再以目标伪任务及敏感标签构造组间对比关系。随后连接任务标签相同但敏感标签不同的跨域节点，施加**公平二部图对齐**；联合互信息、无偏学习、对齐及高置信伪标签损失完成目标图预测。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:32:14.232247+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/li26gu/li26gu.pdf",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-914dcacaedab2bc56eab",
+      "title": "From Distribution to Geometry: Stable Graph Generalization via Invariant Barycenters",
+      "authors": [
+        "Hangyuan Du",
+        "Rong Wang",
+        "Weihong Zhang",
+        "Lu Bai",
+        "Liang Bai",
+        "Yu Xie",
+        "Wenjian Wang"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/63302",
+          "url": "https://icml.cc/virtual/2026/poster/63302",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "不变子图提取",
+        "Wasserstein重心",
+        "跨环境原型对齐",
+        "表示解耦"
+      ],
+      "method": "面向训练与测试图分布不一致的图分类，**DIGL**先以属性扰动和结构编辑生成对抗环境，再用可学习边掩码拆分不变与环境特异子图并分别编码。它将同类图在各环境中的不变表示建模为高斯分布，以**Wasserstein重心**估计共享类别原型并最小化跨环境传输距离。随后以**解耦正则**降低两类表示的互信息、强化变体表示的环境差异，并联合分类、原型对齐与解耦损失训练，推理时用不变表示完成未见分布上的分类。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:36:02.375233+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/du26o/du26o.pdf",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-8e5e473484c019abbeea",
+      "title": "COPF: An Online Framework for Deployment-Stable Counterfactual Fairness in Evolving Graphs",
+      "authors": [
+        "Sheng&amp;#x27;en Li",
+        "Dongmian Zou"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/66593",
+          "url": "https://icml.cc/virtual/2026/poster/66593",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "执行诱导分布偏移",
+        "反事实公平",
+        "倾向概率日志",
+        "图感知双重稳健估计",
+        "在线原始对偶控制"
+      ],
+      "method": "面向演化图在线链接推荐中策略更新引发的反馈分布偏移与公平漂移，**COPF**在骨干评分器外增加决策层。它以显式探索和倾向概率日志构造曝光反事实，并用图感知自归一化**GA-DR**伪结果估计群体处理效应。**Residual-OI**按群体、分数桶及可选结构角色审计残差并生成窗口证书；多校准偏移与**PI原始-对偶控制器**依据效应平等和最小效应约束调整群体logit，随后随机Top-K曝光并在线更新图及估计器。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:33:03.661841+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/li26kb/li26kb.pdf",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-88535d2f57fe41e8cdcc",
+      "title": "A Graph Foundation Model with Cross-Modal Alignment and Modality-Aware Expert Fusion for Multi-Modal Graphs",
+      "authors": [
+        "Dongxiao He",
+        "AnKang Yang",
+        "Jitao Zhao",
+        "Di Jin"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/62088",
+          "url": "https://icml.cc/virtual/2026/poster/62088",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "多模态文本属性图",
+        "模态专属图编码",
+        "维度门控融合",
+        "稀疏专家路由",
+        "跨模态对比学习"
+      ],
+      "method": "面向含文本、图像属性且需迁移到未见图域的多模态图，**CAME**先用冻结CLIP编码节点文本与图像，再由两个模态专属GNN在同一拓扑上传播，保留各自结构语义。**维度门控融合**逐坐标组合两路表示，三组稀疏Top-k专家经组内路由和模态级路由生成统一表示。训练以文本—图像、文本—融合及图像—融合三项**跨模态InfoNCE**对齐同一节点，所得表示用于节点、边及链接任务。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:32:14.240248+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/he26at/he26at.pdf",
+      "topics": [
+        "TAG",
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-850bc4be90769db58854",
+      "title": "Progressive Graph Structure Adjustment for Homophily Shift Adaptation",
+      "authors": [
+        "Hongwei Wen",
+        "Can Zhang",
+        "Haoyu He",
+        "Hanyuan Hang",
+        "Minglong Lei"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/64322",
+          "url": "https://icml.cc/virtual/2026/poster/64322",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "图域适应",
+        "同配性偏移",
+        "渐进结构调整",
+        "一致性伪标签",
+        "域对抗对齐"
+      ],
+      "method": "面向源图与无标签目标图节点同配性分布不一致的图域适应，**PSAHS**通过结构校正学习可迁移的节点分类器。源侧利用真值标签重加权同类与异类边，并为低同配节点补充同类连接，以闭式节点强度提升至统一阈值。目标侧以结构感知GNN和属性MLP的一致预测筛选可靠伪标签，仅渐进修正低同配节点。训练交替执行结构调整与**域对抗表示对齐**，以源域交叉熵保持判别性并缩小调整后图的跨域表示差异。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:37:07.923116+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/wen26j/wen26j.pdf",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-7910ba174892d6f7c357",
+      "title": "LECTOR: Joint Optimization of Scientific Reasoning Graphs and Introduction Generation",
+      "authors": [
+        "Jiabei Xiao",
+        "Yizhou Wang",
+        "Chen Tang",
+        "Pengze Li",
+        "Wanli Ouyang",
+        "SHIXIANG TANG"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/62710",
+          "url": "https://icml.cc/virtual/2026/poster/62710",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "句子节点推理图",
+        "逻辑引导生成",
+        "图文忠实性",
+        "逻辑表达共奖励",
+        "联合强化学习"
+      ],
+      "method": "面向依据论文正文生成逻辑忠实引言的CCIG任务，**LECTOR**将方法、结果和分析中的自包含句子建为节点，以演绎、归纳、溯因关系连接成单根有向无环推理图。随后以图为科学叙事依据、引用列表为引文来源，按**CARS框架**组织领域、缺口与贡献。训练把正文到图再到引言视为统一轨迹，以**逻辑-表达共奖励**评估图有效性、图文忠实性、论文一致性、写作质量和引用对齐，并用简化PPO联合更新抽取与生成策略。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:39:51.559527+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/xiao26s/xiao26s.pdf",
       "topics": [
         "TAG"
       ]
@@ -3730,6 +5168,51 @@
       ]
     },
     {
+      "id": "p-65dd51761ca2d20f0603",
+      "title": "Rethinking Feature Alignment in Generalist Graph Anomaly Detection: A Relational Fingerprint-based Approach",
+      "authors": [
+        "Yujing Liu",
+        "Yixin Liu",
+        "Yu Zheng",
+        "Alan Liew",
+        "Xiaofeng Cao",
+        "Shirui Pan"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/65828",
+          "url": "https://icml.cc/virtual/2026/poster/65828",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "跨图异常检测",
+        "关系指纹",
+        "特征语义对齐",
+        "域自适应维度加权",
+        "免训练目标域推理"
+      ],
+      "method": "面向源图训练、未见目标图免更新的跨域节点异常检测，**ReFi-GAD**以关系指纹替代语义与维度异构的原始特征。它将邻域位置与方向、全局方向一致性、度和聚类系数转为百分位秩，形成统一五维**ReFi**。支持与查询指纹经MLP和掩码Transformer交互，再由**SNR自适应精炼**按目标域判别维度重标定。源域采用情节式BCE训练，推理时依据查询与正常、异常支持节点的余弦相似度产生异常分数，不更新参数。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:27:29.386884+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2605.25429",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
       "id": "p-5b8d5f318ed0897aac04",
       "title": "MDGMIX: Boundary-Aware Subgraph Mixing for Multi-Domain Graph Pre-Training",
       "authors": [
@@ -3769,6 +5252,236 @@
       "date_precision": "day",
       "conference_year": 2026,
       "pdf_url": "https://arxiv.org/pdf/2605.25771",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-53943140c9e82297b23e",
+      "title": "Graph-R1: Towards Agentic GraphRAG Framework via End-to-end Reinforcement Learning",
+      "authors": [
+        "Haoran Luo",
+        "Haihong E",
+        "Guanting Chen",
+        "Qika Lin",
+        "Yikai Guo",
+        "Fangzhi Xu",
+        "Zemin Kuang",
+        "Meina Song",
+        "Xiaobao Wu",
+        "Yifan Zhu",
+        "Anh Tuan Luu"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/63269",
+          "url": "https://icml.cc/virtual/2026/poster/63269",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "知识超图构建",
+        "多轮图检索",
+        "双路超图检索",
+        "轨迹强化学习"
+      ],
+      "method": "Graph-R1面向由文本语料构建的知识超图问答，将文档片段中的实体与n元关系抽取为节点和超边，并用共享编码器生成语义向量。**多轮图交互**让LLM依次反思、判断继续或终止并生成查询；继续时以实体和超边双路检索，经倒数排名融合后将事实写回状态，终止时生成答案。训练以**GRPO**优化完整轨迹，结合结构格式奖励与基于答案token级F1的答案奖励，使检索决策和最终生成共同受监督。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T14:57:36.336003+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2507.21892",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-42709c3e1f9aa6b79744",
+      "title": "CCLRec: Consensus-driven Contrastive Learning for LLM-enhanced Graph Recommendation",
+      "authors": [
+        "Ting Guo",
+        "Dongyu Pei",
+        "Litiao Qiu",
+        "Xiaoying Liao",
+        "KE LIANG",
+        "Peng Song",
+        "Pinle Qin"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/65594",
+          "url": "https://icml.cc/virtual/2026/poster/65594",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "结构语义共识",
+        "语义感知采样",
+        "物品共现采样",
+        "共识对比学习",
+        "图推荐"
+      ],
+      "method": "针对用户—物品交互图中协同结构与LLM语义监督冲突，**CCLRec**将文本属性、用户历史生成的语义嵌入与图卷积ID表示融合。它分别以语义中心相似度和物品共现矩阵构造正负样本，再用**结构—语义共识挖掘**取两视图交集，筛出共同认可的样本对。训练时，**共识驱动对比损失**加权强化共识正负对，并与**BPR排序损失**联合优化用户和物品表示，最终按内积得分执行Top-K推荐。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:31:30.309145+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/guo26p/guo26p.pdf",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-414f1597e86d412e72ca",
+      "title": "HInT: Hypergraph Infusion at the Structural Layers Improves Table Understanding",
+      "authors": [
+        "Wonjin Lee",
+        "Soomi Jeong",
+        "Kwang In Kim"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/66822",
+          "url": "https://icml.cc/virtual/2026/poster/66822",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "结构层探测",
+        "表格超图",
+        "超图消息传递",
+        "词元级门控融合",
+        "推理增强监督"
+      ],
+      "method": "针对表格序列化削弱行列关系的问题，**HInT**先用行列结构掩码与注意力图的LASSO稀疏对齐，定位承载表格关系的结构层。它将单元格建为节点、同行同列及层级表头建为超边，并从层内词元状态平均池化初始化节点和超边。**HyperTrans**以交叉注意力传播高阶关系，再由**词元级门控融合**写回对应词元；模型经腐败检测预训练后，以含中间推理步骤的监督端到端生成答案。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:36:19.304006+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/lee26p/lee26p.pdf",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-3e30f66f92e859762cc4",
+      "title": "CLINIC: Towards High-quality Graph Out-Of-Distribution Detection",
+      "authors": [
+        "Yifan Wang",
+        "Haodong Zhang",
+        "Changhu Wang",
+        "Tao Ren",
+        "Dongjie Wang",
+        "Wei Ju",
+        "Chong Chen",
+        "Xian-Sheng Hua",
+        "Xiao Luo"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/62229",
+          "url": "https://icml.cc/virtual/2026/poster/62229",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "图级分布外检测",
+        "上下文亲和图",
+        "双重一致性学习",
+        "决策边界压缩"
+      ],
+      "method": "面向仅用分布内图训练、测试时区分分布内外图的任务，**CLINIC**先以GNN编码原图及增强视图，并按批内互近邻关系构造上下文亲和图。**高阶亲和增强**用元GNN传播并检索语义近邻，双重一致性约束两视图的邻居相似度分布及同邻域聚类预测。再以类内、最近异类中心距离压缩分布内边界；联合三项损失训练，推理时以压缩比作为OOD分数。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:31:10.705459+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/wang26kt/wang26kt.pdf",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-3e2b6a566c5b11f26898",
+      "title": "Generalist Graph Anomaly Detection via Prototype-Based Distillation",
+      "authors": [
+        "Yiming Xu",
+        "Zihan Chen",
+        "Zhen Peng",
+        "Song Wang",
+        "Bin Shi",
+        "Bo Dong",
+        "Chao Shen"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/64137",
+          "url": "https://icml.cc/virtual/2026/poster/64137",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "跨图异常检测",
+        "原型软标签蒸馏",
+        "混合学生",
+        "可靠性加权",
+        "零样本迁移"
+      ],
+      "method": "面向训练图与跨域未见图的属性、拓扑偏移，**ProMoS**以无标签多图训练零样本节点异常检测器。冻结自监督GNN教师，向共享分支和Top-K稀疏个性化分支组成的**混合学生**蒸馏正常性先验。**原型软标签蒸馏**用KL散度对齐师生原型分布，可靠性加权的承诺与细化损失稳定教师空间并更新原型。推理无需适配，融合蒸馏偏差与嵌入到最近原型的几何偏差生成异常分数。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:24:15.424315+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2605.26857",
       "topics": [
         "OOD"
       ]
@@ -3862,6 +5575,92 @@
       ]
     },
     {
+      "id": "p-3814577f2bf381be2d60",
+      "title": "Adaptive Recurrent Message Passing for Test Time Computing on Graphs",
+      "authors": [
+        "Junshu Sun",
+        "Wanxing Chang",
+        "Qingming Huang",
+        "Shuhui Wang"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/64927",
+          "url": "https://icml.cc/virtual/2026/poster/64927",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "跨图零样本迁移",
+        "递归消息传递",
+        "归一化步编码",
+        "目标代理关系",
+        "梯度位移监督"
+      ],
+      "method": "针对预训练图模型在未见下游图上因感受野需求不同而难以零样本迁移的问题，**AdaR**复用同一消息传递层，以可变递归步数扩展节点感受野。每步拼接当前表示、固定总时间下的**归一化步编码**及节点与目标代理的关系，经速度函数残差更新；伪节点将数量不一的目标聚合为定长代理。训练以任务损失梯度约束逐步与全程位移，并优化末步任务损失；测试时无需改参即可增加步数，并依据节点与目标的平均内积退出。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:20:39.465515+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2606.22462",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-35c84d4d8d2040025e82",
+      "title": "View Space: Learning Representation across Arbitrary Graphs",
+      "authors": [
+        "Dooho Lee",
+        "Myeong Kong",
+        "Minho Jeong",
+        "Jaemin Yoo"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/65826",
+          "url": "https://icml.cc/virtual/2026/poster/65826",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "全归纳跨图迁移",
+        "异构特征空间",
+        "视图堆叠",
+        "节点特征动态聚合",
+        "双重置换等变"
+      ],
+      "method": "针对训练图与未见图在节点数、拓扑及特征维度和语义上的变化，本文研究无需重训编码器的跨图节点表示与分类。**视图堆叠**用多种邻接传播算子生成节点特征矩阵，并沿新轴组成固定维视图向量。**GVT**以共享MLP逐个压缩节点—特征视图向量，保持节点与特征置换等变，并形成融合结构响应的表示。**RGVT**共享同一非线性GVT参数循环多步，以可选深度扩展感受野；预训练联合优化编码器和分类器，迁移时冻结编码器，仅训练轻量预测器。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:38:01.635960+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/lee26ah/lee26ah.pdf",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
       "id": "p-32d5c33544e589f94948",
       "title": "Structure-Centric Graph Foundation Model via Geometric Bases",
       "authors": [
@@ -3901,6 +5700,48 @@
       "date_precision": "day",
       "conference_year": 2026,
       "pdf_url": "https://arxiv.org/pdf/2605.08689",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-2e855852e843603568ab",
+      "title": "X-EviProbe: Post-hoc Parameter-Free Evidential Uncertainty Quantification for Frozen Graph Neural Networks",
+      "authors": [
+        "Chenghua Guo",
+        "Sihong Xie",
+        "Xi Zhang"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/65499",
+          "url": "https://icml.cc/virtual/2026/poster/65499",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "留出类别偏移",
+        "后验不确定性量化",
+        "狄利克雷证据",
+        "几何证据门控",
+        "证据强度传播"
+      ],
+      "method": "面向冻结GNN在留出类别分布偏移下的节点OOD检测，**X-EviProbe**以训练与验证节点为参考，从冻结嵌入、logit和预测概率构造无须再训练的狄利克雷证据。其**几何证据提取**用查询节点到参考集的L1最近邻距离度量支持，并以误分类节点作误差锚点区分认知与偶然不确定性。**全息证据融合**以几何门控logit证据总量、按概率分配类别，再沿图传播标量证据强度；推理时以传播后总强度的倒数识别未见类别节点。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:36:39.567457+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/guo26ac/guo26ac.pdf",
       "topics": [
         "OOD"
       ]
@@ -3994,6 +5835,91 @@
       ]
     },
     {
+      "id": "p-22ad60f4c37e3a04cdcd",
+      "title": "Enhancing LLMs for Graph Tasks via Graph-aware LoRA Generation",
+      "authors": [
+        "Junshu Sun",
+        "Wanxing Chang",
+        "Qingming Huang",
+        "Shuhui Wang"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/65661",
+          "url": "https://icml.cc/virtual/2026/poster/65661",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "图感知LoRA",
+        "权重级图注入",
+        "全图表示",
+        "范数重缩放",
+        "跨数据集零样本迁移"
+      ],
+      "method": "面向图数据集特征与标签空间变化下的零样本迁移，**GaRA**将节点文本、任务描述和局部子图序列编码为提示，并用GNN在完整图上传播后最大池化为全局表示。**图感知LoRA生成**由全局表示产生低秩矩阵，叠加到LoRA左因子并作用于语言模型隐藏层，以补充局部提示遗漏的高层结构。**范数重缩放**令生成矩阵平均列范数匹配LoRA左矩阵，再以标签文本交叉熵训练，用于未见数据集的节点分类、链路预测与图分类。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:21:32.025532+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2606.22429",
+      "topics": [
+        "TAG",
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-12210692680f5e8c48f2",
+      "title": "Beyond Explicit Edges: Robust Reasoning over Noisy and Sparse Knowledge Graphs",
+      "authors": [
+        "Hang Gao",
+        "Dimitris Metaxas"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/66268",
+          "url": "https://icml.cc/virtual/2026/poster/66268",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "语义图搜索",
+        "LLM导航",
+        "相似度扩展",
+        "动态虚拟边",
+        "查询路由"
+      ],
+      "method": "面向噪声、稀疏且连接缺失的文本属性知识图谱，**INSES**联合节点和边的文本描述、类型、节点嵌入完成多跳问答。它从问题抽取实体并以余弦相似度定位初始节点，再由**LLM导航器**筛选邻接三元组并判断证据是否充分。**相似度扩展**将过阈值的近邻与候选端点合并为下一轮节点，动态形成虚拟边并排除已访问节点，直至可回答或达到迭代上限。路由器将简单高置信问题交给朴素RAG，其余升级到图搜索，最终以所选三元组生成答案。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:22:38.388615+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2603.14006",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
       "id": "p-10b45ec019fb4dbbf908",
       "title": "DANCE: Dynamic, Available, Neighbor-gated Condensation for Federated Text-Attributed Graphs",
       "authors": [
@@ -4035,6 +5961,96 @@
       "date_precision": "day",
       "conference_year": 2026,
       "pdf_url": "https://arxiv.org/pdf/2601.16519",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-0c3f71645c49b5c859f2",
+      "title": "When LLMs Encounter Open-world Graph Learning: A Fresh View on Unlabeled Data Uncertainty",
+      "authors": [
+        "Yanzhe Wen",
+        "Xunkai Li",
+        "Qi Zhang",
+        "Lei Zhu",
+        "Guang Zeng",
+        "Zhihan Zhang",
+        "Rong-Hua Li",
+        "Guoren Wang"
+      ],
+      "published": "2026-05-05",
+      "updated": "2026-05-05",
+      "venue": "ICML",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://icml.cc/virtual/2026/poster/60613",
+          "url": "https://icml.cc/virtual/2026/poster/60613",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "开放世界节点学习",
+        "未知类别拒识",
+        "本体表示学习",
+        "语义拓扑融合",
+        "结构引导标注"
+      ],
+      "method": "面向文本属性图中未标注节点可能来自已知或新类别的开放世界学习，**OGA**先以预训练图语言编码器联合编码节点描述与拓扑。**ALT**通过个性化PageRank传播和邻域加权动态构造类别概念，以概念距离和置信阈值分类已知节点并拒识未知节点；训练联合交叉熵、拓扑平滑与概念分离损失。随后**GLA**用语义增强社区划分、度感知标注、社区内蒸馏及社区间融合生成新类标签，并将其分配给节点以扩充监督、重训下游图模型。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:38:28.578463+00:00",
+      "venue_label": "ICML",
+      "display_date": "2026-05-05",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/wen26e/wen26e.pdf",
+      "topics": [
+        "TAG",
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-1458b047eda9f441b568",
+      "title": "AGRAG: Advanced Graph-Based Retrieval-Augmented Generation for LLMs",
+      "authors": [
+        "Yubo Wang",
+        "Haoyang Li",
+        "Fei Teng",
+        "Lei Chen"
+      ],
+      "published": "2026-05",
+      "updated": "2026-05",
+      "venue": "ICDE",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.1109/icde65706.2026.00110",
+          "url": "https://doi.org/10.1109/icde65706.2026.00110",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "图式检索增强生成",
+        "统计实体抽取",
+        "MCMI推理子图",
+        "混合检索"
+      ],
+      "method": "面向图式RAG的建图噪声与推理链不完整问题，**AGRAG**以TFIDF抽取文本块实体，由LLM识别关系，并将文本块与实体关联成图。查询映射并过滤三元组后，以PPR作节点影响分、以语义相似度作边成本；**MCMI子图**从连接映射三元组的最小成本Steiner树出发，按成本影响比贪心扩展，形成可含环的显式推理路径。最后，**混合检索**融合BM25与稠密相似度补充文本块，与序列化子图共同输入LLM生成答案。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:23:03.917717+00:00",
+      "venue_label": "ICDE",
+      "display_date": "2026-05",
+      "date_basis": "conference_publication",
+      "date_precision": "month",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2511.05549",
       "topics": [
         "TAG"
       ]
@@ -4221,6 +6237,52 @@
       "conference_year": 2025,
       "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/adc8f8b701b008611b196e00b8e81dab-Paper-Conference.pdf",
       "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-f5f1c114f2dbfc3e5971",
+      "title": "UniHG: A Large-scale Universal Heterogeneous Graph Dataset and Benchmark for Representation Learning and Cross-Domain Transferring",
+      "authors": [
+        "Qiu, Yide",
+        "Zhang, Tong",
+        "Ling, Shaoxiang",
+        "Cai, Xing",
+        "Gu, Ziqi",
+        "Cui, Zhen"
+      ],
+      "published": "2026-04-23",
+      "updated": "2026-04-23",
+      "venue": "NeurIPS",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.52202/085713-0491",
+          "url": "https://papers.nips.cc/paper_files/paper/2025/hash/1568882ba1a50316e87852542523739c-Abstract-Datasets_and_Benchmarks_Track.html",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "文本结构重组",
+        "语义空间对齐",
+        "各向异性特征传播",
+        "图无关特征映射",
+        "跨域知识迁移"
+      ],
+      "method": "面向大规模多属性异构文本图，UniHG将实体描述及关联描述重组为统一句式，并用CLIP文本编码器把节点与边投到共享语义空间。**HGD**先在CPU上以关系感知邻接张量执行无参数的多跳**AFP**，再由MLP编码各跳表示。**图无关特征映射**通过逐跳对角注意力和残差汇聚传播特征，以二元交叉熵学习多标签节点分布；预训练嵌入经文本检索后作为自监督信号注入跨域推荐。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T15:08:35.101033+00:00",
+      "venue_label": "NeurIPS",
+      "display_date": "2026-04-23",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2025,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/1568882ba1a50316e87852542523739c-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "topics": [
+        "TAG",
         "OOD"
       ]
     },
@@ -4530,6 +6592,97 @@
       ]
     },
     {
+      "id": "p-dcc1643255ba639d9481",
+      "title": "One for All: Universal Topological Primitive Transfer for Graph Structure Learning",
+      "authors": [
+        "Qiu, Yide",
+        "Zhang, Tong",
+        "Cai, Xing",
+        "Yan, Hui",
+        "Cui, Zhen"
+      ],
+      "published": "2026-04-23",
+      "updated": "2026-04-23",
+      "venue": "NeurIPS",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.52202/085713-0835",
+          "url": "https://papers.nips.cc/paper_files/paper/2025/hash/235c66f525a8db97f7181a944938cf6e-Abstract-Conference.html",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "拓扑基元迁移",
+        "结构文本注释",
+        "双流状态空间模型",
+        "分布加权交叉注意力"
+      ],
+      "method": "**G²SN-Transfer**面向源图到不同领域目标图的结构知识适应。统计节点两跳内拓扑基元，经字典生成节点文本注释，并用共享词袋编码文本与基元分数。**G²SN**让双流输入共同控制状态空间模型的选择过程，以均方误差重建文本特征完成预训练。迁移时，**AdaCross-Transfer**按基元分布加权，将结构表示与目标图GNN特征交叉注意力融合，再以单一下游任务损失训练预测器。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T06:22:20.069902+00:00",
+      "venue_label": "NeurIPS",
+      "display_date": "2026-04-23",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2025,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/235c66f525a8db97f7181a944938cf6e-Paper-Conference.pdf",
+      "topics": [
+        "TAG",
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-d80fd5269f535491f342",
+      "title": "One Prompt Fits All: Universal Graph Adaptation for Pretrained Models",
+      "authors": [
+        "Huang, Yongqi",
+        "Zhao, Jitao",
+        "He, Dongxiao",
+        "Wang , Xiaobao",
+        "Li, Yawen",
+        "Huang, Yuxiao",
+        "Jin, Di",
+        "Feng, Zhiyong"
+      ],
+      "published": "2026-04-23",
+      "updated": "2026-04-23",
+      "venue": "NeurIPS",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.52202/085713-2864",
+          "url": "https://papers.nips.cc/paper_files/paper/2025/hash/7b7d7985f62284060d65f532ed2ea5fa-Abstract-Conference.html",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "跨域图适应",
+        "拓扑提示",
+        "可学习边门控",
+        "自举式拓扑融合",
+        "少样本节点分类"
+      ],
+      "method": "针对预训练与下游图跨域、同配性转异配性造成的结构分布偏移，**UniPrompt**在少样本节点分类中冻结图编码器。它按节点特征余弦相似度构造**kNN拓扑提示**，以可学习边权门控剪枝或增强消息传递。随后用**自举式拓扑融合**逐轮加权原邻接与提示邻接，将所得图送入编码器；仅以标注节点的交叉熵联合优化提示参数和轻量分类头，使前者对齐下游输入、后者适配标签。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T13:24:22.966959+00:00",
+      "venue_label": "NeurIPS",
+      "display_date": "2026-04-23",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2025,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/7b7d7985f62284060d65f532ed2ea5fa-Paper-Conference.pdf",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
       "id": "p-d78024cd7e223d95d40d",
       "title": "ReMindRAG: Low-Cost LLM-Guided Knowledge Graph Traversal for Efficient RAG",
       "authors": [
@@ -4711,6 +6864,95 @@
       ]
     },
     {
+      "id": "p-b4bda12405bbbaf0f4c8",
+      "title": "On Transferring Transferability: Towards a Theory for Size Generalization",
+      "authors": [
+        "Levin, Eitan",
+        "Ma, Yuxin",
+        "Diaz, Mateo",
+        "Villar, Soledad"
+      ],
+      "published": "2026-04-23",
+      "updated": "2026-04-23",
+      "venue": "NeurIPS",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.52202/085713-2247",
+          "url": "https://papers.nips.cc/paper_files/paper/2025/hash/60b393761eea35bf491687c46e4f1a5a-Abstract-Conference.html",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "图尺寸泛化",
+        "一致序列",
+        "极限空间连续性",
+        "复制兼容",
+        "Continuous GGNN"
+      ],
+      "method": "针对小规模训练、较大图测试的尺寸分布偏移，论文以复制嵌入把不同节点数的图信号识别为同一步图极限，并用割距离或算子范数比较。**一致序列框架**要求各尺寸映射兼容且在极限空间连续，从而控制跨尺寸输出差异并导出含采样偏移项的泛化界。进一步构造**Continuous GGNN**：保留复制兼容、算子范数有界的等变线性基，连接消息传递式非线性，使模型对算子二范数局部Lipschitz并对割距离连续，用于大图预测。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T13:26:31.721731+00:00",
+      "venue_label": "NeurIPS",
+      "display_date": "2026-04-23",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2025,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/60b393761eea35bf491687c46e4f1a5a-Paper-Conference.pdf",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-b3331332ede554f332ed",
+      "title": "GraphKeeper: Graph Domain-Incremental Learning via Knowledge Disentanglement and Preservation",
+      "authors": [
+        "Guo, Zihao",
+        "Sun, Qingyun",
+        "Zhang, Ziwei",
+        "Yuan, Haonan",
+        "ZHUANG, HUIPING",
+        "Fu, Xingcheng",
+        "Li, Jianxin"
+      ],
+      "published": "2026-04-23",
+      "updated": "2026-04-23",
+      "venue": "NeurIPS",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.52202/085713-0042",
+          "url": "https://papers.nips.cc/paper_files/paper/2025/hash/01d78b294d80491fecddea897cf03642-Abstract-Conference.html",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "图域增量学习",
+        "域特定参数隔离",
+        "域内外表示解耦",
+        "递归岭回归",
+        "域原型匹配"
+      ],
+      "method": "针对结构与特征语义随增量图域变化、旧域不可访问时的遗忘，**GraphKeeper**先以SVD统一特征维度，并在冻结预训练GNN上为每个域配置独立LoRA。**域内外解耦**用类别对比约束压紧同类、分离异类，并将当前域推离旧域聚类原型。**无偏知识保持**递归更新岭回归闭式分类器；测试时经随机高维映射匹配最近域原型，选择对应PEFT编码并预测节点标签。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T15:03:59.698218+00:00",
+      "venue_label": "NeurIPS",
+      "display_date": "2026-04-23",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2025,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/01d78b294d80491fecddea897cf03642-Paper-Conference.pdf",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
       "id": "p-a2feca2ddaa692215f0a",
       "title": "IA-GGAD: Zero-shot Generalist Graph Anomaly Detection via Invariant and Affinity Learning",
       "authors": [
@@ -4834,6 +7076,55 @@
       "date_precision": "day",
       "conference_year": 2025,
       "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/8bd9f3ae50e9e1230e483dda4873e710-Paper-Conference.pdf",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-99d2e9947d79f76a8c4d",
+      "title": "MiNT: Multi-Network Transfer Benchmark for Temporal Graph Learning",
+      "authors": [
+        "Shamsi, Kiarash",
+        "Ngo, Tran Gia Bao",
+        "Shirzadkhani, Razieh",
+        "Huang, Shenyang",
+        "Poursafaei, Farimah",
+        "Azad, Poupak",
+        "Rabbany, Reihaneh",
+        "Coskunuzer, Baris",
+        "Rabusseau, Guillaume",
+        "Akcora, Cuneyt"
+      ],
+      "published": "2026-04-23",
+      "updated": "2026-04-23",
+      "venue": "NeurIPS",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.52202/085713-4521",
+          "url": "https://papers.nips.cc/paper_files/paper/2025/hash/c5548168cb7324f714365a971dfe76d1-Abstract-Datasets_and_Benchmarks_Track.html",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "多网络预训练",
+        "动态图跨域迁移",
+        "上下文切换",
+        "网络顺序打乱",
+        "零样本图预测"
+      ],
+      "method": "面向训练图与未见同域或跨域动态图的分布变化，**MiNT**学习可迁移的图级时序表示，预测未来网络增长或收缩。它将各图组织为按时间排列的快照，TGNN结合当前快照和历史隐状态逐步编码。训练以**顺序打乱**改变每轮网络次序，并用**上下文切换**在切换网络时重置历史嵌入，防止状态串扰。解码器汇聚节点表示和图级度特征进行二分类；推理时冻结参数，以新历史状态前向处理未见图并零样本预测。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T15:11:20.911659+00:00",
+      "venue_label": "NeurIPS",
+      "display_date": "2026-04-23",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2025,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/c5548168cb7324f714365a971dfe76d1-Paper-Datasets_and_Benchmarks_Track.pdf",
       "topics": [
         "OOD"
       ]
@@ -5113,6 +7404,95 @@
       ]
     },
     {
+      "id": "p-70a68572149c919eac9d",
+      "title": "Refining Norms: A Post-hoc Framework for OOD Detection in Graph Neural Networks",
+      "authors": [
+        "Gu, Jiawei",
+        "Qiao, Ziyue",
+        "Li, Zechao"
+      ],
+      "published": "2026-04-23",
+      "updated": "2026-04-23",
+      "venue": "NeurIPS",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.52202/085713-1360",
+          "url": "https://papers.nips.cc/paper_files/paper/2025/hash/39fac857b4467e3ef4f358186bb07d81-Abstract-Conference.html",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "嵌入范数检测",
+        "全局归一化",
+        "中位数邻域聚合",
+        "多跳参照",
+        "后处理检测"
+      ],
+      "method": "针对预训练GNN在节点级与图级分布外输入上的检测，**RAGNOR**以冻结模型生成的节点嵌入及其L2范数为输入，无需重训。它先用训练集ID统计量执行**全局Z分数归一化**，再对一跳、可选二跳邻域的归一化范数取中位数并加权融合，形成稳健局部参照。节点分数取自身归一化范数与参照之差的绝对值，以阈值判别OOD；图级则对节点分数取最大值或均值，且可按差异缩放分类logit以抑制过置信。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T13:25:17.502807+00:00",
+      "venue_label": "NeurIPS",
+      "display_date": "2026-04-23",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2025,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/39fac857b4467e3ef4f358186bb07d81-Paper-Conference.pdf",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-6f953089b578c1926f85",
+      "title": "GRAVER: Generative Graph Vocabularies for Robust Graph Foundation Models Fine-tuning",
+      "authors": [
+        "Yuan, Haonan",
+        "Sun, Qingyun",
+        "Shi, Junhua",
+        "Fu, Xingcheng",
+        "Hooi, Bryan",
+        "Li, Jianxin",
+        "Yu, Philip S"
+      ],
+      "published": "2026-04-23",
+      "updated": "2026-04-23",
+      "venue": "NeurIPS",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.52202/085713-0560",
+          "url": "https://papers.nips.cc/paper_files/paper/2025/hash/185969291540b3cd86e70c51e8af5d08-Abstract-Conference.html",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "文本特征对齐",
+        "因子化ego图",
+        "生成式图词汇",
+        "图元专家",
+        "跨域少样本适应"
+      ],
+      "method": "面向多域预训练到未见目标域的结构与属性偏移，**GRAVER**将节点原始文本和类描述编码后与原特征拼接对齐，再以软路由把ego图分解为因子子图。**图元专家**按类联合估计结构、特征graphon并采样图元；**MoE-CoE**依据目标支持样本选择源域并组合类级图元，叠加到最大度节点。预训练结合对比链接预测与通道互信息约束；微调冻结编码器，优化图提示和路由不确定性，以查询到类原型的相似度完成节点或图分类。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T14:59:37.933421+00:00",
+      "venue_label": "NeurIPS",
+      "display_date": "2026-04-23",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2025,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/185969291540b3cd86e70c51e8af5d08-Paper-Conference.pdf",
+      "topics": [
+        "TAG",
+        "OOD"
+      ]
+    },
+    {
       "id": "p-6db79483487ce0cd0dc0",
       "title": "Graph-KV: Breaking Sequence via Injecting Structural Biases into Large Language Models",
       "authors": [
@@ -5153,6 +7533,57 @@
       "date_precision": "day",
       "conference_year": 2025,
       "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/62caaa619dfa26bbc6eb7a0c1b8026f1-Paper-Conference.pdf",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-6a28bfe363e3ddad0856",
+      "title": "ExGra-Med: Extended Context Graph Alignment for Medical Vision-Language Models",
+      "authors": [
+        "M. H. Nguyen, Duy",
+        "Diep, Nghiem",
+        "Nguyen, Trung",
+        "Le, Hoang-Bao",
+        "Nguyen, Tai",
+        "Nguyen, Anh-Tien",
+        "Nguyen, TrungTin",
+        "Ho, Nhat",
+        "Xie, Pengtao",
+        "Wattenhofer, Roger",
+        "Sonntag, Daniel",
+        "Zou, James",
+        "Niepert, Mathias"
+      ],
+      "published": "2026-04-23",
+      "updated": "2026-04-23",
+      "venue": "NeurIPS",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.52202/085713-3657",
+          "url": "https://papers.nips.cc/paper_files/paper/2025/hash/9df0a10002a16365d03792ee5098376d-Abstract-Conference.html",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "多图对齐",
+        "扩展上下文",
+        "重心图",
+        "黑盒梯度估计"
+      ],
+      "method": "针对少量医疗指令数据下的视觉文本对齐，**EXGRA-MED**将图像、原始回答和语义一致的扩展回答分别建图。ViT与投影器编码图像，LLM编码两类文本；池化后以k近邻连边，并用消息传递更新节点。**重心图对齐**按已知三元组构造共享重心，将三图分别映射到它，同时匹配节点特征与边结构。训练用预测匹配和真实对应间的汉明损失约束表示，以**IMLE黑盒梯度**穿过离散求解器，并与自回归损失联合优化用于医疗问答。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T15:04:39.701194+00:00",
+      "venue_label": "NeurIPS",
+      "display_date": "2026-04-23",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2025,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/9df0a10002a16365d03792ee5098376d-Paper-Conference.pdf",
       "topics": [
         "TAG"
       ]
@@ -5201,6 +7632,96 @@
       "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/e4343147340c9d65f4c780451eb066f9-Paper-Conference.pdf",
       "topics": [
         "TAG"
+      ]
+    },
+    {
+      "id": "p-5f8df2e58005b77bc3f4",
+      "title": "GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation",
+      "authors": [
+        "Luo, Linhao",
+        "Zhao, Zicheng",
+        "Haffari, Reza",
+        "Phung, Dinh",
+        "Gong, Chen",
+        "Pan, Shirui"
+      ],
+      "published": "2026-04-23",
+      "updated": "2026-04-23",
+      "venue": "NeurIPS",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.52202/085713-1222",
+          "url": "https://papers.nips.cc/paper_files/paper/2025/hash/33ca0b1102b54c191a9a45a05adafaf4-Abstract-Conference.html",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "图增强检索",
+        "查询依赖消息传递",
+        "跨域零样本检索",
+        "知识图谱补全预训练",
+        "实体文档倒排索引"
+      ],
+      "method": "面向未见领域的图增强多跳检索，**GFM-RAG**从文档抽取三元组并建立实体—文档倒排索引。查询和关系由同一句向量模型编码，**查询依赖GNN**从查询实体沿图多层传递，输出实体相关分数。先以掩码实体进行图谱补全预训练，再用问题和支持文档实体微调，联合BCE与排序损失。推理时按逆文档频率汇总高分实体对应文档，取前K篇供LLM生成答案，无需在未见数据集上再训练。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T14:58:23.870724+00:00",
+      "venue_label": "NeurIPS",
+      "display_date": "2026-04-23",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2025,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/33ca0b1102b54c191a9a45a05adafaf4-Paper-Conference.pdf",
+      "topics": [
+        "TAG",
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-5cbc0a856588136c766c",
+      "title": "RoFt-Mol: Benchmarking Robust Fine-tuning with Molecular Graph Foundation Models",
+      "authors": [
+        "Liu, Shikun",
+        "Zou, Deyu",
+        "Shoghi, Nima",
+        "Fung, Victor",
+        "Liu, Kai",
+        "Li, Pan"
+      ],
+      "published": "2026-04-23",
+      "updated": "2026-04-23",
+      "venue": "NeurIPS",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.52202/085713-0025",
+          "url": "https://papers.nips.cc/paper_files/paper/2025/hash/013acf7d59f4333131fc8581e86148b1-Abstract-Datasets_and_Benchmarks_Track.html",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "分子图分布偏移",
+        "逐层权重插值",
+        "鲁棒微调",
+        "验证损失优化"
+      ],
+      "method": "面向分子图基础模型在支架结构与分子尺寸偏移下的性质预测，先以预训练GNN编码分子图，再在下游标注上全量微调编码器与预测头。**DWiSE-FT**对每个编码层分别设置混合系数，将预训练权重与全量微调权重逐层线性插值。各层系数通过验证损失梯度自动优化，在无需为不同系数重复微调的后处理中生成插值模型，并由原预测头完成分类或回归；随机、支架及尺寸划分共同检验其分布内外适应性。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T15:12:17.398611+00:00",
+      "venue_label": "NeurIPS",
+      "display_date": "2026-04-23",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2025,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/013acf7d59f4333131fc8581e86148b1-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "topics": [
+        "OOD"
       ]
     },
     {
@@ -5604,6 +8125,52 @@
       ]
     },
     {
+      "id": "p-16f9961d37056843919b",
+      "title": "Equilibrium Policy Generalization: A Reinforcement Learning Framework for Cross-Graph Zero-Shot Generalization in Pursuit-Evasion Games",
+      "authors": [
+        "Lu, Runyu",
+        "Zhang, Peng",
+        "Shi, Ruochuan",
+        "Zhu, Yuanheng",
+        "Zhao, Dongbin",
+        "Liu, Yang",
+        "Wang, Dong",
+        "Alippi, Cesare"
+      ],
+      "published": "2026-04-23",
+      "updated": "2026-04-23",
+      "venue": "NeurIPS",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.52202/085713-1630",
+          "url": "https://papers.nips.cc/paper_files/paper/2025/hash/45a30141c6719e9cfedfb51f1c665a37-Abstract-Conference.html",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "跨图零样本泛化",
+        "均衡策略引导",
+        "最短路距离特征",
+        "序列策略分解"
+      ],
+      "method": "面向追逃博弈在训练图与未见图结构变化下的零样本策略迁移，**EPG**在多种图上联合训练追捕者或逃逸者。节点以到各智能体及出口的归一化**最短路距离特征**表示，经掩码自注意力、解码器和指针网络按序生成多智能体联合动作。训练以单图均衡策略构造对手和参考策略，在SAC策略损失中加入**KL引导**，并用交互转移学习价值网络；测试时仅重算距离即可在新图执行。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T15:02:21.356679+00:00",
+      "venue_label": "NeurIPS",
+      "display_date": "2026-04-23",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2025,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/45a30141c6719e9cfedfb51f1c665a37-Paper-Conference.pdf",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
       "id": "p-1578730725d3aa26ce6d",
       "title": "Equivariance Everywhere All At Once: A Recipe for Graph Foundation Models",
       "authors": [
@@ -5641,6 +8208,51 @@
       "date_precision": "day",
       "conference_year": 2025,
       "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/2b89783b68cdcfa7c8d7b08c09f47b2a-Paper-Conference.pdf",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-14bb95332f1abeb90967",
+      "title": "Enhanced Expert Merging for Mixture-of-Experts in Graph Foundation Models",
+      "authors": [
+        "Liu, Lei",
+        "Xia, Xingyu",
+        "Xie, Qianqian",
+        "Liu, Ben",
+        "Xu, Wenjie",
+        "Peng, Min"
+      ],
+      "published": "2026-04-23",
+      "updated": "2026-04-23",
+      "venue": "NeurIPS",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.52202/085713-0749",
+          "url": "https://papers.nips.cc/paper_files/paper/2025/hash/201e1777dfabe595d766d5222f20f2dd-Abstract-Conference.html",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "跨数据集零样本迁移",
+        "专家融合",
+        "知识蒸馏",
+        "参数邻近",
+        "混合专家路由"
+      ],
+      "method": "面向跨数据集零样本图迁移中的结构与特征异质性，方法以SVD统一邻接与节点特征维度，经非参数消息传递形成节点表示，再由路由器选取top-k专家。**KDEM**将参数融合专家作为学生、输出集成作为教师，周期性以MSE蒸馏并联合边三元组自监督损失训练。**PPEM**则周期性用EMA把所选专家推向加权平均，同时保留未选专家差异；推理时仅运行融合专家完成链接预测或节点分类。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T13:24:49.564017+00:00",
+      "venue_label": "NeurIPS",
+      "display_date": "2026-04-23",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2025,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/201e1777dfabe595d766d5222f20f2dd-Paper-Conference.pdf",
       "topics": [
         "OOD"
       ]
@@ -5688,6 +8300,50 @@
       "conference_year": 2025,
       "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/b2fa07e58da29247ddea5a12f472bb0e-Paper-Conference.pdf",
       "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-05c1c71cf82a6769d84e",
+      "title": "Towards Graph Foundation Models: Training on Knowledge Graphs Enables Transferability to General Graphs",
+      "authors": [
+        "Wang, Kai",
+        "Luo, Siqiang",
+        "Shan, Caihua",
+        "Shen, Yifei"
+      ],
+      "published": "2026-04-23",
+      "updated": "2026-04-23",
+      "venue": "NeurIPS",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.52202/085713-5058",
+          "url": "https://papers.nips.cc/paper_files/paper/2025/hash/de04896f011beff76c91e094f72727f4-Abstract-Conference.html",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "语义条件消息传递",
+        "统一知识图谱推理",
+        "跨图零样本迁移",
+        "语义结构融合",
+        "任务格式转换"
+      ],
+      "method": "面向从知识图谱预训练后零样本迁移到未见领域及节点、边、图级任务的分布变化，**SCR**把节点与图分类改写为含标签节点、图节点及类型边的知识图谱推理。文本描述经BERT编码，其他节点特征经SVD统一维度；**SCMP**以语义近邻增强可区分初始化，用冻结共享CMP传播全局语义，再与查询条件结构表示融合。关系图先生成条件关系表示，三元组经MLP打分，以正负样本交叉熵预训练；推理时转换目标图后直接预测标签，无需微调。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T13:23:51.407370+00:00",
+      "venue_label": "NeurIPS",
+      "display_date": "2026-04-23",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2025,
+      "pdf_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/de04896f011beff76c91e094f72727f4-Paper-Conference.pdf",
+      "topics": [
+        "TAG",
         "OOD"
       ]
     },
@@ -5771,6 +8427,58 @@
       "conference_year": 2026,
       "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/23fcc63005ac1a6e460ec4e209d17607-Paper-Conference.pdf",
       "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-d9e2fd697473029086c6",
+      "title": "G-reasoner: Foundation Models for Unified Reasoning over Graph-structured Knowledge",
+      "authors": [
+        "Luo, Linhao",
+        "Zhao, Zicheng",
+        "Liu, Junnan",
+        "Qiu, Zhangchi",
+        "Dong, Junnan",
+        "Panev, Serge",
+        "Gong, Chen",
+        "Vu, Thuy-Trang",
+        "Haffari, Gholamreza",
+        "Phung, Dinh",
+        "Liew, Alan",
+        "Pan, Shirui"
+      ],
+      "published": "2026-04-20",
+      "updated": "2026-04-20",
+      "venue": "ICLR",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/67e2da8af2476c7441c881fc253042a6-Abstract-Conference.html",
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/67e2da8af2476c7441c881fc253042a6-Abstract-Conference.html",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "四层图统一表示",
+        "文本拓扑融合",
+        "查询依赖消息传递",
+        "跨图结构迁移",
+        "伪标签蒸馏"
+      ],
+      "method": "针对异构文本图检索推理及跨结构、跨领域迁移，**G-reasoner**用**QuadGraph**统一属性、实体、文档、社区四层节点与跨层关系。文本编码器将节点、关系和查询映射到同一空间，查询依赖GNN通过DistMult消息传递融合语义与拓扑，由类型专属预测器输出相关度。训练联合相关节点似然与教师伪标签的**KL蒸馏**，并在多域、多构图数据上学习；推理时无需微调，按类型选Top-k节点组成提示供LLM生成答案。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T14:54:49.142137+00:00",
+      "venue_label": "ICLR",
+      "display_date": "2026-04-20",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/67e2da8af2476c7441c881fc253042a6-Paper-Conference.pdf",
+      "topics": [
+        "TAG",
         "OOD"
       ]
     },
@@ -5859,6 +8567,52 @@
       "pdf_url": "https://arxiv.org/pdf/2511.20290",
       "topics": [
         "TAG"
+      ]
+    },
+    {
+      "id": "p-bbe785f60d6be85c18d2",
+      "title": "Flock: A Knowledge Graph Foundation Model via Learning on Random Walks",
+      "authors": [
+        "Kim, Jinwoo",
+        "Huang, Xingyue",
+        "Olejniczak, Krzysztof",
+        "Min, Kyungbin",
+        "Bronstein, Michael",
+        "Hong, Seunghoon",
+        "Ceylan, Ismail I"
+      ],
+      "published": "2026-04-20",
+      "updated": "2026-04-20",
+      "venue": "ICLR",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/3ddbd473456a57e3cafb1ee51ddf8ff6-Abstract-Conference.html",
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/3ddbd473456a57e3cafb1ee51ddf8ff6-Abstract-Conference.html",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "零样本链接预测",
+        "概率节点关系等变性",
+        "随机游走序列化",
+        "节点关系匿名化",
+        "加权共识聚合"
+      ],
+      "method": "面向训练图外的新知识图谱及未见实体、关系的零样本链接预测，**FLOCK**以概率节点—关系等变性替代确定性等变约束。它按查询采样非回溯随机游走，并用**节点—关系匿名化**将访问轨迹、方向、查询标记与当前状态编码为图无关序列。双向GRU联合生成实体和关系更新提议，**加权共识协议**按置信度汇聚回原图并迭代更新。模型以正负事实的负对数似然训练，推理时集成多次随机预测完成实体或关系排序。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T14:53:25.514283+00:00",
+      "venue_label": "ICLR",
+      "display_date": "2026-04-20",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/3ddbd473456a57e3cafb1ee51ddf8ff6-Paper-Conference.pdf",
+      "topics": [
+        "OOD"
       ]
     },
     {
@@ -6033,6 +8787,52 @@
       "date_precision": "day",
       "conference_year": 2026,
       "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/03e04426e80332d1d99f023aa493df04-Paper-Conference.pdf",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-a598f1b597a5d7281d22",
+      "title": "Learning and Editing Universal Graph Prompt Tuning via Reinforcement Learning",
+      "authors": [
+        "Jinfeng Xu",
+        "Zheyu Chen",
+        "Shuo Yang",
+        "Jinze Li",
+        "Hewei Wang",
+        "Yijie Li",
+        "Edith C. H. Ngai"
+      ],
+      "published": "2026-04-20",
+      "updated": "2026-04-20",
+      "venue": "KDD",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.1145/3770854.3780291",
+          "url": "https://dl.acm.org/doi/10.1145/3770854.3780291",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "通用图提示",
+        "强化学习提示编辑",
+        "混合动作空间",
+        "编辑收敛率",
+        "骨架分布偏移"
+      ],
+      "method": "面向分子骨架划分导致的训练测试结构偏移，**LEAP**冻结预训练图模型，并为所有节点加入由基向量注意聚合生成的通用特征提示。**H-PPO**以提示图的节点表征为状态，由离散演员选择节点、连续演员生成受限编辑向量，逐步修正其提示。策略奖励结合下游损失下降与**编辑收敛率**，评论家估计累计回报；投影头、基提示和线性映射按标签损失联合更新，最终提示图用于图级或节点级预测。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T14:58:41.895787+00:00",
+      "venue_label": "KDD",
+      "display_date": "2026-04-20",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2512.08763",
       "topics": [
         "OOD"
       ]
@@ -6245,6 +9045,48 @@
       "conference_year": 2026,
       "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/7538e7a7a589a267f49527fe6fbc640e-Paper-Conference.pdf",
       "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-80569236f03af362c50d",
+      "title": "HGNet: Scalable Foundation Model for Automated Knowledge Graph Generation from Scientific Literature",
+      "authors": [
+        "Joshi, Devvrat",
+        "Rekik, Islem"
+      ],
+      "published": "2026-04-20",
+      "updated": "2026-04-20",
+      "venue": "ICLR",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/1557cc3e1a67f985dbdb162db9963dd0-Abstract-Conference.html",
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/1557cc3e1a67f985dbdb162db9963dd0-Abstract-Conference.html",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "科学知识图谱构建",
+        "正交语义分解",
+        "多尺度TCQK",
+        "层级消息传递",
+        "抽象场约束"
+      ],
+      "method": "面向跨科学领域的文本知识图谱构建，方法以共享SciBERT编码文档与实体，并用**OSD**分离相邻词嵌入变化中的正交语义转折，结合**多尺度TCQK**卷积查询键识别长实体。**HGNet**预测实体对的父子、同级与无边概率，将其作为三通道消息传递的软边权，得到结构感知表示。训练联合关系分类、**DHL**的无环与捷径惩罚及CAF抽象轴排序约束，最终输出细粒度关系三元组，并用于未见学科的零样本迁移。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T14:55:54.273830+00:00",
+      "venue_label": "ICLR",
+      "display_date": "2026-04-20",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/1557cc3e1a67f985dbdb162db9963dd0-Paper-Conference.pdf",
+      "topics": [
+        "TAG",
         "OOD"
       ]
     },
@@ -7018,6 +9860,57 @@
       ]
     },
     {
+      "id": "p-24dabfbbdf4c35521b98",
+      "title": "SAGA: Structural Aggregation Guided Alignment with Dynamic View and Neighborhood Order Selection for Multiview Graph Domain Adaptation",
+      "authors": [
+        "Fang, Ruiyi",
+        "Zhao, Jingyu",
+        "Wang, Shuo",
+        "Pu, Ruizhi",
+        "Li, Bingheng",
+        "Cai, Jiale",
+        "Li, Zhihao",
+        "Jing, Zihao",
+        "Zhu, Jian",
+        "Tang, Song",
+        "Ling, Charles",
+        "Wang, Boyu"
+      ],
+      "published": "2026-04-20",
+      "updated": "2026-04-20",
+      "venue": "ICLR",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/9a62e7b62af323594450ba36bc01e7d1-Abstract-Conference.html",
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/9a62e7b62af323594450ba36bc01e7d1-Abstract-Conference.html",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "多视图图域适应",
+        "动态视图跳数选择",
+        "结构聚合距离",
+        "主导视图对齐",
+        "跨域节点分类"
+      ],
+      "method": "面向有标注多视图源图到无标注目标图的跨域节点分类，**SAGA**处理关系视图及不同邻域阶数上的结构偏移。它逐视图传播节点特征并注入原始特征作为传送向量，再以共享MLP编码器和解码器生成表示并执行重构。**SAD**在嵌入空间衡量各源目标视图—跳数组合的结构差异，逐轮选取最小差异的主导组合并按差异加权。模型以主导表示实施域内跨视图对齐和源目标对比对齐，联合重构、源域交叉熵及目标熵目标训练，最终预测目标节点标签。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T14:54:26.562368+00:00",
+      "venue_label": "ICLR",
+      "display_date": "2026-04-20",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/9a62e7b62af323594450ba36bc01e7d1-Paper-Conference.pdf",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
       "id": "p-2104d7da9b8b9dd1c629",
       "title": "A General Spatio-Temporal Backbone with Scalable Contextual Pattern Bank for Urban Continual Forecasting",
       "authors": [
@@ -7406,6 +10299,58 @@
       ]
     },
     {
+      "id": "p-c56ddd8d4c2eae415a6f",
+      "title": "VecFormer: Towards Efficient and Generalizable Graph Transformer with Graph Token Attention",
+      "authors": [
+        "Jingbo Zhou",
+        "Jun Xia",
+        "Siyuan Li",
+        "Yunfan Liu",
+        "Wenjun Wang",
+        "Yufei Huang",
+        "Changxi Chi",
+        "Mutian Hong",
+        "Zhuoli Ouyang",
+        "Shu Wang",
+        "Zhongqi Wang",
+        "Xingyu Wu",
+        "Chang Yu",
+        "Stan Z. Li"
+      ],
+      "published": "2026-04-12",
+      "updated": "2026-04-12",
+      "venue": "WWW",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.1145/3774904.3792453",
+          "url": "https://dl.acm.org/doi/10.1145/3774904.3792453",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "图分布外泛化",
+        "软向量量化",
+        "特征结构双码本",
+        "图令牌注意力"
+      ],
+      "method": "针对节点特征伪相关与子图规模、密度和度数变化造成的图节点分类分布偏移，**VecFormer**以GNN编码属性图。第一阶段用**SoftVQ双码本**软量化节点表示，并通过节点特征、邻接结构及图表示重构学习特征码和结构码。第二阶段将两类码融合为图令牌列表，以节点图令牌为查询执行**图令牌交叉注意力**并残差保留局部信息，最终用分类损失训练，在未见偏移测试集上预测节点类别。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:32:02.726895+00:00",
+      "venue_label": "WWW",
+      "display_date": "2026-04-12",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2602.19622",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
       "id": "p-c0c8a8d7851b523e929e",
       "title": "Can LLMs Fool Graph Learning? Exploring Universal Adversarial Attacks on Text-Attributed Graphs",
       "authors": [
@@ -7543,6 +10488,227 @@
       "pdf_url": "https://arxiv.org/pdf/2602.08855",
       "topics": [
         "OOD"
+      ]
+    },
+    {
+      "id": "p-3c5783408e87395d0fa0",
+      "title": "Detecting Miscitation on the Scholarly Web through LLM-Augmented Text-Rich Graph Learning",
+      "authors": [
+        "Huidong Wu",
+        "Haojia Xiang",
+        "Jingtong Gao",
+        "Xiangyu Zhao",
+        "Dengsheng Wu",
+        "Jianping Li"
+      ],
+      "published": "2026-04-12",
+      "updated": "2026-04-12",
+      "venue": "WWW",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.1145/3774904.3792568",
+          "url": "https://dl.acm.org/doi/10.1145/3774904.3792568",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "误引检测",
+        "证据链推理",
+        "分层知识蒸馏",
+        "不确定性采样"
+      ],
+      "method": "面向文本丰富引文图的误引边分类，**LAGMiD**编码论文节点内容与引文上下文，并从目标引文沿引用边抽取经语义筛选的多跳证据链。**证据链推理**逐跳核验引文语境与被引内容，形成中间推理状态；分层蒸馏以InfoNCE对齐各跳LLM状态和对应层GNN边表示。协同训练按预测熵选取不确定边，仅以高置信且标签一致的LLM结果蒸馏，并联合二元交叉熵训练GNN完成误引判别。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:26:31.132591+00:00",
+      "venue_label": "WWW",
+      "display_date": "2026-04-12",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2603.12290",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-38b8e11c1f00e7b5618e",
+      "title": "VL-KGE: Vision–Language Models Meet Knowledge Graph Embeddings",
+      "authors": [
+        "Athanasios Efthymiou",
+        "Stevan Rudinac",
+        "Monika Kackovic",
+        "Nachoem Wijnberg",
+        "Marcel Worring"
+      ],
+      "published": "2026-04-12",
+      "updated": "2026-04-12",
+      "venue": "WWW",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.1145/3774904.3792677",
+          "url": "https://doi.org/10.1145/3774904.3792677",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "视觉语言编码",
+        "跨模态融合",
+        "多模态知识图谱嵌入",
+        "归纳链接预测"
+      ],
+      "method": "针对实体模态不齐且需保留关系语义的多模态知识图谱补全，**VL-KGE**统一建模图结构、图像与实体文本。预训练视觉语言编码器生成对齐的图文特征，线性投影后与可训练结构嵌入按现有模态平均、拼接或加权融合。融合表示接入TransE、DistMult等KGE评分器；未见实体屏蔽其结构嵌入，仅依赖预训练特征完成归纳预测。模型以随机破坏头尾所得负三元组和正三元组优化**逻辑损失**，用于链接预测与语义检索。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:35:56.514516+00:00",
+      "venue_label": "WWW",
+      "display_date": "2026-04-12",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2603.02435",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-283f43e7f52a0f20cef3",
+      "title": "LEDA: Latent Semantic Distribution Alignment for Multi-domain Graph Pre-training",
+      "authors": [
+        "Lianze Shan",
+        "Jitao Zhao",
+        "Dongxiao He",
+        "Siqi Liu",
+        "Jiaxu Cui",
+        "Weixiong Zhang"
+      ],
+      "published": "2026-04-12",
+      "updated": "2026-04-12",
+      "venue": "WWW",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.1145/3774904.3792126",
+          "url": "https://dl.acm.org/doi/10.1145/3774904.3792126",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "多域图预训练",
+        "特征投影对齐",
+        "潜在分布对齐",
+        "共享先验",
+        "跨域分类"
+      ],
+      "method": "面向节点特征维度和语义各异、测试图来自未见域的跨域预训练，**LEDA**先以SVD初始化投影基，再由共享MLP构成的**DPU**把各域特征映射至统一空间。重构损失与正交约束共同保留原始信息并区分投影方向，随后共享GCN融合邻接结构。**LDA**以双GCN估计各域高斯后验，经重参数采样和共享解码器重构特征，并用KL散度将各后验对齐共同先验；冻结编码器后，以线性分类器或类别原型完成跨域节点及图分类。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:14:47.388931+00:00",
+      "venue_label": "WWW",
+      "display_date": "2026-04-12",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2602.22660",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-1e399697427b59ba1198",
+      "title": "Unveiling the Vulnerability of Graph-LLMs: An Interpretable Multi-Dimensional Adversarial Attack on TAGs",
+      "authors": [
+        "Bowen Fan",
+        "Zhilin Guo",
+        "Xunkai Li",
+        "Yihan Zhou",
+        "Bing Zhou",
+        "Zhenjun Li",
+        "Rong-Hua Li",
+        "Guoren Wang"
+      ],
+      "published": "2026-04-12",
+      "updated": "2026-04-12",
+      "venue": "WWW",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.1145/3774904.3792284",
+          "url": "https://dl.acm.org/doi/10.1145/3774904.3792284",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "多维对抗攻击",
+        "拓扑词归因",
+        "语义替换",
+        "影响力边剪枝"
+      ],
+      "method": "面向黑盒条件下文本属性图Graph-LLM同时受语义与拓扑操纵的漏洞，**IMDGA**联合攻击节点文本和消息传递边。**Topological SHAP**通过遮蔽词并汇总目标节点及邻居预测变化，筛出关键词。**语义扰动模块**用MLM生成上下文候选，再按邻域置信差与标签翻转评分选择替词。若文本攻击未翻转标签，**边剪枝模块**融合预测差异、特征影响和节点度定位脆弱子图，以近似Shapley归因删除高贡献边，实施结构攻击。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:32:39.866245+00:00",
+      "venue_label": "WWW",
+      "display_date": "2026-04-12",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2510.12233",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-01923a1f0c78d11f2221",
+      "title": "Toward Graph-Tokenizing Large Language Models with Reconstructive Graph Instruction Tuning",
+      "authors": [
+        "Zhongjian Zhang",
+        "Xiao Wang",
+        "Mengmei Zhang",
+        "Jiarui Tan",
+        "Chuan Shi"
+      ],
+      "published": "2026-04-12",
+      "updated": "2026-04-12",
+      "venue": "WWW",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.1145/3774904.3792077",
+          "url": "https://dl.acm.org/doi/10.1145/3774904.3792077",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "重构式图指令微调",
+        "图文对齐",
+        "图令牌重建",
+        "潜在表示去噪"
+      ],
+      "method": "面向仅靠文本监督导致图文对齐隐式、图上下文利用不足的文本属性图预测，**RGLM**将中心节点子图按邻居层级序列化，并投影为LLM前缀图令牌。它对同一节点的隐藏图令牌均值聚合，再从该表示重建图信息。**RGLM-Decoder**以MSE和BCE恢复文本编码的节点特征及邻接结构；另两种变体用余弦回归或条件去噪重建预训练GNN的潜在节点表示。训练联合自回归文本损失与图重建损失，推理时由LLM完成节点分类或链接预测。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:14:54.199460+00:00",
+      "venue_label": "WWW",
+      "display_date": "2026-04-12",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2603.01385",
+      "topics": [
+        "TAG"
       ]
     },
     {
@@ -8815,6 +11981,47 @@
       "date_precision": "day",
       "conference_year": 2026,
       "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/39766/43727",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-88c8bb6501c40fe32a1b",
+      "title": "GraphTextack: A Realistic Black-Box Node Injection Attack on LLM-Enhanced GNNs",
+      "authors": [
+        "Jiaji Ma",
+        "Puja Trivedi",
+        "Danai Koutra"
+      ],
+      "published": "2026-03-14",
+      "updated": "2026-03-14",
+      "venue": "AAAI",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.1609/aaai.v40i29.39604",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/39604",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "黑盒节点注入",
+        "多模态进化搜索",
+        "类别条件特征采样",
+        "预测置信度扰动"
+      ],
+      "method": "**GraphTextack**针对文本属性图的黑盒投毒，仅注入节点，不修改原有节点与边。候选联合编码连接与类别采样策略，从对应类别的经验分布抽取文本特征，目标模型通过语言编码与图消息传递进行分类。**多目标适应度**结合两跳邻域预测置信度变化与注入节点的PageRank影响力，引导精英选择、连接交叉和特征变异。逐轮选出最佳候选并注入图中，在训练前污染数据，以降低未标注节点的分类性能。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T06:21:53.394593+00:00",
+      "venue_label": "AAAI",
+      "display_date": "2026-03-14",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://ojs.aaai.org/index.php/AAAI/article/download/39604/43565",
       "topics": [
         "TAG"
       ]
@@ -10622,6 +13829,90 @@
       ]
     },
     {
+      "id": "p-a48c13f90c1ca9aabb5e",
+      "title": "Prompt Tuning without Labeled Samples for Zero-Shot Node Classification in Text-Attributed Graphs",
+      "authors": [
+        "Sethupathy Parameswaran",
+        "Suresh Sundaram",
+        "Yuan Fang"
+      ],
+      "published": "2026-02-21",
+      "updated": "2026-02-21",
+      "venue": "WSDM",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.1145/3773966.3777999",
+          "url": "https://dl.acm.org/doi/10.1145/3773966.3777999",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "零样本节点分类",
+        "双模态条件生成",
+        "图文表示对齐",
+        "连续提示调优"
+      ],
+      "method": "面向无标注样本的文本属性图零样本节点分类，**ZPT**先以GCN和Transformer编码节点结构与文本，并通过节点—文本及邻居摘要的对比目标对齐表示。**UBCG**采用条件变分自编码器，以文本表示为类别代理生成图表示，并由图表示反向生成文本表示，以重构项和KL散度学习双模态分布。下游仅输入类别名，采样潜变量依次合成图与文本嵌入，用作样本优化**连续提示**；推理时融合测试节点两种嵌入与类别权重的余弦概率完成分类。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:14:29.602824+00:00",
+      "venue_label": "WSDM",
+      "display_date": "2026-02-21",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2601.03793",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-ec485d1fdfc3fef693f8",
+      "title": "A Brain Graph Foundation Model: Pre-Training and Prompt-Tuning across Broad Atlases and Disorders",
+      "authors": [
+        "Xinxu Wei",
+        "Kanhao Zhao",
+        "Yong Jiao",
+        "Lifang He",
+        "Yu Zhang"
+      ],
+      "published": "2026-02-06",
+      "updated": "2026-02-06",
+      "venue": "ICLR",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://iclr.cc/virtual/2026/poster/10009652",
+          "url": "https://iclr.cc/virtual/2026/poster/10009652",
+          "date_basis": "conference_program_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "跨图谱泛化",
+        "图提示元学习",
+        "语言提示迁移",
+        "图对比与掩码预训练"
+      ],
+      "method": "面向跨站点、图谱分区及未见疾病造成的脑图分布变化，**BrainGFM**从ROI时间序列相关性构图，以相关谱为节点特征并加入RWSE结构编码。共享GraphTransformer通过**GCL与GMAE**联合学习扰动不变的表示和掩码节点、边重建能力。迁移时冻结骨干，以疾病—图谱任务的内外循环元学习图提示；零样本时再将BioClinicalBERT编码的疾病和图谱描述作为语言令牌，与ROI令牌拼接完成分类。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T14:52:41.537357+00:00",
+      "venue_label": "ICLR",
+      "display_date": "2026-02-06",
+      "date_basis": "conference_program_publication",
+      "date_precision": "day",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2506.02044",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
       "id": "p-dbf250440f3ea6dc0c8e",
       "title": "HEIST: A Graph Foundation Model for Spatial Transcriptomics and Proteomics Data",
       "authors": [
@@ -11070,6 +14361,157 @@
       ]
     },
     {
+      "id": "p-ee18981eb303591cabf8",
+      "title": "Cognition on Graph: Navigating Massive Knowledge Space via Cognitive Cycles and Bidirectional Graph-Text Synergy",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:4088-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "图文双源探索",
+        "认知循环",
+        "文本引导图探索",
+        "层次化文档阅读",
+        "反思式重规划"
+      ],
+      "method": "面向全球混合知识库的多跳问答，**CoG**由问题生成子查询与锚点实体，在知识图谱和实体对应文档间迭代构造证据链。**双源探索**先执行实体链接、关系筛选与事实剪枝，再经页面概览、章节选择及文本块和表格细读提取语义证据。**图文综合**蒸馏异构事实，并将文本发现的实体反馈为图探索锚点。**反思式重规划**依据笔记、候选池和交互历史决定继续、回退或改写策略，证据充分后汇总记忆生成答案。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:17:49.259907+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2609.12791",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-e0fa09ea0ee9bfe18feb",
+      "title": "CORTEX: High-Quality Cross-Domain Organization of Web-Scale Corpora through Ontological Corpus Graph",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:2740-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "本体语料图",
+        "文档概念对齐",
+        "TFS加权",
+        "跨域检索",
+        "层级概念演化"
+      ],
+      "method": "面向网页语料缺乏层级组织与跨域检索的问题，**CORTEX**将精炼文档、概念链本体及其链接构成三层异构OCG。以多教师蒸馏模型筛选文档，LLM随语料演化层级概念链；编码文档与概念描述后按余弦相似度选链，再将抽取关键词链接到链。**TFS加权**融合典型性、链接置信度和链级逆文档频率，汇聚关键词权重以计算任意层级概念关联；倒排索引据此执行域内与跨域检索，并为跨域问答合成选择证据。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T14:56:35.369028+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2606.30175",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-dfb7f7d39768d380cb8e",
+      "title": "PGMem: Tightly Coupled Persona–Memory Graph for Lifelong Personalized Agents",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:5895-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "异构文本图",
+        "人物画像记忆",
+        "证据边扩展",
+        "有效性感知排序",
+        "个性化检索"
+      ],
+      "method": "面向长期对话中画像与事件记忆脱节、旧偏好干扰生成的问题，**PGMem**将原始话轮、情节摘要、短期状态和稳定特质组织为异构文本节点。它用来源边记录抽象溯源，并以支持、冲突、迁移三类**证据边**连接记忆与画像。查询时融合语义相似度和词汇重叠选取种子，再沿带符号证据路径扩展间接相关节点。最后用**有效性感知排序**结合支持/冲突路径计数与查询相关性，移除被替代信号，将定额证据交给语言模型生成个性化回复。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:23:03.729545+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2608.01708",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-d809a83dd8e57fe2283c",
+      "title": "PunGraph: Retrieval-Enhanced Phonetic-Semantic Graph Reasoning for Pun Understanding",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:2241-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "音义词汇图",
+        "近音关系检索",
+        "候选词义检索",
+        "受限双关推理"
+      ],
+      "method": "PunGraph面向异形与同形双关理解，将词、发音关系及词典释义组织为**音义词汇图**。它融合Unisyn、IPA相似度与G2P扩展建立近音边，并以WordNet定义补充节点语义。对初始推理错误的样本，**图检索增强**按阈值触发：异形双关检索一跳近音及语义候选，同形双关提取候选词义。候选被格式化为选项交给LLM结合句境选择，限制生成空间并输出替代词或双重词义。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:20:56.896404+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2609.16557",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
       "id": "p-d495354eee8ff0748328",
       "title": "IEBGL:An Interpretability-Enhanced Brain Graph Learning Framework with LLM-Instructed Topology and Literature-Augmented Semantics",
       "authors": [
@@ -11113,6 +14555,82 @@
       ]
     },
     {
+      "id": "p-cc74c1f7c96e75176390",
+      "title": "Graph2Counsel: Clinically Grounded Synthetic Counseling Dialogue Generation from Client Psychological Graphs",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:225-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "心理过程图",
+        "边列表序列化",
+        "图条件对话生成",
+        "引导式咨询",
+        "客户档案派生"
+      ],
+      "method": "本文面向由自然语言心理过程节点及兴奋或抑制关系构成的文本属性图，生成临床扎根的多轮咨询对话。**Graph2Counsel**将CPG编码为过程—关系—过程边列表，并由同一图派生多样化客户档案。最终采用**引导式咨询**，把CPG、档案与从真实会谈抽取的咨询师策略共同输入LLM，以对话规范约束双方话语和渐进节奏。生成会话再拆成对话历史—咨询师回复样本，以**QLoRA**微调Llama3-8B用于咨询回复与评测。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:32:28.773979+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2604.20382",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-c161bc41b42a2c074263",
+      "title": "Athena: Vulnerability-Affected Library Identification via Knowledge Graph Completion",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:7114-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "安全知识图谱",
+        "文本图结构融合",
+        "对比式知识图谱补全",
+        "图嵌入注入",
+        "多标签重排序"
+      ],
+      "method": "**Athena**面向漏洞影响库识别，将CVE、库、CWE、CPE与生态实体及五类关系构成安全知识图，把缺失影响关系转为尾实体预测；实体由标识符和自然语言描述联合表示。**对比式KGC**双编码头实体—关系查询与候选库，以对比学习在共享空间融合文本语义和图关系并召回候选。**多实例指令微调**再把邻域事实及适配器投影的KGC嵌入注入LLM，**先提升后填充**将判定正确的库前置，并以原排名补足多标签结果。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:16:31.917927+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2609.01187",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
       "id": "p-c011a81a8237e11df329",
       "title": "M^3KG-RAG: Multi-hop Multimodal Knowledge Graph-enhanced Retrieval-Augmented Generation",
       "authors": [
@@ -11137,18 +14655,25 @@
           "id": "https://openaccess.thecvf.com/content/CVPR2026/html/Park_M3KG-RAG_Multi-hop_Multimodal_Knowledge_Graph-enhanced_Retrieval-Augmented_Generation_CVPR_2026_paper.html",
           "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Park_M3KG-RAG_Multi-hop_Multimodal_Knowledge_Graph-enhanced_Retrieval-Augmented_Generation_CVPR_2026_paper.html",
           "date_basis": "conference_publication"
+        },
+        {
+          "name": "conference",
+          "id": "https://openaccess.thecvf.com//content/CVPR2026/html/Park_M3KG-RAG_Multi-hop_Multimodal_Knowledge_Graph-enhanced_Retrieval-Augmented_Generation_CVPR_2026_paper.html",
+          "url": "https://openaccess.thecvf.com//content/CVPR2026/html/Park_M3KG-RAG_Multi-hop_Multimodal_Knowledge_Graph-enhanced_Retrieval-Augmented_Generation_CVPR_2026_paper.html",
+          "date_basis": "conference_publication"
         }
       ],
       "status": "ready",
       "keywords": [
-        "多模态知识图谱",
-        "实体描述细化",
-        "模态分路检索",
-        "三元组选择性剪枝"
+        "多模态知识图",
+        "模态内检索",
+        "实体描述增强",
+        "选择性剪枝",
+        "图增强生成"
       ],
-      "method": "面向音频、视频与文本查询中的多跳知识检索，**M3KG-RAG**先由多智能体改写多模态语料并抽取三元组，再为实体检索、筛选和细化文本描述，形成连接视听数据的多跳图。检索时按查询模态召回关联三元组，**GRASP**用视听定位分数剔除未出现实体，再由轻量LLM删除无助于回答的事实。最终将保留的关系与实体描述拼接进MLLM提示，生成有证据支撑的答案。",
+      "method": "面向音视频问答的跨模态检索失配，**M3KG-RAG**从文本、音频与视觉样本构建多跳多模态知识图。多智能体重写语境并抽取三元组，将实体规范化、补充经上下文筛选和自反检查的描述，再链接对应音视频。推理时，**模态内检索**由同模态近邻取得候选三元组，**GRASP**以视听定位分数过滤未出现实体，并让轻量LLM删除无助于回答的事实；保留的关系与实体描述随查询输入MLLM生成答案。",
       "confidence": "high",
-      "summarized_at": "2026-09-29T11:24:29.563676+00:00",
+      "summarized_at": "2026-09-30T15:14:49.594588+00:00",
       "venue_label": "CVPR",
       "display_date": "2026",
       "date_basis": "conference_publication",
@@ -11157,6 +14682,45 @@
       "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Park_M3KG-RAG_Multi-hop_Multimodal_Knowledge_Graph-enhanced_Retrieval-Augmented_Generation_CVPR_2026_paper.pdf",
       "topics": [
         "TAG"
+      ]
+    },
+    {
+      "id": "p-bfa228e1d4e380f3f84a",
+      "title": "One Model, Many Graphs: Learning over Attributed Graphs across Heterogeneous Modalities with Vision-Language Models",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:3274-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "异构模态属性图",
+        "目标感知文本聚合",
+        "视觉邻居压缩",
+        "跨图迁移",
+        "生成式图推理"
+      ],
+      "method": "面向文本、图像及多模态属性图，并迁移到模态模式不同且无需微调的未见图，**OMG-VLM**以预训练VLM共享文本与视觉表示。**目标感知文本聚合**由中心文本生成查询，以跨注意力检索邻居词元；**图感知视觉适配器**先压缩各邻居图像，再由中心图像词元聚合。两类图上下文词元与任务指令拼接，联合优化适配器和VLM的自回归生成目标，用于节点分类与链接预测。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T14:55:14.228892+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2607.19128",
+      "topics": [
+        "TAG",
+        "OOD"
       ]
     },
     {
@@ -11198,6 +14762,120 @@
       "date_precision": "year",
       "conference_year": 2026,
       "pdf_url": "https://arxiv.org/pdf/2603.13370",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-b1ee18f26c8973abee4e",
+      "title": "ReGraP-LLaVA: Reasoning enabled Graph-based Personalized Large Language and Vision Assistant",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:995-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "知识图谱提示",
+        "图文语义对齐",
+        "关系推理令牌",
+        "个性化多模态问答"
+      ],
+      "method": "面向个性化多模态问答中的关系推理，**ReGraP-LLaVA**联合图像、概念与属性节点、关系边及CoT问答。**软图提示**用GNN编码独热图，再经MLP投影至语言词嵌入空间，与问题和视觉令牌拼接；**硬图提示**将相连三元组转为关系描述，并扩展实体、关系推理令牌。训练以LLaVA标准语言损失预测CoT答案，使模型在识别个性化概念后，沿其属性与关系完成描述和问答。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T14:56:51.619646+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2505.03654",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-ac0a2854265a31ae52bb",
+      "title": "LLM as GNN: Graph Vocabulary Learning for Text-Attributed Graph Foundation Models",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:2557-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "提示式消息传递",
+        "语言图词汇",
+        "跨图迁移",
+        "多指令微调",
+        "约束解码"
+      ],
+      "method": "针对文本属性图跨图、跨任务及未见数据集迁移，**PromptGFM**以节点文本为初始表示，并用一跳邻居描述承载局部结构。**提示式GNN**让LLM逐层执行邻居采样、聚合更新，以自然语言对比指令约束相邻节点接近，迭代生成兼具语义与高阶依赖的紧凑文本。模型将该文本分词为**语言图词汇**中的节点ID，嵌入任务模板后进行多指令自回归微调；生成式链路预测再用**前缀树约束解码**限定到真实候选节点。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T14:55:29.168178+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2503.03313",
+      "topics": [
+        "TAG",
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-a7e5db09970753cc311a",
+      "title": "HiTeC: Hierarchical Contrastive Learning on Text-Attributed Hypergraph with Semantic-Aware Augmentation",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:3444-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "文本属性超图",
+        "结构感知文本预训练",
+        "语义感知增强",
+        "层次对比学习",
+        "ss-walk子图采样"
+      ],
+      "method": "面向节点带文本属性的超图，**HiTeC**以两阶段自监督框架融合文本语义与高阶结构。先由预训练语言模型编码节点文本，以一跳共超边邻居和其余节点构造**结构感知三元组损失**，获得拓扑增强表示。冻结文本编码器后，将领域、全局拓扑和邻居上下文拼接至原文，并按超边语义凝聚度丢弃关联，形成双视图交给HGNN传播。最终联合节点、超边及**ss-walk子图对比目标**预训练表示，用于节点分类与超边预测。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T14:54:28.473110+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2508.03104",
       "topics": [
         "TAG"
       ]
@@ -11334,6 +15012,155 @@
       ]
     },
     {
+      "id": "p-881adc3de97a8c817875",
+      "title": "Not All or None: Dynamic Construction of Target-aware Memory Graph for Conversational Stance Detection",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:966-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "目标感知记忆图",
+        "命题关系归纳",
+        "熵引导回溯",
+        "对话立场检测"
+      ],
+      "method": "面向多轮对话中完整历史易引入无关噪声的立场检测，**TamGraph**以最终话语和目标为起点，沿回复链逐步回溯。它从候选历史轮次抽取目标相关原子命题，并归纳命题间支持、反对、质疑等关系，以命题为节点、关系为边动态更新记忆图。每次将结构化图序列化为提示交给LLM预测；**熵引导记忆更新**仅保留降低预测熵的轮次，并在熵低于阈值或历史耗尽时停止。最后使用最近一次保留图的预测输出支持、反对或中立标签。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:20:53.539464+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2608.29066",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-87cfe3a3ccbd2d4efe4e",
+      "title": "SAGE: Semantic Attribute Graphs for Multi-Entity Visual Retrieval",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:7879-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "语义属性图",
+        "多模态节点嵌入",
+        "粗到细子图检索",
+        "清单迭代补全"
+      ],
+      "method": "面向密集文档中多实体、多属性证据被单一向量稀释的问题，**SAGE**先以OCR切分文本与图像区域，并用冻结VLM为视觉区域生成语义描述。**层次实体—属性图**由冻结LLM聚合语义一致记录，叶节点融合组合裁剪、OCR文本和描述的多模态嵌入。查询经**两阶段检索**先找实体根节点再匹配属性，并由清单迭代补齐缺失证据；最终序列化子图与视觉裁剪，交给冻结VLM生成答案，全流程无需训练。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:20:19.932783+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2609.04255",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-83c13a842e13df490a83",
+      "title": "GSEM: Graph-based Self-Evolving Memory for Experience Augmented Clinical Reasoning",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:1313-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "双层记忆图",
+        "经验图检索",
+        "多种子图遍历",
+        "反馈式图演化"
+      ],
+      "method": "面向临床推理中经验适用边界与协作关系难建模的问题，**GSEM**将成功和失败轨迹提炼为带条件、策略、极性及质量分数的文本经验。**双层记忆图**用角色实体和决策流表示经验内部结构，以加权边连接经验。检索融合实体稀疏召回与语义稠密召回形成多种子，再按边权和节点质量引导LLM收集、探索、回溯或停止。任务反馈按检索排序分配信用，在线校准节点质量与边权，所得经验供LLM生成临床决策。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:16:01.633394+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2603.22096",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-80a0f89cebe0928e57bb",
+      "title": "H²Table: Hierarchical Hypergraph-Enhanced Large Language Models for Complex Table Reasoning",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:869-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "层次嵌套超图",
+        "跨层消息传递",
+        "查询式结构对齐",
+        "软结构提示",
+        "复杂表格问答"
+      ],
+      "method": "面向复杂层次表格问答，**H²Table**将含文本或数值的单元格建为节点、各级自然语言行列标题建为嵌套超边，并以RoBERTa初始化表示。**层次超图编码器**依次执行V2E、C2P、P2C、E2V消息传递，融合单元格、标题与跨层依赖。**查询式结构对齐**通过可学习查询交叉注意图表示，压缩出软结构提示，与序列化表格和问题共同送入经LoRA微调的LLM生成答案，以二元交叉熵端到端训练。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:14:19.780773+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2609.01216",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
       "id": "p-79164981d37013bdec58",
       "title": "CGU-Bayes: Causal Graph Uncertainty-Guided Bayesian Inference for Domain Generalization",
       "authors": [
@@ -11376,6 +15203,44 @@
       "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yin_CGU-Bayes_Causal_Graph_Uncertainty-Guided_Bayesian_Inference_for_Domain_Generalization_CVPR_2026_paper.pdf",
       "topics": [
         "OOD"
+      ]
+    },
+    {
+      "id": "p-720d188563b47bfdc730",
+      "title": "GraphLit: Learning Text-Enriched Dynamic Character Network Representations for Literary Study",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:809-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "动态异构角色网络",
+        "角色文本锚定",
+        "异构图掩码自编码",
+        "叙事顺序学习",
+        "全局角色链接预测"
+      ],
+      "method": "面向长篇小说中角色关系与文本语境割裂的问题，**DHCN**按叙事块构建动态异构图，以角色、文本段为节点，并用共现关系和角色提及连接。角色别名提示与段落原文经同一文本编码器初始化，因果Transformer注入段内顺序，**HGT**沿两类边融合语义与社会结构。**GraphLit**遮蔽边和属性后联合重建，并加入全局角色链接预测与ListMLE块排序；注意力池化得到角色、块和书籍表示，供角色分类、引文归属等任务使用。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:17:32.683060+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2605.28643",
+      "topics": [
+        "TAG"
       ]
     },
     {
@@ -11464,6 +15329,192 @@
       "date_precision": "year",
       "conference_year": 2026,
       "pdf_url": "https://arxiv.org/pdf/2603.05181",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-5db3121541abced06fb5",
+      "title": "HyperProve: Answer-Guided Hypergraph Expansion for Multi-Hop Question Answering",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:585-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "原子事实超图",
+        "答案引导检索",
+        "查询偏置扩展",
+        "多跳证据链"
+      ],
+      "method": "面向多跳问答中固定查询易丢失桥接证据的问题，**HyperProve**将语料段落拆成带实体参与者与来源的原子事实超边，并以同义实体、共享实体和同源文档建立转移图。系统分解问题并重写后续子查询，将已验证中间答案及支持超边作为结构前沿，再与新稠密种子合并。**查询偏置局部扩展**混合结构转移和事实文本相似度进行个性化排序；各跳答案均可得时整合，否则汇总证据交给阅读器生成答案。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:21:32.017535+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2609.13768",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-5c863f6928d5d412caa3",
+      "title": "MemDreamer: Decoupling Perception and Reasoning for Long Video Understanding via Agentic Hierarchical Graph Memory",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:735-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "纯文本图记忆",
+        "视频事件图",
+        "层次化检索",
+        "因果关系遍历"
+      ],
+      "method": "面向长视频问答中的视觉令牌膨胀与线索割裂，**MemDreamer**将感知和推理解耦，把流式视频转成纯文本图记忆。它按语义边界切分宏事件，在实体与微事件间建立空间属性、主客体及时序因果边，并自底向上聚合为超级事件和视频根。推理模型通过**分层图记忆**的导航、语义与时间搜索及关系遍历工具，在观察—推理—行动循环中逐步定位证据。每轮仅压缩保留查询相关线索，汇入历史轨迹后生成最终答案。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:21:54.254393+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2606.07512",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-4fbefa9036bedc252353",
+      "title": "Time is Not a Label: Continuous Phase Rotation for Temporal Knowledge Graphs and Agentic Memory",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:1172-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "时序知识图",
+        "关系文本嵌入",
+        "语义速度门",
+        "连续相位旋转",
+        "图文本联合检索"
+      ],
+      "method": "**RoMem**以Temporal OpenIE将文本片段构成时序知识图，实体与片段为节点，自然语言关系事实为边。**语义速度门**把关系短语嵌入映射为波动率，控制复数图嵌入的**连续相位旋转**，使静态事实稳定、动态旧事实失配。冻结门控后，以三元组和时间对比损失学习目标图嵌入与时间频谱。检索融合文本稠密相似度、Personalised PageRank与时序图分数重排事实。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:26:17.050536+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2604.11544",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-48d8c0064ab05d204bb5",
+      "title": "Beyond Linearization: Attributed Table Graphs for Table Reasoning",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:6966-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "属性表图",
+        "问题引导个性化PageRank",
+        "三元组重排",
+        "结构化表格推理"
+      ],
+      "method": "面向表格问答与事实验证中线性化削弱行列绑定、答案位置敏感的问题，**TabGR**将表格构造成属性表图：行锚点与单元值为节点，列标题标注连接边，并以三元组显式承载结构。它从问题的精确匹配和LLM语义选择初始化锚点，按列迭代扩展相关子图；**QG-PPR**再沿同行或同列传播问题相关性，重排行间及行内证据。最终LLM在排序后三元组上执行**CoT**，同时生成答案、推理文本及可映射回图的证据路径，无需任务专用训练。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:17:01.412547+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2601.08444",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-419481916ba81676b3f5",
+      "title": "TDGNet: Hallucination Detection in Diffusion Language Models via Temporal Dynamic Graphs",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:8235-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "词元注意力图",
+        "时序动态图",
+        "持久词元记忆",
+        "幻觉检测"
+      ],
+      "method": "面向扩散语言模型中事实性线索随去噪过程漂移、修正或持续的幻觉检测，**TDGNet**将各步词元建成时序动态图。节点取末层隐藏状态，边由多头平均注意力经阈值稀疏化，并以注意力强度作边属性；**MPNN-GRU**先聚合邻域，再更新每个词元的持久记忆。**时序注意力**汇聚各步记忆，词元表示经均值池化和二分类器输出响应级概率，也可直接用于词元级定位；模型以二元交叉熵端到端训练。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:22:38.050105+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2602.08048",
       "topics": [
         "TAG"
       ]
@@ -11615,6 +15666,119 @@
       ]
     },
     {
+      "id": "p-2a28797cacadf43dd381",
+      "title": "Graph-of-Skills: Dependency-Aware Structural Retrieval for Massive Agent Skills",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:8991-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "技能图检索",
+        "语义词法混合播种",
+        "反向感知PPR",
+        "依赖技能回溯",
+        "预算化水合"
+      ],
+      "method": "面向大规模代理技能库中语义检索遗漏执行前置技能的问题，**GoS**将技能包规范化为含名称、能力摘要、I/O与执行入口的节点，并以依赖、工作流、语义和替代关系构建有向类型图。查询先经**语义-词法混合播种**形成种子分布，再以关系加权的**反向感知PPR**从命中的高层技能回溯解析、配置等前置技能。最终融合扩散分数与字段级查询证据重排，并在单技能及全局上下文预算内水合为含来源路径和执行说明的技能束，供代理直接执行。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:18:15.416151+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2604.05333",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-291afd2ff018d0114908",
+      "title": "GraphProfiler: Source-Linked Sensitive Attribute Inference via Personal Knowledge Graphs",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:6768-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "个人知识图谱",
+        "来源级溯源",
+        "属性定向检索",
+        "敏感属性推断"
+      ],
+      "method": "面向长篇用户发帖中分散线索导致的敏感属性推断与溯源问题，**GraphProfiler**先将每条帖子设为带稳定来源标识的文本文件。它用定向抽取提示构建含文本单元、实体、关系、嵌入和来源映射的个人知识图，并按拓扑检测社区、生成主题报告。推理时以属性专属查询检索局部图上下文，模型输出属性值及所引图表记录；**来源解析器**再沿索引映射回原帖，形成可检查的记录与文本证据，用于属性预测和泄露审计。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:17:51.038865+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2609.12448",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-169576e74059723ce22d",
+      "title": "Import What You Need: Learning When and How to Augment EHR Graphs with External Knowledge",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:2856-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "动态知识增强",
+        "语义结构双通道",
+        "就诊级强化学习",
+        "知识模板检索",
+        "配对奖励"
+      ],
+      "method": "面向稀疏纵向EHR图，**ReTA**将医学概念文本蒸馏为定义与临床级联，经知识图谱落地和聚类形成语义向量及紧凑子图模板。每次就诊结合当前编码与历史状态检索候选，策略在**Soft Import**、**Hard Import**和跳过间择一，分别偏移节点特征或嫁接子图。语义自注意力与图注意力结构通道经门控融合；配对奖励鼓励相对基础图的预测损失下降并惩罚新增节点成本，两阶段训练后执行临床预测。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:22:03.019732+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2609.01839",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
       "id": "p-11fa420856a6bf51da7e",
       "title": "FedSST: Rethinking Fair Federated Graph Learning under Structural Shift",
       "authors": [
@@ -11690,6 +15854,132 @@
       "date_precision": "year",
       "conference_year": 2026,
       "pdf_url": "https://arxiv.org/pdf/2504.12606",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-0107c656fce3529d8a1a",
+      "title": "HyperGVL: Benchmarking and Improving Large Vision-Language Models in Hypergraph Understanding and Reasoning",
+      "authors": [],
+      "published": "2026",
+      "updated": "2026",
+      "venue": "EMNLP",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "EMNLP:2026:5922-MAIN",
+          "url": "https://2026.emnlp.org/program/",
+          "date_basis": "conference_edition"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "超图表示路由",
+        "跨任务泛化",
+        "零样本节点分类",
+        "问题表示映射"
+      ],
+      "method": "面向超图问答到未见节点分类任务的分布迁移，**WiseHyGR**学习按问题选择合适的文本与视觉结构表示。它先依据每个元问题在35种表示组合上的最佳表现构建**PRM**标签，再将HO-Neigh超图描述与问题文本输入DeBERTaV3分类路由器。推理时路由器选择表示组合供LVLM作答；模型仅在HyperGVL任务上训练，并以零样本插件方式用于多源真实超图节点分类。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:21:13.024769+00:00",
+      "venue_label": "EMNLP",
+      "display_date": "2026",
+      "date_basis": "conference_edition",
+      "date_precision": "year",
+      "conference_year": 2026,
+      "pdf_url": "https://arxiv.org/pdf/2604.15648",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-531d6cea484715869580",
+      "title": "Test-Time GNN Model Evaluation on Dynamic Graphs",
+      "authors": [
+        "Bo Li",
+        "Xin Zheng",
+        "Ming Jin",
+        "Can Wang",
+        "Shirui Pan"
+      ],
+      "published": "2025-11-12",
+      "updated": "2025-11-12",
+      "venue": "ICDM",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.1109/ICDM65498.2025.00051",
+          "url": "https://doi.org/10.1109/ICDM65498.2025.00051",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "动态图分布偏移",
+        "无标签模型评估",
+        "测试图模拟",
+        "差异表示",
+        "性能估计"
+      ],
+      "method": "针对时间间隔引发节点特征与拓扑偏移、且测试图无标签时的DGNN性能估计，**DyGEval**先从训练图截取种子图，并以EdgeDrop生成多种模拟测试图。固定的待评DGNN提取训练图与模拟图的节点嵌入，以余弦相似度构造节点级**差异表示**，并用模拟图标签计算NDCG监督。Graphormer式评估器以MSE回归该分数；部署时对未知图计算同类差异，直接估计其NDCG以支持模型选择。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:20:39.455238+00:00",
+      "venue_label": "ICDM",
+      "display_date": "2025-11-12",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2025,
+      "pdf_url": "https://arxiv.org/pdf/2509.23816",
+      "topics": [
+        "OOD"
+      ]
+    },
+    {
+      "id": "p-54f1d00b84b063a315e2",
+      "title": "Towards Effective Open-set Graph Class-incremental Learning",
+      "authors": [
+        "Jiazhen Chen",
+        "Zheng Ma",
+        "Sichao Fu",
+        "Mingbin Feng",
+        "Tony S. Wirjanto",
+        "Weihua Ou"
+      ],
+      "published": "2025-10-27",
+      "updated": "2025-10-27",
+      "venue": "ACM MM",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "10.1145/3746027.3754822",
+          "url": "https://doi.org/10.1145/3746027.3754822",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "开放集节点分类",
+        "类别增量学习",
+        "原型条件变分自编码器",
+        "伪OOD样本",
+        "原型超球损失"
+      ],
+      "method": "面向类别依次出现且测试含未见类别的开放集图节点分类，**OGCIL**以GNN编码带属性子图，并用知识蒸馏稳定跨任务表示。**原型CVAE**以类别原型为高斯先验，在嵌入空间重放旧类样本，再混合不同已知类及伪样本生成OOD嵌入。**原型超球分类损失**将同类拉向原型、把异类与伪OOD推离各超球，并联合重构、KL与蒸馏目标训练；推理时按到最近原型的距离阈值区分已知类别与未知节点。",
+      "confidence": "high",
+      "summarized_at": "2026-10-01T04:15:53.866260+00:00",
+      "venue_label": "ACM MM",
+      "display_date": "2025-10-27",
+      "date_basis": "conference_publication",
+      "date_precision": "day",
+      "conference_year": 2025,
+      "pdf_url": "https://arxiv.org/pdf/2507.17687",
       "topics": [
         "OOD"
       ]
@@ -13097,6 +17387,50 @@
       "date_precision": "year",
       "conference_year": 2025,
       "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Zhu_Mosaic_of_Modalities_A_Comprehensive_Benchmark_for_Multimodal_Graph_Learning_CVPR_2025_paper.pdf",
+      "topics": [
+        "TAG"
+      ]
+    },
+    {
+      "id": "p-72f70ede4b3e2f085a35",
+      "title": "Taming the Untamed: Graph-Based Knowledge Retrieval and Reasoning for MLLMs to Conquer the Unknown",
+      "authors": [
+        "Wang, Bowen",
+        "Jiang, Zhouqiang",
+        "Susumu, Yasuaki",
+        "Miwa, Shotaro",
+        "Chen, Tianwei",
+        "Nakashima, Yuta"
+      ],
+      "published": "2025",
+      "updated": "2025",
+      "venue": "ICCV",
+      "publication_type": "conference",
+      "ccf_venue": true,
+      "sources": [
+        {
+          "name": "conference",
+          "id": "https://openaccess.thecvf.com/content/ICCV2025/html/Wang_Taming_the_Untamed_Graph-Based_Knowledge_Retrieval_and_Reasoning_for_MLLMs_ICCV_2025_paper.html",
+          "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Wang_Taming_the_Untamed_Graph-Based_Knowledge_Retrieval_and_Reasoning_for_MLLMs_ICCV_2025_paper.html",
+          "date_basis": "conference_publication"
+        }
+      ],
+      "status": "ready",
+      "keywords": [
+        "多模态知识图谱",
+        "多代理图检索",
+        "路径文本化",
+        "免训练检索"
+      ],
+      "method": "面向罕见游戏领域的多模态知识图问答，**MH-MMKG**将怪物与攻击设为实体，以关系连边，并为实体附加视频、关键帧、字幕和文本上下文。**感知器**先把查询视觉内容转成描述，主题选择代理定位根实体。**多代理检索器**交替执行扩展与验证，按广度优先筛选邻居并判断路径知识是否充分，直至开放实体为空。最后将检索子图的至多五条根到叶路径文本化，交由MLLM结合原查询生成答案，全流程无需额外训练。",
+      "confidence": "high",
+      "summarized_at": "2026-09-30T14:51:21.129128+00:00",
+      "venue_label": "ICCV",
+      "display_date": "2025",
+      "date_basis": "conference_publication",
+      "date_precision": "year",
+      "conference_year": 2025,
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Wang_Taming_the_Untamed_Graph-Based_Knowledge_Retrieval_and_Reasoning_for_MLLMs_ICCV_2025_paper.pdf",
       "topics": [
         "TAG"
       ]

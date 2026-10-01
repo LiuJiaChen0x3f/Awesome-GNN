@@ -4,7 +4,7 @@
 
 ## 批量检索与窗口
 
-`python -X utf8 run.py search --limit 100` 启用 `gnn_digest/bulk.py`。默认会议从 2025-01-01 起、arXiv v1 从 2026-01-01 起，截止启动时的 UTC 日；会议再限定 2025/2026 届，跳过不存在常规届的 ICCV 2026。可用 `--conference-since`、`--arxiv-since` 或 `--conference-days`、`--arxiv-days` 临时改窗口。原站只有年/月时保留精度，不补造日。大批次默认最多两轮会议覆盖、四批 arXiv、7200 秒软预算和 240 次全文处理；预算耗尽应保存已有结果并列出缺口。
+`python -X utf8 run.py search --limit 100` 启用 `gnn_digest/bulk.py`。默认会议从 2025-01-01 起、arXiv v1 从启动时 UTC 日往前两个自然月起，截止启动时的 UTC 日；会议再限定 2025/2026 届，跳过不存在常规届的 ICCV 2026。可用 `--conference-since`、`--arxiv-since` 或 `--conference-days`、`--arxiv-days` 临时改窗口。原站只有年/月时保留精度，不补造日。大批次默认最多两轮会议覆盖、四批 arXiv、7200 秒软预算和 240 次全文处理；预算耗尽应保存已有结果并列出缺口。
 
 批量检查点保存在 `data/bulk_run.json`，逐批同步 `data/papers.json` 和站点索引。中断后先确认原进程已经退出；仅在目标、窗口及检查点身份一致时执行 `python -X utf8 run.py search --limit 100 --resume`。不要在运行进程仍持有锁时删除 `data/pipeline.lock`。
 
@@ -17,6 +17,8 @@
 正文由 `gnn_digest/fulltext.py` 提取，搜索总结模型读取覆盖全文的编号片段。模型给出证据编号；`gnn_digest/evidence.py` 从实际正文恢复连续片段与偏移，虚构编号拒绝。`gnn_digest/summary_policy.py` 校验总结长度、加粗和关键词。缺全文、缺主会身份、日期不明、主题只有背景提及、供应商失败分别保留状态，不伪造完成。`data/last_run.json` 的 `stage`、`code`、`next_action`、配额及工具动作可定位失败。
 
 ## 独立补漏审计
+
+2026-09-30 用户确认：正式归档的专题研究/数据集轨道可纳入，包括 IJCAI 的 AI and Social Good、AI and Health、AI4Tech，以及 NeurIPS Datasets and Benchmarks。仍排除 Findings、workshop、演示、博士生论坛、综述；基准论文也须有实际 TAG/OOD 方法。官方轨道保存在论文 `publication_track` 和 `verification.track` 中，不把投稿页或相似题名当录用证据。
 
 最新会议届次补漏使用 `scripts/audit_literature.py` 等项目脚本，范围与待处理项见 `docs/latest_conference_coverage_audit.md`、`data/literature_pending.json`。这条审计路径扩展了 ICLR、LoG、ICDM、WSDM、NAACL 等来源，不能说普通 `run.py search` 自动覆盖了全部审计范围。审计缓存位于 gitignored `.local/literature-audit/`，远端仓库不包含它；恢复脚本也不会自动重新抓取所有待处理候选。最新届次未能访问时不推断其未公布。
 

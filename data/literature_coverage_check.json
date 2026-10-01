@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T02:05:38.989917+00:00",
+  "generated_at": "2026-10-01T04:43:02.685033+00:00",
   "coverage_complete": false,
   "source_union_entries": 3440,
   "eligible_latest_entries": 3274,
@@ -8,16 +8,17 @@
   "unreviewed_entries": [],
   "separate_emnlp_2026_candidates": 85,
   "status_counts": {
-    "metadata_unresolved": 132,
-    "irrelevant": 123,
-    "fulltext_unresolved": 271,
-    "ready": 192,
-    "summary_request_failed": 28,
+    "excluded_track": 49,
+    "irrelevant": 228,
+    "fulltext_unresolved": 145,
+    "ready": 294,
+    "metadata_unresolved": 29,
     "superseded_edition": 17,
     "fulltext_prepared": 2,
-    "excluded_track": 3
+    "excluded_venue": 2,
+    "already_in_archive": 2
   },
-  "pending_count": 423,
-  "new_ready_papers": 188,
-  "public_total": 301
+  "pending_count": 166,
+  "new_ready_papers": 288,
+  "public_total": 401
 }

@@ -51,6 +51,9 @@ class BulkTests(unittest.TestCase):
         self.assertEqual(w['conference']['since'],'2025-01-01')
         w=source_windows(config,Namespace(days=7),date(2026,9,29))
         self.assertEqual(w['conference']['since'],'2026-09-23')
+        rolling = source_windows({'search_windows':{'conference_since':'2025-01-01',
+                                                    'arxiv_months':2}}, Namespace(days=None), date(2026,9,29))
+        self.assertEqual(rolling['arxiv']['since'], '2026-07-29')
 
     def test_partial_dates_do_not_invent_months_or_days(self):
         for raw, precision in [('2025','year'),('2025/07','month'),('2026/02/01','day')]:
@@ -111,6 +114,12 @@ class BulkTests(unittest.TestCase):
             self.assertEqual(verify_candidate(c,date(2025,1,1),date(2026,9,29))['venue_label'],'NeurIPS')
             c['url']=c['url'].replace('-Conference','-Creative_AI_Track')
             with self.assertRaises(VerificationError): verify_candidate(c,date(2025,1,1),date(2026,9,29))
+        c['url']=c['url'].replace('-Creative_AI_Track','-Datasets_and_Benchmarks_Track')
+        with patch('gnn_digest.verification.fetch_page',return_value=html):
+            with self.assertRaises(VerificationError): verify_candidate(c,date(2025,1,1),date(2026,9,29))
+        with patch('gnn_digest.verification.fetch_page',return_value=html+'<p>Datasets and Benchmarks Track</p>'):
+            p=verify_candidate(c,date(2025,1,1),date(2026,9,29))
+            self.assertEqual(p['verification']['track'],'Datasets and Benchmarks')
 
     def test_crossref_requires_matching_title_proceedings_type_and_main_venue(self):
         c={'title':'Graph Shift','url':'https://dl.acm.org/doi/10.1145/123.456'}

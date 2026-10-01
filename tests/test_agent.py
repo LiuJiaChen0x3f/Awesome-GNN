@@ -112,9 +112,14 @@ class VerificationTests(unittest.TestCase):
             p=verify_candidate(c,date(2026,9,14),date(2026,9,27))
         self.assertEqual(p['abstract'],ABSTRACT)
         self.assertEqual(p['venue_label'],'IJCAI')
-        with patch('gnn_digest.verification.fetch_page',return_value='<html><head>'+meta+'</head><body>'+body.replace('Main Track','AI4Tech')+'</body></html>'):
-            with self.assertRaises(VerificationError):
-                verify_candidate(c,date(2026,9,14),date(2026,9,27))
+        for track in ('AI4Tech', 'AI4Tech: AI Enabling Technologies', 'AI and Health', 'AI and Social Good'):
+            with self.subTest(track=track), patch('gnn_digest.verification.fetch_page',return_value='<html><head>'+meta+'</head><body>'+body.replace('Main Track',track)+'</body></html>'):
+                p=verify_candidate(c,date(2026,9,14),date(2026,9,27))
+                self.assertEqual(p['verification']['track'],track)
+        for track in ('Survey Track', 'Demo Track', 'Doctoral Consortium', 'Workshop'):
+            with self.subTest(track=track), patch('gnn_digest.verification.fetch_page',return_value='<html><head>'+meta+'</head><body>'+body.replace('Main Track',track)+'</body></html>'):
+                with self.assertRaises(VerificationError):
+                    verify_candidate(c,date(2026,9,14),date(2026,9,27))
 
     def test_topics_require_evidence_and_no_five_topic_requirement(self):
         self.assertEqual(validate_topics(answer(),ABSTRACT)['topics'],['TAG'])
@@ -155,6 +160,51 @@ class AgentTests(unittest.TestCase):
         self.assertFalse(payload['store'])
         self.assertNotIn('response_format',payload)
         self.assertEqual(endpoint('https://example.test/v1/chat/completions','/responses'),'https://example.test/v1/responses')
+
+    def test_responses_arxiv_shortfall_uses_model_query_html_leads(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root, config, args = self.setup_root(tmp)
+            config['_source_quotas'] = {'conference':0, 'arxiv':1}
+            lead = candidate()
+            live = response([])
+            live['output'][0]['action'] = {'type':'search', 'queries':['site:arxiv.org/abs/ 2026 text-attributed graphs']}
+            with patch('gnn_digest.agent.WebResearchAgent.search', return_value=live), \
+                 patch('gnn_digest.agent.search_html', return_value=[lead]) as fallback, \
+                 patch('gnn_digest.verification.fetch_page', return_value=html()), \
+                 patch('gnn_digest.agent.load_methods', side_effect=mock_methods), \
+                 patch('gnn_digest.llm.get_json', return_value={'choices':[{'message':{'content':json.dumps(answer())}}]}):
+                self.assertEqual(search(root, config, args), 0)
+            self.assertEqual(fallback.call_args.args[0], 'text-attributed graphs')
+            report = read_json(root/'data/last_run.json', {})
+            self.assertEqual(report['rounds'][0]['arxiv_html_fallback']['candidates_added'], 1)
+            self.assertEqual(report['quota_progress']['arxiv']['returned'], 1)
+
+    def test_responses_second_round_replaces_seen_arxiv_candidate(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root, config, args = self.setup_root(tmp)
+            args.limit = 2
+            config['_source_quotas'] = {'conference':0, 'arxiv':2}
+            first = candidate(1)
+            second = {'title':'A Different Graph Neural Network',
+                      'url':'https://arxiv.org/abs/2609.00002'}
+            retry = response([first])
+            retry['output'][0]['action'] = {'type':'search',
+                                           'queries':['site:arxiv.org/abs/ 2026 text-attributed graphs']}
+
+            def page(url, **kwargs):
+                return html(title=second['title'] if url.endswith('00002') else first['title'])
+
+            with patch('gnn_digest.agent.WebResearchAgent.search', side_effect=[response([first]), retry]), \
+                 patch('gnn_digest.agent.search_html', return_value=[second]) as fallback, \
+                 patch('gnn_digest.verification.fetch_page', side_effect=page), \
+                 patch('gnn_digest.agent.load_methods', side_effect=mock_methods), \
+                 patch('gnn_digest.llm.get_json', return_value={'choices':[{'message':{'content':json.dumps(answer())}}]}):
+                self.assertEqual(search(root, config, args), 0)
+            self.assertEqual(fallback.call_count, 1)
+            report = read_json(root/'data/last_run.json', {})
+            self.assertEqual(report['rounds'][1]['arxiv_html_fallback']['candidates_added'], 1)
+            self.assertEqual(report['rounds'][1]['arxiv_html_fallback']['skipped_known'], 1)
+            self.assertEqual(report['quota_progress']['arxiv']['returned'], 2)
 
     @patch.dict(os.environ, {'LLM_BASE_URL':'https://api.deepseek.com/v1', 'LLM_API_KEY':'secret-probe',
                              'LLM_MODEL':'deepseek-flash', 'LLM_REASONING_EFFORT':'low'})
